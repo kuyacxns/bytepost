@@ -1,0 +1,24 @@
+{
+    "articles": [
+        {
+            "id": "a1",
+            "cat": "ki",
+            "tag": "KI",
+            "title": "OpenAI: 852 Milliarden Dollar Bewertung — Was steckt dahinter?",
+            "source": "Wall Street Journal",
+            "read": "5 Min",
+            "icon": "🤖",
+            "content": "<div class='summary-box'><h4>Zusammenfassung</h4><ul><li>Rekord-Bewertung von 852 Mrd. USD.</li><li>Fokus auf eigene Chip-Produktion.</li><li>Umsatz wächst schneller als erwartet.</li></ul></div><h3>Der Strategiewechsel</h3><p>OpenAI plant eigene Rechenzentren, um die Abhängigkeit von NVIDIA zu verringern. Dies markiert den Übergang von einer reinen Software-Firma zu einem Infrastruktur-Giganten.</p>"
+        },
+        {
+            "id": "a2",
+            "cat": "dev",
+            "tag": "Dev",
+            "title": "Cursor 3: Die Zukunft des Codens",
+            "source": "TechCrunch",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>Agenten im Editor</h3><p>Cursor 3 führt agentenbasierte Workflows ein, die komplexe Code-Änderungen über mehrere Dateien hinweg selbstständig planen und ausführen können.</p>"
+        }
+    ]
+}
