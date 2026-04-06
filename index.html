@@ -42,7 +42,7 @@
         .page-grid { display: grid; grid-template-columns: 1fr 300px; gap: 50px; padding: 0 0 60px; }
         .article { padding: 20px 0; border-bottom: 1px solid var(--border); cursor: pointer; display: grid; grid-template-columns: 1fr 80px; gap: 20px; transition: transform 0.2s; }
         .article:hover { transform: translateX(5px); }
-        .article.is-read { opacity: 0.45; }
+
         .article-title { font-size: 18px; font-weight: 600; margin: 6px 0 4px; transition: color var(--t); }
         .article:hover .article-title { color: var(--accent); }
 
@@ -135,10 +135,7 @@
                     <h3>Deep Reading</h3>
                     <p style="font-size:14px; color:var(--text-3); margin-top:8px;">Klicke auf einen Artikel für die volle Analyse inkl. KI-Zusammenfassung.</p>
                 </div>
-                <div class="sidebar-card">
-                    <div class="read-count" id="read-count">0</div>
-                    <p style="font-size:13px; color:var(--text-3); margin-top:4px;">Artikel gelesen</p>
-                </div>
+
             </aside>
         </div>
     </div>
@@ -180,7 +177,6 @@
         }
 
         let ARTICLES = [];
-        let read = JSON.parse(localStorage.getItem('bp_read') || '[]');
         let activeFilter = 'all';
 
         async function load() {
@@ -190,7 +186,6 @@
                 ARTICLES = data.articles;
                 buildFilters();
                 render();
-                updateReadCount();
             } catch (e) {
                 document.getElementById('feed').innerHTML = '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.</div>';
             }
@@ -224,7 +219,7 @@
                 return;
             }
             document.getElementById('feed').innerHTML = visible.map(a => `
-                <div class="article ${read.includes(a.id) ? 'is-read' : ''}" onclick="openArt('${a.id}')">
+                <div class="article" onclick="openArt('${a.id}')">
                     <div>
                         <span class="tag">${a.tag}</span>
                         <h3 class="article-title">${a.title}</h3>
@@ -244,22 +239,11 @@
             document.getElementById('m-img-container').innerHTML = a.image_local ? `<img src="${a.image_local}" class="modal-image">` : '';
             document.getElementById('overlay').classList.add('open');
             document.body.style.overflow = 'hidden';
-            if (!read.includes(id)) {
-                read.push(id);
-                localStorage.setItem('bp_read', JSON.stringify(read));
-                render();
-                updateReadCount();
-            }
         }
 
         function closeModal() {
             document.getElementById('overlay').classList.remove('open');
             document.body.style.overflow = '';
-        }
-
-        function updateReadCount() {
-            const el = document.getElementById('read-count');
-            if (el) el.textContent = read.length;
         }
 
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
