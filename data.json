@@ -1,6 +1,76 @@
 {
     "articles": [
         {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "DJI plant Angriff auf Insta360: Neue 360-Grad-Kamera geleakt",
+            "source": "Wired",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>DJI erweitert das Kamera-Portfolio</h3><p>Lange Zeit dominierte Insta360 fast konkurrenzlos den Markt für 360-Grad-Consumer-Kameras, doch nun bekommt der Platzhirsch ernsthafte Konkurrenz. Neue Leaks und Zertifizierungsdaten deuten darauf hin, dass DJI unter dem Namen „Osmo 360“ eine eigene Rundum-Kamera entwickelt, um seine Dominanz im Action-Cam-Sektor weiter auszubauen.</p><p>Das neue Gerät soll direkt gegen die populäre Insta360 X4 antreten. Mit zwei gegenüberliegenden Linsen und der bewährten Stabilisierungstechnologie von DJI verspricht die Kamera eine nahtlose Integration in das bestehende DJI-Ekosystem, was besonders für Vlogger und Content Creator den Workflow vereinfachen könnte.</p>",
+            "id": "cf2c2fc9"
+        },
+        {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "Zynische Souvenirs: CBP-Agenten verspotten Migranten und NGOs",
+            "source": "Wired",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>Fragwürdige Sammlerstücke</h3><p>In den USA ist eine Kontroverse um sogenannte „Challenge Coins“ der US-Grenzschutzbehörde CBP entbrannt. Diese inoffiziellen Gedenkmünzen, die von Beamten gesammelt und getauscht werden, zeigen oft zynische Motive. Einige Coins verspotten humanitäre Hilfsorganisationen oder stellen das Leid von Migranten auf geschmacklose Weise dar.</p><p>NGOs wie „No More Deaths“ kritisieren, dass diese Objekte eine tief verwurzelte Kultur der Entmenschlichung innerhalb der Behörde widerspiegeln. Während die CBP betont, dass die Münzen nicht offiziell autorisiert sind, werden sie offen gehandelt und dienen Kritikern als Beweis für systematische Missstände im Umgang mit Schutzsuchenden.</p>",
+            "id": "3fe41c6d"
+        },
+        {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "DJI Mic Mini: Winziges Audio-Kraftpaket zum Sparpreis",
+            "source": "The Verge",
+            "read": "3 Min",
+            "icon": "⚡",
+            "content": "<h3>Kompakte Sound-Revolution</h3><p>DJI erweitert sein Audio-Portfolio mit dem DJI Mic Mini, einer deutlich kleineren und leichteren Version des beliebten Drahtlos-Mikrofonsystems. Das neue Modell setzt auf ein extrem diskretes Design, das sich fast unsichtbar an der Kleidung befestigen lässt, ohne dabei auf die bewährte Funktechnologie des Herstellers zu verzichten.</p><p>Um den Formfaktor und den Preis zu senken, verzichtet DJI beim Mic Mini auf einige Profi-Features wie die interne Aufnahme direkt auf dem Sender. Dennoch bietet es eine beeindruckende Akkulaufzeit und eine zuverlässige Verbindung, was es zur idealen Wahl für Vlogger und Mobile-Journalisten macht.</p><p>Aktuelle Angebote für das Bundle mit zwei Sendern und einem Empfänger machen das System besonders attraktiv für Einsteiger. Wer ein unkompliziertes, federleichtes Audio-Setup sucht, erhält hier eine hochwertige Lösung, die deutlich günstiger als das Flaggschiff-Modell DJI Mic 2 ist.</p>",
+            "id": "90eea813"
+        },
+        {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "Spar-Alarm bei Apple: Massive Rabatte auf MacBook und iMac",
+            "source": "The Verge",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>Preissturz bei Apple-Rechnern</h3><p>Aktuell bieten große Online-Händler erhebliche Rabatte auf fast die gesamte Mac-Palette an. Besonders im Fokus stehen das MacBook Air mit M2- und M3-Chips sowie das 14-Zoll MacBook Pro, die zu attraktiven Bestpreisen erhältlich sind und den Einstieg in die M-Chip-Welt vergünstigen.</p><p>Auch Desktop-Nutzer kommen auf ihre Kosten: Der kompakte Mac Mini und der farbenfrohe 24-Zoll iMac sind ebenfalls Teil der aktuellen Rabattwelle. Die Angebote erstrecken sich über verschiedene Konfigurationen, wobei vor allem die Basismodelle mit deutlichen Preisnachlässen locken.</p>",
+            "id": "385fdfcc"
+        },
+        {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "Netflix launcht eigene Gaming-App für Kinder",
+            "source": "TechCrunch",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>Fokus auf junge Gamer</h3><p>Netflix baut sein Spiele-Portfolio weiter aus und veröffentlicht eine eigenständige App speziell für Kinderspiele. Mit diesem Schritt reagiert der Streaming-Riese auf die wachsende Nachfrage nach kuratierten, sicheren Inhalten für jüngere Zielgruppen und trennt das Gaming-Erlebnis erstmals von der Haupt-Streaming-Plattform.</p><p>Die neue App bietet eine werbefreie Umgebung ohne zusätzliche In-App-Käufe, was sie besonders attraktiv für Eltern macht. Durch die Auslagerung in eine dedizierte App möchte Netflix die Sichtbarkeit seiner Spieletitel erhöhen und gezielter mit Plattformen wie Roblox oder dem Apple App Store konkurrieren.</p>",
+            "id": "80f828c8"
+        },
+        {
+            "cat": "tech",
+            "tag": "Breaking",
+            "title": "Google launcht Offline-KI-Diktier-App für iOS",
+            "source": "TechCrunch",
+            "read": "4 Min",
+            "icon": "⚡",
+            "content": "<h3>Google bringt KI-Diktate offline auf das iPhone</h3><p>Google hat überraschend eine neue KI-gestützte Diktier-App für iOS veröffentlicht, die konsequent auf einen Offline-First-Ansatz setzt. Im Gegensatz zu herkömmlichen Diensten verarbeitet die App Sprache direkt auf dem Gerät, was die Latenz minimiert und den Datenschutz erheblich verbessert, da keine Audiodaten die Hardware verlassen.</p><p>Die Anwendung nutzt speziell optimierte Sprachmodelle, um selbst in Flugmodus oder Funklöchern präzise Transkriptionen zu liefern. Damit positioniert sich Google in direkter Konkurrenz zu Apples nativer Diktierfunktion und adressiert Nutzer, die hohe Anforderungen an Vertraulichkeit und Geschwindigkeit stellen.</p>",
+            "id": "7d38ab8d"
+        },
+        {
+            "id": "31963a79",
+            "cat": "tech",
+            "tag": "Tech",
+            "title": "Apple vs. Epic: Rechtsstreit um App-Store-Provision erreicht Supreme Court",
+            "source": "BytePost",
+            "read": "3 Min",
+            "icon": "⚖️",
+            "content": "<h3>Der Kampf um die 30-Prozent-Regel</h3><p>Der langjährige Rechtsstreit zwischen Apple und Epic Games tritt in eine entscheidende Phase. Im Kern geht es um die Frage, ob Apple Entwickler weiterhin dazu zwingen darf, ausschließlich das hauseigene Zahlungssystem des App Stores zu nutzen, bei dem bis zu 30 % Provision anfallen.</p><p>Nachdem Epic Games Berufung beim Supreme Court eingelegt hat, steht das Geschäftsmodell des geschlossenen Ökosystems von Apple auf dem Prüfstand. Apple argumentiert, dass die Gebühren für die Sicherheit und Integrität der Plattform notwendig seien, während Epic von wettbewerbswidrigen Praktiken spricht.</p><p>Ein Urteil könnte weitreichende Folgen für die gesamte Tech-Branche haben. Sollten die sogenannten 'Anti-Steering'-Regeln fallen, müssten Apple und auch Google ihre Store-Strukturen grundlegend anpassen, was Milliarden an potenziellen Einnahmen gefährden könnte.</p>"
+        },
+        {
             "id": "a1",
             "cat": "ki",
             "tag": "KI",
