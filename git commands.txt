@@ -1,0 +1,10 @@
+# 1. Generator laufen lassen
+python generator.py
+
+# 2. ALLES (auch den Bilder-Ordner) zu Git hinzufügen
+git add .
+
+# 3. Abschicken
+git commit -m "Bilder und Deep Reads im alten Design"
+git pull origin master --rebase
+git push origin master
