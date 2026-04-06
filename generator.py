@@ -25,50 +25,56 @@ def ask_gemini(url, category):
     api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL}:generateContent?key={API_KEY}"
     heute = datetime.now().strftime("%d.%m.%Y")
 
-    prompt = f"""Analysiere diesen Artikel vollstaendig: {url}
+    prompt = f"""Du bist ein professioneller Tech-Journalist. Analysiere diesen Artikel: {url}
 
-Erstelle einen ausfuehrlichen Eintrag fuer den BytePost Tech-Newsletter auf DEUTSCH.
-Der Inhalt soll ca. 5 Minuten Lesezeit haben (~800-1000 Woerter), sodass der Leser den Originalartikel nicht mehr lesen muss.
+WICHTIG: Der content-Wert im JSON MUSS mindestens 800 Woerter lang sein. Kuerzere Antworten sind UNGUELTIG.
 
-Antworte NUR im JSON-Format mit exakt dieser Struktur:
+Erstelle ein JSON-Objekt fuer den BytePost Newsletter auf DEUTSCH:
 {{
-    "cat": "passendes Kuerzel",
-    "tag": "Schlagwort",
+    "cat": "ki/dev/hardware/security/business/tech",
+    "tag": "KI/Dev/Hardware/Security/Business/Tech",
     "icon": "Emoji",
-    "title": "Praegnante deutsche Headline (max. 10 Woerter)",
-    "source": "Name der Quelle",
+    "title": "Headline max 10 Woerter",
+    "source": "Quellenname",
     "read": "5 Min",
-    "content": "VOLLSTAENDIGER HTML-INHALT"
+    "content": "MINDESTENS 800 WOERTER HTML"
 }}
 
-Passe cat und tag dem Thema an:
-- KI/Machine Learning: cat=ki, tag=KI
-- Software/Tools: cat=dev, tag=Dev
-- Hardware/Gadgets: cat=hardware, tag=Hardware
-- Security: cat=security, tag=Security
-- Business: cat=business, tag=Business
-- Sonstiges: cat=tech, tag=Tech
+Der content MUSS exakt diese Struktur haben und MINDESTENS 800 Woerter enthalten:
 
-Der content muss folgende HTML-Struktur haben:
+<div class='summary-box'><h4>Highlights</h4><ul><li>Wichtigster Fakt 1</li><li>Wichtigster Fakt 2</li><li>Wichtigster Fakt 3</li><li>Wichtigster Fakt 4</li></ul></div>
 
-<div class='summary-box'><h4>Highlights</h4><ul><li>Punkt 1</li><li>Punkt 2</li><li>Punkt 3</li><li>Punkt 4</li></ul></div>
+<h3>Hintergrund und Kontext</h3>
+<p>MINDESTENS 4 Saetze: Was ist die Vorgeschichte? Wie kam es dazu? Was ist der groessere Zusammenhang?</p>
+<p>MINDESTENS 4 Saetze: Welche Akteure sind beteiligt? Was sind ihre Interessen und Motivationen?</p>
 
-Dann 4-6 Abschnitte mit je einem <h3>Titel</h3> und 2-3 <p>Absaetze</p> (je 3-5 Saetze). Beantworte dabei:
-- Was ist passiert und worum geht es genau?
-- Warum ist das relevant?
-- Was sind die Hintergruende?
-- Was bedeutet das fuer Nutzer, Entwickler oder die Branche?
-- Was sind moegliche Konsequenzen oder naechste Schritte?
+<h3>Was genau ist passiert?</h3>
+<p>MINDESTENS 4 Saetze: Beschreibe das Ereignis detailliert. Was wurde angekuendigt, veroeffentlicht oder entschieden?</p>
+<p>MINDESTENS 4 Saetze: Technische Details, Zahlen, Fakten, Spezifikationen soweit vorhanden.</p>
 
-Am Ende: <h3>Fazit</h3><p>Persoenliche Einordnung und Ausblick.</p>
+<h3>Warum ist das wichtig?</h3>
+<p>MINDESTENS 4 Saetze: Relevanz fuer die Tech-Branche. Marktbedeutung. Competitive Landscape.</p>
+<p>MINDESTENS 4 Saetze: Auswirkungen auf Nutzer, Entwickler oder Unternehmen.</p>
 
-Schreibe journalistisch und informativ fuer tech-affine Leser. Keine Fuellsaetze.
-Antworte NUR mit dem JSON-Code, kein weiterer Text, keine Markdown-Codeblöcke."""
+<h3>Kritische Einordnung</h3>
+<p>MINDESTENS 4 Saetze: Was sind moegliche Risiken oder Schwachstellen? Was bleibt unklar oder offen?</p>
+<p>MINDESTENS 4 Saetze: Vergleich mit Konkurrenten oder aehnlichen Entwicklungen in der Vergangenheit.</p>
+
+<h3>Was kommt als naechstes?</h3>
+<p>MINDESTENS 4 Saetze: Welche Entwicklungen sind zu erwarten? Was sind die naechsten Schritte?</p>
+
+<h3>Fazit</h3>
+<p>MINDESTENS 4 Saetze: Persoenliche Einordnung und Ausblick. Was bedeutet das langfristig fuer die Branche?</p>
+
+Antworte NUR mit dem JSON. Kein Text davor oder danach. Keine Markdown-Codeblöcke."""
 
     try:
         r = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
         data = json.loads(re.sub(r'```json|```', '', r.json()['candidates'][0]['content']['parts'][0]['text']).strip())
         data["date"] = heute
+        # Laenge pruefen
+        word_count = len(data.get("content", "").split())
+        print(f"   Inhalt: ~{word_count} Woerter")
         return data
     except: return None
 

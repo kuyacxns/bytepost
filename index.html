@@ -47,7 +47,7 @@
         .article:hover .article-title { color: var(--accent); }
 
         .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; background: var(--accent); color: #fff; text-transform: uppercase; }
-        .icon-box { font-size: 30px; background: var(--bg-card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; border-radius: 10px; transition: transform var(--t); }
+        .icon-box { font-size: 30px; background: var(--bg-card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; border-radius: 10px; transition: transform var(--t); overflow: hidden; }
         .article:hover .icon-box { transform: scale(1.05); }
 
         .sidebar-card { background: var(--bg-card); padding: 20px; border-radius: 14px; border: 1px solid var(--border); margin-bottom: 16px; }
@@ -225,7 +225,11 @@
                         <h3 class="article-title">${a.title}</h3>
                         <p style="color:var(--text-3); font-family:var(--mono); font-size:12px;">${a.source}${a.date ? ' · ' + a.date : ''} · ${a.read}</p>
                     </div>
-                    <div class="icon-box">${a.icon}</div>
+                    <div class="icon-box">
+                        ${a.image_local
+                            ? `<img src="${a.image_local}" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">`
+                            : a.icon}
+                    </div>
                 </div>
             `).join('');
         }
