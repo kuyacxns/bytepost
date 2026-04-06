@@ -49,6 +49,9 @@
         .article-row:last-child { border-bottom: none; }
         .article-row-body { min-width: 0; }
 
+        .article-row-tag-row { margin-bottom: 6px; }
+        .article-row-tag-row .tag { font-size: 9px; padding: 2px 6px; letter-spacing: 0.8px; }
+
         .article-row-title { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 7px; transition: color var(--t); }
         .article-row:hover .article-row-title { color: var(--accent); }
         .article-row-summary { font-size: 14px; color: var(--text-2); line-height: 1.65; margin-bottom: 10px; }
@@ -195,6 +198,7 @@
                 const res = await fetch('./data.json');
                 const data = await res.json();
                 ARTICLES = data.articles;
+                ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
                 setEditionDate();
                 render();
             } catch (e) {
@@ -202,10 +206,40 @@
             }
         }
 
+        function parseArticleDate(dateStr) {
+            if (!dateStr) return new Date(0);
+            const parts = dateStr.split('.');
+            if (parts.length !== 3) return new Date(0);
+            return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+        }
+
+        function getDateLabel(dateStr) {
+            if (!dateStr) return 'Kein Datum';
+            const articleDate = parseArticleDate(dateStr);
+            const normalize = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+            const art = normalize(articleDate);
+            const tod = normalize(new Date());
+            const yes = normalize(new Date(Date.now() - 86400000));
+            if (art.getTime() === tod.getTime()) return 'Heute';
+            if (art.getTime() === yes.getTime()) return 'Gestern';
+            return articleDate.toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: 'short' });
+        }
+
+        function formatArticleMeta(dateStr) {
+            const d = parseArticleDate(dateStr);
+            if (!dateStr || d.getTime() === new Date(0).getTime()) return '';
+            const weekday = d.toLocaleDateString('de-DE', { weekday: 'long' });
+            return `${weekday}, ${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.`;
+        }
+
         function setEditionDate() {
             const el = document.getElementById('edition-date');
             const d = new Date();
             el.textContent = d.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            const todayStr = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
+            const count = ARTICLES.filter(a => a.date === todayStr).length;
+            const subEl = document.getElementById('edition-sub');
+            if (subEl && count > 0) subEl.textContent = `${count} neue Artikel heute · Kuratierte Deep-Reads auf Deutsch`;
         }
 
         function extractSummary(html) {
@@ -233,32 +267,36 @@
                 return;
             }
 
-            // Group by category, preserving insertion order
-            const groups = {};
+            // Group by date (already sorted descending)
+            const groups = {}, groupOrder = [];
             ARTICLES.forEach(a => {
-                if (!groups[a.cat]) groups[a.cat] = [];
-                groups[a.cat].push(a);
+                const key = a.date || '';
+                if (!groups[key]) { groups[key] = []; groupOrder.push(key); }
+                groups[key].push(a);
             });
 
-            const html = Object.entries(groups).map(([cat, articles]) => {
-                const meta = CATEGORY_META[cat] || { label: cat.toUpperCase(), icon: '📌' };
+            const html = groupOrder.map(dateKey => {
+                const articles = groups[dateKey];
+                const label = getDateLabel(dateKey);
                 const rows = articles.map(a => {
                     const summary = extractSummary(a.content);
                     const likeCount = likes[a.id] ? ` · ♥ ${likes[a.id]}` : '';
                     const thumb = a.image_local
                         ? `<img class="article-thumb" src="${a.image_local}" alt="">`
                         : `<div class="article-thumb-icon">${a.icon}</div>`;
+                    const dateMeta = formatArticleMeta(a.date);
                     return `
                         <div class="article-row" onclick="openArt('${a.id}')">
                             <div class="article-row-body">
+                                <div class="article-row-tag-row"><span class="tag">${a.tag}</span></div>
                                 <div class="article-row-title">${a.title}</div>
                                 ${summary ? `<div class="article-row-summary">${summary}</div>` : ''}
                                 <div class="article-row-meta">
                                     <span>${a.source}</span>
-                                    ${a.date ? `<span>${a.date}</span>` : ''}
+                                    ${dateMeta ? `<span>${dateMeta}</span>` : ''}
                                     <span>${a.read}</span>
                                     ${likeCount ? `<span>${likeCount}</span>` : ''}
-                                    <span class="read-more">Lesen →</span>
+                                    <span class="read-more">Vollständig lesen →</span>
                                 </div>
                             </div>
                             ${thumb}
@@ -268,9 +306,8 @@
                 return `
                     <div class="section-block">
                         <div class="section-head">
-                            <span>${meta.icon}</span>
-                            <span class="section-label">${meta.label}</span>
-                            <span class="section-count">${articles.length} ${articles.length === 1 ? 'Artikel' : 'Artikel'}</span>
+                            <span class="section-label">${label}</span>
+                            <span class="section-count">${articles.length} Artikel</span>
                         </div>
                         ${rows}
                     </div>`;

@@ -52,18 +52,18 @@ def ask_gemini(url, category):
 
 Analysiere diesen Artikel vollstaendig: {url}
 
-WICHTIG: Der content-Wert MUSS mindestens 800 Woerter lang sein. Kuerzere Antworten sind UNGUELTIG.
+WICHTIG: Der content-Wert MUSS mindestens 1000 Woerter lang sein. Kuerzere Antworten sind UNGUELTIG und werden verworfen.
 
 Erstelle ein JSON-Objekt fuer den BytePost Newsletter:
 {{
     "cat": "ki/dev/data/security/cloud/hardware/business",
-    "tag": "KI/Dev/Data/Security/Cloud/Hardware/Business",
+    "tag": "Exakt ein Wert aus: KI, Dev, Data, Security, Cloud, Hardware, Business",
     "icon": "Emoji",
     "title": "Praegnante deutsche Headline (max. 10 Woerter)",
     "source": "Quellenname",
     "read": "5 Min",
     "image_query": "2-3 englische Suchbegriffe fuer passendes Foto (z.B. 'machine learning code')",
-    "content": "MINDESTENS 800 WOERTER HTML"
+    "content": "MINDESTENS 1000 WOERTER HTML"
 }}
 
 Kategorien:
@@ -78,13 +78,21 @@ Kategorien:
 Schreibe fuer ein Publikum das: Python, SQL, Spark, Databricks, dbt, Kubernetes, Docker kennt.
 Nutze Fachbegriffe ohne sie zu erklaeren. Gehe tief in technische Details.
 
+ABSOLUT VERBOTEN im content:
+- Saetze wie "Lesen Sie den Originalartikel fuer mehr Details"
+- Saetze wie "Laut dem Originalbericht" oder "Gemaess dem Quelltext"
+- Jegliche Aufforderung, eine externe Quelle zu besuchen
+- Formulierungen wie "weitere Informationen finden Sie unter" oder "der vollstaendige Artikel beschreibt"
+Ziel: Ein eigenstaendiger journalistischer Bericht — alle relevanten Informationen sind enthalten.
+Schreibe direkte Aussagen: Nicht "Laut Bericht hat X..." sondern "X hat...".
+
 Der content MUSS diese Struktur haben:
 
 <div class='summary-box'><h4>Highlights</h4><ul><li>Technischer Fakt 1</li><li>Technischer Fakt 2</li><li>Technischer Fakt 3</li><li>Technischer Fakt 4</li></ul></div>
 
 <h3>Hintergrund</h3>
-<p>MINDESTENS 4 Saetze: Technischer Kontext und Vorgeschichte.</p>
-<p>MINDESTENS 4 Saetze: Beteiligte Technologien, Unternehmen, Standards.</p>
+<p>MINDESTENS 5 Saetze: Technischer Kontext und Vorgeschichte — erklaere den Stand der Technik vor dieser Neuigkeit.</p>
+<p>MINDESTENS 5 Saetze: Beteiligte Technologien, Unternehmen, Standards, Protokolle, Versionen.</p>
 
 <h3>Was ist neu?</h3>
 <p>MINDESTENS 4 Saetze: Genaue technische Details der Neuerung.</p>
