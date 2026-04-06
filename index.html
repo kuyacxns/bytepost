@@ -1,396 +1,77 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="dark">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BytePost — Tech News täglich in 5 Minuten</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>BytePost - Tech Deep Reads</title>
     <style>
-        :root {
-            --mono: 'Space Mono', monospace;
-            --display: 'Syne', sans-serif;
-            --body: 'DM Sans', sans-serif;
-            --bg: #f5f5f7;
-            --bg-card: #ffffff;
-            --text: #1d1d1f;
-            --text-2: #515154;
-            --text-3: #86868b;
-            --accent: #0071e3;
-            --border: rgba(0,0,0,0.08);
-            --radius: 14px;
-            --t: 0.2s ease;
-        }
-        [data-theme="dark"] {
-            --bg: #000;
-            --bg-card: #1c1c1e;
-            --text: #f5f5f7;
-            --text-2: #aeaeb2;
-            --text-3: #636366;
-            --border: rgba(255,255,255,0.1);
-        }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
-        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+        :root { --bg: #0a0a0a; --card: #161616; --text: #eaeaea; --accent: #00e5ff; --border: #222; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 0; margin: 0; }
+        
+        header { text-align: center; padding: 40px 20px; border-bottom: 1px solid var(--border); background: var(--card); }
+        header h1 { margin: 0; color: #fff; font-size: 2rem; }
+        header span { color: var(--accent); font-weight: bold; }
 
-        /* ── NAV (fixed) ── */
-        nav {
-            position: sticky; /* FIX: war "sticky;" ohne position: */
-            top: 0;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            height: 60px;
-            display: flex;
-            align-items: center;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+        #news-container { max-width: 700px; margin: 30px auto; padding: 0 15px; }
+        
+        .article-card { 
+            background: var(--card); border-radius: 16px; margin-bottom: 30px;
+            border: 1px solid var(--border); overflow: hidden; transition: 0.3s ease;
         }
-        .nav-inner { display: flex; justify-content: space-between; width: 100%; align-items: center; }
-        .logo { font-family: var(--display); font-size: 22px; font-weight: 800; text-decoration: none; color: var(--text); }
-        .logo em { color: var(--accent); font-style: normal; }
-
-        /* Dark Mode Toggle */
-        .theme-btn {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 6px 14px;
-            cursor: pointer;
-            font-family: var(--mono);
-            font-size: 11px;
-            color: var(--text-2);
-            transition: all var(--t);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-        /* ── HERO ── */
-        .hero { padding: 80px 0; text-align: center; border-bottom: 1px solid var(--border); }
-        .hero h1 { font-family: var(--display); font-size: clamp(40px, 8vw, 70px); line-height: 0.9; letter-spacing: -2px; margin-bottom: 20px; }
-        .hero h1 em { color: var(--accent); font-style: normal; }
-        .hero p { color: var(--text-3); font-size: 16px; }
-
-        /* ── FILTER TABS ── */
-        .filters {
-            display: flex;
-            gap: 8px;
-            padding: 24px 0 0;
-            flex-wrap: wrap;
-        }
-        .filter-btn {
-            background: transparent;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 6px 16px;
-            cursor: pointer;
-            font-family: var(--mono);
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--text-3);
-            transition: all var(--t);
-            text-transform: uppercase;
-        }
-        .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
-        .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-        /* ── GRID ── */
-        .page-grid { display: grid; grid-template-columns: 1fr 300px; gap: 50px; padding: 0 0 60px; }
-
-        /* ── ARTICLE CARDS ── */
-        .article {
-            padding: 20px 0;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            display: grid;
-            grid-template-columns: 1fr 80px;
-            gap: 20px;
-            transition: opacity var(--t);
-        }
-        .article:hover .article-title { color: var(--accent); }
-        .article-title { transition: color var(--t); font-size: 17px; font-weight: 600; margin: 6px 0 4px; }
-        .article.is-read { opacity: 0.45; }
-        .article.hidden { display: none; }
-
-        .tag {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: var(--mono);
-            font-size: 10px;
-            font-weight: 700;
-            background: var(--accent);
-            color: #fff;
-        }
-        .icon-box {
-            font-size: 30px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            transition: transform var(--t);
-        }
-        .article:hover .icon-box { transform: scale(1.05); }
-
-        /* ── SIDEBAR ── */
-        .sidebar { padding-top: 20px; }
-        .sidebar h3 { font-family: var(--display); margin-bottom: 10px; }
-        .sidebar p { color: var(--text-2); font-size: 14px; line-height: 1.6; }
-        .sidebar-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .read-count { font-family: var(--mono); font-size: 28px; font-weight: 700; color: var(--accent); }
-
-        /* ── MODAL ── */
-        .overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.75);
-            display: none;
-            align-items: start;
-            justify-content: center;
-            padding: 40px 20px;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            overflow-y: auto;
-        }
-        .overlay.open { display: flex; }
-        .modal {
-            background: var(--bg-card);
-            max-width: 700px;
-            width: 100%;
-            border-radius: 20px;
-            padding: 40px;
-            position: relative;
-            border: 1px solid var(--border);
-            animation: modal-in 0.25s ease;
-        }
-        @keyframes modal-in {
-            from { opacity: 0; transform: translateY(20px) scale(0.98); }
-            to   { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        .modal-close {
-            position: absolute;
-            top: 16px; right: 16px;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            width: 36px; height: 36px;
-            cursor: pointer;
-            font-size: 18px;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--text-2);
-            transition: all var(--t);
-        }
-        .modal-close:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-        .modal-meta { color: var(--text-3); font-size: 13px; font-family: var(--mono); margin-bottom: 24px; }
-        .modal-bd h3 { margin-top: 24px; margin-bottom: 8px; font-family: var(--display); }
-        .modal-bd p { color: var(--text-2); margin-bottom: 12px; }
-        .modal-bd ul { padding-left: 20px; color: var(--text-2); }
-        .modal-bd li { margin-bottom: 6px; }
-        .summary-box {
-            background: var(--bg);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 0 0 20px;
-            border-left: 4px solid var(--accent);
-        }
-        .summary-box h4 { font-family: var(--display); margin-bottom: 10px; color: var(--accent); }
-
-        /* ── EMPTY STATE ── */
-        .empty-state {
-            padding: 60px 0;
-            text-align: center;
-            color: var(--text-3);
-            font-family: var(--mono);
-            font-size: 13px;
+        
+        /* Bild-Styling */
+        .article-image { 
+            width: 100%; height: 250px; object-fit: cover; 
+            border-bottom: 1px solid var(--border); 
         }
 
-        /* ── RESPONSIVE ── */
-        @media (max-width: 900px) {
-            .page-grid { grid-template-columns: 1fr; }
-            .sidebar { display: none; }
-        }
+        .article-body { padding: 25px; }
+
+        .date-tag { font-size: 0.75rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        h2 { margin: 10px 0 15px 0; color: #fff; font-size: 1.5rem; line-height: 1.3; }
+        
+        .content { line-height: 1.7; color: #ccc; font-size: 1rem; }
+        .content h3 { color: #fff; margin-top: 20px; font-size: 1.1rem; }
+        .content ul { padding-left: 20px; color: #aaa; }
+        .content p { margin-bottom: 15px; }
+
+        .meta { font-size: 0.8rem; color: #666; margin-top: 25px; border-top: 1px solid var(--border); padding-top: 15px; text-align: right; }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="wrap nav-inner">
-            <a class="logo" href="#">Byte<em>Post</em></a>
-            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
-                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
-            </button>
-        </div>
-    </nav>
 
-    <div class="hero">
-        <div class="wrap">
-            <h1>Tech News.<br><em>In 5 Minuten.</em></h1>
-            <p>Täglich kuratierte Tech-News — zusammengefasst mit KI.</p>
-        </div>
-    </div>
+    <header>
+        <h1><span>Byte</span>Post</h1>
+        <p>Tech Deep Reads – Täglich frisch.</p>
+    </header>
 
-    <div class="wrap">
-        <div class="filters" id="filters">
-            <button class="filter-btn active" data-cat="all" onclick="setFilter('all', this)">Alle</button>
-            <!-- weitere Filter werden dynamisch ergänzt -->
+    <div id="news-container">
         </div>
-
-        <div class="page-grid">
-            <main id="feed"></main>
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h3>Über BytePost</h3>
-                    <p style="margin-top:8px;">Täglich kuratierte Tech-News, automatisch zusammengefasst mit Gemini KI.</p>
-                </div>
-                <div class="sidebar-card" style="margin-top:16px;">
-                    <div class="read-count" id="read-count">0</div>
-                    <p style="margin-top:4px;font-size:13px;">Artikel gelesen</p>
-                </div>
-            </aside>
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay" onclick="if(event.target.id==='overlay')closeModal()">
-        <div class="modal">
-            <button class="modal-close" onclick="closeModal()">✕</button>
-            <span class="tag" id="m-tag"></span>
-            <h2 id="m-title" style="font-family:var(--display);font-size:28px;margin:12px 0 4px;line-height:1.15;"></h2>
-            <p class="modal-meta" id="m-meta"></p>
-            <div id="m-body" class="modal-bd"></div>
-        </div>
-    </div>
 
     <script>
-        // ── Theme ──
-        (function() {
-            const saved = localStorage.getItem('bp_theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', saved);
-            updateThemeBtn(saved);
-        })();
-
-        function updateThemeBtn(theme) {
-            const icon = document.getElementById('theme-icon');
-            const label = document.getElementById('theme-label');
-            if (!icon) return;
-            if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
-            else                  { icon.textContent = '🌙'; label.textContent = 'Dark'; }
-        }
-
-        function toggleTheme() {
-            const current = document.documentElement.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('bp_theme', next);
-            updateThemeBtn(next);
-        }
-
-        // ── State ──
-        let ARTICLES = [];
-        let read = JSON.parse(localStorage.getItem('bp_read') || '[]');
-        let activeFilter = 'all';
-
-        // ── Load ──
-        async function load() {
+        async function loadNews() {
             try {
-                const res = await fetch('./data.json');
-                const data = await res.json();
-                ARTICLES = data.articles;
-                buildFilters();
-                render();
-                updateReadCount();
-            } catch (e) {
-                document.getElementById('feed').innerHTML =
-                    '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.<br>Stelle sicher, dass die Datei im selben Ordner liegt.</div>';
-            }
-        }
-
-        // ── Filters ──
-        function buildFilters() {
-            const cats = [...new Set(ARTICLES.map(a => a.cat))];
-            const container = document.getElementById('filters');
-            cats.forEach(cat => {
-                const tag = ARTICLES.find(a => a.cat === cat)?.tag || cat;
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-                btn.dataset.cat = cat;
-                btn.textContent = tag;
-                btn.onclick = () => setFilter(cat, btn);
-                container.appendChild(btn);
-            });
-        }
-
-        function setFilter(cat, btn) {
-            activeFilter = cat;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            render();
-        }
-
-        // ── Render ──
-        function render() {
-            const f = document.getElementById('feed');
-            const visible = activeFilter === 'all'
-                ? ARTICLES
-                : ARTICLES.filter(a => a.cat === activeFilter);
-
-            if (visible.length === 0) {
-                f.innerHTML = '<div class="empty-state">Keine Artikel in dieser Kategorie.</div>';
-                return;
-            }
-
-            f.innerHTML = visible.map(a => `
-                <div class="article ${read.includes(a.id) ? 'is-read' : ''}" onclick="openArt('${a.id}')">
-                    <div>
-                        <span class="tag">${a.tag}</span>
-                        <h3 class="article-title">${a.title}</h3>
-                        <p style="color:var(--text-3);font-size:13px;font-family:var(--mono);">${a.source} · ${a.read}</p>
+                const response = await fetch('data.json');
+                const data = await response.json();
+                const container = document.getElementById('news-container');
+                
+                container.innerHTML = data.articles.map(article => `
+                    <div class="article-card">
+                        ${article.image_local ? `<img src="${article.image_local}" alt="${article.title}" class="article-image">` : ''}
+                        <div class="article-body">
+                            <span class="date-tag">${article.date} • ${article.source}</span>
+                            <h2>${article.title}</h2>
+                            <div class="content">${article.content}</div>
+                            <div class="meta">🧠 Deep Read: ${article.read}</div>
+                        </div>
                     </div>
-                    <div class="icon-box">${a.icon}</div>
-                </div>
-            `).join('');
-        }
-
-        // ── Modal ──
-        function openArt(id) {
-            const a = ARTICLES.find(x => x.id === id);
-            document.getElementById('m-tag').textContent = a.tag;
-            document.getElementById('m-title').textContent = a.title;
-            document.getElementById('m-meta').textContent = `${a.source} · ${a.read} Lesezeit`;
-            document.getElementById('m-body').innerHTML = a.content;
-            document.getElementById('overlay').classList.add('open');
-            document.body.style.overflow = 'hidden';
-
-            if (!read.includes(id)) {
-                read.push(id);
-                localStorage.setItem('bp_read', JSON.stringify(read));
-                render();
-                updateReadCount();
+                `).join('');
+            } catch (e) {
+                console.error("Fehler beim Laden der News:", e);
             }
         }
 
-        function closeModal() {
-            document.getElementById('overlay').classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-        function updateReadCount() {
-            const el = document.getElementById('read-count');
-            if (el) el.textContent = read.length;
-        }
-
-        load();
+        loadNews();
     </script>
 </body>
 </html>
