@@ -1,107 +1,96 @@
-import google.generativeai as genai
+import requests
 import json
 import os
 import re
+import feedparser
+import time
 
 # ==========================================
-# 1. SETUP
+# 1. KONFIGURATION
 # ==========================================
-API_KEY = os.environ.get("GEMINI_API_KEY", "DEIN_API_KEY_HIER")
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+API_KEY = "AIzaSyBUVyNIeVmjE7MgVCOF6WbPJpR5uiJjU1A"
+MODEL_NAME = "gemini-3-flash-preview" # Dein funktionierendes 2026er Modell
+DATA_FILE = "data.json"
 
-def generate_news(article_url):
-    print(f"--- Starte Analyse für: {article_url} ---")
+# Deine Quellen
+FEEDS = {
+    "TechCrunch": "https://techcrunch.com/feed/",
+    "The Verge": "https://www.theverge.com/rss/index.xml",
+    "Wired": "https://www.wired.com/feed/rss"
+}
+
+# ==========================================
+# 2. KI-FUNKTION
+# ==========================================
+def ask_gemini(article_url, source_name):
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
     
     prompt = f"""
-    Analysiere diesen Artikel vollständig: {article_url}
-
-    Erstelle einen ausführlichen Eintrag für den 'BytePost' Tech-Newsletter auf DEUTSCH.
-    Der Inhalt soll ca. 5 Minuten Lesezeit haben (~800-1000 Wörter) und so detailliert sein,
-    dass der Leser den Originalartikel nicht mehr lesen muss.
-
-    Antworte NUR im JSON-Format mit exakt dieser Struktur:
-    {{
-        "id": "{os.urandom(4).hex()}",
-        "cat": "ki",
-        "tag": "KI",
-        "title": "Prägnante, neugierig machende Headline (max. 10 Wörter)",
-        "source": "Name der Website",
-        "read": "5 Min",
-        "icon": "passendes Emoji",
-        "content": "HIER KOMMT DER VOLLSTÄNDIGE HTML-INHALT"
+    Analysiere diesen Artikel: {article_url}
+    Erstelle einen JSON-Eintrag auf Deutsch für den BytePost-Newsletter.
+    Struktur: {{
+        "cat": "tech",
+        "tag": "Breaking",
+        "title": "Knackiger Titel",
+        "source": "{source_name}",
+        "read": "4 Min",
+        "icon": "⚡",
+        "content": "HTML-Zusammenfassung mit <h3> und <p> Tags. Max 3 Absätze."
     }}
-
-    Der "content" soll folgende Struktur haben (als ein langer HTML-String):
-
-    1. Highlights-Box:
-    <div class='summary-box'>
-      <h4>✦ Highlights</h4>
-      <ul>
-        <li>Wichtigster Punkt 1</li>
-        <li>Wichtigster Punkt 2</li>
-        <li>Wichtigster Punkt 3</li>
-        <li>Wichtigster Punkt 4</li>
-      </ul>
-    </div>
-
-    2. Dann 4-6 inhaltliche Abschnitte mit je einem <h3>Titel</h3> und 2-3 <p>Absätzen</p>.
-       Jeder Absatz soll 3-5 Sätze lang sein. Gehe wirklich in die Tiefe:
-       - Was ist passiert / worum geht es genau?
-       - Warum ist das relevant?
-       - Was sind die Hintergründe?
-       - Was bedeutet das für die Branche / Nutzer / Entwickler?
-       - Was sind mögliche Konsequenzen oder nächste Schritte?
-
-    3. Am Ende ein Fazit-Abschnitt:
-    <h3>💡 Fazit</h3>
-    <p>Ein abschließender Absatz mit persönlicher Einordnung und Ausblick.</p>
-
-    Schreibe journalistisch, informativ und auf Augenhöhe mit tech-affinen Lesern.
-    Keine Füllsätze, keine Wiederholungen. Jeder Satz soll einen Mehrwert haben.
-    Antworte NUR mit dem JSON-Code, kein weiterer Text, keine Markdown-Codeblöcke.
+    Antworte NUR mit purem JSON.
     """
 
     try:
-        response = model.generate_content(prompt)
-        text_response = response.text
+        response = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
+        if response.status_code != 200: return None
         
-        # JSON bereinigen
-        json_str = re.sub(r'```json|```', '', text_response).strip()
-        new_entry = json.loads(json_str)
-
-        # data.json laden oder neu erstellen
-        file_path = 'data.json'
-        if os.path.exists(file_path):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                try:
-                    data = json.load(f)
-                except json.JSONDecodeError:
-                    data = {"articles": []}
-        else:
-            data = {"articles": []}
-
-        # Neuen Artikel oben einfügen
-        data['articles'].insert(0, new_entry)
-
-        # Speichern als UTF-8
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
-        
-        print(f"✅ Erfolg! '{new_entry['title']}' wurde hinzugefügt.")
-        print(f"   Inhaltslänge: {len(new_entry['content'])} Zeichen")
-
-    except json.JSONDecodeError as e:
-        print(f"❌ JSON-Parsing-Fehler: {e}")
-        print(f"   Rohantwort von Gemini:\n{text_response[:500]}")
-    except Exception as e:
-        print(f"❌ Fehler: {e}")
+        raw_text = response.json()['candidates'][0]['content']['parts'][0]['text']
+        clean_json = re.sub(r'```json|```', '', raw_text).strip()
+        entry = json.loads(clean_json)
+        entry["id"] = os.urandom(4).hex()
+        return entry
+    except:
+        return None
 
 # ==========================================
-# 2. AUSFÜHRUNG
+# 3. HAUPT-LOGIK
 # ==========================================
-if __name__ == "__main__":
-    # HIER DIE URL EINTRAGEN:
-    ziel_url = "https://www.theverge.com/2024/3/13/24099434/apple-m3-macbook-air-review"
+def run_generator():
+    print(f"🚀 BytePost Generator startet (Modell: {MODEL_NAME})...")
     
-    generate_news(ziel_url)
+    # Bestehende Daten laden
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+            try: db = json.load(f)
+            except: db = {"articles": []}
+    else:
+        db = {"articles": []}
+
+    # Nur die Top 2 Artikel pro Feed verarbeiten (um API-Limits zu sparen)
+    for name, url in FEEDS.items():
+        print(f"--- Lese Feed: {name} ---")
+        feed = feedparser.parse(url)
+        
+        for post in feed.entries[:2]:
+            # Prüfen ob Titel schon existiert
+            if any(a['title'] == post.title for a in db['articles']):
+                print(f"  ⏭️ Überspringe (schon vorhanden): {post.title[:30]}...")
+                continue
+            
+            print(f"  🧠 KI analysiert: {post.title[:50]}...")
+            new_entry = ask_gemini(post.link, name)
+            
+            if new_entry:
+                db['articles'].insert(0, new_entry)
+                print(f"  ✅ Hinzugefügt!")
+                # Kurze Pause für die API-Quote
+                time.sleep(2) 
+
+    # Speichern
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(db, f, ensure_ascii=False, indent=4)
+    
+    print("\n✨ Fertig! Deine data.json ist aktuell.")
+
+if __name__ == "__main__":
+    run_generator()
