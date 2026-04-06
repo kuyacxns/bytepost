@@ -25,31 +25,55 @@ FEEDS = {
 def ask_gemini(article_url, source_name):
     api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
     
+    # Der neue "Deep Read" Prompt
     prompt = f"""
-    Analysiere diesen Artikel: {article_url}
-    Erstelle einen JSON-Eintrag auf Deutsch für den BytePost-Newsletter.
-    Struktur: {{
+    Analysiere diesen Artikel tiefgreifend: {article_url}
+    Erstelle einen ausführlichen JSON-Eintrag auf Deutsch für den BytePost-Newsletter.
+    
+    ZIEL: Der Leser soll nach dem Lesen alles Wichtige wissen, ohne die Originalquelle besuchen zu müssen.
+    
+    STRENGER AUFBAU DES 'content' Feldes (HTML):
+    1. Einleitung: Was ist passiert? (1 Absatz)
+    2. Die 3 wichtigsten Key-Points als <ul> Liste.
+    3. Eine kurze Analyse: Warum ist das für die Tech-Welt relevant?
+    4. Ein Fazit oder Ausblick.
+
+    JSON Struktur: {{
         "cat": "tech",
-        "tag": "Breaking",
-        "title": "Knackiger Titel",
+        "tag": "Deep Read",
+        "title": "Ein fesselnder, aussagekräftiger Titel",
         "source": "{source_name}",
-        "read": "4 Min",
-        "icon": "⚡",
-        "content": "HTML-Zusammenfassung mit <h3> und <p> Tags. Max 3 Absätze."
+        "read": "5 Min",
+        "icon": "🧠",
+        "content": "Hier der strukturierte HTML-Inhalt..."
     }}
     Antworte NUR mit purem JSON.
     """
 
+    # Konfiguration für längere Antworten
+    generation_config = {
+        "temperature": 0.7,
+        "maxOutputTokens": 2000, # Mehr Platz für die lange Zusammenfassung
+    }
+
     try:
-        response = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
-        if response.status_code != 200: return None
+        payload = {
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": generation_config
+        }
+        response = requests.post(api_url, json=payload)
+        
+        if response.status_code != 200: 
+            print(f"Fehler: {response.text}")
+            return None
         
         raw_text = response.json()['candidates'][0]['content']['parts'][0]['text']
         clean_json = re.sub(r'```json|```', '', raw_text).strip()
         entry = json.loads(clean_json)
         entry["id"] = os.urandom(4).hex()
         return entry
-    except:
+    except Exception as e:
+        print(f"Fehler bei der KI-Anfrage: {e}")
         return None
 
 # ==========================================
