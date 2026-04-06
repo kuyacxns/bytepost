@@ -157,6 +157,7 @@ def run():
             entry = ask_gemini(post.link, category)
             if entry:
                 entry["id"] = os.urandom(4).hex()
+                entry["url"] = post.link
                 image_query = entry.pop("image_query", "technology")
                 entry["image_local"] = get_unsplash_image(image_query, entry["id"])
                 db['articles'].insert(0, entry)
