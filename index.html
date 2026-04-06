@@ -72,7 +72,36 @@
 
         .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-family: var(--mono); font-size: 13px; }
 
-        @media (max-width: 900px) { .page-grid { grid-template-columns: 1fr; } .sidebar { display: none; } }
+        @media (max-width: 900px) {
+            .page-grid { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
+        }
+
+        @media (max-width: 600px) {
+            .logo { font-size: 18px; }
+            .logo img { width: 22px; height: 22px; }
+            .theme-btn span#theme-label { display: none; }
+            .theme-btn { padding: 6px 10px; }
+
+            .hero { padding: 40px 0; }
+            .hero p { font-size: 14px; }
+
+            .filters { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 4px; }
+            .filters::-webkit-scrollbar { display: none; }
+            .filter-btn { flex-shrink: 0; }
+
+            .article { grid-template-columns: 1fr 56px; gap: 12px; padding: 16px 0; }
+            .article-title { font-size: 16px; }
+            .icon-box { font-size: 22px; border-radius: 8px; }
+            .article:hover { transform: none; }
+
+            .overlay { padding: 0; align-items: flex-end; }
+            .modal { border-radius: 20px 20px 0 0; max-height: 92vh; overflow-y: auto; animation: modal-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+            @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
+            .modal-content-padding { padding: 24px 20px 40px; }
+            .modal-image { height: 180px; }
+            .modal-close { top: 14px; right: 14px; }
+        }
     </style>
 </head>
 <body>
