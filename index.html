@@ -1,345 +1,179 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="dark">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BytePost — Tech News täglich in 5 Minuten</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>BytePost | Deep Reads für Devs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --mono: 'Space Mono', monospace; --display: 'Syne', sans-serif; --body: 'DM Sans', sans-serif;
-            --bg: #f5f5f7; --bg-card: #ffffff; --text: #1d1d1f; --text-2: #515154; --text-3: #86868b;
-            --accent: #0071e3; --border: rgba(0,0,0,0.08); --radius: 14px; --t: 0.2s ease;
+            --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --accent: #38bdf8; --dim: #94a3b8;
         }
-        [data-theme="dark"] {
-            --bg: #0a0a0a; --bg-card: #141414; --text: #f5f5f7; --text-2: #aeaeb2; --text-3: #636366; --border: rgba(255,255,255,0.08);
+        body.light {
+            --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --accent: #0284c7; --dim: #64748b;
         }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
-        .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        * { box-sizing: border-box; transition: 0.2s ease; }
+        body { 
+            margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); 
+            line-height: 1.6;
+        }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* NAV */
-        nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); height: 56px; display: flex; align-items: center; z-index: 100; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-        .nav-inner { display: flex; justify-content: space-between; width: 100%; align-items: center; }
-        .logo { font-family: var(--display); font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        /* Navigation & Filter */
+        nav { 
+            background: var(--bg); border-bottom: 1px solid var(--dim); 
+            position: sticky; top: 0; z-index: 100; padding: 10px 0;
+        }
+        .nav-inner { display: flex; flex-direction: column; gap: 15px; }
+        .nav-top { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; text-decoration: none; color: var(--text); }
         .logo em { color: var(--accent); font-style: normal; }
-        .logo img { border-radius: 5px; }
 
-        .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
-        .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-        /* DATE HEADER */
-        .edition-bar { padding: 28px 0 20px; border-bottom: 1px solid var(--border); }
-        .edition-date { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.5px; }
-        .edition-title { font-family: var(--display); font-size: 28px; font-weight: 800; margin-top: 6px; line-height: 1.1; }
-        .edition-title em { color: var(--accent); font-style: normal; }
-        .edition-sub { font-size: 14px; color: var(--text-3); margin-top: 6px; }
-
-        /* ARTICLE LABEL (date | category) */
-        .article-label { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
-
-        /* HERO ARTICLE (first item) */
-        .article-hero { padding: 24px 0 28px; border-bottom: 1px solid var(--border); cursor: pointer; }
-        .hero-img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 18px; display: block; transition: opacity var(--t); }
-        .article-hero:hover .hero-img { opacity: 0.92; }
-        .hero-title { font-size: 24px; font-weight: 700; line-height: 1.3; margin-bottom: 10px; transition: color var(--t); }
-        .article-hero:hover .hero-title { color: var(--accent); }
-
-        /* ARTICLE ROW (subsequent items) */
-        .article-row { padding: 20px 0; border-bottom: 1px solid var(--border); cursor: pointer; display: grid; grid-template-columns: 1fr 96px; gap: 16px; align-items: start; }
-        .article-row:last-child { border-bottom: none; }
-        .article-row-body { min-width: 0; }
-        .article-row-title { font-size: 17px; font-weight: 700; line-height: 1.35; margin-bottom: 8px; transition: color var(--t); }
-        .article-row:hover .article-row-title { color: var(--accent); }
-
-        /* SHARED */
-        .article-summary { font-size: 15px; color: var(--text-2); line-height: 1.65; margin-bottom: 10px; }
-        .read-time { font-weight: 400; color: var(--text-3); }
-        .original-link { display: inline-block; margin-top: 6px; font-family: var(--mono); font-size: 11px; color: var(--text-3); text-decoration: underline; text-underline-offset: 3px; transition: color var(--t); }
-        .original-link:hover { color: var(--accent); }
-
-        .article-thumb { width: 96px; height: 72px; border-radius: 8px; object-fit: cover; background: var(--bg-card); border: 1px solid var(--border); flex-shrink: 0; transition: opacity var(--t); }
-        .article-thumb-icon { width: 96px; height: 72px; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
-        .article-row:hover .article-thumb { opacity: 0.85; }
-
-        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-family: var(--mono); font-size: 13px; }
-
-        /* MODAL */
-        .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: start; justify-content: center; padding: 40px 20px; z-index: 1000; backdrop-filter: blur(10px); overflow-y: auto; }
-        .overlay.open { display: flex; }
-        .modal { background: var(--bg-card); max-width: 700px; width: 100%; border-radius: 20px; position: relative; border: 1px solid var(--border); animation: modal-in 0.3s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden; }
-        @keyframes modal-in { from { opacity: 0; transform: scale(0.95) translateY(30px); } to { opacity: 1; transform: scale(1) translateY(0); } }
-
-        .modal-image { width: 100%; height: 280px; object-fit: cover; background: #222; }
-        .modal-content-padding { padding: 36px 40px; }
-        .modal-close { position: absolute; top: 18px; right: 18px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; color: #fff; font-size: 16px; z-index: 10; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); transition: all var(--t); }
-        .modal-close:hover { background: var(--accent); }
-
-        .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; background: var(--accent); color: #fff; text-transform: uppercase; }
-        .summary-box { background: var(--bg); padding: 18px 20px; border-radius: 10px; margin: 18px 0; border-left: 3px solid var(--accent); }
-        .summary-box h4 { font-family: var(--display); margin-bottom: 8px; color: var(--accent); font-size: 14px; }
-        .modal-bd h3 { margin-top: 22px; font-family: var(--display); color: var(--text); font-size: 18px; }
-        .modal-bd p { color: var(--text-2); margin-top: 10px; font-size: 15px; line-height: 1.7; }
-        .modal-bd ul { padding-left: 20px; color: var(--text-2); margin-top: 10px; }
-        .modal-bd li { margin-bottom: 6px; font-size: 14px; }
-
-        .like-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: 8px 16px; cursor: pointer; font-family: var(--mono); font-size: 12px; color: var(--text-3); transition: all var(--t); margin-top: 24px; }
-        .like-btn:hover { border-color: #ff3b30; color: #ff3b30; }
-        .like-btn.liked { background: rgba(255,59,48,0.1); border-color: #ff3b30; color: #ff3b30; }
-        .like-btn .heart { font-size: 14px; transition: transform 0.2s; }
-        .like-btn.liked .heart { transform: scale(1.3); }
-
-        /* FOOTER */
-        .footer { margin-top: 60px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
-        .footer-text { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-align: center; }
-
-        @media (max-width: 600px) {
-            .logo { font-size: 17px; }
-            .logo img { width: 22px; height: 22px; }
-            .theme-btn span#theme-label { display: none; }
-            .theme-btn { padding: 5px 9px; }
-            .edition-title { font-size: 22px; }
-            .hero-img { height: 180px; }
-            .hero-title { font-size: 20px; }
-            .article-thumb, .article-thumb-icon { width: 72px; height: 56px; }
-            .article-row { grid-template-columns: 1fr 72px; gap: 12px; }
-            .article-row-title { font-size: 15px; }
-            .overlay { padding: 0; align-items: flex-end; }
-            .modal { border-radius: 20px 20px 0 0; max-height: 92vh; overflow-y: auto; animation: modal-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
-            @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
-            .modal-content-padding { padding: 24px 20px 40px; }
-            .modal-image { height: 180px; }
-            .modal-close { top: 14px; right: 14px; }
+        .filter-bar { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+        .filter-btn { 
+            background: var(--card); border: 1px solid var(--dim); color: var(--text);
+            padding: 6px 15px; border-radius: 20px; cursor: pointer; white-space: nowrap;
         }
+        .filter-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+        /* Grid */
+        .feed { 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 30px; padding: 40px 0; 
+        }
+        .card { 
+            background: var(--card); border-radius: 12px; overflow: hidden; 
+            cursor: pointer; border: 1px solid transparent;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card-img { width: 100%; height: 200px; object-fit: cover; }
+        .card-body { padding: 20px; }
+        .tag { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--accent); }
+
+        /* Modal & Reading Progress */
+        .overlay { 
+            position: fixed; inset: 0; background: rgba(0,0,0,0.85); 
+            display: none; justify-content: center; overflow-y: auto; z-index: 1000;
+        }
+        .modal { 
+            background: var(--bg); width: 100%; max-width: 800px; 
+            margin: 40px 10px; border-radius: 16px; position: relative; height: fit-content;
+        }
+        #progress-bar { 
+            position: sticky; top: 0; height: 5px; background: var(--accent); 
+            width: 0%; z-index: 10; border-radius: 0 5px 5px 0;
+        }
+        .modal-content { padding: 40px; }
+        .modal-close { 
+            position: absolute; top: 20px; right: 20px; background: none; 
+            border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; 
+        }
+
+        /* Content Styling */
+        .summary-box { background: var(--card); padding: 20px; border-left: 4px solid var(--accent); margin: 20px 0; }
+        pre { background: #000; padding: 15px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', monospace; }
+        code { color: #8dd3f7; }
+
+        @media (max-width: 600px) { .feed { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="wrap nav-inner">
-            <a class="logo" href="#">
-                <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
-                Byte<em>Post</em>
-            </a>
-            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
-                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
-            </button>
+
+<nav>
+    <div class="wrap nav-inner">
+        <div class="nav-top">
+            <a class="logo" href="#">Byte<em>Post</em></a>
+            <button class="filter-btn" onclick="document.body.classList.toggle('light')">🌓 Theme</button>
         </div>
-    </nav>
-
-    <div class="wrap">
-        <div class="edition-bar" id="edition-bar">
-            <div class="edition-date" id="edition-date"></div>
-            <h1 class="edition-title">Tech News. <em>Täglich.</em></h1>
-            <p class="edition-sub">Kuratierte Deep-Reads — zusammengefasst mit KI.</p>
+        <div class="filter-bar" id="filters">
+            <button class="filter-btn active" onclick="filterData('All', this)">All</button>
+            <button class="filter-btn" onclick="filterData('KI', this)">KI</button>
+            <button class="filter-btn" onclick="filterData('Dev', this)">Dev</button>
+            <button class="filter-btn" onclick="filterData('Data', this)">Data</button>
+            <button class="filter-btn" onclick="filterData('Security', this)">Security</button>
         </div>
-
-        <div id="feed"></div>
-
-        <footer class="footer">
-            <p class="footer-text">BytePost · Täglich kuratierte Tech-News für Entwickler</p>
-        </footer>
     </div>
+</nav>
 
-    <div class="overlay" id="overlay" onclick="if(event.target.id==='overlay')closeModal()">
-        <div class="modal">
-            <button class="modal-close" onclick="closeModal()">✕</button>
-            <div id="m-img-container"></div>
-            <div class="modal-content-padding">
-                <span class="tag" id="m-tag"></span>
-                <h2 id="m-title" style="font-family:var(--display); font-size:28px; margin:14px 0 4px; line-height:1.15;"></h2>
-                <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px; margin-bottom:18px;"></p>
-                <div id="m-body" class="modal-bd"></div>
-                <button class="like-btn" id="like-btn" onclick="toggleLike()">
-                    <span class="heart">♥</span>
-                    <span id="like-label">Hilfreich</span>
-                    <span id="like-count"></span>
-                </button>
+<div class="wrap">
+    <div class="feed" id="feed">
+        <div class="card" style="height: 400px; background: var(--card); opacity: 0.5;"></div>
+        <div class="card" style="height: 400px; background: var(--card); opacity: 0.5;"></div>
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+        <div id="progress-bar"></div>
+        <button class="modal-close" onclick="document.getElementById('overlay').style.display='none'">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+    </div>
+</div>
+
+<script>
+    let ARTICLES = [];
+
+    async function load() {
+        try {
+            const r = await fetch('data.json');
+            const data = await r.json();
+            ARTICLES = data.articles;
+            render(ARTICLES);
+        } catch (e) {
+            document.getElementById('feed').innerHTML = "Fehler beim Laden der Daten.";
+        }
+    }
+
+    function render(items) {
+        const feed = document.getElementById('feed');
+        feed.innerHTML = items.map(a => `
+            <div class="card" onclick="openModal(${a.id})">
+                <img src="${a.image}" class="card-img" alt="">
+                <div class="card-body">
+                    <div class="tag">${a.icon} ${a.tag}</div>
+                    <h2 style="margin: 10px 0">${a.title}</h2>
+                    <div style="font-size: 0.8rem; color: var(--dim)">
+                        ${a.date} • ${a.read} Read • ${a.source}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        `).join('');
+    }
 
-    <script>
-        (function() {
-            const saved = localStorage.getItem('bp_theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', saved);
-            updateThemeBtn(saved);
-        })();
+    function filterData(tag, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filtered = tag === 'All' ? ARTICLES : ARTICLES.filter(a => a.tag === tag);
+        render(filtered);
+    }
 
-        function updateThemeBtn(theme) {
-            const icon = document.getElementById('theme-icon');
-            const label = document.getElementById('theme-label');
-            if (!icon) return;
-            if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
-            else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
-        }
+    function openModal(id) {
+        const a = ARTICLES.find(x => x.id === id);
+        const overlay = document.getElementById('overlay');
+        document.getElementById('modal-content').innerHTML = `
+            <div class="tag">${a.tag}</div>
+            <h1 style="font-size: 2.5rem; margin: 10px 0;">${a.title}</h1>
+            <img src="${a.image}" style="width:100%; border-radius:12px; margin: 20px 0;">
+            <div class="article-text">${a.content}</div>
+        `;
+        overlay.style.display = 'flex';
+        overlay.scrollTop = 0;
+    }
 
-        function toggleTheme() {
-            const current = document.documentElement.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('bp_theme', next);
-            updateThemeBtn(next);
-        }
+    // Progress Bar Logik
+    document.getElementById('overlay').onscroll = function() {
+        const winScroll = this.scrollTop;
+        const height = this.scrollHeight - this.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
 
+    function closeModal(e) {
+        document.getElementById('overlay').style.display = 'none';
+    }
 
-        let ARTICLES = [];
-        let currentArticleId = null;
-        let likes = JSON.parse(localStorage.getItem('bp_likes') || '{}');
+    load();
+</script>
 
-        async function load() {
-            try {
-                const res = await fetch('./data.json');
-                const data = await res.json();
-                ARTICLES = data.articles;
-                ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
-                setEditionDate();
-                render();
-            } catch (e) {
-                document.getElementById('feed').innerHTML = '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.</div>';
-            }
-        }
-
-        function parseArticleDate(dateStr) {
-            if (!dateStr) return new Date(0);
-            const parts = dateStr.split('.');
-            if (parts.length !== 3) return new Date(0);
-            return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
-        }
-
-        function formatLabel(dateStr, tag) {
-            const d = parseArticleDate(dateStr);
-            if (!dateStr || d.getTime() === new Date(0).getTime()) return tag;
-            const day = String(d.getDate()).padStart(2, '0');
-            const month = d.toLocaleDateString('de-DE', { month: 'short' });
-            return `${day}. ${month} | ${tag}`;
-        }
-
-        function setEditionDate() {
-            const el = document.getElementById('edition-date');
-            const d = new Date();
-            el.textContent = d.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            const todayStr = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
-            const count = ARTICLES.filter(a => a.date === todayStr).length;
-            const subEl = document.getElementById('edition-sub');
-            if (subEl && count > 0) subEl.textContent = `${count} neue Artikel heute · Kuratierte Deep-Reads auf Deutsch`;
-        }
-
-        function extractSummary(html) {
-            const div = document.createElement('div');
-            div.innerHTML = html;
-            const summaryBox = div.querySelector('.summary-box');
-            if (summaryBox) {
-                const li = summaryBox.querySelector('li');
-                if (li) {
-                    const text = li.textContent.trim();
-                    return text.length > 220 ? text.substring(0, 220) + '…' : text;
-                }
-            }
-            const p = div.querySelector('p');
-            if (p) {
-                const text = p.textContent.trim();
-                return text.length > 220 ? text.substring(0, 220) + '…' : text;
-            }
-            return '';
-        }
-
-        function renderOriginalLink(a) {
-            if (!a.url) return '';
-            return `<a class="original-link" href="${a.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Original bei ${a.source} lesen →</a>`;
-        }
-
-        function render() {
-            if (!ARTICLES.length) {
-                document.getElementById('feed').innerHTML = '<div class="empty-state">Keine Artikel vorhanden.</div>';
-                return;
-            }
-
-            const [first, ...rest] = ARTICLES;
-
-            // Hero article (first/newest)
-            const heroSummary = extractSummary(first.content);
-            const heroLabel = formatLabel(first.date, first.tag);
-            const heroHtml = `
-                <div class="article-hero" onclick="openArt('${first.id}')">
-                    ${first.image_local ? `<img class="hero-img" src="${first.image_local}" alt="">` : ''}
-                    <div class="article-label">${heroLabel}</div>
-                    <h2 class="hero-title">${first.title} <span class="read-time">(${first.read})</span></h2>
-                    ${heroSummary ? `<p class="article-summary">${heroSummary}</p>` : ''}
-                    ${renderOriginalLink(first)}
-                </div>`;
-
-            // Remaining articles
-            const rowsHtml = rest.map(a => {
-                const summary = extractSummary(a.content);
-                const label = formatLabel(a.date, a.tag);
-                const thumb = a.image_local
-                    ? `<img class="article-thumb" src="${a.image_local}" alt="">`
-                    : `<div class="article-thumb-icon">${a.icon}</div>`;
-                return `
-                    <div class="article-row" onclick="openArt('${a.id}')">
-                        <div class="article-row-body">
-                            <div class="article-label">${label}</div>
-                            <div class="article-row-title">${a.title} <span class="read-time">(${a.read})</span></div>
-                            ${summary ? `<p class="article-summary">${summary}</p>` : ''}
-                            ${renderOriginalLink(a)}
-                        </div>
-                        ${thumb}
-                    </div>`;
-            }).join('');
-
-            document.getElementById('feed').innerHTML = heroHtml + rowsHtml;
-        }
-
-        function openArt(id) {
-            const a = ARTICLES.find(x => x.id === id);
-            currentArticleId = id;
-            document.getElementById('m-tag').textContent = a.tag;
-            document.getElementById('m-title').textContent = a.title;
-            document.getElementById('m-meta').textContent = `${a.source}${a.date ? ' · ' + a.date : ''} · ${a.read} Lesezeit`;
-            const originalHtml = a.url
-                ? `<a href="${a.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--text-3);text-decoration:underline;text-underline-offset:3px;">Original bei ${a.source} lesen →</a>`
-                : '';
-            document.getElementById('m-body').innerHTML = a.content + originalHtml;
-            document.getElementById('m-img-container').innerHTML = a.image_local ? `<img src="${a.image_local}" class="modal-image">` : '';
-            updateLikeBtn(id);
-            document.getElementById('overlay').classList.add('open');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function updateLikeBtn(id) {
-            const btn = document.getElementById('like-btn');
-            const count = likes[id] || 0;
-            const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
-            btn.className = 'like-btn' + (isLiked ? ' liked' : '');
-            document.getElementById('like-label').textContent = isLiked ? 'Hilfreich!' : 'Hilfreich';
-            document.getElementById('like-count').textContent = count > 0 ? count : '';
-        }
-
-        function toggleLike() {
-            const id = currentArticleId;
-            const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
-            if (isLiked) {
-                localStorage.removeItem('bp_liked_' + id);
-                likes[id] = Math.max(0, (likes[id] || 1) - 1);
-                if (likes[id] === 0) delete likes[id];
-            } else {
-                localStorage.setItem('bp_liked_' + id, '1');
-                likes[id] = (likes[id] || 0) + 1;
-            }
-            localStorage.setItem('bp_likes', JSON.stringify(likes));
-            updateLikeBtn(id);
-            render();
-        }
-
-        function closeModal() {
-            document.getElementById('overlay').classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-        load();
-    </script>
 </body>
 </html>
