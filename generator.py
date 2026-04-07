@@ -78,7 +78,7 @@ Erstelle exakt dieses JSON-Objekt (kein Text davor/danach, keine Markdown-Backti
     "image_query": "2 englische Suchbegriffe für ein cooles Unsplash-Foto",
     "content": "Der HTML-String (max. 800 Zeichen, Du-Form, fette Begriffe, 1 Liste)"
 }}
-
+"""
 
     try:
         r = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
