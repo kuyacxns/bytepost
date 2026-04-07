@@ -4,8 +4,8 @@ from PIL import Image # Neu: Für Bildoptimierung
 from io import BytesIO
 
 # --- SETUP ---
-API_KEY = ""
-UNSPLASH_KEY = ""
+API_KEY = "AIzaSyCDjSDM3y_DtRGCkveILJma8dH-paEq284"
+UNSPLASH_KEY = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
 TEXT_MODEL = "gemini-2.5-flash"
 DATA_FILE = "data.json"
 MAX_ARTICLES = 50 # Neu: Damit die Datei nicht zu groß wird
