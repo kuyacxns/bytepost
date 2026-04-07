@@ -48,71 +48,37 @@ def ask_gemini(url, category):
     api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL}:generateContent?key={API_KEY}"
     heute = datetime.now().strftime("%d.%m.%Y")
 
-    prompt = f"""Du bist ein professioneller Tech-Journalist der speziell fuer Softwareentwickler, Data Engineers und KI-Experten in Deutschland schreibt.
+    prompt = f"""Du bist nicht nur ein KI-Bot, sondern der Host von 'BytePost', dem frechsten Tech-Newsletter für Deutschlands Entwickler-Elite. Deine Leser sind Profis in Python, SQL, Kubernetes und Cloud-Architektur.
 
-Analysiere diesen Artikel vollstaendig: {url}
+Analysiere diesen Artikel: {url}
 
-WICHTIG: Der content-Wert MUSS mindestens 1000 Woerter lang sein. Kuerzere Antworten sind UNGUELTIG und werden verworfen.
+DEINE MISSION:
+Schreibe eine fesselnde, extrem kompakte Zusammenfassung auf Deutsch, die den Leser direkt packt. 
 
-Erstelle ein JSON-Objekt fuer den BytePost Newsletter:
+STIL-GUIDE FÜR 'BYTEPOST':
+1. **Direkte Ansprache:** Nutze die "Du"-Form ("Du solltest wissen...", "Stell dir vor...").
+2. **Persönlichkeit:** Sei journalistisch, aber mit einer Prise Ironie, Begeisterung oder gesundem Skeptizismus. Kein trockenes Bla-Bla!
+3. **Länge:** Der gesamte 'content' darf ABSOLUT MAXIMAL 800 ZEICHEN (inklusive Leerzeichen) haben. 
+4. **Tech-Sprech:** Nutze Fachbegriffe (LLM, Sharding, Latenz, CI/CD) ohne sie zu erklären. 
+5. **Keine Verweise:** Sätze wie "Lies mehr im Original" sind streng verboten. Sei die alleinige Wissensquelle.
+
+FORMATIERUNG IM CONTENT:
+- Nutze `<strong>...</strong>` für die 2-3 wichtigsten Kernbegriffe.
+- Nutze eine kurze Liste `<ul><li>...</li></ul>` für maximal 3 technische Highlights.
+- Keine H3-Überschriften, keine summary-box. Nur flüssiger Text und die Liste.
+
+Erstelle exakt dieses JSON-Objekt (kein Text davor/danach, keine Markdown-Backticks):
 {{
     "cat": "ki/dev/data/security/cloud/hardware/business",
     "tag": "Exakt ein Wert aus: KI, Dev, Data, Security, Cloud, Hardware, Business",
-    "icon": "Emoji",
-    "title": "Praegnante deutsche Headline (max. 10 Woerter)",
+    "icon": "Passendes Emoji",
+    "title": "Klickstarke, freche Headline (max. 10 Wörter)",
     "source": "Quellenname",
-    "read": "5 Min",
-    "image_query": "2-3 englische Suchbegriffe fuer passendes Foto (z.B. 'machine learning code')",
-    "content": "MINDESTENS 1000 WOERTER HTML"
+    "read": "1 Min",
+    "image_query": "2 englische Suchbegriffe für ein cooles Unsplash-Foto",
+    "content": "Der HTML-String (max. 800 Zeichen, Du-Form, fette Begriffe, 1 Liste)"
 }}
 
-Kategorien:
-- KI/ML/LLMs: cat=ki, tag=KI
-- Software/Tools/Frameworks: cat=dev, tag=Dev
-- Data Engineering/Analytics: cat=data, tag=Data
-- Cloud/DevOps/Infrastructure: cat=cloud, tag=Cloud
-- Security/Privacy: cat=security, tag=Security
-- Hardware/Chips: cat=hardware, tag=Hardware
-- Business/Startups: cat=business, tag=Business
-
-Schreibe fuer ein Publikum das: Python, SQL, Spark, Databricks, dbt, Kubernetes, Docker kennt.
-Nutze Fachbegriffe ohne sie zu erklaeren. Gehe tief in technische Details.
-
-ABSOLUT VERBOTEN im content:
-- Saetze wie "Lesen Sie den Originalartikel fuer mehr Details"
-- Saetze wie "Laut dem Originalbericht" oder "Gemaess dem Quelltext"
-- Jegliche Aufforderung, eine externe Quelle zu besuchen
-- Formulierungen wie "weitere Informationen finden Sie unter" oder "der vollstaendige Artikel beschreibt"
-Ziel: Ein eigenstaendiger journalistischer Bericht — alle relevanten Informationen sind enthalten.
-Schreibe direkte Aussagen: Nicht "Laut Bericht hat X..." sondern "X hat...".
-
-Der content MUSS diese Struktur haben:
-
-<div class='summary-box'><h4>Highlights</h4><ul><li>Technischer Fakt 1</li><li>Technischer Fakt 2</li><li>Technischer Fakt 3</li><li>Technischer Fakt 4</li></ul></div>
-
-<h3>Hintergrund</h3>
-<p>MINDESTENS 5 Saetze: Technischer Kontext und Vorgeschichte — erklaere den Stand der Technik vor dieser Neuigkeit.</p>
-<p>MINDESTENS 5 Saetze: Beteiligte Technologien, Unternehmen, Standards, Protokolle, Versionen.</p>
-
-<h3>Was ist neu?</h3>
-<p>MINDESTENS 4 Saetze: Genaue technische Details der Neuerung.</p>
-<p>MINDESTENS 4 Saetze: Benchmarks, Metriken, Spezifikationen.</p>
-
-<h3>Praxisrelevanz fuer Entwickler</h3>
-<p>MINDESTENS 4 Saetze: Konkrete Auswirkungen auf den Arbeitsalltag.</p>
-<p>MINDESTENS 4 Saetze: Welche Workflows, Tools oder Architekturen aendern sich?</p>
-
-<h3>Kritische Perspektive</h3>
-<p>MINDESTENS 4 Saetze: Schwachstellen, Trade-offs, offene Fragen.</p>
-<p>MINDESTENS 4 Saetze: Vergleich mit bestehenden Loesungen.</p>
-
-<h3>Ausblick</h3>
-<p>MINDESTENS 4 Saetze: Roadmap, naechste Versionen, Trends.</p>
-
-<h3>Fazit</h3>
-<p>MINDESTENS 4 Saetze: Einordnung und Empfehlung fuer die Zielgruppe.</p>
-
-Antworte NUR mit dem JSON. Kein Text davor oder danach. Keine Markdown-Codeblöcke."""
 
     try:
         r = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
