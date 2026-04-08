@@ -134,7 +134,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             },
             json={
                 "model": MODEL,
-                "max_tokens": 1200,
+                "max_tokens": 1800,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=30,
@@ -145,7 +145,10 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             return None
 
         raw = r.json()["choices"][0]["message"]["content"].strip()
-        data = json.loads(re.sub(r"```json|```", "", raw).strip())
+        clean = re.sub(r"```json|```", "", raw).strip()
+        # Literal-Newlines in JSON-Strings sind ungültig — durch Leerzeichen ersetzen
+        clean = re.sub(r'\n', ' ', clean)
+        data = json.loads(clean)
         data["date"] = heute
         tokens = r.json().get("usage", {})
         print(f"  -> OK | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
