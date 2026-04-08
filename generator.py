@@ -83,30 +83,29 @@ def ask_gemini(url, category, rss_title="", rss_summary=""):
 {source_block}
 
 DEINE AUFGABE:
-Schreibe eine deutsche Zusammenfassung, die der Leser gerne liest — ohne danach noch das Original aufrufen zu müssen. Der Text soll informativ und leicht unterhaltsam sein, aber nicht reißerisch.
+Schreibe einen ausführlichen deutschen Bericht über dieses Thema. Der Leser soll danach vollständig informiert sein — als hätte er den Originalartikel selbst gelesen, nur auf Deutsch und besser strukturiert.
 
 STIL:
-- Schreib in der "Du"-Form, direkt und klar
-- Gib dem Leser das Gefühl, einen schlauen Kollegen zu hören — nicht eine Pressemitteilung
-- Konkrete Fakten, Zahlen und Details aus dem Artikel verwenden
-- Eine kurze eigene Einordnung am Ende ("Was das bedeutet:", max. 1 Satz)
-- Kein unnötiger Fülltext, keine Phrasen wie "In einer Welt, in der..."
+- "Du"-Form, direkt wie ein gut informierter Kollege
+- Alle wichtigen Fakten, Zahlen, Namen und Hintergründe aus dem Artikel einbauen
+- Eigene Einordnung: Was bedeutet das für Entwickler? Was kommt als nächstes?
+- Kein Fülltext, keine leeren Phrasen — jeder Satz muss Information tragen
 
-FORMAT für "content" (Standard):
-- 1 einleitender Satz was passiert ist (fett: 1-2 Kernbegriffe mit <strong>)
-- 2-3 Sätze mit den wichtigsten Details
-- Eine kurze Liste <ul> mit max. 3 konkreten Punkten
-- Abschluss: <p><em>Was das bedeutet: ...</em></p>
-- Länge: 150-220 Wörter
+FORMAT für "content" (Hauptbericht):
+- <p><strong>Einleitungssatz</strong> der das Wichtigste auf den Punkt bringt</p>
+- 2-3 Absätze <p> mit dem vollständigen Kontext: Was ist passiert, warum, wie, wer
+- <ul> mit 3-5 konkreten Details, Zahlen oder Kernaussagen aus dem Artikel
+- Abschluss: <p><em>Einordnung: Was das für dich als Entwickler bedeutet.</em></p>
+- Länge: 250-350 Wörter
 
 FORMAT für "content_simple":
-- Dieselbe Story, aber ohne Fachbegriffe — erklär es wie einem interessierten Freund
-- 80-100 Wörter, kein HTML außer <strong> für 1 Begriff
+- Dieselbe Story verständlich für Tech-Einsteiger, ohne Fachbegriffe
+- 120-150 Wörter, gleiche HTML-Struktur
 
 FORMAT für "content_pro":
-- Technische Tiefe: Architektur-Details, mögliche Implikationen für eigene Systeme
-- Darf Fachbegriffe voraussetzen (LLM, CI/CD, Sharding, etc.)
-- 180-250 Wörter, gleiche HTML-Struktur wie content
+- Maximale technische Tiefe: Architektur, Trade-offs, Implikationen für eigene Systeme
+- Fachbegriffe erlaubt und erwünscht (LLM, RLHF, Sharding, CI/CD, etc.)
+- 300-400 Wörter, gleiche HTML-Struktur
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
 
