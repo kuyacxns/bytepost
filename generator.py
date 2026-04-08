@@ -52,7 +52,7 @@ def get_unsplash_image(query, article_id):
         print(f"  -> Bildfehler: {e}")
         return None
 
-def fetch_article_text(url, max_chars=4000):
+def fetch_article_text(url, max_chars=8000):
     """Lädt den Artikel und extrahiert den Haupttext."""
     try:
         r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
@@ -78,34 +78,29 @@ def ask_gemini(url, category, rss_title="", rss_summary=""):
     combined = " ".join(filter(None, [rss_title, rss_summary, article_text]))
     source_block = f"ARTIKELINHALT:\n{combined[:4500]}" if combined.strip() else f"URL: {url}"
 
-    prompt = f"""Du schreibst für 'BytePost' — einen deutschen Tech-Newsletter für Entwickler.
+    prompt = f"""Du bist Redakteur bei 'BytePost', einem deutschen Tech-Newsletter für Entwickler.
 
 {source_block}
 
 DEINE AUFGABE:
-Schreibe einen ausführlichen deutschen Bericht über dieses Thema. Der Leser soll danach vollständig informiert sein — als hätte er den Originalartikel selbst gelesen, nur auf Deutsch und besser strukturiert.
+Übersetze und übertrage diesen Artikel vollständig ins Deutsche. Der Leser soll nach dem Lesen deines Textes den Originalartikel nicht mehr aufrufen müssen — er hat alle Informationen. Nutze ALLE Fakten, Zitate, Zahlen und Details aus dem Originaltext.
 
 STIL:
-- "Du"-Form, direkt wie ein gut informierter Kollege
-- Alle wichtigen Fakten, Zahlen, Namen und Hintergründe aus dem Artikel einbauen
-- Eigene Einordnung: Was bedeutet das für Entwickler? Was kommt als nächstes?
-- Kein Fülltext, keine leeren Phrasen — jeder Satz muss Information tragen
+- Fließender, gut lesbarer Journalismus auf Deutsch
+- Direkte "Du"-Ansprache wo es passt
+- Konkrete Fakten und Zitate aus dem Original behalten
+- Am Ende: kurze eigene Einordnung für Entwickler
 
-FORMAT für "content" (Hauptbericht):
-- <p><strong>Einleitungssatz</strong> der das Wichtigste auf den Punkt bringt</p>
-- 2-3 Absätze <p> mit dem vollständigen Kontext: Was ist passiert, warum, wie, wer
-- <ul> mit 3-5 konkreten Details, Zahlen oder Kernaussagen aus dem Artikel
-- Abschluss: <p><em>Einordnung: Was das für dich als Entwickler bedeutet.</em></p>
-- Länge: 250-350 Wörter
+FORMAT für "content" (vollständiger Artikel auf Deutsch):
+- <h3>kurze Zwischenüberschriften</h3> zur Strukturierung
+- Mehrere <p>-Absätze mit dem vollständigen Inhalt des Originals
+- <ul> für Aufzählungen aus dem Original
+- Abschluss: <p><em>BytePost-Einordnung: ...</em></p>
+- Länge: 400-600 Wörter — so lang wie nötig um den vollen Artikel abzudecken
 
-FORMAT für "content_simple":
-- Dieselbe Story verständlich für Tech-Einsteiger, ohne Fachbegriffe
-- 120-150 Wörter, gleiche HTML-Struktur
-
-FORMAT für "content_pro":
-- Maximale technische Tiefe: Architektur, Trade-offs, Implikationen für eigene Systeme
-- Fachbegriffe erlaubt und erwünscht (LLM, RLHF, Sharding, CI/CD, etc.)
-- 300-400 Wörter, gleiche HTML-Struktur
+FORMAT für "content_simple" (kompakte Version für Einsteiger):
+- Kernaussagen ohne Fachbegriffe, mit Alltagsvergleichen
+- 150-200 Wörter, gleiche HTML-Struktur ohne h3
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
 
@@ -119,9 +114,8 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
-    "content": "HTML Standard-Zusammenfassung",
-    "content_simple": "HTML Einfach-Version",
-    "content_pro": "HTML Profi-Version"
+    "content": "Vollständiger Artikel auf Deutsch (HTML mit h3, p, ul)",
+    "content_simple": "Kompakte Version für Einsteiger (HTML)"
 }}"""
 
     try:
@@ -133,7 +127,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             },
             json={
                 "model": MODEL,
-                "max_tokens": 1800,
+                "max_tokens": 3000,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=30,
