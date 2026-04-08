@@ -1,6 +1,146 @@
 {
     "articles": [
         {
+            "cat": "dev",
+            "tag": "Dev",
+            "icon": "💻",
+            "title": "C-Designer hilft bei Code-Problemen",
+            "source": "Stack Overflow Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "content": "Der Artikel über den Designer von <strong>C</strong> und dessen Lösungen für Code-Probleme. Highlights: <ul><li>Effiziente Programmierung</li><li><strong>System-Programmierung</strong></li><li>Problem-Lösungen</li></ul>",
+            "content_simple": "Ein Mann hat eine Programmiersprache namens C entwickelt, um Code-Probleme zu lösen. Damit kann man effiziente und schnelle Programme schreiben.",
+            "content_pro": "Der Designer von <strong>C</strong> hat die Sprache so konzipiert, dass sie <strong>System-Programmierung</strong> und effiziente <strong>Low-Level-Programmierung</strong> ermöglicht. Dies hat weitreichende Implikationen für die <strong>Software-Architektur</strong>.",
+            "date": "08.04.2026",
+            "id": "6b027504",
+            "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6b027504.jpg",
+            "pick": false,
+            "related": [
+                "e79f2e0c",
+                "07508729",
+                "f13df404"
+            ]
+        },
+        {
+            "cat": "hardware",
+            "tag": "Hardware",
+            "icon": "💻",
+            "title": "Neue Nothing-CMF-Buds",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "content": "Nothing bringt die <strong>CMF-Buds 2A</strong> mit <strong>AKG-Treibern</strong> und <strong>Wireless-Technologie</strong> auf den Markt. Highlights: <ul><li>Neue Lautsprecher-Technologie</li><li>Verbesserte Klangqualität</li><li>Günstiger als vorher</li></ul>",
+            "content_simple": "Neue Wireless-Ohrhörer von Nothing. Bessere Klangqualität, günstiger.",
+            "content_pro": "Die <strong>CMF-Buds 2A</strong> nutzen <strong>AKG-Treiber</strong> und <strong>Bluetooth-Technologie</strong> für bessere Klangübertragung. Diese Architektur ermöglicht eine effizientere Datenübertragung und reduziert die Latenz.",
+            "date": "08.04.2026",
+            "id": "c135a521",
+            "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c135a521.jpg",
+            "pick": false,
+            "related": [
+                "107f5498",
+                "e43fb567",
+                "b878ae09"
+            ]
+        },
+        {
+            "cat": "dev",
+            "tag": "Dev",
+            "icon": "🖥️",
+            "title": "Windows Control Panel wird abgeschafft",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "content": "Microsoft plant, das <strong>Windows Control Panel</strong> durch <strong>Einstellungen</strong> zu ersetzen. Hier sind die Highlights: <ul><li>Modernisierung der Benutzeroberfläche</li><li>Verbesserung der Bedienung</li><li>Einheitliche Oberfläche</li></ul>",
+            "content_simple": "Microsoft ändert die Art, wie man <strong>Einstellungen</strong> an seinem Computer ändert. Statt eines alten Menüs gibt es bald eine neue Oberfläche.",
+            "content_pro": "Die <strong>Windows-Architektur</strong> wird durch die Abschaffung des Control Panels und die Einführung einer neuen <strong>Einstellungen</strong>-App modernisiert. Dies hat Auswirkungen auf die <strong>Systemkonfiguration</strong>.",
+            "date": "08.04.2026",
+            "id": "e79f2e0c",
+            "url": "https://www.theverge.com/news/908624/microsoft-windows-control-panel-removal-explanation",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e79f2e0c.jpg",
+            "pick": false,
+            "related": [
+                "6b027504",
+                "07508729",
+                "f13df404"
+            ]
+        },
+        {
+            "cat": "ki",
+            "tag": "KI",
+            "icon": "🤖",
+            "title": "Kleine KI-Modelle im Fokus",
+            "source": "TechCrunch",
+            "read": "2",
+            "sentiment": "positiv",
+            "content": "Tiny Open-Source-AI-Model-Maker <strong>Arcee</strong> gewinnt an Fahrt. Diese Plattform ermöglicht es Entwicklern, eigene KI-Modelle zu erstellen. Hier sind einige Highlights: <ul><li>Schnellere Entwicklung von KI-Modellen</li><li>Einfachere Integration in bestehende Systeme</li><li>Open-Source-Lösung für mehr Transparenz</ul>",
+            "content_simple": "Eine neue Plattform ermöglicht es, eigene KI-Modelle zu erstellen. Das ist wie ein Baukasten für künstliche Intelligenz.",
+            "content_pro": "Die <strong>Open-Source</strong>-Plattform <strong>Arcee</strong> ermöglicht es, eigene KI-Modelle mit <strong>Machine-Learning</strong>-Algorithmen zu erstellen. Dies bietet neue Möglichkeiten für die Integration von KI in bestehende Systeme und Anwendungen.",
+            "date": "08.04.2026",
+            "id": "534a3ceb",
+            "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/534a3ceb.jpg",
+            "pick": false,
+            "related": [
+                "d9f5ae78",
+                "50b12832",
+                "ea421b53"
+            ]
+        },
+        {
+            "cat": "ki",
+            "tag": "KI",
+            "icon": "🤖",
+            "title": "Google veröffentlicht Offline-KI-Diktat-App",
+            "source": "TechCrunch",
+            "read": "2",
+            "sentiment": "positiv",
+            "content": "Google hat <strong>Offline-First</strong>-KI-Diktat-App auf iOS veröffentlicht. <ul><li>Ohne Internet</li><li>Mit <strong>KI-Algorithmus</strong></li><li>Für iOS</li></ul>",
+            "content_simple": "Google hat eine App entwickelt, die <strong>ohne Internet</strong> funktioniert und Diktate mithilfe von KI aufzeichnet.",
+            "content_pro": "Google hat eine <strong>Offline-First</strong>-KI-Diktat-App auf iOS veröffentlicht, die eine lokale <strong>AI-Engine</strong> nutzt, um Diktate zu verarbeiten. Dies hat Architektur-Implikationen für die Entwicklung von <strong>Edge-AI-Anwendungen</strong>.",
+            "date": "08.04.2026",
+            "id": "d9f5ae78",
+            "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d9f5ae78.jpg",
+            "pick": false,
+            "related": [
+                "534a3ceb",
+                "50b12832",
+                "ea421b53"
+            ]
+        },
+        {
             "cat": "data",
             "tag": "Data",
             "icon": "📊",
@@ -21,7 +161,7 @@
                 "sleep": 0
             },
             "image_local": "images/825e8b8c.jpg",
-            "pick": true,
+            "pick": false,
             "related": [
                 "7457f62c"
             ]
@@ -179,7 +319,7 @@
                 "sleep": 0
             },
             "image_local": "images/c6eedfe6.jpg",
-            "pick": false,
+            "pick": true,
             "related": [
                 "07508729",
                 "f13df404"
@@ -375,9 +515,9 @@
     ],
     "bytepulse": {
         "date": "08.04.2026",
-        "positiv": 90,
-        "neutral": 10,
+        "positiv": 87,
+        "neutral": 13,
         "kritisch": 0,
-        "total": 10
+        "total": 15
     }
 }

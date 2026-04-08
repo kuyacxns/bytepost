@@ -138,6 +138,56 @@ def find_related(article, all_articles, limit=3):
         if len(related) >= limit: break
     return related
 
+def pick_of_the_day(today_articles):
+    """Lässt die KI den relevantesten Artikel des Tages wählen."""
+    if len(today_articles) == 1:
+        return today_articles[0]
+
+    # Kompakte Übersicht aller heutigen Artikel für den Prompt
+    overview = "\n".join(
+        f"{i+1}. [{a.get('tag','')}] {a.get('title','')} — {a.get('source','')} ({a.get('sentiment','')})"
+        for i, a in enumerate(today_articles)
+    )
+
+    prompt = f"""Du kuratierst 'BytePost', einen deutschen Tech-Newsletter für Entwickler.
+
+Hier sind die heutigen Artikel:
+{overview}
+
+Welcher Artikel verdient heute den "Pick of the Day"? Kriterien:
+- Hohe Relevanz für Entwickler und Tech-Profis
+- Nachhaltiger Impact oder besondere Brisanz
+- Lieber überraschend oder kontrovers als generisch
+
+Antworte NUR mit der Nummer des Artikels (z.B. "3"). Kein Text davor oder danach."""
+
+    try:
+        r = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": MODEL,
+                "max_tokens": 5,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=15,
+        )
+        if r.status_code == 200:
+            raw = r.json()["choices"][0]["message"]["content"].strip()
+            idx = int(re.search(r"\d+", raw).group()) - 1
+            if 0 <= idx < len(today_articles):
+                print(f"  -> KI wählt Artikel #{idx+1}")
+                return today_articles[idx]
+    except Exception as e:
+        print(f"  -> Pick-Fehler: {e}")
+
+    # Fallback: erster Artikel
+    return today_articles[0]
+
+
 def run():
     if not GROQ_API_KEY:
         print("FEHLER: GROQ_API_KEY nicht gesetzt.")
@@ -211,12 +261,13 @@ def run():
             continue
         break  # Circuit Breaker hat inneren Loop verlassen
 
-    # Pick of the Day
+    # Pick of the Day — KI entscheidet
     for a in db["articles"]: a["pick"] = False
     today_articles = [a for a in db["articles"] if a.get("date") == heute]
     if today_articles:
-        today_articles[0]["pick"] = True
-        print(f"\nPick of the Day: {today_articles[0]['title']}")
+        pick = pick_of_the_day(today_articles)
+        pick["pick"] = True
+        print(f"\nPick of the Day: {pick['title']}")
 
     # Related Articles
     for article in new_articles:
