@@ -1,5 +1,6 @@
 import requests, json, os, re, feedparser, time
 from datetime import datetime
+from bs4 import BeautifulSoup
 
 # --- SETUP ---
 # API-Key als Umgebungsvariable setzen:
@@ -51,32 +52,75 @@ def get_unsplash_image(query, article_id):
         print(f"  -> Bildfehler: {e}")
         return None
 
-def ask_gemini(url, category):
+def fetch_article_text(url, max_chars=4000):
+    """Lädt den Artikel und extrahiert den Haupttext."""
+    try:
+        r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        soup = BeautifulSoup(r.text, "html.parser")
+        # Boilerplate entfernen
+        for tag in soup(["script", "style", "nav", "footer", "header", "aside", "form"]):
+            tag.decompose()
+        # Haupttext aus <article> oder <main> oder <body>
+        main = soup.find("article") or soup.find("main") or soup.find("body")
+        text = " ".join((main or soup).get_text(separator=" ").split())
+        return text[:max_chars]
+    except Exception as e:
+        print(f"  -> Artikel-Fetch Fehler: {e}")
+        return ""
+
+def ask_gemini(url, category, rss_title="", rss_summary=""):
     heute = datetime.now().strftime("%d.%m.%Y")
-    prompt = f"""Du bist der Host von 'BytePost', dem frechsten Tech-Newsletter für Deutschlands Entwickler-Elite. Deine Leser sind Profis in Python, SQL, Kubernetes und Cloud-Architektur.
 
-Analysiere diesen Artikel: {url}
+    print(f"  -> Lade Artikel...")
+    article_text = fetch_article_text(url)
 
-STIL-GUIDE:
-1. "Du"-Form, journalistisch mit Ironie oder Skepsis. Kein Bla-Bla.
-2. content: MAX 800 ZEICHEN. Nutze <strong> für 2-3 Kernbegriffe, eine <ul> mit max. 3 Highlights.
-3. content_simple: Ohne Fachbegriffe, Alltagsanalogien, max. 500 Zeichen.
-4. content_pro: Technische Details + Architektur-Implikationen, max. 900 Zeichen.
-5. Keine Sätze wie "Lies mehr im Original".
+    # Kombiniere RSS-Summary + gescrapten Text für maximalen Kontext
+    combined = " ".join(filter(None, [rss_title, rss_summary, article_text]))
+    source_block = f"ARTIKELINHALT:\n{combined[:4500]}" if combined.strip() else f"URL: {url}"
 
-SENTIMENT: "positiv" (Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheit/Datenschutz)
+    prompt = f"""Du schreibst für 'BytePost' — einen deutschen Tech-Newsletter für Entwickler.
+
+{source_block}
+
+DEINE AUFGABE:
+Schreibe eine deutsche Zusammenfassung, die der Leser gerne liest — ohne danach noch das Original aufrufen zu müssen. Der Text soll informativ und leicht unterhaltsam sein, aber nicht reißerisch.
+
+STIL:
+- Schreib in der "Du"-Form, direkt und klar
+- Gib dem Leser das Gefühl, einen schlauen Kollegen zu hören — nicht eine Pressemitteilung
+- Konkrete Fakten, Zahlen und Details aus dem Artikel verwenden
+- Eine kurze eigene Einordnung am Ende ("Was das bedeutet:", max. 1 Satz)
+- Kein unnötiger Fülltext, keine Phrasen wie "In einer Welt, in der..."
+
+FORMAT für "content" (Standard):
+- 1 einleitender Satz was passiert ist (fett: 1-2 Kernbegriffe mit <strong>)
+- 2-3 Sätze mit den wichtigsten Details
+- Eine kurze Liste <ul> mit max. 3 konkreten Punkten
+- Abschluss: <p><em>Was das bedeutet: ...</em></p>
+- Länge: 150-220 Wörter
+
+FORMAT für "content_simple":
+- Dieselbe Story, aber ohne Fachbegriffe — erklär es wie einem interessierten Freund
+- 80-100 Wörter, kein HTML außer <strong> für 1 Begriff
+
+FORMAT für "content_pro":
+- Technische Tiefe: Architektur-Details, mögliche Implikationen für eigene Systeme
+- Darf Fachbegriffe voraussetzen (LLM, CI/CD, Sharding, etc.)
+- 180-250 Wörter, gleiche HTML-Struktur wie content
+
+SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
 
 Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
     "cat": "ki|dev|data|security|cloud|hardware|business",
     "tag": "KI|Dev|Data|Security|Cloud|Hardware|Business",
     "icon": "Passendes Emoji",
-    "title": "Freche Headline max. 10 Wörter",
+    "title": "Prägnante Headline, max. 8 Wörter",
     "source": "Quellenname",
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
-    "content": "HTML Standard-Version",
+    "content": "HTML Standard-Zusammenfassung",
     "content_simple": "HTML Einfach-Version",
     "content_pro": "HTML Profi-Version"
 }}"""
@@ -90,7 +134,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             },
             json={
                 "model": MODEL,
-                "max_tokens": 700,
+                "max_tokens": 1200,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=30,
@@ -237,7 +281,11 @@ def run():
                 continue
 
             print(f"Verarbeite: {post.title[:60]}")
-            entry = ask_gemini(post.link, category)
+            rss_title = getattr(post, "title", "")
+            rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
+            # HTML aus RSS-Summary entfernen
+            rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
+            entry = ask_gemini(post.link, category, rss_title, rss_summary)
 
             if entry is None:
                 error_streak += 1
