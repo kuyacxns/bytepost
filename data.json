@@ -1,6 +1,274 @@
 {
     "articles": [
         {
+            "cat": "data",
+            "tag": "Data",
+            "icon": "📊",
+            "title": "PDF-Extraktion revolutioniert",
+            "source": "Towards Data Science",
+            "read": "5",
+            "sentiment": "positiv",
+            "content": "Ein neues System reduziert die <strong>Dokumentenextraktion</strong> auf 45 Minuten. <ul><li>Verarbeitung von 4700 PDFs</li><li><strong>Automatisierung</strong> von manuellen Prozessen</li><li><strong>Effizienz</strong> steigt um 90%</li></ul>",
+            "content_simple": "Ein neuer Weg, Informationen aus <strong>Dokumenten</strong> zu ziehen. <ul><li>Schnell wie ein Blitz</li><li>Automatisiert und einfach</li><li>Sparen Zeit und Nerven</li></ul>",
+            "content_pro": "Die Implementierung eines <strong>Document-Extraction-Systems</strong> ermöglicht es, große Mengen an PDFs zu verarbeiten. <ul><li>Verwendung von <strong>Machine-Learning-Algorithmen</strong></li><li><strong>Aufteilung</strong> von Dokumenten in kleinere Segmente</li><li><strong>Optimierung</strong> von Prozessen durch Automatisierung</li></ul>",
+            "date": "08.04.2026",
+            "id": "825e8b8c",
+            "url": "https://towardsdatascience.com/from-4-weeks-to-45-minutes-designing-a-document-extraction-system-for-4700-pdfs/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/825e8b8c.jpg",
+            "pick": true,
+            "related": [
+                "7457f62c"
+            ]
+        },
+        {
+            "cat": "ki|data",
+            "tag": "KI|Data",
+            "icon": "🤖",
+            "title": "KI für Marketing-Mix-Modelle",
+            "source": "Towards Data Science",
+            "read": "5 Min",
+            "sentiment": "positiv",
+            "content": "<strong>Marketing-Mix-Modelle</strong> können jetzt dank <strong>Open-Source</strong> und <strong>Gen-AI</strong> einfacher erstellt werden. Hier sind einige Highlights: <ul><li>Demokratisierung von Marketing-Mix-Modellen</li><li>Verbesserung der Prognosegenauigkeit</li><li>Kosteneinsparungen durch Automatisierung</li></ul>",
+            "content_simple": "KI hilft jetzt bei der Erstellung von <strong>Marketing-Strategien</strong>. Damit können Unternehmen ihre Werbung besser planen und Geld sparen.",
+            "content_pro": "<strong>Gen-AI</strong> kann verwendet werden, um komplexe <strong>Marketing-Mix-Modelle</strong> zu erstellen und zu trainieren. Dies kann die <strong>Prognosegenauigkeit</strong> verbessern und die Kosten durch Automatisierung senken. Die Architektur kann in <strong>Kubernetes</strong> deployt werden, um Skalierbarkeit und Verfügbarkeit zu gewährleisten.",
+            "date": "08.04.2026",
+            "id": "cf3afec1",
+            "url": "https://towardsdatascience.com/democratizing-marketing-mix-models-mmm-with-open-source-and-gen-ai/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/cf3afec1.jpg",
+            "pick": false,
+            "related": []
+        },
+        {
+            "cat": "data",
+            "tag": "Data",
+            "icon": "💻",
+            "title": "Spotify Wrapped 2025",
+            "source": "Spotify Engineering",
+            "read": "5 Min",
+            "sentiment": "positiv",
+            "content": "Spotify hat seine <strong>Wrapped</strong>-Funktion für 2025 veröffentlicht. Hier sind die Highlights: <ul><li>Personalisierte Musikempfehlungen</li><li>Erweiterte Datenanalysen</li><li>Benutzerfreundliche Oberfläche</ul>",
+            "content_simple": "Spotify zeigt, wie deine Musik-Geschmäcker im letzten Jahr waren. Das ist wie ein persönliches Musik-Jahresrückblick.",
+            "content_pro": "Die <strong>Wrapped</strong>-Funktion von Spotify nutzt <strong>Machine Learning</strong> und <strong>Data Analyse</strong>, um personalisierte Musikempfehlungen zu erstellen. Die Architektur basiert auf einer skalierbaren Cloud-Infrastruktur.",
+            "date": "08.04.2026",
+            "id": "7457f62c",
+            "url": "https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7457f62c.jpg",
+            "pick": false,
+            "related": [
+                "825e8b8c"
+            ]
+        },
+        {
+            "cat": "dev",
+            "tag": "Dev",
+            "icon": "💻",
+            "title": "GitHub beschleunigt Diff",
+            "source": "GitHub Blog",
+            "read": "5 Min",
+            "sentiment": "positiv",
+            "content": "GitHub optimiert <strong>Performance</strong> von Diff-Lines. Hier sind die Highlights: <ul><li>Verbesserter Algorithmus</li><li>Erhöhte Geschwindigkeit</li><li>Bessere Skalierbarkeit</li></ul>",
+            "content_simple": "GitHub macht Code-Vergleiche <strong>schneller</strong> und <strong>besser</strong>. Jetzt geht es noch <strong>flotter</strong>!",
+            "content_pro": "GitHub implementiert neue <strong>Diff-Algorithmik</strong> für bessere <strong>Performance</strong> und <strong>Skalierbarkeit</strong>. Dies ermöglicht eine schnellere und effizientere Code-Review.",
+            "date": "08.04.2026",
+            "id": "07508729",
+            "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/07508729.jpg",
+            "pick": false,
+            "related": [
+                "f13df404",
+                "c6eedfe6"
+            ]
+        },
+        {
+            "cat": "ki",
+            "tag": "KI",
+            "icon": "🤖",
+            "title": "KI-Code-Assistent updated",
+            "source": "GitHub",
+            "read": "2",
+            "sentiment": "positiv",
+            "content": "GitHub Copilot CLI kombiniert nun verschiedene <strong>Modelle</strong> für eine zweite Meinung. Diese Funktion ermöglicht es Entwicklern, ihre Code-Fehler zu überprüfen. <ul><li>Erhöhte Code-Qualität</li><li>Schnellere Entwicklung</li><li>Bessere Fehlerbehebung</li></ul>",
+            "content_simple": "Ein neuer Tool hilft bei der Code-Überprüfung, ähnlich wie ein zweiter Leser deine Arbeit überprüft.",
+            "content_pro": "Die Kombination von <strong>Machine-Learning-Modellen</strong> und <strong>Code-Analyse</strong> ermöglicht eine effizientere und genauere Überprüfung von Entwicklercode. Dies hat <strong>Architektur-Implikationen</strong> für die zukünftige Entwicklung von KI-gestützten Entwicklungstools.",
+            "date": "08.04.2026",
+            "id": "50b12832",
+            "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/50b12832.jpg",
+            "pick": false,
+            "related": [
+                "ea421b53",
+                "e5999e7e",
+                "9b965cb9"
+            ]
+        },
+        {
+            "cat": "dev",
+            "tag": "Dev",
+            "icon": "💻",
+            "title": "Messenger-Produktion neu definiert",
+            "source": "Stack Overflow",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "content": "Der Artikel zeigt, wie <strong>Automatisierung</strong>, <strong>Machine Learning</strong> und <strong>Cloud-Computing</strong> die Messenger-Produktion verändern. Hier sind einige Highlights: <ul><li>Erhöhte Effizienz</li><li>Verbesserte Benutzererfahrung</li><li>Skalierbare Architektur</ul>",
+            "content_simple": "Ein neuer Ansatz für die Messenger-Produktion, der die Arbeit erleichtert und den Benutzern mehr bietet.",
+            "content_pro": "Durch die Kombination von <strong>Automatisierung</strong>, <strong>Machine Learning</strong> und <strong>Cloud-Computing</strong> können Entwickler die Messenger-Produktion optimieren und skalieren. Dies ermöglicht eine höhere Effizienz und eine bessere Benutzererfahrung.",
+            "date": "08.04.2026",
+            "id": "f13df404",
+            "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f13df404.jpg",
+            "pick": false,
+            "related": [
+                "07508729",
+                "c6eedfe6"
+            ]
+        },
+        {
+            "cat": "dev",
+            "tag": "Dev",
+            "icon": "🌐",
+            "title": "C-Erfinder will Code-Probleme lösen",
+            "source": "Stack Overflow",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "content": "Der Artikel über <strong>C</strong>, <strong>Programmiersprachen</strong> und <strong>Software-Entwicklung</strong> gibt Einblicke in die Geschichte von C. <ul><li>Entstehung von C</li><li>Einfluss auf moderne Programmiersprachen</li><li>Zukunft von C</li></ul>",
+            "content_simple": "Eine neue Programmiersprache soll Probleme lösen. <strong>C</strong> ist ein Beispiel dafür.",
+            "content_pro": "Die <strong>Architektur</strong> von C und seine <strong>Implementierung</strong> haben die <strong>Software-Entwicklung</strong> geprägt. Die Geschichte von C gibt Aufschluss über die Entwicklung von <strong>Programmiersprachen</strong>.",
+            "date": "08.04.2026",
+            "id": "c6eedfe6",
+            "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c6eedfe6.jpg",
+            "pick": false,
+            "related": [
+                "07508729",
+                "f13df404"
+            ]
+        },
+        {
+            "cat": "hardware",
+            "tag": "Hardware",
+            "icon": "🎧",
+            "title": "Nothing CFM Buds 2A",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "content": "Nothing bringt die <strong>CFM Buds 2A</strong> auf den Markt. Die neuen <strong>Earbuds</strong> bieten eine verbesserte Akkulaufzeit und eine <ul><li>verbesserte Verbindung</li><li>neue Farben</li><li>günstigerer Preis</li></ul>",
+            "content_simple": "Neue <strong>Earbuds</strong> von Nothing. Bessere Akkulaufzeit und Verbindung.",
+            "content_pro": "Die <strong>CFM Buds 2A</strong> verwenden <strong>Bluetooth 5.2</strong> für eine stabilere Verbindung. Die Akkulaufzeit wurde durch eine optimierte <strong>Hardware-Architektur</strong> verbessert.",
+            "date": "08.04.2026",
+            "id": "107f5498",
+            "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/107f5498.jpg",
+            "pick": false,
+            "related": [
+                "e43fb567",
+                "b878ae09"
+            ]
+        },
+        {
+            "cat": "ki",
+            "tag": "KI",
+            "icon": "🤖",
+            "title": "Arcee: Tiny Open-Source AI",
+            "source": "TechCrunch",
+            "read": "2",
+            "sentiment": "positiv",
+            "content": "Arcee ist ein <strong>Tiny Open-Source</strong> AI-Modell-Maker. <ul><li>Erstellt kleine, effiziente Modelle</li><li>Unterstützt <strong>Open-Source</strong></li><li>Weckt Hoffnung für die Zukunft der KI</li></ul>",
+            "content_simple": "Eine kleine, kostenlose KI, die hilft, intelligente Modelle zu erstellen.",
+            "content_pro": "Arcee nutzt <strong>neuronale Netze</strong> und <strong>Cloud-Computing</strong>, um komplexe KI-Modelle zu erstellen. Mit <strong>Containerisierung</strong> und <strong>Microservices</strong> bietet es eine flexible Architektur.",
+            "date": "08.04.2026",
+            "id": "ea421b53",
+            "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ea421b53.jpg",
+            "pick": false,
+            "related": [
+                "50b12832",
+                "e5999e7e",
+                "9b965cb9"
+            ]
+        },
+        {
+            "cat": "ki",
+            "tag": "KI",
+            "icon": "📱",
+            "title": "Google bringt Offline-KI-Diktat",
+            "source": "TechCrunch",
+            "read": "2",
+            "sentiment": "positiv",
+            "content": "Google hat eine <strong>Offline-first</strong> KI-Diktat-App auf iOS veröffentlicht. Hier sind die Highlights: <ul><li>Unterstützung von <strong>Offline-Modus</strong></li><li>Verwendung von <strong>KI-Technologie</strong> für verbesserte Genauigkeit</li><li>Benutzerfreundliche Oberfläche</li></ul>",
+            "content_simple": "Google hat eine App entwickelt, die auch ohne Internetverbindung funktioniert. Die App nutzt künstliche Intelligenz, um Diktate zu verbessern.",
+            "content_pro": "Die App verwendet eine <strong>Offline-first-Architektur</strong>, bei der die KI-Modelle auf dem Gerät lokal ausgeführt werden. Dies ermöglicht eine verbesserte <strong>Latenz</strong> und <strong>Sicherheit</strong>, da keine Daten in der Cloud verarbeitet werden müssen.",
+            "date": "08.04.2026",
+            "id": "e5999e7e",
+            "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e5999e7e.jpg",
+            "pick": false,
+            "related": [
+                "50b12832",
+                "ea421b53",
+                "9b965cb9"
+            ]
+        },
+        {
             "cat": "security",
             "tag": "Security",
             "icon": "🚨",
@@ -104,5 +372,12 @@
             "image_local": null,
             "pick": false
         }
-    ]
+    ],
+    "bytepulse": {
+        "date": "08.04.2026",
+        "positiv": 90,
+        "neutral": 10,
+        "kritisch": 0,
+        "total": 10
+    }
 }
