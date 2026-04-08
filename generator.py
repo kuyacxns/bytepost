@@ -1,13 +1,13 @@
-import anthropic, requests, json, os, re, feedparser, time
+import requests, json, os, re, feedparser, time
 from datetime import datetime
 
 # --- SETUP ---
 # API-Key als Umgebungsvariable setzen:
-#   export ANTHROPIC_API_KEY="sk-ant-..."
+#   export OPENROUTER_API_KEY="sk-or-..."
 # Oder direkt hier eintragen (nicht empfohlen für öffentliche Repos):
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 UNSPLASH_KEY = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
-MODEL = "claude-haiku-4-5-20251001"  # günstigstes Modell ~$0.0002 pro Artikel
+MODEL = "google/gemini-2.5-flash"   # Gemini via OpenRouter
 DATA_FILE = "data.json"
 
 # --- COST PROTECTION ---
@@ -51,7 +51,7 @@ def get_unsplash_image(query, article_id):
         print(f"  -> Bildfehler: {e}")
         return None
 
-def ask_claude(url, category):
+def ask_gemini(url, category):
     heute = datetime.now().strftime("%d.%m.%Y")
     prompt = f"""Du bist der Host von 'BytePost', dem frechsten Tech-Newsletter für Deutschlands Entwickler-Elite. Deine Leser sind Profis in Python, SQL, Kubernetes und Cloud-Architektur.
 
@@ -82,21 +82,32 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 }}"""
 
     try:
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-        message = client.messages.create(
-            model=MODEL,
-            max_tokens=600,   # harte Kosten-Obergrenze pro Call
-            messages=[{"role": "user", "content": prompt}]
+        r = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://bytepost.de",
+                "X-Title": "BytePost Generator",
+            },
+            json={
+                "model": MODEL,
+                "max_tokens": 700,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=30,
         )
-        raw = message.content[0].text.strip()
-        data = json.loads(re.sub(r'```json|```', '', raw).strip())
+        print(f"  -> OpenRouter Status: {r.status_code}")
+        if r.status_code != 200:
+            print(f"  -> Fehler: {r.text[:200]}")
+            return None
+
+        raw = r.json()["choices"][0]["message"]["content"].strip()
+        data = json.loads(re.sub(r"```json|```", "", raw).strip())
         data["date"] = heute
-        tokens_used = message.usage.input_tokens + message.usage.output_tokens
-        print(f"  -> OK | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens_used}")
+        tokens = r.json().get("usage", {})
+        print(f"  -> OK | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
         return data
-    except anthropic.APIStatusError as e:
-        print(f"  -> API-Fehler {e.status_code}: {e.message[:100]}")
-        return None
     except json.JSONDecodeError as e:
         print(f"  -> JSON-Fehler: {e} | Antwort: {raw[:200]}")
         return None
@@ -117,7 +128,7 @@ def compute_bytepulse(articles, today_str):
         "positiv": round(counts["positiv"] / total * 100),
         "neutral": round(counts["neutral"] / total * 100),
         "kritisch": round(counts["kritisch"] / total * 100),
-        "total": total
+        "total": total,
     }
 
 def find_related(article, all_articles, limit=3):
@@ -130,20 +141,21 @@ def find_related(article, all_articles, limit=3):
     return related
 
 def run():
-    if not ANTHROPIC_API_KEY:
-        print("FEHLER: ANTHROPIC_API_KEY nicht gesetzt.")
-        print("  export ANTHROPIC_API_KEY='sk-ant-...'")
+    if not OPENROUTER_API_KEY:
+        print("FEHLER: OPENROUTER_API_KEY nicht gesetzt.")
+        print("  export OPENROUTER_API_KEY='sk-or-...'")
         return
 
     if os.path.exists(DATA_FILE):
-        with open(DATA_FILE, 'r', encoding='utf-8') as f: db = json.load(f)
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            db = json.load(f)
     else:
         db = {"articles": []}
 
     heute = datetime.now().strftime("%d.%m.%Y")
 
     # Tagessperre prüfen
-    today_count = sum(1 for a in db['articles'] if a.get('date') == heute)
+    today_count = sum(1 for a in db["articles"] if a.get("date") == heute)
     if today_count >= MAX_PER_DAY:
         print(f"Tageslimit erreicht ({today_count}/{MAX_PER_DAY}). Abbruch.")
         return
@@ -152,7 +164,7 @@ def run():
     effective_limit = min(MAX_PER_RUN, remaining_today)
     print(f"Heute bereits: {today_count} | Noch erlaubt: {remaining_today} | Diesen Lauf max: {effective_limit}")
 
-    existing_titles = {a.get('title', '') for a in db['articles']}
+    existing_titles = {a.get("title", "") for a in db["articles"]}
     new_count = 0
     error_streak = 0
     new_articles = []
@@ -168,13 +180,12 @@ def run():
 
         for post in feed.entries[:2]:
             if new_count >= effective_limit: break
-
             if post.title in existing_titles:
                 print(f"  -> Duplikat: {post.title[:50]}")
                 continue
 
             print(f"Verarbeite: {post.title[:60]}")
-            entry = ask_claude(post.link, category)
+            entry = ask_gemini(post.link, category)
 
             if entry is None:
                 error_streak += 1
@@ -184,41 +195,41 @@ def run():
                     break
                 continue
 
-            error_streak = 0  # Fehler-Serie zurücksetzen
+            error_streak = 0
             entry["id"] = os.urandom(4).hex()
             entry["url"] = post.link
             entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
             image_query = entry.pop("image_query", "technology")
             entry["image_local"] = get_unsplash_image(image_query, entry["id"])
-            db['articles'].insert(0, entry)
+            db["articles"].insert(0, entry)
             new_articles.append(entry)
             existing_titles.add(post.title)
             new_count += 1
             print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
-            time.sleep(5)  # Kürzere Pause nötig als bei Gemini
+            time.sleep(5)
 
         else:
             continue
-        break  # Circuit Breaker hat den inneren Loop verlassen
+        break  # Circuit Breaker hat inneren Loop verlassen
 
     # Pick of the Day
-    for a in db['articles']: a["pick"] = False
-    today_articles = [a for a in db['articles'] if a.get("date") == heute]
+    for a in db["articles"]: a["pick"] = False
+    today_articles = [a for a in db["articles"] if a.get("date") == heute]
     if today_articles:
         today_articles[0]["pick"] = True
         print(f"\nPick of the Day: {today_articles[0]['title']}")
 
-    # Related Articles für neue Artikel
+    # Related Articles
     for article in new_articles:
-        article["related"] = find_related(article, db['articles'])
+        article["related"] = find_related(article, db["articles"])
 
     # BytePulse
-    pulse = compute_bytepulse(db['articles'], heute)
+    pulse = compute_bytepulse(db["articles"], heute)
     if pulse:
         db["bytepulse"] = pulse
         print(f"BytePulse: {pulse['positiv']}% positiv, {pulse['neutral']}% neutral, {pulse['kritisch']}% kritisch")
 
-    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=4)
     print(f"\nFertig. {new_count} neue Artikel erstellt.")
 
