@@ -260,7 +260,7 @@ def run():
     effective_limit = min(MAX_PER_RUN, remaining_today)
     print(f"Heute bereits: {today_count} | Noch erlaubt: {remaining_today} | Diesen Lauf max: {effective_limit}")
 
-    existing_titles = {a.get("title", "") for a in db["articles"]}
+    existing_urls = {a.get("url", "") for a in db["articles"] if a.get("url")}
     new_count = 0
     error_streak = 0
     new_articles = []
@@ -276,8 +276,8 @@ def run():
 
         for post in feed.entries[:2]:
             if new_count >= effective_limit: break
-            if post.title in existing_titles:
-                print(f"  -> Duplikat: {post.title[:50]}")
+            if post.link in existing_urls:
+                print(f"  -> Duplikat (URL): {post.title[:50]}")
                 continue
 
             print(f"Verarbeite: {post.title[:60]}")
@@ -303,7 +303,7 @@ def run():
             entry["image_local"] = get_unsplash_image(image_query, entry["id"])
             db["articles"].insert(0, entry)
             new_articles.append(entry)
-            existing_titles.add(post.title)
+            existing_urls.add(post.link)
             new_count += 1
             print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
             time.sleep(5)

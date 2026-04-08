@@ -506,7 +506,9 @@
         const container = document.getElementById('feed');
         // Exclude the pick from the grid to avoid duplication
         const pick = articles.find(a => a.pick) || articles[0];
-        const gridArticles = pick ? articles.filter(a => a.id !== pick.id) : articles;
+        const gridArticles = pick
+            ? articles.filter(a => a.id !== pick.id && a.url !== pick.url)
+            : articles;
 
         if (!gridArticles.length) {
             container.innerHTML = '<div class="empty-state">Keine Artikel in dieser Kategorie.</div>';

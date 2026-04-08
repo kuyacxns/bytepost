@@ -264,12 +264,13 @@
                 "sleep": 0
             },
             "image_local": "images/50b12832.jpg",
-            "pick": false,
+            "pick": true,
             "related": [
                 "ea421b53",
                 "e5999e7e",
                 "9b965cb9"
-            ]
+            ],
+            "pick_reason": "Der Artikel über den KI-Code-Assistenten von GitHub verdient heute den 'Pick of the Day', da er die Entwicklung von künstlicher Intelligenz im Bereich der Softwareentwicklung direkt betrifft und damit einen nachhaltigen Impact auf die Arbeit von Entwicklern haben könnte. Dieser Artikel ist besonders wichtig, weil er zeigt, wie KI-Technologien die Effizienz und Qualität der Softwareentwicklung in Zukunft revolutionieren können."
         },
         {
             "cat": "dev",
@@ -296,117 +297,6 @@
             "related": [
                 "07508729",
                 "c6eedfe6"
-            ]
-        },
-        {
-            "cat": "dev",
-            "tag": "Dev",
-            "icon": "🌐",
-            "title": "C-Erfinder will Code-Probleme lösen",
-            "source": "Stack Overflow",
-            "read": "3 Min",
-            "sentiment": "positiv",
-            "content": "Der Artikel über <strong>C</strong>, <strong>Programmiersprachen</strong> und <strong>Software-Entwicklung</strong> gibt Einblicke in die Geschichte von C. <ul><li>Entstehung von C</li><li>Einfluss auf moderne Programmiersprachen</li><li>Zukunft von C</li></ul>",
-            "content_simple": "Eine neue Programmiersprache soll Probleme lösen. <strong>C</strong> ist ein Beispiel dafür.",
-            "content_pro": "Die <strong>Architektur</strong> von C und seine <strong>Implementierung</strong> haben die <strong>Software-Entwicklung</strong> geprägt. Die Geschichte von C gibt Aufschluss über die Entwicklung von <strong>Programmiersprachen</strong>.",
-            "date": "08.04.2026",
-            "id": "c6eedfe6",
-            "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
-            "reactions": {
-                "fire": 0,
-                "think": 0,
-                "bulb": 0,
-                "sleep": 0
-            },
-            "image_local": "images/c6eedfe6.jpg",
-            "pick": true,
-            "related": [
-                "07508729",
-                "f13df404"
-            ],
-            "pick_reason": "Der Artikel über den C-Erfinder, der Code-Probleme lösen will, ist besonders wichtig, da er eine einzigartige Perspektive auf die Lösung von Code-Problemen bietet und somit einen nachhaltigen Impact auf die Entwicklung von Software haben kann. Dieser Artikel ist insbesondere für Entwickler und Tech-Profis von hoher Relevanz, da er neue Lösungsansätze für bestehende Probleme bietet."
-        },
-        {
-            "cat": "hardware",
-            "tag": "Hardware",
-            "icon": "🎧",
-            "title": "Nothing CFM Buds 2A",
-            "source": "The Verge",
-            "read": "2 Min",
-            "sentiment": "neutral",
-            "content": "Nothing bringt die <strong>CFM Buds 2A</strong> auf den Markt. Die neuen <strong>Earbuds</strong> bieten eine verbesserte Akkulaufzeit und eine <ul><li>verbesserte Verbindung</li><li>neue Farben</li><li>günstigerer Preis</li></ul>",
-            "content_simple": "Neue <strong>Earbuds</strong> von Nothing. Bessere Akkulaufzeit und Verbindung.",
-            "content_pro": "Die <strong>CFM Buds 2A</strong> verwenden <strong>Bluetooth 5.2</strong> für eine stabilere Verbindung. Die Akkulaufzeit wurde durch eine optimierte <strong>Hardware-Architektur</strong> verbessert.",
-            "date": "08.04.2026",
-            "id": "107f5498",
-            "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
-            "reactions": {
-                "fire": 0,
-                "think": 0,
-                "bulb": 0,
-                "sleep": 0
-            },
-            "image_local": "images/107f5498.jpg",
-            "pick": false,
-            "related": [
-                "e43fb567",
-                "b878ae09"
-            ]
-        },
-        {
-            "cat": "ki",
-            "tag": "KI",
-            "icon": "🤖",
-            "title": "Arcee: Tiny Open-Source AI",
-            "source": "TechCrunch",
-            "read": "2",
-            "sentiment": "positiv",
-            "content": "Arcee ist ein <strong>Tiny Open-Source</strong> AI-Modell-Maker. <ul><li>Erstellt kleine, effiziente Modelle</li><li>Unterstützt <strong>Open-Source</strong></li><li>Weckt Hoffnung für die Zukunft der KI</li></ul>",
-            "content_simple": "Eine kleine, kostenlose KI, die hilft, intelligente Modelle zu erstellen.",
-            "content_pro": "Arcee nutzt <strong>neuronale Netze</strong> und <strong>Cloud-Computing</strong>, um komplexe KI-Modelle zu erstellen. Mit <strong>Containerisierung</strong> und <strong>Microservices</strong> bietet es eine flexible Architektur.",
-            "date": "08.04.2026",
-            "id": "ea421b53",
-            "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
-            "reactions": {
-                "fire": 0,
-                "think": 0,
-                "bulb": 0,
-                "sleep": 0
-            },
-            "image_local": "images/ea421b53.jpg",
-            "pick": false,
-            "related": [
-                "50b12832",
-                "e5999e7e",
-                "9b965cb9"
-            ]
-        },
-        {
-            "cat": "ki",
-            "tag": "KI",
-            "icon": "📱",
-            "title": "Google bringt Offline-KI-Diktat",
-            "source": "TechCrunch",
-            "read": "2",
-            "sentiment": "positiv",
-            "content": "Google hat eine <strong>Offline-first</strong> KI-Diktat-App auf iOS veröffentlicht. Hier sind die Highlights: <ul><li>Unterstützung von <strong>Offline-Modus</strong></li><li>Verwendung von <strong>KI-Technologie</strong> für verbesserte Genauigkeit</li><li>Benutzerfreundliche Oberfläche</li></ul>",
-            "content_simple": "Google hat eine App entwickelt, die auch ohne Internetverbindung funktioniert. Die App nutzt künstliche Intelligenz, um Diktate zu verbessern.",
-            "content_pro": "Die App verwendet eine <strong>Offline-first-Architektur</strong>, bei der die KI-Modelle auf dem Gerät lokal ausgeführt werden. Dies ermöglicht eine verbesserte <strong>Latenz</strong> und <strong>Sicherheit</strong>, da keine Daten in der Cloud verarbeitet werden müssen.",
-            "date": "08.04.2026",
-            "id": "e5999e7e",
-            "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
-            "reactions": {
-                "fire": 0,
-                "think": 0,
-                "bulb": 0,
-                "sleep": 0
-            },
-            "image_local": "images/e5999e7e.jpg",
-            "pick": false,
-            "related": [
-                "50b12832",
-                "ea421b53",
-                "9b965cb9"
             ]
         },
         {
