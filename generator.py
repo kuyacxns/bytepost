@@ -1,11 +1,19 @@
-import requests, json, os, re, feedparser, time
+import anthropic, requests, json, os, re, feedparser, time
 from datetime import datetime
 
 # --- SETUP ---
-API_KEY = "AIzaSyCDjSDM3y_DtRGCkveILJma8dH-paEq284"
+# API-Key als Umgebungsvariable setzen:
+#   export ANTHROPIC_API_KEY="sk-ant-..."
+# Oder direkt hier eintragen (nicht empfohlen für öffentliche Repos):
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 UNSPLASH_KEY = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
-TEXT_MODEL = "gemini-2.5-flash"
+MODEL = "claude-haiku-4-5-20251001"  # günstigstes Modell ~$0.0002 pro Artikel
 DATA_FILE = "data.json"
+
+# --- COST PROTECTION ---
+MAX_PER_RUN = 10    # max. neue Artikel pro Generator-Lauf
+MAX_PER_DAY = 15    # max. neue Artikel pro Tag (Tagessperre)
+MAX_ERRORS  = 3     # Circuit Breaker: Abbruch nach N aufeinanderfolgenden Fehlern
 
 # --- RSS FEEDS ---
 RSS_FEEDS = [
@@ -43,83 +51,67 @@ def get_unsplash_image(query, article_id):
         print(f"  -> Bildfehler: {e}")
         return None
 
-def ask_gemini(url, category):
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL}:generateContent?key={API_KEY}"
+def ask_claude(url, category):
     heute = datetime.now().strftime("%d.%m.%Y")
-
-    prompt = f"""Du bist nicht nur ein KI-Bot, sondern der Host von 'BytePost', dem frechsten Tech-Newsletter für Deutschlands Entwickler-Elite. Deine Leser sind Profis in Python, SQL, Kubernetes und Cloud-Architektur.
+    prompt = f"""Du bist der Host von 'BytePost', dem frechsten Tech-Newsletter für Deutschlands Entwickler-Elite. Deine Leser sind Profis in Python, SQL, Kubernetes und Cloud-Architektur.
 
 Analysiere diesen Artikel: {url}
 
-DEINE MISSION:
-Schreibe eine fesselnde, extrem kompakte Zusammenfassung auf Deutsch, die den Leser direkt packt.
+STIL-GUIDE:
+1. "Du"-Form, journalistisch mit Ironie oder Skepsis. Kein Bla-Bla.
+2. content: MAX 800 ZEICHEN. Nutze <strong> für 2-3 Kernbegriffe, eine <ul> mit max. 3 Highlights.
+3. content_simple: Ohne Fachbegriffe, Alltagsanalogien, max. 500 Zeichen.
+4. content_pro: Technische Details + Architektur-Implikationen, max. 900 Zeichen.
+5. Keine Sätze wie "Lies mehr im Original".
 
-STIL-GUIDE FÜR 'BYTEPOST':
-1. **Direkte Ansprache:** Nutze die "Du"-Form ("Du solltest wissen...", "Stell dir vor...").
-2. **Persönlichkeit:** Sei journalistisch, aber mit einer Prise Ironie, Begeisterung oder gesundem Skeptizismus. Kein trockenes Bla-Bla!
-3. **Länge:** Der gesamte 'content' darf ABSOLUT MAXIMAL 800 ZEICHEN (inklusive Leerzeichen) haben.
-4. **Tech-Sprech:** Nutze Fachbegriffe (LLM, Sharding, Latenz, CI/CD) ohne sie zu erklären.
-5. **Keine Verweise:** Sätze wie "Lies mehr im Original" sind streng verboten. Sei die alleinige Wissensquelle.
+SENTIMENT: "positiv" (Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheit/Datenschutz)
 
-FORMATIERUNG IM CONTENT:
-- Nutze `<strong>...</strong>` für die 2-3 wichtigsten Kernbegriffe.
-- Nutze eine kurze Liste `<ul><li>...</li></ul>` für maximal 3 technische Highlights.
-- Keine H3-Überschriften, keine summary-box. Nur flüssiger Text und die Liste.
-
-ZUSÄTZLICH erzeuge zwei Varianten:
-- content_simple: Selbes Thema, ohne Fachbegriffe, mit Alltagsanalogien. Für Tech-Einsteiger. Reines HTML wie content, max. 600 Zeichen.
-- content_pro: Selbes Thema, mit mehr technischen Details und Architektur-Implikationen. Reines HTML wie content, max. 1000 Zeichen.
-
-SENTIMENT: Bewerte den Artikel als genau einen dieser Werte:
-- "positiv" → Innovation, Fortschritt, Verbesserung
-- "neutral" → Ankündigung, Update, Information
-- "kritisch" → Problem, Risiko, Datenschutz, Sicherheitslücke, Kontroverse
-
-Erstelle exakt dieses JSON-Objekt (kein Text davor/danach, keine Markdown-Backticks):
+Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
     "cat": "ki|dev|data|security|cloud|hardware|business",
-    "tag": "Exakt ein Wert aus: KI, Dev, Data, Security, Cloud, Hardware, Business",
+    "tag": "KI|Dev|Data|Security|Cloud|Hardware|Business",
     "icon": "Passendes Emoji",
-    "title": "Klickstarke, freche Headline (max. 10 Wörter)",
+    "title": "Freche Headline max. 10 Wörter",
     "source": "Quellenname",
     "read": "X Min",
-    "image_query": "2 englische Suchbegriffe für ein cooles Unsplash-Foto",
+    "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
-    "content": "HTML-String Standard-Version (max. 800 Zeichen, Du-Form, fette Begriffe, 1 Liste)",
-    "content_simple": "HTML-String Einfach-Version ohne Fachbegriffe (max. 600 Zeichen)",
-    "content_pro": "HTML-String Profi-Version mit technischen Details (max. 1000 Zeichen)"
-}}
-"""
+    "content": "HTML Standard-Version",
+    "content_simple": "HTML Einfach-Version",
+    "content_pro": "HTML Profi-Version"
+}}"""
 
     try:
-        r = requests.post(api_url, json={"contents": [{"parts": [{"text": prompt}]}]})
-        print(f"  -> Gemini Status: {r.status_code}")
-        raw = r.json()['candidates'][0]['content']['parts'][0]['text']
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        message = client.messages.create(
+            model=MODEL,
+            max_tokens=600,   # harte Kosten-Obergrenze pro Call
+            messages=[{"role": "user", "content": prompt}]
+        )
+        raw = message.content[0].text.strip()
         data = json.loads(re.sub(r'```json|```', '', raw).strip())
         data["date"] = heute
-        word_count = len(data.get("content", "").split())
-        print(f"  -> Inhalt: ~{word_count} Woerter, Sentiment: {data.get('sentiment', 'unbekannt')}")
+        tokens_used = message.usage.input_tokens + message.usage.output_tokens
+        print(f"  -> OK | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens_used}")
         return data
+    except anthropic.APIStatusError as e:
+        print(f"  -> API-Fehler {e.status_code}: {e.message[:100]}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"  -> JSON-Fehler: {e} | Antwort: {raw[:200]}")
+        return None
     except Exception as e:
-        print(f"  -> Gemini Fehler: {e}")
-        print(f"  -> Rohantwort: {r.text[:300]}")
+        print(f"  -> Fehler: {e}")
         return None
 
 def compute_bytepulse(articles, today_str):
-    """Berechne das Stimmungsbarometer für alle Artikel des heutigen Tages."""
     today_articles = [a for a in articles if a.get("date") == today_str]
-    if not today_articles:
-        return None
+    if not today_articles: return None
     counts = {"positiv": 0, "neutral": 0, "kritisch": 0}
     for a in today_articles:
         s = a.get("sentiment", "neutral")
-        if s in counts:
-            counts[s] += 1
-        else:
-            counts["neutral"] += 1
+        counts[s if s in counts else "neutral"] += 1
     total = sum(counts.values())
-    if total == 0:
-        return None
     return {
         "date": today_str,
         "positiv": round(counts["positiv"] / total * 100),
@@ -129,73 +121,98 @@ def compute_bytepulse(articles, today_str):
     }
 
 def find_related(article, all_articles, limit=3):
-    """Finde verwandte Artikel basierend auf Tag und Kategorie."""
     related = []
     for a in all_articles:
-        if a.get("id") == article.get("id"):
-            continue
+        if a.get("id") == article.get("id"): continue
         if a.get("tag") == article.get("tag") or a.get("cat") == article.get("cat"):
             related.append(a["id"])
-        if len(related) >= limit:
-            break
+        if len(related) >= limit: break
     return related
 
 def run():
+    if not ANTHROPIC_API_KEY:
+        print("FEHLER: ANTHROPIC_API_KEY nicht gesetzt.")
+        print("  export ANTHROPIC_API_KEY='sk-ant-...'")
+        return
+
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'r', encoding='utf-8') as f: db = json.load(f)
-    else: db = {"articles": []}
+    else:
+        db = {"articles": []}
+
+    heute = datetime.now().strftime("%d.%m.%Y")
+
+    # Tagessperre prüfen
+    today_count = sum(1 for a in db['articles'] if a.get('date') == heute)
+    if today_count >= MAX_PER_DAY:
+        print(f"Tageslimit erreicht ({today_count}/{MAX_PER_DAY}). Abbruch.")
+        return
+
+    remaining_today = MAX_PER_DAY - today_count
+    effective_limit = min(MAX_PER_RUN, remaining_today)
+    print(f"Heute bereits: {today_count} | Noch erlaubt: {remaining_today} | Diesen Lauf max: {effective_limit}")
 
     existing_titles = {a.get('title', '') for a in db['articles']}
     new_count = 0
-    heute = datetime.now().strftime("%d.%m.%Y")
+    error_streak = 0
     new_articles = []
 
     for feed_url, category in RSS_FEEDS:
-        if new_count >= 10:
-            break
+        if new_count >= effective_limit: break
         try:
             feed = feedparser.parse(feed_url)
-            print(f"\nFeed: {feed_url} ({len(feed.entries)} Eintraege)")
+            print(f"\nFeed: {feed_url} ({len(feed.entries)} Einträge)")
         except Exception as e:
             print(f"Feed-Fehler: {e}")
             continue
 
         for post in feed.entries[:2]:
-            if new_count >= 10:
-                break
+            if new_count >= effective_limit: break
+
             if post.title in existing_titles:
                 print(f"  -> Duplikat: {post.title[:50]}")
                 continue
 
             print(f"Verarbeite: {post.title[:60]}")
-            entry = ask_gemini(post.link, category)
-            if entry:
-                entry["id"] = os.urandom(4).hex()
-                entry["url"] = post.link
-                entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
-                image_query = entry.pop("image_query", "technology")
-                entry["image_local"] = get_unsplash_image(image_query, entry["id"])
-                db['articles'].insert(0, entry)
-                new_articles.append(entry)
-                existing_titles.add(post.title)
-                new_count += 1
-                print(f"  -> Erstellt: {entry['title']} ({new_count}/10)")
-                time.sleep(30)
+            entry = ask_claude(post.link, category)
 
-    # Pick of the Day: erster (neuester) Artikel des heutigen Tages
-    for a in db['articles']:
-        a.setdefault("pick", False)
-        a["pick"] = False
+            if entry is None:
+                error_streak += 1
+                print(f"  -> Fehler-Serie: {error_streak}/{MAX_ERRORS}")
+                if error_streak >= MAX_ERRORS:
+                    print("Circuit Breaker ausgelöst. Abbruch.")
+                    break
+                continue
+
+            error_streak = 0  # Fehler-Serie zurücksetzen
+            entry["id"] = os.urandom(4).hex()
+            entry["url"] = post.link
+            entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
+            image_query = entry.pop("image_query", "technology")
+            entry["image_local"] = get_unsplash_image(image_query, entry["id"])
+            db['articles'].insert(0, entry)
+            new_articles.append(entry)
+            existing_titles.add(post.title)
+            new_count += 1
+            print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
+            time.sleep(5)  # Kürzere Pause nötig als bei Gemini
+
+        else:
+            continue
+        break  # Circuit Breaker hat den inneren Loop verlassen
+
+    # Pick of the Day
+    for a in db['articles']: a["pick"] = False
     today_articles = [a for a in db['articles'] if a.get("date") == heute]
     if today_articles:
         today_articles[0]["pick"] = True
         print(f"\nPick of the Day: {today_articles[0]['title']}")
 
-    # Related articles für neue Artikel berechnen
+    # Related Articles für neue Artikel
     for article in new_articles:
         article["related"] = find_related(article, db['articles'])
 
-    # BytePulse Stimmungsbarometer
+    # BytePulse
     pulse = compute_bytepulse(db['articles'], heute)
     if pulse:
         db["bytepulse"] = pulse
