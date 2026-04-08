@@ -3,81 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BytePost — Tech News täglich in 5 Minuten</title>
+    <title>BytePost — Deutsche Tech News täglich in 5 Minuten</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bytepost.de/">
+    <meta property="og:title" content="BytePost — Deutsche Tech News täglich in 5 Minuten">
+    <meta property="og:description" content="BytePost — Deutsche Tech News täglich in 5 Minuten">
+    <meta property="og:image" content="https://bytepost.de/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BytePost — Deutsche Tech News täglich in 5 Minuten">
+    <meta name="twitter:description" content="BytePost — Deutsche Tech News täglich in 5 Minuten">
+    <meta name="description" content="BytePost — Deutsche Tech News täglich in 5 Minuten">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        /* ── Variables ─────────────────────────────────────── */
         :root {
-            --mono: 'Space Mono', monospace; --display: 'Syne', sans-serif; --body: 'DM Sans', sans-serif;
-            --bg: #f5f5f7; --bg-card: #ffffff; --text: #1d1d1f; --text-2: #515154; --text-3: #86868b;
-            --accent: #0071e3; --border: rgba(0,0,0,0.08); --radius: 14px; --t: 0.2s ease;
+            --mono: 'Space Mono', monospace;
+            --display: 'Syne', sans-serif;
+            --body: 'DM Sans', sans-serif;
+            --bg: #f5f5f7;
+            --bg-card: #ffffff;
+            --text: #1d1d1f;
+            --text-2: #515154;
+            --text-3: #86868b;
+            --accent: #0071e3;
+            --border: rgba(0,0,0,0.08);
+            --radius: 14px;
+            --t: 0.2s ease;
+            /* Category colors */
+            --cat-ki: #0071e3;
+            --cat-dev: #22c55e;
+            --cat-hardware: #f97316;
+            --cat-security: #ef4444;
+            --cat-business: #a855f7;
+            --cat-gaming: #ec4899;
+            --cat-data: #f59e0b;
+            --cat-cloud: #06b6d4;
+            --cat-tech: #6366f1;
         }
         [data-theme="dark"] {
-            --bg: #0a0a0a; --bg-card: #141414; --text: #f5f5f7; --text-2: #aeaeb2; --text-3: #636366; --border: rgba(255,255,255,0.08);
+            --bg: #0a0a0a;
+            --bg-card: #141414;
+            --text: #f5f5f7;
+            --text-2: #aeaeb2;
+            --text-3: #636366;
+            --border: rgba(255,255,255,0.08);
         }
+
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
-        .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
 
-        /* NAV */
-        nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); height: 56px; display: flex; align-items: center; z-index: 100; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .narrow { max-width: 720px; margin: 0 auto; }
+
+        /* ── Nav ────────────────────────────────────────────── */
+        nav {
+            position: sticky; top: 0;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            height: 56px; display: flex; align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        }
         .nav-inner { display: flex; justify-content: space-between; width: 100%; align-items: center; }
         .logo { font-family: var(--display); font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
         .logo em { color: var(--accent); font-style: normal; }
         .logo img { border-radius: 5px; }
-
         .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
         .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-        /* DATE HEADER */
-        .edition-bar { padding: 28px 0 20px; border-bottom: 1px solid var(--border); }
+        /* ── Edition header ─────────────────────────────────── */
+        .edition-bar { padding: 32px 0 20px; border-bottom: 1px solid var(--border); }
         .edition-date { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.5px; }
-        .edition-title { font-family: var(--display); font-size: 28px; font-weight: 800; margin-top: 6px; line-height: 1.1; }
+        .edition-title { font-family: var(--display); font-size: 30px; font-weight: 800; margin-top: 6px; line-height: 1.1; }
         .edition-title em { color: var(--accent); font-style: normal; }
         .edition-sub { font-size: 14px; color: var(--text-3); margin-top: 6px; }
 
-        /* ARTICLE LABEL (date | category) */
-        .article-label { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+        /* ── Category filter bar ────────────────────────────── */
+        .filter-bar {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .filter-bar::-webkit-scrollbar { display: none; }
+        .cat-tabs { display: flex; gap: 8px; white-space: nowrap; }
+        .cat-tab {
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            padding: 5px 13px; border-radius: 20px;
+            border: 1px solid var(--border);
+            background: none; color: var(--text-3);
+            cursor: pointer; transition: all var(--t);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .cat-tab:hover { border-color: var(--text-2); color: var(--text); }
+        .cat-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
-        /* HERO ARTICLE (first item) */
-        .article-hero { padding: 24px 0 28px; border-bottom: 1px solid var(--border); cursor: pointer; }
-        .hero-img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; margin-bottom: 18px; display: block; transition: opacity var(--t); }
-        .article-hero:hover .hero-img { opacity: 0.92; }
-        .hero-title { font-size: 24px; font-weight: 700; line-height: 1.3; margin-bottom: 10px; transition: color var(--t); }
-        .article-hero:hover .hero-title { color: var(--accent); }
+        /* ── Pick of the Day hero ───────────────────────────── */
+        .hero-pick {
+            position: relative; border-radius: var(--radius); overflow: hidden;
+            cursor: pointer; margin: 24px 0;
+            min-height: 380px; display: flex; align-items: flex-end;
+            transition: transform var(--t), box-shadow var(--t);
+        }
+        .hero-pick:hover { transform: scale(1.005); box-shadow: 0 12px 48px rgba(0,0,0,0.25); }
+        .hero-pick-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        .hero-pick-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 72px; background: var(--bg-card); }
+        .hero-pick-gradient {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.1) 100%);
+        }
+        .hero-pick-body { position: relative; z-index: 1; padding: 28px 32px; color: #fff; width: 100%; }
+        .hero-pick-top { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+        .pick-badge {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            background: #ffd60a; color: #000;
+            padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .hero-pick-cat-badge {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
+        }
+        .hero-pick-title { font-family: var(--display); font-size: 26px; font-weight: 800; line-height: 1.18; margin-bottom: 10px; }
+        .hero-pick-teaser { font-size: 14px; opacity: 0.82; line-height: 1.6; max-width: 620px; margin-bottom: 16px; }
+        .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 10px; opacity: 0.65; }
 
-        /* ARTICLE ROW (subsequent items) */
-        .article-row { padding: 20px 0; border-bottom: 1px solid var(--border); cursor: pointer; display: grid; grid-template-columns: 1fr 96px; gap: 16px; align-items: start; }
-        .article-row:last-child { border-bottom: none; }
-        .article-row-body { min-width: 0; }
-        .article-row-title { font-size: 17px; font-weight: 700; line-height: 1.35; margin-bottom: 8px; transition: color var(--t); }
-        .article-row:hover .article-row-title { color: var(--accent); }
+        @media (max-width: 600px) {
+            .hero-pick { min-height: 280px; }
+            .hero-pick-body { padding: 20px; }
+            .hero-pick-title { font-size: 20px; }
+        }
 
-        /* SHARED */
-        .article-summary { font-size: 15px; color: var(--text-2); line-height: 1.65; margin-bottom: 10px; }
-        .read-time { font-weight: 400; color: var(--text-3); }
-        .original-link { display: inline-block; margin-top: 6px; font-family: var(--mono); font-size: 11px; color: var(--text-3); text-decoration: underline; text-underline-offset: 3px; transition: color var(--t); }
-        .original-link:hover { color: var(--accent); }
+        /* ── Card grid ──────────────────────────────────────── */
+        .feed-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            padding: 0 0 40px;
+        }
+        @media (min-width: 768px) {
+            .feed-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 1200px) {
+            .feed-grid { grid-template-columns: repeat(3, 1fr); }
+        }
 
-        .article-thumb { width: 96px; height: 72px; border-radius: 8px; object-fit: cover; background: var(--bg-card); border: 1px solid var(--border); flex-shrink: 0; transition: opacity var(--t); }
-        .article-thumb-icon { width: 96px; height: 72px; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
-        .article-row:hover .article-thumb { opacity: 0.85; }
+        /* ── Card ───────────────────────────────────────────── */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden; cursor: pointer;
+            display: flex; flex-direction: column;
+            transition: transform var(--t), box-shadow var(--t);
+        }
+        .card:hover { transform: translateY(-3px) scale(1.01); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+        [data-theme="dark"] .card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
 
-        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-family: var(--mono); font-size: 13px; }
+        .card-img { width: 100%; height: 156px; object-fit: cover; display: block; }
+        .card-icon { width: 100%; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 34px; background: var(--bg); }
 
-        /* MODAL */
-        .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: start; justify-content: center; padding: 40px 20px; z-index: 1000; backdrop-filter: blur(10px); overflow-y: auto; }
+        .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+        .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+
+        .cat-badge {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.4px;
+            padding: 2px 7px; border-radius: 4px; color: #fff;
+        }
+
+        .card-title {
+            font-size: 15px; font-weight: 700; line-height: 1.38;
+            margin-bottom: 8px; flex: 1;
+            transition: color var(--t);
+        }
+        .card:hover .card-title { color: var(--accent); }
+
+        .card-teaser {
+            font-size: 13px; color: var(--text-2); line-height: 1.55;
+            margin-bottom: 14px;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+
+        .card-footer {
+            display: flex; align-items: center;
+            justify-content: space-between; margin-top: auto;
+            padding-top: 12px; border-top: 1px solid var(--border);
+        }
+        .card-source { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 120px; }
+        .card-read { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+
+        /* ── Empty / loading ────────────────────────────────── */
+        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-family: var(--mono); font-size: 13px; grid-column: 1/-1; }
+
+        /* ── Modal ──────────────────────────────────────────── */
+        .overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+            display: none; align-items: start; justify-content: center;
+            padding: 40px 20px; z-index: 1000;
+            backdrop-filter: blur(10px); overflow-y: auto;
+        }
         .overlay.open { display: flex; }
-        .modal { background: var(--bg-card); max-width: 700px; width: 100%; border-radius: 20px; position: relative; border: 1px solid var(--border); animation: modal-in 0.3s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden; }
+        .modal {
+            background: var(--bg-card); max-width: 700px; width: 100%;
+            border-radius: 20px; position: relative;
+            border: 1px solid var(--border);
+            animation: modal-in 0.3s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden;
+        }
         @keyframes modal-in { from { opacity: 0; transform: scale(0.95) translateY(30px); } to { opacity: 1; transform: scale(1) translateY(0); } }
 
-        .modal-image { width: 100%; height: 280px; object-fit: cover; background: #222; }
+        .modal-image { width: 100%; height: 280px; object-fit: cover; background: #222; display: block; }
         .modal-content-padding { padding: 36px 40px; }
-        .modal-close { position: absolute; top: 18px; right: 18px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; color: #fff; font-size: 16px; z-index: 10; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); transition: all var(--t); }
+        .modal-close {
+            position: absolute; top: 18px; right: 18px;
+            background: rgba(0,0,0,0.5); border: none; border-radius: 50%;
+            width: 34px; height: 34px; cursor: pointer; color: #fff; font-size: 16px;
+            z-index: 10; display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(5px); transition: all var(--t);
+        }
         .modal-close:hover { background: var(--accent); }
 
-        .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; background: var(--accent); color: #fff; text-transform: uppercase; }
+        .m-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; color: #fff; text-transform: uppercase; }
         .summary-box { background: var(--bg); padding: 18px 20px; border-radius: 10px; margin: 18px 0; border-left: 3px solid var(--accent); }
         .summary-box h4 { font-family: var(--display); margin-bottom: 8px; color: var(--accent); font-size: 14px; }
         .modal-bd h3 { margin-top: 22px; font-family: var(--display); color: var(--text); font-size: 18px; }
@@ -91,21 +243,19 @@
         .like-btn .heart { font-size: 14px; transition: transform 0.2s; }
         .like-btn.liked .heart { transform: scale(1.3); }
 
-        /* FOOTER */
-        .footer { margin-top: 60px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
-        .footer-text { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-align: center; }
+        /* ── Footer ─────────────────────────────────────────── */
+        .footer { margin-top: 20px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
+        .footer-text { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-align: center; line-height: 1.8; }
+        .footer-text a { color: var(--text-3); text-decoration: underline; text-underline-offset: 3px; transition: color var(--t); }
+        .footer-text a:hover { color: var(--accent); }
 
+        /* ── Mobile overrides ───────────────────────────────── */
         @media (max-width: 600px) {
             .logo { font-size: 17px; }
             .logo img { width: 22px; height: 22px; }
             .theme-btn span#theme-label { display: none; }
             .theme-btn { padding: 5px 9px; }
-            .edition-title { font-size: 22px; }
-            .hero-img { height: 180px; }
-            .hero-title { font-size: 20px; }
-            .article-thumb, .article-thumb-icon { width: 72px; height: 56px; }
-            .article-row { grid-template-columns: 1fr 72px; gap: 12px; }
-            .article-row-title { font-size: 15px; }
+            .edition-title { font-size: 24px; }
             .overlay { padding: 0; align-items: flex-end; }
             .modal { border-radius: 20px 20px 0 0; max-height: 92vh; overflow-y: auto; animation: modal-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
             @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
@@ -116,230 +266,327 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="wrap nav-inner">
-            <a class="logo" href="#">
-                <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
-                Byte<em>Post</em>
-            </a>
-            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
-                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
-            </button>
-        </div>
-    </nav>
 
-    <div class="wrap">
-        <div class="edition-bar" id="edition-bar">
+<nav>
+    <div class="wrap nav-inner">
+        <a class="logo" href="#">
+            <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
+            Byte<em>Post</em>
+        </a>
+        <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+            <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+        </button>
+    </div>
+</nav>
+
+<div class="wrap">
+    <!-- Edition header -->
+    <div class="edition-bar">
+        <div class="narrow">
             <div class="edition-date" id="edition-date"></div>
             <h1 class="edition-title">Tech News. <em>Täglich.</em></h1>
-            <p class="edition-sub">Kuratierte Deep-Reads — zusammengefasst mit KI.</p>
-        </div>
-
-        <div id="feed"></div>
-
-        <footer class="footer">
-            <p class="footer-text">BytePost · Täglich kuratierte Tech-News für Entwickler</p>
-        </footer>
-    </div>
-
-    <div class="overlay" id="overlay" onclick="if(event.target.id==='overlay')closeModal()">
-        <div class="modal">
-            <button class="modal-close" onclick="closeModal()">✕</button>
-            <div id="m-img-container"></div>
-            <div class="modal-content-padding">
-                <span class="tag" id="m-tag"></span>
-                <h2 id="m-title" style="font-family:var(--display); font-size:28px; margin:14px 0 4px; line-height:1.15;"></h2>
-                <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px; margin-bottom:18px;"></p>
-                <div id="m-body" class="modal-bd"></div>
-                <button class="like-btn" id="like-btn" onclick="toggleLike()">
-                    <span class="heart">♥</span>
-                    <span id="like-label">Hilfreich</span>
-                    <span id="like-count"></span>
-                </button>
-            </div>
+            <p class="edition-sub" id="edition-sub">Kuratierte Deep-Reads — zusammengefasst mit KI.</p>
         </div>
     </div>
 
-    <script>
-        (function() {
-            const saved = localStorage.getItem('bp_theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', saved);
-            updateThemeBtn(saved);
-        })();
+    <!-- Category filter -->
+    <div class="filter-bar">
+        <div class="cat-tabs" id="cat-tabs"></div>
+    </div>
 
-        function updateThemeBtn(theme) {
-            const icon = document.getElementById('theme-icon');
-            const label = document.getElementById('theme-label');
-            if (!icon) return;
-            if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
-            else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
+    <!-- Pick of the Day -->
+    <div id="pick-of-day"></div>
+
+    <!-- Card grid -->
+    <div id="feed" class="feed-grid"></div>
+
+    <footer class="footer">
+        <p class="footer-text">
+            Powered by KI · Kuratiert von Fabi · © 2026 BytePost
+        </p>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="overlay" id="overlay" onclick="if(event.target.id==='overlay')closeModal()">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="m-img-container"></div>
+        <div class="modal-content-padding">
+            <span class="m-tag" id="m-tag"></span>
+            <h2 id="m-title" style="font-family:var(--display); font-size:26px; margin:14px 0 4px; line-height:1.15;"></h2>
+            <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px; margin-bottom:18px;"></p>
+            <div id="m-body" class="modal-bd"></div>
+            <button class="like-btn" id="like-btn" onclick="toggleLike()">
+                <span class="heart">♥</span>
+                <span id="like-label">Hilfreich</span>
+                <span id="like-count"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* ── Theme ──────────────────────────────────────────────── */
+    (function () {
+        const saved = localStorage.getItem('bp_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+        updateThemeBtn(saved);
+    })();
+
+    function updateThemeBtn(theme) {
+        const icon = document.getElementById('theme-icon');
+        const label = document.getElementById('theme-label');
+        if (!icon) return;
+        if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
+        else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bp_theme', next);
+        updateThemeBtn(next);
+    }
+
+    /* ── Category colors ────────────────────────────────────── */
+    const CAT_COLORS = {
+        ki:       '#0071e3',
+        dev:      '#22c55e',
+        hardware: '#f97316',
+        security: '#ef4444',
+        business: '#a855f7',
+        gaming:   '#ec4899',
+        data:     '#f59e0b',
+        cloud:    '#06b6d4',
+        tech:     '#6366f1',
+    };
+
+    function catColor(cat) {
+        return CAT_COLORS[(cat || '').toLowerCase()] || '#636366';
+    }
+
+    /* ── State ──────────────────────────────────────────────── */
+    let ARTICLES = [];
+    let activeFilter = 'alle';
+    let currentArticleId = null;
+    let likes = JSON.parse(localStorage.getItem('bp_likes') || '{}');
+
+    /* ── Load ───────────────────────────────────────────────── */
+    async function load() {
+        try {
+            const res = await fetch('./data.json');
+            const data = await res.json();
+            ARTICLES = data.articles;
+            ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
+            setEditionDate();
+            applyHashFilter();
+            buildFilterTabs();
+            renderAll();
+        } catch (e) {
+            document.getElementById('feed').innerHTML = '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.</div>';
+        }
+    }
+
+    function parseArticleDate(dateStr) {
+        if (!dateStr) return new Date(0);
+        const parts = dateStr.split('.');
+        if (parts.length !== 3) return new Date(0);
+        return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+    }
+
+    function setEditionDate() {
+        const el = document.getElementById('edition-date');
+        const d = new Date();
+        el.textContent = d.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        const todayStr = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
+        const count = ARTICLES.filter(a => a.date === todayStr).length;
+        const subEl = document.getElementById('edition-sub');
+        if (subEl && count > 0) subEl.textContent = `${count} neue Artikel heute · Kuratierte Deep-Reads auf Deutsch`;
+    }
+
+    /* ── Category filter ────────────────────────────────────── */
+    function applyHashFilter() {
+        const hash = window.location.hash.replace('#', '').toLowerCase();
+        activeFilter = hash || 'alle';
+    }
+
+    function buildFilterTabs() {
+        const cats = ['alle', ...new Set(ARTICLES.map(a => (a.cat || '').toLowerCase()).filter(Boolean))];
+        const labels = { alle: 'Alle', ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
+        const container = document.getElementById('cat-tabs');
+        container.innerHTML = cats.map(cat => {
+            const label = labels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
+            const isActive = activeFilter === cat;
+            return `<button class="cat-tab${isActive ? ' active' : ''}" onclick="setFilter('${cat}')">${label}</button>`;
+        }).join('');
+    }
+
+    function setFilter(cat) {
+        activeFilter = cat;
+        window.location.hash = cat === 'alle' ? '' : cat;
+        buildFilterTabs();
+        renderAll();
+    }
+
+    function filteredArticles() {
+        if (activeFilter === 'alle') return ARTICLES;
+        return ARTICLES.filter(a => (a.cat || '').toLowerCase() === activeFilter);
+    }
+
+    /* ── Helpers ────────────────────────────────────────────── */
+    function stripHtml(html) {
+        const d = document.createElement('div');
+        d.innerHTML = html;
+        return d.textContent || d.innerText || '';
+    }
+
+    function teaser(content, max) {
+        const text = stripHtml(content || '').replace(/\s+/g, ' ').trim();
+        return text.length > max ? text.substring(0, max).trimEnd() + '…' : text;
+    }
+
+    function catBadgeHtml(cat, tag) {
+        const color = catColor(cat);
+        const label = tag || cat || '';
+        return `<span class="cat-badge" style="background:${color}">${label}</span>`;
+    }
+
+    /* ── Render ─────────────────────────────────────────────── */
+    function renderAll() {
+        const articles = filteredArticles();
+        renderPick(articles);
+        renderGrid(articles);
+    }
+
+    function renderPick(articles) {
+        const container = document.getElementById('pick-of-day');
+        // Use first article as Pick of the Day (or one flagged as pick:true)
+        const pick = articles.find(a => a.pick) || articles[0];
+        if (!pick) { container.innerHTML = ''; return; }
+
+        const color = catColor(pick.cat);
+        const teaserText = teaser(pick.content, 160);
+        const imgHtml = pick.image_local
+            ? `<img class="hero-pick-img" src="${pick.image_local}" alt="">`
+            : `<div class="hero-pick-placeholder">${pick.icon || '📰'}</div>`;
+
+        container.innerHTML = `
+            <div class="hero-pick" onclick="openArt('${pick.id}')">
+                ${imgHtml}
+                <div class="hero-pick-gradient"></div>
+                <div class="hero-pick-body">
+                    <div class="hero-pick-top">
+                        <span class="pick-badge">⭐ Pick of the Day</span>
+                        <span class="hero-pick-cat-badge" style="background:${color}">${pick.tag || pick.cat || ''}</span>
+                    </div>
+                    <div class="hero-pick-title">${pick.title}</div>
+                    ${teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
+                    <div class="hero-pick-meta">
+                        <span>${pick.source || ''}</span>
+                        <span>⏱️ ${pick.read || ''}</span>
+                        ${pick.date ? `<span>${pick.date}</span>` : ''}
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    function renderGrid(articles) {
+        const container = document.getElementById('feed');
+        // Exclude the pick from the grid to avoid duplication
+        const pick = articles.find(a => a.pick) || articles[0];
+        const gridArticles = pick ? articles.filter(a => a.id !== pick.id) : articles;
+
+        if (!gridArticles.length) {
+            container.innerHTML = '<div class="empty-state">Keine Artikel in dieser Kategorie.</div>';
+            return;
         }
 
-        function toggleTheme() {
-            const current = document.documentElement.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('bp_theme', next);
-            updateThemeBtn(next);
-        }
-
-
-        let ARTICLES = [];
-        let currentArticleId = null;
-        let likes = JSON.parse(localStorage.getItem('bp_likes') || '{}');
-
-        async function load() {
-            try {
-                const res = await fetch('./data.json');
-                const data = await res.json();
-                ARTICLES = data.articles;
-                ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
-                setEditionDate();
-                render();
-            } catch (e) {
-                document.getElementById('feed').innerHTML = '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.</div>';
-            }
-        }
-
-        function parseArticleDate(dateStr) {
-            if (!dateStr) return new Date(0);
-            const parts = dateStr.split('.');
-            if (parts.length !== 3) return new Date(0);
-            return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
-        }
-
-        function formatLabel(dateStr, tag) {
-            const d = parseArticleDate(dateStr);
-            if (!dateStr || d.getTime() === new Date(0).getTime()) return tag;
-            const day = String(d.getDate()).padStart(2, '0');
-            const month = d.toLocaleDateString('de-DE', { month: 'short' });
-            return `${day}. ${month} | ${tag}`;
-        }
-
-        function setEditionDate() {
-            const el = document.getElementById('edition-date');
-            const d = new Date();
-            el.textContent = d.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            const todayStr = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`;
-            const count = ARTICLES.filter(a => a.date === todayStr).length;
-            const subEl = document.getElementById('edition-sub');
-            if (subEl && count > 0) subEl.textContent = `${count} neue Artikel heute · Kuratierte Deep-Reads auf Deutsch`;
-        }
-
-        function extractSummary(html) {
-            const div = document.createElement('div');
-            div.innerHTML = html;
-            const summaryBox = div.querySelector('.summary-box');
-            if (summaryBox) {
-                const li = summaryBox.querySelector('li');
-                if (li) {
-                    const text = li.textContent.trim();
-                    return text.length > 220 ? text.substring(0, 220) + '…' : text;
-                }
-            }
-            const p = div.querySelector('p');
-            if (p) {
-                const text = p.textContent.trim();
-                return text.length > 220 ? text.substring(0, 220) + '…' : text;
-            }
-            return '';
-        }
-
-        function renderOriginalLink(a) {
-            if (!a.url) return '';
-            return `<a class="original-link" href="${a.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Original bei ${a.source} lesen →</a>`;
-        }
-
-        function render() {
-            if (!ARTICLES.length) {
-                document.getElementById('feed').innerHTML = '<div class="empty-state">Keine Artikel vorhanden.</div>';
-                return;
-            }
-
-            const [first, ...rest] = ARTICLES;
-
-            // Hero article (first/newest)
-            const heroSummary = extractSummary(first.content);
-            const heroLabel = formatLabel(first.date, first.tag);
-            const heroHtml = `
-                <div class="article-hero" onclick="openArt('${first.id}')">
-                    ${first.image_local ? `<img class="hero-img" src="${first.image_local}" alt="">` : ''}
-                    <div class="article-label">${heroLabel}</div>
-                    <h2 class="hero-title">${first.title} <span class="read-time">(${first.read})</span></h2>
-                    ${heroSummary ? `<p class="article-summary">${heroSummary}</p>` : ''}
-                    ${renderOriginalLink(first)}
-                </div>`;
-
-            // Remaining articles
-            const rowsHtml = rest.map(a => {
-                const summary = extractSummary(a.content);
-                const label = formatLabel(a.date, a.tag);
-                const thumb = a.image_local
-                    ? `<img class="article-thumb" src="${a.image_local}" alt="">`
-                    : `<div class="article-thumb-icon">${a.icon}</div>`;
-                return `
-                    <div class="article-row" onclick="openArt('${a.id}')">
-                        <div class="article-row-body">
-                            <div class="article-label">${label}</div>
-                            <div class="article-row-title">${a.title} <span class="read-time">(${a.read})</span></div>
-                            ${summary ? `<p class="article-summary">${summary}</p>` : ''}
-                            ${renderOriginalLink(a)}
+        container.innerHTML = gridArticles.map(a => {
+            const color = catColor(a.cat);
+            const t = teaser(a.content, 120);
+            const imgHtml = a.image_local
+                ? `<img class="card-img" src="${a.image_local}" alt="" loading="lazy">`
+                : `<div class="card-icon">${a.icon || '📰'}</div>`;
+            return `
+                <div class="card" onclick="openArt('${a.id}')">
+                    ${imgHtml}
+                    <div class="card-body">
+                        <div class="card-meta">
+                            ${catBadgeHtml(a.cat, a.tag)}
                         </div>
-                        ${thumb}
-                    </div>`;
-            }).join('');
+                        <div class="card-title">${a.title}</div>
+                        ${t ? `<div class="card-teaser">${t}</div>` : ''}
+                        <div class="card-footer">
+                            <span class="card-source">${a.source || ''}</span>
+                            <span class="card-read">⏱️ ${a.read || ''}</span>
+                        </div>
+                    </div>
+                </div>`;
+        }).join('');
+    }
 
-            document.getElementById('feed').innerHTML = heroHtml + rowsHtml;
+    /* ── Modal ──────────────────────────────────────────────── */
+    function openArt(id) {
+        const a = ARTICLES.find(x => x.id === id);
+        if (!a) return;
+        currentArticleId = id;
+
+        const color = catColor(a.cat);
+        const tagEl = document.getElementById('m-tag');
+        tagEl.textContent = a.tag || a.cat || '';
+        tagEl.style.background = color;
+
+        document.getElementById('m-title').textContent = a.title;
+        document.getElementById('m-meta').textContent = `${a.source || ''}${a.date ? ' · ' + a.date : ''} · ⏱️ ${a.read || ''} Lesezeit`;
+
+        const originalHtml = a.url
+            ? `<a href="${a.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--text-3);text-decoration:underline;text-underline-offset:3px;">Original bei ${a.source} lesen →</a>`
+            : '';
+        document.getElementById('m-body').innerHTML = (a.content || '') + originalHtml;
+        document.getElementById('m-img-container').innerHTML = a.image_local
+            ? `<img src="${a.image_local}" class="modal-image">`
+            : '';
+
+        updateLikeBtn(id);
+        document.getElementById('overlay').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function updateLikeBtn(id) {
+        const btn = document.getElementById('like-btn');
+        const count = likes[id] || 0;
+        const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
+        btn.className = 'like-btn' + (isLiked ? ' liked' : '');
+        document.getElementById('like-label').textContent = isLiked ? 'Hilfreich!' : 'Hilfreich';
+        document.getElementById('like-count').textContent = count > 0 ? count : '';
+    }
+
+    function toggleLike() {
+        const id = currentArticleId;
+        const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
+        if (isLiked) {
+            localStorage.removeItem('bp_liked_' + id);
+            likes[id] = Math.max(0, (likes[id] || 1) - 1);
+            if (likes[id] === 0) delete likes[id];
+        } else {
+            localStorage.setItem('bp_liked_' + id, '1');
+            likes[id] = (likes[id] || 0) + 1;
         }
+        localStorage.setItem('bp_likes', JSON.stringify(likes));
+        updateLikeBtn(id);
+    }
 
-        function openArt(id) {
-            const a = ARTICLES.find(x => x.id === id);
-            currentArticleId = id;
-            document.getElementById('m-tag').textContent = a.tag;
-            document.getElementById('m-title').textContent = a.title;
-            document.getElementById('m-meta').textContent = `${a.source}${a.date ? ' · ' + a.date : ''} · ${a.read} Lesezeit`;
-            const originalHtml = a.url
-                ? `<a href="${a.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--text-3);text-decoration:underline;text-underline-offset:3px;">Original bei ${a.source} lesen →</a>`
-                : '';
-            document.getElementById('m-body').innerHTML = a.content + originalHtml;
-            document.getElementById('m-img-container').innerHTML = a.image_local ? `<img src="${a.image_local}" class="modal-image">` : '';
-            updateLikeBtn(id);
-            document.getElementById('overlay').classList.add('open');
-            document.body.style.overflow = 'hidden';
-        }
+    function closeModal() {
+        document.getElementById('overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
 
-        function updateLikeBtn(id) {
-            const btn = document.getElementById('like-btn');
-            const count = likes[id] || 0;
-            const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
-            btn.className = 'like-btn' + (isLiked ? ' liked' : '');
-            document.getElementById('like-label').textContent = isLiked ? 'Hilfreich!' : 'Hilfreich';
-            document.getElementById('like-count').textContent = count > 0 ? count : '';
-        }
-
-        function toggleLike() {
-            const id = currentArticleId;
-            const isLiked = localStorage.getItem('bp_liked_' + id) === '1';
-            if (isLiked) {
-                localStorage.removeItem('bp_liked_' + id);
-                likes[id] = Math.max(0, (likes[id] || 1) - 1);
-                if (likes[id] === 0) delete likes[id];
-            } else {
-                localStorage.setItem('bp_liked_' + id, '1');
-                likes[id] = (likes[id] || 0) + 1;
-            }
-            localStorage.setItem('bp_likes', JSON.stringify(likes));
-            updateLikeBtn(id);
-            render();
-        }
-
-        function closeModal() {
-            document.getElementById('overlay').classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-        load();
-    </script>
+    /* ── Init ───────────────────────────────────────────────── */
+    window.addEventListener('hashchange', () => { applyHashFilter(); buildFilterTabs(); renderAll(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    load();
+</script>
 </body>
 </html>

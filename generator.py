@@ -8,7 +8,6 @@ TEXT_MODEL = "gemini-2.5-flash"
 DATA_FILE = "data.json"
 
 # --- RSS FEEDS ---
-# Kuratierte Quellen für Entwickler & Data Engineers
 RSS_FEEDS = [
     # Internationale Top-Quellen
     ("https://techcrunch.com/category/artificial-intelligence/feed/", "KI"),
@@ -53,13 +52,13 @@ def ask_gemini(url, category):
 Analysiere diesen Artikel: {url}
 
 DEINE MISSION:
-Schreibe eine fesselnde, extrem kompakte Zusammenfassung auf Deutsch, die den Leser direkt packt. 
+Schreibe eine fesselnde, extrem kompakte Zusammenfassung auf Deutsch, die den Leser direkt packt.
 
 STIL-GUIDE FÜR 'BYTEPOST':
 1. **Direkte Ansprache:** Nutze die "Du"-Form ("Du solltest wissen...", "Stell dir vor...").
 2. **Persönlichkeit:** Sei journalistisch, aber mit einer Prise Ironie, Begeisterung oder gesundem Skeptizismus. Kein trockenes Bla-Bla!
-3. **Länge:** Der gesamte 'content' darf ABSOLUT MAXIMAL 800 ZEICHEN (inklusive Leerzeichen) haben. 
-4. **Tech-Sprech:** Nutze Fachbegriffe (LLM, Sharding, Latenz, CI/CD) ohne sie zu erklären. 
+3. **Länge:** Der gesamte 'content' darf ABSOLUT MAXIMAL 800 ZEICHEN (inklusive Leerzeichen) haben.
+4. **Tech-Sprech:** Nutze Fachbegriffe (LLM, Sharding, Latenz, CI/CD) ohne sie zu erklären.
 5. **Keine Verweise:** Sätze wie "Lies mehr im Original" sind streng verboten. Sei die alleinige Wissensquelle.
 
 FORMATIERUNG IM CONTENT:
@@ -67,16 +66,28 @@ FORMATIERUNG IM CONTENT:
 - Nutze eine kurze Liste `<ul><li>...</li></ul>` für maximal 3 technische Highlights.
 - Keine H3-Überschriften, keine summary-box. Nur flüssiger Text und die Liste.
 
+ZUSÄTZLICH erzeuge zwei Varianten:
+- content_simple: Selbes Thema, ohne Fachbegriffe, mit Alltagsanalogien. Für Tech-Einsteiger. Reines HTML wie content, max. 600 Zeichen.
+- content_pro: Selbes Thema, mit mehr technischen Details und Architektur-Implikationen. Reines HTML wie content, max. 1000 Zeichen.
+
+SENTIMENT: Bewerte den Artikel als genau einen dieser Werte:
+- "positiv" → Innovation, Fortschritt, Verbesserung
+- "neutral" → Ankündigung, Update, Information
+- "kritisch" → Problem, Risiko, Datenschutz, Sicherheitslücke, Kontroverse
+
 Erstelle exakt dieses JSON-Objekt (kein Text davor/danach, keine Markdown-Backticks):
 {{
-    "cat": "ki/dev/data/security/cloud/hardware/business",
+    "cat": "ki|dev|data|security|cloud|hardware|business",
     "tag": "Exakt ein Wert aus: KI, Dev, Data, Security, Cloud, Hardware, Business",
     "icon": "Passendes Emoji",
     "title": "Klickstarke, freche Headline (max. 10 Wörter)",
     "source": "Quellenname",
-    "read": "1 Min",
+    "read": "X Min",
     "image_query": "2 englische Suchbegriffe für ein cooles Unsplash-Foto",
-    "content": "Der HTML-String (max. 800 Zeichen, Du-Form, fette Begriffe, 1 Liste)"
+    "sentiment": "positiv|neutral|kritisch",
+    "content": "HTML-String Standard-Version (max. 800 Zeichen, Du-Form, fette Begriffe, 1 Liste)",
+    "content_simple": "HTML-String Einfach-Version ohne Fachbegriffe (max. 600 Zeichen)",
+    "content_pro": "HTML-String Profi-Version mit technischen Details (max. 1000 Zeichen)"
 }}
 """
 
@@ -87,12 +98,47 @@ Erstelle exakt dieses JSON-Objekt (kein Text davor/danach, keine Markdown-Backti
         data = json.loads(re.sub(r'```json|```', '', raw).strip())
         data["date"] = heute
         word_count = len(data.get("content", "").split())
-        print(f"  -> Inhalt: ~{word_count} Woerter")
+        print(f"  -> Inhalt: ~{word_count} Woerter, Sentiment: {data.get('sentiment', 'unbekannt')}")
         return data
     except Exception as e:
         print(f"  -> Gemini Fehler: {e}")
         print(f"  -> Rohantwort: {r.text[:300]}")
         return None
+
+def compute_bytepulse(articles, today_str):
+    """Berechne das Stimmungsbarometer für alle Artikel des heutigen Tages."""
+    today_articles = [a for a in articles if a.get("date") == today_str]
+    if not today_articles:
+        return None
+    counts = {"positiv": 0, "neutral": 0, "kritisch": 0}
+    for a in today_articles:
+        s = a.get("sentiment", "neutral")
+        if s in counts:
+            counts[s] += 1
+        else:
+            counts["neutral"] += 1
+    total = sum(counts.values())
+    if total == 0:
+        return None
+    return {
+        "date": today_str,
+        "positiv": round(counts["positiv"] / total * 100),
+        "neutral": round(counts["neutral"] / total * 100),
+        "kritisch": round(counts["kritisch"] / total * 100),
+        "total": total
+    }
+
+def find_related(article, all_articles, limit=3):
+    """Finde verwandte Artikel basierend auf Tag und Kategorie."""
+    related = []
+    for a in all_articles:
+        if a.get("id") == article.get("id"):
+            continue
+        if a.get("tag") == article.get("tag") or a.get("cat") == article.get("cat"):
+            related.append(a["id"])
+        if len(related) >= limit:
+            break
+    return related
 
 def run():
     if os.path.exists(DATA_FILE):
@@ -101,6 +147,8 @@ def run():
 
     existing_titles = {a.get('title', '') for a in db['articles']}
     new_count = 0
+    heute = datetime.now().strftime("%d.%m.%Y")
+    new_articles = []
 
     for feed_url, category in RSS_FEEDS:
         if new_count >= 10:
@@ -124,13 +172,34 @@ def run():
             if entry:
                 entry["id"] = os.urandom(4).hex()
                 entry["url"] = post.link
+                entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
                 image_query = entry.pop("image_query", "technology")
                 entry["image_local"] = get_unsplash_image(image_query, entry["id"])
                 db['articles'].insert(0, entry)
+                new_articles.append(entry)
                 existing_titles.add(post.title)
                 new_count += 1
                 print(f"  -> Erstellt: {entry['title']} ({new_count}/10)")
                 time.sleep(30)
+
+    # Pick of the Day: erster (neuester) Artikel des heutigen Tages
+    for a in db['articles']:
+        a.setdefault("pick", False)
+        a["pick"] = False
+    today_articles = [a for a in db['articles'] if a.get("date") == heute]
+    if today_articles:
+        today_articles[0]["pick"] = True
+        print(f"\nPick of the Day: {today_articles[0]['title']}")
+
+    # Related articles für neue Artikel berechnen
+    for article in new_articles:
+        article["related"] = find_related(article, db['articles'])
+
+    # BytePulse Stimmungsbarometer
+    pulse = compute_bytepulse(db['articles'], heute)
+    if pulse:
+        db["bytepulse"] = pulse
+        print(f"BytePulse: {pulse['positiv']}% positiv, {pulse['neutral']}% neutral, {pulse['kritisch']}% kritisch")
 
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(db, f, ensure_ascii=False, indent=4)
