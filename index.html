@@ -132,6 +132,9 @@
         }
         .hero-pick-title { font-family: var(--display); font-size: 26px; font-weight: 800; line-height: 1.18; margin-bottom: 10px; }
         .hero-pick-teaser { font-size: 14px; opacity: 0.82; line-height: 1.6; max-width: 620px; margin-bottom: 16px; }
+        .hero-pick-reason { display: flex; align-items: flex-start; gap: 8px; background: rgba(255,255,255,0.1); border-left: 3px solid #ffd60a; border-radius: 0 6px 6px 0; padding: 10px 14px; margin-bottom: 16px; max-width: 620px; backdrop-filter: blur(4px); }
+        .hero-pick-reason-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+        .hero-pick-reason-text { font-size: 13px; opacity: 0.9; line-height: 1.55; font-style: italic; }
         .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 10px; opacity: 0.65; }
 
         @media (max-width: 600px) {
@@ -483,6 +486,7 @@
                     </div>
                     <div class="hero-pick-title">${pick.title}</div>
                     ${teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
+                    ${pick.pick_reason ? `<div class="hero-pick-reason"><span class="hero-pick-reason-icon">🤖</span><span class="hero-pick-reason-text">${pick.pick_reason}</span></div>` : ''}
                     <div class="hero-pick-meta">
                         <span>${pick.source || ''}</span>
                         <span>⏱️ ${pick.read || ''}</span>

@@ -139,11 +139,10 @@ def find_related(article, all_articles, limit=3):
     return related
 
 def pick_of_the_day(today_articles):
-    """Lässt die KI den relevantesten Artikel des Tages wählen."""
+    """Lässt die KI den relevantesten Artikel wählen und begründen."""
     if len(today_articles) == 1:
         return today_articles[0]
 
-    # Kompakte Übersicht aller heutigen Artikel für den Prompt
     overview = "\n".join(
         f"{i+1}. [{a.get('tag','')}] {a.get('title','')} — {a.get('source','')} ({a.get('sentiment','')})"
         for i, a in enumerate(today_articles)
@@ -159,7 +158,8 @@ Welcher Artikel verdient heute den "Pick of the Day"? Kriterien:
 - Nachhaltiger Impact oder besondere Brisanz
 - Lieber überraschend oder kontrovers als generisch
 
-Antworte NUR mit der Nummer des Artikels (z.B. "3"). Kein Text davor oder danach."""
+Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
+{{"id": <Nummer>, "reason": "<1-2 Sätze warum dieser Artikel heute besonders wichtig ist — direkt, meinungsstark, auf Deutsch>"}}"""
 
     try:
         r = requests.post(
@@ -170,16 +170,19 @@ Antworte NUR mit der Nummer des Artikels (z.B. "3"). Kein Text davor oder danach
             },
             json={
                 "model": MODEL,
-                "max_tokens": 5,
+                "max_tokens": 120,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=15,
         )
         if r.status_code == 200:
             raw = r.json()["choices"][0]["message"]["content"].strip()
-            idx = int(re.search(r"\d+", raw).group()) - 1
+            result = json.loads(re.sub(r"```json|```", "", raw).strip())
+            idx = int(result["id"]) - 1
             if 0 <= idx < len(today_articles):
-                print(f"  -> KI wählt Artikel #{idx+1}")
+                reason = result.get("reason", "")
+                print(f"  -> KI wählt Artikel #{idx+1}: {reason}")
+                today_articles[idx]["pick_reason"] = reason
                 return today_articles[idx]
     except Exception as e:
         print(f"  -> Pick-Fehler: {e}")
