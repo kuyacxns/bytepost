@@ -3,11 +3,11 @@ from datetime import datetime
 
 # --- SETUP ---
 # API-Key als Umgebungsvariable setzen:
-#   export OPENROUTER_API_KEY="sk-or-..."
-# Oder direkt hier eintragen (nicht empfohlen für öffentliche Repos):
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+#   export GROQ_API_KEY="gsk_..."
+# Kostenloser Account: https://console.groq.com
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 UNSPLASH_KEY = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
-MODEL = "google/gemini-2.5-flash"   # Gemini via OpenRouter
+MODEL = "llama-3.3-70b-versatile"  # Kostenlos, sehr gute Qualität
 DATA_FILE = "data.json"
 
 # --- COST PROTECTION ---
@@ -83,12 +83,10 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 
     try:
         r = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
+            "https://api.groq.com/openai/v1/chat/completions",
             headers={
-                "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+                "Authorization": f"Bearer {GROQ_API_KEY}",
                 "Content-Type": "application/json",
-                "HTTP-Referer": "https://bytepost.de",
-                "X-Title": "BytePost Generator",
             },
             json={
                 "model": MODEL,
@@ -97,7 +95,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             },
             timeout=30,
         )
-        print(f"  -> OpenRouter Status: {r.status_code}")
+        print(f"  -> Groq Status: {r.status_code}")
         if r.status_code != 200:
             print(f"  -> Fehler: {r.text[:200]}")
             return None
@@ -141,9 +139,10 @@ def find_related(article, all_articles, limit=3):
     return related
 
 def run():
-    if not OPENROUTER_API_KEY:
-        print("FEHLER: OPENROUTER_API_KEY nicht gesetzt.")
-        print("  export OPENROUTER_API_KEY='sk-or-...'")
+    if not GROQ_API_KEY:
+        print("FEHLER: GROQ_API_KEY nicht gesetzt.")
+        print("  export GROQ_API_KEY='gsk_...'")
+        print("  Kostenloser Account: https://console.groq.com")
         return
 
     if os.path.exists(DATA_FILE):
