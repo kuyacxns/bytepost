@@ -230,10 +230,9 @@
             right: 16px;
             background: rgba(0,0,0,0.7); border: none; border-radius: 50%;
             width: 40px; height: 40px; cursor: pointer; color: #fff; font-size: 18px;
-            z-index: 1001; display: none; align-items: center; justify-content: center;
+            z-index: 1001; display: flex; align-items: center; justify-content: center;
             backdrop-filter: blur(8px); transition: background var(--t);
         }
-        .overlay.open .modal-close { display: flex; }
         .modal-close:hover { background: var(--accent); }
 
         .m-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; color: #fff; text-transform: uppercase; }
