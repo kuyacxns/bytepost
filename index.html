@@ -482,7 +482,11 @@
     function renderPick() {
         const container = document.getElementById('pick-of-day');
         const pick = PICK;
-        if (!pick) { container.innerHTML = ''; return; }
+        // Hide hero when a category filter is active and pick doesn't belong to it
+        if (!pick || (activeFilter !== 'alle' && (pick.cat || '').toLowerCase() !== activeFilter)) {
+            container.innerHTML = '';
+            return;
+        }
 
         const color = catColor(pick.cat);
         const teaserText = teaser(pick.content, 160);
