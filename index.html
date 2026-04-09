@@ -470,16 +470,17 @@
     }
 
     /* ── Render ─────────────────────────────────────────────── */
+    const PICK = ARTICLES.find(a => a.pick) || ARTICLES[0];
+
     function renderAll() {
         const articles = filteredArticles();
-        renderPick(articles);
+        renderPick();
         renderGrid(articles);
     }
 
-    function renderPick(articles) {
+    function renderPick() {
         const container = document.getElementById('pick-of-day');
-        // Use first article as Pick of the Day (or one flagged as pick:true)
-        const pick = articles.find(a => a.pick) || articles[0];
+        const pick = PICK;
         if (!pick) { container.innerHTML = ''; return; }
 
         const color = catColor(pick.cat);
@@ -511,10 +512,9 @@
 
     function renderGrid(articles) {
         const container = document.getElementById('feed');
-        // Exclude the pick from the grid to avoid duplication
-        const pick = articles.find(a => a.pick) || articles[0];
-        const gridArticles = pick
-            ? articles.filter(a => a.id !== pick.id && a.url !== pick.url)
+        // Always exclude the global pick to avoid duplication
+        const gridArticles = PICK
+            ? articles.filter(a => a.id !== PICK.id && a.url !== PICK.url)
             : articles;
 
         if (!gridArticles.length) {
