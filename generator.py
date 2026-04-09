@@ -33,7 +33,11 @@ RSS_FEEDS = [
     ("https://openai.com/blog/rss/", "KI"),
     # Deutsche Quellen
     ("https://www.heise.de/developer/rss/news-atom.xml", "Dev"),
+    ("https://www.heise.de/security/rss/alert-news-atom.xml", "Security"),
     ("https://www.golem.de/rss.php?tp=dev", "Dev"),
+    ("https://rss.golem.de/rss.php?feed=RSS2.0", "Tech"),
+    ("https://t3n.de/rss.xml", "Tech"),
+    # GitHub Trending — kein RSS verfügbar, ggf. per API-Scraper ergänzen
 ]
 
 def get_unsplash_image(query, article_id):
@@ -160,7 +164,7 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
             'arstechnica.com': 'Ars Technica', 'stackoverflow.blog': 'Stack Overflow Blog',
             'github.blog': 'GitHub Blog', 'towardsdatascience.com': 'Towards Data Science',
             'engineering.atspotify.com': 'Spotify Engineering', 'openai.com': 'OpenAI',
-            'heise.de': 'Heise Developer', 'golem.de': 'Golem',
+            'heise.de': 'Heise', 'golem.de': 'Golem', 't3n.de': 't3n',
             'blogs.microsoft.com': 'Microsoft AI Blog',
         }
         if not data.get('source') or data.get('source') in ('BytePost', 'Quellenname'):
