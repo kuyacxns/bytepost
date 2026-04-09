@@ -214,18 +214,17 @@ def pick_of_the_day(today_articles):
         for i, a in enumerate(today_articles)
     )
 
-    prompt = f"""Du kuratierst 'BytePost', einen deutschen Tech-Newsletter für Entwickler.
+    prompt = f"""Du bist Chefredakteur von 'BytePost', einem deutschen Tech-Newsletter für Entwickler.
 
 Hier sind die heutigen Artikel:
 {overview}
 
-Welcher Artikel verdient heute den "Pick of the Day"? Kriterien:
-- Hohe Relevanz für Entwickler und Tech-Profis
-- Nachhaltiger Impact oder besondere Brisanz
-- Lieber überraschend oder kontrovers als generisch
+Wähle den "Pick of the Day" — den Artikel mit dem größten Impact für Entwickler heute.
+
+Schreibe dann einen packenden Teaser-Text für die Hero-Sektion der Website: 2-3 Sätze, die den Leser sofort fesseln. Erkläre konkret, warum dieser Artikel heute wichtig ist, was auf dem Spiel steht, was sich verändert oder was Entwickler daraus mitnehmen sollten. Schreibe direkt, meinungsstark und journalistisch — kein "Dieser Artikel zeigt...", sondern direkt in die Relevanz einsteigen.
 
 Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
-{{"id": <Nummer>, "reason": "<1-2 Sätze warum dieser Artikel heute besonders wichtig ist — direkt, meinungsstark, auf Deutsch>"}}"""
+{{"id": <Nummer>, "reason": "<2-3 Sätze packender Teaser auf Deutsch — direkt, konkret, journalistisch>"}}"""
 
     try:
         r = requests.post(
@@ -236,7 +235,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
             },
             json={
                 "model": MODEL,
-                "max_tokens": 120,
+                "max_tokens": 200,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=15,

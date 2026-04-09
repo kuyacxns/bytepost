@@ -132,9 +132,6 @@
         }
         .hero-pick-title { font-family: var(--display); font-size: 36px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; max-width: 780px; }
         .hero-pick-teaser { font-size: 16px; opacity: 0.85; line-height: 1.65; max-width: 660px; margin-bottom: 20px; }
-        .hero-pick-reason { display: flex; align-items: flex-start; gap: 8px; background: rgba(255,255,255,0.1); border-left: 3px solid #ffd60a; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 20px; max-width: 660px; backdrop-filter: blur(4px); }
-        .hero-pick-reason-icon { font-size: 14px; flex-shrink: 0; margin-top: 2px; }
-        .hero-pick-reason-text { font-size: 14px; opacity: 0.9; line-height: 1.55; font-style: italic; }
         .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 11px; opacity: 0.65; }
 
         @media (max-width: 600px) {
@@ -524,8 +521,7 @@
                         ${cats(pick).map(c => `<span class="hero-pick-cat-badge" style="background:${catColor(c)}">${catLabel(c)}</span>`).join('')}
                     </div>
                     <div class="hero-pick-title">${pick.title}</div>
-                    ${teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
-                    ${pick.pick_reason ? `<div class="hero-pick-reason"><span class="hero-pick-reason-icon">🤖</span><span class="hero-pick-reason-text">${pick.pick_reason}</span></div>` : ''}
+                    ${pick.pick_reason ? `<div class="hero-pick-teaser">${pick.pick_reason}</div>` : teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
                     <div class="hero-pick-meta">
                         <span>${pick.source || ''}</span>
                         <span>⏱️ ${pick.read || ''}</span>
