@@ -117,10 +117,13 @@
         .hero-pick-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 96px; background: var(--bg-card); }
         .hero-pick-gradient {
             position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.08) 100%);
+            background: linear-gradient(to top, rgba(0,0,0,0.97) 0%, rgba(0,0,0,0.75) 45%, rgba(0,0,0,0.2) 100%);
         }
-        .hero-pick-body { position: relative; z-index: 1; padding: 40px 44px; color: #fff; width: 100%; }
-        .hero-pick-top { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+        .hero-pick-body {
+            position: relative; z-index: 1; padding: 32px 36px 36px; color: #fff; width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%);
+        }
+        .hero-pick-top { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
         .pick-badge {
             font-family: var(--mono); font-size: 10px; font-weight: 700;
             background: #ffd60a; color: #000;
@@ -130,15 +133,25 @@
             font-family: var(--mono); font-size: 10px; font-weight: 700;
             padding: 4px 11px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
         }
-        .hero-pick-title { font-family: var(--display); font-size: 36px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; max-width: 780px; }
-        .hero-pick-teaser { font-size: 16px; opacity: 0.85; line-height: 1.65; max-width: 660px; margin-bottom: 20px; }
-        .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 11px; opacity: 0.65; }
+        .hero-pick-title { font-family: var(--display); font-size: 34px; font-weight: 800; line-height: 1.15; margin-bottom: 16px; max-width: 780px; text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
+        .hero-pick-why {
+            display: flex; gap: 10px; align-items: flex-start;
+            background: rgba(255,214,10,0.12); border: 1px solid rgba(255,214,10,0.35);
+            border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; max-width: 680px;
+            backdrop-filter: blur(6px);
+        }
+        .hero-pick-why-label {
+            font-family: var(--mono); font-size: 9px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.8px; color: #ffd60a; white-space: nowrap; padding-top: 2px;
+        }
+        .hero-pick-why-text { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.92); }
+        .hero-pick-meta { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.6); flex-wrap: wrap; }
 
         @media (max-width: 600px) {
             .hero-pick { min-height: 340px; }
-            .hero-pick-body { padding: 24px 20px; }
-            .hero-pick-title { font-size: 24px; }
-            .hero-pick-teaser { font-size: 14px; }
+            .hero-pick-body { padding: 20px 18px 24px; }
+            .hero-pick-title { font-size: 22px; }
+            .hero-pick-why-text { font-size: 13px; }
         }
 
         /* ── Card grid ──────────────────────────────────────── */
@@ -521,7 +534,11 @@
                         ${cats(pick).map(c => `<span class="hero-pick-cat-badge" style="background:${catColor(c)}">${catLabel(c)}</span>`).join('')}
                     </div>
                     <div class="hero-pick-title">${pick.title}</div>
-                    ${pick.pick_reason ? `<div class="hero-pick-teaser">${pick.pick_reason}</div>` : teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
+                    ${pick.pick_reason ? `
+                    <div class="hero-pick-why">
+                        <span class="hero-pick-why-label">Warum?</span>
+                        <span class="hero-pick-why-text">${pick.pick_reason}</span>
+                    </div>` : ''}
                     <div class="hero-pick-meta">
                         <span>${pick.source || ''}</span>
                         <span>⏱️ ${pick.read || ''}</span>
