@@ -180,6 +180,17 @@
             font-family: var(--mono); font-size: 9px; font-weight: 700;
             text-transform: uppercase; letter-spacing: 0.4px;
             padding: 2px 7px; border-radius: 4px; color: #fff;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .card-date {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            padding: 2px 7px; border-radius: 4px;
+            background: rgba(255,214,10,0.18); color: #a07800;
+            letter-spacing: 0.3px; white-space: nowrap;
+        }
+        [data-theme="dark"] .card-date {
+            background: rgba(255,214,10,0.15); color: #ffd60a;
         }
 
         .card-title {
@@ -537,6 +548,7 @@
                     <div class="card-body">
                         <div class="card-meta">
                             ${catBadgeHtml(a)}
+                            ${a.date ? `<span class="card-date">${a.date}</span>` : ''}
                         </div>
                         <div class="card-title">${a.title}</div>
                         ${t ? `<div class="card-teaser">${t}</div>` : ''}

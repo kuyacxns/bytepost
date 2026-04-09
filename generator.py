@@ -109,7 +109,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "cat": ["ki"],
     "icon": "Passendes Emoji",
     "title": "Prägnante Headline, max. 8 Wörter",
-    "source": "Quellenname",
+    "source": "Echter Name der Originalquelle (z.B. TechCrunch, The Verge, GitHub Blog) — NICHT 'BytePost'",
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
@@ -154,6 +154,20 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
         cat = [c for c in cat if c in valid] or ["ki"]
         data["cat"] = cat
         data.pop("tag", None)  # tag field no longer needed
+        # Never let source be "BytePost" — derive from URL if needed
+        SOURCE_MAP = {
+            'techcrunch.com': 'TechCrunch', 'theverge.com': 'The Verge',
+            'arstechnica.com': 'Ars Technica', 'stackoverflow.blog': 'Stack Overflow Blog',
+            'github.blog': 'GitHub Blog', 'towardsdatascience.com': 'Towards Data Science',
+            'engineering.atspotify.com': 'Spotify Engineering', 'openai.com': 'OpenAI',
+            'heise.de': 'Heise Developer', 'golem.de': 'Golem',
+            'blogs.microsoft.com': 'Microsoft AI Blog',
+        }
+        if not data.get('source') or data.get('source') in ('BytePost', 'Quellenname'):
+            for domain, name in SOURCE_MAP.items():
+                if domain in url:
+                    data['source'] = name
+                    break
         data["date"] = heute
         tokens = r.json().get("usage", {})
         print(f"  -> OK | Cats: {cat} | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
