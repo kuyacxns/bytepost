@@ -210,6 +210,7 @@
         .overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.85);
             height: 100vh; height: 100dvh;
+            overscroll-behavior: none;
             display: none; align-items: start; justify-content: center;
             padding: 40px 20px; z-index: 1000;
             backdrop-filter: blur(10px); overflow-y: auto;
@@ -576,12 +577,16 @@
             : '';
 
         document.getElementById('overlay').classList.add('open');
-        document.body.style.overflow = 'hidden';
+        const scrollY = window.scrollY;
+        document.body.style.cssText = `position:fixed;top:-${scrollY}px;left:0;right:0;overflow:hidden;`;
+        document.body.dataset.scrollY = scrollY;
     }
 
     function closeModal() {
         document.getElementById('overlay').classList.remove('open');
-        document.body.style.overflow = '';
+        const scrollY = parseInt(document.body.dataset.scrollY || '0');
+        document.body.style.cssText = '';
+        window.scrollTo(0, scrollY);
     }
 
     /* ── Init ───────────────────────────────────────────────── */
