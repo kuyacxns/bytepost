@@ -109,38 +109,39 @@
         .hero-pick {
             position: relative; border-radius: var(--radius); overflow: hidden;
             cursor: pointer; margin: 24px 0;
-            min-height: 380px; display: flex; align-items: flex-end;
+            min-height: 500px; display: flex; align-items: flex-end;
             transition: transform var(--t), box-shadow var(--t);
         }
-        .hero-pick:hover { transform: scale(1.005); box-shadow: 0 12px 48px rgba(0,0,0,0.25); }
+        .hero-pick:hover { transform: scale(1.005); box-shadow: 0 16px 56px rgba(0,0,0,0.3); }
         .hero-pick-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-        .hero-pick-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 72px; background: var(--bg-card); }
+        .hero-pick-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 96px; background: var(--bg-card); }
         .hero-pick-gradient {
             position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.1) 100%);
+            background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.08) 100%);
         }
-        .hero-pick-body { position: relative; z-index: 1; padding: 28px 32px; color: #fff; width: 100%; }
-        .hero-pick-top { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+        .hero-pick-body { position: relative; z-index: 1; padding: 40px 44px; color: #fff; width: 100%; }
+        .hero-pick-top { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
         .pick-badge {
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
             background: #ffd60a; color: #000;
-            padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;
+            padding: 4px 11px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;
         }
         .hero-pick-cat-badge {
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
-            padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            padding: 4px 11px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
         }
-        .hero-pick-title { font-family: var(--display); font-size: 26px; font-weight: 800; line-height: 1.18; margin-bottom: 10px; }
-        .hero-pick-teaser { font-size: 14px; opacity: 0.82; line-height: 1.6; max-width: 620px; margin-bottom: 16px; }
-        .hero-pick-reason { display: flex; align-items: flex-start; gap: 8px; background: rgba(255,255,255,0.1); border-left: 3px solid #ffd60a; border-radius: 0 6px 6px 0; padding: 10px 14px; margin-bottom: 16px; max-width: 620px; backdrop-filter: blur(4px); }
-        .hero-pick-reason-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
-        .hero-pick-reason-text { font-size: 13px; opacity: 0.9; line-height: 1.55; font-style: italic; }
-        .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 10px; opacity: 0.65; }
+        .hero-pick-title { font-family: var(--display); font-size: 36px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; max-width: 780px; }
+        .hero-pick-teaser { font-size: 16px; opacity: 0.85; line-height: 1.65; max-width: 660px; margin-bottom: 20px; }
+        .hero-pick-reason { display: flex; align-items: flex-start; gap: 8px; background: rgba(255,255,255,0.1); border-left: 3px solid #ffd60a; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 20px; max-width: 660px; backdrop-filter: blur(4px); }
+        .hero-pick-reason-icon { font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+        .hero-pick-reason-text { font-size: 14px; opacity: 0.9; line-height: 1.55; font-style: italic; }
+        .hero-pick-meta { display: flex; align-items: center; gap: 16px; font-family: var(--mono); font-size: 11px; opacity: 0.65; }
 
         @media (max-width: 600px) {
-            .hero-pick { min-height: 280px; }
-            .hero-pick-body { padding: 20px; }
-            .hero-pick-title { font-size: 20px; }
+            .hero-pick { min-height: 340px; }
+            .hero-pick-body { padding: 24px 20px; }
+            .hero-pick-title { font-size: 24px; }
+            .hero-pick-teaser { font-size: 14px; }
         }
 
         /* ── Card grid ──────────────────────────────────────── */
@@ -381,6 +382,7 @@
 
     /* ── State ──────────────────────────────────────────────── */
     let ARTICLES = [];
+    let PICK = null;
     let activeFilter = 'alle';
     let currentArticleId = null;
     let likes = JSON.parse(localStorage.getItem('bp_likes') || '{}');
@@ -392,6 +394,7 @@
             const data = await res.json();
             ARTICLES = data.articles;
             ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
+            PICK = ARTICLES.find(a => a.pick) || ARTICLES[0] || null;
             setEditionDate();
             applyHashFilter();
             buildFilterTabs();
@@ -470,8 +473,6 @@
     }
 
     /* ── Render ─────────────────────────────────────────────── */
-    const PICK = ARTICLES.find(a => a.pick) || ARTICLES[0];
-
     function renderAll() {
         const articles = filteredArticles();
         renderPick();
