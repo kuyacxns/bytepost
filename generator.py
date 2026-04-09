@@ -106,8 +106,7 @@ SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisc
 
 Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
-    "cat": "ki|dev|data|security|cloud|hardware|business",
-    "tag": "KI|Dev|Data|Security|Cloud|Hardware|Business",
+    "cat": ["ki"],
     "icon": "Passendes Emoji",
     "title": "Prägnante Headline, max. 8 Wörter",
     "source": "Quellenname",
@@ -116,7 +115,10 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "sentiment": "positiv|neutral|kritisch",
     "content": "Vollständiger Artikel auf Deutsch (HTML mit h3, p, ul)",
     "content_simple": "Kompakte Version für Einsteiger (HTML)"
-}}"""
+}}
+
+"cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business
+Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
 
     try:
         r = requests.post(
@@ -142,9 +144,19 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
         # Literal-Newlines in JSON-Strings sind ungültig — durch Leerzeichen ersetzen
         clean = re.sub(r'\n', ' ', clean)
         data = json.loads(clean)
+        # Normalize cat to always be a list of clean lowercase strings
+        cat = data.get("cat", ["ki"])
+        if isinstance(cat, str):
+            cat = [c.strip().lower() for c in re.split(r'[|/,]+', cat) if c.strip()]
+        else:
+            cat = [c.strip().lower() for c in cat if c.strip()]
+        valid = {"ki", "dev", "data", "security", "cloud", "hardware", "business"}
+        cat = [c for c in cat if c in valid] or ["ki"]
+        data["cat"] = cat
+        data.pop("tag", None)  # tag field no longer needed
         data["date"] = heute
         tokens = r.json().get("usage", {})
-        print(f"  -> OK | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
+        print(f"  -> OK | Cats: {cat} | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
         return data
     except json.JSONDecodeError as e:
         print(f"  -> JSON-Fehler: {e} | Antwort: {raw[:200]}")

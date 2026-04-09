@@ -1,8 +1,10 @@
 {
     "articles": [
         {
-            "cat": "security|ki",
-            "tag": "KI|Sicherheit",
+            "cat": [
+                "security",
+                "ki"
+            ],
             "icon": "🚨",
             "title": "Florida untersucht OpenAI",
             "source": "The Verge",
@@ -24,8 +26,9 @@
             "related": []
         },
         {
-            "cat": "hardware",
-            "tag": "Apple Watch",
+            "cat": [
+                "hardware"
+            ],
             "icon": "📱",
             "title": "Apple Watch Deals",
             "source": "The Verge",
@@ -51,8 +54,9 @@
             ]
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki"
+            ],
             "icon": "🤖",
             "title": "OpenAI unter Druck",
             "source": "BytePost",
@@ -79,8 +83,10 @@
             ]
         },
         {
-            "cat": "ki|dev",
-            "tag": "KI|Dev",
+            "cat": [
+                "ki",
+                "business"
+            ],
             "icon": "🤖",
             "title": "ChatGPT bietet Pro-Plan",
             "source": "TechCrunch",
@@ -104,8 +110,9 @@
             ]
         },
         {
-            "cat": "dev",
-            "tag": "Dev",
+            "cat": [
+                "dev"
+            ],
             "icon": "🚀",
             "title": "C++: Die Zukunft",
             "source": "BytePost",
@@ -132,8 +139,9 @@
             ]
         },
         {
-            "cat": "hardware",
-            "tag": "Hardware",
+            "cat": [
+                "hardware"
+            ],
             "icon": "🎧",
             "title": "Günstige Noise-Cancelling Kopfhörer",
             "source": "The Verge",
@@ -160,8 +168,9 @@
             ]
         },
         {
-            "cat": "dev",
-            "tag": "Dev",
+            "cat": [
+                "dev"
+            ],
             "icon": "🖥️",
             "title": "Windows Control Panel",
             "source": "The Verge",
@@ -188,8 +197,9 @@
             ]
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki"
+            ],
             "icon": "🤖",
             "title": "Arcee Trinity Large Thinking",
             "source": "TechCrunch",
@@ -216,8 +226,10 @@
             ]
         },
         {
-            "cat": "ki|dev",
-            "tag": "KI|Dev",
+            "cat": [
+                "ki",
+                "dev"
+            ],
             "icon": "🤖",
             "title": "Google startet KI-Diktat-App",
             "source": "TechCrunch",
@@ -244,8 +256,10 @@
             ]
         },
         {
-            "cat": "data",
-            "tag": "Data Engineering",
+            "cat": [
+                "data",
+                "dev"
+            ],
             "icon": "📊",
             "title": "PDF-Datenextraktion in 45 Minuten",
             "source": "BytePost",
@@ -270,8 +284,10 @@
             ]
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki",
+                "business"
+            ],
             "icon": "🤖",
             "title": "KI für Marketing",
             "source": "BytePost",
@@ -294,8 +310,10 @@
             "related": []
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki",
+                "dev"
+            ],
             "icon": "🤖",
             "title": "Spotify Wrapped 2025",
             "source": "BytePost",
@@ -320,8 +338,9 @@
             ]
         },
         {
-            "cat": "dev",
-            "tag": "Dev",
+            "cat": [
+                "dev"
+            ],
             "icon": "💻",
             "title": "GitHub beschleunigt Diff",
             "source": "GitHub",
@@ -347,8 +366,10 @@
             ]
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki",
+                "dev"
+            ],
             "icon": "🤖",
             "title": "KI-Code-Assistent aktualisiert",
             "source": "BytePost",
@@ -376,8 +397,9 @@
             "pick_reason": "Der Artikel über den KI-Code-Assistenten von GitHub verdient heute den 'Pick of the Day', da er die Entwicklung von künstlicher Intelligenz im Bereich der Softwareentwicklung direkt betrifft und damit einen nachhaltigen Impact auf die Arbeit von Entwicklern haben könnte. Dieser Artikel ist besonders wichtig, weil er zeigt, wie KI-Technologien die Effizienz und Qualität der Softwareentwicklung in Zukunft revolutionieren können."
         },
         {
-            "cat": "dev",
-            "tag": "Dev",
+            "cat": [
+                "dev"
+            ],
             "icon": "💻",
             "title": "Dezentraler Messenger",
             "source": "BytePost",
@@ -403,8 +425,10 @@
             ]
         },
         {
-            "cat": "security",
-            "tag": "Security",
+            "cat": [
+                "security",
+                "ki"
+            ],
             "icon": "🚨",
             "title": "OpenClaw Kompromittiert: Annahme der Kompromittierung Pflicht",
             "source": "Ars Technica",
@@ -416,8 +440,9 @@
             "pick": false
         },
         {
-            "cat": "hardware",
-            "tag": "Hardware",
+            "cat": [
+                "hardware"
+            ],
             "icon": "💻",
             "title": "M1 Macs: Schnäppchen für Tech-Profis?",
             "source": "The Verge",
@@ -429,8 +454,9 @@
             "pick": false
         },
         {
-            "cat": "hardware",
-            "tag": "Hardware",
+            "cat": [
+                "hardware"
+            ],
             "icon": "🚀",
             "title": "Artemis II: Menschheitsrekord und Krater-Nomenklatur am Mond",
             "source": "The Verge",
@@ -442,8 +468,10 @@
             "pick": false
         },
         {
-            "cat": "security",
-            "tag": "Security",
+            "cat": [
+                "security",
+                "ki"
+            ],
             "icon": "🚨",
             "title": "Iran droht KI-Rechenzentren: Geopolitische Risiken für Stargate",
             "source": "TechCrunch",
@@ -455,8 +483,10 @@
             "pick": false
         },
         {
-            "cat": "business",
-            "tag": "Business/Tech/Gaming",
+            "cat": [
+                "business",
+                "gaming"
+            ],
             "icon": "🎮",
             "title": "Netflix startet eigenständige App für Kinder-Spiele",
             "source": "TechCrunch",
@@ -468,8 +498,10 @@
             "pick": false
         },
         {
-            "cat": "business",
-            "tag": "Business",
+            "cat": [
+                "business",
+                "hardware"
+            ],
             "icon": "🚗",
             "title": "Gebraucht-EVs: Mehr als nur Benzinpreise treiben Verkauf",
             "source": "TechCrunch",
@@ -481,8 +513,10 @@
             "pick": false
         },
         {
-            "cat": "ki",
-            "tag": "KI",
+            "cat": [
+                "ki",
+                "dev"
+            ],
             "icon": "🎙️",
             "title": "Google: Offline-KI-Diktier-App für iOS überrascht leise",
             "source": "TechCrunch",
@@ -494,8 +528,10 @@
             "pick": false
         },
         {
-            "cat": "business",
-            "tag": "Business/Tech",
+            "cat": [
+                "business",
+                "hardware"
+            ],
             "icon": "⚡️",
             "title": "Gebraucht-EVs boomen: Mehr als nur Benzinpreise",
             "source": "TechCrunch",

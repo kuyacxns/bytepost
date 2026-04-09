@@ -376,6 +376,13 @@
         tech:     '#6366f1',
     };
 
+    function cats(a) {
+        const c = a.cat;
+        if (Array.isArray(c)) return c;
+        if (!c) return [];
+        return c.split(/[|/,]+/).map(s => s.trim().toLowerCase()).filter(Boolean);
+    }
+
     function catColor(cat) {
         return CAT_COLORS[(cat || '').toLowerCase()] || '#636366';
     }
@@ -428,10 +435,10 @@
     }
 
     function buildFilterTabs() {
-        const cats = ['alle', ...new Set(ARTICLES.map(a => (a.cat || '').toLowerCase()).filter(Boolean))];
+        const allCats = ['alle', ...new Set(ARTICLES.flatMap(a => cats(a)).filter(Boolean))];
         const labels = { alle: 'Alle', ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
         const container = document.getElementById('cat-tabs');
-        container.innerHTML = cats.map(cat => {
+        container.innerHTML = allCats.map(cat => {
             const label = labels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
             const isActive = activeFilter === cat;
             return `<button class="cat-tab${isActive ? ' active' : ''}" onclick="setFilter('${cat}')">${label}</button>`;
@@ -447,7 +454,7 @@
 
     function filteredArticles() {
         if (activeFilter === 'alle') return ARTICLES;
-        return ARTICLES.filter(a => (a.cat || '').toLowerCase() === activeFilter);
+        return ARTICLES.filter(a => cats(a).includes(activeFilter));
     }
 
     /* ── Helpers ────────────────────────────────────────────── */
@@ -467,9 +474,10 @@
         return labels[(cat || '').toLowerCase()] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '');
     }
 
-    function catBadgeHtml(cat) {
-        const color = catColor(cat);
-        return `<span class="cat-badge" style="background:${color}">${catLabel(cat)}</span>`;
+    function catBadgeHtml(article) {
+        return cats(article).map(c =>
+            `<span class="cat-badge" style="background:${catColor(c)}">${catLabel(c)}</span>`
+        ).join('');
     }
 
     /* ── Render ─────────────────────────────────────────────── */
@@ -483,12 +491,12 @@
         const container = document.getElementById('pick-of-day');
         const pick = PICK;
         // Hide hero when a category filter is active and pick doesn't belong to it
-        if (!pick || (activeFilter !== 'alle' && (pick.cat || '').toLowerCase() !== activeFilter)) {
+        if (!pick || (activeFilter !== 'alle' && !cats(pick).includes(activeFilter))) {
             container.innerHTML = '';
             return;
         }
 
-        const color = catColor(pick.cat);
+        const color = catColor(cats(pick)[0]);
         const teaserText = teaser(pick.content, 160);
         const imgHtml = pick.image_local
             ? `<img class="hero-pick-img" src="${pick.image_local}" alt="">`
@@ -501,7 +509,7 @@
                 <div class="hero-pick-body">
                     <div class="hero-pick-top">
                         <span class="pick-badge">⭐ Pick of the Day</span>
-                        <span class="hero-pick-cat-badge" style="background:${color}">${catLabel(pick.cat)}</span>
+                        ${cats(pick).map(c => `<span class="hero-pick-cat-badge" style="background:${catColor(c)}">${catLabel(c)}</span>`).join('')}
                     </div>
                     <div class="hero-pick-title">${pick.title}</div>
                     ${teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
@@ -528,7 +536,6 @@
         }
 
         container.innerHTML = gridArticles.map(a => {
-            const color = catColor(a.cat);
             const t = teaser(a.content, 120);
             const imgHtml = a.image_local
                 ? `<img class="card-img" src="${a.image_local}" alt="" loading="lazy">`
@@ -538,7 +545,7 @@
                     ${imgHtml}
                     <div class="card-body">
                         <div class="card-meta">
-                            ${catBadgeHtml(a.cat)}
+                            ${catBadgeHtml(a)}
                         </div>
                         <div class="card-title">${a.title}</div>
                         ${t ? `<div class="card-teaser">${t}</div>` : ''}
@@ -557,10 +564,12 @@
         if (!a) return;
         currentArticleId = id;
 
-        const color = catColor(a.cat);
+        const articleCats = cats(a);
         const tagEl = document.getElementById('m-tag');
-        tagEl.textContent = catLabel(a.cat);
-        tagEl.style.background = color;
+        tagEl.innerHTML = articleCats.map(c =>
+            `<span style="background:${catColor(c)};padding:2px 8px;border-radius:4px;margin-right:4px;font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.4px;">${catLabel(c)}</span>`
+        ).join('');
+        tagEl.style.background = 'transparent';
 
         document.getElementById('m-title').textContent = a.title;
         document.getElementById('m-meta').textContent = `${a.source || ''}${a.date ? ' · ' + a.date : ''} · ⏱️ ${a.read || ''} Lesezeit`;
