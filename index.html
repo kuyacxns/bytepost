@@ -177,20 +177,30 @@
         .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
 
         .cat-badge {
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.4px;
-            padding: 2px 7px; border-radius: 4px; color: #fff;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            padding: 3px 9px; border-radius: 5px; color: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.25);
         }
 
         .card-date {
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
-            padding: 2px 7px; border-radius: 4px;
-            background: rgba(255,214,10,0.18); color: #a07800;
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            padding: 3px 9px; border-radius: 5px;
+            background: rgba(255,214,10,0.22); color: #8a6800;
             letter-spacing: 0.3px; white-space: nowrap;
         }
         [data-theme="dark"] .card-date {
-            background: rgba(255,214,10,0.15); color: #ffd60a;
+            background: rgba(255,214,10,0.18); color: #ffd60a;
+        }
+
+        .card-read-time {
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            padding: 3px 9px; border-radius: 5px;
+            background: rgba(99,99,102,0.1); color: var(--text-3);
+            white-space: nowrap;
+        }
+        [data-theme="dark"] .card-read-time {
+            background: rgba(255,255,255,0.08);
         }
 
         .card-title {
@@ -519,7 +529,7 @@
                     <div class="hero-pick-meta">
                         <span>${pick.source || ''}</span>
                         <span>⏱️ ${pick.read || ''}</span>
-                        ${pick.date ? `<span>${pick.date}</span>` : ''}
+                        ${pick.date ? `<span style="background:rgba(255,214,10,0.25);color:#ffd60a;padding:2px 8px;border-radius:5px;font-weight:700;">${pick.date}</span>` : ''}
                     </div>
                 </div>
             </div>`;
@@ -549,12 +559,12 @@
                         <div class="card-meta">
                             ${catBadgeHtml(a)}
                             ${a.date ? `<span class="card-date">${a.date}</span>` : ''}
+                            ${a.read ? `<span class="card-read-time">⏱ ${a.read}</span>` : ''}
                         </div>
                         <div class="card-title">${a.title}</div>
                         ${t ? `<div class="card-teaser">${t}</div>` : ''}
                         <div class="card-footer">
                             <span class="card-source">${a.source || ''}</span>
-                            <span class="card-read">⏱️ ${a.read || ''}</span>
                         </div>
                     </div>
                 </div>`;
