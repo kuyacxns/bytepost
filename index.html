@@ -209,6 +209,7 @@
         /* ── Modal ──────────────────────────────────────────── */
         .overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+            height: 100vh; height: 100dvh;
             display: none; align-items: start; justify-content: center;
             padding: 40px 20px; z-index: 1000;
             backdrop-filter: blur(10px); overflow-y: auto;
@@ -267,7 +268,7 @@
             .theme-btn { padding: 5px 9px; }
             .edition-title { font-size: 24px; }
             .overlay { padding: 0; align-items: flex-end; }
-            .modal { border-radius: 20px 20px 0 0; max-height: 92vh; overflow-y: auto; animation: modal-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+            .modal { border-radius: 20px 20px 0 0; max-height: 92vh; max-height: 92dvh; overflow-y: auto; animation: modal-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
             @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
             .modal-content-padding { padding: 24px 20px 40px; }
             .modal-image { height: 180px; }
