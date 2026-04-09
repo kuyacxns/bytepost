@@ -209,7 +209,6 @@
         /* ── Modal ──────────────────────────────────────────── */
         .overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.85);
-            height: 100vh; height: 100dvh;
             overscroll-behavior: none;
             display: none; align-items: start; justify-content: center;
             padding: 40px 20px; z-index: 1000;
@@ -578,27 +577,11 @@
 
         document.getElementById('overlay').classList.add('open');
         document.body.style.overflow = 'hidden';
-        syncOverlay();
     }
 
     function closeModal() {
         document.getElementById('overlay').classList.remove('open');
         document.body.style.overflow = '';
-    }
-
-    function syncOverlay() {
-        const overlay = document.getElementById('overlay');
-        if (!overlay.classList.contains('open')) return;
-        const vv = window.visualViewport;
-        if (vv) {
-            overlay.style.height = vv.height + 'px';
-            overlay.style.top = vv.offsetTop + 'px';
-        }
-    }
-
-    if (window.visualViewport) {
-        window.visualViewport.addEventListener('resize', syncOverlay);
-        window.visualViewport.addEventListener('scroll', syncOverlay);
     }
 
     /* ── Init ───────────────────────────────────────────────── */
