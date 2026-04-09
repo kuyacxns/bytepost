@@ -302,7 +302,7 @@ def run():
             existing_urls.add(post.link)
             new_count += 1
             print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
-            time.sleep(5)
+            time.sleep(20)
 
         else:
             continue
