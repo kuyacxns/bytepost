@@ -459,10 +459,14 @@
         return text.length > max ? text.substring(0, max).trimEnd() + '…' : text;
     }
 
-    function catBadgeHtml(cat, tag) {
+    function catLabel(cat) {
+        const labels = { ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
+        return labels[(cat || '').toLowerCase()] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '');
+    }
+
+    function catBadgeHtml(cat) {
         const color = catColor(cat);
-        const label = tag || cat || '';
-        return `<span class="cat-badge" style="background:${color}">${label}</span>`;
+        return `<span class="cat-badge" style="background:${color}">${catLabel(cat)}</span>`;
     }
 
     /* ── Render ─────────────────────────────────────────────── */
@@ -491,7 +495,7 @@
                 <div class="hero-pick-body">
                     <div class="hero-pick-top">
                         <span class="pick-badge">⭐ Pick of the Day</span>
-                        <span class="hero-pick-cat-badge" style="background:${color}">${pick.tag || pick.cat || ''}</span>
+                        <span class="hero-pick-cat-badge" style="background:${color}">${catLabel(pick.cat)}</span>
                     </div>
                     <div class="hero-pick-title">${pick.title}</div>
                     ${teaserText ? `<div class="hero-pick-teaser">${teaserText}</div>` : ''}
@@ -529,7 +533,7 @@
                     ${imgHtml}
                     <div class="card-body">
                         <div class="card-meta">
-                            ${catBadgeHtml(a.cat, a.tag)}
+                            ${catBadgeHtml(a.cat)}
                         </div>
                         <div class="card-title">${a.title}</div>
                         ${t ? `<div class="card-teaser">${t}</div>` : ''}
@@ -550,7 +554,7 @@
 
         const color = catColor(a.cat);
         const tagEl = document.getElementById('m-tag');
-        tagEl.textContent = a.tag || a.cat || '';
+        tagEl.textContent = catLabel(a.cat);
         tagEl.style.background = color;
 
         document.getElementById('m-title').textContent = a.title;
