@@ -1,52 +1,184 @@
-import requests, json, os, re, feedparser, time
+import requests, json, os, re, feedparser, time, random
 from datetime import datetime
 from bs4 import BeautifulSoup
 
 # --- SETUP ---
-# API-Key als Umgebungsvariable setzen:
-#   export GROQ_API_KEY="gsk_..."
-# Kostenloser Account: https://console.groq.com
 GROQ_API_KEY    = os.environ.get("GROQ_API_KEY", "")
 VOYAGE_API_KEY  = os.environ.get("VOYAGE_API_KEY", "pa-ThfF9-qrjIQdrHZeeaRm0pJ0qM_hWJdac3xspAZ2bza")
 UNSPLASH_KEY    = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
 MODEL           = "llama-3.3-70b-versatile"
-EMBED_MODEL     = "voyage-3-lite"   # 512 Dimensionen, 50M Tokens/Monat kostenlos
+EMBED_MODEL     = "voyage-3-lite"
 DATA_FILE       = "data.json"
 
 # --- COST PROTECTION ---
-MAX_PER_RUN = 10    # max. neue Artikel pro Generator-Lauf
-MAX_PER_DAY = 15    # max. neue Artikel pro Tag (Tagessperre)
-MAX_ERRORS  = 3     # Circuit Breaker: Abbruch nach N aufeinanderfolgenden Fehlern
+MAX_PER_RUN      = 10   # max. neue Artikel pro Generator-Lauf
+MAX_PER_DAY      = 15   # max. neue Artikel pro Tag
+MAX_PER_CATEGORY = 2    # max. Artikel pro Feed-Kategorie pro Lauf
+MAX_ERRORS       = 3    # Circuit Breaker
+FEED_TIMEOUT     = 10   # Sekunden pro Feed-Request
 
-# --- RSS FEEDS ---
-RSS_FEEDS = [
-    # Gaming (zuerst, damit Gaming-Artikel immer im Lauf vertreten sind)
-    ("https://www.ign.com/articles/feed.atom", "Gaming"),
-    ("https://feeds.feedburner.com/RockPaperShotgun", "Gaming"),
-    ("https://www.gamespot.com/feeds/news/", "Gaming"),
-    ("https://www.heise.de/games/rss/news-atom.xml", "Gaming"),
-    ("https://www.golem.de/rss.php?tp=games", "Gaming"),
-    # Internationale Top-Quellen
-    ("https://techcrunch.com/category/artificial-intelligence/feed/", "KI"),
-    ("https://techcrunch.com/category/software/feed/", "Dev"),
-    ("https://www.theverge.com/rss/index.xml", "Tech"),
-    ("https://feeds.arstechnica.com/arstechnica/technology-lab", "Dev"),
-    # Developer fokussiert
-    ("https://stackoverflow.blog/feed/", "Dev"),
-    ("https://github.blog/feed/", "Dev"),
-    ("https://engineering.atspotify.com/feed/", "Dev"),
-    # Data / AI / ML
-    ("https://towardsdatascience.com/feed", "Data"),
-    ("https://blogs.microsoft.com/ai/feed/", "KI"),
-    ("https://openai.com/blog/rss/", "KI"),
-    # Deutsche Quellen
-    ("https://www.heise.de/developer/rss/news-atom.xml", "Dev"),
-    ("https://www.heise.de/security/rss/alert-news-atom.xml", "Security"),
-    ("https://www.golem.de/rss.php?tp=dev", "Dev"),
-    ("https://rss.golem.de/rss.php?feed=RSS2.0", "Tech"),
-    ("https://t3n.de/rss.xml", "Tech"),
-    # GitHub Trending — kein RSS verfügbar, ggf. per API-Scraper ergänzen
-]
+# --- RSS FEEDS (kategorisiert für balancierte Auswahl) ---
+RSS_FEEDS = {
+    "gaming": [
+        ("Rock Paper Shotgun","https://feeds.feedburner.com/RockPaperShotgun"),
+        ("GameSpot",          "https://www.gamespot.com/feeds/news/"),
+        ("Heise Games",       "https://www.heise.de/games/rss/news-atom.xml"),
+        ("Golem Games",       "https://www.golem.de/rss.php?tp=games"),
+    ],
+    "ai_ml": [
+        ("TechCrunch KI",     "https://techcrunch.com/category/artificial-intelligence/feed/"),
+        ("OpenAI Blog",       "https://openai.com/blog/rss/"),
+        ("Microsoft AI",      "https://blogs.microsoft.com/ai/feed/"),
+        ("Hugging Face",      "https://huggingface.co/blog/feed.xml"),
+        ("Import AI",         "https://importai.substack.com/feed"),
+        ("The Gradient",      "https://thegradient.pub/rss/"),
+        ("MarkTechPost",      "https://www.marktechpost.com/feed/"),
+        ("BAIR Blog",         "https://bair.berkeley.edu/blog/feed.xml"),
+    ],
+    "dev": [
+        ("TechCrunch",        "https://techcrunch.com/feed/"),
+        ("The Verge",         "https://www.theverge.com/rss/index.xml"),
+        ("Ars Technica",      "https://feeds.arstechnica.com/arstechnica/technology-lab"),
+        ("Stack Overflow",    "https://stackoverflow.blog/feed/"),
+        ("GitHub Blog",       "https://github.blog/feed/"),
+        ("Smashing Magazine", "https://www.smashingmagazine.com/feed/"),
+        ("Dev.to",            "https://dev.to/feed"),
+        ("InfoQ",             "https://feed.infoq.com/"),
+        ("freeCodeCamp",      "https://www.freecodecamp.org/news/rss/"),
+        ("Martin Fowler",     "https://martinfowler.com/feed.atom"),
+    ],
+    "data": [
+        ("Towards Data Science",   "https://towardsdatascience.com/feed"),
+        ("KDnuggets",              "https://www.kdnuggets.com/feed"),
+        ("Databricks Blog",        "https://www.databricks.com/blog/feed"),
+        ("dbt Blog",               "https://www.getdbt.com/blog/rss.xml"),
+        ("Confluent Blog",         "https://www.confluent.io/blog/feed/"),
+        ("Analytics Vidhya",       "https://www.analyticsvidhya.com/feed/"),
+        ("FlowingData",            "https://flowingdata.com/feed/"),
+        ("Data Engineering Weekly","https://www.dataengineeringweekly.com/feed"),
+    ],
+    "cloud_devops": [
+        ("AWS Blog",          "https://aws.amazon.com/blogs/aws/feed/"),
+        ("Google Cloud",      "https://cloud.google.com/blog/rss"),
+        ("Azure Blog",        "https://azure.microsoft.com/en-us/blog/feed/"),
+        ("Kubernetes Blog",   "https://kubernetes.io/feed.xml"),
+        ("Docker Blog",       "https://www.docker.com/blog/feed/"),
+        ("The New Stack",     "https://thenewstack.io/feed/"),
+        ("DevOps.com",        "https://devops.com/feed/"),
+        ("HashiCorp Blog",    "https://www.hashicorp.com/blog/feed.xml"),
+    ],
+    "security": [
+        ("Heise Security",    "https://www.heise.de/security/rss/alert-news-atom.xml"),
+        ("Krebs on Security", "https://krebsonsecurity.com/feed/"),
+        ("The Hacker News",   "https://feeds.feedburner.com/TheHackersNews"),
+        ("Schneier Blog",     "https://www.schneier.com/feed/atom/"),
+        ("Dark Reading",      "https://www.darkreading.com/rss.xml"),
+        ("BleepingComputer",  "https://www.bleepingcomputer.com/feed/"),
+    ],
+    "engineering_blogs": [
+        ("Spotify Engineering",  "https://engineering.atspotify.com/feed/"),
+        ("Netflix Tech Blog",    "https://netflixtechblog.com/feed"),
+        ("Cloudflare Blog",      "https://blog.cloudflare.com/rss/"),
+        ("Meta Engineering",     "https://engineering.fb.com/feed/"),
+        ("Stripe Engineering",   "https://stripe.com/blog/engineering.rss"),
+        ("LinkedIn Engineering", "https://engineering.linkedin.com/blog.rss.html"),
+    ],
+    "languages": [
+        ("Python Insider",    "https://blog.python.org/feeds/posts/default"),
+        ("Real Python",       "https://realpython.com/atom.xml"),
+        ("Rust Blog",         "https://blog.rust-lang.org/feed.xml"),
+        ("Go Blog",           "https://go.dev/blog/feed.atom"),
+        ("TypeScript Blog",   "https://devblogs.microsoft.com/typescript/feed/"),
+    ],
+    "tech_de": [
+        ("Heise Online",      "https://www.heise.de/rss/heise-top-atom.xml"),
+        ("Heise Developer",   "https://www.heise.de/developer/rss/news-atom.xml"),
+        ("Golem Dev",         "https://www.golem.de/rss.php?tp=dev"),
+        ("Golem",             "https://rss.golem.de/rss.php?feed=RSS2.0"),
+        ("t3n",               "https://t3n.de/rss.xml"),
+        ("Netzpolitik",       "https://netzpolitik.org/feed/"),
+    ],
+    "business": [
+        ("TechCrunch Startups","https://techcrunch.com/category/startups/feed/"),
+        ("Y Combinator",      "https://www.ycombinator.com/blog/rss"),
+        ("a16z",              "https://a16z.com/feed/"),
+        ("First Round",       "https://review.firstround.com/feed.xml"),
+    ],
+    "hardware": [
+        ("Engadget",          "https://www.engadget.com/rss.xml"),
+        ("Tom's Hardware",    "https://www.tomshardware.com/feeds/all"),
+        ("Golem Mobil",       "https://www.golem.de/rss.php?tp=mobile"),
+    ],
+}
+
+# Mapping Feed-Kategorie → BytePost Kategorie-Hint für Groq
+CATEGORY_HINT = {
+    "gaming":           "gaming",
+    "ai_ml":            "ki",
+    "dev":              "dev",
+    "data":             "data",
+    "cloud_devops":     "dev",
+    "security":         "security",
+    "engineering_blogs":"dev",
+    "languages":        "dev",
+    "tech_de":          "tech",
+    "business":         "business",
+    "hardware":         "hardware",
+}
+
+def fetch_feed(feed_url):
+    """Lädt einen RSS-Feed mit Timeout via requests."""
+    try:
+        r = requests.get(feed_url, timeout=FEED_TIMEOUT,
+                         headers={"User-Agent": "BytePost/1.0 (RSS Reader)"})
+        r.raise_for_status()
+        return feedparser.parse(r.content)
+    except Exception:
+        return None
+
+def collect_candidates(existing_urls, effective_limit):
+    """Sammelt neue Artikel aus allen Feeds, balanciert über Kategorien."""
+    total_sources = sum(len(v) for v in RSS_FEEDS.values())
+    print(f"\n📡 Lade Feeds aus {len(RSS_FEEDS)} Kategorien ({total_sources} Quellen)…")
+
+    by_category = {cat: [] for cat in RSS_FEEDS}
+
+    for cat_key, feeds in RSS_FEEDS.items():
+        for source_name, feed_url in feeds:
+            feed = fetch_feed(feed_url)
+            if feed is None or not feed.entries:
+                print(f"  ⚠️ Feed-Fehler: {source_name}")
+                continue
+            new = [e for e in feed.entries[:3]
+                   if getattr(e, "link", None) and e.link not in existing_urls]
+            if new:
+                by_category[cat_key].extend([(cat_key, source_name, e) for e in new])
+
+    # Balancierte Auswahl: max. MAX_PER_CATEGORY pro Kategorie, Rest zufällig auffüllen
+    selected, per_cat = [], {cat: 0 for cat in RSS_FEEDS}
+    for cat in RSS_FEEDS:
+        random.shuffle(by_category[cat])
+
+    changed = True
+    while changed and len(selected) < effective_limit:
+        changed = False
+        for cat in RSS_FEEDS:
+            if len(selected) >= effective_limit:
+                break
+            if per_cat[cat] < MAX_PER_CATEGORY and by_category[cat]:
+                selected.append(by_category[cat].pop(0))
+                per_cat[cat] += 1
+                changed = True
+
+    # Auffüllen falls noch Platz — zufällig aus verbleibenden
+    remaining = [item for cat in RSS_FEEDS for item in by_category[cat]]
+    random.shuffle(remaining)
+    for item in remaining:
+        if len(selected) >= effective_limit:
+            break
+        selected.append(item)
+
+    return selected
 
 def get_embedding(text):
     """Erzeugt einen semantischen Vektor via Voyage AI (mit Retry)."""
@@ -387,57 +519,47 @@ def run():
     error_streak = 0
     new_articles = []
 
-    for feed_url, category in RSS_FEEDS:
-        if new_count >= effective_limit: break
-        try:
-            feed = feedparser.parse(feed_url)
-            print(f"\nFeed: {feed_url} ({len(feed.entries)} Einträge)")
-        except Exception as e:
-            print(f"Feed-Fehler: {e}")
+    candidates = collect_candidates(existing_urls, effective_limit)
+    print(f"✅ {len(candidates)} Kandidaten gefunden\n")
+
+    for cat_key, source_name, post in candidates:
+        if new_count >= effective_limit:
+            break
+
+        category_hint = CATEGORY_HINT.get(cat_key, "tech")
+        print(f"Verarbeite [{cat_key}]: {post.title[:60]}")
+
+        rss_title   = getattr(post, "title", "")
+        rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
+        rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
+
+        entry = ask_gemini(post.link, category_hint, rss_title, rss_summary,
+                           existing_articles=db["articles"])
+
+        if entry is None:
+            error_streak += 1
+            print(f"  -> Fehler-Serie: {error_streak}/{MAX_ERRORS}")
+            if error_streak >= MAX_ERRORS:
+                print("Circuit Breaker ausgelöst. Abbruch.")
+                break
             continue
 
-        for post in feed.entries[:2]:
-            if new_count >= effective_limit: break
-            if post.link in existing_urls:
-                print(f"  -> Duplikat (URL): {post.title[:50]}")
-                continue
-
-            print(f"Verarbeite: {post.title[:60]}")
-            rss_title = getattr(post, "title", "")
-            rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
-            # HTML aus RSS-Summary entfernen
-            rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
-            entry = ask_gemini(post.link, category, rss_title, rss_summary, existing_articles=articles)
-
-            if entry is None:
-                error_streak += 1
-                print(f"  -> Fehler-Serie: {error_streak}/{MAX_ERRORS}")
-                if error_streak >= MAX_ERRORS:
-                    print("Circuit Breaker ausgelöst. Abbruch.")
-                    break
-                continue
-
-            error_streak = 0
-            entry["id"] = os.urandom(4).hex()
-            entry["url"] = post.link
-            entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
-            image_query = entry.pop("image_query", "technology")
-            entry["image_local"] = get_unsplash_image(image_query, entry["id"])
-            # Semantischer Vektor für Kontext-Kette
-            vec = get_embedding(embed_text(entry))
-            if vec:
-                entry["embedding"] = vec
-                print(f"  -> Embedding: {len(vec)} Dimensionen")
-            db["articles"].insert(0, entry)
-            new_articles.append(entry)
-            existing_urls.add(post.link)
-            new_count += 1
-            print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
-            time.sleep(20)
-
-        else:
-            continue
-        break  # Circuit Breaker hat inneren Loop verlassen
+        error_streak = 0
+        entry["id"]        = os.urandom(4).hex()
+        entry["url"]       = post.link
+        entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
+        image_query        = entry.pop("image_query", "technology")
+        entry["image_local"] = get_unsplash_image(image_query, entry["id"])
+        vec = get_embedding(embed_text(entry))
+        if vec:
+            entry["embedding"] = vec
+            print(f"  -> Embedding: {len(vec)} Dimensionen")
+        db["articles"].insert(0, entry)
+        new_articles.append(entry)
+        existing_urls.add(post.link)
+        new_count += 1
+        print(f"  -> Erstellt: {entry['title']} ({new_count}/{effective_limit})")
+        time.sleep(20)
 
     # Pick of the Day — KI entscheidet
     for a in db["articles"]: a["pick"] = False
@@ -447,9 +569,10 @@ def run():
         pick["pick"] = True
         print(f"\nPick of the Day: {pick['title']}")
 
-    # Related Articles
+    # Related Articles — nur als Fallback wenn Groq keinen Vorschlag gemacht hat
     for article in new_articles:
-        article["related"] = find_related(article, db["articles"])
+        if not article.get("related"):
+            article["related"] = find_related(article, db["articles"])
 
     # BytePulse
     pulse = compute_bytepulse(db["articles"], heute)
