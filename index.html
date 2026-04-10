@@ -533,6 +533,7 @@
         window.location.hash = cat === 'alle' ? '' : cat;
         buildFilterTabs();
         renderAll();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function filteredArticles() {
