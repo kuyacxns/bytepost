@@ -711,6 +711,7 @@
         document.getElementById('m-img-container').innerHTML = a.image_local
             ? `<img src="${a.image_local}" class="modal-image">` : '';
 
+        document.querySelector('.modal').scrollTop = 0;
         setExplainMode('standard');
         renderContext(a);
 
