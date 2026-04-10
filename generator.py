@@ -146,7 +146,10 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 
 "cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business, gaming
 Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]
-"related" ist ein JSON-Array mit 0-3 IDs aus dem ARCHIV oben, deren Thema direkt mit diesem Artikel zusammenhängt. Leer lassen wenn kein Bezug besteht."""
+"related" ist ein JSON-Array mit 0-3 IDs aus dem ARCHIV oben.
+NUR verlinken wenn der Archiv-Artikel dasselbe spezifische Thema behandelt — z.B. dieselbe Firma (OpenAI), dasselbe Produkt (Crimson Desert), dieselbe Sicherheitslücke (CVE-XXXX), dieselbe Person.
+NICHT verlinken nur weil beide Artikel in derselben Kategorie sind (z.B. beide Gaming, beide KI).
+Im Zweifel: leer lassen. Lieber kein Vorschlag als ein falscher."""
 
     try:
         r = requests.post(
