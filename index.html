@@ -343,6 +343,10 @@
         .context-item-date {
             flex-shrink: 0; font-family: var(--mono); font-size: 10px; color: var(--text-3);
         }
+        .context-item-reason {
+            font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            margin-top: 2px;
+        }
 
         .skeleton-wrap { display: flex; flex-direction: column; gap: 12px; padding: 8px 0; }
         .skeleton-line {
@@ -816,27 +820,37 @@
     function findRelated(article) {
         const artCats = cats(article);
         const artKeys = new Set(titleKeywords(article.title));
-        // Also include keywords from explicit related field (generator phase 2)
         const explicitIds = new Set(article.related || []);
 
         return ARTICLES
             .filter(a => a.id !== article.id)
             .map(a => {
-                if (explicitIds.has(a.id)) return { article: a, score: 100 };
-                let score = 0;
-                // Shared categories
-                cats(a).forEach(c => { if (artCats.includes(c)) score += 2; });
-                // Shared title keywords
-                titleKeywords(a.title).forEach(w => { if (artKeys.has(w)) score += 3; });
-                return { article: a, score };
+                // Explicit links from generator (highest priority)
+                if (explicitIds.has(a.id)) {
+                    return { article: a, score: 100, reason: 'Von der Redaktion verknüpft' };
+                }
+
+                // Find shared keywords first — required for a match
+                const sharedKeys = titleKeywords(a.title).filter(w => artKeys.has(w));
+                if (sharedKeys.length === 0) return null; // no keyword overlap → skip
+
+                const sharedCats = cats(a).filter(c => artCats.includes(c));
+                const score = sharedKeys.length * 4 + sharedCats.length * 1;
+
+                // Build human-readable reason from shared keywords
+                const keyLabels = sharedKeys.slice(0, 3)
+                    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+                    .join(', ');
+                const reason = `Gemeinsames Thema: ${keyLabels}`;
+
+                return { article: a, score, reason };
             })
-            .filter(x => x.score > 0)
+            .filter(Boolean)
             .sort((x, y) => {
                 if (y.score !== x.score) return y.score - x.score;
                 return parseArticleDate(y.article.date) - parseArticleDate(x.article.date);
             })
-            .slice(0, 3)
-            .map(x => x.article);
+            .slice(0, 3);
     }
 
     function renderContext(article) {
@@ -846,10 +860,13 @@
         el.innerHTML = `
             <div class="context-chain">
                 <div class="context-chain-label">Vorher bei BytePost</div>
-                ${related.map(r => `
+                ${related.map(({ article: r, reason }) => `
                     <div class="context-item" onclick="openArt('${r.id}')">
                         <span class="context-item-cat" style="background:${catColor(cats(r)[0])}"></span>
-                        <span class="context-item-title">${r.title}</span>
+                        <div style="flex:1;min-width:0;">
+                            <div class="context-item-title">${r.title}</div>
+                            <div class="context-item-reason">${reason}</div>
+                        </div>
                         <span class="context-item-date">${formatDate(r.date)}</span>
                     </div>
                 `).join('')}
