@@ -1,0 +1,54 @@
+{
+  "last_updated": "2026-04-10",
+  "models": [
+    {
+      "name": "GPT-4.5",
+      "company": "OpenAI",
+      "released": "2026-02-27",
+      "type": "Multimodal LLM",
+      "highlight": "Verbessertes Reasoning und emotionale Intelligenz"
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "company": "Anthropic",
+      "released": "2026-03-01",
+      "type": "LLM",
+      "highlight": "Stärkstes Modell von Anthropic, exzellentes Coding"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "company": "Google",
+      "released": "2026-03-25",
+      "type": "Multimodal LLM",
+      "highlight": "1M Token Kontext, Spitze bei Benchmarks"
+    },
+    {
+      "name": "Llama 4 Maverick",
+      "company": "Meta",
+      "released": "2026-04-05",
+      "type": "Open Source LLM",
+      "highlight": "128-Experten Mixture-of-Experts, kostenlos nutzbar"
+    },
+    {
+      "name": "Grok 3",
+      "company": "xAI",
+      "released": "2026-02-17",
+      "type": "LLM",
+      "highlight": "Trainiert auf X-Daten, DeepSearch-Funktion"
+    },
+    {
+      "name": "Mistral Large 2",
+      "company": "Mistral AI",
+      "released": "2026-01-15",
+      "type": "LLM",
+      "highlight": "Europäisches Flaggschiff, stark bei Code & Mehrsprachigkeit"
+    },
+    {
+      "name": "Qwen 2.5-Max",
+      "company": "Alibaba",
+      "released": "2026-01-25",
+      "type": "LLM",
+      "highlight": "Überraschend stark, beats GPT-4o auf mehreren Benchmarks"
+    }
+  ]
+}
