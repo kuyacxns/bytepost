@@ -827,7 +827,7 @@
             .map(a => {
                 // Explicit links from generator (highest priority)
                 if (explicitIds.has(a.id)) {
-                    return { article: a, score: 100, reason: 'Von der Redaktion verknüpft' };
+                    return { article: a, score: 100, reason: 'KI hat direkten Bezug erkannt' };
                 }
 
                 // Find shared keywords first — required for a match
