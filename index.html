@@ -278,11 +278,16 @@
         .modal-bd ul { padding-left: 18px; margin: 14px 0; }
         .modal-bd li { margin-bottom: 7px; }
         .modal-bd h3 { margin-top: 22px; font-family: var(--display); color: var(--text); font-size: 18px; }
+        .modal-source-top { font-family: var(--mono); font-size: 11px; color: var(--text-3); margin-bottom: 16px; padding: 10px 14px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent); }
+        .modal-source-top a { color: var(--accent); text-decoration: none; font-weight: 700; }
+        .modal-source-top a:hover { text-decoration: underline; }
+        .modal-source-origin { font-weight: 700; color: var(--text-2); }
         .modal-summary-label { font-family: var(--mono); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-3); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
         .modal-summary-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
         .modal-source-link { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); }
         .modal-source-link a { font-family: var(--mono); font-size: 12px; color: var(--accent); text-decoration: none; font-weight: 700; transition: opacity var(--t); }
         .modal-source-link a:hover { opacity: 0.75; }
+        .modal-disclaimer { margin-top: 20px; font-size: 11px; color: var(--text-3); line-height: 1.6; font-style: italic; padding-top: 16px; border-top: 1px solid var(--border); }
 
 
         /* ── Footer ─────────────────────────────────────────── */
@@ -343,7 +348,10 @@
 
     <footer class="footer">
         <p class="footer-text">
-            Powered by KI · Kuratiert von Fabi · © 2026 BytePost
+            © 2026 BytePost · Kuratiert von Fabi · KI-generierte Zusammenfassungen
+        </p>
+        <p class="footer-text" style="margin-top:6px; font-size:10px;">
+            BytePost erstellt automatische KI-Zusammenfassungen öffentlich zugänglicher Nachrichtenartikel. Alle Rechte an den Originalinhalten liegen bei den jeweiligen Verlagen und Autoren. BytePost erhebt keinen Anspruch auf die Originalinhalte.
         </p>
     </footer>
 </div>
@@ -600,12 +608,18 @@
         document.getElementById('m-title').textContent = a.title;
         document.getElementById('m-meta').textContent = `${a.source || ''}${a.date ? ' · ' + a.date : ''} · ⏱️ ${a.read || ''} Lesezeit`;
 
-        const originalHtml = a.url
+        const sourceTopHtml = a.url
+            ? `<div class="modal-source-top"><span class="modal-source-origin">Originalquelle:</span> <a href="${a.url}" target="_blank" rel="noopener">${a.source || a.url}</a></div>`
+            : '';
+        const sourceBottomHtml = a.url
             ? `<div class="modal-source-link"><a href="${a.url}" target="_blank" rel="noopener">↗ Originalartikel bei ${a.source} lesen</a></div>`
             : '';
         document.getElementById('m-body').innerHTML =
-            '<div class="modal-summary-label">🇩🇪 BytePost Bericht</div>' +
-            (a.content || '') + originalHtml;
+            sourceTopHtml +
+            '<div class="modal-summary-label">🤖 KI-generierte Zusammenfassung</div>' +
+            (a.content || '') +
+            sourceBottomHtml +
+            '<div class="modal-disclaimer">Diese Zusammenfassung wurde automatisch von einer KI erstellt und gibt den Inhalt des verlinkten Originalartikels wieder. Alle Rechte am Originalinhalt liegen beim jeweiligen Verlag/Autor.</div>';
         document.getElementById('m-img-container').innerHTML = a.image_local
             ? `<img src="${a.image_local}" class="modal-image">`
             : '';
