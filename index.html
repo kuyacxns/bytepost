@@ -474,7 +474,7 @@
     /* ── State ──────────────────────────────────────────────── */
     let ARTICLES = [];
     let PICK = null;
-    let activeFilter = 'alle';
+    let activeFilters = new Set(); // leer = alle
     let currentArticleId = null;
 
     /* ── Load ───────────────────────────────────────────────── */
@@ -514,7 +514,7 @@
     /* ── Category filter ────────────────────────────────────── */
     function applyHashFilter() {
         const hash = window.location.hash.replace('#', '').toLowerCase();
-        activeFilter = hash || 'alle';
+        activeFilters = hash ? new Set(hash.split(',').filter(Boolean)) : new Set();
     }
 
     function buildFilterTabs() {
@@ -523,22 +523,29 @@
         const container = document.getElementById('cat-tabs');
         container.innerHTML = allCats.map(cat => {
             const label = labels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
-            const isActive = activeFilter === cat;
+            const isActive = cat === 'alle' ? activeFilters.size === 0 : activeFilters.has(cat);
             return `<button class="cat-tab${isActive ? ' active' : ''}" onclick="setFilter('${cat}')">${label}</button>`;
         }).join('');
     }
 
     function setFilter(cat) {
-        activeFilter = cat;
-        window.location.hash = cat === 'alle' ? '' : cat;
+        if (cat === 'alle') {
+            activeFilters.clear();
+        } else if (activeFilters.has(cat)) {
+            activeFilters.delete(cat);
+        } else {
+            activeFilters.add(cat);
+        }
+        const hashVal = [...activeFilters].join(',');
+        window.location.hash = hashVal || '';
         buildFilterTabs();
         renderAll();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function filteredArticles() {
-        if (activeFilter === 'alle') return ARTICLES;
-        return ARTICLES.filter(a => cats(a).includes(activeFilter));
+        if (activeFilters.size === 0) return ARTICLES;
+        return ARTICLES.filter(a => cats(a).some(c => activeFilters.has(c)));
     }
 
     /* ── Helpers ────────────────────────────────────────────── */
@@ -574,8 +581,8 @@
     function renderPick() {
         const container = document.getElementById('pick-of-day');
         const pick = PICK;
-        // Hide hero when a category filter is active and pick doesn't belong to it
-        if (!pick || (activeFilter !== 'alle' && !cats(pick).includes(activeFilter))) {
+        // Hide hero when category filters are active and pick doesn't match any
+        if (!pick || (activeFilters.size > 0 && !cats(pick).some(c => activeFilters.has(c)))) {
             container.innerHTML = '';
             return;
         }
