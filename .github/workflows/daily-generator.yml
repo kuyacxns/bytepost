@@ -1,0 +1,38 @@
+name: Daily Generator
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # täglich 04:00 UTC
+  workflow_dispatch:        # manueller Start möglich
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests feedparser beautifulsoup4
+
+      - name: Run generator
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+        run: python generator.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name  "BytePost Bot"
+          git config user.email "bot@bytepost.de"
+          git add data.json images/ models.json || true
+          git diff --cached --quiet && echo "Keine neuen Artikel." || git commit -m "chore: daily generator $(date +'%Y-%m-%d')"
+          git push
