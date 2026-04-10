@@ -317,6 +317,33 @@
         [data-theme="dark"] .explain-badge.pro      { color: #818cf8; background: rgba(99,102,241,0.12); }
         [data-theme="dark"] .explain-badge.standard { color: #60a5fa; background: rgba(0,113,227,0.12); }
 
+        /* ── Kontext-Kette ──────────────────────────────────── */
+        .context-chain { margin-top: 32px; border-top: 1px solid var(--border); padding-top: 20px; }
+        .context-chain-label {
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1.2px;
+            color: var(--text-3); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+        }
+        .context-chain-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+        .context-item {
+            display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+            border-radius: 10px; cursor: pointer; transition: background var(--t);
+            text-decoration: none; margin-bottom: 4px;
+        }
+        .context-item:hover { background: var(--bg); }
+        [data-theme="dark"] .context-item:hover { background: rgba(255,255,255,0.04); }
+        .context-item-cat {
+            flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%;
+        }
+        .context-item-title {
+            flex: 1; font-size: 13px; color: var(--text-2); line-height: 1.35;
+            font-weight: 500;
+        }
+        .context-item:hover .context-item-title { color: var(--text); }
+        .context-item-date {
+            flex-shrink: 0; font-family: var(--mono); font-size: 10px; color: var(--text-3);
+        }
+
         .skeleton-wrap { display: flex; flex-direction: column; gap: 12px; padding: 8px 0; }
         .skeleton-line {
             height: 13px; border-radius: 6px;
@@ -414,6 +441,7 @@
                 <button class="explain-btn" id="btn-pro" onclick="setExplainMode('pro')">🔬 Für Profis</button>
             </div>
             <div id="m-body" class="modal-bd"></div>
+            <div id="m-context"></div>
         </div>
     </div>
 </div>
@@ -684,6 +712,7 @@
             ? `<img src="${a.image_local}" class="modal-image">` : '';
 
         setExplainMode('standard');
+        renderContext(a);
 
         document.getElementById('overlay').classList.add('open');
         document.body.style.overflow = 'hidden';
@@ -774,6 +803,56 @@
                 </div>`;
         }
         setButtonState(currentMode, false);
+    }
+
+    /* ── Kontext-Kette ──────────────────────────────────────── */
+    const DE_STOPWORDS = new Set(['der','die','das','ein','eine','und','oder','mit','für','von','bei','im','in','ist','war','hat','an','auf','zu','als','aus','wird','werden','nach','über','durch','um','des','dem','den','wie','was','auch','sich','es','er','sie','wir','ihr','alle','neue','neuen','neues','mehr','zwei','drei','vier','fünf','sein','sind','kann','soll','will','hat','wurde','einem','einer','dieses','diesen','dieser','beim','vom','zur','zum','bis']);
+
+    function titleKeywords(title) {
+        return title.toLowerCase().split(/\W+/).filter(w => w.length >= 4 && !DE_STOPWORDS.has(w));
+    }
+
+    function findRelated(article) {
+        const artCats = cats(article);
+        const artKeys = new Set(titleKeywords(article.title));
+        // Also include keywords from explicit related field (generator phase 2)
+        const explicitIds = new Set(article.related || []);
+
+        return ARTICLES
+            .filter(a => a.id !== article.id)
+            .map(a => {
+                if (explicitIds.has(a.id)) return { article: a, score: 100 };
+                let score = 0;
+                // Shared categories
+                cats(a).forEach(c => { if (artCats.includes(c)) score += 2; });
+                // Shared title keywords
+                titleKeywords(a.title).forEach(w => { if (artKeys.has(w)) score += 3; });
+                return { article: a, score };
+            })
+            .filter(x => x.score > 0)
+            .sort((x, y) => {
+                if (y.score !== x.score) return y.score - x.score;
+                return parseArticleDate(y.article.date) - parseArticleDate(x.article.date);
+            })
+            .slice(0, 3)
+            .map(x => x.article);
+    }
+
+    function renderContext(article) {
+        const related = findRelated(article);
+        const el = document.getElementById('m-context');
+        if (!related.length) { el.innerHTML = ''; return; }
+        el.innerHTML = `
+            <div class="context-chain">
+                <div class="context-chain-label">Vorher bei BytePost</div>
+                ${related.map(r => `
+                    <div class="context-item" onclick="openArt('${r.id}')">
+                        <span class="context-item-cat" style="background:${catColor(cats(r)[0])}"></span>
+                        <span class="context-item-title">${r.title}</span>
+                        <span class="context-item-date">${formatDate(r.date)}</span>
+                    </div>
+                `).join('')}
+            </div>`;
     }
 
     function filterFromModal(cat) {

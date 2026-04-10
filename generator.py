@@ -78,7 +78,7 @@ def fetch_article_text(url, max_chars=8000):
         print(f"  -> Artikel-Fetch Fehler: {e}")
         return ""
 
-def ask_gemini(url, category, rss_title="", rss_summary=""):
+def ask_gemini(url, category, rss_title="", rss_summary="", existing_articles=None):
     heute = datetime.now().strftime("%d.%m.%Y")
 
     print(f"  -> Lade Artikel...")
@@ -87,6 +87,14 @@ def ask_gemini(url, category, rss_title="", rss_summary=""):
     # Kombiniere RSS-Summary + gescrapten Text für maximalen Kontext
     combined = " ".join(filter(None, [rss_title, rss_summary, article_text]))
     source_block = f"ARTIKELINHALT:\n{combined[:4500]}" if combined.strip() else f"URL: {url}"
+
+    # Archiv-Block für Kontext-Kette (max. 30 neueste Artikel)
+    if existing_articles:
+        recent = existing_articles[-30:]
+        archive_lines = "\n".join(f'  {a["id"]}: {a["title"]}' for a in recent)
+        archive_block = f"\nBYTEPOST-ARCHIV (IDs und Titel bereits veröffentlichter Artikel):\n{archive_lines}\n"
+    else:
+        archive_block = ""
 
     prompt = f"""Du bist Redakteur bei 'BytePost', einem deutschen Tech-Newsletter für Entwickler.
 
@@ -120,7 +128,7 @@ FORMAT für "content_pro" (Für Profis — für Entwickler & Engineers):
 - 250-350 Wörter, <h3> zur Strukturierung
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
-
+{archive_block}
 Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
     "cat": ["ki"],
@@ -130,13 +138,15 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
+    "related": [],
     "content": "Vollständiger Artikel auf Deutsch (HTML mit h3, p, ul)",
     "content_simple": "Einfach erklärt ohne Fachbegriffe (HTML, nur p)",
     "content_pro": "Technische Tiefenversion für Entwickler (HTML mit h3, p, pre>code)"
 }}
 
-"cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business
-Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
+"cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business, gaming
+Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]
+"related" ist ein JSON-Array mit 0-3 IDs aus dem ARCHIV oben, deren Thema direkt mit diesem Artikel zusammenhängt. Leer lassen wenn kein Bezug besteht."""
 
     try:
         r = requests.post(
@@ -174,6 +184,13 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
             cat.insert(0, "gaming")
         data["cat"] = cat
         data.pop("tag", None)  # tag field no longer needed
+        # Normalize related: keep only valid IDs from the archive
+        existing_ids = {a["id"] for a in (existing_articles or [])}
+        related = data.get("related", [])
+        if isinstance(related, list):
+            data["related"] = [r for r in related if r in existing_ids][:3]
+        else:
+            data["related"] = []
         # Never let source be "BytePost" — derive from URL if needed
         SOURCE_MAP = {
             'techcrunch.com': 'TechCrunch', 'theverge.com': 'The Verge',
@@ -328,7 +345,7 @@ def run():
             rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
             # HTML aus RSS-Summary entfernen
             rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
-            entry = ask_gemini(post.link, category, rss_title, rss_summary)
+            entry = ask_gemini(post.link, category, rss_title, rss_summary, existing_articles=articles)
 
             if entry is None:
                 error_streak += 1
