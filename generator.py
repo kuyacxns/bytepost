@@ -308,7 +308,7 @@ FORMAT für "content_simple" (Einfach erklärt — für Einsteiger & Nicht-Techn
 
 FORMAT für "content_pro" (Für Profis — für Entwickler & Engineers):
 - Technische Tiefe: Architektur-Details, verwendete Technologien, Protokolle, Datenstrukturen
-- Code-Beispiele in <pre><code> wo sinnvoll
+- Code-Beispiele in <pre><code> NUR wenn ein echtes, sinnvolles Beispiel möglich ist (z.B. Patch-Check, Erkennungslogik, Konfiguration, API-Aufruf). KEIN Placeholder-Code, KEINE Kommentare wie "Beispielcode hier". Lieber kein Code-Block als ein leerer.
 - Hinweise auf verwandte Konzepte, Standards oder Papers
 - Kritische Einordnung: Was sind die technischen Trade-offs?
 - 250-350 Wörter, <h3> zur Strukturierung
