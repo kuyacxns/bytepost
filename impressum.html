@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum — BytePost</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --mono: 'Space Mono', monospace;
+            --display: 'Syne', sans-serif;
+            --body: 'DM Sans', sans-serif;
+            --bg: #f5f5f7;
+            --bg-card: #ffffff;
+            --text: #1d1d1f;
+            --text-2: #515154;
+            --text-3: #86868b;
+            --accent: #0071e3;
+            --border: rgba(0,0,0,0.08);
+            --radius: 14px;
+            --t: 0.2s ease;
+        }
+        [data-theme="dark"] {
+            --bg: #0a0a0a;
+            --bg-card: #141414;
+            --text: #f5f5f7;
+            --text-2: #aeaeb2;
+            --text-3: #636366;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
+
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+        /* Nav */
+        nav { position: sticky; top: 0; z-index: 100; background: rgba(var(--bg-rgb, 245,245,247), 0.85); border-bottom: 1px solid var(--border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        [data-theme="dark"] nav { background: rgba(10,10,10,0.85); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+        .logo { font-family: var(--display); font-size: 19px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .logo em { color: var(--accent); font-style: normal; }
+        .theme-btn { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-2); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
+        .theme-btn:hover { border-color: var(--text-3); }
+
+        /* Content */
+        .page-header { padding: 48px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+        .page-header h1 { font-family: var(--display); font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+        .page-header p { color: var(--text-3); font-family: var(--mono); font-size: 11px; }
+
+        .section { margin-bottom: 36px; }
+        .section h2 { font-family: var(--display); font-size: 16px; font-weight: 800; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+        .section p, .section address { font-size: 15px; color: var(--text-2); line-height: 1.75; font-style: normal; }
+        .section a { color: var(--accent); text-decoration: none; }
+        .section a:hover { text-decoration: underline; }
+
+        .placeholder {
+            display: inline-block; background: rgba(255,214,10,0.15); color: #a07800;
+            border: 1px dashed rgba(255,214,10,0.5); border-radius: 4px;
+            padding: 1px 6px; font-family: var(--mono); font-size: 12px;
+        }
+        [data-theme="dark"] .placeholder { background: rgba(255,214,10,0.1); color: #ffd60a; }
+
+        .notice {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 16px 20px; margin-bottom: 36px; font-size: 13px; color: var(--text-3);
+            font-family: var(--mono); line-height: 1.6;
+        }
+        .notice strong { color: var(--text-2); }
+
+        /* Footer */
+        footer { margin-top: 60px; padding: 24px 0 40px; border-top: 1px solid var(--border); text-align: center; }
+        footer a { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="wrap nav-inner">
+        <a class="logo" href="./index.html">
+            <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
+            Byte<em>Post</em>
+        </a>
+        <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+            <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+        </button>
+    </div>
+</nav>
+
+<div class="wrap">
+    <div class="page-header">
+        <h1>Impressum</h1>
+        <p>Angaben gemäß § 5 TMG</p>
+    </div>
+
+    <div class="notice">
+        <strong>Hinweis:</strong> Felder mit <span class="placeholder">Platzhalter</span> müssen noch ausgefüllt werden.
+        Ersetze sie mit deinen tatsächlichen Angaben.
+    </div>
+
+    <div class="section">
+        <h2>Verantwortliche Person</h2>
+        <address>
+            <span class="placeholder">Vorname Nachname</span><br>
+            <span class="placeholder">Straße Hausnummer</span><br>
+            <span class="placeholder">PLZ Ort</span><br>
+            Deutschland
+        </address>
+    </div>
+
+    <div class="section">
+        <h2>Kontakt</h2>
+        <p>
+            E-Mail: <a href="mailto:kontakt@bytepost.de"><span class="placeholder">deine@email.de</span></a><br>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h2>
+        <address>
+            <span class="placeholder">Vorname Nachname</span><br>
+            <span class="placeholder">Straße Hausnummer</span><br>
+            <span class="placeholder">PLZ Ort</span>
+        </address>
+    </div>
+
+    <div class="section">
+        <h2>Haftungsausschluss</h2>
+        <p>
+            BytePost erstellt automatisierte KI-Zusammenfassungen öffentlich zugänglicher Nachrichtenartikel.
+            Alle Rechte an den Originalinhalten liegen ausschließlich bei den jeweiligen Verlagen und Autoren.
+            BytePost erhebt keinen Anspruch auf die zusammengefassten Originalinhalte.
+        </p>
+        <br>
+        <p>
+            Die Zusammenfassungen werden durch ein KI-Sprachmodell automatisch generiert und können Ungenauigkeiten enthalten.
+            Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen.
+            Maßgeblich ist stets der verlinkte Originalartikel.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Urheberrecht</h2>
+        <p>
+            Die durch BytePost erstellten eigenen Inhalte (Design, Struktur, Code) unterliegen dem deutschen Urheberrecht.
+            Die verlinkten und zusammengefassten Inhalte sind Eigentum der jeweiligen Rechteinhaber.
+            BytePost verweist stets auf die Originalquelle und verlinkt direkt auf den Originalartikel.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Externe Links</h2>
+        <p>
+            BytePost enthält Links zu externen Websites. Auf deren Inhalte haben wir keinen Einfluss
+            und übernehmen keine Haftung. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
+            Anbieter verantwortlich.
+        </p>
+    </div>
+
+    <footer>
+        <a href="./index.html">← Zurück zu BytePost</a>
+    </footer>
+</div>
+
+<script>
+    (function () {
+        const saved = localStorage.getItem('bp_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+        updateThemeBtn(saved);
+    })();
+
+    function updateThemeBtn(theme) {
+        const icon = document.getElementById('theme-icon');
+        const label = document.getElementById('theme-label');
+        if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
+        else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bp_theme', next);
+        updateThemeBtn(next);
+    }
+</script>
+</body>
+</html>
