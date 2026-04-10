@@ -18,6 +18,12 @@ MAX_ERRORS  = 3     # Circuit Breaker: Abbruch nach N aufeinanderfolgenden Fehle
 
 # --- RSS FEEDS ---
 RSS_FEEDS = [
+    # Gaming (zuerst, damit Gaming-Artikel immer im Lauf vertreten sind)
+    ("https://www.ign.com/articles/feed.atom", "Gaming"),
+    ("https://feeds.feedburner.com/RockPaperShotgun", "Gaming"),
+    ("https://www.gamespot.com/feeds/news/", "Gaming"),
+    ("https://www.heise.de/games/rss/news-atom.xml", "Gaming"),
+    ("https://www.golem.de/rss.php?tp=games", "Gaming"),
     # Internationale Top-Quellen
     ("https://techcrunch.com/category/artificial-intelligence/feed/", "KI"),
     ("https://techcrunch.com/category/software/feed/", "Dev"),
@@ -37,12 +43,6 @@ RSS_FEEDS = [
     ("https://www.golem.de/rss.php?tp=dev", "Dev"),
     ("https://rss.golem.de/rss.php?feed=RSS2.0", "Tech"),
     ("https://t3n.de/rss.xml", "Tech"),
-    # Gaming
-    ("https://www.ign.com/articles/feed.atom", "Gaming"),
-    ("https://feeds.feedburner.com/RockPaperShotgun", "Gaming"),
-    ("https://www.gamespot.com/feeds/news/", "Gaming"),
-    ("https://www.heise.de/games/rss/news-atom.xml", "Gaming"),
-    ("https://www.golem.de/rss.php?tp=games", "Gaming"),
     # GitHub Trending — kein RSS verfügbar, ggf. per API-Scraper ergänzen
 ]
 
@@ -168,8 +168,10 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
             cat = [c.strip().lower() for c in re.split(r'[|/,]+', cat) if c.strip()]
         else:
             cat = [c.strip().lower() for c in cat if c.strip()]
-        valid = {"ki", "dev", "data", "security", "cloud", "hardware", "business"}
+        valid = {"ki", "dev", "data", "security", "cloud", "hardware", "business", "gaming"}
         cat = [c for c in cat if c in valid] or ["ki"]
+        if category.lower() == "gaming" and "gaming" not in cat:
+            cat.insert(0, "gaming")
         data["cat"] = cat
         data.pop("tag", None)  # tag field no longer needed
         # Never let source be "BytePost" — derive from URL if needed
