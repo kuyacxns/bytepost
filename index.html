@@ -811,16 +811,28 @@
     }
 
     /* ── Kontext-Kette ──────────────────────────────────────── */
-    const DE_STOPWORDS = new Set(['der','die','das','ein','eine','und','oder','mit','für','von','bei','im','in','ist','war','hat','an','auf','zu','als','aus','wird','werden','nach','über','durch','um','des','dem','den','wie','was','auch','sich','es','er','sie','wir','ihr','alle','neue','neuen','neues','mehr','zwei','drei','vier','fünf','sein','sind','kann','soll','will','hat','wurde','einem','einer','dieses','diesen','dieser','beim','vom','zur','zum','bis']);
+    const DE_STOPWORDS = new Set(['der','die','das','ein','eine','und','oder','mit','für','von','bei','im','in','ist','war','hat','an','auf','zu','als','aus','wird','werden','nach','über','durch','um','des','dem','den','wie','was','auch','sich','es','er','sie','wir','ihr','alle','neue','neuen','neues','mehr','zwei','drei','vier','fünf','sein','sind','kann','soll','will','wurde','einem','einer','dieses','diesen','dieser','beim','vom','zur','zum','bis','jetzt','erst','letzt','immer','schon','noch','aber','wenn','dann','dass','weil','damit','dabei','doch','nach','hier','dort','sehr','viel','wenig','bereits','wieder','weiter']);
 
-    function titleKeywords(title) {
-        return title.toLowerCase().split(/\W+/).filter(w => w.length >= 4 && !DE_STOPWORDS.has(w));
+    // Generic tech/news words that appear in many articles but don't indicate same topic
+    const GENERIC_WORDS = new Set(['update','version','release','patch','launch','open','source','code','tool','apps','service','system','platform','feature','support','report','review','nutzer','million','milliarden','dollar','prozent','startup','model','online','digital','software','news','post','time','like','just','make','made','says','said','back','gets','gibt','soll','kann','muss','jetzt','erste','letzt','neues','schlie','bringt','kommt','zeigt','macht','stellt','baut','wächst','startet','plant','bietet','zeigt','führt','löst','lücke','angriff','schwachstelle','sicherheit','problem','lösung','projekt','produkt','markt','unternehmen','firma','team','chef','ceo','seite','site','blog','monat','woche','jahr','heute','game','games','gaming','developer','entwickler']);
+
+    function extractKeywords(text) {
+        return text.toLowerCase().split(/\W+/)
+            .filter(w => w.length >= 5 && !DE_STOPWORDS.has(w) && !GENERIC_WORDS.has(w));
+    }
+
+    function articleKeywords(article) {
+        const titleWords = extractKeywords(article.title);
+        // Also pull from stripped content for richer signal
+        const contentText = stripHtml(article.content || '').slice(0, 600);
+        const contentWords = extractKeywords(contentText);
+        // Title keywords count double (more specific signal)
+        return { titleSet: new Set(titleWords), contentSet: new Set(contentWords) };
     }
 
     function findRelated(article) {
-        const artCats = cats(article);
-        const artKeys = new Set(titleKeywords(article.title));
         const explicitIds = new Set(article.related || []);
+        const { titleSet: artTitle, contentSet: artContent } = articleKeywords(article);
 
         return ARTICLES
             .filter(a => a.id !== article.id)
@@ -830,18 +842,22 @@
                     return { article: a, score: 100, reason: 'KI hat direkten Bezug erkannt' };
                 }
 
-                // Find shared keywords first — required for a match
-                const sharedKeys = titleKeywords(a.title).filter(w => artKeys.has(w));
-                if (sharedKeys.length === 0) return null; // no keyword overlap → skip
+                const { titleSet: bTitle, contentSet: bContent } = articleKeywords(a);
 
-                const sharedCats = cats(a).filter(c => artCats.includes(c));
-                const score = sharedKeys.length * 4 + sharedCats.length * 1;
+                // Title-to-title matches carry the most weight (same specific topic)
+                const titleShared = [...artTitle].filter(w => bTitle.has(w));
+                // Title-to-content: article A's title keyword appears in article B's content
+                const crossShared = [...artTitle].filter(w => !bTitle.has(w) && bContent.has(w));
 
-                // Build human-readable reason from shared keywords
-                const keyLabels = sharedKeys.slice(0, 3)
+                // Require at least one title-to-title keyword match
+                if (titleShared.length === 0) return null;
+
+                const score = titleShared.length * 6 + crossShared.length * 2;
+
+                const keyLabels = titleShared.slice(0, 3)
                     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
                     .join(', ');
-                const reason = `Gemeinsames Thema: ${keyLabels}`;
+                const reason = `Gleiches Thema: ${keyLabels}`;
 
                 return { article: a, score, reason };
             })
