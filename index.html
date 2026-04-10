@@ -821,8 +821,19 @@
             .filter(w => w.length >= 5 && !DE_STOPWORDS.has(w) && !GENERIC_WORDS.has(w));
     }
 
-    // Build document-frequency map: word → how many articles contain it
-    // Words appearing in >10% of articles are too generic to signal topical match
+    function cosineSim(a, b) {
+        if (!a || !b || a.length !== b.length) return 0;
+        let dot = 0, magA = 0, magB = 0;
+        for (let i = 0; i < a.length; i++) {
+            dot  += a[i] * b[i];
+            magA += a[i] * a[i];
+            magB += b[i] * b[i];
+        }
+        const denom = Math.sqrt(magA) * Math.sqrt(magB);
+        return denom === 0 ? 0 : dot / denom;
+    }
+
+    // Keyword fallback: rare words only (for articles without embeddings)
     function buildRareKeywords() {
         const df = {};
         ARTICLES.forEach(a => {
@@ -833,37 +844,35 @@
     }
 
     function findRelated(article) {
-        const explicitIds = new Set(article.related || []);
-        // Only use keywords rare enough to be topically specific
-        const rareKw = buildRareKeywords();
-        const artKeys = new Set(extractKeywords(article.title).filter(w => rareKw.has(w)));
+        const hasEmbedding = Array.isArray(article.embedding) && article.embedding.length > 0;
+        const explicitIds  = new Set(article.related || []);
+        const rareKw       = hasEmbedding ? null : buildRareKeywords();
+        const artKeys      = hasEmbedding ? null : new Set(extractKeywords(article.title).filter(w => rareKw.has(w)));
 
         return ARTICLES
             .filter(a => a.id !== article.id && a.title !== article.title)
             .map(a => {
-                // Explicit links from generator (highest priority)
                 if (explicitIds.has(a.id)) {
-                    return { article: a, score: 100, reason: 'KI hat direkten Bezug erkannt' };
+                    return { article: a, score: 1.0, reason: 'Direkt verknüpft' };
                 }
 
-                // Only consider rare/specific keywords from the candidate's title
-                const bKeys = new Set(extractKeywords(a.title).filter(w => rareKw.has(w)));
+                if (hasEmbedding && Array.isArray(a.embedding) && a.embedding.length > 0) {
+                    const sim = cosineSim(article.embedding, a.embedding);
+                    if (sim < 0.82) return null;
+                    const reason = sim > 0.92 ? 'Sehr ähnliches Thema' : 'Verwandtes Thema';
+                    return { article: a, score: sim, reason };
+                }
+
+                // Fallback: seltene Keyword-Überschneidung
+                if (!artKeys || artKeys.size === 0) return null;
+                const bKeys  = new Set(extractKeywords(a.title).filter(w => rareKw.has(w)));
                 const shared = [...artKeys].filter(w => bKeys.has(w));
-
-                // Need at least one shared rare keyword
                 if (shared.length === 0) return null;
-
-                const keyLabels = shared.slice(0, 3)
-                    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-                    .join(', ');
-
-                return { article: a, score: shared.length * 6, reason: `Gleiches Thema: ${keyLabels}` };
+                const label  = shared.slice(0, 2).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(', ');
+                return { article: a, score: 0.5 + shared.length * 0.05, reason: `Gleiches Thema: ${label}` };
             })
             .filter(Boolean)
-            .sort((x, y) => {
-                if (y.score !== x.score) return y.score - x.score;
-                return parseArticleDate(y.article.date) - parseArticleDate(x.article.date);
-            })
+            .sort((x, y) => y.score - x.score)
             .slice(0, 3);
     }
 

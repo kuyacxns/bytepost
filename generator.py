@@ -6,10 +6,12 @@ from bs4 import BeautifulSoup
 # API-Key als Umgebungsvariable setzen:
 #   export GROQ_API_KEY="gsk_..."
 # Kostenloser Account: https://console.groq.com
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-UNSPLASH_KEY = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
-MODEL = "llama-3.3-70b-versatile"  # Kostenlos, sehr gute Qualität
-DATA_FILE = "data.json"
+GROQ_API_KEY    = os.environ.get("GROQ_API_KEY", "")
+VOYAGE_API_KEY  = os.environ.get("VOYAGE_API_KEY", "pa-ThfF9-qrjIQdrHZeeaRm0pJ0qM_hWJdac3xspAZ2bza")
+UNSPLASH_KEY    = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
+MODEL           = "llama-3.3-70b-versatile"
+EMBED_MODEL     = "voyage-3-lite"   # 512 Dimensionen, 50M Tokens/Monat kostenlos
+DATA_FILE       = "data.json"
 
 # --- COST PROTECTION ---
 MAX_PER_RUN = 10    # max. neue Artikel pro Generator-Lauf
@@ -45,6 +47,58 @@ RSS_FEEDS = [
     ("https://t3n.de/rss.xml", "Tech"),
     # GitHub Trending — kein RSS verfügbar, ggf. per API-Scraper ergänzen
 ]
+
+def get_embedding(text):
+    """Erzeugt einen semantischen Vektor via Voyage AI (mit Retry)."""
+    if not VOYAGE_API_KEY:
+        return None
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                "https://api.voyageai.com/v1/embeddings",
+                headers={"Authorization": f"Bearer {VOYAGE_API_KEY}", "Content-Type": "application/json"},
+                json={"input": [text[:4000]], "model": EMBED_MODEL},
+                timeout=20,
+            )
+            if r.status_code == 200:
+                vec = r.json()["data"][0]["embedding"]
+                return [round(x, 6) for x in vec]
+            if r.status_code == 429:
+                wait = 10 * (attempt + 1)
+                print(f"  -> Rate-Limit, warte {wait}s...")
+                time.sleep(wait)
+                continue
+            print(f"  -> Embedding-Fehler {r.status_code}: {r.text[:120]}")
+            break
+        except Exception as e:
+            wait = 3 * (attempt + 1)
+            print(f"  -> Embedding-Fehler (Versuch {attempt+1}): {e} — warte {wait}s")
+            time.sleep(wait)
+    return None
+
+
+def embed_text(article):
+    """Erstellt den Text der für das Embedding verwendet wird."""
+    content_plain = BeautifulSoup(article.get("content", ""), "html.parser").get_text(separator=" ")
+    return f"{article['title']}. {content_plain[:600]}"
+
+
+def backfill_embeddings(articles):
+    """Generiert Embeddings für alle Artikel die noch keines haben."""
+    missing = [a for a in articles if not a.get("embedding")]
+    if not missing:
+        return
+    print(f"\nEmbedding-Backfill: {len(missing)} Artikel ohne Vektor...")
+    for i, a in enumerate(missing):
+        vec = get_embedding(embed_text(a))
+        if vec:
+            a["embedding"] = vec
+            print(f"  [{i+1}/{len(missing)}] {a['title'][:50]}")
+        else:
+            print(f"  [{i+1}/{len(missing)}] FEHLER: {a['title'][:50]}")
+        time.sleep(1.0)   # DNS-Cache schonen
+    print("Backfill abgeschlossen.")
+
 
 def get_unsplash_image(query, article_id):
     try:
@@ -313,10 +367,15 @@ def run():
 
     heute = datetime.now().strftime("%d.%m.%Y")
 
+    # Embeddings für bestehende Artikel nachholen (unabhängig vom Groq-Tageslimit)
+    backfill_embeddings(db["articles"])
+
     # Tagessperre prüfen
     today_count = sum(1 for a in db["articles"] if a.get("date") == heute)
     if today_count >= MAX_PER_DAY:
         print(f"Tageslimit erreicht ({today_count}/{MAX_PER_DAY}). Abbruch.")
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
         return
 
     remaining_today = MAX_PER_DAY - today_count
@@ -364,6 +423,11 @@ def run():
             entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
             image_query = entry.pop("image_query", "technology")
             entry["image_local"] = get_unsplash_image(image_query, entry["id"])
+            # Semantischer Vektor für Kontext-Kette
+            vec = get_embedding(embed_text(entry))
+            if vec:
+                entry["embedding"] = vec
+                print(f"  -> Embedding: {len(vec)} Dimensionen")
             db["articles"].insert(0, entry)
             new_articles.append(entry)
             existing_urls.add(post.link)
