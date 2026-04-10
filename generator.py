@@ -37,6 +37,12 @@ RSS_FEEDS = [
     ("https://www.golem.de/rss.php?tp=dev", "Dev"),
     ("https://rss.golem.de/rss.php?feed=RSS2.0", "Tech"),
     ("https://t3n.de/rss.xml", "Tech"),
+    # Gaming
+    ("https://www.ign.com/articles/feed.atom", "Gaming"),
+    ("https://feeds.feedburner.com/RockPaperShotgun", "Gaming"),
+    ("https://www.gamespot.com/feeds/news/", "Gaming"),
+    ("https://www.heise.de/games/rss/news-atom.xml", "Gaming"),
+    ("https://www.golem.de/rss.php?tp=games", "Gaming"),
     # GitHub Trending — kein RSS verfügbar, ggf. per API-Scraper ergänzen
 ]
 
@@ -174,6 +180,8 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
             'engineering.atspotify.com': 'Spotify Engineering', 'openai.com': 'OpenAI',
             'heise.de': 'Heise', 'golem.de': 'Golem', 't3n.de': 't3n',
             'blogs.microsoft.com': 'Microsoft AI Blog',
+            'ign.com': 'IGN', 'rockpapershotgun.com': 'Rock Paper Shotgun',
+            'gamespot.com': 'GameSpot',
         }
         if not data.get('source') or data.get('source') in ('BytePost', 'Quellenname'):
             for domain, name in SOURCE_MAP.items():
