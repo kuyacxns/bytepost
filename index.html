@@ -693,10 +693,10 @@
         const a = ARTICLES.find(x => x.id === currentArticleId);
         const { sourceTop, sourceBottom, disclaimer } = articleFooterHtml(a);
         const badge = mode === 'simple'
-            ? '<div class="explain-badge simple">🎓 Einfach erklärt</div>'
+            ? '<div class="explain-badge simple">🤖 KI Zusammenfassung · Einfach erklärt</div>'
             : mode === 'pro'
-            ? '<div class="explain-badge pro">🔬 Profi-Version</div>'
-            : '<div class="modal-summary-label">🤖 KI-generierte Zusammenfassung</div>';
+            ? '<div class="explain-badge pro">🤖 KI Zusammenfassung · Profi-Version</div>'
+            : '<div class="modal-summary-label">📰 Standardversion</div>';
         document.getElementById('m-body').innerHTML =
             sourceTop + badge + content + sourceBottom + disclaimer;
     }
