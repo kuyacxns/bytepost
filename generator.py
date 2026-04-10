@@ -102,9 +102,16 @@ FORMAT für "content" (vollständiger Artikel auf Deutsch):
 - Abschluss: <p><em>BytePost-Einordnung: ...</em></p>
 - Länge: 400-600 Wörter — so lang wie nötig um den vollen Artikel abzudecken
 
-FORMAT für "content_simple" (kompakte Version für Einsteiger):
-- Kernaussagen ohne Fachbegriffe, mit Alltagsvergleichen
-- 150-200 Wörter, gleiche HTML-Struktur ohne h3
+FORMAT für "content_simple" (Einfach erklärt — für Einsteiger & Nicht-Techniker):
+- Keine Fachbegriffe, stattdessen Alltagsvergleiche und Analogien
+- 150-200 Wörter, <p>-Absätze, kein h3
+
+FORMAT für "content_pro" (Für Profis — für Entwickler & Engineers):
+- Technische Tiefe: Architektur-Details, verwendete Technologien, Protokolle, Datenstrukturen
+- Code-Beispiele in <pre><code> wo sinnvoll
+- Hinweise auf verwandte Konzepte, Standards oder Papers
+- Kritische Einordnung: Was sind die technischen Trade-offs?
+- 250-350 Wörter, <h3> zur Strukturierung
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
 
@@ -118,7 +125,8 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
     "content": "Vollständiger Artikel auf Deutsch (HTML mit h3, p, ul)",
-    "content_simple": "Kompakte Version für Einsteiger (HTML)"
+    "content_simple": "Einfach erklärt ohne Fachbegriffe (HTML, nur p)",
+    "content_pro": "Technische Tiefenversion für Entwickler (HTML mit h3, p, pre>code)"
 }}
 
 "cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business
@@ -133,7 +141,7 @@ Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
             },
             json={
                 "model": MODEL,
-                "max_tokens": 3000,
+                "max_tokens": 4000,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=30,
