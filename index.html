@@ -315,10 +315,12 @@
             text-transform: uppercase; letter-spacing: 0.8px;
             padding: 3px 10px; border-radius: 50px; margin-bottom: 16px;
         }
-        .explain-badge.simple { background: rgba(34,197,94,0.15); color: #16a34a; }
-        .explain-badge.pro    { background: rgba(99,102,241,0.15); color: #6366f1; }
-        [data-theme="dark"] .explain-badge.simple { color: #4ade80; background: rgba(34,197,94,0.12); }
-        [data-theme="dark"] .explain-badge.pro    { color: #818cf8; background: rgba(99,102,241,0.12); }
+        .explain-badge.simple   { background: rgba(34,197,94,0.15);  color: #16a34a; }
+        .explain-badge.pro      { background: rgba(99,102,241,0.15); color: #6366f1; }
+        .explain-badge.standard { background: rgba(0,113,227,0.12);  color: #0071e3; }
+        [data-theme="dark"] .explain-badge.simple   { color: #4ade80; background: rgba(34,197,94,0.12); }
+        [data-theme="dark"] .explain-badge.pro      { color: #818cf8; background: rgba(99,102,241,0.12); }
+        [data-theme="dark"] .explain-badge.standard { color: #60a5fa; background: rgba(0,113,227,0.12); }
 
         .skeleton-wrap { display: flex; flex-direction: column; gap: 12px; padding: 8px 0; }
         .skeleton-line {
@@ -696,7 +698,7 @@
             ? '<div class="explain-badge simple">🤖 KI Zusammenfassung · Einfach erklärt</div>'
             : mode === 'pro'
             ? '<div class="explain-badge pro">🤖 KI Zusammenfassung · Profi-Version</div>'
-            : '<div class="modal-summary-label">📰 Standardversion</div>';
+            : '<div class="explain-badge standard">🤖 KI Zusammenfassung · Standardversion</div>';
         document.getElementById('m-body').innerHTML =
             sourceTop + badge + content + sourceBottom + disclaimer;
     }
