@@ -503,6 +503,7 @@
     let PICK = null;
     let activeFilters = new Set(); // leer = alle
     let currentArticleId = null;
+    const modalScrollPos = {};  // articleId → scroll position
 
     /* ── Load ───────────────────────────────────────────────── */
     async function load() {
@@ -693,6 +694,7 @@
     function openArt(id) {
         const a = ARTICLES.find(x => x.id === id);
         if (!a) return;
+        const previousId = currentArticleId;
         currentArticleId = id;
         currentMode = 'standard';
 
@@ -715,7 +717,14 @@
         document.getElementById('m-img-container').innerHTML = a.image_local
             ? `<img src="${a.image_local}" class="modal-image">` : '';
 
-        document.querySelector('.modal').scrollTop = 0;
+        const modal = document.querySelector('.modal');
+        if (id === previousId) {
+            // Gleicher Artikel: Scroll-Position wiederherstellen
+            modal.scrollTop = modalScrollPos[id] || 0;
+        } else {
+            // Anderer Artikel: immer von oben starten
+            modal.scrollTop = 0;
+        }
         setExplainMode('standard');
         renderContext(a);
 
@@ -902,6 +911,10 @@
     }
 
     function closeModal() {
+        // Scroll-Position für diesen Artikel merken
+        if (currentArticleId) {
+            modalScrollPos[currentArticleId] = document.querySelector('.modal').scrollTop;
+        }
         document.getElementById('overlay').classList.remove('open');
         document.body.style.overflow = '';
     }
