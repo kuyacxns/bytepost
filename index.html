@@ -195,13 +195,8 @@
         }
 
         .card-date {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
-            padding: 3px 9px; border-radius: 5px;
-            background: rgba(255,214,10,0.22); color: #8a6800;
-            letter-spacing: 0.3px; white-space: nowrap;
-        }
-        [data-theme="dark"] .card-date {
-            background: rgba(255,214,10,0.18); color: #ffd60a;
+            font-family: var(--mono); font-size: 10px; font-weight: 400;
+            color: var(--text-3); white-space: nowrap; letter-spacing: 0.2px;
         }
 
         .card-read-time {
@@ -501,6 +496,12 @@
         return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
     }
 
+    function formatDate(dateStr) {
+        const d = parseArticleDate(dateStr);
+        if (!dateStr || d.getTime() === 0) return '';
+        return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
+    }
+
     function setEditionDate() {
         const el = document.getElementById('edition-date');
         const d = new Date();
@@ -611,7 +612,7 @@
                     <div class="hero-pick-meta">
                         <span>${pick.source || ''}</span>
                         <span>⏱️ ${pick.read || ''}</span>
-                        ${pick.date ? `<span style="background:rgba(255,214,10,0.25);color:#ffd60a;padding:2px 8px;border-radius:5px;font-weight:700;">${pick.date}</span>` : ''}
+                        ${pick.date ? `<span style="background:rgba(255,214,10,0.25);color:#ffd60a;padding:2px 8px;border-radius:5px;font-weight:700;">${formatDate(pick.date)}</span>` : ''}
                     </div>
                 </div>
             </div>`;
@@ -640,7 +641,7 @@
                     <div class="card-body">
                         <div class="card-meta">
                             ${catBadgeHtml(a)}
-                            ${a.date ? `<span class="card-date">${a.date}</span>` : ''}
+                            ${a.date ? `<span class="card-date">${formatDate(a.date)}</span>` : ''}
                             ${a.read ? `<span class="card-read-time">⏱ ${a.read}</span>` : ''}
                         </div>
                         <div class="card-title">${a.title}</div>
@@ -671,7 +672,7 @@
         tagEl.style.background = 'transparent';
 
         document.getElementById('m-title').textContent = a.title;
-        document.getElementById('m-meta').textContent = `${a.source || ''}${a.date ? ' · ' + a.date : ''} · ⏱️ ${a.read || ''} Lesezeit`;
+        document.getElementById('m-meta').textContent = `${a.source || ''}${a.date ? ' · ' + formatDate(a.date) : ''} · ⏱️ ${a.read || ''} Lesezeit`;
 
         // Seed cache with pre-generated content from data.json
         if (!explainCache[id]) explainCache[id] = {};
