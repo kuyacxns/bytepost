@@ -403,6 +403,11 @@ Im Zweifel: leer lassen. Lieber kein Vorschlag als ein falscher."""
                     parts = m.group(1).split('.')
                     data['source'] = parts[-2].capitalize() if len(parts) >= 2 else m.group(1)
         data["date"] = heute
+        # Lesezeit aus tatsächlichem Content berechnen (200 Wörter/Min)
+        content_text = re.sub(r'<[^>]+>', '', data.get('content', ''))
+        word_count = len(content_text.split())
+        read_min = max(1, round(word_count / 200))
+        data['read'] = f'{read_min} Min'
         tokens = r.json().get("usage", {})
         print(f"  -> OK | Cats: {cat} | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
         return data
