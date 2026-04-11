@@ -795,7 +795,7 @@
             const plain = (a.content || '').replace(/<[^>]+>/g, '').slice(0, 1500);
             const prompts = {
                 simple: `Du erklärst Tech-Themen für Nicht-Techniker auf Deutsch. Erkläre diesen Artikel ohne Fachbegriffe, mit Alltagsvergleichen, kurzen Sätzen. Beginne mit <div class="explain-badge simple">🎓 Kurz & Einfach</div>. Format: <p>, <ul>. 150-200 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`,
-                pro:    `Du bist Senior Engineer und erklärst Tech-News für Entwickler auf Deutsch. Füge technische Tiefe hinzu: Architektur, Protokolle, Code-Beispiele in <pre><code>, Trade-offs. Format: <h3>, <p>, <ul>, <pre><code>. 250-350 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`
+                pro:    `Du bist Senior Engineer und erklärst Tech-News für Entwickler auf Deutsch. Füge technische Tiefe hinzu: Architektur, Protokolle, interne Abläufe, Metriken, Trade-offs und Implikationen für die Praxis. Nutze <h3>, <p>, <ul>. Füge NUR dann einen <pre><code>-Block hinzu, wenn im Originalartikel tatsächlich konkreter Code vorkommt – ansonsten lass ihn weg. Keine erfundenen Beispiele. 250-350 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`
             };
             const GROQ_KEY = (typeof BYTEPOST_CONFIG !== 'undefined') ? BYTEPOST_CONFIG.groqKey : '';
             if (!GROQ_KEY) throw new Error('Kein API-Key konfiguriert');
