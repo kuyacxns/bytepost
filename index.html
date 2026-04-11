@@ -380,6 +380,7 @@
             @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
             .modal-content-padding { padding: 24px 20px 40px; }
             .modal-image { height: 180px; }
+            .explain-btn { padding: 6px 8px; font-size: 10px; }
         }
     </style>
 </head>
@@ -441,9 +442,9 @@
             <h2 id="m-title" style="font-family:var(--display); font-size:26px; margin:14px 0 4px; line-height:1.15;"></h2>
             <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px; margin-bottom:18px;"></p>
             <div class="explain-bar">
-                <button class="explain-btn" id="btn-simple" onclick="setExplainMode('simple')">🎓 Einfach erklärt</button>
-                <button class="explain-btn active" id="btn-standard" onclick="setExplainMode('standard')">📰 Standard</button>
-                <button class="explain-btn" id="btn-pro" onclick="setExplainMode('pro')">🔬 Für Profis</button>
+                <button class="explain-btn" id="btn-simple" onclick="setExplainMode('simple')">Einfach erklärt</button>
+                <button class="explain-btn active" id="btn-standard" onclick="setExplainMode('standard')">Standard</button>
+                <button class="explain-btn" id="btn-pro" onclick="setExplainMode('pro')">Für Profis</button>
             </div>
             <div id="m-body" class="modal-bd"></div>
             <div id="m-context"></div>
