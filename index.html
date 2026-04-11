@@ -810,9 +810,13 @@
             const data = await res.json();
             const raw = data.choices[0].message.content.replace(/```html|```/g, '').trim();
             // Zeilenumbrüche in <pre><code>-Blöcken wiederherstellen
-            const html = raw.replace(/<pre><code>([\s\S]*?)<\/code><\/pre>/g, (_, code) => {
-                const fixed = code.replace(/;(\s+)/g, ';\n').replace(/\{(\s+)/g, '{\n').replace(/\}(\s+)/g, '}\n');
-                return `<pre><code>${fixed}</code></pre>`;
+            const html = raw.replace(/<pre>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, (_, code) => {
+                const fixed = code
+                    .replace(/([;{])\s{2,}/g, '$1\n')   // nach ; oder { mit mehreren Spaces
+                    .replace(/\}\s{2,}/g, '}\n')         // nach } mit mehreren Spaces
+                    .replace(/(\/\/[^\n]*?)\s{2,}/g, '$1\n') // nach // Kommentaren
+                    .replace(/\s{4,}/g, '\n');            // Rest: 4+ Spaces → Zeilenumbruch
+                return `<pre><code>${fixed.trim()}</code></pre>`;
             });
             if (!explainCache[currentArticleId]) explainCache[currentArticleId] = {};
             explainCache[currentArticleId][mode] = html;
