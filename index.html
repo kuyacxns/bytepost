@@ -291,13 +291,14 @@
             display: flex; align-items: center; gap: 4px;
             background: var(--bg); border: 1px solid var(--border);
             border-radius: 50px; padding: 4px; margin-bottom: 20px;
-            width: fit-content;
+            width: 100%;
         }
         .explain-btn {
             font-family: var(--mono); font-size: 11px; font-weight: 700;
             padding: 6px 14px; border-radius: 50px; border: none; cursor: pointer;
             background: transparent; color: var(--text-3);
             transition: all var(--t); white-space: nowrap;
+            flex: 1; text-align: center;
         }
         .explain-btn:hover:not(.active) { color: var(--text); background: rgba(0,0,0,0.06); }
         [data-theme="dark"] .explain-btn:hover:not(.active) { background: rgba(255,255,255,0.06); }
@@ -379,6 +380,7 @@
             @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
             .modal-content-padding { padding: 24px 20px 40px; }
             .modal-image { height: 180px; }
+            .explain-btn { padding: 6px 8px; font-size: 10px; }
         }
     </style>
 </head>
@@ -440,9 +442,9 @@
             <h2 id="m-title" style="font-family:var(--display); font-size:26px; margin:14px 0 4px; line-height:1.15;"></h2>
             <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px; margin-bottom:18px;"></p>
             <div class="explain-bar">
-                <button class="explain-btn" id="btn-simple" onclick="setExplainMode('simple')">🎓 Einfach erklärt</button>
-                <button class="explain-btn active" id="btn-standard" onclick="setExplainMode('standard')">📰 Standard</button>
-                <button class="explain-btn" id="btn-pro" onclick="setExplainMode('pro')">🔬 Für Profis</button>
+                <button class="explain-btn" id="btn-simple" onclick="setExplainMode('simple')">Einfach erklärt</button>
+                <button class="explain-btn active" id="btn-standard" onclick="setExplainMode('standard')">Standard</button>
+                <button class="explain-btn" id="btn-pro" onclick="setExplainMode('pro')">Für Profis</button>
             </div>
             <div id="m-body" class="modal-bd"></div>
             <div id="m-context"></div>
