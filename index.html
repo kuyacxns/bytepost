@@ -285,9 +285,12 @@
             <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
             Byte<em>Post</em>
         </a>
-        <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
-            <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
-        </button>
+        <div style="display:flex;align-items:center;gap:16px;">
+            <a href="./dashboard.html" style="font-family:var(--mono);font-size:11px;color:var(--text-3);text-decoration:none;transition:color var(--t);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-3)'">Dashboard</a>
+            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+            </button>
+        </div>
     </div>
 </nav>
 

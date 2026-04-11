@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePost — Tech Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Variables ─────────────────────────────────────── */
+        :root {
+            --mono: 'Space Mono', monospace;
+            --display: 'Syne', sans-serif;
+            --body: 'DM Sans', sans-serif;
+            --bg: #f5f5f7;
+            --bg-card: #ffffff;
+            --text: #1d1d1f;
+            --text-2: #515154;
+            --text-3: #86868b;
+            --accent: #0071e3;
+            --border: rgba(0,0,0,0.08);
+            --radius: 14px;
+            --t: 0.2s ease;
+            --cat-ki: #0071e3;
+            --cat-dev: #22c55e;
+            --cat-hardware: #f97316;
+            --cat-security: #ef4444;
+            --cat-business: #a855f7;
+            --cat-gaming: #ec4899;
+            --cat-data: #f59e0b;
+            --cat-cloud: #06b6d4;
+            --cat-tech: #6366f1;
+        }
+        [data-theme="dark"] {
+            --bg: #0a0a0a;
+            --bg-card: #141414;
+            --text: #f5f5f7;
+            --text-2: #aeaeb2;
+            --text-3: #636366;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
+
+        .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+        /* ── Nav ─────────────────────────────────────────── */
+        nav {
+            position: sticky; top: 0;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            height: 56px; display: flex; align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        }
+        .nav-inner { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+        .logo { font-family: var(--display); font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .logo em { color: var(--accent); font-style: normal; }
+        .logo img { border-radius: 5px; }
+        .nav-links { display: flex; align-items: center; gap: 16px; }
+        .nav-link { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-decoration: none; transition: color var(--t); }
+        .nav-link:hover { color: var(--text); }
+        .nav-link.active { color: var(--accent); }
+        .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
+        .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* ── Page header ─────────────────────────────────── */
+        .page-header {
+            padding: 32px 0 28px;
+            border-bottom: 1px solid var(--border);
+        }
+        .page-label { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
+        .page-title { font-family: var(--display); font-size: 28px; font-weight: 800; line-height: 1.1; }
+        .page-title em { color: var(--accent); font-style: normal; }
+        .page-sub { font-size: 14px; color: var(--text-3); margin-top: 6px; }
+
+        /* ── Refresh bar ─────────────────────────────────── */
+        .refresh-bar {
+            display: flex; align-items: center; gap: 16px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-family: var(--mono); font-size: 11px; color: var(--text-3);
+        }
+        .refresh-bar button {
+            background: none; border: 1px solid var(--border); border-radius: 20px;
+            padding: 4px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px;
+            color: var(--text-3); transition: all var(--t);
+        }
+        .refresh-bar button:hover { border-color: var(--accent); color: var(--accent); }
+        #countdown-bar-wrap {
+            flex: 1; height: 2px; background: var(--border); border-radius: 2px; overflow: hidden;
+        }
+        #countdown-bar { height: 100%; width: 100%; background: var(--accent); transition: width 1s linear; }
+
+        /* ── Dashboard grid ──────────────────────────────── */
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 24px 0 60px;
+        }
+        @media (min-width: 768px) {
+            .dashboard { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 1100px) {
+            .dashboard { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* ── Widget card ─────────────────────────────────── */
+        .widget {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .widget-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 14px 16px 10px;
+            border-bottom: 1px solid var(--border);
+            gap: 8px;
+        }
+        .widget-title {
+            font-family: var(--mono); font-size: 11px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.8px;
+            display: flex; align-items: center; gap: 7px;
+        }
+        .widget-title-icon { font-size: 14px; }
+        .widget-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .widget-ts { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
+        .widget-refresh {
+            background: none; border: none; cursor: pointer;
+            font-size: 13px; color: var(--text-3); line-height: 1;
+            transition: color var(--t), transform 0.4s ease;
+            padding: 2px;
+        }
+        .widget-refresh:hover { color: var(--accent); }
+        .widget-refresh.spinning { animation: spin 0.6s linear infinite; }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .widget-body { padding: 14px 16px; flex: 1; min-height: 160px; }
+
+        /* ── Skeleton loader ─────────────────────────────── */
+        .skeleton-list { display: flex; flex-direction: column; gap: 10px; }
+        .skeleton-row { display: flex; gap: 10px; align-items: flex-start; }
+        .skeleton-num { width: 20px; height: 12px; border-radius: 4px; flex-shrink: 0; margin-top: 3px; }
+        .skeleton-lines { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+        .skeleton-line { border-radius: 4px; }
+
+        .skel { background: var(--border); animation: shimmer 1.4s ease-in-out infinite; }
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.4; }
+        }
+
+        /* ── Error state ─────────────────────────────────── */
+        .widget-error {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 6px; height: 100%; min-height: 120px;
+            font-family: var(--mono); font-size: 11px; color: var(--text-3);
+            text-align: center;
+        }
+        .widget-error-icon { font-size: 28px; }
+
+        /* ── Item list (HN, GitHub, Security) ───────────── */
+        .item-list { display: flex; flex-direction: column; gap: 1px; }
+        .item-row {
+            display: flex; align-items: flex-start; gap: 10px;
+            padding: 8px 0; border-bottom: 1px solid var(--border);
+        }
+        .item-row:last-child { border-bottom: none; }
+        .item-num {
+            font-family: var(--mono); font-size: 11px; color: var(--text-3);
+            min-width: 20px; padding-top: 2px; flex-shrink: 0;
+        }
+        .item-content { flex: 1; min-width: 0; }
+        .item-title {
+            font-size: 13px; font-weight: 600; line-height: 1.4;
+            color: var(--text);
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+            text-decoration: none;
+        }
+        a.item-title:hover { color: var(--accent); }
+        .item-sub {
+            font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            margin-top: 3px; display: flex; gap: 8px; flex-wrap: wrap;
+        }
+        .item-badge {
+            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            padding: 2px 7px; border-radius: 4px;
+            background: rgba(0,113,227,0.12); color: var(--accent);
+        }
+        .item-badge.red   { background: rgba(239,68,68,0.12);   color: #ef4444; }
+        .item-badge.green { background: rgba(34,197,94,0.12);   color: #22c55e; }
+        .item-badge.orange{ background: rgba(249,115,22,0.12);  color: #f97316; }
+        .item-badge.purple{ background: rgba(168,85,247,0.12);  color: #a855f7; }
+        .item-badge.yellow{ background: rgba(245,158,11,0.12);  color: #f59e0b; }
+
+        /* ── BytePost stats ──────────────────────────────── */
+        .stats-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;
+        }
+        .stat-box {
+            background: var(--bg); border: 1px solid var(--border);
+            border-radius: 10px; padding: 10px 12px;
+        }
+        .stat-val { font-family: var(--display); font-size: 22px; font-weight: 800; line-height: 1; }
+        .stat-label { font-family: var(--mono); font-size: 10px; color: var(--text-3); margin-top: 3px; }
+
+        .donut-wrap { display: flex; align-items: center; gap: 16px; }
+        .donut-canvas { flex-shrink: 0; }
+        .donut-legend { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 0; }
+        .legend-row { display: flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 10px; color: var(--text-2); }
+        .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .legend-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .legend-pct { color: var(--text-3); flex-shrink: 0; }
+
+        /* ── PyPI packages ───────────────────────────────── */
+        .pkg-list { display: flex; flex-direction: column; gap: 1px; }
+        .pkg-row {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 7px 0; border-bottom: 1px solid var(--border); gap: 8px;
+        }
+        .pkg-row:last-child { border-bottom: none; }
+        .pkg-name { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--text); }
+        .pkg-ver { font-family: var(--mono); font-size: 11px; color: var(--accent); }
+        .pkg-date { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
+
+        /* ── KI Model tracker ────────────────────────────── */
+        .model-list { display: flex; flex-direction: column; gap: 1px; }
+        .model-row {
+            display: flex; align-items: flex-start; gap: 10px;
+            padding: 9px 0; border-bottom: 1px solid var(--border);
+        }
+        .model-row:last-child { border-bottom: none; }
+        .model-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+        .model-content { flex: 1; min-width: 0; }
+        .model-name-row { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+        .model-name { font-size: 13px; font-weight: 600; }
+        .model-company { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
+        .model-highlight { font-size: 12px; color: var(--text-2); margin-top: 2px; line-height: 1.4; }
+        .model-type { font-family: var(--mono); font-size: 9px; padding: 2px 6px; border-radius: 4px; background: var(--border); color: var(--text-3); }
+
+        /* ── Security alerts (Heise) ─────────────────────── */
+        .alert-row {
+            display: flex; align-items: flex-start; gap: 10px;
+            padding: 8px 0; border-bottom: 1px solid var(--border);
+        }
+        .alert-row:last-child { border-bottom: none; }
+        .alert-sev {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            padding: 3px 7px; border-radius: 4px; flex-shrink: 0; margin-top: 2px;
+        }
+        .alert-sev.high   { background: rgba(239,68,68,0.15);  color: #ef4444; }
+        .alert-sev.medium { background: rgba(249,115,22,0.15); color: #f97316; }
+        .alert-sev.low    { background: rgba(34,197,94,0.12);  color: #22c55e; }
+        .alert-sev.info   { background: rgba(99,102,241,0.12); color: #818cf8; }
+        .alert-title-link {
+            font-size: 13px; font-weight: 600; line-height: 1.4; color: var(--text);
+            text-decoration: none;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .alert-title-link:hover { color: var(--accent); }
+        .alert-date { font-family: var(--mono); font-size: 10px; color: var(--text-3); margin-top: 3px; }
+
+        /* ── Utility ─────────────────────────────────────── */
+        .mt4 { margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="wrap nav-inner">
+        <a class="logo" href="./index.html">
+            <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
+            Byte<em>Post</em>
+        </a>
+        <div class="nav-links">
+            <a class="nav-link" href="./index.html">News</a>
+            <a class="nav-link active" href="#">Dashboard</a>
+            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="wrap">
+    <div class="page-header">
+        <div class="page-label">Live Übersicht</div>
+        <h1 class="page-title">Tech <em>Dashboard</em></h1>
+        <p class="page-sub">GitHub Trending · Hacker News · BytePost Stats · PyPI · Security · KI-Modelle</p>
+    </div>
+
+    <div class="refresh-bar">
+        <button onclick="refreshAll()">↻ Alle aktualisieren</button>
+        <span id="countdown-text">Aktualisierung in <strong id="countdown-num">5:00</strong></span>
+        <div id="countdown-bar-wrap"><div id="countdown-bar"></div></div>
+    </div>
+
+    <div class="dashboard">
+
+        <!-- 1 GitHub Trending -->
+        <div class="widget" id="w-github">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">🐙</span> GitHub Trending</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-github"></span>
+                    <button class="widget-refresh" onclick="loadGithub()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-github"></div>
+        </div>
+
+        <!-- 2 Hacker News -->
+        <div class="widget" id="w-hn">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">🔶</span> Hacker News Top 10</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-hn"></span>
+                    <button class="widget-refresh" onclick="loadHN()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-hn"></div>
+        </div>
+
+        <!-- 3 BytePost Stats -->
+        <div class="widget" id="w-bp">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">📊</span> BytePost Stats</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-bp"></span>
+                    <button class="widget-refresh" onclick="loadBP()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-bp"></div>
+        </div>
+
+        <!-- 4 PyPI Updates -->
+        <div class="widget" id="w-pypi">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">🐍</span> Python Packages</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-pypi"></span>
+                    <button class="widget-refresh" onclick="loadPyPI()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-pypi"></div>
+        </div>
+
+        <!-- 5 Security Alerts -->
+        <div class="widget" id="w-sec">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">🔒</span> Security Alerts</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-sec"></span>
+                    <button class="widget-refresh" onclick="loadSecurity()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-sec"></div>
+        </div>
+
+        <!-- 6 KI-Modell Tracker -->
+        <div class="widget" id="w-models">
+            <div class="widget-header">
+                <div class="widget-title"><span class="widget-title-icon">🤖</span> KI-Modell Tracker</div>
+                <div class="widget-meta">
+                    <span class="widget-ts" id="ts-models"></span>
+                    <button class="widget-refresh" onclick="loadModels()" title="Aktualisieren">↻</button>
+                </div>
+            </div>
+            <div class="widget-body" id="body-models"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    /* ── Theme ───────────────────────────────────────────── */
+    (function () {
+        const saved = localStorage.getItem('bp_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+        updateThemeBtn(saved);
+    })();
+
+    function updateThemeBtn(theme) {
+        const icon = document.getElementById('theme-icon');
+        const label = document.getElementById('theme-label');
+        if (!icon) return;
+        if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
+        else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
+    }
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bp_theme', next);
+        updateThemeBtn(next);
+    }
+
+    /* ── Helpers ─────────────────────────────────────────── */
+    const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
+    function cacheGet(key) {
+        try {
+            const raw = sessionStorage.getItem('dash_' + key);
+            if (!raw) return null;
+            const { ts, data } = JSON.parse(raw);
+            if (Date.now() - ts > CACHE_TTL) return null;
+            return data;
+        } catch { return null; }
+    }
+    function cacheSet(key, data) {
+        try { sessionStorage.setItem('dash_' + key, JSON.stringify({ ts: Date.now(), data })); } catch {}
+    }
+
+    function timeAgo(dateStr) {
+        const diff = Math.floor((Date.now() - new Date(dateStr)) / 1000);
+        if (diff < 60) return 'gerade eben';
+        if (diff < 3600) return `vor ${Math.floor(diff/60)} Min.`;
+        if (diff < 86400) return `vor ${Math.floor(diff/3600)} Std.`;
+        return `vor ${Math.floor(diff/86400)} Tagen`;
+    }
+
+    function tsNow() {
+        return new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function setTs(id) {
+        const el = document.getElementById('ts-' + id);
+        if (el) el.textContent = tsNow() + ' Uhr';
+    }
+
+    function showSkeleton(bodyId, rows = 7) {
+        const el = document.getElementById(bodyId);
+        if (!el) return;
+        el.innerHTML = `<div class="skeleton-list">${Array.from({length: rows}, () => `
+            <div class="skeleton-row">
+                <div class="skeleton-num skel" style="height:12px;margin-top:3px"></div>
+                <div class="skeleton-lines">
+                    <div class="skeleton-line skel" style="height:12px;width:${60+Math.random()*30|0}%"></div>
+                    <div class="skeleton-line skel" style="height:10px;width:${30+Math.random()*30|0}%"></div>
+                </div>
+            </div>`).join('')}</div>`;
+    }
+
+    function showError(bodyId, msg) {
+        const el = document.getElementById(bodyId);
+        if (!el) return;
+        el.innerHTML = `<div class="widget-error"><div class="widget-error-icon">⚠️</div><div>${msg || 'Laden fehlgeschlagen.'}</div></div>`;
+    }
+
+    function spinBtn(widgetId, on) {
+        const btn = document.querySelector(`#w-${widgetId} .widget-refresh`);
+        if (btn) btn.classList.toggle('spinning', on);
+    }
+
+    /* ── 1. GitHub Trending ──────────────────────────────── */
+    async function loadGithub(force = false) {
+        const cached = !force && cacheGet('github');
+        if (cached) { renderGithub(cached); setTs('github'); return; }
+        showSkeleton('body-github', 7);
+        spinBtn('github', true);
+        try {
+            // GitHub Search API: popular repos created last 7 days
+            const since = new Date(Date.now() - 7 * 86400 * 1000).toISOString().slice(0, 10);
+            const url = `https://api.github.com/search/repositories?q=created:>${since}&sort=stars&order=desc&per_page=8`;
+            const res = await fetch(url, { headers: { Accept: 'application/vnd.github+json' } });
+            if (!res.ok) throw new Error('GitHub API ' + res.status);
+            const json = await res.json();
+            const repos = (json.items || []).slice(0, 8).map(r => ({
+                name: r.full_name,
+                desc: r.description,
+                stars: r.stargazers_count,
+                lang: r.language,
+                url: r.html_url,
+            }));
+            cacheSet('github', repos);
+            renderGithub(repos);
+            setTs('github');
+        } catch (e) {
+            showError('body-github', 'GitHub API nicht erreichbar.');
+        }
+        spinBtn('github', false);
+    }
+
+    function renderGithub(repos) {
+        const el = document.getElementById('body-github');
+        if (!el) return;
+        el.innerHTML = `<div class="item-list">${repos.map((r, i) => `
+            <div class="item-row">
+                <div class="item-num">${i + 1}</div>
+                <div class="item-content">
+                    <a class="item-title" href="${r.url}" target="_blank" rel="noopener">${r.name}</a>
+                    <div class="item-sub">
+                        <span>⭐ ${r.stars >= 1000 ? (r.stars/1000).toFixed(1)+'k' : r.stars}</span>
+                        ${r.lang ? `<span class="item-badge green">${r.lang}</span>` : ''}
+                    </div>
+                </div>
+            </div>`).join('')}</div>`;
+    }
+
+    /* ── 2. Hacker News ──────────────────────────────────── */
+    async function loadHN(force = false) {
+        const cached = !force && cacheGet('hn');
+        if (cached) { renderHN(cached); setTs('hn'); return; }
+        showSkeleton('body-hn', 7);
+        spinBtn('hn', true);
+        try {
+            const topRes = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json');
+            const topIds = (await topRes.json()).slice(0, 10);
+            const stories = await Promise.all(topIds.map(id =>
+                fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(r => r.json())
+            ));
+            const items = stories.filter(Boolean).map(s => ({
+                title: s.title,
+                url: s.url || `https://news.ycombinator.com/item?id=${s.id}`,
+                score: s.score,
+                comments: s.descendants || 0,
+                by: s.by,
+                time: s.time ? new Date(s.time * 1000).toISOString() : null,
+            }));
+            cacheSet('hn', items);
+            renderHN(items);
+            setTs('hn');
+        } catch {
+            showError('body-hn', 'HN API nicht erreichbar.');
+        }
+        spinBtn('hn', false);
+    }
+
+    function renderHN(items) {
+        const el = document.getElementById('body-hn');
+        if (!el) return;
+        el.innerHTML = `<div class="item-list">${items.map((s, i) => `
+            <div class="item-row">
+                <div class="item-num">${i + 1}</div>
+                <div class="item-content">
+                    <a class="item-title" href="${s.url}" target="_blank" rel="noopener">${s.title}</a>
+                    <div class="item-sub">
+                        <span>▲ ${s.score}</span>
+                        <span>💬 ${s.comments}</span>
+                        ${s.time ? `<span>${timeAgo(s.time)}</span>` : ''}
+                    </div>
+                </div>
+            </div>`).join('')}</div>`;
+    }
+
+    /* ── 3. BytePost Stats ───────────────────────────────── */
+    const CAT_COLORS = {
+        ki: '#0071e3', dev: '#22c55e', hardware: '#f97316',
+        security: '#ef4444', business: '#a855f7', gaming: '#ec4899',
+        data: '#f59e0b', cloud: '#06b6d4', tech: '#6366f1',
+    };
+    const CAT_LABELS = {
+        ki: 'KI', dev: 'Dev', hardware: 'Hardware',
+        security: 'Security', business: 'Business', gaming: 'Gaming',
+        data: 'Data', cloud: 'Cloud', tech: 'Tech',
+    };
+
+    async function loadBP(force = false) {
+        const cached = !force && cacheGet('bp');
+        if (cached) { renderBP(cached); setTs('bp'); return; }
+        showSkeleton('body-bp', 4);
+        spinBtn('bp', true);
+        try {
+            const res = await fetch('./data.json?_=' + Date.now());
+            if (!res.ok) throw new Error('data.json ' + res.status);
+            const db = await res.json();
+            const articles = db.articles || [];
+            const catCount = {};
+            articles.forEach(a => {
+                const cats = Array.isArray(a.categories) ? a.categories : [];
+                cats.forEach(c => { catCount[c] = (catCount[c] || 0) + 1; });
+            });
+            const newestDate = articles.length
+                ? articles.reduce((m, a) => a.date > m ? a.date : m, '').slice(0, 10)
+                : 'k.A.';
+            const stats = { total: articles.length, catCount, newestDate };
+            cacheSet('bp', stats);
+            renderBP(stats);
+            setTs('bp');
+        } catch {
+            showError('body-bp', 'data.json nicht erreichbar.');
+        }
+        spinBtn('bp', false);
+    }
+
+    function renderBP(stats) {
+        const el = document.getElementById('body-bp');
+        if (!el) return;
+        const { total, catCount, newestDate } = stats;
+
+        // Top categories by count
+        const sorted = Object.entries(catCount).sort((a, b) => b[1] - a[1]).slice(0, 6);
+        const catTotal = sorted.reduce((s, [, v]) => s + v, 0);
+        const catColors = sorted.map(([k]) => CAT_COLORS[k] || '#888');
+
+        // Build donut (SVG)
+        const R = 38, cx = 44, cy = 44, circ = 2 * Math.PI * R;
+        let offset = 0;
+        const slices = sorted.map(([k, v]) => {
+            const pct = v / catTotal;
+            const dash = pct * circ;
+            const gap  = circ - dash;
+            const slice = { key: k, val: v, pct, offset, color: CAT_COLORS[k] || '#888', dash, gap };
+            offset += pct * circ;
+            return slice;
+        });
+        const svgSlices = slices.map(s => `
+            <circle r="${R}" cx="${cx}" cy="${cy}" fill="none"
+                stroke="${s.color}" stroke-width="12"
+                stroke-dasharray="${s.dash.toFixed(2)} ${s.gap.toFixed(2)}"
+                stroke-dashoffset="${(-s.offset + circ/4).toFixed(2)}"
+                transform="rotate(-90 ${cx} ${cy})"/>`).join('');
+
+        el.innerHTML = `
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-val">${total}</div>
+                    <div class="stat-label">Artikel gesamt</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val">${sorted.length}</div>
+                    <div class="stat-label">Kategorien</div>
+                </div>
+            </div>
+            <div class="donut-wrap">
+                <svg class="donut-canvas" width="88" height="88" viewBox="0 0 88 88">
+                    <circle r="${R}" cx="${cx}" cy="${cy}" fill="none" stroke="var(--border)" stroke-width="12"/>
+                    ${svgSlices}
+                </svg>
+                <div class="donut-legend">
+                    ${sorted.map(([k, v]) => `
+                        <div class="legend-row">
+                            <div class="legend-dot" style="background:${CAT_COLORS[k]||'#888'}"></div>
+                            <span class="legend-label">${CAT_LABELS[k] || k}</span>
+                            <span class="legend-pct">${Math.round(v/catTotal*100)}%</span>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    /* ── 4. PyPI Updates ─────────────────────────────────── */
+    const PYPI_PACKAGES = [
+        'requests', 'numpy', 'pandas', 'fastapi', 'pydantic',
+        'httpx', 'sqlalchemy', 'langchain', 'openai', 'rich',
+    ];
+
+    async function loadPyPI(force = false) {
+        const cached = !force && cacheGet('pypi');
+        if (cached) { renderPyPI(cached); setTs('pypi'); return; }
+        showSkeleton('body-pypi', 8);
+        spinBtn('pypi', true);
+        try {
+            const results = await Promise.allSettled(
+                PYPI_PACKAGES.map(pkg =>
+                    fetch(`https://pypi.org/pypi/${pkg}/json`)
+                        .then(r => r.ok ? r.json() : Promise.reject())
+                        .then(d => ({
+                            name: d.info.name,
+                            version: d.info.version,
+                            summary: d.info.summary,
+                            date: d.urls?.[0]?.upload_time ?? null,
+                        }))
+                )
+            );
+            const pkgs = results
+                .filter(r => r.status === 'fulfilled')
+                .map(r => r.value);
+            cacheSet('pypi', pkgs);
+            renderPyPI(pkgs);
+            setTs('pypi');
+        } catch {
+            showError('body-pypi', 'PyPI nicht erreichbar.');
+        }
+        spinBtn('pypi', false);
+    }
+
+    function renderPyPI(pkgs) {
+        const el = document.getElementById('body-pypi');
+        if (!el) return;
+        el.innerHTML = `<div class="pkg-list">${pkgs.map(p => `
+            <div class="pkg-row">
+                <div>
+                    <div class="pkg-name">${p.name}</div>
+                    ${p.date ? `<div class="pkg-date">${timeAgo(p.date)}</div>` : ''}
+                </div>
+                <div class="pkg-ver">${p.version}</div>
+            </div>`).join('')}</div>`;
+    }
+
+    /* ── 5. Security Alerts (Heise Security RSS via allOrigins) */
+    async function loadSecurity(force = false) {
+        const cached = !force && cacheGet('sec');
+        if (cached) { renderSecurity(cached); setTs('sec'); return; }
+        showSkeleton('body-sec', 6);
+        spinBtn('sec', true);
+        try {
+            const feedUrl = 'https://www.heise.de/security/rss/news-atom.xml';
+            const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(feedUrl)}`;
+            const res = await fetch(proxy);
+            if (!res.ok) throw new Error('Proxy ' + res.status);
+            const json = await res.json();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(json.contents, 'text/xml');
+            const entries = Array.from(doc.querySelectorAll('entry, item')).slice(0, 8);
+            const alerts = entries.map(e => ({
+                title: e.querySelector('title')?.textContent?.trim() || '(kein Titel)',
+                url: e.querySelector('link')?.getAttribute('href') || e.querySelector('link')?.textContent?.trim() || '#',
+                date: e.querySelector('updated, pubDate')?.textContent?.trim() || null,
+                sev: guessSeverity(e.querySelector('title')?.textContent || ''),
+            }));
+            cacheSet('sec', alerts);
+            renderSecurity(alerts);
+            setTs('sec');
+        } catch {
+            showError('body-sec', 'Heise Security RSS nicht erreichbar.');
+        }
+        spinBtn('sec', false);
+    }
+
+    function guessSeverity(title) {
+        const t = title.toLowerCase();
+        if (/kritisch|critical|rce|remote code|zero-?day/.test(t)) return 'high';
+        if (/schwachstelle|vulnerab|patch|update|exploit/.test(t)) return 'medium';
+        if (/warnung|warning|advisory/.test(t)) return 'low';
+        return 'info';
+    }
+
+    const SEV_LABEL = { high: 'KRITISCH', medium: 'MITTEL', low: 'NIEDRIG', info: 'INFO' };
+
+    function renderSecurity(alerts) {
+        const el = document.getElementById('body-sec');
+        if (!el) return;
+        el.innerHTML = `<div class="item-list">${alerts.map(a => `
+            <div class="alert-row">
+                <div class="alert-sev ${a.sev}">${SEV_LABEL[a.sev]}</div>
+                <div style="flex:1;min-width:0">
+                    <a class="alert-title-link" href="${a.url}" target="_blank" rel="noopener">${a.title}</a>
+                    ${a.date ? `<div class="alert-date">${timeAgo(a.date)}</div>` : ''}
+                </div>
+            </div>`).join('')}</div>`;
+    }
+
+    /* ── 6. KI-Modell Tracker ────────────────────────────── */
+    const MODEL_COMPANY_COLORS = {
+        'OpenAI': '#10a37f', 'Anthropic': '#d4613a', 'Google': '#4285f4',
+        'Meta': '#0866ff', 'xAI': '#e7e7e7', 'Mistral AI': '#ff6b00',
+        'Alibaba': '#ff6a00',
+    };
+
+    async function loadModels(force = false) {
+        const cached = !force && cacheGet('models');
+        if (cached) { renderModels(cached); setTs('models'); return; }
+        showSkeleton('body-models', 6);
+        spinBtn('models', true);
+        try {
+            const res = await fetch('./models.json?_=' + Date.now());
+            if (!res.ok) throw new Error('models.json ' + res.status);
+            const data = await res.json();
+            cacheSet('models', data);
+            renderModels(data);
+            setTs('models');
+        } catch {
+            showError('body-models', 'models.json nicht erreichbar.');
+        }
+        spinBtn('models', false);
+    }
+
+    function renderModels(data) {
+        const el = document.getElementById('body-models');
+        if (!el) return;
+        const models = (data.models || []).slice().sort((a, b) =>
+            (b.released || '').localeCompare(a.released || '')
+        );
+        el.innerHTML = `<div class="model-list">${models.map(m => {
+            const color = MODEL_COMPANY_COLORS[m.company] || '#888';
+            return `<div class="model-row">
+                <div class="model-dot" style="background:${color}"></div>
+                <div class="model-content">
+                    <div class="model-name-row">
+                        <span class="model-name">${m.name}</span>
+                        <span class="model-company">${m.company}</span>
+                        <span class="model-type">${m.type}</span>
+                    </div>
+                    <div class="model-highlight">${m.highlight}</div>
+                </div>
+            </div>`;
+        }).join('')}</div>`;
+    }
+
+    /* ── Auto-refresh countdown ──────────────────────────── */
+    const REFRESH_INTERVAL = 5 * 60; // seconds
+    let countdownSec = REFRESH_INTERVAL;
+    let countdownTimer;
+
+    function startCountdown() {
+        clearInterval(countdownTimer);
+        countdownSec = REFRESH_INTERVAL;
+        updateCountdownUI();
+        countdownTimer = setInterval(() => {
+            countdownSec--;
+            if (countdownSec <= 0) {
+                countdownSec = REFRESH_INTERVAL;
+                refreshAll(true);
+            }
+            updateCountdownUI();
+        }, 1000);
+    }
+
+    function updateCountdownUI() {
+        const m = Math.floor(countdownSec / 60);
+        const s = countdownSec % 60;
+        const numEl = document.getElementById('countdown-num');
+        if (numEl) numEl.textContent = `${m}:${String(s).padStart(2, '0')}`;
+        const bar = document.getElementById('countdown-bar');
+        if (bar) bar.style.width = (countdownSec / REFRESH_INTERVAL * 100) + '%';
+    }
+
+    /* ── Refresh all ─────────────────────────────────────── */
+    function refreshAll(force = false) {
+        loadGithub(force);
+        loadHN(force);
+        loadBP(force);
+        loadPyPI(force);
+        loadSecurity(force);
+        loadModels(force);
+        if (force) startCountdown();
+    }
+
+    /* ── Init ────────────────────────────────────────────── */
+    refreshAll();
+    startCountdown();
+</script>
+</body>
+</html>
