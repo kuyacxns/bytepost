@@ -795,7 +795,7 @@
             const plain = (a.content || '').replace(/<[^>]+>/g, '').slice(0, 1500);
             const prompts = {
                 simple: `Du erklärst Tech-Themen für Nicht-Techniker auf Deutsch. Erkläre diesen Artikel ohne Fachbegriffe, mit Alltagsvergleichen, kurzen Sätzen. Beginne mit <div class="explain-badge simple">🎓 Kurz & Einfach</div>. Format: <p>, <ul>. 150-200 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`,
-                pro:    `Du bist Senior Engineer und erklärst Tech-News für Entwickler auf Deutsch. Füge technische Tiefe hinzu: Architektur, Protokolle, interne Abläufe, Metriken, Trade-offs und Implikationen für die Praxis. Nutze <h3>, <p>, <ul>. Füge NUR dann einen <pre><code>-Block hinzu, wenn im Originalartikel tatsächlich konkreter Code vorkommt – ansonsten lass ihn weg. Keine erfundenen Beispiele. 250-350 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`
+                pro:    `Du bist Senior Engineer und erklärst Tech-News für Entwickler auf Deutsch. Füge technische Tiefe hinzu: Architektur, Protokolle, interne Abläufe, Metriken, Trade-offs und Implikationen für die Praxis. Nutze <h3>, <p>, <ul>. Füge NUR dann einen <pre><code>-Block hinzu, wenn im Originalartikel tatsächlich konkreter Code vorkommt – ansonsten lass ihn weg. Keine erfundenen Beispiele. Wenn du Code schreibst: JEDE Anweisung auf eine EIGENE Zeile mit echtem Zeilenumbruch (\\n), korrekte Einrückung mit Leerzeichen. 250-350 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`
             };
             const GROQ_KEY = (typeof BYTEPOST_CONFIG !== 'undefined') ? BYTEPOST_CONFIG.groqKey : '';
             if (!GROQ_KEY) throw new Error('Kein API-Key konfiguriert');
@@ -809,13 +809,19 @@
             if (!res.ok) throw new Error(`API ${res.status}`);
             const data = await res.json();
             const raw = data.choices[0].message.content.replace(/```html|```/g, '').trim();
-            // Zeilenumbrüche in <pre><code>-Blöcken wiederherstellen
-            const html = raw.replace(/<pre>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, (_, code) => {
-                const fixed = code
-                    .replace(/([;{])\s{2,}/g, '$1\n')   // nach ; oder { mit mehreren Spaces
-                    .replace(/\}\s{2,}/g, '}\n')         // nach } mit mehreren Spaces
-                    .replace(/(\/\/[^\n]*?)\s{2,}/g, '$1\n') // nach // Kommentaren
-                    .replace(/\s{4,}/g, '\n');            // Rest: 4+ Spaces → Zeilenumbruch
+            // Zeilenumbrüche in <pre><code>-Blöcken sicherstellen
+            const html = raw.replace(/<pre[^>]*>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, (_, code) => {
+                const decoded = code.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');
+                let fixed = decoded;
+                // Wenn kein echter Zeilenumbruch → Einzeiler aufsplitten
+                if (!decoded.includes('\n')) {
+                    fixed = decoded
+                        .replace(/([;,])\s+/g, '$1\n')
+                        .replace(/\{\s+/g, '{\n  ')
+                        .replace(/\s+\}/g, '\n}')
+                        .replace(/(\/\/[^;{}\n]*)\s{2,}/g, '$1\n')
+                        .replace(/\s{3,}/g, '\n');
+                }
                 return `<pre><code>${fixed.trim()}</code></pre>`;
             });
             if (!explainCache[currentArticleId]) explainCache[currentArticleId] = {};
