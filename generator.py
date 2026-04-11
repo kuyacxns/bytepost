@@ -319,7 +319,7 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
     "cat": ["ki"],
     "icon": "Passendes Emoji",
-    "title": "Prägnante Headline, max. 8 Wörter",
+    "title": "Aussagekräftige Headline auf Deutsch: Wer/Was + Aktion + Kontext. Max. 10 Wörter. Kein Clickbait, keine Auslassungspunkte. Beispiele: 'Meta ersetzt WebRTC-Fork nach 10 Jahren Eigenentwicklung', 'Kritische Lücke in OpenSSH erlaubt Root-Zugriff ohne Passwort'",
     "source": "Echter Name der Originalquelle (z.B. TechCrunch, The Verge, GitHub Blog) — NICHT 'BytePost'",
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
