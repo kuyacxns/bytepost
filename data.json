@@ -1,6 +1,31 @@
 {
     "articles": [
         {
+            "cat": "ki|dev",
+            "tag": "KI|Dev",
+            "icon": "🤖",
+            "title": "Anthropic und OpenClaw",
+            "source": "BytePost",
+            "read": "5 Min",
+            "sentiment": "neutral",
+            "content": "         <h3>Die temporary Sperre von OpenClaws Ersteller</h3>         <p>Anthropic, ein Unternehmen im Bereich Künstliche Intelligenz, hat vorübergehend den Zugang von Peter Steinberger, dem Ersteller von OpenClaw, zu ihrem Modell Claude gesperrt. Diese Sperre erfolgte nachdem die Preise für Claude für OpenClaw-Benutzer geändert wurden. Steinberger selbst postete auf X: „Yeah folks, it's gonna be harder in the future to ensure OpenClaw still works with Anthropic models“, zusammen mit einem Foto einer Nachricht von Anthropic, in der sein Konto wegen „suspicious“ Aktivitäten gesperrt wurde.</p>         <p>Die Sperre war jedoch nicht von Dauer. Einige Stunden später, nachdem der Post viral gegangen war, teilte Steinberger mit, dass sein Konto wieder freigeschaltet worden sei. Unter den Hunderten von Kommentaren, viele davon in Verschwörungstheorien, war auch einer von einem Anthropic-Entwickler. Der Entwickler sagte Steinberger, dass Anthropic niemanden wegen der Verwendung von OpenClaw gesperrt habe und bot Hilfe an.</p>         <h3>Hintergrund</h3>         <p>Die Sperre erfolgte nachdem Anthropic bekannt gegeben hatte, dass Abonnements für Claude nicht mehr „third-party harnesses, einschließlich OpenClaw“ abdecken würden. OpenClaw-Benutzer müssen nun separate Entgelte für die Nutzung von Claude zahlen, basierend auf ihrem Verbrauch, über die Claude-API. Steinberger sagte, er habe sich an diese neue Regel gehalten und habe über die API gearbeitet, wurde aber dennoch gesperrt.</p>         <p>Anthropic sagte, die Preisänderung sei erfolgt, weil Abonnements nicht für die „usage patterns“ von Claws konzipiert seien. Claws können aufgrund kontinuierlicher Schleifen, automatischer Wiederholung oder Wiederholungsversuche von Aufgaben und der Integration in viele andere Drittanbieter-Tools rechenintensiver sein als einfache Skripte oder Anfragen. Steinberger äußerte jedoch Zweifel an dieser Begründung.</p>         <h3>Steinbergers Reaktion</h3>         <p>Steinberger sagte nach der Änderung der Preise: „Funny how timings match up, first they copy some popular features into their closed harness, then they lock out open source“. Er könnte sich dabei auf Funktionen beziehen, die Anthropic in seinen eigenen Agenten, wie Claude Dispatch, integriert hat, das es Benutzern ermöglicht, Agents remote zu kontrollieren und Aufgaben zuzuweisen.</p>         <p>Als ihm jemand vorwarf, er habe den falschen Arbeitgeber gewählt, antwortete Steinberger: „One welcomed me, one sent legal threats“. Auf die Frage, warum er Claude und nicht die Modelle seines Arbeitgebers OpenAI verwende, antwortete er, er verwende es nur für Tests, um sicherzustellen, dass Updates für OpenClaw nicht zu Problemen für Claude-Benutzer führen.</p>         <p><em>BytePost-Einordnung: Die Episode zeigt die Komplexität und Dynamik im Umfeld von KI-Entwicklungen und deren Interaktionen zwischen verschiedenen Unternehmen und Entwicklern. Es unterstreicht auch die Bedeutung von Kooperation und offenen Standards für die weitere Entwicklung der Technologie.</em></p>     ",
+            "content_simple": "         <h3>Was passierte?</h3>         <p>Ein wichtiger Entwickler namens Peter Steinberger wurde vorübergehend von einem KI-Unternehmen namens Anthropic gesperrt. Der Grund war eine Änderung in der Preisgestaltung für die Nutzung von Anthropics KI-Modell Claude.</p>         <p>Die Sperre war jedoch nicht von Dauer und Steinberger konnte bald wieder auf Claude zugreifen. Anthropic äußerte sich dazu und erklärte, dass niemand wegen der Verwendung von OpenClaw gesperrt wurde.</p>         <p><em>BytePost-Einordnung: Diese Ereignisse zeigen, wie wichtig es ist, bei KI-Entwicklungen offen und kooperativ zu sein.</em></p>     ",
+            "date": "11.04.2026",
+            "id": "3f0d28a9",
+            "url": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3f0d28a9.jpg",
+            "pick": true,
+            "related": [
+                "d9f5ae78"
+            ]
+        },
+        {
             "cat": "dev",
             "tag": "Dev",
             "icon": "🚀",
@@ -264,7 +289,7 @@
                 "sleep": 0
             },
             "image_local": "images/50b12832.jpg",
-            "pick": true,
+            "pick": false,
             "related": [
                 "ea421b53",
                 "e5999e7e",
@@ -405,10 +430,10 @@
         }
     ],
     "bytepulse": {
-        "date": "08.04.2026",
-        "positiv": 87,
-        "neutral": 13,
+        "date": "11.04.2026",
+        "positiv": 0,
+        "neutral": 100,
         "kritisch": 0,
-        "total": 15
+        "total": 1
     }
 }
