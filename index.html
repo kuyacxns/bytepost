@@ -357,8 +357,8 @@
         }
         @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-        .modal-bd pre { background: #0d1117; border-radius: 8px; padding: 16px; margin: 16px 0; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
-        .modal-bd pre code { font-family: var(--mono); font-size: 12px; color: #e6edf3; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+        .modal-bd pre { background: #0d1117; border-radius: 8px; padding: 16px; margin: 16px 0; overflow-x: auto; }
+        .modal-bd pre code { font-family: var(--mono); font-size: 12px; color: #e6edf3; line-height: 1.6; white-space: pre; }
         .modal-bd code:not(pre code) { font-family: var(--mono); font-size: 12px; background: var(--bg); padding: 1px 5px; border-radius: 3px; color: var(--accent); }
         [data-theme="dark"] .modal-bd pre { background: #0a0a0a; border: 1px solid var(--border); }
 
@@ -808,7 +808,12 @@
             });
             if (!res.ok) throw new Error(`API ${res.status}`);
             const data = await res.json();
-            const html = data.choices[0].message.content.replace(/```html|```/g, '').trim();
+            const raw = data.choices[0].message.content.replace(/```html|```/g, '').trim();
+            // Zeilenumbrüche in <pre><code>-Blöcken wiederherstellen
+            const html = raw.replace(/<pre><code>([\s\S]*?)<\/code><\/pre>/g, (_, code) => {
+                const fixed = code.replace(/;(\s+)/g, ';\n').replace(/\{(\s+)/g, '{\n').replace(/\}(\s+)/g, '}\n');
+                return `<pre><code>${fixed}</code></pre>`;
+            });
             if (!explainCache[currentArticleId]) explainCache[currentArticleId] = {};
             explainCache[currentArticleId][mode] = html;
             if (currentMode === mode) renderBody(mode, html);
