@@ -856,29 +856,25 @@
 
     function findRelated(article) {
         const hasEmbedding = Array.isArray(article.embedding) && article.embedding.length > 0;
-        const explicitIds  = new Set(article.related || []);
-        const rareKw       = hasEmbedding ? null : buildRareKeywords();
-        const artKeys      = hasEmbedding ? null : new Set(extractKeywords(article.title).filter(w => rareKw.has(w)));
+        const rareKw  = hasEmbedding ? null : buildRareKeywords();
+        const artKeys = hasEmbedding ? null : new Set(extractKeywords(article.title).filter(w => rareKw.has(w)));
 
         return ARTICLES
             .filter(a => a.id !== article.id && a.title !== article.title)
             .map(a => {
-                if (explicitIds.has(a.id)) {
-                    return { article: a, score: 1.0, reason: 'Direkt verknüpft' };
-                }
-
+                // Embedding-basierte Ähnlichkeit (primär)
                 if (hasEmbedding && Array.isArray(a.embedding) && a.embedding.length > 0) {
                     const sim = cosineSim(article.embedding, a.embedding);
-                    if (sim < 0.82) return null;
-                    const reason = sim > 0.92 ? 'Sehr ähnliches Thema' : 'Verwandtes Thema';
+                    if (sim < 0.87) return null;
+                    const reason = sim > 0.93 ? 'Sehr ähnliches Thema' : 'Verwandtes Thema';
                     return { article: a, score: sim, reason };
                 }
 
-                // Fallback: seltene Keyword-Überschneidung
+                // Fallback: seltene Keyword-Überschneidung im Titel
                 if (!artKeys || artKeys.size === 0) return null;
                 const bKeys  = new Set(extractKeywords(a.title).filter(w => rareKw.has(w)));
                 const shared = [...artKeys].filter(w => bKeys.has(w));
-                if (shared.length === 0) return null;
+                if (shared.length < 2) return null; // mind. 2 gemeinsame seltene Wörter
                 const label  = shared.slice(0, 2).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(', ');
                 return { article: a, score: 0.5 + shared.length * 0.05, reason: `Gleiches Thema: ${label}` };
             })
