@@ -391,11 +391,17 @@ Im Zweifel: leer lassen. Lieber kein Vorschlag als ein falscher."""
             'ign.com': 'IGN', 'rockpapershotgun.com': 'Rock Paper Shotgun',
             'gamespot.com': 'GameSpot',
         }
-        if not data.get('source') or data.get('source') in ('BytePost', 'Quellenname'):
+        if not data.get('source') or data.get('source') in ('BytePost', 'Quellenname', 'Unknown', 'unknown', ''):
             for domain, name in SOURCE_MAP.items():
                 if domain in url:
                     data['source'] = name
                     break
+            else:
+                # Fallback: Domain aus URL ableiten
+                m = re.search(r'https?://(?:www\.)?([^/]+)', url)
+                if m:
+                    parts = m.group(1).split('.')
+                    data['source'] = parts[-2].capitalize() if len(parts) >= 2 else m.group(1)
         data["date"] = heute
         tokens = r.json().get("usage", {})
         print(f"  -> OK | Cats: {cat} | Sentiment: {data.get('sentiment','?')} | Tokens: {tokens.get('total_tokens','?')}")
