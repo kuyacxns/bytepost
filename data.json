@@ -2,6 +2,212 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "📊",
+            "title": "Studie: Debattenkultur im Netz verschlechtert",
+            "source": "Medienanstalten",
+            "read": "5 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "3d77991a",
+                "321bb29e",
+                "bbf8e87a"
+            ],
+            "content": " <h3>Debattenkultur im Netz verschlechtert sich</h3> <p>Die Bereitschaft, sich an Debatten in Sozialen Medien und in Online-Kommentarbereichen zu beteiligen, sinkt. Ein zentraler Grund dafür ist die Diskursqualität, die zunehmend als negativ wahrgenommen wird, so das Ergebnis einer Studie der Medienanstalten.</p> <p>Plattformen-Nutzer:innen und Social-Media-Redakteur:innen sind sich offenbar gleichermaßen einig: Die Debattenkultur im digitalen Raum verschlechtert sich zunehmend. Zu diesem Ergebnis kommt die „Transparenz-Check“-Studie der Medienanstalten. Konstruktive Debatten seien online demnach „kaum noch möglich“ und würden zum Teil gar als unwillkommen wahrgenommen.</p> <h3>Gründe für die schlechte Diskursqualität</h3> <p>Der häufigste Grund dafür sei die aggressive Stimmung. Dementsprechend werde der respektvolle Umgang miteinander als zentral dafür angesehen, sich mehr zu beteiligen. Zur Meinungsfreiheit im digitalen Raum liegen bei den Befragten zwei gegensätzliche Wahrnehmungen vor. Eine Gruppe versteht darunter, ohne Sorge vor Hass und Abwertung sprechen zu können. Die andere Gruppe will dagegen grundsätzlich alles ungehindert sagen dürfen.</p> <p>Besonders Menschen, die der AfD zuneigten, hätten das Gefühl, in ihrer Meinungsäußerung eingeschränkt zu sein. Wähler:innen der Linken oder der Grünen gaben dagegen häufiger an, frei artikulieren zu können.</p> <h3>Vertrauen in Soziale Medien ist sehr gering</h3> <p>Das Vertrauen in die Sozialen Medien fällt insgesamt sehr gering aus. Dennoch gibt etwa ein Drittel der Befragten an, in den Kommentaren unter journalistischen Beiträgen bei Facebook, Instagram und YouTube mitzulesen.</p> <p>„Vertrauen und Laune sinken nach dem Lesen von Kommentaren“</p> <p>Ein Viertel derer, die aktiv kommentieren, wollen zumeist nur ihre Meinung äußern; knapp ein Viertel von ihnen will andere überzeugen und etwa jede achte Person möchte lediglich ihren Ärger kundtun.</p> <h3>Fazit der Studie</h3> <p>„Insgesamt überwiegen die negativen Auswirkungen von Diskursen in den Sozialen Medien“, so ein Fazit der Studie. „Extreme Meinungen überwiegen, Vertrauen und Laune sinken nach dem Lesen von Kommentaren.“</p> <p>Als ein Mittel, um die Situation zu verbessern, wird eine erkennbare Moderation genannt. Je strenger moderiert wird und je konstruktiver der Austausch ist, desto respektvoller und ausgewogener wird der Diskurs wahrgenommen.</p> <p><em>BytePost-Einordnung: Die Studie zeigt, dass die Debattenkultur im Netz immer mehr leidet. Es ist wichtig, dass Plattformen und Nutzer gemeinsam daran arbeiten, den Dialog zu verbessern und den respektvollen Umgang miteinander zu fördern.</em></p> ",
+            "content_simple": " <p>Die Debattenkultur im Internet wird immer schlechter. Viele Menschen fühlen sich nicht mehr wohl, wenn sie online diskutieren. Ein Grund dafür ist die aggressive Stimmung in den Kommentaren.</p> <p>Es gibt zwei unterschiedliche Meinungen darüber, was Meinungsfreiheit im Internet bedeutet. Einige denken, dass sie ohne Angst vor Hass und Abwertung sprechen können sollten. Andere wollen einfach alles sagen dürfen, was ihnen einfällt.</p> ",
+            "content_pro": " <h3>Technische Aspekte der Studie</h3> <p>Die Studie zeigt, dass die Anforderungen an das Community-Management in den vergangenen Jahren gewachsen sind. Verantwortlich dafür sind die steigende Zahl an Kommentaren und der zunehmend raue Tonfall.</p> <p>Die Bedeutung von Bots und Desinformation im Internet wird auch thematisiert. Insgesamt wurden vier Prozent der Kommentare als „wahrscheinliche Bot-Kommentare“ klassifiziert.</p> <p>Die Studie zeigt auch, dass eine erkennbare Moderation entscheidend dafür sein kann, dass die Diskursqualität positiver wahrgenommen wird. Je strenger moderiert wird und je konstruktiver der Austausch ist, desto respektvoller und ausgewogener wird der Diskurs wahrgenommen.</p> ",
+            "date": "11.04.2026",
+            "id": "18ef2cdd",
+            "url": "https://netzpolitik.org/2026/studie-der-medienanstalten-debattenkultur-im-netz-erodiert/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/18ef2cdd.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "TypeScript 6.0 RC",
+            "source": "TypeScript Blog",
+            "read": "5 Min",
+            "sentiment": "neutral",
+            "related": [
+                "18ef2cdd",
+                "321bb29e",
+                "bbf8e87a"
+            ],
+            "content": " <h3>TypeScript 6.0 RC veröffentlicht</h3> <p>Wir freuen uns, die Release Candidate (RC) von TypeScript 6.0 anzukündigen! Um mit der RC zu beginnen, kannst du sie über npm mit dem folgenden Befehl installieren: <code>npm install -D typescript@rc</code>. TypeScript 6.0 ist eine einzigartige Veröffentlichung, da wir vorhaben, es als letzte Veröffentlichung auf der aktuellen JavaScript-Codebasis zu verwenden. Wie bereits im letzten Jahr angekündigt (mit aktuellen Updates <a href='https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#go-compiler'>hier</a>), arbeiten wir an einer neuen Codebasis für den TypeScript-Compiler und den Language-Service, der in Go geschrieben ist und die Geschwindigkeit von nativem Code und Shared-Memory-Mehrthreading nutzt. Diese neue Codebasis wird die Grundlage für TypeScript 7.0 und darüber hinaus bilden. TypeScript 6.0 wird die unmittelbare Vorgängerversion dieser Veröffentlichung sein und in vielen Aspekten als Brücke zwischen TypeScript 5.9 und 7.0 dienen.</p> <p>Die meisten Änderungen in TypeScript 6.0 sind darauf ausgerichtet, die Übernahme von TypeScript 7.0 vorzubereiten. Es gibt jedoch auch einige neue Funktionen und Verbesserungen, die nicht nur auf die Ausrichtung abzielen. Lass uns einige der Highlights dieser Veröffentlichung betrachten, gefolgt von einem detaillierteren Blick auf das, was sich für die Version 7.0 ändern wird und wie man sich darauf vorbereiten kann.</p> <h3>Was ist neu seit der Beta?</h3> <p>Seit der Beta-Version von TypeScript 6.0 haben wir einige bemerkenswerte Änderungen vorgenommen – größtenteils, um das Verhalten von TypeScript 7.0 zu harmonisieren. Eine Anpassung betrifft die Typüberprüfung für Funktionsausdrücke in generischen Aufrufen, insbesondere solchen, die in generischen JSX-Ausdrücken auftreten (siehe <a href='https://github.com/microsoft/TypeScript/pull/51555'>diesen Pull-Request</a>). Dies wird typischerweise mehr Fehler in bestehendem Code abfangen, obwohl du feststellen könntest, dass einige generische Aufrufe möglicherweise einen expliziten Typargument benötigen.</p> <p>Wir haben auch die Abkehr von der Import-Assertion-Syntax (d.h. <code>import ... assert {...}</code>) auf Importaufrufe wie <code>import(..., { assert: {...}})</code> erweitert. Schließlich haben wir die DOM-Typen aktualisiert, um die neuesten Webstandards widerzuspiegeln, einschließlich einiger Anpassungen an den Temporal-APIs.</p> <h3>Weniger Kontextsensitivität bei -less-Funktionen</h3> <p>Wenn Parameter keine expliziten Typen haben, kann TypeScript diese typischerweise anhand eines erwarteten Typs oder sogar durch andere Argumente im gleichen Funktionsaufruf ableiten. Erklärungen finden sich im Beispiel mit der Funktion <code>callIt</code>, wo TypeScript den Typ von <code>y</code> in der <code>consume</code>-Funktion basierend auf dem abgeleiteten Typ <code>T</code> aus der <code>produce</code>-Funktion ableiten kann, unabhängig von der Reihenfolge der Eigenschaften.</p> <p><em>BytePost-Einordnung: Diese Neuigkeiten bedeuten einen wichtigen Schritt in der Entwicklung von TypeScript. Die Ankündigung von TypeScript 6.0 RC ist ein wichtiger Meilenstein auf dem Weg zu TypeScript 7.0 und darüber hinaus. Entwickler sollten diese Änderungen und Vorbereitungen für die Zukunft von TypeScript im Auge behalten.</em></p> ",
+            "content_simple": " <p>Die Firma hinter TypeScript hat eine neue Version ihres Produkts veröffentlicht. Diese Version ist wichtig, weil sie die letzte Version ist, die auf der alten Codebasis basiert. In Zukunft wird TypeScript auf einer neuen Codebasis basieren, die schneller und effizienter ist.</p> <p>Es gibt einige neue Funktionen und Verbesserungen in dieser Version, die den Entwicklern helfen, ihre Arbeit zu erleichtern. Es ist jedoch wichtig, dass Entwickler sich auf die Änderungen vorbereiten, die in Zukunft kommen werden.</p> ",
+            "content_pro": " <h3>Architektur und Technologie</h3> <p>Die neue Codebasis von TypeScript wird in Go geschrieben und nutzt die Geschwindigkeit von nativem Code und Shared-Memory-Mehrthreading. Dies ermöglicht es, die Leistung von TypeScript zu verbessern und es zu einem wichtigen Werkzeug für die Entwicklung von komplexen Anwendungen zu machen.</p> <h3>Typen und Inferenz</h3> <p>Die Typüberprüfung für Funktionsausdrücke in generischen Aufrufen wurde verbessert, um mehr Fehler in bestehendem Code abzufangen. Es ist jedoch wichtig, dass Entwickler explizite Typargumente für generische Aufrufe verwenden, um Fehler zu vermeiden.</p> <h3>Zukunftsaussichten</h3> <p>Die Ankündigung von TypeScript 6.0 RC ist ein wichtiger Schritt in der Entwicklung von TypeScript. Entwickler sollten sich auf die Änderungen und Vorbereitungen für die Zukunft von TypeScript einstellen. Es ist wichtig, die neuen Funktionen und Verbesserungen zu verstehen und sich auf die Änderungen vorzubereiten, die in Zukunft kommen werden.</p> ",
+            "date": "11.04.2026",
+            "id": "3d77991a",
+            "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-rc/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3d77991a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "cloud",
+                "security"
+            ],
+            "icon": "📈",
+            "title": "Cloudflare Netzwerk überschreitet 500 Tbps",
+            "source": "Cloudflare Blog",
+            "read": "6 Min",
+            "sentiment": "positiv",
+            "related": [
+                "18ef2cdd",
+                "3d77991a",
+                "bbf8e87a"
+            ],
+            "content": " <h3>500 Tbps Kapazität: 16 Jahre Skalierung unseres globalen Netzwerks</h3> <p>Cloudflares globales Netzwerk hat offiziell die 500-Tbps-Marke überschritten, ausreichend, um mehr als 20% des Internets zu routen und die größten DDoS-Angriffe aller Zeiten abzuwehren. Als wir 2010 von einem kleinen Büro über einer Nagelstudio in Palo Alto starteten, hatten wir nur einen Transit-Provider und einen Reverse-Proxy, den man durch Ändern von zwei Nameservern einrichten konnte.</p> <p>Unser erstes Transit-Netz war nLayer Communications, ein Netz, das die meisten Leute heute als GTT kennen. nLayer gab uns unsere erste Kapazität und unsere ersten Hands-on-Erfahrungen in Peering-Beziehungen und der sorgfältigen Balance zwischen Kosten und Leistung. Von dort aus wuchsen wir Stadt für Stadt: Chicago, Ashburn, San Jose, Amsterdam, Tokio. Jedes neue Rechenzentrum bedeutete Verhandlungen über Colocation-Verträge, das Verlegen von Glasfaserkabeln, das Einbauen von Servern und die Einrichtung von Peering über Internet-Austauschpunkte.</p> <h3>Als das Netzwerk zur Sicherheitsschicht wurde</h3> <p>Als unsere Footprint wuchs, baten Kunden um mehr als nur Website-Caching. Sie benötigten Schutz für ihre Mitarbeiter, den Ersatz alter MPLS-Verbindungen und die Sicherung ganzer Unternehmensnetzwerke. Anstatt traditionelle Appliances zu bauen, erstellten wir Systeme, um sichere Tunnel zu privaten Subnetzen herzustellen und Unternehmens-IP-Adressen direkt von unserem globalen Netz über BGP zu bewerben.</p> <p>Die Skala der Bedrohungen wuchs parallel. Im Jahr 2025 haben wir einen 31,4-Tbps-DDoS-Angriff abgewehrt, der 35 Sekunden lang anhielt. Die Quelle war das Aisuru-Kimwolf-Botnet, das viele infizierte Android-TVs beinhaltete. Es war einer von über 5.000 Angriffen, die wir an diesem Tag abwehrten. Kein Ingenieur wurde aufgeweckt.</p> <h3>Wie unser Netzwerk auf einen Angriff reagiert</h3> <p>Wenn ein Angriff unser Netzwerk trifft, geschehen folgende Schritte: Pakete treffen auf die Netzwerk-Schnittstelle (NIC) und betreten sofort ein XDP-Programm, das von xdpd verwaltet wird. Das erste Programm in dieser Kette ist l4drop, das jedes Paket gegen Abwehrregeln in eBPF auswertet. Diese Regeln werden von dosd, unserem Denial-of-Service-Daemon, generiert, der auf jedem Server in unserer Flotte läuft.</p> <p>Unser Netzwerk kann DDoS-Angriffe in Sekunden abwehren, ohne menschliche Eingriffe zu benötigen. Dies ist es, was ein Betreiben auf einer 500-Tbps-Skala erfordert: Die Intelligenz in jeden Server in unserem Netzwerk zu verschieben, damit das Netzwerk sich selbst verteidigen kann.</p> <p><em>BytePost-Einordnung: Die Skalierung des Cloudflare-Netzwerks auf 500 Tbps Kapazität zeigt die Fortschritte im Bereich der Netzwerksicherheit und die Bedeutung von automatisierter Abwehr von DDoS-Angriffen.</em></p> ",
+            "content_simple": " <p>Cloudflare, ein Unternehmen, das das Internet schneller und sicherer machen will, hat ein wichtiges Ziel erreicht: Es kann jetzt 500 Terabit Daten pro Sekunde routen. Das ist ausreichend, um ein Fünftel des ganzen Internets zu bedienen. Als Cloudflare vor 16 Jahren startete, war es noch ein kleines Unternehmen mit nur einem einzigen Transit-Provider.</p> <p>Jetzt hat Cloudflare ein großes Netzwerk mit vielen Peering-Partnern und kann sogar die größten DDoS-Angriffe abwehren. DDoS-Angriffe sind wie ein Sturm auf das Internet, der versucht, eine Website oder ein Netzwerk lahmzulegen. Cloudflare kann solche Angriffe in Sekunden abwehren, ohne dass ein Ingenieur eingreifen muss.</p> ",
+            "content_pro": " <h3>Architektur und Technologie</h3> <p>Cloudflares Netzwerk basiert auf einer Architektur, die es ermöglicht, Pakete in Echtzeit zu verarbeiten und zu routen. Das Netzwerk verwendet XDP-Programme, um Pakete zu filtern und zu bearbeiten, bevor sie an die nächste Stufe weitergeleitet werden.</p> <p>Das XDP-Programm wird von xdpd verwaltet, das auf jedem Server in der Flotte läuft. Das Programm überprüft jedes Paket gegen Abwehrregeln in eBPF und entscheidet, ob es weitergeleitet oder abgewiesen werden soll. Die Regeln werden von dosd, dem Denial-of-Service-Daemon, generiert, der auf jedem Server läuft.</p> <p>Die Kommunikation zwischen den Servern erfolgt über das Quicksilver-Protokoll, das es ermöglicht, Daten in Echtzeit auszutauschen. Dies ermöglicht es dem Netzwerk, Angriffe in Sekunden abzuwehren, ohne menschliche Eingriffe zu benötigen.</p> <h3>Kritische Einordnung</h3> <p>Die Skalierung eines Netzwerks auf 500 Tbps Kapazität ist ein beeindruckendes Ziel, das jedoch auch Herausforderungen mit sich bringt. Die Verwaltung eines solchen Netzwerks erfordert eine hohe Komplexität und eine sorgfältige Abwägung zwischen Kosten und Leistung.</p> ",
+            "date": "11.04.2026",
+            "id": "321bb29e",
+            "url": "https://blog.cloudflare.com/500-tbps-of-capacity/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/321bb29e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Angriffe wie nie zuvor",
+            "source": "Unknown",
+            "read": "5 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "18ef2cdd",
+                "3d77991a",
+                "321bb29e"
+            ],
+            "content": "         <h3>Die nächste Sicherheitslücke kommt</h3>         <p>Dein nächster Angriff wird wie ein normaler Geschäftsvorfall aussehen. Die grundlegenden Veränderungen im Erkennungsmodell, die Cybersicherheitsteams vornehmen müssen, um mit der steigenden Anzahl von anmeldeinformationen-basierten Angriffen Schritt zu halten, sind entscheidend.</p>         <p>Um fortzufahren, aktiviere bitte JavaScript und Cookies.</p>         <h3>Die Herausforderung</h3>         <p>Die steigende Anzahl von Angriffen, die auf die Übernahme von Anmeldeinformationen abzielen, stellt eine große Herausforderung für die Cybersicherheitsteams dar. Diese Angriffe sind oft sehr subtil und können nur schwer von regulären Geschäftsvorfallen unterschieden werden.</p>         <ul>             <li>Die Angriffe sind sehr subtil und können nur schwer erkannt werden.</li>             <li>Die Angriffe zielen auf die Übernahme von Anmeldeinformationen ab.</li>             <li>Die Angriffe können nur durch fortschrittliche Erkennungsmodelle erkannt werden.</li>         </ul>         <p>Um diese Angriffe zu erkennen, müssen die Cybersicherheitsteams ihre Erkennungsmodelle anpassen und neue Strategien entwickeln, um mit der steigenden Anzahl von Angriffen Schritt zu halten.</p>         <p><em>BytePost-Einordnung: Die steigende Anzahl von Angriffen, die auf die Übernahme von Anmeldeinformationen abzielen, stellt eine große Herausforderung für die Cybersicherheitsteams dar. Es ist entscheidend, dass diese Teams ihre Erkennungsmodelle anpassen und neue Strategien entwickeln, um mit der steigenden Anzahl von Angriffen Schritt zu halten.</em></p>     ",
+            "content_simple": "         <p>Ein Next Breach sieht wie ein normaler Geschäftsvorfall aus. Cyberkriminelle greifen Benutzerkonten an, indem sie Anmeldeinformationen stehlen oder überlisten.</p>         <p>Das ist das Problem, weil Unternehmen Schwierigkeiten haben, einen echten Angriff von einem normalen Vorgang zu unterscheiden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die steigende Anzahl von Angriffen, die auf die Übernahme von Anmeldeinformationen abzielen, stellt eine große Herausforderung für die Cybersicherheitsteams dar. Um diese Angriffe zu erkennen, müssen die Teams ihre Erkennungsmodelle anpassen und neue Strategien entwickeln.</p>         <p>Ein Beispiel für ein solches Erkennungsmodell ist das Verwenden von maschinellen Lernalgorithmen, um Muster in den Angriffen zu erkennen.</p>         <pre><code></code></pre>         <p>Es ist entscheidend, dass die Cybersicherheitsteams ihre Erkennungsmodelle anpassen und neue Strategien entwickeln, um mit der steigenden Anzahl von Angriffen Schritt zu halten.</p>     ",
+            "date": "11.04.2026",
+            "id": "bbf8e87a",
+            "url": "https://www.darkreading.com/identity-access-management-security/your-next-breach-business-as-usual",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/bbf8e87a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "KI verändert Datenarbeit",
+            "source": "Mode Analytics",
+            "read": "5 Min",
+            "sentiment": "positiv",
+            "related": [
+                "cdf1d502",
+                "2a4ffb02"
+            ],
+            "content": "<h3>KI als Treiber der Veränderung</h3><p>Die Art und Weise, wie Datenpraktiker arbeiten, verändert sich durch KI. In dieser Episode von The View on Data diskutieren die Gastgeber Faith McKenna, Paige Berry und Erica \"Ric\" Louie mit Sam Ferguson, Staff Product Designer bei dbt Labs, über die Bedeutung von Design für Datenpraktiker und wie KI diese Arbeit in Echtzeit verändert.</p><p>Das Gespräch deckt alles ab, von der Einbettung von natürlicher Sprache in SQL bis hin zur Analogie des Schreibers, die Sie vielleicht nicht kannten, und warum Ihre Code-Kommentare möglicherweise wertvoller sind, als Sie denken.</p><h3>Von Mode zu dbt: Design für die Menschen, die die Abfragen schreiben</h3><p>Sam kam zu dbt Labs nach fast einem Jahrzehnt bei Mode Analytics, wo das Produkt auf der Überzeugung basierte, dass Analysten, die SQL schreiben, großartige Werkzeuge verdienen. Diese philosophische Übereinstimmung mit dbt machte den Übergang natürlich.</p><p>Beide Unternehmen dachten lange vor einem Mainstream-Gespräch über code-first-Datenpraktiker nach. Aber der Wechsel bedeutete auch, das mentale Modell zu erweitern. Bei Mode lag der Schwerpunkt auf dem Analysten. Bei dbt verschob er sich stromaufwärts zu Analytics-Engenieuren und Daten-Engenieuren, deren Aufgabe weniger darin besteht, ad-hoc-Antworten zu geben, und mehr darin, die Infrastruktur aufzubauen, die diese Antworten ermöglicht.</p><h3>Commentieren Sie Ihren Code. Ihr zukünftiger Agent wird Ihnen danken.</h3><p>Sam erwähnte, dass die natürliche Sprache, die in SQL eingebettet war, desto näher an der tatsächlichen Ausgabe lag, desto besser die Ergebnisse waren. Ric und Paige brauchten keine Überzeugung. Ric sprach über das Schreiben von Kommentaren nicht nur für andere Menschen, sondern für die Logik selbst: warum diese Filter existiert, was diese Variable wirklich tut, was der seltsame Randfall ist und warum er wichtig ist.</p><p>Paige wiederholte dies. Sie hat mehr aus gut kommentiertem Code gelernt als aus fast jeder anderen Quelle. Die \"zwei Vögel mit einem Scone\"-Darstellung blieb: gute Kommentarpraktiken machen Ihren Code基s bereits für Menschen einfacher zu navigieren. Sie könnten auch Ihren Code基s für Agenten erheblich einfacher zu bearbeiten machen. Das ist kein Kompromiss. Das ist einfach ein Bonus.</p><p><em>BytePost-Einordnung: Die KI-Technologie verändert die Art und Weise, wie Datenpraktiker arbeiten. Durch die Einbettung von natürlicher Sprache in SQL und die Kommentierung von Code können Entwickler ihre Arbeit effizienter gestalten und ihre Ergebnisse verbessern.</em></p>",
+            "content_simple": "<p>Die KI-Technologie verändert die Art und Weise, wie Menschen mit Daten arbeiten. Statt nur Zahlen und Fakten auszuwerten, kann die KI jetzt auch natürliche Sprache verstehen und in SQL-Code umwandeln.</p><p>Diese Veränderung ermöglicht es Entwicklern, ihre Arbeit effizienter zu gestalten und ihre Ergebnisse zu verbessern. Durch die Kommentierung von Code können sie auch sicherstellen, dass ihre Arbeit für andere Menschen und für die KI selbst leichter zu verstehen ist.</p>",
+            "content_pro": "<h3>Technische Details</h3><p>Die KI-Technologie verwendet Text-to-SQL-Modelle, um natürliche Sprache in SQL-Code umzuwandeln. Durch die Einbettung von natürlicher Sprache in SQL kann die KI die Abfragen von Datenpraktikern direkt in SQL-Code übersetzen und somit die Effizienz und Genauigkeit der Arbeit verbessern.</p><p>Die Kommentierung von Code ist ebenfalls wichtig, da sie es der KI ermöglicht, den Code besser zu verstehen und somit bessere Ergebnisse zu liefern. Durch die Verwendung von Kommentaren kann der Entwickler auch sicherstellen, dass seine Arbeit für andere Menschen und für die KI selbst leichter zu verstehen ist.</p><pre><code>Beispielcode hier</code></pre>",
+            "date": "11.04.2026",
+            "id": "8a1695a0",
+            "url": "https://www.getdbt.com/blog/how-ai-is-reshaping-the-way-data-practitioners-work",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8a1695a0.jpg",
+            "pick": true,
+            "pick_reason": "Die Art und Weise, wie wir mit Daten arbeiten, steht vor einer Revolution: KI verändert die Datenarbeit grundlegend. Entwickler müssen sich auf diese Veränderung einstellen, um nicht den Anschluss zu verpassen. Mit der neuen Ära der KI-Datenarbeit stehen Produktivität, Effizienz und innovative Möglichkeiten auf dem Spiel."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Anthropic und OpenClaw",
+            "source": "TechCrunch",
+            "read": "5 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0cea24e4"
+            ],
+            "content": "         <h3>Anthropic und OpenClaw: Ein kurzer Blick auf die jüngste Entwicklung</h3>         <p>Anthropic, ein Unternehmen, das sich auf künstliche Intelligenz (KI) spezialisiert hat, hat vorübergehend den Zugang von OpenClaw-Creator Peter Steinberger zu ihrem Modell Claude gesperrt. Dies geschah nachdem die Preise für Claude für OpenClaw-Benutzer geändert wurden.</p>         <p>Steinberger selbst teilte auf X mit, dass es ihm in Zukunft wahrscheinlich schwerer fallen wird, sicherzustellen, dass OpenClaw auch mit Anthropics Modellen funktioniert. Er teilte ein Bild einer Nachricht von Anthropic mit, in der sein Konto wegen „verdächtiger“ Aktivitäten gesperrt wurde.</p>         <p>Die Sperre wurde jedoch nur wenige Stunden später wieder aufgehoben, nachdem der Beitrag viral gegangen war. Ein Ingenieur von Anthropic bot Steinberger sogar an, ihm zu helfen. Es ist jedoch unklar, ob dies der Grund für die Wiederherstellung des Kontos war.</p>         <h3>Die Hintergründe</h3>         <p>Die Sperre erfolgte nachdem Anthropic angekündigt hatte, dass Abonnements für Claude nicht mehr „Drittanbieter-Harnesse, einschließlich OpenClaw“, abdecken würden. OpenClaw-Benutzer müssen nun separate Gebühren für die Nutzung von Claudes API zahlen.</p>         <p>Steinberger erklärte, dass er sich an die neuen Regeln gehalten und die API verwendet habe, aber dennoch gesperrt wurde. Anthropic begründete die Änderung mit der Begründung, dass Abonnements nicht für die „Nutzungsmuster“ von Harnessen ausgelegt seien.</p>         <h3>Kritik und Reaktionen</h3>         <p>Steinberger äußerte sich kritisch über die Entscheidung von Anthropic und vermutete, dass das Unternehmen versuche, OpenClaw auszuschließen. Er wies auch darauf hin, dass Anthropic eigene Funktionen kopiert habe, die ursprünglich in OpenClaw entwickelt wurden.</p>         <p>Viele Benutzer fragten Steinberger, warum er nicht die Modelle seines Arbeitgebers OpenAI verwende, anstatt Claude. Steinberger antwortete, dass er Claude nur für Testzwecke verwende, um sicherzustellen, dass OpenClaw mit verschiedenen Modellen kompatibel ist.</p>         <p><em>BytePost-Einordnung: Die Auseinandersetzung zwischen Anthropic und OpenClaw ist ein Beispiel für die komplexen Beziehungen zwischen Unternehmen im KI-Sektor. Es bleibt abzuwarten, wie sich diese Situation weiterentwickelt und welche Auswirkungen sie auf die Entwicklung von OpenClaw und anderen KI-Modellen haben wird.</em></p>     ",
+            "content_simple": "         <p>Anthropic hat den Zugang von OpenClaw-Creator Peter Steinberger zu ihrem Modell Claude gesperrt. Dies geschah nachdem die Preise für Claude geändert wurden. Steinberger verwendet Claude nur für Testzwecke, um sicherzustellen, dass OpenClaw mit verschiedenen Modellen kompatibel ist.</p>         <p>Die Sperre wurde jedoch wieder aufgehoben, nachdem der Beitrag viral gegangen war. Es ist unklar, ob dies der Grund für die Wiederherstellung des Kontos war. Die Auseinandersetzung zwischen Anthropic und OpenClaw zeigt die komplexen Beziehungen zwischen Unternehmen im KI-Sektor.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Anthropic verwendet eine API, um den Zugang zu ihrem Modell Claude zu steuern. OpenClaw-Creator Peter Steinberger verwendet diese API, um sicherzustellen, dass OpenClaw mit Claude kompatibel ist.</p>         <p>Die Änderung der Preise für Claude hat jedoch zu Problemen geführt. Steinberger wurde gesperrt, obwohl er sich an die neuen Regeln gehalten hatte. Es bleibt abzuwarten, wie sich diese Situation weiterentwickelt und welche Auswirkungen sie auf die Entwicklung von OpenClaw und anderen KI-Modellen haben wird.</p>     ",
+            "date": "11.04.2026",
+            "id": "2b3b416b",
+            "url": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2b3b416b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming",
+                "hardware"
+            ],
+            "icon": "👾",
+            "title": "Gaming-PC für die Zukunft",
+            "source": "Unknown",
+            "read": "5 Min",
+            "sentiment": "positiv",
+            "related": [
+                "18ef2cdd",
+                "3d77991a",
+                "321bb29e"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Als jemand, der Spiele liebt, wird oft angenommen, dass ich auch alle Kabel und glänzenden Hardware-Teile liebe, die benötigt werden, um sie zu spielen. Die Wahrheit ist jedoch, dass ich, wenn ich jemanden brauche, der über die Romanzen in Baldur's Gate 3, die Erstellung eines soliden Diablo 4-Charakters oder die Anleitung, wie man das Master-Schwert in jedem Zelda-Spiel erhält, sprechen kann, ich die Richtige bin. Wenn jedoch mein Mikrofon mitten in einem Match aufhört zu funktionieren oder der PC, den ich gebaut habe, nicht anspringt, würde ich鼓励en, jemand anderen zu fragen, um das Problem zu lösen.</p>         <p>Ich kann mich durchaus in einem PC zurechtfinden und Mods installieren, aber im Großen und Ganzen möchte ich nicht zu viel darüber nachdenken, wie ich meine Spiele am Laufen halten kann. Glücklicherweise gibt es Unternehmen wie Quoted Tech, die bereit sind, mir aus der Patsche zu helfen. Vor einigen Wochen schickte mir das kanadische Unternehmen einen maßgeschneiderten Gaming-PC - den Horizon Professional - um meine Gaming-Probleme zu lösen, die in den letzten Jahren zahlreicher geworden sind.</p>         <h3>Der Horizon Professional</h3>         <p>Als ich den PC auspackte, war ich beeindruckt von der sorgfältigen Verpackung. Der PC war von dicken Styrofoam-Platten umgeben, und das Innere des Gehäuses war mit Verpackungsmaterial gefüllt, das seiner Form angepasst war, um zu verhindern, dass irgendetwas während des Transports umherbewegt wurde. Die Montage war genauso einfach und benötigte fast nichts von mir. Nachdem ich den PC aus der Box geholt hatte, nahm ich die gläserne Seitenwand ab, entfernte die Verpackung, schloss sie wieder und steckte ihn ein.</p>         <p>Der Horizon PC hat meine Gaming-Erfahrung mit fast null Aufwand und Reibungsverlusten erheblich verbessert, und das zu einem vernünftigen Preis. Die Vorstellung, mein bestehendes System upzubooten oder noch schlimmer, es komplett neu aufzubauen, schien mir überwältigend, und die steigenden Kosten für RAM und SSDs ließen mich ein bisschen resigniert zurück.</p>         <h3>Fazit</h3>         <p>Ich war schockiert, wie sehr der Horizon PC meine Gaming-Erfahrung verbesserte, ohne dass ich viel darüber nachdenken musste, wie ich meine Spiele am Laufen halte. Wenn du also überlegst, ob du deinen alten PC ersetzen solltest, könntest du den Horizon Professional in Betracht ziehen.</p>         <p><em>BytePost-Einordnung: Der Artikel zeigt, dass die Investition in einen guten Gaming-PC wie den Horizon Professional eine großartige Möglichkeit ist, deine Hobbys zukunftssicher zu machen.</em></p>     ",
+            "content_simple": "         <p>Als Spielerin möchte ich nicht zu viel über die Technik nachdenken, die meine Spiele am Laufen hält. Deshalb war ich begeistert, als ich einen maßgeschneiderten Gaming-PC von Quoted Tech bekam. Der Horizon Professional ist ein hochleistungsfähiger PC, der meine Gaming-Erfahrung erheblich verbessert hat.</p>         <p>Die Montage war einfach und benötigte fast nichts von mir. Der PC war sorgfältig verpackt und die Verpackung war an seine Form angepasst, um zu verhindern, dass irgendetwas umherbewegt wurde.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Horizon Professional ist ein maßgeschneidertes System, das für Gaming entwickelt wurde. Es bietet eine hohe Leistung und benötigt fast keine Wartung. Die Verpackung ist sorgfältig und an die Form des PCs angepasst, um zu verhindern, dass irgendetwas umherbewegt wird.</p>         <p>Die Montage ist einfach und benötigt fast nichts von dir. Der PC ist von dicken Styrofoam-Platten umgeben, und das Innere des Gehäuses ist mit Verpackungsmaterial gefüllt, das seiner Form angepasst ist.</p>     ",
+            "date": "11.04.2026",
+            "id": "a347b795",
+            "url": "https://www.gamespot.com/articles/as-gaming-grows-more-expensive-investing-in-a-pc-like-this-one-is-a-great-way-to-future-proof-your-hobby/1100-6539347/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a347b795.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev",
                 "business"
             ],
@@ -2171,7 +2377,7 @@
                 -0.005423,
                 0.013382
             ],
-            "pick": true,
+            "pick": false,
             "pick_reason": "Meta modernisiert WebRTC und revolutioniert damit die Kommunikation im Internet. Diese Neuerung hat das Potenzial, die Art und Weise, wie wir online kommunizieren, grundlegend zu verändern. Entwickler sollten sich jetzt informieren, um nicht den Anschluss zu verpassen, wenn es um die Zukunft der Online-Kommunikation geht."
         },
         {
@@ -25873,10 +26079,10 @@
         }
     ],
     "bytepulse": {
-        "date": "10.04.2026",
-        "positiv": 56,
-        "neutral": 24,
-        "kritisch": 20,
-        "total": 25
+        "date": "11.04.2026",
+        "positiv": 43,
+        "neutral": 29,
+        "kritisch": 29,
+        "total": 7
     }
 }
