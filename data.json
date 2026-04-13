@@ -58,7 +58,7 @@
                 "sleep": 0
             },
             "image_local": "images/60955473.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Zukunft der Online-Sicherheit steht auf dem Spiel: Cloudflare zielt auf 2029 für vollständige Post-Quanten-Sicherheit, um die Gefahr von Quantencomputer-Angriffen zu mindern. Dieser Schritt ist entscheidend, da die momentane Verschlüsselungstechnologie durch Quantencomputer in Zukunft geknackt werden könnte. Entwickler sollten sich NOW auf diese Veränderung vorbereiten, um ihre Anwendungen und Daten zukunftssicher zu machen."
         },
         {
