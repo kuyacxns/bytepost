@@ -2,6 +2,36 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "gaming"
+            ],
+            "icon": "🚀",
+            "title": "FAA wirbt mit Gaming um Fluglotsen",
+            "source": "Golem.de",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "db354ba7",
+                "60955473",
+                "1318d779"
+            ],
+            "content": "         <h3>Ein ungewöhnliches Jobangebot</h3>         <p>Die US-Flugsicherung (FAA) hat eine ungewöhnliche Methode gewählt, um neue Fluglotsen zu werben. Statt traditioneller Jobanzeigen hat die FAA eine Kampagne gestartet, die sich speziell an Gamer richtet. Der Grund dafür ist, dass die Fähigkeiten, die ein Gamer benötigt, wie Konzentration, Reaktionsvermögen und die Fähigkeit, sich schnell anzupassen, auch für die Arbeit als Fluglotse von Vorteil sind.</p>         <p>Die Kampagne beginnt mit einer Anzeige, die wie eine Werbung für ein neues Spiel aussieht. Erst wenn man genauer hinschaut, wird klar, dass es sich um ein Jobangebot handelt. Die FAA sucht gezielt nach Menschen, die Erfahrung im Bereich Gaming haben und sich für die Arbeit als Fluglotse interessieren.</p>         <h3>Was bietet die FAA?</h3>         <p>Die FAA bietet eine umfassende Ausbildung für die neue Karriere als Fluglotse. Die Ausbildung umfasst sowohl theoretische als auch praktische Aspekte und bereitet die Teilnehmer auf die Herausforderungen des Berufs vor. Die FAA garantiert auch, dass alle Auszubildenden, die die Ausbildung erfolgreich abschließen, einen Job als Fluglotse erhalten.</p>         <p>Die FAA betont, dass die Arbeit als Fluglotse sehr anspruchsvoll ist und eine hohe Konzentration und ein schnelles Reaktionsvermögen erfordert. Die Fluglotsen müssen in der Lage sein, schnell und sicher Entscheidungen zu treffen, um die Sicherheit aller Flugzeuge und Passagiere zu gewährleisten.</p>         <h3>Warum Gamer?</h3>         <p>Die FAA hat festgestellt, dass Gamer oft die Fähigkeiten besitzen, die für die Arbeit als Fluglotse benötigt werden. Dazu gehören Konzentration, Reaktionsvermögen, die Fähigkeit, sich schnell anzupassen, und die Fähigkeit, unter Druck zu arbeiten. Die FAA hofft, dass die Kampagne Gamer anziehen wird, die bereit sind, ihre Fähigkeiten in einem neuen und herausfordernden Beruf einzusetzen.</p>         <p><em>BytePost-Einordnung: Die FAA-Kampagne ist ein interessantes Beispiel für die Möglichkeiten, die Gamer in anderen Branchen haben. Es zeigt, dass die Fähigkeiten, die in Spielen entwickelt werden, auch in anderen Bereichen eingesetzt werden können. Für Entwickler ist es wichtig, die Transferierbarkeit von Fähigkeiten zu berücksichtigen und Möglichkeiten zu suchen, die Talente von Gamern in anderen Branchen einzusetzen.</em></p>     ",
+            "content_simple": "         <p>Die US-Flugsicherung (FAA) sucht neue Fluglotsen und wirbt gezielt mit einem ungewöhnlichen Jobangebot bei Gamern. Der Grund dafür ist, dass die Fähigkeiten, die ein Gamer benötigt, wie Konzentration und Reaktionsvermögen, auch für die Arbeit als Fluglotse von Vorteil sind.</p>         <p>Die FAA bietet eine umfassende Ausbildung und garantieren, dass alle Auszubildenden, die die Ausbildung erfolgreich abschließen, einen Job als Fluglotse erhalten.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte der FAA-Kampagne</h3>         <p>Die FAA-Kampagne ist ein Beispiel für die Möglichkeiten, die die Kombination von Gaming und künstlicher Intelligenz bietet. Die Fähigkeiten, die ein Gamer benötigt, können auch in anderen Bereichen eingesetzt werden, wie zum Beispiel in der Luftfahrt.</p>         <p>Die FAA setzt auf eine Kombination von menschlicher Intelligenz und künstlicher Intelligenz, um die Sicherheit der Flugzeuge und Passagiere zu gewährleisten. Die Fluglotsen müssen in der Lage sein, schnell und sicher Entscheidungen zu treffen, um die Sicherheit aller Beteiligten zu gewährleisten.</p>         <h3>Möglichkeiten und Herausforderungen</h3>         <p>Die Kombination von Gaming und künstlicher Intelligenz bietet viele Möglichkeiten, aber auch Herausforderungen. Eine der größten Herausforderungen ist die Entwicklung von Systemen, die in der Lage sind, die Fähigkeiten von Gamern zu erkennen und zu nutzen.</p>         <p>Die FAA-Kampagne ist ein Schritt in die richtige Richtung, um die Möglichkeiten von Gamern in anderen Branchen zu nutzen. Es zeigt, dass die Fähigkeiten, die in Spielen entwickelt werden, auch in anderen Bereichen eingesetzt werden können.</p>     ",
+            "date": "15.04.2026",
+            "id": "8cc13e5e",
+            "url": "https://www.golem.de/news/jobangebot-faa-wirbt-mit-gaming-um-neue-fluglotsen-2604-207470.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8cc13e5e.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
                 "dev",
                 "ki"
             ],
@@ -34024,10 +34054,10 @@
         }
     ],
     "bytepulse": {
-        "date": "12.04.2026",
-        "positiv": 38,
-        "neutral": 62,
+        "date": "15.04.2026",
+        "positiv": 0,
+        "neutral": 100,
         "kritisch": 0,
-        "total": 8
+        "total": 1
     }
 }
