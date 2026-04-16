@@ -2,6 +2,35 @@
     "articles": [
         {
             "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "The Killing Stone: Ein neuer Deckbuilder",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "8cc13e5e",
+                "db354ba7",
+                "60955473"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Wenn du mehr Shakespeare in deinem Slay the Spire haben möchtest, solltest du den Deckbuilder The Killing Stone ausprobieren. Dieses Spiel ist zwar nicht so bekannt wie Slay the Spire 2, aber es könnte dieses Jahr der beste Deckbuilder werden.</p>         <p>Das Spiel ist im 17. Jahrhundert angesiedelt und du bist ein Schüler des großen Okkultisten Mariken Svangård. Dein Mentor ist unter mysteriösen Umständen gestorben und du hast dich zu einem seltsamen Anwesen in der Antarktis begeben, um deine Respekt zu zollen und die Verwandten von Mariken zu treffen.</p>         <p>Es stellt sich heraus, dass Mariken ihre Seele an verschiedene Dämonen verkauft hat, insbesondere an einen höhnischen, einäugigen Dämon, der wie Guido Fawkes aussieht.</p>         <h3>Das Spielprinzip</h3>         <p>Deine Aufgabe ist es, alle Svangårds vor dem Ende der Vigil zu retten, indem du ihre Dämonen in nodularen, verzweigten Roguelite-Kampagnen besiegest. Diese Kampagnen bestehen nicht aus magischen Duellen, sondern aus einer Reihe von Verhandlungen, bei denen du durch einen diabolischen Vertrag navigierst.</p>         <p>Als du deinen blutbefleckten Augenglas von Klausel zu Klausel, von Abschnitt zu Abschnitt, bewegst, wirst du den präsidenten Dämon in lawyerlichen Kartenschlachten besiegen und neue Pakete zu deinem Deck hinzufügen, von denen einige verfluchte Karten enthalten, die darauf bestehen, gespielt zu werden, sobald sie gezogen werden.</p>         <h3>Die Schlacht</h3>         <p>Die Schlacht selbst ähnelt mehr Monster Train als Slay the Spire. Kreaturen, die mit Karten beschworen werden, werden auf einer Schlachtfeldlinie mit sechs Plätzen platziert, die zwischen den kämpfenden Parteien geteilt sind. Jeder Spieler hat ein magisches Auge – dein Auge war einmal das Eigentum von Guido Strange.</p>         <p>Wenn deine Gegner dein Auge zerstören, ist das Spiel vorbei, aber du hast die Option, das Ritual von vorne zu beginnen oder es an dem Punkt wieder aufzunehmen, an dem du aufgehört hast, im Gegenzug für einige Offenbarungswährung.</p>         <p>Es gibt auch eine Reservelinie, auf der du Verstärkungen platzieren kannst, die automatisch in die Schlachtfeldlinie einziehen, wenn die Kreaturen, die sie umgeben, getötet werden.</p>         <h3>Fazit</h3>         <p>BytePost-Einordnung: The Killing Stone ist ein interessantes Spiel, das Fans von Deckbuildern und Fantasy sicherlich ansprechen wird.</p>     ",
+            "content_simple": "         <p>The Killing Stone ist ein neuer Deckbuilder, der im 17. Jahrhundert angesiedelt ist. Du bist ein Schüler eines Okkultisten und musst deine Verwandten retten, indem du ihre Dämonen besiegest.</p>         <p>Das Spielprinzip ist einzigartig und bietet eine Mischung aus Kartenschlachten und Verhandlungen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>The Killing Stone basiert auf einer eigenen Spiel-Engine und nutzt eine Kombination aus Kartenschlachten und Verhandlungen, um das Spielprinzip zu realisieren.</p>         <p>Die Spiel-Logik ist in einer eigenen Programmiersprache implementiert und nutzt eine Datenbank, um die Spielstände zu speichern.</p>         <h3>Architektur</h3>         <p>Das Spiel ist in einer client-seitigen Architektur implementiert, wobei der Client die Spiel-Logik ausführt und die Datenbank auf dem Server zugreift.</p>     ",
+            "date": "16.04.2026",
+            "id": "88b1c181",
+            "url": "https://www.rockpapershotgun.com/if-you-need-more-shakespeare-with-your-slay-the-spire-check-out-demon-lawyer-deckbuilder-the-killing-stone",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/88b1c181.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
                 "ki",
                 "gaming"
             ],
@@ -28,7 +57,7 @@
                 "sleep": 0
             },
             "image_local": "images/8cc13e5e.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
@@ -34054,9 +34083,9 @@
         }
     ],
     "bytepulse": {
-        "date": "15.04.2026",
-        "positiv": 0,
-        "neutral": 100,
+        "date": "16.04.2026",
+        "positiv": 100,
+        "neutral": 0,
         "kritisch": 0,
         "total": 1
     }
