@@ -5,6 +5,35 @@
                 "gaming"
             ],
             "icon": "🎮",
+            "title": "Best Buy sale",
+            "source": "GameSpot",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "88b1c181",
+                "8cc13e5e",
+                "db354ba7"
+            ],
+            "content": " <h3>Ultimate Upgrade Event bei Best Buy</h3> <p>Best Buy's Ultimate Upgrade Sale hat bereits begonnen und bringt große Rabatte auf hunderte Artikel bis Sonntag, den 19. April. Im Angebot sind viele großartige Gaming- und PC-Hardware, aber auch eine nette Sammlung von Videospielen zu reduzierten Preisen. Du kannst auch auf vorinstallierte Gaming-PCs, Monitore, TVs, Headsets, Controller und sogar einige lustige Sammelkarten und Trading-Card-Game-Packs sparen.</p> <p>Einige der im Angebot befindlichen Spiele sind:</p> <ul>     <li>Super Mario Galaxy + Super Mario Galaxy 2 für Switch - 10 $ Rabatt</li>     <li>Monster Hunter Wilds für Xbox Series X|S - 27,51 $ Rabatt</li>     <li>Assassin's Creed Shadows Standard Edition für Xbox Series X|S - 15 $ Rabatt</li>     <li>Bye Sweet Carole für PS5 - 24 $ Rabatt</li>     <li>Dragon Age: The Veilguard für PS5 - 12 $ Rabatt</li>     <li>EA Sports FC 26 für PS5 - 35 $ Rabatt</li>     <li>Elden Ring Nightreign für Xbox Series X|S - 18 $ Rabatt</li>     <li>Immortals Fenyx Rising für Xbox One/ XSX - 11 $ Rabatt</li>     <li>Metal Gear Solid Delta: Snake Eater Collector's Edition für PS5 - 120 $ Rabatt</li>     <li>Pokemon Scarlet für Switch - 12 $ Rabatt</li>     <li>Super Mario RPG für Switch - 12 $ Rabatt</li> </ul> <p>Whatever du suchst, das Angebot ist vollgepackt mit allerlei Technik-Deals, also sieh dir das ganze Katalog durch, um zu sehen, ob noch etwas anderes dein Interesse weckt.</p> <p>Shop den ganzen Sale bei Best Buy.</p> <p><em>BytePost-Einordnung: Die Ultimate Upgrade Event bei Best Buy bietet eine Vielzahl von großartigen Deals auf Gaming- und PC-Hardware sowie Videospielen. Es lohnt sich, das Angebot zu überprüfen, um zu sehen, ob du etwas findest, das deine Interessen weckt.</em></p> ",
+            "content_simple": " <p>Best Buy hat ein großes Angebot mit vielen Rabatten auf Technik und Videospiele gestartet. Du kannst auf Spiele, Computer, Monitore und andere Sachen sparen.</p> <p>Einige der Spiele, die im Angebot sind, sind Super Mario Galaxy, Monster Hunter Wilds und Assassin's Creed Shadows.</p> ",
+            "content_pro": " <h3>Technische Details der Angebote</h3> <p>Die Angebote bei Best Buy umfassen eine Vielzahl von Technik-Produkten, einschließlich Gaming-PCs, Monitoren und Headsets. Die meisten dieser Produkte verfügen über die neuesten Technologien und sind daher sehr leistungsstark.</p> <p>Einige der im Angebot befindlichen Spiele unterstützen auch die neuesten Grafik- und Spiel-Technologien, wie z.B. Ray-Tracing und 4K-Auflösung.</p> <p>Es lohnt sich, das Angebot zu überprüfen, um zu sehen, ob du etwas findest, das deine Interessen weckt.</p> ",
+            "date": "17.04.2026",
+            "id": "ab653536",
+            "url": "https://www.gamespot.com/articles/best-buy-ultimate-upgrade-event-deals-video-games-tech-trading-cards-figures/1100-6539371/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ab653536.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
             "title": "The Killing Stone: Ein neuer Deckbuilder",
             "source": "Rock Paper Shotgun",
             "read": "2 Min",
@@ -27,7 +56,7 @@
                 "sleep": 0
             },
             "image_local": "images/88b1c181.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
@@ -34083,9 +34112,9 @@
         }
     ],
     "bytepulse": {
-        "date": "16.04.2026",
-        "positiv": 100,
-        "neutral": 0,
+        "date": "17.04.2026",
+        "positiv": 0,
+        "neutral": 100,
         "kritisch": 0,
         "total": 1
     }
