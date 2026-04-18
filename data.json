@@ -27,7 +27,7 @@
                 "sleep": 0
             },
             "image_local": "images/ab653536.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
