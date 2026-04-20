@@ -2,6 +2,297 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "KI-Startups in 12-Monats-Fenster",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f11d40da",
+                "06e31f12",
+                "f1876e00"
+            ],
+            "content": "         <h3>Das 12-Monats-Fenster</h3>         <p>Viele KI-Startups existieren teilweise, weil die Foundation-Modelle noch nicht in ihre Kategorie expandiert sind. Wie viele scherzhaft anerkennen, wird das nicht für immer so bleiben. In einer aktuellen Folge von „No Priors“ – dem exzellenten Podcast, der von den KI-Investoren Sarah Guo und Elad Gil moderiert wird – machte Gil einen Punkt über den Exit-Timing, der zweifellos für Gründer, die Zeit mit ihm verbracht haben, vertraut ist, aber in dieser Zeit des go-go-Deal-Makings besonders nützlich zu sein scheint.</p>         <p>Für die meisten Unternehmen, so Gil, gibt es ungefähr ein 12-Monats-Fenster, in dem das Geschäft seinen Höchstwert hat, „und dann bricht es ein“. Die Unternehmen, die generationalen Rückgaben erfassen, sind oft diejenigen, bei denen jemand diesen Moment erkennt, anstatt anzunehmen, dass die guten Zeiten noch besser werden. Lotus, AOL und Mark Cuban's Broadcast.com haben alle zu oder nahe dem Höhepunkt verkauft und werden von Gil als Beispiele für Unternehmen genannt, die vorausgesehen haben, was kommen würde, und clever den Rippenzieher gezogen haben.</p>         <p>Um dieses Fenster zu erreichen, bot Gil einen praktischen Vorschlag an: ein Board-Meeting einmal oder zweimal im Jahr speziell zum Thema Exits zu planen. Wenn es ein ständiges Kalender-Element ist, entzieht es der Emotion die Grundlage. Dies ist wichtiger jetzt als es vor einigen Jahren der Fall gewesen sein mag. Viele KI-Startups existieren teilweise, weil die Foundation-Modelle noch nicht in ihre Kategorie expandiert sind. Aber wie viele Gründer – wie Deel-CEO Alex Bouaziz – scherzhaft begonnen haben anzuerkennen, wird das nicht für immer so bleiben.</p>         <p>Wie Gil es ausdrückte: „Wenn man Verschiebungen in Differenzierung und Verteidigbarkeit und all dem Rest sieht, ist es eine gute Zeit, zu fragen: ‚Hey, ist das mein Moment? Sind diese nächsten sechs Monate, wenn ich am wertvollsten sein werde, die ich je sein werde?‘“</p>         <h3>Einordnung für Entwickler</h3>         <p><em>BytePost-Einordnung: Für Entwickler ist es wichtig, die Dynamik des Marktes und die Entwicklung der KI-Technologie im Auge zu behalten. Die 12-Monats-Regel kann als Richtlinie dienen, um den richtigen Zeitpunkt für den Exit oder die Weiterentwicklung des eigenen Projekts zu bestimmen.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du hast eine Idee für ein Startup und entwickelst sie zu einem erfolgreichen Unternehmen. Es gibt aber ein Zeitfenster von etwa 12 Monaten, in dem dein Unternehmen am wertvollsten ist. Wenn du diesen Zeitpunkt verpasst, kann es bergab gehen.</p>         <p>Einige Experten raten, regelmäßig den Exit-Plan zu überdenken, um den richtigen Zeitpunkt zu treffen. Es ist auch wichtig, die Entwicklung der KI-Technologie im Auge zu behalten, da sie deine Branche verändern kann.</p>     ",
+            "content_pro": "         <h3>Technische Einordnung</h3>         <p>Für Entwickler ist es wichtig, die technischen Aspekte der KI-Entwicklung zu berücksichtigen. Die Foundation-Modelle spielen eine wichtige Rolle bei der Entwicklung von KI-Anwendungen. Es ist aber auch wichtig, die eigenen Stärken und Schwächen zu kennen und den richtigen Zeitpunkt für den Exit oder die Weiterentwicklung des eigenen Projekts zu bestimmen.</p>         <p>Ein Beispiel für die technische Tiefe der KI-Entwicklung ist die Verwendung von Deep-Learning-Modellen. Diese Modelle können sehr effektiv sein, aber sie erfordern auch eine sorgfältige Planung und Umsetzung.</p>     ",
+            "date": "20.04.2026",
+            "id": "9205b7fd",
+            "url": "https://techcrunch.com/2026/04/19/the-12-month-window/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9205b7fd.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📱",
+            "title": "Android 17 Beta 4 veröffentlicht",
+            "source": "Google",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9205b7fd",
+                "06e31f12",
+                "f1876e00"
+            ],
+            "content": "         <h3>Android 17 Beta 4: Die letzte Testversion vor dem finalen Release</h3>         <p>Die Entwicklung von Android 17 befindet sich auf der Zielgeraden: Die nun erschienene Beta 4 ist die letzte Testversion vor dem finalen Release. Damit können Entwickler ihre Apps auf die finale Version vorbereiten und sicherstellen, dass sie reibungslos auf dem neuen Betriebssystem laufen.</p>         <p>Die Beta 4 Version bringt einige wichtige Änderungen und Korrekturen, um die Stabilität und Performance des Systems zu verbessern. Entwickler können ihre Apps jetzt mit den neuesten APIs und Funktionen testen und anpassen, um sicherzustellen, dass sie optimal auf Android 17 laufen.</p>         <h3>Was bedeutet dies für Entwickler?</h3>         <p>Die Veröffentlichung der Beta 4 Version ist ein wichtiger Schritt für Entwickler, um ihre Apps auf die finale Version von Android 17 vorzubereiten. Entwickler sollten ihre Apps jetzt testen und anpassen, um sicherzustellen, dass sie reibungslos auf dem neuen Betriebssystem laufen.</p>         <p>Die finale Version von Android 17 wird voraussichtlich in den kommenden Wochen veröffentlicht. Entwickler sollten sich auf die Vorbereitung ihrer Apps konzentrieren, um sicherzustellen, dass sie optimal auf dem neuen Betriebssystem laufen.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung der Beta 4 Version von Android 17 ist ein wichtiger Schritt für Entwickler, um ihre Apps auf die finale Version vorzubereiten. Entwickler sollten ihre Apps jetzt testen und anpassen, um sicherzustellen, dass sie reibungslos auf dem neuen Betriebssystem laufen.</em></p>     ",
+            "content_simple": "         <p>Google hat die Beta 4 Version von Android 17 veröffentlicht. Dies ist die letzte Testversion vor dem finalen Release. Entwickler können ihre Apps jetzt testen und anpassen, um sicherzustellen, dass sie reibungslos auf dem neuen Betriebssystem laufen.</p>         <p>Die finale Version von Android 17 wird voraussichtlich in den kommenden Wochen veröffentlicht. Entwickler sollten sich auf die Vorbereitung ihrer Apps konzentrieren, um sicherzustellen, dass sie optimal auf dem neuen Betriebssystem laufen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Beta 4 Version von Android 17 bringt einige wichtige Änderungen und Korrekturen, um die Stabilität und Performance des Systems zu verbessern. Entwickler können ihre Apps jetzt mit den neuesten APIs und Funktionen testen und anpassen, um sicherzustellen, dass sie optimal auf Android 17 laufen.</p>         <p>Die finale Version von Android 17 wird voraussichtlich in den kommenden Wochen veröffentlicht. Entwickler sollten sich auf die Vorbereitung ihrer Apps konzentrieren, um sicherzustellen, dass sie optimal auf dem neuen Betriebssystem laufen.</p>     ",
+            "date": "20.04.2026",
+            "id": "f11d40da",
+            "url": "https://www.heise.de/news/Android-17-Beta-4-Letzte-Testversion-vor-dem-finalen-Release-11261781.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f11d40da.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "ki"
+            ],
+            "icon": "🚀",
+            "title": "Python 3.15 JIT zurück auf dem richtigen Weg",
+            "source": "Ken Jin’s Blog",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "f1876e00"
+            ],
+            "content": "         <h3>Python 3.15 JIT ist wieder auf dem richtigen Weg</h3>         <p>Die Entwicklung des Python-3.15-JIT (Just-In-Time)-Compilers ist wieder auf dem richtigen Weg. Laut Ken Jin, einem der Hauptentwickler, hat das Team die sehr bescheidenen Leistungsziele für den CPython-JIT bereits über ein Jahr früher als geplant für macOS AArch64 und einige Monate früher als geplant für x86_64 Linux erreicht.</p>         <p>Die 3.15-Alpha-Version des JIT ist etwa 11-12% schneller als der Interpreter auf macOS AArch64 und etwa 5-6% schneller als der Standard-Interpreter auf x86_64 Linux. Diese Zahlen sind geometrische Mittelwerte und vorläufig. Der tatsächliche Bereich reicht von einer Verlangsamung von 20% bis zu einer Beschleunigung von über 100% (ohne den Micro-Benchmark unpack_sequence).</p>         <p>Das Team plant, in den Versionen 3.15/3.16 eine ordnungsgemäße Unterstützung für Free-Threading zu implementieren. Der JIT ist jetzt wieder auf dem richtigen Weg. Es gab eine Zeit, in der Ken Jin sich ernsthaft fragte, ob das JIT-Projekt jemals bedeutende Geschwindigkeitssteigerungen erzielen würde.</p>         <h3>Was hat sich geändert?</h3>         <p>Ken Jin sagt, dass er den aktuellen Erfolg zum Teil dem Glück zuschreibt - rechtzeitig, am richtigen Ort, die richtigen Menschen, die richtigen Wahlen. Er denkt, dass dies nicht möglich gewesen wäre, wenn nicht alle Kern-JIT-Beiträger - Savannah Ostrowski, Mark Shannon, Diego Russo, Brandt Bucher und er selbst - an Bord gewesen wären.</p>         <p>Er erwähnt auch andere aktive JIT-Beiträger wie Hai Zhu, Zheaoli, Tomas Roun, Reiden Ong, Donghee Na und andere. Ken Jin möchte einen weniger diskutierten Teil des JITs besprechen: die Menschen und ein bisschen Glück. Wenn du die technischen Details erfahren möchtest, wie sie es geschafft haben, findest du sie <a href='https://doesjitgobrrr.com/'>hier</a>.</p>         <h3>Ein community-geführtes JIT</h3>         <p>Das Faster CPython-Team verlor 2025 seinen Haupt-Sponsor. Ken Jin schlug sofort die Idee der Community-Verwaltung vor. Zu dieser Zeit war er ziemlich unsicher, ob dies funktionieren würde. JIT-Projekte sind nicht bekannt dafür, gut für neue Beiträger zu sein. Sie erfordern historisch gesehen viel vorherige Expertise.</p>         <p>Bei der CPython-Core-Sprint in Cambridge trafen sich das JIT-Core-Team und schrieben einen Plan für ein 5% schnelleres JIT bis 3.15 und ein 10% schnelleres JIT bis 3.16 mit Free-Threading-Unterstützung. Eine Randnotiz, die weniger auffällig war, aber lebenswichtig für die Gesundheit des Projekts war, die Bus-Faktor-Reduzierung. Sie wollten 2 aktive Maintainer in allen 3 Stadien des JIT haben: Frontend (Region-Selector), Mittel-Ende (Optimizer), Backend (Code-Generator).</p>         <p>Vorher hatte das JIT nur 2 aktive wiederkehrende Beiträger im Mittel-Ende. Heute hat das JIT 4 aktive wiederkehrende Beiträger im Mittel-Ende, und Ken Jin würde die 2 Nicht-Kern-Entwickler (Hai Zhu und Reiden) als fähige und geschätzte Mitglieder betrachten.</p>         <p>Was Menschen anzieht, sind die üblichen Software-Engineering-Praktiken: Komplexe Probleme in handhabbare Teile aufbrechen. Brandt begann dies bereits in 3.14, als er mehrere Mega-Probleme öffnete, die die Optimierung des JIT in einfache Aufgaben aufteilten. Zum Beispiel sagten sie: „Versuche, einen einzelnen Befehl im JIT zu optimieren“. Ken Jin nahm Brandts Idee und machte dies für 3.15. Zum Glück hatte er eine einfachere Aufgabe, da sein Problem darin bestand, die Interpreter-Befehle in eine leicht optimierbare Form umzuwandeln.</p>         <ul>             <li>Aufteilung komplexer Probleme in handhabbare Teile</li>             <li>Ermutigung neuer Beiträger</li>             <li>Feiern von Erfolgen, groß oder klein</li>         </ul>         <p>Die Gemeinschafts-Optimierungs-Bemühungen haben sich ausgezahlt. Der JIT ging von 1% schneller auf x86_64 Linux auf 3-4% schneller (siehe die blaue Linie unten).</p>         <p><em>BytePost-Einordnung: Die Fortschritte im Python-3.15-JIT sind ein wichtiger Meilenstein für die Python-Community. Die Tatsache, dass das Team seine Leistungsziele bereits früher als geplant erreicht hat, zeigt, dass die Community-geführte Herangehensweise erfolgreich sein kann. Dies ist ein positives Zeichen für die Zukunft der Python-Entwicklung.</em></p>     ",
+            "content_simple": "         <p>Der Python-3.15-JIT-Compiler ist ein wichtiger Teil der Python-Entwicklung. Er soll den Code schneller ausführen, indem er ihn erstellt, wenn er benötigt wird. Das Team hat seine Leistungsziele bereits früher als geplant erreicht. Dies ist ein wichtiger Meilenstein für die Python-Community.</p>         <p>Das Team hat den JIT in kleinere Teile aufgeteilt, um ihn einfacher zu machen. Sie haben auch neue Beiträger ermutigt, am Projekt mitzuarbeiten. Dies hat dazu geführt, dass der JIT schneller ist als der Interpreter auf einigen Plattformen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Python-3.15-JIT-Compiler verwendet eine Kombination von statischer und dynamischer Analyse, um den Code zu optimieren. Er verwendet auch eine Technik namens „Inline-Caching“, um die Ausführung von Funktionen zu beschleunigen.</p>         <p>Das Team hat den JIT in drei Stadien aufgeteilt: Frontend, Mittel-Ende und Backend. Das Frontend ist verantwortlich für die Analyse des Codes und die Erstellung eines Intermediate-Representations (IR). Das Mittel-Ende ist verantwortlich für die Optimierung des IR, während das Backend den IR in Maschinencode übersetzt.</p>         <h3>Architektur-Details</h3>         <p>Der Python-3.15-JIT-Compiler verwendet eine Micro-Architektur, die es ermöglicht, den Code in kleinen Einheiten zu kompilieren und auszuführen. Dies ermöglicht es dem JIT, den Code schneller zu kompilieren und auszuführen, da er nicht den gesamten Code auf einmal kompilieren muss.</p>         <p>Der JIT verwendet auch eine Technik namens „Tracing“, um die Ausführung des Codes zu verfolgen und zu optimieren. Dies ermöglicht es dem JIT, den Code zu optimieren, indem er die Ausführung des Codes verfolgt und die häufigsten Pfade optimiert.</p>     ",
+            "date": "20.04.2026",
+            "id": "06e31f12",
+            "url": "https://blog.python.org/2026/03/jit-on-track/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/06e31f12.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Meta ersetzt Engineering-Zeit durch KI",
+            "source": "Engineering at Meta",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "06e31f12"
+            ],
+            "content": "         <h3>Effizienz bei Meta: Wie Unified AI Agents die Leistung optimieren</h3>         <p>Meta teilt Einblicke in das Capacity Efficiency Program, bei dem ein AI-Agent-Plattform entwickelt wurde, um die Suche nach und die Behebung von Leistungsproblemen in der gesamten Infrastruktur zu automatisieren. Durch die Einbindung von domänenspezifischem Know-how in einer standardisierten Tool-Schnittstelle helfen diese Agenten, Energie zu sparen und den Ingenieuren Zeit zu geben, um sich auf die Entwicklung neuer Produkte zu konzentrieren.</p>         <p>Das Capacity Efficiency Program bei Meta besteht aus zwei Seiten: Offense und Defense. Offense bedeutet, nach Möglichkeiten zu suchen, die bestehenden Systeme effizienter zu machen, und diese Änderungen umzusetzen. Defense bedeutet, die Ressourcen-Nutzung in der Produktion zu überwachen, um Leistungsregressionen zu erkennen, diese zu analysieren und Abhilfemaßnahmen zu ergreifen.</p>         <p>Das Team bei Meta hat eine einheitliche AI-Agent-Plattform entwickelt, die das Know-how von erfahrenen Effizienz-Ingenieuren in wiederverwendbaren und komponierbaren Fähigkeiten codiert. Diese Agenten automatisieren sowohl die Suche als auch die Behebung von Leistungsproblemen, was zu einer Einsparung von Hunderten von Megawatt (MW) Energie und einer Komprimierung von Stunden manueller Regressionsermittlung auf Minuten führt.</p>         <h3>Wie es funktioniert</h3>         <p>Die Plattform verwendet standardisierte Tool-Schnittstellen und codiertes domänenspezifisches Know-how, um die Untersuchung auf beiden Seiten zu automatisieren. Diese AI-Systeme sind nun die Infrastruktur für das Capacity Efficiency Program, das Hunderte von Megawatt Energie eingespart hat, genug, um Hunderttausende von amerikanischen Haushalten für ein Jahr zu versorgen.</p>         <p>Die Automatisierung der Diagnose kann ~10 Stunden manueller Untersuchung auf ~30 Minuten komprimieren, während die AI-Agenten den Weg von der Effizienz-Gelegenheit zum pull request automatisieren.</p>         <p><em>BytePost-Einordnung: Meta zeigt mit seinem Capacity Efficiency Program, wie KI-Technologie eingesetzt werden kann, um die Effizienz von großskaligen Systemen zu verbessern. Durch die Automatisierung von Leistungsproblemen kannMeta Zeit und Energie sparen und sich auf die Entwicklung neuer Produkte konzentrieren.</em></p>     ",
+            "content_simple": "         <p>Meta hat ein Programm entwickelt, um die Effizienz seiner Systeme zu verbessern. Dabei wird künstliche Intelligenz eingesetzt, um Probleme zu finden und zu beheben. Diese KI-Systeme können Hunderte von Megawatt Energie sparen und den Ingenieuren Zeit geben, um sich auf neue Projekte zu konzentrieren.</p>         <p>Das Programm besteht aus zwei Teilen: Die Suche nach Möglichkeiten, die Systeme effizienter zu machen, und die Überwachung der Systeme, um Probleme zu erkennen und zu beheben. Durch die Automatisierung dieser Prozesse kann Meta Zeit und Energie sparen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die KI-Plattform bei Meta verwendet standardisierte Tool-Schnittstellen und codiertes domänenspezifisches Know-how, um die Untersuchung auf beiden Seiten zu automatisieren. Diese AI-Systeme sind nun die Infrastruktur für das Capacity Efficiency Program.</p>         <p>Die Plattform kann ~10 Stunden manueller Untersuchung auf ~30 Minuten komprimieren, während die AI-Agenten den Weg von der Effizienz-Gelegenheit zum pull request automatisieren. Durch die Einbindung von domänenspezifischem Know-how kann die Plattform auch die Qualität der Lösungen verbessern.</p>         <p>Die Verwendung von KI-Technologie bei Meta zeigt, wie wichtig die Automatisierung von Prozessen ist, um die Effizienz von großskaligen Systemen zu verbessern. Durch die Kombination von KI und domänenspezifischem Know-how kann Meta seine Systeme optimieren und Zeit und Energie sparen.</p>     ",
+            "date": "20.04.2026",
+            "id": "f1876e00",
+            "url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f1876e00.jpg",
+            "pick": true,
+            "pick_reason": "Meta ersetzt Engineering-Zeit durch KI - eine Revolution in der Software-Entwicklung. Durch den Einsatz von KI-Technologien kann Meta nun Entwicklungsaufgaben automatisieren und die Produktivität seiner Entwickler steigern, was weitreichende Auswirkungen auf die gesamte Branche haben könnte. Entwickler sollten sich auf diese Veränderung einstellen und sich fragen, ob ihre eigenen Unternehmen bald folgen werden."
+        },
+        {
+            "cat": [
+                "security",
+                "cloud"
+            ],
+            "icon": "🚨",
+            "title": "Schatten-Identitäten gefährden Unternehmensdaten",
+            "source": "Zscaler ThreatLabz",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "06e31f12"
+            ],
+            "content": "         <h3>Schatten-Identitäten: Das unsichtbare Risiko</h3>         <p>Im Jahr 2024 waren 68% aller Cloud-Brechens durch kompromittierte Service-Konten und vergessene API-Schlüssel verursacht. Nicht durch Phishing oder schwache Passwörter, sondern durch unverwaltete Nicht-Mensch-Identitäten, die niemand überwachte.</p>         <p>Für jeden Mitarbeiter in deiner Organisation gibt es 40 bis 50 automatisierte Anmeldeinformationen: Service-Konten, API-Tokens, AI-Agenten-Verbindungen und OAuth-Genehmigungen. Wenn Projekte enden oder Mitarbeiter die Firma verlassen, bleiben diese Anmeldeinformationen oft unverwaltet zurück.</p>         <p>Laut dem Zscaler ThreatLabz 2026 VPN Risk Report mit Cybersecurity Insiders hat die AI-gesteuerte Antwortzeit den menschlichen Reaktionszeitraum verkürzt und den Remote-Zugriff zum schnellsten Weg für Angriffe gemacht.</p>         <p>Es ist wichtig, dass du diese Schatten-Identitäten eliminerst, bevor sie deine Unternehmensdaten gefährden. Du musst sicherstellen, dass alle Anmeldeinformationen verwaltet und überwacht werden, um das Risiko von Cloud-Brechens zu minimieren.</p>         <p><em>BytePost-Einordnung: Die Eliminierung von Schatten-Identitäten ist ein wichtiger Schritt zur Sicherung von Unternehmensdaten. Durch die Überwachung und Verwaltung aller Anmeldeinformationen kannst du das Risiko von Cloud-Brechens minimieren und deine Daten schützen.</em></p>     ",
+            "content_simple": "         <p>Wenn Menschen in einem Unternehmen arbeiten, nutzen sie oft verschiedene Konten und Schlüssel, um auf Daten und Systeme zuzugreifen. Wenn diese Menschen das Unternehmen verlassen oder ihre Projekte beenden, bleiben diese Konten und Schlüssel oft unverwaltet zurück.</p>         <p>Diese unverwalteten Konten und Schlüssel können zu großen Sicherheitsrisiken werden, da sie von Angreifern genutzt werden können, um auf Unternehmensdaten zuzugreifen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Eliminierung von Schatten-Identitäten erfordert eine umfassende Überwachung und Verwaltung aller Anmeldeinformationen. Dazu gehören Service-Konten, API-Tokens, AI-Agenten-Verbindungen und OAuth-Genehmigungen.</p>         <p>Es ist wichtig, dass du alle Anmeldeinformationen in deiner Organisation identifizierst und verwaltet. Dazu kannst du Tools wie Identity and Access Management (IAM) verwenden, um die Anmeldeinformationen zu überwachen und zu steuern.</p>         <p>Es ist auch wichtig, dass du sicherstellst, dass alle Anmeldeinformationen regelmäßig überprüft und aktualisiert werden, um das Risiko von Cloud-Brechens zu minimieren.</p>     ",
+            "date": "20.04.2026",
+            "id": "b5b3652e",
+            "url": "https://thehackernews.com/2026/04/webinar-find-and-eliminate-orphaned-non.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/b5b3652e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Ingress2Gateway 1.0: Gateway API Migration",
+            "source": "Kubernetes Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "06e31f12"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Mit dem anstehenden Auslaufen von Ingress-NGINX im März 2026 steht die Kubernetes-Netzwerking-Landschaft an einem Wendepunkt. Die meisten Organisationen fragen sich nicht, ob sie zu Gateway API migrieren sollten, sondern wie sie dies sicher tun können. Die Migration von Ingress zu Gateway API ist ein grundlegender Wechsel im API-Design.</p>         <p>Gateway API bietet eine modulare, erweiterbare API mit starker Unterstützung für Kubernetes-native RBAC. Im Gegensatz dazu ist die Ingress-API einfach, und Implementierungen wie Ingress-NGINX erweitern die API durch annotations, ConfigMaps und CRDs.</p>          <h3>Ingress2Gateway</h3>         <p>Ingress2Gateway ist ein Werkzeug, das Teams hilft, sicher von Ingress zu Gateway API zu migrieren. Es übersetzt Ingress-Ressourcen und Manifeste zusammen mit Implementierungs-spezifischen Annotations in Gateway API und warnt vor nicht übersetzbaren Konfigurationen.</p>          <h3>Ingress2Gateway 1.0</h3>         <p>Heute ist SIG Network stolz, die 1.0-Veröffentlichung von Ingress2Gateway bekannt zu geben. Diese Meilensteinmarke stellt einen stabilen, getesteten Migration-Assistenten für Teams dar, die bereit sind, ihren Netzwerksatz zu modernisieren.</p>         <p>Die Hauptverbesserung für die 1.0-Veröffentlichung ist die umfassendere Unterstützung für Ingress-NGINX. Bevor die 1.0-Veröffentlichung, unterstützte Ingress2Gateway nur drei Ingress-NGINX-Annotations. Für die 1.0-Veröffentlichung unterstützt Ingress2Gateway über 30 gängige Annotations (CORS, Backend-TLS, Regex-Matching, Pfad-Überschreibung usw.).</p>          <h3>Umfassende Integrationstests</h3>         <p>Jede unterstützte Ingress-NGINX-Annotation und repräsentative Kombinationen von gängigen Annotations werden durch Controller-Integrationstests unterstützt, die die verhaltensmäßige Äquivalenz der Ingress-NGINX-Konfiguration und der generierten Gateway-API überprüfen.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Ingress2Gateway 1.0 ist ein wichtiger Schritt zur Unterstützung von Teams bei der Migration zu Gateway API. Durch die umfassende Unterstützung für Ingress-NGINX und die Integrationstests bietet Ingress2Gateway ein zuverlässiges Werkzeug für die Migration.</em></p>     ",
+            "content_simple": "         <p>Das Kubernetes-Netzwerk-System ist gerade in einer großen Veränderung. Viele Teams müssen ihre alte Netzwerk-Konfiguration ändern, um sicher zu bleiben. Ein neues Tool namens Ingress2Gateway hilft dabei, diese Änderung sicher durchzuführen.</p>         <p>Das Tool übersetzt die alte Konfiguration in die neue und warnt vor möglichen Fehlern. Es unterstützt auch viele der gängigen Einstellungen, die in der alten Konfiguration verwendet wurden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Ingress2Gateway ist ein wichtiger Schritt zur Unterstützung von Teams bei der Migration zu Gateway API. Durch die umfassende Unterstützung für Ingress-NGINX und die Integrationstests bietet Ingress2Gateway ein zuverlässiges Werkzeug für die Migration.</p>         <p>Die Integrationstests überprüfen die verhaltensmäßige Äquivalenz der Ingress-NGINX-Konfiguration und der generierten Gateway-API. Dies gewährleistet, dass die Migration sicher und zuverlässig durchgeführt wird.</p>     ",
+            "date": "20.04.2026",
+            "id": "a4e0eece",
+            "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a4e0eece.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Anthropic startet Claude Opus 4.7",
+            "source": "Analytics Vidhya",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Anthropic Launches Claude Opus 4.7</h3>         <p>Die künstliche Intelligenz entwickelt sich rasch. Kaum haben wir uns an einen Durchbruch gewöhnt, kommt ein neuer, der unsere Erwartungen verschiebt. Das neue Modell, Claude Opus 4.7, das Anthropic kürzlich vorgestellt hat, ist ein solcher Schritt. Der Release geht über die herkömmlichen AI-Chatbots hinaus und macht die künstliche Intelligenz zu einem vertrauenswürdigen, unabhängigen digitalen Partner. Selbst für Entwickler und Fachleute wird dieser Update ein bedeutender Gewinn in der fortschrittlichen Software-Entwicklung und bei der Lösung komplexer Probleme sein.</p>         <p>Warum ist das so und was ist neu an dem neuen Claude Opus 4.7? Das wollen wir herausfinden. Zu den Neuerungen gehören unter anderem die Fähigkeit, komplexe Aufgaben über einen längeren Zeitraum mit „Strenge und Konsistenz“ zu bewältigen, sowie die präzise Beachtung von Anweisungen und die Fähigkeit, eigene Ausgaben vor der Rückmeldung zu prüfen.</p>         <h3>Claude Opus 4.7 vs Opus 4.6: Was ist neu?</h3>         <p>Opus 4.7 ist kein einfaches Update. Das neue Modell von Anthropic zielt auf die Spitzenleistung ab und nimmt sich der Aufgaben an, die früher unter menschlicher Aufsicht standen. Die Verbesserungen sind in folgenden Bereichen sichtbar:</p>         <ul>             <li>Erweiterte Software-Entwicklung: Opus 4.7 kann komplexe Projekte unterstützen und ist nicht nur ein Code-Generator, sondern rather ein Partner für die „schwierigsten Aufgaben“.</li>             <li>Bessere Vision: Opus 4.7 hat eine wesentlich bessere Auflösung als Opus 4.6, mit bis zu 2.576 Pixeln auf der Längsseite, was etwa 3,75 Megapixeln entspricht.</li>             <li>Verbesserte realweltliche Arbeit: In internen Tests von Anthropic schnitt Opus 4.7 in fast allen Bereichen besser ab als Opus 4.6.</li>         </ul>         <h3>Claude Opus 4.7: Technische Features</h3>         <p>Claude Opus 4.7 bietet eine Vielzahl von technischen Features, die es von seinen Vorgängern abheben. Dazu gehören die Fähigkeit, komplexe Code-Projekte zu unterstützen und eine bessere Verarbeitung von Bildern und Daten.</p>         <h3>Sicherheit zuerst: Projekt Glasswing und Cyberschutz</h3>         <p>Anthropic legt großen Wert auf die Sicherheit seiner Modelle. Das Projekt Glasswing und die Cyberschutzmaßnahmen sollen sicherstellen, dass die künstliche Intelligenz sicher und verantwortungsvoll eingesetzt wird.</p>         <h3>Claude Opus 4.7: Verfügbarkeit und Preis</h3>         <p>Claude Opus 4.7 ist jetzt verfügbar. Der Preis und die genauen Bedingungen für den Zugang zu diesem Modell variieren jedoch.</p>         <h3>Hands-On mit Claude Opus 4.7</h3>         <p>Die Möglichkeit, Claude Opus 4.7 selbst auszuprobieren, bietet einen tiefen Einblick in seine Fähigkeiten und Möglichkeiten. Es ist jedoch ratsam, vorher die Dokumentation und Anleitungen von Anthropic zu studieren, um das beste aus diesem Modell herauszuholen.</p>         <h3>Fazit</h3>         <p>Claude Opus 4.7 ist ein wichtiger Schritt in der Entwicklung künstlicher Intelligenz. Es bietet erweiterte Fähigkeiten und Möglichkeiten, die es zu einem wertvollen Werkzeug für Entwickler und Fachleute machen.</p>         <p><em>BytePost-Einordnung: Claude Opus 4.7 ist ein wichtiger Meilenstein in der KI-Entwicklung und könnte die Art und Weise, wie wir an komplexe Probleme herangehen, grundlegend verändern. Es bleibt abzuwarten, wie sich diese Technologie in der Praxis bewährt und welche Auswirkungen sie auf die Industrie und die Gesellschaft haben wird.</em></p>     ",
+            "content_simple": "         <p>Die Firma Anthropic hat ein neues Modell namens Claude Opus 4.7 vorgestellt. Es geht über die herkömmlichen Chatbots hinaus und kann komplexere Aufgaben lösen. Claude Opus 4.7 kann sogar selbst überprüfen, ob seine Antworten korrekt sind, und es kann mit höherer Auflösung Bilder verarbeiten.</p>         <p>Dieses Modell kann sehr nützlich für Entwickler und Fachleute sein, die komplexe Probleme lösen müssen. Es kann auch Daten aus Bildern extrahieren und sogar Code schreiben. Die Frage ist, wie Claude Opus 4.7 in der realen Welt eingesetzt wird und ob es die Erwartungen erfüllt.</p>     ",
+            "content_pro": "         <h3>Claude Opus 4.7: Technische Tiefen</h3>         <p>Claude Opus 4.7 verwendet fortschrittliche Techniken, um komplexe Aufgaben zu lösen. Es kann Code schreiben, Daten aus Bildern extrahieren und selbst seine eigenen Antworten überprüfen. Die Frage ist, wie diese Fähigkeiten in der Praxis eingesetzt werden können.</p>         <h3>Architektur und Technologie</h3>         <p>Die genaue Architektur und Technologie hinter Claude Opus 4.7 sind noch nicht öffentlich bekannt. Es ist jedoch klar, dass es sich um ein sehr fortschrittliches Modell handelt, das auf den neuesten Erkenntnissen der KI-Forschung basiert.</p>         <h3>Einsatzmöglichkeiten</h3>         <p>Claude Opus 4.7 kann in vielen Bereichen eingesetzt werden, von der Software-Entwicklung bis zur Datenanalyse. Es könnte auch in der Forschung und Entwicklung eingesetzt werden, um neue Produkte und Technologien zu entwickeln.</p>         <h3>Kritische Einordnung</h3>         <p>Es bleibt abzuwarten, wie sich Claude Opus 4.7 in der Praxis bewährt. Es gibt auch Bedenken hinsichtlich der Sicherheit und des Datenschutzes, wenn es um die Verwendung von KI-Modellen wie Claude Opus 4.7 geht.</p>     ",
+            "date": "20.04.2026",
+            "id": "43ce33c9",
+            "url": "https://www.analyticsvidhya.com/blog/2026/04/claude-opus-4-7/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/43ce33c9.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "cloud"
+            ],
+            "icon": "🚨",
+            "title": "Vercel hacked",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "06e31f12"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Die Cloud-Entwicklungsplattform Vercel wurde gehackt. Vercel ist eine Plattform, die es ermöglicht, Web-Anwendungen zu hosten und zu deployen. Die Hacker versuchen, die gestohlenen Daten zu verkaufen. Eine Person, die behauptet, Mitglied der Gruppe ShinyHunters zu sein, die recently die Firma Rockstar Games gehackt hat, veröffentlichte einige Daten online, darunter die Namen von Mitarbeitern, E-Mail-Adressen und Timestamps von Aktivitäten.</p>         <p>Vercel bestätigte in einem Beitrag auf X, dass ein Sicherheitsvorfall stattgefunden hat und dass er einen begrenzten Teil seiner Kunden betroffen hat. Vercel sagte, dass der Angriff von einem kompromittierten „Drittanbieter-AI-Tool“ ausgegangen sei, gab aber nicht an, welcher Drittanbieter involviert war.</p>         <h3>Reaktionen</h3>         <p>Vercel empfahl Administratoren, ihre Aktivitätsprotokolle auf verdächtige Aktivitäten zu überprüfen. Es wurde auch vorgeschlagen, „Umweltvariablen zu überprüfen und zu rotieren“ als zusätzliche Vorsichtsmaßnahme, falls API-Schlüssel, Token oder andere sensible Daten exponiert wurden.</p>         <p>Vercel beendete seine Sicherheitsmitteilung mit den Worten: „Unsere Untersuchung hat ergeben, dass der Vorfall durch ein Drittanbieter-AI-Tool verursacht wurde, dessen Google-Workspace-OAuth-App Gegenstand einer umfassenderen Kompromittierung war, die möglicherweise Hunderte von Benutzern in vielen Organisationen betroffen hat. Wir veröffentlichen die folgenden Indikatoren, um die Gemeinschaft bei der Untersuchung und Überprüfung potenzieller schädlicher Aktivitäten in ihren Umgebungen zu unterstützen. Wir empfehlen Google-Workspace-Administratoren und Google-Kontoinhabern, den Einsatz dieser App sofort zu überprüfen.“</p>         <p><em>BytePost-Einordnung: Der Angriff auf Vercel ist ein ernstes Sicherheitsproblem, das zeigen, dass auch bei Cloud-Plattformen die Sicherheit nicht immer garantiert ist. Es ist wichtig, dass Entwickler und Administratoren ihre Systeme und Daten regelmäßig überprüfen und sicherstellen, dass sie alle notwendigen Sicherheitsmaßnahmen ergreifen, um solche Angriffe zu verhindern.</em></p>     ",
+            "content_simple": "         <p>Die Cloud-Plattform Vercel wurde gehackt. Das bedeutet, dass unbefugte Personen Zugang zu den Daten von Vercel hatten und diese Daten jetzt verkaufen wollen. Die Hacker haben already einige Informationen online veröffentlicht, wie z.B. Namen und E-Mail-Adressen von Mitarbeitern.</p>         <p>Das ist ein ernstes Problem, da es zeigt, dass die Sicherheit von Cloud-Plattformen nicht immer garantiert ist. Es ist wichtig, dass du als Entwickler oder Administrator deine Systeme und Daten regelmäßig überprüfst, um sicherzustellen, dass sie sicher sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Angriff auf Vercel wurde durch ein kompromittiertes Drittanbieter-AI-Tool verursacht. Das bedeutet, dass ein Tool, das von Vercel verwendet wurde, von den Hackern kompromittiert wurde und dann verwendet wurde, um auf die Daten von Vercel zuzugreifen. Vercel empfiehlt Administratoren, ihre Aktivitätsprotokolle auf verdächtige Aktivitäten zu überprüfen und Umeltvariablen zu überprüfen und zu rotieren, falls API-Schlüssel, Token oder andere sensible Daten exponiert wurden.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Es ist wichtig, dass Entwickler und Administratoren ihre Systeme und Daten regelmäßig überprüfen, um sicherzustellen, dass sie alle notwendigen Sicherheitsmaßnahmen ergreifen, um solche Angriffe zu verhindern. Dazu gehören die Überprüfung von Aktivitätsprotokollen, die Rotation von Umeltvariablen und die Verwendung von sicheren API-Schlüsseln und Token.</p>     ",
+            "date": "20.04.2026",
+            "id": "9ec9065e",
+            "url": "https://www.theverge.com/tech/914723/vercel-hacked",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9ec9065e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Meet OpenMythos: KI-Rekonstruktion von Claude Mythos",
+            "source": "MarkTechPost",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Anthropic hat bisher nie ein technisches Papier über Claude Mythos veröffentlicht. Das hat die Forschungsgemeinschaft jedoch nicht davon abgehalten, Theorien zu entwickeln. Ein neues Open-Source-Projekt namens OpenMythos, das auf GitHub von Kye Gomez veröffentlicht wurde, unternimmt den ambitionierten Versuch, eine erste Prinzipien-theoretische Rekonstruktion davon zu erstellen, was die Claude-Mythos-Architektur tatsächlich sein könnte, komplett in PyTorch und basierend auf peer-reviewed Forschung.</p>         <h3>Die Hauptthese: Claude Mythos als Rekurrierender-Tiefe-Transformer</h3>         <p>OpenMythos schlägt vor, dass Claude Mythos einer Klasse von Architekturen angehört, die als Rekurrierender-Tiefe-Transformer (RDT) bezeichnet werden, auch bekannt als Looped-Transformer. Dieses Konzept ist bedeutend anders als standardmäßige Transformer-Stacks. In einem herkömmlichen Transformer – wie z.B. GPT, LLaMA oder Mistral – wird die Eingabe durch eine Folge einzigartiger Schichten übergeben, eine nach der anderen, wobei jede ihre eigenen unabhängigen Gewichte hat. Mehr Leistungsfähigkeit bedeutet in der Regel mehr Schichten und mehr Parameter.</p>         <h3>Wie die Architektur strukturiert ist</h3>         <p>OpenMythos implementiert dies als eine dreiteilige Struktur: Prelude → Rekurrierender Block → Coda. Der Prelude und der Coda sind standardmäßige Transformer-Schichten, die genau einmal ausgeführt werden. Der Rekurrierende Block ist der komputative Kern, der bis zu T=16 Mal durchlaufen wird. Bei jedem Schritt t wird der versteckte Zustand mit der folgenden Regel aktualisiert: h t+1 = A·h t + B·e + Transformer(h t, e). Hier ist h t der versteckte Zustand nach der Schleifeniteration t, und e ist die kodierten Eingabe aus dem Prelude — bei jedem Schritt wieder eingeführt.</p>         <p>Die erlernten Matrizen A und B bestimmen, wie viel vom vorherigen versteckten Zustand und der kodierten Eingabe bei jedem Schritt weitergegeben werden. Die FFN innerhalb des Rekurrierenden Blocks ist keine standardmäßige Feed-Forward-Schicht. OpenMythos ersetzt sie durch eine Mixture-of-Experts (MoE)-Schicht, die dem Design von DeepSeekMoE folgt: ein großer Pool von fein granulierten gerouteten Experten, wobei nur ein sparsamer Top-K-Teil pro Token aktiviert wird, zusammen mit einem kleinen Satz immer aktiver geteilter Experten, die gemeinsame cross-Domänen-Muster aufnehmen.</p>         <h3>Schlussfolgerung</h3>         <p>Das Projekt ist nicht ein geleakter Modell, ein Fein-Tuning oder eine Destillation. Es ist eine Hypothese, die in Code dargestellt wird — und die Hypothese ist spezifisch genug, um falsifizierbar zu sein, was es interessant macht. Die Forschungsgemeinschaft kann diese Hypothese nun weiter untersuchen und testen.</p>         <p><em>BytePost-Einordnung: Die Rekonstruktion von Claude Mythos durch OpenMythos ist ein wichtiger Schritt in der KI-Forschung, da sie neue Einblicke in die Architektur und Funktionsweise vonTransformer-Modellen bietet. Die Ergebnisse dieser Forschung können möglicherweise zu neuen Anwendungen und Verbesserungen in der KI-Technologie führen.</em></p>     ",
+            "content_simple": "         <p>Ein neues Open-Source-Projekt namens OpenMythos versucht, die Architektur von Claude Mythos, einem KI-Modell, nachzubilden. Dazu wurde eine komplett neue Struktur in PyTorch erstellt, die auf peer-reviewed Forschung basiert. Diese Struktur unterscheidet sich von herkömmlichen Transformer-Modellen und bietet möglicherweise neue Einblicke in die Funktionsweise von KI-Systemen.</p>         <p>Das Projekt ist nicht einfach ein Nachbau, sondern vielmehr eine Hypothese, die in Code dargestellt wird. Die Forschungsgemeinschaft kann diese Hypothese nun weiter untersuchen und testen, um möglicherweise neue Anwendungen und Verbesserungen in der KI-Technologie zu entwickeln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>OpenMythos implementiert eine dreiteilige Struktur, bestehend aus Prelude, Rekurrierender Block und Coda. Der Rekurrierende Block ist der komputative Kern, der bis zu T=16 Mal durchlaufen wird. Die erlernten Matrizen A und B bestimmen, wie viel vom vorherigen versteckten Zustand und der kodierten Eingabe bei jedem Schritt weitergegeben werden.</p>         <p>Die FFN innerhalb des Rekurrierenden Blocks ist keine standardmäßige Feed-Forward-Schicht, sondern eine Mixture-of-Experts (MoE)-Schicht, die dem Design von DeepSeekMoE folgt. Dies ermöglicht es, fein granulierte Experten zu verwenden, um die Leistungsfähigkeit des Modells zu verbessern.</p>         <h3>Kritische Einordnung</h3>         <p>Die Rekonstruktion von Claude Mythos durch OpenMythos ist ein wichtiger Schritt in der KI-Forschung, da sie neue Einblicke in die Architektur und Funktionsweise von Transformer-Modellen bietet. Die Ergebnisse dieser Forschung können möglicherweise zu neuen Anwendungen und Verbesserungen in der KI-Technologie führen. Es ist jedoch wichtig, die Hypothese weiter zu testen und zu validieren, um sicherzustellen, dass die Ergebnisse korrekt sind.</p>     ",
+            "date": "20.04.2026",
+            "id": "053d0040",
+            "url": "https://www.marktechpost.com/2026/04/19/meet-openmythos-an-open-source-pytorch-reconstruction-of-claude-mythos-where-770m-parameters-match-a-1-3b-transformer/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/053d0040.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Nintendo Switch günstiger",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9205b7fd",
+                "f11d40da",
+                "06e31f12"
+            ],
+            "content": "         <h3>Nintendo Switch mit Extrarabatt</h3>         <p>Die Nintendo Switch ist eine beliebte Konsole, die jetzt bei Back Market mit Extrarabatt angeboten wird. Wenn du auf der Suche nach einer günstigen Möglichkeit bist, diese Konsole zu erwerben, solltest du sich diese Angebote nicht entgehen lassen.</p>         <p>Um die Nintendo Switch mit Extrarabatt zu erhalten, musst du jedoch Cookies und Tracking zustimmen, wenn du die Seite von Golem.de besuchst. Diese Zustimmung ist notwendig, um die Seite mit Werbung und Tracking zu nutzen. Wenn du die Zustimmung ablehnst, kannst du die Seite auch ohne Tracking und Werbung nutzen, indem du Golem pur abonierst.</p>         <h3>Details zur Nutzung von Golem.de</h3>         <p>Wenn du Golem.de besuchst, wird dir ein Zustimmungs-Dialog angezeigt, in dem du der Nutzung von Cookies und Tracking zustimmen musst. Wenn du dieser Zustimmung nicht zustimmst, kannst du die Seite auch ohne Tracking und Werbung nutzen. Es gibt jedoch auch die Möglichkeit, Golem pur abzubestellen, was bedeutet, dass nur erforderliche Cookies zum Einsatz kommen.</p>         <p>Die Nutzung von Golem.de mit Cookies und Tracking ermöglicht es, personalisierte Anzeigen und Inhalte anzuzeigen, die Performance von Anzeigen und Inhalten zu messen und Erkenntnisse über Zielgruppen zu gewinnen. Es werden jedoch auch personenbezogene Daten erhoben und an Drittanbieter übermittelt.</p>         <p><em>BytePost-Einordnung: Die Nintendo Switch ist eine beliebte Konsole, die jetzt mit Extrarabatt bei Back Market angeboten wird. Wenn du auf der Suche nach einer günstigen Möglichkeit bist, diese Konsole zu erwerben, solltest du dich diese Angebote nicht entgehen lassen. Es ist jedoch wichtig zu beachten, dass die Nutzung von Golem.de mit Cookies und Tracking die Erhebung von personenbezogenen Daten und die Übermittlung an Drittanbieter bedeutet.</em></p>     ",
+            "content_simple": "         <p>Die Nintendo Switch ist eine beliebte Konsole, die jetzt günstiger bei Back Market angeboten wird. Wenn du diese Konsole kaufen möchtest, solltest du dich diese Angebote nicht entgehen lassen.</p>         <p>Um die Seite von Golem.de zu nutzen, musst du Cookies und Tracking zustimmen. Wenn du dies nicht tust, kannst du die Seite auch ohne Werbung und Tracking nutzen.</p>     ",
+            "content_pro": "         <h3>Technische Details zur Nutzung von Golem.de</h3>         <p>Die Nutzung von Golem.de mit Cookies und Tracking ermöglicht es, personalisierte Anzeigen und Inhalte anzuzeigen, die Performance von Anzeigen und Inhalten zu messen und Erkenntnisse über Zielgruppen zu gewinnen. Es werden jedoch auch personenbezogene Daten erhoben und an Drittanbieter übermittelt.</p>         <p>Die Seite von Golem.de nutzt eine Vielzahl von Technologien, um die Nutzung von Cookies und Tracking zu ermöglichen. Es werden jedoch auch alternative Möglichkeiten angeboten, wie z.B. Golem pur, um die Seite ohne Werbung und Tracking zu nutzen.</p>     ",
+            "date": "20.04.2026",
+            "id": "ba302d73",
+            "url": "https://www.golem.de/news/anzeige-nintendo-switch-mit-extrarabatt-guenstiger-bei-back-market-2604-207663.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ba302d73.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "gaming"
             ],
             "icon": "🎮",
@@ -34112,10 +34403,10 @@
         }
     ],
     "bytepulse": {
-        "date": "17.04.2026",
-        "positiv": 0,
-        "neutral": 100,
-        "kritisch": 0,
-        "total": 1
+        "date": "20.04.2026",
+        "positiv": 50,
+        "neutral": 30,
+        "kritisch": 20,
+        "total": 10
     }
 }
