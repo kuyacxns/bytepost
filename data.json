@@ -116,7 +116,7 @@
                 "sleep": 0
             },
             "image_local": "images/f1876e00.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Meta ersetzt Engineering-Zeit durch KI - eine Revolution in der Software-Entwicklung. Durch den Einsatz von KI-Technologien kann Meta nun Entwicklungsaufgaben automatisieren und die Produktivität seiner Entwickler steigern, was weitreichende Auswirkungen auf die gesamte Branche haben könnte. Entwickler sollten sich auf diese Veränderung einstellen und sich fragen, ob ihre eigenen Unternehmen bald folgen werden."
         },
         {
