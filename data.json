@@ -28,7 +28,7 @@
                 "sleep": 0
             },
             "image_local": "images/e8142566.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Sicherheit von Software ist ein entscheidendes Thema für Entwickler, und die neue Norm IEC 62443-4-1 könnte den Schlüssel zum Schutz von Anwendungen und Systemen liefern. Mit dieser Norm können Entwickler ihre Software auf ein neues Level der Sicherheit heben und so ihre Benutzer schützen. Heute ist es wichtig, dass Entwickler die Bedeutung dieser Norm verstehen und ihre Implementierung in Betracht ziehen, um die Sicherheitslücken ihrer Anwendungen zu schließen."
         },
         {
