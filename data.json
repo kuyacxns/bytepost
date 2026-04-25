@@ -2,6 +2,272 @@
     "articles": [
         {
             "cat": [
+                "business",
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "EquipmentShare geht an die Börse",
+            "source": "Y Combinator Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "6705e9a6",
+                "85029998",
+                "59f9db7d"
+            ],
+            "content": "         <h3>EquipmentShare geht an die Börse</h3>         <p>Herzlichen Glückwunsch an EquipmentShare, das heute an die Börse geht. Das Unternehmen, das 2015 in Missouri gegründet wurde, hat sich zu einem der größten Anbieter von Baugeräten und -software in den USA entwickelt. Mit über 373 Standorten im ganzen Land hat EquipmentShare ein umfassendes Netzwerk von Baufirmen und -unternehmen aufgebaut.</p>         <p>Die Gründer von EquipmentShare, Jabbok und Willy, kommen aus einer ländlichen Gegend in Missouri, wo sie gelernt haben, Dinge selbst zu bauen und zu reparieren. Sie haben kein Ivy-League-Diplom, aber sie haben eine tiefe Kenntnis der Baubranche und der Probleme, die Baufirmen jeden Tag lösen müssen.</p>         <p>EquipmentShare begann als einfache Idee, die darauf abzielte, den Zugang zu Baugeräten für Baufirmen zu vereinfachen. Das Unternehmen entwickelte eine Plattform, auf der Baufirmen ihre Geräte verleihen und vermieten können. Mit der Zeit hat sich EquipmentShare jedoch zu einem umfassenden Ökosystem für die Baubranche entwickelt, das nicht nur den Verleih von Geräten, sondern auch die Verwaltung von Flotten, die Überwachung von Maschinen und die Optimierung von Betriebsabläufen umfasst.</p>         <h3>Ein Ökosystem für die Baubranche</h3>         <p>EquipmentShare hat eine eigene Software-Plattform entwickelt, die es Baufirmen ermöglicht, ihre Betriebsabläufe zu optimieren und ihre Geräte zu überwachen. Die Plattform, die als T3 bezeichnet wird, bietet eine umfassende Übersicht über die Flotte, die Maschinen und die Betriebsabläufe. Baufirmen können damit ihre Geräte verfolgen, ihre Betriebsabläufe optimieren und ihre Kosten reduzieren.</p>         <p>EquipmentShare hat auch eine eigene Telematik-Plattform entwickelt, die es ermöglicht, die Position und den Zustand von Maschinen in Echtzeit zu überwachen. Diese Plattform ermöglicht es Baufirmen, ihre Betriebsabläufe zu optimieren und ihre Geräte zu überwachen, um die Effizienz und die Produktivität zu steigern.</p>         <h3>Ein wichtiges Meilenstein</h3>         <p>Der Börsengang von EquipmentShare ist ein wichtiges Meilenstein für das Unternehmen. Es zeigt, dass das Unternehmen erfolgreich ist und dass es ein großes Potenzial für Wachstum und Entwicklung hat. EquipmentShare wird weiterhin innovativ und kundenorientiert bleiben, um die Bedürfnisse der Baubranche zu erfüllen.</p>         <p>Als Redakteur bei BytePost sind wir stolz, dieses wichtige Ereignis zu berichten. Wir wünschen EquipmentShare weiterhin viel Erfolg und freuen uns darauf, das Unternehmen in Zukunft weiter zu begleiten.</p>         <p><em>BytePost-Einordnung: Der Börsengang von EquipmentShare ist ein wichtiger Meilenstein für das Unternehmen und zeigt, dass es erfolgreich ist und ein großes Potenzial für Wachstum und Entwicklung hat. Es ist ein Beispiel dafür, wie ein Unternehmen durch Innovation und kundenorientierte Lösungen erfolgreich sein kann.</em></p>     ",
+            "content_simple": "         <p>EquipmentShare ist ein Unternehmen, das Baugeräte und -software anbietet. Es wurde 2015 in Missouri gegründet und hat sich zu einem der größten Anbieter in den USA entwickelt. Das Unternehmen hat ein umfassendes Netzwerk von Baufirmen und -unternehmen aufgebaut und bietet eine Plattform, auf der Baufirmen ihre Geräte verleihen und vermieten können.</p>         <p>Der Börsengang von EquipmentShare ist ein wichtiger Meilenstein für das Unternehmen. Es zeigt, dass das Unternehmen erfolgreich ist und dass es ein großes Potenzial für Wachstum und Entwicklung hat.</p>     ",
+            "content_pro": "         <h3>Architektur und Technologie</h3>         <p>EquipmentShare hat eine eigene Software-Plattform entwickelt, die auf einer Microservices-Architektur basiert. Die Plattform bietet eine umfassende Übersicht über die Flotte, die Maschinen und die Betriebsabläufe. Baufirmen können damit ihre Geräte verfolgen, ihre Betriebsabläufe optimieren und ihre Kosten reduzieren.</p>         <p>Die Plattform verwendet eine Kombination von Cloud-Technologien, wie AWS und Azure, sowie On-Premises-Systeme. Die Daten werden in einer relationalen Datenbank gespeichert und über eine REST-API abgerufen.</p>         <h3>Sicherheit und Datenschutz</h3>         <p>EquipmentShare legt großen Wert auf Sicherheit und Datenschutz. Die Plattform verwendet eine Vielzahl von Sicherheitsmaßnahmen, wie SSL-Verschlüsselung und Firewalls, um die Daten zu schützen.</p>         <p>Das Unternehmen ist auch GDPR-konform und hat eine eigene Datenschutzrichtlinie, die sicherstellt, dass die Daten der Kunden sicher und vertraulich behandelt werden.</p>     ",
+            "date": "25.04.2026",
+            "id": "0127ec63",
+            "url": "https://www.ycombinator.com/blog/congratulations-to-equipmentshare/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0127ec63.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "business"
+            ],
+            "icon": "🚗",
+            "title": "Bundestag beschließt Tankrabatt",
+            "source": "Deutsche Nachrichtenquelle",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0127ec63",
+                "85029998",
+                "59f9db7d"
+            ],
+            "content": "         <h3>Tankrabatt beschlossen</h3>         <p>Der Bundestag hat den Tankrabatt zur Entlastung bei den Spritpreisen beschlossen. Damit werden die Steuern auf Diesel und Benzin von Anfang Mai bis Ende Juni um rund 17 Cent pro Liter gesenkt. Seit Beginn des Iran-Kriegs Ende Februar sind die Spritpreise stark gestiegen und liegen trotz eines zwischenzeitlichen Rückgangs noch immer weit über ihren Niveaus vor Kriegsausbruch.</p>         <p>Die Senkung der Energiesteuersätze muss noch den Bundesrat passieren, dazu ist am Mittag eine Sondersitzung geplant. Den Staat kostet die Maßnahme rund 1,6 Milliarden Euro.</p>         <h3>Hintergrund</h3>         <p>Mitte April hatten die Spitzen der schwarz-roten Koalition vorübergehende Steuersenkungen für Autofahrer vereinbart. „Damit werden wir sehr schnell die Lage für die Autofahrer und für die Betriebe im Land verbessern und vor allem für diejenigen, die vor allem aus beruflichen Gründen sehr viel mit dem Auto unterwegs sind“, sagte Kanzler Friedrich Merz (CDU).</p>         <p>Für einen durchschnittlichen Autofahrer dürfte der Rabatt in den zwei Monaten einen niedrigen zweistelligen Eurobetrag bringen.</p>         <h3>Reaktionen</h3>         <p>Der Wirtschaftsverband Fuels und Energie hat angekündigt, dass die volle Steuerersparnis weitergegeben werden soll – wies aber darauf hin, dass dies auch von anderen Preisentwicklungen überlagert werden kann.</p>         <p>Der CDU-Abgeordnete Matthias Hiller sagte im Bundestag, die Koalition reagiere schnell und zielgenau. Der AfD-Politiker Kay Gottschalk dagegen nannte den Tankrabatt einen „Tropfen auf den heißen Stein“. Er gelte nur zwei Monate und laufe pünktlich zur Ferienzeit aus.</p>         <p>Die SPD fordert eine Übergewinnsteuer auf kriegsbedingte Extra-Profite der Mineralölkonzerne. Dafür braucht die Bundesregierung aber grünes Licht von der EU-Kommission – die derzeit keine Pläne dafür hat.</p>         <h3>Einordnung</h3>         <p><em>BytePost-Einordnung: Der Tankrabatt ist ein wichtiger Schritt, um die Autofahrer in Deutschland zu entlasten. Es bleibt jedoch abzuwarten, ob die Maßnahme langfristig wirksam ist und ob die Bundesregierung weitere Schritte unternimmt, um die Energiepreise zu regulieren.</em></p>     ",
+            "content_simple": "         <p>Der Bundestag hat den Tankrabatt beschlossen, um die steigenden Spritpreise zu bekämpfen. Das bedeutet, dass die Steuern auf Benzin und Diesel für zwei Monate gesenkt werden. Der Rabatt soll Autofahrern helfen, die aufgrund des Iran-Kriegs hohe Preise zahlen müssen.</p>         <p>Der Staat wird für diese Maßnahme etwa 1,6 Milliarden Euro ausgeben. Es bleibt zu sehen, ob der Rabatt langfristig hilft oder ob weitere Schritte notwendig sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Tankrabatt-Maßnahme ist ein komplexes Thema, das verschiedene Aspekte umfasst. Es geht nicht nur um die Senkung der Steuern, sondern auch um die Auswirkungen auf die Wirtschaft und die Verbraucher.</p>         <p>Es ist wichtig zu beachten, dass die EU-Kommission eine wichtige Rolle bei der Regulierung der Energiepreise spielt. Die Bundesregierung muss daher eng mit der EU-Kommission zusammenarbeiten, um eine effektive Lösung zu finden.</p>         <h3>Architektur und Prozesse</h3>         <p>Die Umsetzung des Tankrabatts erfordert eine enge Zusammenarbeit zwischen den verschiedenen Akteuren, einschließlich der Bundesregierung, der EU-Kommission und der Mineralölkonzerne.</p>         <p>Es ist wichtig, dass die Prozesse transparent und effizient sind, um sicherzustellen, dass die Maßnahme ihre Ziele erreicht.</p>     ",
+            "date": "25.04.2026",
+            "id": "6705e9a6",
+            "url": "https://www.heise.de/news/Bundestag-beschliesst-Tankrabatt-11271322.html?wt_mc=rss.red.ho.top-news.atom.beitrag.beitrag",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6705e9a6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📚",
+            "title": "Docs.rs reduziert Zielplattformen",
+            "source": "Docs.rs Blog",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "59f9db7d"
+            ],
+            "content": "         <h3>Änderung bei Docs.rs</h3>         <p>Am 01.05.2026 wird Docs.rs eine Änderung in seinem Build-Verhalten vornehmen. Bisher werden, wenn ein Crate keine Zielplattformen in seiner Docs.rs-Metadaten liste definiert, standardmäßig fünf Zielplattformen gebaut.</p>         <p>Ab dem 01.05.2026 wird Docs.rs stattdessen nur die Standard-Zielplattform bauen, es sei denn, zusätzliche Zielplattformen werden explizit angefordert. Diese Änderung ist der nächste Schritt in einer Änderung, die wir 2020 eingeführt haben, als Docs.rs die Unterstützung für das Opt-out von weniger Build-Zielplattformen hinzugefügt hat.</p>         <p>Die meisten Crates kompilieren nicht unterschiedlichen Code für unterschiedliche Zielplattformen, daher ist das Bauen von weniger Zielplattformen standardmäßig eine bessere Wahl für die meisten Releases. Es reduziert auch die Build-Zeit und spart Ressourcen auf Docs.rs.</p>         <h3>Affektierter Bereich</h3>         <p>Diese Änderung betrifft nur:</p>         <ul>             <li>neue Releases</li>             <li>Neu-Bauten von alten Releases</li>         </ul>         <h3>Wie wird die Standard-Zielplattform gewählt?</h3>         <p>Wenn du die Standard-Zielplattform nicht festlegst, verwendet Docs.rs die Zielplattform seiner Build-Server: x86_64-unknown-linux-gnu. Du kannst diese übersteuern, indem du die Standard-Zielplattform in deinen Docs.rs-Metadaten festlegst:</p>         <p>[package.metadata.docs.rs]<br>         default-target = \"x86_64-apple-darwin\"</p>         <h3>Wie baue ich die Dokumentation für zusätzliche Zielplattformen?</h3>         <p>Wenn dein Crate benötigt, dass die Dokumentation für mehr als die Standard-Zielplattform gebaut wird, definierst du die vollständige Liste explizit in deinem Cargo.toml:</p>         <p>[package.metadata.docs.rs]<br>         targets = [<br>             \"x86_64-unknown-linux-gnu\",<br>             \"x86_64-apple-darwin\",<br>             \"x86_64-pc-windows-msvc\",<br>             \"i686-unknown-linux-gnu\",<br>             \"i686-pc-windows-msvc\"<br>         ]</p>         <p>Wenn die Zielplattformen festgelegt sind, baut Docs.rs die Dokumentation für genau diese Zielplattformen. Docs.rs unterstützt weiterhin jede Zielplattform, die im Rust-Toolchain verfügbar ist. Nur das Standard-Verhalten ändert sich.</p>         <p><em>BytePost-Einordnung: Diese Änderung bei Docs.rs sollte Entwickler dazu anregen, ihre Zielplattformen sorgfältig zu überdenken und nur die notwendigen Zielplattformen zu bauen, um Build-Zeiten und Ressourcen zu sparen.</em></p>     ",
+            "content_simple": "         <p>Docs.rs, eine Plattform für Rust-Entwickler, ändert ihr Verhalten beim Bauen von Zielplattformen. Ab dem 01.05.2026 werden standardmäßig nur die wichtigste Zielplattform gebaut, es sei denn, der Entwickler fordert explizit weitere Zielplattformen an.</p>         <p>Diese Änderung soll die Build-Zeit reduzieren und Ressourcen sparen. Es ist wichtig für Entwickler, ihre Zielplattformen sorgfältig zu überdenken und nur die notwendigen Zielplattformen zu bauen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Docs.rs verwendet standardmäßig die Zielplattform x86_64-unknown-linux-gnu, wenn keine andere Zielplattform angegeben ist. Entwickler können dies übersteuern, indem sie die Standard-Zielplattform in ihren Docs.rs-Metadaten festlegen.</p>         <p>Die Zielplattformen können in der Datei Cargo.toml definiert werden. Wenn die Zielplattformen festgelegt sind, baut Docs.rs die Dokumentation für genau diese Zielplattformen.</p>         <h3>Sicherheit und Ressourcen</h3>         <p>Die Änderung bei Docs.rs soll die Build-Zeit reduzieren und Ressourcen sparen. Es ist jedoch wichtig, dass Entwickler ihre Zielplattformen sorgfältig überdenken und nur die notwendigen Zielplattformen bauen, um Sicherheitsrisiken zu minimieren.</p>     ",
+            "date": "25.04.2026",
+            "id": "85029998",
+            "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/85029998.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "KI-Assistenten überwinden Bot-Erkennung",
+            "source": "Originalquelle unbekannt",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Die Zukunft der Bot-Erkennung</h3>         <p>Die Art und Weise, wie wir mit dem Internet interagieren, ändert sich. Wir nutzen nicht mehr nur unsere Tastatur, unseren Bildschirm, unseren Browser oder unser Gerät, um online zu sein. Wir haben auch KI-Assistenten, die unsere Arbeit automatisieren und uns helfen, Informationen zu finden. Diese Entwicklungen werfen jedoch Fragen zur Bot-Erkennung und -Verhinderung auf.</p>         <p>Die Unterscheidung zwischen menschlichen und bot-gesteuerter Aktivität ist nicht mehr so einfach wie früher. KI-Assistenten können unsere Anfragen automatisieren und unsere Interaktionen mit Webseiten beeinflussen. Deshalb müssen wir neue Modelle für die Verantwortlichkeit und die Erkennung von Bots entwickeln.</p>         <h3>Die Notwendigkeit neuer Modelle</h3>         <p>Die traditionelle Bot-Erkennung basiert auf Mustern, die Menschen verwenden, wenn sie mit Geräten interagieren. Diese Muster haben sich jedoch geändert. Startup-CEOs nutzen ihre Browser, um Nachrichten zusammenzufassen, Technik-Enthusiasten automatisieren Buchungen, Menschen mit Sehbehinderung nutzen Screenreader. Unternehmen leiten ihren Traffik durch Zero-Trust-Proxy.</p>         <p>Die Frage, ob ein Client ein Mensch oder ein Bot ist, reicht nicht mehr aus, um die erforderliche Verantwortlichkeit und Sicherheit zu gewährleisten. Wir benötigen neue Modelle, die die Intention und das Verhalten von Clients berücksichtigen.</p>         <h3>Ein offenes Ökosystem für anonyme Anmeldeinformationen</h3>         <p>Ein offenes Ökosystem für anonyme Anmeldeinformationen könnte eine Lösung sein. Dies würde es ermöglichen, die Privatsphäre von Nutzern zu schützen, während gleichzeitig die Sicherheit von Webseiten und Anwendungen gewährleistet wird.</p>         <p>Die Zukunft der Bot-Erkennung und -Verhinderung erfordert ein neues Denken. Wir müssen die Notwendigkeit der Erkennung von Bots und menschlichen Aktivitäten neu bewerten und Modelle entwickeln, die die Intention und das Verhalten von Clients berücksichtigen.</p>         <p><em>BytePost-Einordnung: Die Zukunft der Bot-Erkennung und -Verhinderung erfordert ein neues Denken. Wir müssen die Notwendigkeit der Erkennung von Bots und menschlichen Aktivitäten neu bewerten und Modelle entwickeln, die die Intention und das Verhalten von Clients berücksichtigen.</em></p>     ",
+            "content_simple": "         <p>Die Art und Weise, wie wir mit dem Internet interagieren, ändert sich. Wir nutzen nicht mehr nur unsere Tastatur, unseren Bildschirm, unseren Browser oder unser Gerät, um online zu sein. Wir haben auch KI-Assistenten, die unsere Arbeit automatisieren und uns helfen, Informationen zu finden.</p>         <p>Die Unterscheidung zwischen menschlichen und bot-gesteuerter Aktivität ist nicht mehr so einfach wie früher. Deshalb müssen wir neue Modelle für die Verantwortlichkeit und die Erkennung von Bots entwickeln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die traditionelle Bot-Erkennung basiert auf Mustern, die Menschen verwenden, wenn sie mit Geräten interagieren. Diese Muster haben sich jedoch geändert. KI-Assistenten können unsere Anfragen automatisieren und unsere Interaktionen mit Webseiten beeinflussen.</p>         <p>Ein offenes Ökosystem für anonyme Anmeldeinformationen könnte eine Lösung sein. Dies würde es ermöglichen, die Privatsphäre von Nutzern zu schützen, während gleichzeitig die Sicherheit von Webseiten und Anwendungen gewährleistet wird.</p>     ",
+            "date": "25.04.2026",
+            "id": "59f9db7d",
+            "url": "https://blog.cloudflare.com/past-bots-and-humans/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/59f9db7d.jpg",
+            "pick": true,
+            "pick_reason": "Die Bot-Erkennung, einst eine solide Barriere gegen automatisierte Angriffe, ist gefallen: KI-Assistenten haben gelernt, sie zu überwinden. Das bedeutet, dass Entwickler ihre Sicherheitsstrategien grundlegend überdenken müssen, um vor den neuen, intelligenten Bedrohungen gewappnet zu sein. Die Zukunft der Cybersicherheit hängt davon ab, wie schnell Entwickler auf diese veränderte Landschaft reagieren können."
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "NASA-Mitarbeiter Opfer chinesischer Phishing-Kampagne",
+            "source": "NASA",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Phishing-Angriff auf NASA-Mitarbeiter</h3>         <p>Das Office of Inspector General (OIG) der NASA hat einen Bericht veröffentlicht, in dem es um eine chinesische Phishing-Kampagne geht, die sich gegen NASA-Mitarbeiter richtete. Die Kampagne hatte das Ziel, sensible Informationen von der NASA sowie von Regierungsbehörden, Universitäten und privaten Unternehmen zu erhalten, und verletzte dabei Exportkontrollgesetze.</p>         <p>Ein chinesischer Staatsbürger gab sich als US-amerikanischer Forscher aus, um an vertrauliche Informationen zu gelangen. Der Bericht zeigt, dass die Angreifer die Identität des Forschers nutzten, um die Opfer zu täuschen und ihnen vertrauliche Informationen zu entlocken.</p>         <h3>Technische Details</h3>         <p>Laut dem Zscaler ThreatLabz 2026 VPN Risk Report ermöglichen moderne VPN-Technologien Angreifern, schneller auf Remote-Systeme zuzugreifen. Dies kann zu einer schnelleren Ausbreitung von Malware und anderen Cyber-Bedrohungen führen.</p>         <p>Der Bericht betont, dass die KI-basierte Phishing-Kampagne in der Lage war, die menschliche Reaktionszeit zu überwinden und Remote-Zugriffe zu beschleunigen. Dies führt zu einer erhöhten Gefahr für die Sicherheit von Unternehmen und Organisationen.</p>         <p><em>BytePost-Einordnung: Die Phishing-Kampagne gegen NASA-Mitarbeiter zeigt, dass auch renommierte Organisationen anfällig für Cyber-Angriffe sind. Es ist wichtig, dass Unternehmen und Organisationen ihre Sicherheitsmaßnahmen überprüfen und stärken, um solche Angriffe zu verhindern.</em></p>     ",
+            "content_simple": "         <p>Die NASA wurde Opfer einer chinesischen Phishing-Kampagne. Ein chinesischer Staatsbürger gab sich als US-amerikanischer Forscher aus, um an vertrauliche Informationen zu gelangen.</p>         <p>Die Angreifer nutzten moderne Technologien, um schneller auf Remote-Systeme zuzugreifen. Dies kann zu einer schnelleren Ausbreitung von Malware und anderen Cyber-Bedrohungen führen.</p>     ",
+            "content_pro": "         <h3>Technische Analyse</h3>         <p>Die Phishing-Kampagne gegen NASA-Mitarbeiter nutzte KI-basierte Technologien, um die menschliche Reaktionszeit zu überwinden. Dies ermöglichte es den Angreifern, Remote-Zugriffe zu beschleunigen und die Sicherheit von Unternehmen und Organisationen zu gefährden.</p>         <p>Die Kampagne zeigt, dass moderne VPN-Technologien eine wichtige Rolle bei der Ausbreitung von Malware und anderen Cyber-Bedrohungen spielen. Es ist wichtig, dass Unternehmen und Organisationen ihre Sicherheitsmaßnahmen überprüfen und stärken, um solche Angriffe zu verhindern.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Um solche Angriffe zu verhindern, sollten Unternehmen und Organisationen ihre Sicherheitsmaßnahmen überprüfen und stärken. Dazu gehören die Implementierung von KI-basierten Sicherheitssystemen, die Überwachung von Remote-Zugriffen und die Schulung von Mitarbeitern, um sie auf mögliche Phishing-Angriffe vorzubereiten.</p>     ",
+            "date": "25.04.2026",
+            "id": "6f87eff4",
+            "url": "https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6f87eff4.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data",
+                "ki"
+            ],
+            "icon": "📰",
+            "title": "Data Engineering Weekly 265",
+            "source": "Data Engineering Weekly",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Data Engineering Weekly #265</h3>         <p>Die Weekly Data Engineering Newsletter, Data Engineering Weekly #265, bringt uns die neuesten Entwicklungen in der Welt der Datenverarbeitung. Ananth Packkildurai berichtet in dieser Ausgabe über Multi-Tenancy für moderne Datenplattformen.</p>         <p>Ein Live-Deep-Dive mit Brooklyn Data Co. und Dagster Labs beleuchtet die Herausforderungen und Lösungen für die Implementierung von Multi-Tenancy. Themen wie Code-Isolation, Abhängigkeitsmanagement und operationelle Strategien werden diskutiert.</p>         <p>Ein weiterer interessanter Aspekt ist die Verwendung von AI-Modellen für die Erstellung von Datenplattformen. Dbt hat recently eine Benchmark-Update veröffentlicht, in der GPT-5.3-Codex mit einer Semantischen Schicht 100% Genauigkeit erreicht.</p>         <p>Rill introduceiert Metrics SQL, eine SQL-basierte semantische Schicht für Menschen und Agenten. Diese Lösung ermöglicht die Definition von Logik in YAML und die Exposition durch Standard-SQL, wodurch Aggregationen automatisiert, Zeilen-Ebene-Sicherheit erzwungen und verwalte Definitionen für AI-Agenten bereitgestellt werden können.</p>         <p>Meta Platforms hat ein System entwickelt, um tribale Kenntnisse in großen Datenpipelines zu kartieren. Durch den Einsatz von 50 spezialisierten Agenten konnte Meta die Kontextabdeckung von 5% auf 100% steigern und die Recherchezeit von zwei Tagen auf 30 Minuten reduzieren.</p>         <p>Netflix hat ein intervall-bewusstes Caching-System entwickelt, um die Leistung von Real-time-Dashboards zu verbessern. Durch die Verwendung von Cassandra und exponentiellen TTLs konnte Netflix die Anzahl der Druid-Abfragen um 33% reduzieren und die P90-Latenz um 66% verbessern.</p>         <p>Booking.com hat die Qualität von Experimenten verbessert, indem es Datenwissenschaftler als Botschafter einsetzt, Peer-Review-Praktiken einführt und Tooling wie eine Quality-Tab bereitstellt. Durch diese Maßnahmen konnte Booking.com die Anzahl hochwertiger Experimente erhöhen.</p>         <p>Andros Fenollosa hat einen Artikel über die Entwicklung eines RAG-Systems veröffentlicht, in dem er sowohl Erfolge als auch Misserfolge diskutiert.</p>         <p><em>BytePost-Einordnung: Die Datenverarbeitung ist ein wichtiger Aspekt der modernen Technologie. Durch die Entwicklung von Multi-Tenancy, AI-Modellen und verbesserten Caching-Systemen können Unternehmen ihre Datenplattformen optimieren und ihre Entscheidungsfindung verbessern.</em></p>     ",
+            "content_simple": "         <p>Die neueste Ausgabe der Data Engineering Weekly bringt uns die neuesten Entwicklungen in der Welt der Datenverarbeitung. Unternehmen wie Meta und Netflix verbessern ihre Datenplattformen durch die Verwendung von AI-Modellen und verbesserten Caching-Systemen.</p>         <p>Diese Entwicklungen helfen Unternehmen, ihre Datenplattformen zu optimieren und ihre Entscheidungsfindung zu verbessern. Durch die Verwendung von AI-Modellen können Unternehmen ihre Datenanalyse automatisieren und ihre Ergebnisse verbessern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Implementierung von Multi-Tenancy für moderne Datenplattformen ist eine komplexe Aufgabe. Brooklyn Data Co. und Dagster Labs diskutieren in ihrer Live-Deep-Dive die Herausforderungen und Lösungen für die Implementierung von Multi-Tenancy.</p>         <p>Dbt hat eine Benchmark-Update veröffentlicht, in der GPT-5.3-Codex mit einer Semantischen Schicht 100% Genauigkeit erreicht. Diese Lösung ermöglicht die Erstellung von Datenplattformen durch AI-Modelle.</p>         <p>Rill introduceiert Metrics SQL, eine SQL-basierte semantische Schicht für Menschen und Agenten. Diese Lösung ermöglicht die Definition von Logik in YAML und die Exposition durch Standard-SQL.</p>         <p>Meta Platforms hat ein System entwickelt, um tribale Kenntnisse in großen Datenpipelines zu kartieren. Durch den Einsatz von 50 spezialisierten Agenten konnte Meta die Kontextabdeckung von 5% auf 100% steigern und die Recherchezeit von zwei Tagen auf 30 Minuten reduzieren.</p>     ",
+            "date": "25.04.2026",
+            "id": "4aca1058",
+            "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-265",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/4aca1058.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🎭",
+            "title": "Alan Turing Theaterstück",
+            "source": "Martin Fowler",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Ein Theaterstück über Alan Turing</h3>         <p>Letzte Nacht habe ich die exzellente Produktion von Breaking the Code im Central Square Theater in Cambridge, MA gesehen. Es handelt sich um ein Stück über Alan Turing, der einen monumentalen Beitrag zu meinem Beruf und dem Schicksal der freien Demokratien geleistet hat.</p>         <p>Das Stück ist sehr empfehlenswert, wenn du dich in der Bostoner Gegend befindest und es dieses Monat noch sehen möchtest. Alan Turing war eine wichtige Figur in der Geschichte der Informatik und seine Beiträge zur Kryptoanalyse und zur Entwicklung des Computers sind nicht zu unterschätzen.</p>         <p>Martin Fowler, der Autor des Artikels, betont, dass das Stück sehr gut gemacht ist und dass es sich lohnt, es zu sehen. Er erwähnt auch, dass Alan Turing eine wichtige Rolle in der Geschichte der Informatik gespielt hat und dass sein Beitrag zu unserem Beruf und zum Schicksal der freien Demokratien nicht zu unterschätzen ist.</p>         <h3>Fazit</h3>         <p>Das Theaterstück Breaking the Code ist eine exzellente Produktion, die sich mit dem Leben und Werk von Alan Turing auseinandersetzt. Es ist sehr empfehlenswert, es zu sehen, wenn du dich für die Geschichte der Informatik und die Beiträge von Alan Turing interessierst.</p>         <p><em>BytePost-Einordnung: Das Theaterstück Breaking the Code ist eine gute Gelegenheit, sich mit dem Leben und Werk von Alan Turing auseinanderzusetzen und seine Beiträge zur Informatik und zur Geschichte der freien Demokratien zu erfahren.</em></p>     ",
+            "content_simple": "         <p>Ein Theaterstück über Alan Turing, einem der Väter der Informatik, ist sehr empfehlenswert. Es handelt sich um eine exzellente Produktion, die sich mit seinem Leben und Werk auseinandersetzt.</p>         <p>Alan Turing war eine wichtige Figur in der Geschichte der Informatik und seine Beiträge zur Kryptoanalyse und zur Entwicklung des Computers sind nicht zu unterschätzen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Theaterstück Breaking the Code behandelt die Beiträge von Alan Turing zur Informatik und zur Geschichte der freien Demokratien. Es geht insbesondere auf seine Arbeit an der Entschlüsselung des Enigma-Codes ein, die einen wichtigen Beitrag zum Sieg der Alliierten im Zweiten Weltkrieg leistete.</p>         <p>Die Produktion ist sehr gut gemacht und bietet eine gute Gelegenheit, sich mit dem Leben und Werk von Alan Turing auseinanderzusetzen. Es ist sehr empfehlenswert, es zu sehen, wenn du dich für die Geschichte der Informatik und die Beiträge von Alan Turing interessierst.</p>     ",
+            "date": "25.04.2026",
+            "id": "9b3369de",
+            "url": "https://martinfowler.com/articles/202604-turing.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Deepgram SDK für Sprachverarbeitung",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Einführung in die Deepgram Python SDK</h3>         <p>Die Deepgram Python SDK bietet eine umfassende Lösung für die Sprachverarbeitung, einschließlich Transkription, Text-zu-Sprache, asynchrone Audioverarbeitung und Textanalyse. In diesem Tutorial werden wir eine fortschrittliche, handliche Arbeitsabfolge mit der Deepgram Python SDK erstellen und erkunden, wie moderne Voice-AI-Fähigkeiten in einer einzigen Python-Umgebung zusammengeführt werden können.</p>         <p>Wir beginnen mit der Authentifizierung und verbinden sowohl synchrone als auch asynchrone Deepgram-Clients. Anschließend arbeiten wir direkt mit echten Audiowiedergaben, um zu verstehen, wie die SDK Transkription, Sprachgenerierung und Textanalyse handhabt. Wir transkribieren Audio von einer URL und einer lokalen Datei, untersuchen Vertrauenswerte, Wortzeitstempel, Sprecher-Diarien, Absatzformatierung und künstlich generierte Zusammenfassungen.</p>         <h3>Implementierung der Deepgram Python SDK</h3>         <p>Wir installieren die Deepgram SDK und ihre Abhängigkeiten und stellen sicher, dass die Authentifizierung mithilfe unseres API-Schlüssels abgesichert ist. Wir initialisieren sowohl synchrone als auch asynchrone Deepgram-Clients.</p>         <p>Wir verwenden die `DeepgramClient`-Klasse, um die Transkription eines Audio-Streams von einer URL durchzuführen. Die `listen.v1.media.transcribe_url`-Methode wird mit den entsprechenden Parametern aufgerufen, um die Transkription durchzuführen.</p>         <p>Wir können auch die `AsyncDeepgramClient`-Klasse verwenden, um asynchrone Audioverarbeitung durchzuführen. Dies ermöglicht uns, mehrere Audiodateien gleichzeitig zu verarbeiten.</p>         <h3>Beispielcode</h3>         <p>Der folgende Code zeigt, wie wir die Deepgram SDK verwenden, um eine Audio-Datei zu transkribieren:</p>         <p>Wir verwenden die `urllib.request`-Bibliothek, um die Audio-Datei herunterzuladen, und die `DeepgramClient`-Klasse, um die Transkription durchzuführen.</p>         <h3>Fazit</h3>         <p>Die Deepgram Python SDK bietet eine umfassende Lösung für die Sprachverarbeitung, einschließlich Transkription, Text-zu-Sprache, asynchrone Audioverarbeitung und Textanalyse. Durch die Verwendung dieser SDK können wir fortschrittliche Voice-AI-Anwendungen erstellen, die in einer einzigen Python-Umgebung zusammengeführt werden können.</p>         <p><em>BytePost-Einordnung: Die Deepgram Python SDK ist ein leistungsfähiges Werkzeug für die Sprachverarbeitung, das eine Vielzahl von Anwendungsmöglichkeiten bietet.</em></p>     ",
+            "content_simple": "         <p>Die Deepgram Python SDK ist ein Werkzeug, das uns hilft, gesprochene Wörter in Text umzuwandeln. Es kann auch Text in gesprochene Wörter umwandeln und uns helfen, die Bedeutung von Texten zu verstehen.</p>         <p>Wir können die SDK verwenden, um Audio-Dateien zu transkribieren, was bedeutet, dass wir sie in Text umwandeln. Wir können auch die SDK verwenden, um Text in gesprochene Wörter umzuwandeln, was bedeutet, dass wir ihn in Audio umwandeln.</p>         <p>Die Deepgram Python SDK ist ein wichtiges Werkzeug für die Sprachverarbeitung, das uns hilft, fortschrittliche Anwendungen zu erstellen, die die Sprache verstehen und generieren können.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Deepgram Python SDK verwendet die `httpx`-Bibliothek, um HTTP-Anfragen zu senden und zu empfangen. Die `DeepgramClient`-Klasse verwendet die `api_key`-Methode, um die Authentifizierung durchzuführen.</p>         <p>Die SDK verwendet die `asyncio`-Bibliothek, um asynchrone Audioverarbeitung durchzuführen. Dies ermöglicht uns, mehrere Audiodateien gleichzeitig zu verarbeiten.</p>         <h3>Architektur</h3>         <p>Die Deepgram Python SDK besteht aus mehreren Komponenten, darunter die `DeepgramClient`-Klasse, die `AsyncDeepgramClient`-Klasse und die `transcribe`-Methode.</p>         <p>Die `DeepgramClient`-Klasse ist verantwortlich für die synchrone Audioverarbeitung, während die `AsyncDeepgramClient`-Klasse für die asynchrone Audioverarbeitung verantwortlich ist.</p>     ",
+            "date": "25.04.2026",
+            "id": "a3d039c3",
+            "url": "https://www.marktechpost.com/2026/04/24/a-coding-implementation-on-deepgram-python-sdk-for-transcription-text-to-speech-async-audio-processing-and-text-intelligence/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a3d039c3.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Splatoon Raiders Vorbestellungen",
+            "source": "GameSpot",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Vorbestellungen für Splatoon Raiders sind live</h3>         <p>Die Wartezeit ist endlich vorbei: Nach fast vier Jahren seit dem Release von Splatoon 3 gibt es endlich ein neues Spiel in der Serie, auf das Fans sich freuen können – Splatoon Raiders. Das exklusive Spiel für die Switch 2 wird am 23. Juli veröffentlicht und bietet eine völlig neue Erfahrung im Vergleich zu seinen Vorgängern.</p>         <p>Splatoon Raiders konzentriert sich auf ein Single-Player-Erlebnis, bei dem du dich gegen Horden von Salmonids kämpfst, während du die mysteriösen Spirhalite-Inseln nach Schätzen durchsuchst. Es ist auch möglich, dass ein paar Freunde für ein kooperatives Erlebnis beitreten, aber es wird sich mit Sicherheit von den bisherigen Splatoon-Spielen unterscheiden. Es wird exklusiv für die Switch 2 veröffentlicht, und Vorbestellungen sind jetzt offen vor seiner Ankunft.</p>         <p>Es gibt eine $60-Physische-Edition und eine $50-Digital-Version. Es gibt auch einige coole Amiibo-Figuren, die zusammen mit dem Spiel veröffentlicht werden – wie bei den meisten Amiibo-Figuren können wir erwarten, dass sie sehr beliebt sein werden, also schau sie dir an, solange du noch kannst.</p>         <h3>Splatoon Raiders (Physische Edition)</h3>         <p>Wie bereits erwähnt, startet Splatoon Raiders mit einer $60-Physischen-Edition auf der Switch 2. Es gibt keine Vorbestellungsboni oder spezielle Editionen, aber die physische Version scheint die vollständigen Spiel-Daten auf der Karte zu enthalten – was auch für die meisten anderen ersten Party-Nintendo-Switch-2-Physischen-Veröffentlichungen zutrifft.</p>         <p>Die Vorbestellung kann bei Amazon, Best Buy oder GameStop durchgeführt werden.</p>         <h3>Splatoon Raiders (Digitaler Code)</h3>         <p>Wenn du ein paar Dollar sparen möchtest, gibt es die digitale Version von Splatoon Raiders für $50. Der Trade-off hier ist, dass du keine physische Kopie des Spiels hast, aber ansonsten ist die digitale Version identisch mit der physischen. Digitale Vorbestellungen sind bei Amazon, Best Buy und GameStop verfügbar.</p>         <p><em>BytePost-Einordnung: Das neue Splatoon-Spiel bietet eine frische Perspektive auf die Serie und könnte Fans von Action-Spielen ansprechen. Die Vorbestellungsphase hat begonnen, und Spieler können sich auf ein unterhaltsames Erlebnis freuen.</em></p>     ",
+            "content_simple": "         <p>Splatoon Raiders ist ein neues Spiel in der Splatoon-Serie und wird am 23. Juli veröffentlicht. Es ist ein Single-Player-Spiel, bei dem du gegen Monster kämpfst und nach Schätzen suchst. Es gibt auch eine kooperative Version, bei der Freunde beitreten können.</p>         <p>Das Spiel ist für die Switch 2 konzipiert und kann vorbestellt werden. Es gibt eine physische und eine digitale Version. Die physische Version kostet 60 Dollar und die digitale Version 50 Dollar.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Splatoon Raiders ist ein exklusives Spiel für die Switch 2 und basiert auf der Switch-2-Architektur. Es ist ein Single-Player-Spiel mit kooperativen Elementen und verwendet die gleiche Spiel-Engine wie die Vorgänger.</p>         <p>Die Spiel-Engine ist optimiert für die Switch-2-Hardware und bietet eine hohe Framerate und detaillierte Grafiken. Das Spiel verwendet auch die Amiibo-Funktion der Switch 2, um spezielle Inhalte und Boni freizuschalten.</p>         <p>Die digitale Version des Spiels ist identisch mit der physischen Version und bietet die gleichen Funktionen und Inhalte. Die Vorbestellung kann bei verschiedenen Online-Händlern durchgeführt werden.</p>     ",
+            "date": "25.04.2026",
+            "id": "9aa8d679",
+            "url": "https://www.gamespot.com/articles/splatoon-raiders-buying-guide/1100-6539546/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9aa8d679.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "security",
                 "dev"
             ],
@@ -34638,10 +34904,10 @@
         }
     ],
     "bytepulse": {
-        "date": "22.04.2026",
-        "positiv": 62,
-        "neutral": 25,
-        "kritisch": 12,
-        "total": 8
+        "date": "25.04.2026",
+        "positiv": 44,
+        "neutral": 44,
+        "kritisch": 11,
+        "total": 9
     }
 }
