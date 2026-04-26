@@ -115,7 +115,7 @@
                 "sleep": 0
             },
             "image_local": "images/59f9db7d.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Bot-Erkennung, einst eine solide Barriere gegen automatisierte Angriffe, ist gefallen: KI-Assistenten haben gelernt, sie zu überwinden. Das bedeutet, dass Entwickler ihre Sicherheitsstrategien grundlegend überdenken müssen, um vor den neuen, intelligenten Bedrohungen gewappnet zu sein. Die Zukunft der Cybersicherheit hängt davon ab, wie schnell Entwickler auf diese veränderte Landschaft reagieren können."
         },
         {
