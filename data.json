@@ -2,6 +2,36 @@
     "articles": [
         {
             "cat": [
+                "hardware",
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Valve Steam Controller",
+            "source": "PC Gamer",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "0127ec63",
+                "6705e9a6",
+                "85029998"
+            ],
+            "content": "         <h3>Valve bestätigt Steam-Controller-Preis und -Veröffentlichungstermin</h3>         <p>Valve hat den Preis und den Veröffentlichungstermin für den Steam-Controller bestätigt. Der Steam-Controller wird am Montag, den 4. Mai, für 85 £/99 $/99 € veröffentlicht.</p>         <p>Obwohl die Pläne für eine gleichzeitige Veröffentlichung von drei Hardware-Komponenten durch die anhaltenden RAM-Engpässe zunichtegemacht wurden, hat Valve entschieden, den Steam-Controller ohne die Steam Machine oder Steam Frame zu veröffentlichen.</p>         <p>Der Steam-Controller hat sich in unseren Tests als ein gutes Gamepad erwiesen. Er ist bequem und multifunktional genug, um andere teurere Gamepads zu ersetzen.</p>         <h3>Preis und Verfügbarkeit</h3>         <p>Der Preis von 85 £/99 $/99 € kann für einige Benutzer teuer sein. Es bleibt abzuwarten, ob der Steam-Controller ohne die Steam Machine oder Steam Frame erfolgreich sein wird.</p>         <p>Valve hat angekündigt, dass der Steam-Controller am 4. Mai verfügbar sein wird. Die Steam Machine und Steam Frame werden voraussichtlich später im Jahr 2026 veröffentlicht.</p>         <p>Wir werden in den nächsten Tagen weitere Informationen über den Steam-Controller und die Pläne von Valve veröffentlichen.</p>         <p><em>BytePost-Einordnung: Der Steam-Controller ist ein interessantes Produkt, das die Gaming-Community beobachten wird. Es bleibt abzuwarten, ob er erfolgreich sein wird und ob die Steam Machine und Steam Frame bald folgen werden.</em></p>     ",
+            "content_simple": "         <p>Valve hat den Steam-Controller veröffentlicht. Er kostet 85 £/99 $/99 € und ist ab dem 4. Mai erhältlich.</p>         <p>Der Steam-Controller ist ein gutes Gamepad, das bequem und multifunktional ist. Es bleibt abzuwarten, ob er erfolgreich sein wird.</p>     ",
+            "content_pro": "         <h3>Technische Details des Steam-Controllers</h3>         <p>Der Steam-Controller verwendet tunnel magnetoresistance thumbsticks, die für eine präzise Steuerung sorgen.</p>         <p>Der Controller ist kompatibel mit Windows-Systemen und kann für verschiedene Anwendungen verwendet werden.</p>         <p>Die Entscheidung von Valve, den Steam-Controller ohne die Steam Machine oder Steam Frame zu veröffentlichen, ist interessant. Es bleibt abzuwarten, ob dies eine gute Entscheidung war.</p>         <p><pre><code>Kein Beispielcode verfügbar</code></pre></p>     ",
+            "date": "28.04.2026",
+            "id": "6a06385c",
+            "url": "https://www.rockpapershotgun.com/valve-have-confirmed-the-steam-controller-price-and-release-date-though-the-steam-machine-is-still-in-ram-price-purgatory",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6a06385c.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
                 "business",
                 "dev"
             ],
@@ -34904,10 +34934,10 @@
         }
     ],
     "bytepulse": {
-        "date": "25.04.2026",
-        "positiv": 44,
-        "neutral": 44,
-        "kritisch": 11,
-        "total": 9
+        "date": "28.04.2026",
+        "positiv": 0,
+        "neutral": 100,
+        "kritisch": 0,
+        "total": 1
     }
 }
