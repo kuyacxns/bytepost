@@ -28,7 +28,7 @@
                 "sleep": 0
             },
             "image_local": "images/6a06385c.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
