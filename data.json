@@ -2,6 +2,299 @@
     "articles": [
         {
             "cat": [
+                "dev",
+                "hardware"
+            ],
+            "icon": "🚁",
+            "title": "Firestorm Labs baut Drohnenfabriken",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "babe5c49",
+                "70934c02",
+                "86d0745b"
+            ],
+            "content": "         <h3>Firestorm Labs: Die Revolution in der Drohnenproduktion</h3>         <p>Ein Verteidigungs-Startup namens Firestorm Labs hat kürzlich 82 Millionen Dollar an Investitionen gesammelt, um seine Innovation voranzutreiben: Drohnenfabriken, die in Containern untergebracht sind und somit direkt an die Frontlinie gebracht werden können.</p>         <p>Das Problem, das Firestorm Labs lösen will, ist die Entfernung zwischen den traditionellen Drohnenfabriken und den Konfliktzonen. In einem pazifischen Konflikt liegt die nächste US-Drohnenfabrik tausende Meilen entfernt. Schiffe und Flugzeuge, die Teile zur Frontlinie transportieren, wären anfällig für Angriffe.</p>         <p>Firestorm Labs CEO Dan Magy ist ein erfahrener Unternehmer im Verteidigungsbereich. Seine Mitgründer bringen komplementäre Hintergründe mit: Chad McCoy ist ein Veteran der Spezialeinheiten, und CTO Ian Muceus hält über ein Dutzend Patente im 3D-Druck.</p>         <p>Das San Diego-basierte Startup produziert xCell, eine containerisierte Fertigungsplattform, die Drohnen-Systeme in weniger als 24 Stunden drucken kann. Die Drohnen sind nicht auf einen einzigen Zweck festgelegt. Je nach Missionsanforderungen können sie für Überwachung oder elektronische Kriegsführung konfiguriert werden, sagte Magy gegenüber TechCrunch.</p>         <h3>Einsatz und Finanzierung</h3>         <p>Firestorm Labs generiert Einnahmen durch Hardware-Verkäufe und Regierungsverträge mit allen Zweigen der US-Militär. Der Vertrag mit der Luftwaffe hat ein Deckenlimit von 100 Millionen Dollar, obwohl bisher nur 27 Millionen Dollar verpflichtet wurden.</p>         <p>Die Technologie wurde bereits in der realen Welt eingesetzt. Zwei xCell-Einheiten sind derzeit innerhalb der USA stationiert, eine bei der Air Force Research Laboratory in Rom, New York, und eine bei der Air Force Special Operations Command in Florida, sagte Magy.</p>         <h3>Produktionsprozess</h3>         <p>In jedem xCell-Container ist ein industrietauglicher HP-3D-Drucker, der den Körper und die Hülle jeder Drohne druckt. Im Rahmen des Deals hält Firestorm eine fünfjährige globale Exklusivvereinbarung mit HP, um deren 3D-Druck-Technologie in mobilen Einheiten zu nutzen, sagte Magy.</p>         <p>Die Waffen selbst werden nicht gedruckt und werden separat hinzugefügt, so Magy. Die Armee hat xCell auch verwendet, um Ersatzteile für ein Bradley-Kampffahrzeug vor Ort zu drucken, Teile, die normalerweise Monate dauern würden, um sie zu beschaffen, so der CEO.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von Firestorm Labs könnte den Verteidigungssektor revolutionieren, indem sie die Produktion von Drohnen direkt an die Frontlinie bringt. Dies könnte die Logistik und die Reaktionszeit im Konfliktfall erheblich verbessern.</em></p>     ",
+            "content_simple": "         <p>Ein Unternehmen namens Firestorm Labs hat eine innovative Lösung für die Herstellung von Drohnen entwickelt. Sie baut Drohnenfabriken in Containern, die direkt an die Frontlinie gebracht werden können.</p>         <p>Dies hilft, die Entfernung zwischen den traditionellen Fabriken und den Konfliktzonen zu überbrücken und macht die Lieferung von Teilen und Drohnen sicherer.</p>     ",
+            "content_pro": "         <h3>Architektur und Technologie</h3>         <p>Die xCell-Plattform von Firestorm Labs besteht aus einem containerisierten 3D-Druck-System, das auf HP-Technologie basiert. Dies ermöglicht die schnelle Fertigung von Drohnen-Systemen direkt an der Frontlinie.</p>         <p>Die Drohnen selbst sind modular konzipiert und können je nach Missionsanforderungen konfiguriert werden. Dies bietet eine hohe Flexibilität und Anpassungsfähigkeit in unterschiedlichen Konfliktsszenarien.</p>         <h3>Sicherheitsaspekte</h3>         <p>Die direkte Produktion von Drohnen an der Frontlinie reduziert die Abhängigkeit von langen Lieferketten und macht die Drohnen weniger anfällig für Angriffe während des Transports.</p>         <p>Es ist jedoch wichtig, die Sicherheit der Drohnen und ihrer Komponenten zu gewährleisten, insbesondere wenn es um sensible militärische Operationen geht.</p>     ",
+            "date": "30.04.2026",
+            "id": "88247f3a",
+            "url": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/88247f3a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Microsoft veröffentlicht DOS-Quellcode",
+            "source": "Microsoft",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "88247f3a",
+                "70934c02",
+                "86d0745b"
+            ],
+            "content": "         <h3>Microsoft veröffentlicht frühesten bekannten DOS-Quellcode</h3>         <p>Microsoft hat zum 45. Geburtstag von 86-DOS die frühesten bekannten Quellcode-Listings veröffentlicht. Diese Listings wurden von vergilbten Endlospapierausdrucken transkribiert.</p>         <p>Dieser Schritt ist ein wichtiger Meilenstein in der Geschichte der Computer-Entwicklung. Der Quellcode gibt Einblick in die Entwicklung von 86-DOS, das später zu MS-DOS wurde und eine wichtige Rolle in der Geschichte der Personal Computer spielte.</p>         <p>Die Veröffentlichung des Quellcodes ermöglicht es Entwicklern und Historikern, die Entwicklung von 86-DOS und MS-DOS genauer zu studieren und besser zu verstehen.</p>         <h3>Historische Bedeutung</h3>         <p>86-DOS wurde 1977 von Gary Kildall entwickelt und war eines der ersten Betriebssysteme für Personal Computer. Microsoft erwarb die Rechte an 86-DOS und entwickelte es weiter zu MS-DOS, das in den 1980er Jahren das dominierende Betriebssystem für Personal Computer wurde.</p>         <p>Der Quellcode von 86-DOS ist von großer historischer Bedeutung, da er die Entwicklung von Betriebssystemen und die Geschichte der Personal Computer dokumentiert.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung des Quellcodes von 86-DOS ist ein wichtiger Schritt in der Dokumentation der Geschichte der Computer-Entwicklung. Sie ermöglicht es Entwicklern und Historikern, die Entwicklung von Betriebssystemen und die Geschichte der Personal Computer besser zu verstehen.</em></p>     ",
+            "content_simple": "         <p>Microsoft hat den Quellcode von 86-DOS veröffentlicht. Das ist ein wichtiger Teil der Geschichte der Computer-Entwicklung.</p>         <p>Der Quellcode ist wie ein Rezeptbuch für die Entwicklung von Betriebssystemen. Er zeigt, wie die Entwicklung von 86-DOS und MS-DOS ablief.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Quellcode von 86-DOS ist in einer alten Programmiersprache geschrieben. Er zeigt, wie die Entwicklung von Betriebssystemen in den 1970er Jahren ablief.</p>         <p>Der Quellcode ist von großer technischer Bedeutung, da er die Entwicklung von Betriebssystemen und die Geschichte der Personal Computer dokumentiert.</p>     ",
+            "date": "30.04.2026",
+            "id": "babe5c49",
+            "url": "https://www.heise.de/news/Microsoft-veroeffentlicht-fruehesten-bekannten-DOS-Quellcode-11277117.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/babe5c49.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "TypeScript 7.0 Beta veröffentlicht",
+            "source": "TypeScript Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "86d0745b"
+            ],
+            "content": " <h3>TypeScript 7.0 Beta ist da</h3> <p>Wir freuen uns sehr, die Veröffentlichung von TypeScript 7.0 Beta ankündigen zu können! Wenn du der Entwicklung von TypeScript 7.0 nicht gefolgt bist, ist diese Veröffentlichung insofern bedeutsam, als sie auf einer völlig neuen Grundlage aufbaut. Im Laufe des letzten Jahres haben wir den bestehenden TypeScript-Code von TypeScript selbst (als bootgestarteter Code, der in JavaScript kompiliert wird) auf Go umgestellt.</p> <p>Mit einer Kombination aus nativer Code-Geschwindigkeit und gemeinsamer Speicher-Parallelität ist TypeScript 7.0 oft etwa 10 Mal schneller als TypeScript 6.0. Lass dich nicht von dem „Beta“-Label täuschen – du kannst diese Version wahrscheinlich sofort in deiner täglichen Arbeit verwenden. Der neue Go-Code wurde methodisch aus unserer bestehenden Implementierung übernommen und nicht von Grund auf neu geschrieben, und seine Typ-Überprüfungslogik ist strukturell identisch mit TypeScript 6.0.</p> <h3>Stabilität und Kompatibilität</h3> <p>Diese Architektur-Parität stellt sicher, dass der Compiler weiterhin die gleichen Semantiken durchsetzt, auf die du bereits vertraust. TypeScript 7.0 wurde gegen unsere enorme Test-Suite getestet, die wir über einen Zeitraum von einem Jahrzehnt aufgebaut haben, und wird bereits in mehreren Codebasen mit Millionen von Zeilen innerhalb und außerhalb von Microsoft verwendet. Es ist sehr stabil, sehr kompatibel und bereit, in deinen täglichen Workflows und CI-Pipelines getestet zu werden.</p> <p>Über einen Zeitraum von einem Jahr haben wir mit vielen internen Microsoft-Teams sowie Teams bei Unternehmen wie Bloomberg, Canva, Figma, Google, Lattice, Linear, Miro, Notion, Slack, Vanta, Vercel, VoidZero und mehr zusammengearbeitet, um Vorab-Versionen von TypeScript 7.0 auf ihren Codebasen auszuprobieren. Die Rückmeldungen waren durchweg positiv, und viele Teams berichten von ähnlichen Geschwindigkeitsverbesserungen, indem sie die meisten ihrer Build-Zeiten abschneiden, und genießen eine viel leichtere und fluidere Bearbeitungserfahrung.</p> <h3>Installation und Verwendung</h3> <p>Um TypeScript 7.0 Beta zu installieren, kannst du es über npm installieren: <code>npm install -D @typescript/native-preview@beta</code>. Beachte, dass der Paketname in einer zukünftigen Version schließlich „typescript“ lauten wird. Von dort aus kannst du <code>tsgo</code> anstelle des <code>tsc</code>-Ausführbaren ausführen.</p> <p>Um die Bearbeitungserfahrung auszuprobieren, kannst du die TypeScript Native Preview-Erweiterung für VS Code installieren. Die Editierunterstützung ist sehr solide und wurde von vielen Teams bereits monatelang verwendet. Es ist eine einfache, reibungslose Möglichkeit, TypeScript 7.0 auf deiner Codebasis sofort auszuprobieren.</p> <p>Um TypeScript 7.0 side-by-side mit TypeScript 6.0 zu verwenden, wird diese Beta-Version über den Paketnamen <code>@typescript/native-preview</code> mit dem Eintragspunkt <code>tsgo</code> bereitgestellt. Als Teil des Übergangsprozesses von 6.0 auf 7.0 haben wir ein neues Kompatibilitätspaket, <code>@typescript/typescript6</code>, veröffentlicht. Dieses Paket stellt einen neuen Eintragspunkt <code>tsc6</code> bereit, sodass du (falls erforderlich) die nächste Version von TypeScript 7.0 (die ein <code>tsc</code>-Binär bereitstellen wird) side-by-side ohne Namenskonflikte ausführen kannst.</p> <p><em>BytePost-Einordnung: Mit der Veröffentlichung von TypeScript 7.0 Beta wird die Zukunft der TypeScript-Entwicklung sehr vielversprechend. Die neuen Funktionen und Verbesserungen, insbesondere die Portierung auf die Go-Grundlage, könnten die Produktivität und Effizienz von Entwicklern erheblich steigern.</em></p> ",
+            "content_simple": " <p>TypeScript 7.0 Beta ist eine neue Version der beliebten Programmiersprache. Sie wurde auf einer völlig neuen Grundlage aufgebaut und ist bis zu 10 Mal schneller als die Vorgängerversion. Du kannst sie sofort in deiner täglichen Arbeit verwenden, ohne dass du Änderungen an deinem Code vornehmen musst.</p> <p>Die neue Version ist sehr stabil und kompatibel, und es gibt bereits viele Teams, die sie in ihren Codebasen verwenden. Es gibt auch eine Erweiterung für den Editor VS Code, die die Bearbeitungserfahrung noch einfacher und fluider macht.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die Portierung von TypeScript auf die Go-Grundlage war ein ambitioniertes Projekt. Durch die Verwendung von Go konnte die Geschwindigkeit von TypeScript erheblich verbessert werden. Die Typ-Überprüfungslogik ist strukturell identisch mit TypeScript 6.0, was bedeutet, dass die Semantik der Sprache nicht geändert wurde.</p> <p>Die neue Version verwendet auch die Sprache-Server-Protokoll, was bedeutet, dass sie leicht in die meisten modernen Editoren integriert werden kann. Es gibt auch ein neues Kompatibilitätspaket, das es ermöglicht, TypeScript 7.0 side-by-side mit TypeScript 6.0 zu verwenden.</p> ",
+            "date": "30.04.2026",
+            "id": "70934c02",
+            "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/70934c02.jpg",
+            "pick": true,
+            "pick_reason": "Die Zukunft der Entwicklung hat begonnen: Mit der Veröffentlichung von TypeScript 7.0 Beta stehen Entwickler vor einer neuen Ära der Qualität und Sicherheit in ihrer Arbeit. Diese Version bringt entscheidende Verbesserungen mit sich, die nicht nur die Produktivität steigern, sondern auch die Fehleranfälligkeit von Code reduzieren. Entwickler sollten sich nun mit den Neuerungen auseinandersetzen, um ihre Projekte auf das nächste Level zu heben."
+        },
+        {
+            "cat": [
+                "dev",
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "Rust Workers gewinnen an Zuverlässigkeit",
+            "source": "Cloudflare Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": " <h3>Rust Workers und die Herausforderung der Fehlerbehebung</h3> <p>Rust Workers laufen auf der Cloudflare Workers-Plattform, indem sie Rust-Code in WebAssembly compilieren. Leider hat WebAssembly einige scharfe Kanten. Wenn etwas schiefgeht und ein Panic oder ein unerwarteter Abort auftritt, kann der Runtime-Zustand undefiniert bleiben. Für Benutzer von Rust Workers waren Panics historisch gesehen fatal und konnten die gesamte Instanz vergiften, möglicherweise sogar für eine bestimmte Zeit die Worker lahmlegen.</p> <p>Die Wurzel des Problems lag in wasm-bindgen, dem Kernprojekt, das die Rust-to-JavaScript-Bindings generiert, auf denen Rust Workers angewiesen sind. wasm-bindgen hatte ursprünglich keine integrierten Wiederherstellungssemantiken. In diesem Artikel teilen wir mit, wie die neueste Version von Rust Workers umfassende Wasm-Fehlerbehebung ermöglicht, die dieses Abort-induzierte Sandbox-Vergiftungsproblem löst.</p> <h3>Implementierung von panic=unwind mit WebAssembly Exception Handling</h3> <p>Die Abort-Wiederherstellungsmechanismen gewährleisten, dass ein Worker einen Fehler überleben kann, aber sie tun dies, indem sie die gesamte Anwendung neu initialisieren. Für stateless Request-Handler ist dies in Ordnung. Aber für Workloads, die bedeutungsvolle Daten im Speicher halten, wie z.B. Durable Objects, bedeutet dies, dass der gesamte Speicherzustand verloren geht. Ein einzelner Panic in einem Request könnte den gesamten Speicherzustand, der von anderen konkurrierenden Requests verwendet wird, löschen.</p> <p>Um Panics ohne Verlust des Zustands zu erholen, benötigen wir panic=unwind-Unterstützung für wasm32-unknown-unknown in wasm-bindgen, ermöglicht durch den WebAssembly Exception Handling-Vorschlag, der im Jahr 2023 breite Motorenunterstützung erhielt.</p> <p>Als Beispiel: Wenn wir mit RUSTFLAGS='-Cpanic=unwind' cargo build -Zbuild-std compilieren, wird die Standardbibliothek mit Unterstützung für panic unwinding neu aufgebaut und es wird Code mit ordnungsgemäßer Panikentflechtung generiert.</p> <h3>Fazit</h3> <p>Durch die Integration von panic=unwind-Unterstützung und Abort-Wiederherstellungsmechanismen in wasm-bindgen konnten die Entwickler von Cloudflare eine zuverlässigere und roboustere Lösung für Rust Workers bereitstellen.</p> <p><em>BytePost-Einordnung: Diese Entwicklung ist ein wichtiger Schritt in Richtung zuverlässigerer und skalierbarerer Web-Anwendungen. Durch die Möglichkeit, Panics und Aborts in Rust-Code zuverlässig zu beheben, können Entwickler komplexere Anwendungen erstellen, ohne Angst vor unvorhersehbaren Fehlern haben zu müssen.</em></p> ",
+            "content_simple": " <p>Rust Workers sind ein Werkzeug, das es Entwicklern ermöglicht, ihre Anwendungen auf der Cloudflare-Plattform zu hosten. Bislang waren jedoch Fehler in Rust-Code oft fatal und konnten die gesamte Anwendung lahmlegen. Durch eine neue Entwicklung können nun Fehler in Rust-Code zuverlässig behoben werden, ohne dass die Anwendung neu gestartet werden muss.</p> <p>Dies ist ein großer Schritt in Richtung zuverlässigerer und skalierbarerer Web-Anwendungen. Entwickler können nun komplexere Anwendungen erstellen, ohne Angst vor unvorhersehbaren Fehlern haben zu müssen.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die Implementierung von panic=unwind in wasm-bindgen ermöglicht es, Panics in Rust-Code zuverlässig zu beheben, ohne dass die gesamte Anwendung neu initialisiert werden muss. Dies wird durch die Verwendung von WebAssembly Exception Handling ermöglicht, das im Jahr 2023 breite Motorenunterstützung erhielt.</p> <p>Die Verwendung von RUSTFLAGS='-Cpanic=unwind' ermöglicht es, die Standardbibliothek mit Unterstützung für panic unwinding neu aufzubauen. Durch die Kombination von panic=unwind und Abort-Wiederherstellungsmechanismen kann die Zuverlässigkeit von Rust-Code in WebAssembly-Anwendungen erheblich verbessert werden.</p> <h3>Kritische Einordnung</h3> <p>Die Implementierung von panic=unwind in wasm-bindgen ist ein wichtiger Schritt in Richtung zuverlässigerer und skalierbarerer Web-Anwendungen. Durch die Möglichkeit, Panics und Aborts in Rust-Code zuverlässig zu beheben, können Entwickler komplexere Anwendungen erstellen, ohne Angst vor unvorhersehbaren Fehlern haben zu müssen.</p> ",
+            "date": "30.04.2026",
+            "id": "86d0745b",
+            "url": "https://blog.cloudflare.com/making-rust-workers-reliable/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/86d0745b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Hacker ausnutzen Qinglong-Schwachstellen",
+            "source": "The Register",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": "         <h3>Hackers nutzen Qinglong-Schwachstellen aus</h3>         <p>Hackers nutzen zwei Authentifizierungs-Schwachstellen in dem Open-Source-Task-Scheduling-Tool Qinglong aus, um Kryptominer auf den Servern von Entwicklern zu installieren.</p>         <p>Um fortzufahren, aktivieren Sie bitte JavaScript und Cookies.</p>         <h3>Details der Schwachstellen</h3>         <p>Die beiden Schwachstellen ermöglichen es Angreifern, die Authentifizierung zu umgehen und somit unbefugten Zugriff auf die Systeme zu erlangen.</p>         <p>Es ist wichtig, dass Entwickler ihre Systeme überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben, um sich vor solchen Angriffen zu schützen.</p>         <h3>Empfehlungen für Entwickler</h3>         <p>Entwickler sollten ihre Qinglong-Installationen überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben.</p>         <p>Es ist auch ratsam, die Systeme regelmäßig zu überwachen, um unbefugten Zugriff zu erkennen und zu verhindern.</p>         <p><em>BytePost-Einordnung: Entwickler sollten ihre Systeme unbedingt überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben, um sich vor solchen Angriffen zu schützen.</em></p>     ",
+            "content_simple": "         <p>Hacker haben zwei Schwachstellen in einem Tool namens Qinglong gefunden, das von Entwicklern verwendet wird, um Aufgaben zu planen.</p>         <p>Sie nutzen diese Schwachstellen aus, um Kryptominer auf den Servern der Entwickler zu installieren. Das bedeutet, dass sie die Rechenleistung der Server für ihre eigenen Zwecke nutzen.</p>         <p>Entwickler sollten ihre Systeme überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben, um sich vor solchen Angriffen zu schützen.</p>     ",
+            "content_pro": "         <h3>Technische Details der Schwachstellen</h3>         <p>Die beiden Schwachstellen in Qinglong ermöglichen es Angreifern, die Authentifizierung zu umgehen und somit unbefugten Zugriff auf die Systeme zu erlangen.</p>         <p>Es ist wichtig, dass Entwickler ihre Systeme überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben, um sich vor solchen Angriffen zu schützen.</p>         <h3>Empfehlungen für Entwickler</h3>         <p>Entwickler sollten ihre Qinglong-Installationen überprüfen und sicherstellen, dass sie die neuesten Sicherheitspatches installiert haben.</p>         <p>Es ist auch ratsam, die Systeme regelmäßig zu überwachen, um unbefugten Zugriff zu erkennen und zu verhindern.</p>     ",
+            "date": "30.04.2026",
+            "id": "626edd94",
+            "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/626edd94.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "OpenAI integriert GPT-5.5 in Microsoft Foundry",
+            "source": "Microsoft Azure Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "758d58ca",
+                "b8193c89"
+            ],
+            "content": " <h3>OpenAI’s GPT-5.5 in Microsoft Foundry</h3> <p>OpenAI’s GPT-5.5 wird in Microsoft Foundry allgemein verfügbar sein und bringt OpenAI’s neuestes Frontiers-Modell zu Azure und den Unternehmens-Teams, die Agenten für echte Produktionsarbeiten bauen.</p> <p>GPT-5.5 setzt eine klare Entwicklung in der GPT-5-Serie fort. GPT-5 brachte einheitliche Denkfähigkeit und Geschwindigkeit in ein einziges System. GPT-5.4 brachte stärkere multi-schrittige Denkfähigkeit und frühe Agenten-Fähigkeiten für Unternehmensanwendungen.</p> <p>GPT-5.5 verbessert diese Entwicklungen mit tieferer langem Kontext-Denkfähigkeit, zuverlässigerer Agenten-Ausführung, verbesserter Computer-Genauigkeit und größerer Token-Effizienz - konzipiert für anhaltende, hochriskante professionelle Workflows.</p> <h3>Was ist neu in GPT-5.5</h3> <p>GPT-5.5 ist für professionelle Szenarien entwickelt, in denen Präzision, Zuverlässigkeit und Ausdauer wichtig sind. GPT-5.5 Pro, einePremium-Variante, erweitert die Denktiefe und die Komplexität von Aufgaben für die anspruchsvollsten Unternehmens-Workloads.</p> <p>Verbesserte Agenten-Codierung und Computer-Nutzung: Führt multi-schrittige Ingenieuraufgaben von Anfang bis Ende aus - hält Kontext über große Systeme, diagnostiziert die Ursache von mehrdeutigen Fehlern auf der Architektursebene und denkt durch, was sonst im Code beeinflusst wird, bevor es eine Änderung vornimmt.</p> <p>Autonome Ausführung und Forschungstiefe: Geht über Code hinaus, um den gesamten Umfang professioneller Arbeit zu bewältigen - produziert polierte Inhalte wie Dokumente, Tabellen und Präsentationen.</p> <h3>Microsoft Foundry: Die Plattform für GPT-5.5-Agenten im großem Maßstab</h3> <p>Microsoft Foundry bietet die Plattform, die Frontier-Modelle in nutzbare, regierbare Systeme umwandelt, die es Unternehmen ermöglichen, Sicherheitspolitik und -verwaltung auf Plattformebene anzuwenden.</p> <ul>     <li>Broad Model Choice</li>     <li>Offene und flexible Agenten-Frameworks</li>     <li>Native Integration mit Unternehmenssystemen und Produktivitätstools</li>     <li>Unternehmensklasse-Sicherheit, Compliance und Governance</li> </ul> <p><em>BytePost-Einordnung: Die Integration von GPT-5.5 in Microsoft Foundry ermöglicht es Unternehmen, die neuesten KI-Modelle mit Unternehmens-gradiger Infrastruktur zu kombinieren und somit den Einsatz von KI in Produktionsumgebungen zu erleichtern.</em></p> ",
+            "content_simple": " <p>Der KI-Experte OpenAI hat sein neuestes Modell GPT-5.5 in die Microsoft-Plattform Foundry integriert. Damit können Unternehmen jetzt die Vorteile der KI nutzen, um ihre Arbeit zu automatisieren und zu verbessern.</p> <p>GPT-5.5 ist ein leistungsfähiges Modell, das in der Lage ist, komplexe Aufgaben zu lösen und präzise Ergebnisse zu liefern. Es kann beispielsweise Texte verfassen, Code schreiben und sogar komplexe Ingenieuraufgaben lösen.</p> ",
+            "content_pro": " <h3>Technische Details von GPT-5.5</h3> <p>GPT-5.5 basiert auf einer neuen Architektur, die es ermöglicht, komplexere Denkprozesse zu simulieren und präzisere Ergebnisse zu liefern. Es verwendet eine Kombination von rekurrenten neuralen Netzen (RNNs) und Transformer-Modellen, um die Verarbeitung von langen Kontexten zu ermöglichen.</p> <p>Die Integration von GPT-5.5 in Microsoft Foundry ermöglicht es Unternehmen, die neuesten KI-Modelle mit Unternehmens-gradiger Infrastruktur zu kombinieren und somit den Einsatz von KI in Produktionsumgebungen zu erleichtern.</p> ",
+            "date": "30.04.2026",
+            "id": "67dc638f",
+            "url": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/67dc638f.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Agentic AI spart Token",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Der Artikel 'Agentic AI: How to Save on Tokens' auf Towards Data Science behandelt Möglichkeiten, wie Entwickler bei der Nutzung von Agentic AI Token sparen können. Der Artikel konzentriert sich auf verschiedene Strategien, um die Effizienz der Token-Nutzung zu verbessern.</p>         <h3>Strategien zur Token-Einsparung</h3>         <p>Der Artikel erwähnt mehrere Strategien, um Token bei der Nutzung von Agentic AI einzusparen. Dazu gehören:</p>         <ul>             <li>Caching: Durch die Zwischenspeicherung von häufig verwendeten Daten kann die Anzahl der benötigten Token reduziert werden.</li>             <li>Lazy-Loading: Durch das Laden von Daten nur dann, wenn sie tatsächlich benötigt werden, kann die Anzahl der benötigten Token minimiert werden.</li>             <li>Routing: Die optimale Auswahl der Routing-Strategie kann dazu beitragen, die Anzahl der benötigten Token zu reduzieren.</li>             <li>Compaction: Durch die Kompaktheit der Daten kann die Anzahl der benötigten Token minimiert werden.</li>         </ul>         <h3>Fazit</h3>         <p>Der Artikel bietet eine Vielzahl von Strategien, um bei der Nutzung von Agentic AI Token einzusparen. Durch die Anwendung dieser Strategien können Entwickler die Effizienz ihrer Anwendungen verbessern und Kosten sparen.</p>         <p><em>BytePost-Einordnung: Der Artikel bietet eine nützliche Übersicht über Strategien zur Token-Einsparung bei der Nutzung von Agentic AI. Durch die Anwendung dieser Strategien können Entwickler ihre Anwendungen effizienter gestalten und Kosten sparen.</em></p>     ",
+            "content_simple": "         <p>Agentic AI ist ein Tool, das Entwickler bei der Erstellung von künstlicher Intelligenz unterstützt. Es gibt jedoch Möglichkeiten, wie Entwickler bei der Nutzung von Agentic AI Geld sparen können. Dazu gehören das Zwischenspeichern von Daten, das Laden von Daten nur dann, wenn sie benötigt werden, und die optimale Auswahl der Routing-Strategie.</p>         <p>Durch die Anwendung dieser Strategien können Entwickler ihre Anwendungen effizienter gestalten und Kosten sparen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Artikel erwähnt verschiedene Strategien, um Token bei der Nutzung von Agentic AI einzusparen. Dazu gehören Caching, Lazy-Loading, Routing und Compaction. Diese Strategien können durch die Anwendung von Algorithmen und Datenstrukturen wie Hash-Tables und Graphen implementiert werden.</p>         <h3>Kritische Einordnung</h3>         <p>Die Anwendung dieser Strategien kann jedoch auch Nachteile haben, wie z.B. eine erhöhte Komplexität der Anwendung. Es ist daher wichtig, die Strategien sorgfältig auszuwählen und zu implementieren, um die besten Ergebnisse zu erzielen.</p>     ",
+            "date": "30.04.2026",
+            "id": "c08e7e23",
+            "url": "https://towardsdatascience.com/agentic-ai-how-to-save-on-tokens/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c08e7e23.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "Microsoft veröffentlicht .NET 11 Preview 3",
+            "source": "InfoQ",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": " <h3>Microsoft veröffentlicht .NET 11 Preview 3</h3> <p>Microsoft hat .NET 11 Preview 3 veröffentlicht, die dritte Vorschauversion der bevorstehenden Standard-Term-Support-Version, die für November 2026 geplant ist. Das Update umfasst Änderungen an der Laufzeit, dem SDK, Bibliotheken, ASP.NET Core, Entity Framework Core und .NET MAUI.</p> <p>Die Laufzeit bietet nun Unterstützung für NativeAOT und ReadyToRun. Der JIT-Compiler wurde weiter optimiert, um mehrfache Switch-Ausdrücke in branchless-Checks umzuwandeln, redundante Bounds-Checks auf Index-von-End-Zugriff zu entfernen und unsigned-Integer-zu-Float- und Double-Casts auf älteren x86-Hardware zu beschleunigen.</p> <h3>Neue Funktionen in ASP.NET Core und .NET MAUI</h3> <p>ASP.NET Core unterstützt nun Zstandard-Response-Compression und Request-Decompression, die standardmäßig aktiviert sind. Die Map-Control in .NET MAUI bietet nun Pin-Clustering, benutzerdefinierte Pin-Icons, benutzerdefinierte JSON-Styling und neue Klick-Ereignisse für Kreise, Polygone und Polylinien.</p> <p>Die Vorschauversion bietet auch Unterstützung für Android 17 und API 37. C# 15 unterstützt nun verbesserte IDE-Funktionen für die neuen Union-Typen, die in Preview 2 eingeführt wurden.</p> <p>Almir Vuk, Autor des Originalartikels, weist darauf hin, dass die vollständigen Release-Notizen auf dem dotnet/core-Repository auf GitHub verfügbar sind.</p> <p><em>BytePost-Einordnung: Die Veröffentlichung von .NET 11 Preview 3 ist ein wichtiger Schritt in der Entwicklung von .NET 11. Die neuen Funktionen und Optimierungen bieten Entwicklern mehr Möglichkeiten, ihre Anwendungen zu verbessern und zu erweitern.</em></p> ",
+            "content_simple": " <p>Microsoft hat eine neue Vorschauversion von .NET 11 veröffentlicht. Diese Version bietet neue Funktionen und Verbesserungen für Entwickler.</p> <p>Es gibt neue Optimierungen für die Laufzeit und den JIT-Compiler. ASP.NET Core unterstützt nun eine neue Art der Komprimierung und Dekomprimierung.</p> <p>Die Map-Control in .NET MAUI bietet nun neue Funktionen wie Pin-Clustering und benutzerdefinierte Pin-Icons.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die Laufzeit bietet nun Unterstützung für NativeAOT und ReadyToRun. Der JIT-Compiler wurde weiter optimiert, um mehrfache Switch-Ausdrücke in branchless-Checks umzuwandeln.</p> <pre><code>namespace System.Runtime.CompilerServices {     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false)]     public sealed class UnionAttribute : Attribute     {         public interface IUnion         {             object? Value { get; }         }     } }</code></pre> <p>Die Vorschauversion bietet auch Unterstützung für Android 17 und API 37. C# 15 unterstützt nun verbesserte IDE-Funktionen für die neuen Union-Typen.</p> <h3>Kritische Einordnung</h3> <p>Die Veröffentlichung von .NET 11 Preview 3 ist ein wichtiger Schritt in der Entwicklung von .NET 11. Die neuen Funktionen und Optimierungen bieten Entwicklern mehr Möglichkeiten, ihre Anwendungen zu verbessern und zu erweitern.</p> ",
+            "date": "30.04.2026",
+            "id": "5ecd12f0",
+            "url": "https://www.infoq.com/news/2026/04/dotnet-11-preview-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Mathematik in der KI-Forschung",
+            "source": "ArXiv",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": "         <h3>Die Rolle der Mathematik in der modernen KI-Forschung</h3>         <p>In den vergangenen zehn Jahren hat sich die Art und Weise, wie Fortschritte in der KI-Forschung erzielt werden, verändert. Während sorgfältig entworfene und mathematisch fundierte Architekturen nur marginale Verbesserungen bringt, führen rechenintensive und ingenieurgetriebene Bemühungen, die auf immer größere Trainingsdaten und Modellparameter zugeschnitten sind, zu bemerkenswerten neuen Fähigkeiten, die durch die bestehende Theorie nicht vorhersehbar sind.</p>         <p>Mathematik und Statistik, die einst die Hauptleitfäden der KI-Forschung waren, haben nun Schwierigkeiten, sofortige Einblicke in die neuesten Durchbrüche zu liefern. Dies ist nicht das erste Mal, dass empirischer Fortschritt in der KI-Forschung die theoretisch motivierten Ansätze überholt hat, doch die Größe der jüngsten Fortschritte hat uns gezwungen, die bittere Lektion [1] noch einmal zu schlucken.</p>         <h3>Die zunehmende Interdisziplinarität der KI-Forschung</h3>         <p>Durch diese Verschiebung wurde spekuliert, dass die Rolle der Mathematik in der KI-Forschung in Zukunft perhaps geringer werden könnte. Es ist bereits offensichtlich, dass die Mathematik die Bühne mit einem breiteren Spektrum an Perspektiven teilen wird (z.B. Biologie, die tiefere Erfahrungen damit hat, Schlussfolgerungen über irreduzibel komplexe Systeme zu ziehen, oder Sozialwissenschaften, da die KI immer tiefer in die Gesellschaft integriert wird).</p>         <p>Die zunehmende Interdisziplinarität der KI-Forschung sollte von allen Forschern als positive Entwicklung begrüßt werden. Wir argumentieren jedoch, dass die Mathematik genauso relevant bleibt wie eh und je; ihre Rolle verändert sich einfach.</p>         <h3>Beispiele für die Anwendung von Mathematik in der KI-Forschung</h3>         <p>Beispielsweise mag die Mathematik früher hauptsächlich theoretische Garantien für die Leistung von Modellen geliefert haben, sie könnte bald eher für post-hoc-Erklärungen von empirischen Phänomenen verwendet werden, die während des Modelltrainings und -betriebs beobachtet werden – eine Rolle, die derjenigen in der Physik ähnelt.</p>         <p>Ähnlich wie mathematische Intuition früher perhaps die Gestaltung handgefertigter Merkmale oder architektonischer Details auf granularer Ebene geleitet hat, könnte ihre Verwendung auf höhere Designentscheidungen wie die Anpassung der Architektur an die zugrunde liegende Aufgabenstruktur oder Daten-Symmetrien übergehen.</p>         <p>Keines von alledem ist gänzlich neu. Die Mathematik hat immer mehrere Zwecke in der KI-Forschung erfüllt. Nach allem ist das übersetzungsinvariante Konvolutions-Neuronale-Netzwerk, das die Idee der Architekturanpassung an Daten-Symmetrien veranschaulicht, jetzt über 40 Jahre alt.</p>         <p>Was sich ändert, sind die Arten von Problemen, bei denen die Mathematik den größten Einfluss haben wird und die Wege, auf denen sie am häufigsten angewendet wird.</p>         <h3>Die Auswirkungen der Skalierung auf die mathematische Forschung</h3>         <p> Eine faszinierende Konsequenz der Verschiebung hin zur Skalierung ist, dass sie den Umfang der auf die KI-Forschung anwendbaren mathematischen Gebiete erweitert hat. „Reine“ mathematische Gebiete wie Topologie, Algebra und Geometrie schließen sich jetzt den traditionelleren angewandten Gebieten der Wahrscheinlichkeitstheorie, Analysis und linearen Algebra an.</p>         <p>Diese reinen Gebiete haben sich über das letzte Jahrhundert hinweg entwickelt, um mit hohen Abstraktions- und Komplexitätsgraden umzugehen, und helfen Mathematikern dabei, Entdeckungen über Räume, algebraische Objekte und kombinatorische Prozesse zu machen, die auf den ersten Blick jenseits der menschlichen Intuition zu liegen scheinen.</p>         <p>Diese Fähigkeiten versprechen, viele der größten Herausforderungen im modernen Deep Learning anzugehen.</p>         <p>Wir werden in diesem Artikel mehrere Bereiche der aktuellen Forschung erkunden, die die anhaltende Fähigkeit der Mathematik demonstrieren, den Entdeckungs- und Verständigungsprozess in der KI-Forschung zu leiten.</p>         <p><em>BytePost-Einordnung: Die Verbindung zwischen Mathematik und KI-Forschung wird immer wichtiger. Durch die zunehmende Interdisziplinarität und die Anwendung von Mathematik in der KI-Forschung können neue Durchbrüche erzielt werden.</em></p>     ",
+            "content_simple": "         <p>Die Mathematik spielt in der KI-Forschung eine wichtige Rolle. Doch ändert sich deren Rolle durch die Skalierung und Interdisziplinarität in der Forschung. Sie unterstützt nun nicht mehr nur die Theorie, sondern auch die praktische Anwendung und Erklärung von Phänomenen.</p>         <p>Die Mathematik hilft uns, komplexe Systeme zu verstehen und neue Durchbrüche zu erzielen. Durch die Kombination von Mathematik und KI kann man neue Erkenntnisse gewinnen und die KI-Systeme verbessern.</p>     ",
+            "content_pro": "         <h3>Technische Details der mathematischen Anwendung in der KI-Forschung</h3>         <p>Die Mathematik kann dabei helfen, die Verbindung zwischen der Architektur von Neuronale Netzen und den zugrunde liegenden Daten-Symmetrien zu verstehen. Dies kann durch die Anwendung von Techniken wie der Differentialgeometrie und der Topologie erfolgen.</p>         <p>Ein Beispiel hierfür ist die Verwendung von Differentialgleichungen, um die Dynamik von Neuronale Netzen zu modellieren. Diese Gleichungen können helfen, die Stabilität und die Konvergenz der Netze zu analysieren.</p>         <pre><code>import numpy as np from scipy.integrate import odeint  # Definieren der Differentialgleichung def dyn(x, t, params):     # Implementierung der Differentialgleichung     dxdt = np.dot(params, x)     return dxdt  # Anwendung der Differentialgleichung x0 = np.array([1, 2, 3]) t = np.linspace(0, 10, 100) params = np.array([[1, 2], [3, 4]]) sol = odeint(dyn, x0, t, args=(params,))  print(sol)</code></pre>         <p>Das Ergebnis zeigt, wie die Mathematik verwendet werden kann, um die Dynamik von Neuronale Netzen zu modellieren und zu analysieren.</p>     ",
+            "date": "30.04.2026",
+            "id": "8c0a51d5",
+            "url": "https://thegradient.pub/shape-symmetry-structure/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8c0a51d5.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Arc Raiders: Dünger finden",
+            "source": "GameSpot",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "88247f3a",
+                "babe5c49",
+                "70934c02"
+            ],
+            "content": "         <h3>Wo findet man Dünger in Arc Raiders?</h3>         <p>Wenn du an dem Avian-Alarm-Projekt arbeitest oder einfach nur nach Dünger suchst, um es in Samen umzuwandeln, hast du vielleicht festgestellt, dass es in Arc Raiders nicht so häufig vorkommt wie andere Materialien. Tatsächlich gibt es nur wenige Orte im Spiel, an denen du mit einer hohen Wahrscheinlichkeit Dünger finden kannst, sodass du sehr spezifisch nach den besten Orten suchen musst, um es zu farmen. Glücklicherweise haben wir die besten Orte für dich, um Dünger zu finden.</p>         <p>Um Dünger in Arc Raiders zu finden, musst du typischerweise nach PflanzContainern in bestimmten Bereichen der Karte suchen. Obwohl diese Container statische Standorte haben, gibt es keine Garantie, dass du Dünger in ihnen findest, sodass es einige Zeit dauern kann, bis du das benötigte Quantum gefarmt hast. Du kannst Dünger auch in anderen Bereichen finden als den hier aufgeführten, aber diese Orte haben die höchste Konzentration an Containern, was sie zu den besten Optionen für das Farmen dieses Artikels macht.</p>         <h3>Dam Battlegrounds - Hydroponic Dome Complex</h3>         <p>Der beste Ort, um Dünger in Arc Raiders zu finden, ist wahrscheinlich innerhalb eines der drei Dome im Hydroponic Dome Complex auf Dam Battlegrounds.</p>         <p><em>BytePost-Einordnung: Die Suche nach Dünger in Arc Raiders kann eine Herausforderung sein, aber mit den richtigen Orten und einer Strategie kann man es erfolgreich farmen. Als Entwickler ist es interessant zu sehen, wie Spiele wie Arc Raiders Ressourcen-Management und Farmen in ihre Gameplay-Mechaniken integrieren.</em></p>     ",
+            "content_simple": "         <p>Wenn du in Arc Raiders Dünger suchst, kannst du in bestimmten Bereichen der Karte nach Pflanzcontainern suchen. Es gibt jedoch keine Garantie, dass du Dünger findest, also musst du vielleicht ein bisschen warten, bis du genug hast. Es gibt einige Orte, an denen du Dünger finden kannst, aber einige sind besser als andere.</p>         <p>Der beste Ort, um Dünger zu finden, ist der Hydroponic Dome Complex auf Dam Battlegrounds. Hier kannst du in den drei Domen nach Dünger suchen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Suche nach Dünger in Arc Raiders ist ein interessantes Beispiel für Ressourcen-Management in Spielen. Die Entwickler haben eine Mechanik implementiert, bei der Spieler nach bestimmten Ressourcen suchen müssen, um ihre Ziele zu erreichen. In diesem Fall ist Dünger eine Rare-Ressource, die in bestimmten Bereichen der Karte gefunden werden kann.</p>         <p>Die Implementierung dieser Mechanik erfordert eine sorgfältige Planung der Spielwelt und der Ressourcen-Verteilung. Die Entwickler müssen sicherstellen, dass die Spieler genug Chancen haben, Dünger zu finden, ohne dass es zu leicht oder zu schwierig wird.</p>     ",
+            "date": "30.04.2026",
+            "id": "383416b0",
+            "url": "https://www.gamespot.com/articles/where-to-find-fertilizer-in-arc-raiders/1100-6539708/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/383416b0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "hardware",
                 "gaming"
             ],
@@ -34934,10 +35227,10 @@
         }
     ],
     "bytepulse": {
-        "date": "28.04.2026",
-        "positiv": 0,
-        "neutral": 100,
-        "kritisch": 0,
-        "total": 1
+        "date": "30.04.2026",
+        "positiv": 60,
+        "neutral": 30,
+        "kritisch": 10,
+        "total": 10
     }
 }
