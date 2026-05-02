@@ -2,6 +2,35 @@
     "articles": [
         {
             "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Rebounder Spiel",
+            "source": "Rock, Paper, Shotgun",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "df8e69bd",
+                "3bc17c54",
+                "88247f3a"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Als Du diesen Artikel liest, wirst Du vielleicht an die alten Zeiten denken, in denen Du Dich um Coolness sorgtest. Ich hatte früher auch solche Sorgen, aber seit ich von Rebounder erfahren habe, ist diese Sorge wie ein Albatros von meinem Hals genommen. Rebounder ist ein Präzisions-Plattformspiel in einer vierfarbigen, pulp-print-Welt, entwickelt von ATOMIK-Entwicklern Thirtythree Games. Es erinnert mich an Comix Zone auf dem Mega Drive.</p>         <p>Du spielst als 2D-Astronaut, der sich durch das Greifen, Werfen und 'Rebounden' von explosiven Alien-Sporen fortbewegt. Das Spiel zieht seine Inspiration aus Kaizo-ROM-Hacks und 19. Jahrhundert Drucktechniken. Die Kombination aus Materialgeschichten ist beinahe zu clever, aber sie sieht in Bewegung hervorragend aus.</p>         <h3>Gameplay und Soundtrack</h3>         <p>Der Soundtrackconjunkt Bilder von moonwalkenden Krokodilen herauf. Ich meine, er tut es zumindest für mich. Seht euch den Trailer an. Ich gehe los, um 'Ben Day dots' zu googeln und herauszufinden, was sie mit Speedrunning zu tun haben. Rebounder Announcement Trailer ist auf YouTube verfügbar.</p>         <p>Die Entwickler erklären: 'Du spielst als ein crusty Arbeiter am Ende Deines Seils - auf einem Bauplatz in einer Welt, die sehr weit von hier entfernt ist. Du gehst zur Arbeit, befestigst Dich und fängst an zu arbeiten. Deine Aufgaben sind unklar. Aber die Leute nennen Dich Rebounder.' Die Level bestehen aus 'gleitenden Aufzügen, halluzinogener Milch, Kanonenkugellaunchern und scharfen Dornen'. Sie sind als kurz und geheimnisvoll beschrieben, mit einem Schwerpunkt darauf, nur so hart zu sein, wie Du sie machst.</p>         <h3>Playtest und Soundtrack-Geheimnisse</h3>         <p>Wenn ich den Text richtig lese, versteckt der Soundtrack auch einige Geheimnisse. Es ist sumptuos! SUMPTUOS, Nic. SUMPTUOUS SUMPTUOUS SUMPTUOUS. Es ist auch derzeit für Playtests geöffnet – Du kannst Dich über Steam anmelden.</p>         <p><em>BytePost-Einordnung: Rebounder bietet eine einzigartige Kombination aus Präzisions-Plattform-Gameplay und einer visuell ansprechenden, pulp-print-Welt. Die Inspiration aus Kaizo-ROM-Hacks und 19. Jahrhundert Drucktechniken sorgt für eine interessante Mischung aus Materialgeschichten. Der Soundtrack und die geheimnisvollen Level bieten weitere Herausforderungen für Entwickler, die nach neuen Ideen suchen.</em></p>     ",
+            "content_simple": "         <p>Stell Dir vor, Du bist ein Astronaut, der durch ein seltsames Universum reist. Du kannst Dich an Aliensporen binden und von ihnen abstoßen, um Dich fortzubewegen. Das ist das Spiel Rebounder, das von den Entwicklern Thirtythree Games erstellt wurde. Es sieht ein bisschen aus wie ein altes Comic und hat eine coole Atmosphäre.</p>         <p>Das Spiel hat auch eine tolle Musik, die Dich in eine andere Welt entführt. Die Level sind kurz und haben viele Geheimnisse, die Du entdecken kannst. Es ist wie ein großes Abenteuer, bei dem Du immer wieder neue Dinge entdecken kannst.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Rebounder ist ein Präzisions-Plattformspiel, das in einer vierfarbigen, pulp-print-Welt spielt. Die Entwickler haben sich von Kaizo-ROM-Hacks und 19. Jahrhundert Drucktechniken inspirieren lassen. Die Kombination aus Materialgeschichten ist beinahe zu clever, aber sie sieht in Bewegung hervorragend aus.</p>         <p>Die Spielmechanik basiert auf dem Greifen, Werfen und 'Rebounden' von explosiven Alien-Sporen. Die Level sind als kurz und geheimnisvoll beschrieben, mit einem Schwerpunkt darauf, nur so hart zu sein, wie Du sie machst. Der Soundtrack versteckt auch einige Geheimnisse, die Du entdecken kannst.</p>         <h3>Entwickler-Hinweise</h3>         <p>Die Entwickler haben Rebounder mit einer Mischung aus modernen und alten Techniken erstellt. Die Inspiration aus Kaizo-ROM-Hacks und 19. Jahrhundert Drucktechniken sorgt für eine interessante Mischung aus Materialgeschichten. Der Soundtrack und die geheimnisvollen Level bieten weitere Herausforderungen für Entwickler, die nach neuen Ideen suchen.</p>     ",
+            "date": "02.05.2026",
+            "id": "3baed4c7",
+            "url": "https://www.rockpapershotgun.com/alas-you-and-i-will-never-look-and-sound-as-good-as-rebounder",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3baed4c7.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
                 "ki"
             ],
             "icon": "🤖",
@@ -27,7 +56,7 @@
                 "sleep": 0
             },
             "image_local": "images/df8e69bd.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Revolution in der KI-Bildgenerierung ist in voller Fahrt: ChatGPT Images 2.0 feiert einen sensationellen Erfolg in Indien und verschiebt damit die Grenzen dessen, was möglich ist. Dieser Durchbruch wirft Fragen über die Zukunft der Bildbearbeitung und -generierung auf und könnte die Art und Weise, wie Entwickler mit Bildinhalten arbeiten, grundlegend verändern. Entwickler sollten genau hinsehen, denn die Implikationen für ihre eigenen Projekte könnten enorm sein."
         },
         {
@@ -35286,10 +35315,10 @@
         }
     ],
     "bytepulse": {
-        "date": "01.05.2026",
-        "positiv": 50,
-        "neutral": 50,
+        "date": "02.05.2026",
+        "positiv": 100,
+        "neutral": 0,
         "kritisch": 0,
-        "total": 2
+        "total": 1
     }
 }
