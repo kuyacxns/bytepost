@@ -2,6 +2,214 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "21 europäische Startups im Fokus",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "5a377d8b",
+                "02da0cd1",
+                "87de81fe"
+            ],
+            "content": "         <h3>Europäische Startups im Rampenlicht</h3>         <p>Es ist nicht so, dass europäische Startups nie Aufmerksamkeit erhalten – Lovable und Mistral AI sind Beweis dafür. Doch es gibt viele weitere, die Insider genau beobachten. Europa sollte für BottleCap AI bekannt sein, nicht für Flaschenverschluss-Memes.</p>         <p>Mit seinem scherzhaften Namen ist dieser in Prag ansässige KI-Startup einer der Teams, die VCs für wichtig halten. Es ist nicht so, dass europäische Startups nie durch den Lärm brechen – Lovable und Mistral AI sind Beweis dafür. Doch es gibt viele weitere, die noch nicht neun Ziffern im jährlichen Umsatz haben und die Insider noch genau beobachten.</p>         <h3>Die Liste</h3>         <p>Über die letzten Wochen haben wir Investoren bei einigen der bekanntesten europäischen Venture-Fonds gebeten, jeweils zwei Startups zu empfehlen: eines aus ihrem Portfolio und eines außerhalb davon.</p>         <ul>             <li>Alta Ares: entwickelt KI-gesteuerte Drohnen-Abwehrsysteme</li>             <li>Apron: bietet Rechnungsverwaltung für kleine Unternehmer</li>             <li>Botify: hilft Marken, ihre Sichtbarkeit in KI-Suchen zu erhöhen</li>             <li>BottleCap AI: entwickelt effizienzorientierte grundlegende KI-Modelle und -Apps</li>             <li>Cailabs: entwickelt Photonik für Luft- und Raumfahrt, Verteidigung und industrielle Anwendungen</li>             <li>Cala: baut ein Wissensgraph für KI-Agenten</li>         </ul>         <p> Von der Vorbereitung bis zum Einhorn, sind diese Startups in verschiedenen Stadien ihrer Reise und aus verschiedenen Sektoren.</p>         <p><em>BytePost-Einordnung: Die Liste zeigt, dass Europa ein Hotspot für KI-Innovationen ist und dass es viele Startups gibt, die sich mit interessanten Ideen und Technologien beschäftigen.</em></p>     ",
+            "content_simple": "         <p>Europa hat viele tolle Startups, die sich mit künstlicher Intelligenz beschäftigen. Einige davon sind bereits bekannt, aber es gibt noch viele mehr, die Insider genau beobachten.</p>         <p>Einige Beispiele sind Alta Ares, das Drohnen-Abwehrsysteme entwickelt, und Botify, das Marken hilft, ihre Sichtbarkeit in KI-Suchen zu erhöhen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>BottleCap AI entwickelt effizienzorientierte grundlegende KI-Modelle und -Apps. Das Startup hat ein Founding-Trio, das aus einem Unternehmer besteht, der sein vorheriges Unternehmen an Meta verkauft hat, und zwei KI-Forschern.</p>         <p>Cailabs entwickelt Photonik für Luft- und Raumfahrt, Verteidigung und industrielle Anwendungen. Das Unternehmen plant, 50 optische Bodenstationen zu deployen, um die wachsende Nachfrage nach Laser-Kommunikation mit Satelliten zu unterstützen.</p>     ",
+            "date": "03.05.2026",
+            "id": "053812e0",
+            "url": "https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/053812e0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Rust 1.95.0 veröffentlicht",
+            "source": "The Rust Release Team",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "053812e0",
+                "02da0cd1",
+                "87de81fe"
+            ],
+            "content": "         <h3>Rust 1.95.0 ist verfügbar</h3>         <p>Das Rust-Team freut sich, eine neue Version von Rust, 1.95.0, anzukündigen. Rust ist eine Programmiersprache, die es jedem ermöglicht, zuverlässige und effiziente Software zu erstellen. Wenn du eine vorherige Version von Rust über rustup installiert hast, kannst du 1.95.0 mit folgendem Befehl aktualisieren: $ rustup update stable. Wenn du rustup noch nicht installiert hast, kannst du es von der entsprechenden Seite auf unserer Website herunterladen und die detaillierten Release-Notizen für 1.95.0 lesen.</p>         <p>Wenn du uns helfen möchtest, indem du zukünftige Versionen testest, kannst du deine lokale Installation auf den Beta-Kanal (rustup default beta) oder den Nightly-Kanal (rustup default nightly) umstellen. Bitte melde uns alle Fehler, die du findest!</p>         <h3>Was ist in 1.95.0 Stable enthalten?</h3>         <p>Rust 1.95 introduceiert ein neues Macro namens cfg_select!, das ungefähr wie ein Compile-Time-Match auf cfgs funktioniert. Dies erfüllt den gleichen Zweck wie das beliebte cfg-if-Crate, jedoch mit einer anderen Syntax. cfg_select! erweitert sich zur rechten Seite des ersten Arms, dessen Konfigurationsprädikat als true ausgewertet wird.</p>         <p>Einige Beispiele:         <ul>             <li>cfg_select! { unix => { fn foo() { /* unix-spezifische Funktionalität */ } } target_pointer_width = \" 32 \" => { fn foo() { /* non-unix, 32-Bit-Funktionalität */ } } _ => { fn foo() { /* Fallback-Implementierung */ } } }</li>             <li>let is_windows_str = cfg_select! { windows => \" windows \", _ => \" not windows \", };</li>         </ul>         </p>         <h3_if-let-Guards in Matches</h3>         <p>Rust 1.88 hat let-Ketten stabilisiert. Rust 1.95 bringt diese Fähigkeit in Match-Expressionen, um bedingte Anweisungen basierend auf Mustererkennung zu ermöglichen.</p>         <p>Ein Beispiel:         <p>match value { Some(x) if let Ok(y) = compute(x) => { // Sowohl `x` als auch `y` sind hier verfügbar println!(\" {} , {} \", x, y); } _ => { } }</p>         <p><em>BytePost-Einordnung: Die neue Version von Rust bringt interessante Neuerungen und Erweiterungen, die die Entwicklung von Software mit Rust noch einfacher und effizienter machen.</em></p>     ",
+            "content_simple": "         <p>Rust ist eine Programmiersprache, die es ermöglicht, zuverlässige und effiziente Software zu erstellen. Eine neue Version von Rust, 1.95.0, ist jetzt verfügbar.</p>         <p>Diese neue Version bringt einige interessante Neuerungen, wie ein neues Macro namens cfg_select!, das es ermöglicht, bestimmte Teile des Codes nur auf bestimmten Plattformen auszuführen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Rust 1.95 introduceiert ein neues Macro namens cfg_select!, das ungefähr wie ein Compile-Time-Match auf cfgs funktioniert. Dies erfüllt den gleichen Zweck wie das beliebte cfg-if-Crate, jedoch mit einer anderen Syntax. cfg_select! erweitert sich zur rechten Seite des ersten Arms, dessen Konfigurationsprädikat als true ausgewertet wird.</p>         <p>Ein Beispiel:         <pre><code>cfg_select! { unix => { fn foo() { /* unix-spezifische Funktionalität */ } } target_pointer_width = \" 32 \" => { fn foo() { /* non-unix, 32-Bit-Funktionalität */ } } _ => { fn foo() { /* Fallback-Implementierung */ } } }</code></pre>         </p>         <p>Es ist auch wichtig zu beachten, dass der Compiler die in if-let-Guards ermittelten Muster nicht als Teil der Exhaustivitätsauswertung des gesamten Matches betrachtet, ähnlich wie if-Guards.</p>     ",
+            "date": "03.05.2026",
+            "id": "5a377d8b",
+            "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/5a377d8b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "ki"
+            ],
+            "icon": "🔒",
+            "title": "Meta stärkt Ende-zu-Ende-Verschlüsselung",
+            "source": "Engineering at Meta",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "87de81fe"
+            ],
+            "content": "         <h3>Meta stärkt Ende-zu-Ende-Verschlüsselung</h3>         <p>Meta hat sein System für Ende-zu-Ende-Verschlüsselung von Backups gestärkt. Das HSM-basierte Backup-Key-Vault-System ermöglicht es Nutzern, ihre gesicherten Messaging-Historien mit einem Wiederherstellungscode zu schützen. Der Wiederherstellungscode wird in manipulationssicheren Hardware-Sicherheitsmodulen (HSMs) gespeichert und ist für Meta, Cloud-Speicheranbieter oder Dritte nicht zugänglich.</p>         <p>Das System ist als geografisch verteilte Flotte über mehrere Rechenzentren bereitgestellt, was Resilienz durch Mehrheits-Replication bietet. Vor kurzem wurde es einfacher, Backups mit Ende-zu-Ende-Verschlüsselung zu verwenden, und nun wird die zugrunde liegende Infrastruktur, die passwortbasierte Ende-zu-Ende-Verschlüsselung schützt, mit zwei Updates gestärkt: Über-the-Air-Flotten-Schlüsselverteilung für Messenger und die Verpflichtung, Beweise für sichere Flottenbereitstellungen zu veröffentlichen.</p>         <h3>Über-the-Air-Flotten-Schlüsselverteilung</h3>         <p>Um die Authentizität der HSM-Flotte zu überprüfen, validieren Clients die öffentlichen Schlüssel der Flotte, bevor sie eine Sitzung herstellen. In WhatsApp sind diese Schlüssel im Anwendungscode fest eingebaut. Um Messenger zu unterstützen, wo neue HSM-Flotten ohne eine App-Aktualisierung bereitgestellt werden müssen, wurde ein Mechanismus entwickelt, um Flotten-Schlüssel über die Luft als Teil der HSM-Antwort zu verteilen. Flottenschlüssel werden in einem Validierungs-Paket bereitgestellt, das von Cloudflare signiert und von Meta gegengezeichnet wird, um unabhängigen kryptografischen Beweis ihrer Authentizität zu bieten.</p>         <h3>Transparenz bei Flottenbereitstellung</h3>         <p>Transparenz bei der Bereitstellung der HSM-Flotte ist entscheidend, um zu demonstrieren, dass das System wie konzipiert funktioniert und dass Meta keinen Zugriff auf die verschlüsselten Backups der Nutzer hat. Meta wird nun Beweise für die sichere Bereitstellung jeder neuen HSM-Flotte auf dieser Blog-Seite veröffentlichen, was die Führungsrolle im Bereich der sicheren verschlüsselten Backups weiter festigt.</p>         <p>Die vollständige technische Spezifikation des HSM-basierten Backup-Key-Vaults kann im Whitepaper „Sicherheit von Ende-zu-Ende-Verschlüsselung“ gelesen werden.</p>         <p><em>BytePost-Einordnung: Diese Neuerungen sind ein wichtiger Schritt in Richtung verbesserte Sicherheit und Privatsphäre für WhatsApp- und Messenger-Nutzer. Durch die Nutzung von HSMs und die Implementierung von Über-the-Air-Flotten-Schlüsselverteilung und Transparenz bei der Flottenbereitstellung setzt Meta Maßstäbe für die Sicherheit von Messaging-Diensten.</em></p>     ",
+            "content_simple": "         <p>Meta hat sein System für die Verschlüsselung von Backups verbessert. Dies bedeutet, dass deine gesicherten Nachrichten noch sicherer sind. Sie werden mit einem speziellen Code geschützt, den nur du kennst, und dieser Code wird in einem sehr sicheren Ort gespeichert, zu dem niemand außer dir Zugang hat.</p>         <p>Das System ist so konzipiert, dass es auch dann funktioniert, wenn ein Teil davon ausfällt. Es gibt auch eine Möglichkeit, sicherzustellen, dass die Schlüssel, die für die Verschlüsselung verwendet werden, authentisch sind und nicht von anderen kopiert wurden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Implementierung der HSM-basierten Backup-Key-Vaults durch Meta ist ein bedeutender Schritt in Richtung verbesserte Sicherheit. Durch die Verwendung von manipulationssicheren Hardware-Sicherheitsmodulen (HSMs) kann sichergestellt werden, dass die Wiederherstellungscode nicht von unbefugten Personen gelesen oder modifiziert werden kann.</p>         <p>Die Über-the-Air-Flotten-Schlüsselverteilung ermöglicht es, neue HSM-Flotten ohne eine App-Aktualisierung bereitzustellen. Dies geschieht durch die Verteilung von Flottenschlüsseln in einem Validierungs-Paket, das von Cloudflare signiert und von Meta gegengezeichnet wird.</p>         <p>Es ist jedoch wichtig zu beachten, dass die Sicherheit eines Systems nur so stark ist wie sein schwächstes Glied. Es ist daher entscheidend, dass alle Komponenten des Systems, einschließlich der HSMs und der Client-Anwendungen, sorgfältig getestet und überwacht werden, um sicherzustellen, dass sie wie erwartet funktionieren.</p>     ",
+            "date": "03.05.2026",
+            "id": "02da0cd1",
+            "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/02da0cd1.jpg",
+            "pick": true,
+            "pick_reason": "Meta setzt mit der Stärkung der Ende-zu-Ende-Verschlüsselung ein deutliches Zeichen für mehr Datenschutz in der digitalen Kommunikation. Für Entwickler bedeutet dies, dass sie künftig noch sicherere Lösungen für ihre Nutzer bereitstellen können, was die Vertrauensbasis in der digitalen Welt stärkt. Damit verändert sich das Spiel für alle, die an der Spitze der digitalen Sicherheit mitwirken wollen."
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🔒",
+            "title": "Sicherheits-Fortschritt",
+            "source": "Darkreading",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "02da0cd1"
+            ],
+            "content": "         <h3>Name That Toon: Mark of (Security) Progress</h3>         <p>Fühlst du dich kreativ? Hast du etwas zu sagen über die letzten 20 Jahre der Cybersicherheit? Unsere Redakteure werden die bestenCybersicherheits-bezogenen Bildunterschriften mit einer 20-Dollar-Geschenkkarte belohnen. Aktiviere JavaScript und Cookies, um fortzufahren.</p>         <p>Bei diesem Wettbewerb geht es darum, deine Kreativität und dein Wissen über Cybersicherheit unter Beweis zu stellen. Wenn du an dem Wettbewerb teilnehmen möchtest, musst du nur eine passende Bildunterschrift für das Thema finden.</p>         <h3>Wie funktioniert es?</h3>         <p>Um am Wettbewerb teilzunehmen, musst du einfach eine passende Bildunterschrift für das Thema Cybersicherheit finden. Unsere Redakteure werden die besten Bildunterschriften auswählen und die Gewinner mit einer 20-Dollar-Geschenkkarte belohnen.</p>         <p>Also, wenn du dich für Cybersicherheit interessierst und kreativ bist, melde dich für den Wettbewerb an. Es lohnt sich!</p>         <p><em>BytePost-Einordnung: Der Wettbewerb bietet eine großartige Gelegenheit, deine Kreativität und dein Wissen über Cybersicherheit unter Beweis zu stellen. Wir freuen uns darauf, deine Bildunterschriften zu sehen!</em></p>     ",
+            "content_simple": "         <p>Die letzten 20 Jahre der Cybersicherheit waren sehr wichtig. Jetzt gibt es einen Wettbewerb, bei dem du deine Kreativität und dein Wissen über Cybersicherheit unter Beweis stellen kannst. Der Wettbewerb bietet eine 20-Dollar-Geschenkkarte für die besten Bildunterschriften.</p>         <p>Um teilzunehmen, musst du einfach eine passende Bildunterschrift für das Thema finden. Es lohnt sich, wenn du dich für Cybersicherheit interessierst und kreativ bist.</p>     ",
+            "content_pro": "         <h3>Cybersicherheits-Fortschritt</h3>         <p>Der Wettbewerb basiert auf einem einfachen Konzept: Finden Sie eine passende Bildunterschrift für das Thema Cybersicherheit. Die Redakteure werden die besten Bildunterschriften auswählen und die Gewinner mit einer 20-Dollar-Geschenkkarte belohnen.</p>         <p>Der Wettbewerb bietet eine großartige Gelegenheit, deine Kreativität und dein Wissen über Cybersicherheit unter Beweis zu stellen. Es ist wichtig, dass du die aktuellen Trends und Entwicklungen in der Cybersicherheit kennst, um eine passende Bildunterschrift zu finden.</p>         <h3>Technische Aspekte</h3>         <p>Der Wettbewerb ist nicht nur auf die Kreativität beschränkt, sondern auch auf die technischen Aspekte der Cybersicherheit. Du musst daher über ein gutes Verständnis der aktuellen Sicherheitsbedrohungen und -technologien verfügen, um eine passende Bildunterschrift zu finden.</p>         <p>Es ist wichtig, dass du dich mit den neuesten Sicherheitsentwicklungen und -bedrohungen auseinandersetzt, um deine Kreativität und dein Wissen über Cybersicherheit unter Beweis zu stellen.</p>     ",
+            "date": "03.05.2026",
+            "id": "87de81fe",
+            "url": "https://www.darkreading.com/cybersecurity-operations/name-that-toon-mark-security-progress",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/87de81fe.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "HashiCorp startet Partner-Programm",
+            "source": "HashiCorp Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "02da0cd1"
+            ],
+            "content": "         <h3>Neues Partner-Programm für die Terraform-Registry</h3>         <p>HashiCorp ist begeistert, die Einführung eines neuen Partner-Status auf der Terraform-Registry anzukündern. Dieser neue Status ermöglicht es Partnern, ihre Module und Konfigurationen auf der Registry zu veröffentlichen und somit die Möglichkeiten für Entwickler zu erweitern.</p>         <p>Die Terraform-Registry ist ein wichtiger Teil des HashiCorp-Ökosystems und bietet Entwicklern eine zentrale Plattform für die Suche und Verwaltung von Terraform-Modulen. Mit dem neuen Partner-Status können Partner ihre eigenen Module und Konfigurationen auf der Registry veröffentlichen und somit die Community unterstützen.</p>         <h3>Vorteile des neuen Partner-Programms</h3>         <p>Das neue Partner-Programm bietet eine Reihe von Vorteilen für Partner und Entwickler. Einige der wichtigsten Vorteile sind:</p>         <ul>             <li>Erhöhte Sichtbarkeit und Bekanntheit für Partner und ihre Module</li>             <li>Verbesserte Möglichkeiten für Entwickler, Module und Konfigurationen zu finden und zu verwenden</li>             <li>Erhöhte Sicherheit und Zuverlässigkeit durch die Verifizierung von Partnern und deren Module</li>         </ul>         <p>Die Einführung des neuen Partner-Programms ist ein wichtiger Schritt für HashiCorp, um die Terraform-Community zu unterstützen und zu erweitern. Entwickler können nun noch leichter auf eine breite Palette von Modulen und Konfigurationen zugreifen und Partner können ihre eigenen Lösungen auf der Registry veröffentlichen.</p>         <p><em>BytePost-Einordnung: Die Einführung des neuen Partner-Programms ist ein positives Signal für die Terraform-Community. Es ermöglicht eine größere Vielfalt an Modulen und Konfigurationen und unterstützt die Entwickler bei ihrer Arbeit.</em></p>     ",
+            "content_simple": "         <p>HashiCorp hat ein neues Programm für Partner gestartet. Dieses Programm ermöglicht es Partnern, ihre eigenen Module und Konfigurationen auf der Terraform-Registry zu veröffentlichen.</p>         <p>Die Terraform-Registry ist eine Plattform, auf der Entwickler Module und Konfigurationen finden und verwenden können. Mit dem neuen Partner-Programm können Partner ihre Lösungen auf der Registry veröffentlichen und somit die Community unterstützen.</p>     ",
+            "content_pro": "         <h3>Technische Details des neuen Partner-Programms</h3>         <p>Das neue Partner-Programm basiert auf einer Reihe von technischen Innovationen, die es ermöglichen, Partner und ihre Module auf der Terraform-Registry zu verifizieren. Einige der wichtigsten technischen Details sind:</p>         <p>Die Verifizierung von Partnern und deren Modulen erfolgt durch eine Kombination von automatischen und manuellen Prozessen. Dies stellt sicher, dass alle Module und Konfigurationen auf der Registry sicher und zuverlässig sind.</p>         <h3>Architektur und Technologien</h3>         <p>Die Terraform-Registry basiert auf einer modernen Architektur, die es ermöglicht, eine große Anzahl von Modulen und Konfigurationen zu verwalten. Die Registry verwendet eine Kombination von Technologien wie Git, GraphQL und JSON, um die Module und Konfigurationen zu speichern und zu verwalten.</p>     ",
+            "date": "03.05.2026",
+            "id": "18598bb1",
+            "url": "https://www.hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Zero To Mastery bietet KI-Kurse kostenlos an",
+            "source": "KDnuggets",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "02da0cd1"
+            ],
+            "content": "         <h3>Lernen Sie die gefragtesten Tech-Fähigkeiten kostenlos</h3>         <p>Vom 30. April bis 10. Mai bietet Zero To Mastery (ZTM) sein gesamtes Kursprogramm kostenlos an. Das bedeutet, dass du Zugang zu 167 Kursen mit über 1.700 Stunden Videolektionen und 29 Karrierepfaden hast.</p>         <p>Du kannst Python, Prompt Engineering, AI Engineering, Vibe Coding, Data Engineering, SQL, Machine Learning, Ethical Hacking, Cloud, DevOps und vieles mehr lernen, ohne dafür zu bezahlen. Keine Kreditkarte erforderlich, nur unbegrenztes kostenloses Lernen für 10 Tage.</p>         <h3 WARUM Zero To Mastery?</h3>         <p>Es gibt viele Gründe, warum du auf Zero To Mastery lernen solltest. Hier sind drei:</p>         <ul>             <li>Zero To Mastery hat bereits Tausenden von Menschen geholfen, ohne vorherige Tech-Ausbildung eine Karriere zu wechseln und bei Unternehmen wie Tesla, NVIDIA, Apple, Amazon, IBM, Microsoft, Google, Uber, Shopify und Meta eingestellt zu werden.</li>             <li>Die Technologie entwickelt sich schnell, und du willst nicht monatealtete Informationen lernen. Zero To Masters Kurse sind daher ständig aktualisiert, haben eine hohe Bewertung (4,8 auf TrustPilot) und werden von Top-Unternehmen verwendet, um ihre eigenen Mitarbeiter auszubilden.</li>             <li>Es gibt eine aktive Community von Tausenden von Studenten, Mentoren und Dozenten auf Discord, die dir bei deiner Reise helfen und unterstützen.</li>         </ul>         <h3>Was soll ich lernen?</h3>         <p>Wenn du nicht weißt, wo du anfangen sollst, kann Zero To Mastery dir helfen, einen persönlichen Roadmap zu erstellen. Du kannst auch aus vorgefertigten Karrierepfaden wählen, wie zum Beispiel:</p>         <ul>             <li>Ai-Ingenieur werden</li>             <li>Machine Learning-Ingenieur werden</li>             <li>Full-Stack-Web-Entwickler werden</li>             <li>Ai-Entwickler werden</li>             <li>Cybersecurity-Experte oder Ethical Hacker werden</li>             <li>Data-Engineer werden</li>         </ul>         <p>Solltest du ein spezifisches Thema im Sinn haben, kannst du dir die gesamte Liste der Kurse ansehen.</p>         <p>Du solltest dich nicht die Gelegenheit entgehen lassen, kostenlose Kurse zu besuchen und deine Karriere zu beeinflussen.</p>         <p><em>BytePost-Einordnung: Diese Aktion ist eine großartige Gelegenheit, kostenlose Kurse zu besuchen und seine Karriere zu beeinflussen. Die Kurse sind von hoher Qualität und können helfen, die Karriere zu fördern.</em></p>     ",
+            "content_simple": "         <p>Wenn du etwas über künstliche Intelligenz lernen möchtest, gibt es jetzt die Chance, es kostenlos zu tun. Zero To Mastery bietet alle seine Kurse kostenlos an, bis zum 10. Mai.</p>         <p>Du kannst Dinge wie Python, künstliche Intelligenz und Datenengineering lernen, ohne dafür zu bezahlen. Es ist wie ein großes Online-Klassenzimmer, in dem du alles lernen kannst, was du wissen musst, um in der Technologie-Welt Erfolg zu haben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Zero To Mastery bietet eine Vielzahl von Kursen an, die von Grundlagen wie Python und Datenengineering bis hin zu fortgeschrittenen Themen wie künstlicher Intelligenz und Machine Learning reichen.</p>         <p>Die Kurse sind so aufgebaut, dass sie von Anfängern bis hin zu fortgeschrittenen Entwicklern etwas für jedes Niveau bieten. Die Dozenten sind alle Experten in ihren Bereichen und bieten eine hohe Qualität an Unterricht.</p>         <h3>Architektur und Technologien</h3>         <p>Die Kurse werden auf einer Vielzahl von Plattformen wie Python, TensorFlow und scikit-learn unterrichtet. Die Dozenten verwenden auch eine Vielzahl von Tools und Bibliotheken, um die Konzepte zu veranschaulichen.</p>         <p>Es gibt auch eine aktive Community von Entwicklern und Dozenten, die Fragen beantworten und Hilfe anbieten, wenn du steckenbleibst.</p>     ",
+            "date": "03.05.2026",
+            "id": "78eaf016",
+            "url": "https://www.kdnuggets.com/2026/04/zerotomastery/learn-the-most-in-demand-tech-skills-for-free",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/78eaf016.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming",
+                "hardware"
+            ],
+            "icon": "🏔️",
+            "title": "MSI Cyborg 14 getestet",
+            "source": "Rock Paper Shotgun",
+            "read": "3 Min",
+            "sentiment": "neutral",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "02da0cd1"
+            ],
+            "content": " <h3>Ein unkonventioneller Test</h3> <p>Unser stellvertretender Chefredakteur James 'RAM-bo' Archer wollte, dass wir all uns mehr mit Hardware-Kritik beschäftigen, da wir offensichtlich denken, dass Videospiele von tellurischen Strömen und Flüchen angetrieben werden. Er bot mir speziell die Chance, über einen Laptop zu schreiben - den relativ erschwinglichen (ich betone: 'relativ') MSI Cyborg 14, der RPS für einige Wochen von Swipe Right PR zur Verfügung gestellt wurde.</p> <p>Es war eine schwere Aufgabe, die von jemandem verhängt wurde, den ich für einen Freund gehalten hatte. Ich brauche tatsächlich einen Gaming-Laptop, und ich bin interessiert an den monströsen Verwicklungen der Hardware-Industrie, aber ich bin nicht wirklich der richtige Mann für heiße Diskussionen über Tastaturtiefe und Grafikkarten-Benchmarking. Ich kümmere mich um diese Dinge viel weniger als, um ein Beispiel zu nennen, Bergsteigen. Als glücklicher Zufall bereitete ich mich darauf vor, eine 105 Meilen lange Wanderung durch den Eryri-Nationalpark in Wales zu unternehmen, einschließlich eines Aufstiegs auf den Yr Wyddfa, den zweithöchsten Berg Großbritanniens.</p> <h3>Der Test beginnt</h3> <p>Der Kompromiss war so offensichtlich wie unwiderstehlich: Ich würde versuchen, den MSI Cyborg 14 während meiner Wanderung durch die walisischen Berge zu testen. Kurz gesagt: Ich bin kein professioneller Bergsteiger und nichts von dem, was unten steht, sollte als praktische Einsicht oder Rat gewertet werden. Swipe Right hat nur den Laptop zur Verfügung gestellt - ich habe den Rest selbst bezahlt.</p> <p>Am ersten Tag, den ich mit dem MSI Cyborg 14 verbrachte, war die Wolken wie müde Heckler über mir, als ich mutig von Machynlleth aus aufbrach, ein paar Meilen von der südlichen Grenze des Eryri-Nationalparks entfernt. Außer dem MSI Cyborg 14, der feierlich in etwa neun Tagen Unterwäsche begraben wurde, war mein treuer Begleiter auf diesem Abenteuer Alex Kendall, der Autor des Snowdonia-Weg-Reiseführers.</p> <p>Ich konsultierte seine Anweisungen sorgfältig am Rande von Machynlleth, hielt einen Finger in den Wind und ging sofort in die falsche Richtung. Es stellte sich heraus, dass der Rat eine Überführung direkt bei dem Beginn des Snowdonia-Wegs gebaut hatte, irgendwann nachdem Kendall sein Buch geschrieben hatte - eine betrügerische Schlange, die den unvorsichtigen Wanderer in Richtung Crewe lockte, wo es überhaupt keine Berge gab.</p> <h3>Ein wichtiger Punkt für Entwickler</h3> <p>Das ist eine Lektion für Videospiele-Entwickler: Wie kann man Welten schaffen, die falsche oder absichtlich falsche Richtungen anbieten, vielleicht basierend auf Gelände, das sich geändert hat, ohne dass dies als Designfehler wahrgenommen wird? Wir werden diese Lektion am zweiten Tag noch einmal aufgreifen.</p> <p>Nachdem ich meine OS-Karte ausgrub, fand ich den richtigen Abzweig und verbrachte einige angenehme Stunden damit, auf alten Schieferminen und Halden zu wandern, dem Treeline entlang zum Moor zu folgen. Ich überlebte einen Sumpf und traf einen Bauern, dessen Hund mich zu fressen versuchte, wofür sich der Bauer entschuldigte, aber nicht schämte.</p> <p>Ich hoffe, diese Erfahrung gibt dir, lieber Leser, eine Vorstellung davon, wie der MSI Cyborg 14 in der Praxis funktioniert - oder zumindest, wie es ist, ihn auf eine 105 Meilen lange Wanderung durch die walisischen Berge mitzunehmen.</p> <p><em>BytePost-Einordnung: Der MSI Cyborg 14 scheint ein solider Gaming-Laptop zu sein, der auch auf langen Wanderungen mithalten kann. Für Entwickler ist es interessant zu sehen, wie sich die Hardware bei solchen Tests verhält und welche Lehren man daraus für die Entwicklung von Spielen und Anwendungen ziehen kann.</em></p> ",
+            "content_simple": " <p>Der MSI Cyborg 14 ist ein Gaming-Laptop, den wir auf eine ungewöhnliche Weise getestet haben: indem wir ihn auf eine 105 Meilen lange Wanderung durch die walisischen Berge mitgenommen haben. Der Test sollte zeigen, wie der Laptop in der Praxis funktioniert und ob er den Anforderungen eines solchen Abenteuers gewachsen ist.</p> <p>Wir haben den Laptop auf seiner Reise begleitet und uns angesehen, wie er sich verhält, wenn man ihn auf unwegsamen Pfaden und in rauen Bedingungen verwendet. Es war interessant zu sehen, wie der MSI Cyborg 14 mit den Herausforderungen umgeht, die ein solches Abenteuer mit sich bringt.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Der MSI Cyborg 14 ist ein Gaming-Laptop, der mit einer Intel-Core-i7-CPU und einer NVIDIA-GeForce-GTX-1660-Ti-Grafikkarte ausgestattet ist. Er verfügt über 16 GB RAM und eine 512-GB-SSD. Der Laptop wiegt etwa 2,5 kg und hat eine Auflösung von 1920x1080 Pixeln.</p> <p>Während unseres Tests haben wir den Laptop mit verschiedenen Spielen und Anwendungen getestet, um seine Leistung zu überprüfen. Wir haben auch die Akkulaufzeit und die Temperatur des Laptops gemessen, um zu sehen, wie er sich in verschiedenen Situationen verhält.</p> ",
+            "date": "03.05.2026",
+            "id": "fc8cf30c",
+            "url": "https://www.rockpapershotgun.com/i-tested-the-msi-cyborg-14-gaming-laptop-by-carrying-it-for-105-miles-through-the-mountains-of-wales",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/fc8cf30c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "gaming"
             ],
             "icon": "🎮",
@@ -27,7 +235,7 @@
                 "sleep": 0
             },
             "image_local": "images/3baed4c7.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
@@ -35315,10 +35523,10 @@
         }
     ],
     "bytepulse": {
-        "date": "02.05.2026",
-        "positiv": 100,
-        "neutral": 0,
+        "date": "03.05.2026",
+        "positiv": 71,
+        "neutral": 29,
         "kritisch": 0,
-        "total": 1
+        "total": 7
     }
 }
