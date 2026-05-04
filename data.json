@@ -2,6 +2,35 @@
     "articles": [
         {
             "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Wolfhound: Retro-Game mit Nazis und Zombies",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "053812e0",
+                "5a377d8b",
+                "02da0cd1"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Wolfhound ist ein Spiel, das ich schon lange im Auge habe. Es wurde in unseren Listen der am meisten erwarteten Spiele für 2025 und 2026 aufgeführt. Obwohl das genaue Release-Datum für dieses retro-inspirierte Indie-Spiel noch nicht bekannt ist, deuten Anzeichen darauf hin, dass es möglicherweise gegen Ende des Jahres erscheinen könnte. Eine von mir kürzlich gespielte Testversion hat mich noch mehr begeistert.</p>         <h3>Gameplay und Grafik</h3>         <p>Wolfhound ist das zweite Spiel des Indie-Entwicklers Bit Kid und ähnelt Metroid, aber mit einer soliden Prise Wolfenstein. Du spielst den WWII-amerikanischen Captain Chuck Rosetti, der auf eine Bermuda-Insel geschickt wird, um die Nazi-Experimente zu untersuchen. Dein Flugzeug wird auf dem Weg dorthin abgeschossen, und du landest in einem liebevoll gestalteten 8-Bit-Dschungel, in dem dich allerlei Feinde jagen, darunter Zombies, Killerbienen, bewusste Schleim-Monster und Retro-Mechas.</p>         <p>Ich beschreibe es als 8-Bit, weil die Farbpalette, die Emulogic-Schriftart und die prägnanten Chiptunes Erinnerungen an das Aufblasen alter Spiele-Cartridges wecken. Aber Wolfhound wirkt trotzdem hochwertiger als die NES, auch wenn es nicht ganz auf Super-NES-Niveau ist. Die Sega Master System und die NEC PC Engine/TurboGrafx-16 sind bessere Vergleiche, da die farbenfrohen Kacheln, die sanfte Bewegung von Chuck und die oft riesigen Feind-Sprites weit darüber hinausgehen, was Nintendos erstes Heimkonsolenspiel handhaben konnte.</p>         <h3>Level-Design und Schwierigkeitsgrad</h3>         <p>Obwohl es wie ein Spiel aus alter Zeit aussieht, verfügt Wolfhound über ein Level-Design, das moderne Metroidvania-Elemente aufweist. Die von mir gespielte Testversion beinhaltete drei Bereiche: den Dschungel der Insel, eine dunkle violette Mine und die beginnenden Korridore der Nazi-Burg darüber. Die Levels sind mit den üblichen sich kreuzenden Pfaden verbunden, und während Chuck zunächst nur mit einer schwachen Pistole ausgestattet ist, erhält er bald bessere Waffen wie eine Schrotflinte.</p>         <p>Als du Save-Rooms freischaltest, erhältst du auch Upgrades wie taktische Knieschützer und Handschuhe, die es Chuck ermöglichen, zu rollen, an Vorsprüngen zu kleben und Teile der Karte zu betreten, die zuvor unerreichbar waren. Der Save-Room ist ein schöner Ruhepunkt inmitten einiger sehr intensiver Levels.</p>         <h3>Fazit</h3>         <p>Ich sah das GAME OVER-Bild viel öfter, als ich erwartet hatte, während meiner vierstündigen Demoversion, aber ich wurde nie so frustriert, dass ich meinen Schreibtisch kaputt gemacht hätte, da Wolfhound trotz seiner Härte fair zu sein scheint. Während Bit Kids vorheriges Spiel Chasm ein zufällig generiertes Roguelite war, wurde jeder Plattformabschnitt, den Chuck durchquert, sorgfältig gestaltet, was bedeutet, dass die Levels umso überwindbarer werden, je mehr du spielst, solange du Mustererkennung und Timing im Auge behältst.</p>         <p><em>BytePost-Einordnung: Wolfhound bietet eine spannende Mischung aus Retro-Grafik und modernem Metroidvania-Gameplay. Mit seiner fairen, aber herausfordernden Spielmechanik und seinem liebevoll gestalteten Level-Design ist es ein Spiel, das Fans von Retro-Spielen und Metroidvania-Enthusiasten gleichermaßen ansprechen dürfte.</em></p>     ",
+            "content_simple": "         <p>Wolfhound ist ein Retro-Spiel, das wie ein Mix aus Wolfenstein und Metroid aussieht. Du spielst einen Amerikaner, der gegen Nazis und Zombies kämpft. Das Spiel hat eine 8-Bit-Grafik, aber es sieht moderner aus als die alten Spiele. Es gibt verschiedene Level, wie einen Dschungel und eine Mine, und du kannst Waffen und Upgrades sammeln, um dich zu verbessern.</p>         <p>Das Spiel ist ziemlich schwierig, aber es ist nicht so frustrierend, dass man aufhört zu spielen. Es ist ein bisschen wie ein Puzzle, bei dem man die richtigen Wege und Timing finden muss, um weiterzukommen. Wenn du ein Fan von Retro-Spielen oder Metroidvania bist, könnte Wolfhound das richtige Spiel für dich sein.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Wolfhound verwendet eine 8-Bit-Grafik, aber es hat eine höhere Auflösung als die alten Spiele. Die Farbpalette und die Schriftart erinnern an die Emulogic-Schriftart. Das Spiel hat auch eine sanfte Bewegung und große Feind-Sprites, was es moderner aussehen lässt.</p>         <h3>Level-Design</h3>         <p>Das Level-Design in Wolfhound ist modern und hat Metroidvania-Elemente. Es gibt verschiedene Bereiche, wie einen Dschungel und eine Mine, und du kannst Waffen und Upgrades sammeln, um dich zu verbessern. Die Levels sind mit Save-Rooms verbunden, in denen du deine Fortschritte speichern kannst.</p>         <h3>Programmierung</h3>         <p>Das Spiel ist in einer Programmiersprache geschrieben, die nicht genannt wird. Es hat eine faire, aber herausfordernde Spielmechanik und ein liebevoll gestaltetes Level-Design. Die Programmierung ist sorgfältig durchdacht, um ein gutes Spielerlebnis zu bieten.</p>     ",
+            "date": "04.05.2026",
+            "id": "ca875b75",
+            "url": "https://www.rockpapershotgun.com/wolfenstein-meets-metroidvania-in-wolfhound-an-8-bit-ode-to-yesteryear-with-zombies-and-nazi-mechs",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ca875b75.jpg",
+            "pick": true
+        },
+        {
+            "cat": [
                 "ki",
                 "dev"
             ],
@@ -87,7 +116,7 @@
                 "sleep": 0
             },
             "image_local": "images/02da0cd1.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Meta setzt mit der Stärkung der Ende-zu-Ende-Verschlüsselung ein deutliches Zeichen für mehr Datenschutz in der digitalen Kommunikation. Für Entwickler bedeutet dies, dass sie künftig noch sicherere Lösungen für ihre Nutzer bereitstellen können, was die Vertrauensbasis in der digitalen Welt stärkt. Damit verändert sich das Spiel für alle, die an der Spitze der digitalen Sicherheit mitwirken wollen."
         },
         {
@@ -35523,10 +35552,10 @@
         }
     ],
     "bytepulse": {
-        "date": "03.05.2026",
-        "positiv": 71,
-        "neutral": 29,
+        "date": "04.05.2026",
+        "positiv": 100,
+        "neutral": 0,
         "kritisch": 0,
-        "total": 7
+        "total": 1
     }
 }
