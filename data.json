@@ -27,7 +27,7 @@
                 "sleep": 0
             },
             "image_local": "images/ca875b75.jpg",
-            "pick": true
+            "pick": false
         },
         {
             "cat": [
