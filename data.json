@@ -2,6 +2,238 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🍴",
+            "title": "Wonder: KI ermöglicht Restaurants in Minuten",
+            "source": "The Wall Street Journal",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7953eed2",
+                "6bb024d7",
+                "48c05003"
+            ],
+            "content": "         <h3>Wonder und die Zukunft der Restaurants</h3>         <p>Marc Lore, der erfahrene E-Commerce-Unternehmer, der seine vorherigen Startups an Amazon und Walmart verkauft hat, hat große Pläne, um seine aktuelle Firma Wonder mit künstlicher Intelligenz (KI) zu revolutionieren. Das Herzstück dieser Pläne ist Wonder Create, eine Initiative, die es jedem ermöglicht, von Food-Unternehmern bis hin zu Social-Media-Influencern, mit KI ein eigenes Restaurant-Brand in unter einer Minute zu entwerfen und zu starten.</p>         <p>Das virtuelle Restaurant würde dann live in Wonders wachsendem Netzwerk von technisch ausgestatteten Küchenstandorten gehen, die derzeit 120 betragen und im nächsten Jahr auf 400 erweitert werden sollen. Lores Startup, eine vertikal integrierte Dining- und Lieferplattform, hat sich von Food-Trucks zu Fast-Casual-Restaurants mit 10 bis 20 Sitzplätzen entwickelt. Diese sind jedoch keine normalen Restaurants, sondern „programmierbare Kochplattformen“, die in der Lage sind, als 25 verschiedene Arten von Restaurants basierend auf der Küche innerhalb ihrer vollständig elektrischen Küchen zu operieren, die zunehmend robuster werden.</p>         <p>Auf der Konferenz „The Future of Everything“ der Wall Street Journal sagte Lore, dass diese Küchen eine Zutatenbibliothek von 700 Zutaten haben. Die „Restaurants“, die sich in diesen Standorten befinden, bestehen tatsächlich aus vielen verschiedenen Marken, die von diesen Standorten aus operieren. Neben einem Personal von bis zu 12 Personen in diesen Küchen sind Kochtechnologien wie Förderbänder und robotechne Arme in den Kochprozess involviert. Das Unternehmen hat kürzlich Spice Robotics, einen Hersteller einer automatischen Bowl-Maschine, die zuvor von Sweetgreen verwendet wurde, übernommen. Im nächsten Jahr plant es, eine „unendliche Saucenmaschine“ anzubieten, die in der Lage ist, etwa 80% aller Saucen herzustellen, die in Rezepten im Internet heute zu finden sind.</p>         <h3>Wonder Create und die Zukunft der Restaurant-Gründung</h3>         <p>Wonder Create wurde bereits früher in diesem Jahr als Möglichkeit vorgestellt, dass jeder Wonders Software nutzen kann, um sein eigenes Restaurant-Brand und Rezepte zu starten. Lore bot mehr Details darüber, wie dies funktionieren wird, indem er KI-Technologie nutzt, und beschrieb den Plan als etwas wie ein „Shopify-Frontend mit einem KI-Prompt“. Er sagte: „Du tippest ein, was für ein Restaurant du bauen möchtest. Es baut das Restaurant – die KI macht das – in unter einer Minute. Es erstellt den Namen, das Branding, die Beschreibung, die Bilder, die Preise, die Gesundheitsinformationen und alle Rezepte für dein Restaurant.“</p>         <p>Der potenzielle Restaurantbesitzer könnte dann den Prompt verfeinern, wenn Änderungen erforderlich sind. Wenn er bereit ist, live zu gehen, würde das Restaurant über alle Standorte von Wonder starten. Das Unternehmen hat derzeit 120 dieser „programmierbaren Kochplattformen“ in Betrieb, eine Zahl, die im nächsten Jahr auf 400 erweitert werden soll. Wenn es Roboter in die Gleichung einbezieht, wird das Unternehmen nicht unbedingt den Personalbestand reduzieren, wie Lore betonte. Stattdessen wird es die Anzahl der Mahlzeiten erhöhen, die eine Küche in einem bestimmten Zeitraum produzieren kann.</p>         <p>Das Ziel mit diesen KI-erzeugten „Restaurants“ ist es, es Menschen zu ermöglichen, mit Essen auf neue Weise zu experimentieren. Ein Restaurantbesitzer könnte Rezepte testen, um die Reaktion der Kunden zu überprüfen, bevor er Gerichte zu seinen eigenen physischen Standorten hinzufügt, zum Beispiel. Lore sieht andere Einsatzmöglichkeiten für die Plattform, wie zum Beispiel, Influencern zu ermöglichen, mit ihrem Publikum durch ihre eigenen „Restaurant“-Marken in Verbindung zu treten, ohne tatsächlich ihre eigenen Ketten starten zu müssen.</p>         <p><em>BytePost-Einordnung: Die Einführung von KI in der Restaurantbranche durch Wonder öffnet neue Möglichkeiten für Entrepreneure und Influencer, um innovative Konzepte zu testen und ihre Märkte zu erreichen, ohne in traditionelle physische Standorte investieren zu müssen.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du könntest ein Restaurant in nur einer Minute eröffnen. Das klingt wie ein Traum, aber dank der Firma Wonder und künstlicher Intelligenz (KI) kann dies bald Realität werden. Wonder hat eine Plattform entwickelt, die es jedem ermöglicht, ein eigenes Restaurant zu erstellen, ohne selbst kochen zu müssen.</p>         <p>Die Plattform heißt Wonder Create und verwendet KI, um alle Aspekte eines Restaurants zu erstellen, von der Speisekarte bis hin zum Branding. Der Nutzer muss nur angeben, was für ein Restaurant er haben möchte, und die KI erstellt alles in unter einer Minute.</p>     ",
+            "content_pro": "         <h3>Technische Details von Wonder Create</h3>         <p>Wonder Create nutzt KI-Algorithmen, um die Speisekarte, das Branding und andere Aspekte eines Restaurants zu erstellen. Die Plattform verwendet eine Kombination aus natürlicher Sprachverarbeitung (NLP) und maschinellem Lernen (ML), um die Nutzeranforderungen zu verstehen und ein persönliches Restaurant-Erlebnis zu erstellen.</p>         <p>Die technische Architektur von Wonder Create besteht aus einer Microservices-Architektur, die es ermöglicht, verschiedene Komponenten wie die KI-Engine, die Datenbank und die Benutzeroberfläche unabhängig voneinander zu entwickeln und zu betreiben. Dies ermöglicht eine flexible und skalierbare Lösung, die auf die Bedürfnisse der Nutzer abgestimmt ist.</p>     ",
+            "date": "06.05.2026",
+            "id": "d78661fe",
+            "url": "https://techcrunch.com/2026/05/05/marc-lore-says-that-ai-will-soon-enable-anyone-open-a-restaurant/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d78661fe.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Verhaltensscanner gefährden Privatsphäre",
+            "source": "netzpolitik.org",
+            "read": "3 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "d78661fe",
+                "6bb024d7",
+                "48c05003"
+            ],
+            "content": "         <h3>Verhaltensscanner: Eine reale Gefahr</h3>         <p>Verhaltensscanner werden aktuell eingeführt, um Gewalttaten zu erkennen. Gemeinfrei-ähnlich freigegeben durch unsplash.com: Dan Burton. Gerade gibt es bundesweit Bestrebungen, Überwachungskameras mit Systemen zu koppeln, die vollautomatisiert erkennen, was die abgebildeten Menschen gerade tun. Davy Wang von der Gesellschaft für Freiheitsrechte erklärt, warum das eine schlechte Idee ist.</p>         <p>Verhaltensanalyse-Software legt eine Art Strichmännchen über die Gliedmaßen abgebildeter Menschen. Anhand der Bewegungen dieses Vektorenbündels schätzt sie, welches Verhalten zu sehen ist. Bei vorab festgelegten Kategorien schlägt sie Alarm. In Mannheim sind das aktuell Schläge, Tritte, Schubser und abwehrende Körperhaltungen. In Hamburg wird auch detektiert, wenn jemand liegt. Berlin will bald ebenfalls eine derartige Software einsetzen, Baden-Württemberg will sie auf Heidelberg ausweiten, in Bremer Tram-Bahnen läuft sie bereits.</p>         <p>In Niedersachsen, Sachsen, Schleswig-Holstein und Thüringen sind Gesetzesentwürfe dazu in der Abstimmung. Es wird künftig wohl immer mehr Areale geben, in denen KI prüft, ob sich die Anwesenden artig benehmen. Zeit also, sich die Technologie mal genauer anzuschauen: Welche Auswirkungen hat sie auf die Grundrechte der Betroffenen, wo liegen die größten Risiken bei der Implementierung und welche Rolle kann sie bei der drohenden autoritären Wende spielen?</p>         <p>Das haben wir Davy Wang gefragt, Jurist bei der Gesellschaft für Freiheitsrechte. „Ein subtiles Gefühl des Überwacht-Seins“ netzpolitik.org: Herr Wang, Berlin will bald Verhaltenserkennungs-Kameras an vermeintlich besonders kriminalitätsbelasteten Orten installieren. Liegen diese Orte in Ihrem Lebensradius?</p>         <p>Davy Wang: Im Görlitzer Park bin ich in meiner Freizeit gelegentlich, am Kottbusser Tor oder an der Warschauer Straße steige ich manchmal in Bahnen. netzpolitik.org: Werden Sie sich dort sicherer fühlen, wenn die Verhaltenserkennung läuft? Davy Wang: Ich fühle mich da aktuell nicht unsicher. Aber wenn die Verhaltenserkennung kommt, wird das sicher ein subtiles Gefühl des Überwacht-Seins auslösen.</p>         <p>netzpolitik.org: Welche Auswirkungen hat die Technologie auf die Grundrechte der Menschen, die da langlaufen? Davy Wang: Da ist meine Privatsphäre betroffen und die aller anderen Menschen, die sich da bewegen. Konkret bedeutet dies eine Einschränkung des Grundrechts auf informationelle Selbstbestimmung. Nach dem darf eigentlich ich darüber bestimmen, wer meine Daten erfasst und nutzt. Darüber hinaus kann so eine Überwachung Menschen davon abhalten, den Ort zu besuchen, und sich darauf auswirken, wie sich Menschen dort verhalten. Das hat dann beispielsweise auch Auswirkungen auf die Versammlungsfreiheit.</p>         <p>netzpolitik.org: Werden da alle Passant*innen unter Generalverdacht gestellt? Davy Wang: Von beiden Systemen werden erst einmal alle Menschen erfasst. netzpolitik.org: Und ist das Problem, das mit der Überwachung gelöst wird, diesen massiven Grundrechtseingriff wert? Davy Wang: Aus den Pilotprojekten gibt es keine Zahlen, die die Wirksamkeit belegen. Dabei gibt es sehr hohe Anforderungen.</p>         <p>netzpolitik.org: Solche Systeme haben immer eine gewisse Rate von False Positives. Das sind Alarme, die auf einem Fehler, einem falschen Verdacht beruhen. Ist da die Verfolgung Unschuldiger schon eingepreist? Davy Wang: Es ist ein Problem, wenn ein Maximum für diese Rate nicht fest vorgegeben ist. Dann kann die Polizei frei einschätzen, wie viele Fehl-Ver</p>         <p><em>BytePost-Einordnung: Die Einführung von Verhaltensscannern in öffentlichen Räumen wirft wichtige Fragen bezüglich der Privatsphäre und der Grundrechte auf. Es ist wichtig, dass die Öffentlichkeit sich dieser Thematik bewusst ist und sich für den Schutz ihrer Rechte einsetzt.</em></p>     ",
+            "content_simple": "         <p>Verhaltensscanner sollen helfen, Gewalttaten zu erkennen. Sie verwenden KI, um die Bewegungen von Menschen in öffentlichen Räumen zu analysieren. Doch diese Technologie wirft Fragen bezüglich der Privatsphäre auf. Sollten wir uns in öffentlichen Räumen überwacht fühlen?</p>         <p>Die Verwendung von Verhaltensscannern kann dazu führen, dass Menschen sich in öffentlichen Räumen nicht mehr frei bewegen können. Sie könnten sich überwacht fühlen und ihre Bewegungen anpassen, um nicht falsch verstanden zu werden. Das ist ein Problem, das wir nicht ignorieren sollten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Verhaltensanalyse-Software verwendet eine Art Strichmännchen, um die Bewegungen von Menschen zu analysieren. Sie schätzt das Verhalten anhand der Bewegungen und schlägt Alarm, wenn bestimmte Kriterien erfüllt sind.</p>         <p>Es gibt jedoch auch Probleme mit False Positives, also Falschmeldungen. Wenn die Rate von False Positives nicht fest vorgegeben ist, kann die Polizei frei entscheiden, wie viele Fehl-Verfolgungen akzeptabel sind. Dies ist ein Risiko, das wir nicht ignorieren sollten.</p>     ",
+            "date": "06.05.2026",
+            "id": "7953eed2",
+            "url": "https://netzpolitik.org/2026/verhaltensscanner-eine-reale-gefahr/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7953eed2.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📚",
+            "title": "Google Summer of Code 2026",
+            "source": "Rust Project",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "d78661fe",
+                "7953eed2",
+                "48c05003"
+            ],
+            "content": " <h3>Google Summer of Code 2026: Ausgewählte Projekte</h3> <p>Wie bereits angekündigt, nimmt das Rust-Projekt am Google Summer of Code (GSoC) 2026 teil. GSoC ist ein globales Programm, das von Google organisiert wird und darauf abzielt, neue Mitwirkende in die Welt der Open-Source-Software zu bringen.</p> <p>Vor einigen Monaten haben wir eine Liste mit GSoC-Projektideen veröffentlicht und begonnen, diese Projekte mit potenziellen GSoC-Antragstellern auf unserem Zulip-Chat zu diskutieren. Wir hatten viele interessante Diskussionen mit den potenziellen Mitwirkenden und sahen sogar einige von ihnen, die bereits vor dem offiziellen Beginn von GSoC nennenswerte Beiträge zu verschiedenen Rust-Projekt-Repositorys geleistet haben.</p> <p>Die Antragsteller haben ihre Projektvorschläge bis Ende März eingereicht. In diesem Jahr haben wir 96 Vorschläge erhalten, was einer Steigerung von 50% im Vergleich zum Vorjahr entspricht. Wir sind erfreut, dass es wieder großes Interesse an unseren Projekten gab. Wie viele andere GSoC-Organisationen in diesem Jahr hatten wir auch mit einigen von künstlicher Intelligenz generierten Vorschlägen und geringwertigen Beiträgen zu kämpfen, die von KI-Agenten generiert wurden, aber es blieb beherrschbar.</p> <p>GSoC erfordert von uns, eine geordnete Liste der besten Vorschläge zu erstellen, was immer eine Herausforderung ist, da Rust ein großes Projekt mit vielen Prioritäten ist. Unsere Mentoren haben die eingereichten Vorschläge untersucht und diese auf der Grundlage ihrer vorherigen Interaktionen mit dem Antragsteller, ihrer bisherigen Beiträge, der Qualität des Vorschlags selbst, aber auch der Bedeutung des vorgeschlagenen Projekts für das Rust-Projekt und seine breitere Gemeinschaft bewertet. Wir mussten auch die Verfügbarkeit und Bandbreite der Mentoren berücksichtigen. Leider mussten wir einige Projekte absagen, da mehrere Mentoren in den letzten Wochen ihre Förderung für Rust-Arbeit verloren haben.</p> <p>Wie üblich bei GSoC mussten wir, obwohl einige Projektthemen mehrere Vorschläge erhalten haben, nur einen Vorschlag pro Projektthema auswählen. Wir mussten auch zwischen Vorschlägen wählen, die unterschiedliche Arbeiten zum Ziel hatten, um zu vermeiden, dass ein einzelner Mentor mit mehreren Projekten überlastet wird. Am Ende haben wir die Liste auf die besten Vorschläge reduziert, die wir mit unserem verfügbaren Mentor-Pool realistisch unterstützen konnten.</p> <h3>Ausgewählte Projekte</h3> <p>Am 30. April hat Google die angenommenen Projekte bekannt gegeben. Wir freuen uns, mitteilen zu können, dass 13 Rust-Projektvorschläge von Google für den Google Summer of Code 2026 angenommen wurden. Das ist eine Menge Projekte! Wir sind sehrhappy und aufgeregt über GSoC 2026.</p> <p><em>BytePost-Einordnung: Der Google Summer of Code ist ein wichtiger Teil der Open-Source-Gemeinschaft und ermöglicht es jungen Entwicklern, sich an bedeutenden Projekten zu beteiligen und wertvolle Erfahrungen zu sammeln. Die Auswahl von 13 Rust-Projektvorschlägen ist ein Zeichen für das starke Interesse an diesem Programm und die Qualität der vorgeschlagenen Projekte.</em></p> ",
+            "content_simple": " <p>Google hat ein Programm namens Summer of Code, bei dem junge Entwickler an Open-Source-Projekten arbeiten können. Das Rust-Projekt nimmt daran teil und hat 13 Projekte ausgewählt, an denen junge Entwickler in diesem Sommer arbeiten werden.</p> <p>Das ist eine großartige Gelegenheit für junge Entwickler, sich an bedeutenden Projekten zu beteiligen und wertvolle Erfahrungen zu sammeln. Die Auswahl von 13 Projekten ist ein Zeichen für das starke Interesse an diesem Programm und die Qualität der vorgeschlagenen Projekte.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Das Rust-Projekt verwendet ein Mentor-System, um junge Entwickler zu unterstützen und zu betreuen. Die Mentoren bewerten die Vorschläge auf der Grundlage ihrer Qualität, der Bedeutung des Projekts und der Verfügbarkeit der Mentoren.</p> <p>Die Auswahl der Projekte erfolgt durch ein geordnetes Listensystem, bei dem die besten Vorschläge ausgewählt werden. Die Mentoren berücksichtigen auch die Verfügbarkeit und Bandbreite der Mentoren, um zu vermeiden, dass ein einzelner Mentor mit mehreren Projekten überlastet wird.</p> <pre><code>TODO: Code-Beispiel oder verwandte Konzepte</code></pre> ",
+            "date": "06.05.2026",
+            "id": "6bb024d7",
+            "url": "https://blog.rust-lang.org/2026/04/30/gsoc-2026-selected-projects/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6bb024d7.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Trellix Source Code Breach",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "d78661fe",
+                "7953eed2",
+                "6bb024d7"
+            ],
+            "content": "         <h3>Intro</h3>         <p>Einige Informationen über den Vorfall sind bisher knapp, aber es ist bekannt, dass ein solcher Angriff auf die Quellcode-Sicherheit erhebliche Auswirkungen auf das Unternehmen und seine Kunden haben kann.</p>         <p>Bei einem Quellcode-Breach können Angreifer an Informationen gelangen, die zeigen, wo die Steuerungselemente eines Sicherheitsprodukts liegen und wie die Erkennungsmuster gestaltet sind, was den Angreifern einen Vorteil verschaffen kann.</p>         <h3>Quellcode-Breach</h3>         <p>Der Quellcode-Breach bei Trellix wirft ein Schlaglicht auf die wachsenden Bedrohungen in der Lieferkette. Wenn Angreifer den Quellcode eines Sicherheitsprodukts in die Hände bekommen, können sie möglicherweise die Schwachstellen im Produkt identifizieren und ausnutzen.</p>         <p>Die Folgen eines Quellcode-Breaches können weitreichend sein und sowohl das Unternehmen als auch seine Kunden beeinträchtigen. Es ist wichtig, dass Unternehmen Maßnahmen ergreifen, um ihre Quellcodes zu schützen und die Sicherheit ihrer Produkte zu gewährleisten.</p>         <h3>Fazit</h3>         <p>Der Quellcode-Breach bei Trellix ist ein Beispiel für die wachsenden Bedrohungen in der Lieferkette. Es ist wichtig, dass Unternehmen ihre Quellcodes schützen und die Sicherheit ihrer Produkte gewährleisten, um ihre Kunden vor möglichen Angriffen zu schützen.</p>         <p><em>BytePost-Einordnung: Der Vorfall zeigt, dass die Sicherheit von Quellcodes ein wichtiger Aspekt der IT-Sicherheit ist und dass Unternehmen Maßnahmen ergreifen müssen, um ihre Quellcodes zu schützen.</em></p>     ",
+            "content_simple": "         <p>Es gab einen Angriff auf den Quellcode eines Sicherheitsunternehmens. Der Quellcode ist wie ein Bauplan für ein Sicherheitsprodukt. Wenn Angreifer diesen Plan in die Hände bekommen, können sie möglicherweise die Schwachstellen im Produkt identifizieren und ausnutzen.</p>         <p>Das ist ein großes Problem, weil es die Sicherheit von Kunden gefährden kann. Unternehmen müssen ihren Quellcode also gut schützen, um ihre Kunden zu schützen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Quellcode-Breach bei Trellix stellt eine erhebliche Bedrohung für die Sicherheit von Kunden dar. Wenn Angreifer den Quellcode eines Sicherheitsprodukts in die Hände bekommen, können sie möglicherweise die internen Mechanismen des Produkts verstehen und Schwachstellen identifizieren.</p>         <p>Es ist wichtig, dass Unternehmen ihre Quellcodes mit Hilfe von Verschlüsselung, Zugriffskontrolle und regelmäßigen Sicherheitsaudits schützen. Darüber hinaus sollten Unternehmen ihre Produkte regelmäßig aktualisieren und patchen, um sicherzustellen, dass bekannte Schwachstellen behoben werden.</p>     ",
+            "date": "06.05.2026",
+            "id": "48c05003",
+            "url": "https://www.darkreading.com/cyberattacks-data-breaches/trellix-source-code-breach-supply-chain-threats",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/48c05003.jpg",
+            "pick": true,
+            "pick_reason": "Ein schwerer Schlag für die Sicherheit: Der Quellcode von Trellix ist ausgerissen und könnte in die falschen Hände geraten. Das bedeutet, dass Entwickler und Nutzer von Trellix-Produkten einem erhöhten Risiko von Cyberangriffen ausgesetzt sind, was sofortige Maßnahmen zur Absicherung ihrer Systeme erfordert. Der Vorfall wirft ein dunkles Licht auf die Verwundbarkeit der Softwaresicherheit und stellt eine massive Herausforderung für die Branche dar."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "OpenAI ersetzt ChatGPT-Modell",
+            "source": "The New Stack",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "758d58ca"
+            ],
+            "content": "         <h3>OpenAI rollt GPT-5.5 Instant als Standard-ChatGPT-Modell aus</h3>         <p>OpenAI hat angekündigt, dass es das Standard-Modell in ChatGPT durch GPT-5.5 Instant ersetzt, das schneller und genauere Antworten liefert.</p>         <p>Der Artikel auf The New Stack berichtet, dass OpenAI damit seine Default-Modell-Politik ändert und Benutzern ein verbessertes Nutzererlebnis bietet.</p>         <p>Um mehr über die Funktionsweise von GPT-5.5 Instant zu erfahren, können Interessierte den Newsletter von The New Stack abonnieren undexclusive Inhalte erhalten.</p>         <h3>Weitere Informationen</h3>         <p>Benutzer, die bereits für den Newsletter von The New Stack angemeldet sind, müssen sich erneut anmelden, um den Newsletter zu erhalten.</p>         <p>Der Newsletter bietet eine Möglichkeit, sich über die neuesten Entwicklungen in der Technologie-Branche zu informieren und exklusive Inhalte zu erhalten.</p>         <p><em>BytePost-Einordnung: Die Einführung von GPT-5.5 Instant als Standard-Modell in ChatGPT kann zu einer Verbesserung der Benutzererfahrung führen und zeigt, dass OpenAI weiterhin an der Entwicklung seiner Technologie arbeitet.</em></p>     ",
+            "content_simple": "         <p>Die Firma OpenAI hat ein neues Modell für ihre Chatbot-Plattform ChatGPT entwickelt. Dieses Modell ermöglicht schnellere und genauere Antworten.</p>         <p>Damit will OpenAI ein besseres Benutzererlebnis anbieten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das neue Modell GPT-5.5 Instant verwendet eine fortschrittliche Architektur, um schnellere und genauere Antworten zu liefern.</p>         <p>Es ist jedoch zu beachten, dass die Einführung eines neuen Modells auch zu einem erhöhten Energieverbrauch und höheren Anforderungen an die Hardware führen kann.</p>         <p>Entwickler sollten sich über die technischen Einzelheiten von GPT-5.5 Instant informieren, um optimal von diesem Modell zu profitieren.</p>     ",
+            "date": "06.05.2026",
+            "id": "d4ea3387",
+            "url": "https://thenewstack.io/openai-gpt-5-5-instant-launch/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d4ea3387.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "📱",
+            "title": "Apple zahlt 250 Millionen Dollar ",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "d78661fe",
+                "7953eed2",
+                "6bb024d7"
+            ],
+            "content": "         <h3>Apple zahlt 250 Millionen Dollar an iPhone-Besitzer</h3>         <p>Apple hat sich bereit erklärt, 250 Millionen Dollar zu zahlen, um eine Sammelklage zu begleichen, die den Vorwurf erhob, das Unternehmen habe Kunden über die Verfügbarkeit seiner Apple-Intelligence-Features getäuscht. Die vorgeschlagene Einigung würde für Menschen in den USA gelten, die alle Modelle des iPhone 16 und des iPhone 15 Pro zwischen dem 10. Juni 2024 und dem 29. März 2025 gekauft haben.</p>         <p>Menschen, die qualifizierte Ansprüche geltend machen, können 25 Dollar für jedes anspruchsberechtigte Gerät erhalten, „was je nach Anspruchsvolumen und anderen Faktoren auf 95 Dollar pro Gerät erhöht oder verringert werden kann“, so die Clarkson Law Firm, das juristische Team hinter der Sammelklage.</p>         <p>Die Einigung wird eine Klage aus dem Jahr 2025 beenden, in der behauptet wurde, dass Apples Werbung zu einer „klaren und vernünftigen Verbrauchererwartung“ geführt habe, dass die Apple-Intelligence-Features mit dem Start des iPhone 16 verfügbar sein würden. Die Klage behauptete, dass Apples Produkte „eine erheblich eingeschränkte oder völlig fehlende Version der Apple-Intelligence“ angeboten hätten, was die Kunden über ihre tatsächliche Nützlichkeit und Leistung getäuscht habe.</p>         <p>In einer Erklärung an The Verge sagte Apple-Sprecherin Marni Goldberg, das Unternehmen habe „diesen Fall beigelegt, um sich auf das zu konzentrieren, was wir am besten können: innovative Produkte und Dienstleistungen für unsere Benutzer bereitzustellen“.</p>         <h3>Weitere Informationen</h3>         <p>Apple hatte auf seiner Worldwide Developers Conference im Juni 2024 eine Reihe von künstlichen Intelligenz-Features für seine iPhones vorgestellt, einschließlich einer personalisierten Siri. Als das iPhone 16 im September startete, bezeichnete Apple es als „für Apple-Intelligence entwickelt“, obwohl es viele der Funktionen, die das Unternehmen Monate zuvor angekündigt hatte, nicht enthielt.</p>         <p>Stattdessen veröffentlichte Apple seine neuen künstlichen Intelligenz-Features schrittweise, einschließlich Image Playground, Genmoji und einer ChatGPT-Integration in Siri. Das Unternehmen hat auch den Start seiner personalisierten Siri verzögert, die jetzt für später in diesem Jahr erwartet wird.</p>         <p>Im April letzten Jahres empfahl die National Advertising Division, dass Apple seine „jetzt verfügbar“-Behauptung für die Apple-Intelligence-Seite auf seiner Website „einstellen oder ändern“ sollte. Apple zog auch einen iPhone-16-Werbespot zurück, in dem die Schauspielerin Bella Ramsey die AI-upgegradete Siri verwendet.</p>         <p>Apple hat jegliches Fehlverhalten abgestritten. Hier ist die vollständige Erklärung des Unternehmens:</p>         <p>Seit dem Start von Apple Intelligence haben wir Dutzende von Funktionen in vielen Sprachen eingeführt, die in Apples Plattformen integriert sind, relevant für das, was Benutzer jeden Tag tun, und mit Datenschutzschtzen auf jedem Schritt gebaut. Dazu gehören Visual Intelligence, Live-Übersetzung, Schreibtools, Genmoji, Clean Up und viele mehr. Apple hat eine Einigung erzielt, um Ansprüche im Zusammenhang mit der Verfügbarkeit von zwei zusätzlichen Funktionen zu klären. Wir haben diesen Fall beigelegt, um uns auf das zu konzentrieren, was wir am besten können: innovative Produkte und Dienstleistungen für unsere Benutzer bereitzustellen.</p>         <p><em>BytePost-Einordnung: Die Entscheidung von Apple, 250 Millionen Dollar an iPhone-Besitzer zu zahlen, ist ein wichtiger Schritt in Richtung Transparenz und Kundenorientierung. Es bleibt jedoch abzuwarten, ob dies ausreicht, um die Kunden zu befriedigen, die sich von den Apple-Intelligence-Features getäuscht fühlten.</em></p>     ",
+            "content_simple": "         <p>Apple zahlt 250 Millionen Dollar an iPhone-Besitzer, weil das Unternehmen sie über die Verfügbarkeit von künstlicher Intelligenz-Features getäuscht hat. Die betroffenen Kunden können bis zu 95 Dollar pro Gerät erhalten.</p>         <p>Apple hatte versprochen, dass das iPhone 16 mit künstlicher Intelligenz-Features wie einer personalisierten Siri ausgestattet sein würde. Als das iPhone jedoch startete, fehlten viele dieser Funktionen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Apple hat auf seiner Worldwide Developers Conference im Juni 2024 eine Reihe von künstlichen Intelligenz-Features für seine iPhones vorgestellt, einschließlich einer personalisierten Siri. Die Implementierung dieser Funktionen erfolgte jedoch schrittweise und nicht wie versprochen.</p>         <p>Die technischen Gründe für diese Verzögerung sind nicht öffentlich bekannt, aber es ist wahrscheinlich, dass Apple Probleme bei der Integration der künstlichen Intelligenz-Features in seine bestehende Architektur hatte.</p>         <p>Die Entscheidung von Apple, 250 Millionen Dollar an iPhone-Besitzer zu zahlen, ist ein wichtiger Schritt in Richtung Transparenz und Kundenorientierung. Es bleibt jedoch abzuwarten, ob dies ausreicht, um die Kunden zu befriedigen, die sich von den Apple-Intelligence-Features getäuscht fühlten.</p>     ",
+            "date": "06.05.2026",
+            "id": "2cd8d4c0",
+            "url": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2cd8d4c0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Modulares Skill-System für KI",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "758d58ca"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>In diesem Tutorial bauen wir ein vollständiges skill-basiertes Agenten-System für Large Language Models (LLMs) und erkunden, wie modulare Fähigkeiten wie ein Betriebssystem für KI-Agents strukturiert werden können. Wir definieren wiederverwendbare Fähigkeiten, fügen Metadaten und Schemas hinzu, registrieren sie in einem zentralen Register und ermöglichen dynamische Orchestrierung durch Werkzeugaufrufe und mehrschrittiges Reasoning.</p>         <p>Das Ziel ist es, ein flexibles System zu erstellen, das es ermöglicht, Fähigkeiten einfach hinzuzufügen oder zu entfernen, ohne das gesamte System neu zu konfigurieren. Dies wird durch die Verwendung von Python und der OpenAI-API erreicht.</p>         <h3>Implementierung</h3>         <p>Die Implementierung besteht aus mehreren Schritten. Zunächst müssen wir die notwendigen Bibliotheken importieren und die API-Schlüssel für OpenAI einrichten. Anschließend definieren wir die Fähigkeiten und ihre Metadaten, wie z.B. den Namen, die Beschreibung und die Kategorie.</p>         <p>Wir verwenden die `Skill`-Klasse als abstrakte Basis für jede Agenten-Fähigkeit. Jede Fähigkeit ist selbstbeschreibend, versioniert, testbar und komponierbar. Wir definieren auch die `SkillMetadata`-Klasse, um die Metadaten jeder Fähigkeit zu speichern.</p>         <h3>Registrierung und Orchestrierung</h3>         <p>Wir verwenden die `SkillRegistry`-Klasse, um alle Fähigkeiten in einem zentralen Register zu speichern. Dies ermöglicht es uns, Fähigkeiten leicht zu registrieren, zu erhalten und zu orchestrieren. Wir können auch dynamische Orchestrierung durch Werkzeugaufrufe und mehrschrittiges Reasoning ermöglichen.</p>         <p>Um die Fähigkeiten zu orchestrieren, können wir die `execute`-Methode verwenden, um eine Fähigkeit auszuführen. Wir können auch die `to_openai_tool`-Methode verwenden, um eine Fähigkeit in ein OpenAI-Werkzeug umzuwandeln.</p>         <h3>Fazit</h3>         <p>In diesem Tutorial haben wir gesehen, wie wir ein modulares skill-basiertes Agenten-System für LLMs erstellen können. Wir haben auch gesehen, wie wir Fähigkeiten definieren, registrieren und orchestrieren können, um ein flexibles und skalierbares System zu erstellen.</p>         <p><em>BytePost-Einordnung: Dieses Tutorial bietet eine umfassende Einführung in die Erstellung von modularen skill-basierten Agenten-Systemen für LLMs. Es ist besonders nützlich für Entwickler, die Erfahrung mit Python und der OpenAI-API haben.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du hast einen Assistenten, der verschiedene Fähigkeiten hat, wie z.B. Textgenerierung oder Bildanalyse. Du kannst diese Fähigkeiten wie Bausteine kombinieren, um komplexe Aufgaben zu lösen.</p>         <p>Dies ist genau das, was wir in diesem Tutorial erstellen. Wir bauen ein modulares System, das es ermöglicht, Fähigkeiten einfach hinzuzufügen oder zu entfernen, ohne das gesamte System neu zu konfigurieren.</p>     ",
+            "content_pro": "         <h3>Architektur-Details</h3>         <p>Die Architektur unseres Systems basiert auf einer mikroservice-basierten Architektur. Jede Fähigkeit ist ein eigenständiger Mikroservice, der über eine API kommuniziert.</p>         <p>Wir verwenden Python als Programmiersprache und die OpenAI-API, um die Fähigkeiten zu implementieren. Wir verwenden auch die `dataclasses`-Bibliothek, um die Metadaten jeder Fähigkeit zu speichern.</p>         <h3>Verwandte Konzepte</h3>         <p>Unser System ist verwandt mit anderen modularen Systemen, wie z.B. dem von OpenAI entwickelten System für die KI-Modellierung.</p>         <p>Wir verwenden auch ähnliche Techniken, wie z.B. die Verwendung von Werkzeugaufrufen und mehrschrittigem Reasoning, um die Fähigkeiten zu orchestrieren.</p>     ",
+            "date": "06.05.2026",
+            "id": "73d14862",
+            "url": "https://www.marktechpost.com/2026/05/05/build-a-modular-skill-based-agent-system-for-llms-with-dynamic-tool-routing-in-python/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/73d14862.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming",
+                "hardware"
+            ],
+            "icon": "🎮",
+            "title": "Steam Controller ausverkauft",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "d78661fe",
+                "7953eed2",
+                "6bb024d7"
+            ],
+            "content": "         <h3>Der neue Steam Controller ist ausverkauft</h3>         <p>Der neue Steam Controller ist nach rund 30 Minuten ausverkauft gewesen. Scalper bieten das Eingabegerät für teils mehr als das Doppelte an.</p>         <p>Wenn du auf der Suche nach einem neuen Steam Controller bist, musst du dich possibly auf längere Wartezeiten einstellen. Der neue Steam Controller ist nach nur 30 Minuten ausverkauft gewesen. Das hat zu einer Situation geführt, in der Scalper das Eingabegerät für teils mehr als das Doppelte anbieten.</p>         <h3>Was bedeutet das für dich?</h3>         <p>Du solltest dich auf höhere Preise einstellen, wenn du einen Steam Controller kaufen möchtest. Es ist ratsam, Preise zu vergleichen und nach günstigen Angeboten Ausschau zu halten.</p>         <p>Es ist auch wichtig zu beachten, dass Scalper oft höhere Preise verlangen als der ursprüngliche Preis des Artikels. Es ist daher ratsam, dich an vertrauenswürdige Händler zu wenden.</p>         <p><em>BytePost-Einordnung: Der Ausverkauf des Steam Controllers ist ein Zeichen für die hohe Nachfrage nach diesem Produkt. Es ist ratsam, vorsichtig zu sein, wenn man einen Steam Controller kaufen möchte, um nicht Opfer von Scalpern zu werden.</em></p>     ",
+            "content_simple": "         <p>Der neue Steam Controller ist ausverkauft. Das bedeutet, dass du möglicherweise länger warten musst, um eines zu bekommen. Einige Leute bieten ihn für mehr Geld an, als er ursprünglich kostet.</p>         <p>Wenn du einen Steam Controller kaufen möchtest, solltest du dich auf höhere Preise einstellen und nach günstigen Angeboten suchen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Steam Controller ist ein Eingabegerät, das von Valve entwickelt wurde. Es ist mit einer Vielzahl von Funktionen ausgestattet, wie z.B. einer Touchpad und einer Gyroskope.</p>         <p>Die Hardware des Steam Controllers ist auf eine hohe Präzision und Genauigkeit ausgelegt. Es ist jedoch wichtig zu beachten, dass die Verfügbarkeit des Controllers derzeit eingeschränkt ist.</p>         <h3>Kritische Einordnung</h3>         <p>Der Ausverkauf des Steam Controllers ist ein Zeichen für die hohe Nachfrage nach diesem Produkt. Es ist jedoch auch ein Zeichen für die Probleme, die mit der Verfügbarkeit von Hardware-Produkten verbunden sind.</p>         <p>Es ist ratsam, vorsichtig zu sein, wenn man einen Steam Controller kaufen möchte, um nicht Opfer von Scalpern zu werden. Es ist auch wichtig, die Preise zu vergleichen und nach günstigen Angeboten Ausschau zu halten.</p>     ",
+            "date": "06.05.2026",
+            "id": "653667d4",
+            "url": "https://www.golem.de/news/gamepad-scalper-fordern-wucherpreise-steam-controller-nach-minuten-ausverkauft-2605-208323.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/653667d4.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "gaming"
             ],
             "icon": "🎮",
@@ -35552,10 +35784,10 @@
         }
     ],
     "bytepulse": {
-        "date": "04.05.2026",
-        "positiv": 100,
-        "neutral": 0,
-        "kritisch": 0,
-        "total": 1
+        "date": "06.05.2026",
+        "positiv": 38,
+        "neutral": 25,
+        "kritisch": 38,
+        "total": 8
     }
 }
