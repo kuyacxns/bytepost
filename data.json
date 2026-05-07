@@ -4,6 +4,95 @@
             "cat": [
                 "ki"
             ],
+            "icon": "🤖",
+            "title": "Barry Diller verteidigt Sam Altman",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "758d58ca",
+                "b8193c89",
+                "2a4ffb02"
+            ],
+            "content": "         <h3>Barry Diller verteidigt Sam Altman</h3>         <p>Der Milliardär und Medienmogul Barry Diller hat den CEO von OpenAI, Sam Altman, verteidigt. Trotz recenter Berichte, die Altman als manipulativ und täuschend darstellen, glaubt Diller, dass Altman ehrlich ist und gute Werte vertritt.</p>         <p>Auf dem Konferenzpodium von The Wall Street Journal sagte Diller, dass das Problem nicht darin liegt, ob man Altman vertrauen kann oder nicht. Vielmehr geht es darum, dass künstliche Intelligenz (KI) ein unvorhersehbares Phänomen ist, das Regelungen und Guardrails benötigt.</p>         <p>Diller betonte, dass KI ein großes Thema ist, das über das Vertrauen hinausgeht. Er sagte: „One of the big issues with AI is it goes way beyond trust. It may be that trust is irrelevant because the things that are happening are a surprise to the people who are making those things happen.“</p>         <p>Der Medienmogul warnte auch, dass KI ein unkontrollierbares Phänomen sein könnte, wenn man nicht vorsichtig ist. Er sagte: „Wir haben uns auf etwas eingelassen, das fast alles verändern wird. Es ist nicht unterbewertet. Ob diese riesigen Investitionen sich auszahlen werden, ist mir egal. Ich bin nicht investiert, aber der Fortschritt wird gemacht.“</p>         <h3>Die Bedeutung von KI</h3>         <p>Diller sieht KI als ein wichtiges Thema, das die Welt verändern wird. Er glaubt, dass die meisten Menschen, die an der Spitze der KI-Entwicklung stehen, gute Verwalter sind und dass Altman ehrlich und ein anständiger Mensch mit guten Werten ist.</p>         <p>Es bleibt jedoch abzuwarten, ob die Warnungen und Bedenken von Diller und anderen Experten ernst genommen werden. Die Zukunft von KI ist ungewiss, und es ist wichtig, dass wir uns auf die möglichen Konsequenzen und Risiken vorbereiten.</p>         <p><em>BytePost-Einordnung: Die Debatte um KI und ihre möglichen Konsequenzen ist ein wichtiges Thema, das uns alle betrifft. Es ist wichtig, dass wir uns auf die möglichen Risiken und Chancen vorbereiten und dass wir uns um eine verantwortungsvolle Entwicklung und Anwendung von KI bemühen.</em></p>     ",
+            "content_simple": "         <p>Der Medienmogul Barry Diller hat den CEO von OpenAI, Sam Altman, verteidigt. Er glaubt, dass Altman ehrlich ist und gute Werte vertritt. Diller warnt jedoch, dass künstliche Intelligenz (KI) ein unvorhersehbares Phänomen ist, das Regelungen und Guardrails benötigt.</p>         <p>Das Problem ist, dass KI sehr mächtig sein kann und dass wir uns auf die möglichen Konsequenzen und Risiken vorbereiten müssen. Es ist wichtig, dass wir uns um eine verantwortungsvolle Entwicklung und Anwendung von KI bemühen.</p>     ",
+            "content_pro": "         <h3>KI und ihre möglichen Konsequenzen</h3>         <p>Die Entwicklung von KI ist ein komplexes Thema, das viele verschiedene Aspekte umfasst. Es geht nicht nur darum, ob man Altman vertrauen kann oder nicht, sondern vielmehr darum, dass KI ein unvorhersehbares Phänomen ist, das Regelungen und Guardrails benötigt.</p>         <p>Es gibt viele verschiedene Ansätze, um KI zu entwickeln und anzuwenden. Einige Experten glauben, dass KI ein wichtiger Schritt in die Zukunft ist, während andere warnen, dass KI ein Risiko für die Menschheit darstellt.</p>         <p>Es ist wichtig, dass wir uns auf die möglichen Konsequenzen und Risiken vorbereiten und dass wir uns um eine verantwortungsvolle Entwicklung und Anwendung von KI bemühen. Dazu gehören auch die Entwicklung von Regulierungen und Guardrails, um sicherzustellen, dass KI nicht aus dem Ruder läuft.</p>     ",
+            "date": "07.05.2026",
+            "id": "eacdd06b",
+            "url": "https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/eacdd06b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Fünf Architekten erklären Probleme der KI-Wirtschaft",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "eacdd06b",
+                "3eb3c608",
+                "d78661fe"
+            ],
+            "content": "         <h3>Die Architekten der KI-Wirtschaft sprechen</h3>         <p>Letzte Woche trafen sich fünf Personen, die an verschiedenen Ebenen der KI-Lieferkette arbeiten, auf der Milken Global Conference in Beverly Hills. Dort diskutierten sie mit TechCrunch über verschiedene Themen, von der Knappheit an Chips bis hin zu orbitalen Rechenzentren und der Möglichkeit, dass die gesamte Architektur, die der Technologie zugrunde liegt, falsch ist.</p>         <p>Auf dem Podium mit TechCrunch: Christophe Fouquet, CEO von ASML, dem niederländischen Unternehmen, das ein Monopol auf die extreme Ultraviolett-Lithographie-Maschinen besitzt, ohne die moderne Chips nicht existieren würden; Francis deSouza, COO von Google Cloud, der einen der größten Infrastruktur-Wetten in der Firmengeschichte überwacht; Qasar Younis, Mitgründer und CEO von Applied Intuition, einem 15-Milliarden-Dollar-Unternehmen, das in der Simulation begann und sich nun der Verteidigung widmet; Dimitry Shevelenko, Chief Business Officer von Perplexity, dem KI-nativen Such- und Agenten-Unternehmen; und Eve Bodnia, eine Quantenphysikerin, die die akademische Welt verließ, um die grundlegende Architektur, die die meisten KI-Unternehmen voraussetzen, bei ihrem Startup Logical Intelligence in Frage zu stellen.</p>         <h3>Die Engpässe sind real</h3>         <p>Der KI-Boom trifft auf harte physikalische Grenzen, und die Einschränkungen beginnen weiter unten im Stapel, als viele ahnen. Fouquet war der Erste, der es sagte und beschrieb eine „enorme Beschleunigung des Chip-Produktionsprozesses“, während er gleichzeitig seine „starke Überzeugung“ ausdrückte, dass trotz all dieser Bemühungen „für die nächsten zwei, drei, vielleicht fünf Jahre der Markt begrenzt sein wird“, was bedeutet, dass die Hyperskalierer – Google, Microsoft, Amazon, Meta – nicht alle Chips bekommen werden, die sie bezahlen, und zwar ganz einfach nicht.</p>         <p>DeSouza hob hervor, wie groß – und wie schnell wachsend – dieses Problem ist. Er erinnerte das Publikum daran, dass der Umsatz von Google Cloud im vergangenen Quartal 20 Milliarden Dollar überschritt und um 63 % wuchs, während der Auftragsbestand – der bereits fest zugesagte, aber noch nicht gelieferte Umsatz – in nur einem Quartal von 250 auf 460 Milliarden Dollar fast verdoppelte. „Die Nachfrage ist real“, sagte er mit beeindruckender Ruhe.</p>         <h3>Das Energieproblem ist auch real</h3>         <p>Wenn Chips der erste Engpass sind, dann ist Energie das Problem, das dahinter lauert. DeSouza bestätigte, dass Google orbitalen Rechenzentren als ernsthafte Antwort auf die Energie-Begrenzungen untersucht. „Man erhält Zugang zu mehr reichlich vorhandener Energie“, stellte er fest.</p>         <p><em>BytePost-Einordnung:</em> Die Diskussion der fünf Architekten der KI-Wirtschaft macht deutlich, dass die Branche mit ernsthaften Herausforderungen konfrontiert ist. Die Begrenzungen bei der Chip-Produktion und die Energie-Engpässe sind nur zwei der Probleme, mit denen die Industrie konfrontiert ist. Es bleibt abzuwarten, wie die Unternehmen darauf reagieren werden und welche Lösungen sie entwickeln, um diese Herausforderungen zu meistern.</p>     ",
+            "content_simple": "         <p>Die KI-Wirtschaft wächst sehr schnell, aber es gibt einige große Probleme. Die Unternehmen, die Computerchips herstellen, können nicht genug produzieren, um den Bedarf zu decken. Dies bedeutet, dass die großen Technologie-Unternehmen wie Google und Amazon nicht genug Chips für ihre Computer bekommen.</p>         <p>Ein weiteres Problem ist die Energie. Die Computer benötigen sehr viel Energie, um zu funktionieren, und es gibt nicht genug Energie, um alle Computer zu betreiben. Einige Unternehmen denken darüber nach, Rechenzentren im Weltraum zu bauen, um mehr Energie zu bekommen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die extreme Ultraviolett-Lithographie (EUVL) ist ein wichtiger Prozess bei der Herstellung von Computerchips. Ohne diese Technologie wäre die Produktion von modernen Chips nicht möglich. Die EUVL-Maschinen von ASML sind derzeit die einzigen, die diese Art von Lithographie durchführen können.</p>         <p>Die orbitalen Rechenzentren, die von Google geplant werden, könnten eine Lösung für das Energieproblem sein. Durch den Einsatz von Solarpanelen im Weltraum könnte man Energie gewinnen und diese dann zur Erde übertragen.</p>         <h3>Kritische Einordnung</h3>         <p>Die Herausforderungen, mit denen die KI-Wirtschaft konfrontiert ist, sind vielfältig. Die Begrenzungen bei der Chip-Produktion und die Energie-Engpässe sind nur zwei der Probleme, mit denen die Industrie konfrontiert ist. Es bleibt abzuwarten, wie die Unternehmen darauf reagieren werden und welche Lösungen sie entwickeln, um diese Herausforderungen zu meistern.</p>     ",
+            "date": "07.05.2026",
+            "id": "6c5375f6",
+            "url": "https://techcrunch.com/2026/05/06/five-architects-of-the-ai-economy-explain-where-the-wheels-are-coming-off/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6c5375f6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "gaming"
+            ],
+            "icon": "🚀",
+            "title": "Eve Online wird Forschungsumgebung für Google Deepmind",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "eacdd06b",
+                "6c5375f6",
+                "d78661fe"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Das bekannte Weltraumspiel Eve Online wird zur Forschungsumgebung für Google Deepmind. Gleichzeitig bekommt das Entwicklerstudio einen neuen Namen. Dieser ungewöhnliche Schritt ist ein interessantes Experiment, das zeigen soll, wie künstliche Intelligenz in komplexen Spielen eingesetzt werden kann.</p>         <h3>Die Forschungsumgebung</h3>         <p>Google Deepmind wird Eve Online nutzen, um Forschungen im Bereich der künstlichen Intelligenz durchzuführen. Das Spiel bietet eine ideale Umgebung für solche Forschungen, da es ein komplexes Ökosystem mit vielen Variablen und Interaktionen bietet. Die Forscher von Google Deepmind wollen herausfinden, wie künstliche Intelligenz in solchen Umgebungen eingesetzt werden kann, um komplexe Probleme zu lösen.</p>         <h3>Der neue Name</h3>         <p>Das Entwicklerstudio hinter Eve Online hat einen neuen Namen erhalten. Dieser Schritt ist Teil eines größeren Prozesses, um das Studio und seine Produkte besser auf die Zukunft vorzubereiten. Der neue Name soll die Richtung des Studios besser widerspiegeln und neue Möglichkeiten für die Zukunft eröffnen.</p>         <h3>Fazit</h3>         <p>Die Verbindung zwischen Eve Online und Google Deepmind ist ein interessantes Experiment, das zeigen soll, wie künstliche Intelligenz in komplexen Spielen eingesetzt werden kann. Es bleibt abzuwarten, welche Ergebnisse diese Forschung bringen wird und wie sie die Zukunft von Eve Online und anderen Spielen beeinflussen wird.</p>         <p><em>BytePost-Einordnung: Diese Entwicklung ist ein wichtiger Schritt in die Zukunft der künstlichen Intelligenz und ihrer Anwendung in komplexen Spielen. Es bleibt abzuwarten, welche Ergebnisse diese Forschung bringt und wie sie die Zukunft von Eve Online und anderen Spielen beeinflusst.</em></p>     ",
+            "content_simple": "         <p>Das Weltraumspiel Eve Online wird nun auch von Google Deepmind für Forschungen genutzt. Das bedeutet, dass das Spiel als eine Art Testumgebung für künstliche Intelligenz dient. Dies kann interessante Ergebnisse bringen und zeigt, wie künstliche Intelligenz in komplexen Spielen eingesetzt werden kann.</p>         <p>Das Entwicklerstudio hinter Eve Online hat auch einen neuen Namen erhalten. Dies soll die Richtung des Studios besser widerspiegeln und neue Möglichkeiten eröffnen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Forschungsumgebung von Google Deepmind in Eve Online wird auf Basis von komplexen Algorithmen und Machine-Learning-Verfahren aufbauen. Dies ermöglicht es den Forschern, komplexe Probleme in der Spielumgebung zu lösen und die künstliche Intelligenz weiter zu entwickeln.</p>         <h3>Analyse</h3>         <p>Die Verbindung zwischen Eve Online und Google Deepmind ist ein interessantes Experiment, das die Möglichkeiten der künstlichen Intelligenz in komplexen Spielen aufzeigt. Es bleibt abzuwarten, welche Ergebnisse diese Forschung bringt und wie sie die Zukunft von Eve Online und anderen Spielen beeinflusst.</p>     ",
+            "date": "07.05.2026",
+            "id": "3eb3c608",
+            "url": "https://www.golem.de/news/weltraumspiel-umbau-hinter-eve-online-wird-immer-ungewoehnlicher-2605-208390.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3eb3c608.jpg",
+            "pick": true,
+            "pick_reason": "Die Zukunft der künstlichen Intelligenz trifft auf die Welt der Online-Gaming: Google Deepmind geht mit Eve Online eine ungewöhnliche Partnerschaft ein, um die Herausforderungen der KI-Forschung in einer komplexen virtuellen Umgebung zu meistern. Damit wird Eve Online zu einem echten Testfeld für innovative KI-Lösungen und ermöglicht Entwicklern einen tiefen Einblick in die Möglichkeiten und Grenzen der KI. Diese Kooperation könnte bahnbrechende Entdeckungen für die gesamte Tech-Branche bedeuten."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
             "icon": "🍴",
             "title": "Wonder: KI ermöglicht Restaurants in Minuten",
             "source": "The Wall Street Journal",
@@ -115,7 +204,7 @@
                 "sleep": 0
             },
             "image_local": "images/48c05003.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Ein schwerer Schlag für die Sicherheit: Der Quellcode von Trellix ist ausgerissen und könnte in die falschen Hände geraten. Das bedeutet, dass Entwickler und Nutzer von Trellix-Produkten einem erhöhten Risiko von Cyberangriffen ausgesetzt sind, was sofortige Maßnahmen zur Absicherung ihrer Systeme erfordert. Der Vorfall wirft ein dunkles Licht auf die Verwundbarkeit der Softwaresicherheit und stellt eine massive Herausforderung für die Branche dar."
         },
         {
@@ -35784,10 +35873,10 @@
         }
     ],
     "bytepulse": {
-        "date": "06.05.2026",
-        "positiv": 38,
-        "neutral": 25,
-        "kritisch": 38,
-        "total": 8
+        "date": "07.05.2026",
+        "positiv": 33,
+        "neutral": 33,
+        "kritisch": 33,
+        "total": 3
     }
 }
