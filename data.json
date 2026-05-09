@@ -2,6 +2,269 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "business"
+            ],
+            "icon": "🤖",
+            "title": "Unternehmen drängen in den Enterprise-AI-Markt",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe",
+                "758d58ca"
+            ],
+            "content": "         <h3>Die „Volksgesellschaft“ und der Enterprise-AI-Goldrausch</h3>         <p>Jeder will ein Stück vom Enterprise-AI-Kuchen, und diese Woche haben wir eine Reihe von Unternehmen gesehen, die ihre Züge machen. Von Anthropic und OpenAI, die neue Joint Ventures angekündigt haben, die auf die Bereitstellung von Enterprise-AI-Lösungen abzielen, bis hin zu SAP, das 1 Milliarde Dollar in den deutschen AI-Startup Prior Labs investiert hat, wird es immer klarer, dass, wenn du ein Startup bist, das Enterprise-Tools entwickelt, du wahrscheinlich ein Übernahmезiel bist.</p>         <p>Auf dieser Episode des TechCrunch-Podcast „Equity“ sprechen die Moderatoren Kirsten Korosec, Anthony Ha und Sean O’Kane über die Wochen-Deals im Bereich Enterprise-AI, die xAI-Anthropic-Compute-Vereinbarung und was all dies bedeutet, bevor möglicherweise eine große IPO-Saison beginnt.</p>         <p>Im vollständigen Podcast hören Sie unter anderem:</p>         <ul>             <li>Warum ein TikToker versucht, den Kauf von Spirit Airlines durch Crowdfunding zu finanzieren und ob jemand Spirit wirklich genug liebt, um es funktionieren zu lassen</li>             <li>Warum Katie Hauns Venture-Fonds und Andreessen Horowitz beide Milliarden aufbringen, um eine Crypto-Comeback zu unterstützen</li>             <li>Aurora Innovations Meilenstein-Vertrag für kommerzielles LKW-Fahren mit einem Tochterunternehmen von Berkshire Hathaway, der kurz nach unserem Gespräch mit Auroras CEO Chris Urmson auf der HumanX bekannt gegeben wurde</li>             <li>Das neueste AI-Ausgaben-Programm des Pentagons, das Verträge mit Nvidia, Microsoft und AWS umfasst</li>         </ul>         <p><em>BytePost-Einordnung: Der Artikel zeigt, wie sich das Feld des Enterprise-AI ständig weiterentwickelt und wie Unternehmen versuchen, in diesem Bereich Fuß zu fassen. Es ist interessant zu sehen, wie die großen Player wie SAP, Anthropic und OpenAI ihre Strategien anpassen, um in diesem wachsenden Markt erfolgreich zu sein.</em></p>     ",
+            "content_simple": "         <p>Die Unternehmen drängen in den Markt für künstliche Intelligenz (KI). Sie wollen ein Stück vom Kuchen haben. Einige Unternehmen wie Anthropic und OpenAI arbeiten zusammen, um KI-Lösungen für Unternehmen zu entwickeln. Andere Unternehmen wie SAP investieren viel Geld in KI-Startups.</p>         <p>Es ist wie ein Goldrausch. Jeder will ein Stück vom Kuchen haben. Aber es ist nicht nur um das Geld. Es geht auch um die Frage, wie man KI am besten nutzen kann, um Unternehmen zu helfen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Unternehmen setzen auf verschiedene Technologien, um KI-Lösungen zu entwickeln. Einige verwenden Machine-Learning-Algorithmen, um Daten zu analysieren und Vorhersagen zu treffen. Andere verwenden Natural-Language-Processing, um Texte zu verstehen und zu generieren.</p>         <p>Ein Beispiel für eine solche Technologie ist die xAI-Anthropic-Compute-Vereinbarung. Diese Vereinbarung ermöglicht es Unternehmen, KI-Lösungen zu entwickeln, die auf großen Datenmengen basieren.</p>         <h3>Kritische Einordnung</h3>         <p>Es ist jedoch zu beachten, dass die Entwicklung von KI-Lösungen auch Risiken birgt. Einige Experten warnen vor den Risiken, die mit der Nutzung von KI-Lösungen verbunden sind, wie z.B. der Verlust von Arbeitsplätzen oder die Manipulation von Informationen.</p>     ",
+            "date": "09.05.2026",
+            "id": "fd4a1095",
+            "url": "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/fd4a1095.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🔒",
+            "title": "Instagram deaktiviert Ende-zu-Ende-Verschlüsselung",
+            "source": "Heise",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "fd4a1095",
+                "7dbfeca0",
+                "ada6000c"
+            ],
+            "content": "         <h3>Ende-zu-Ende-Verschlüsselung bei Instagram</h3>         <p>Das soziale Netzwerk Instagram, das zu Meta gehört, hat angekündigt, die Ende-zu-Ende-Verschlüsselung für Direktnachrichten abzuschalten. Diese Änderung wird am 8. Mai in Kraft treten.</p>         <p>Durch die Ende-zu-Ende-Verschlüsselung können nur der Absender und der Empfänger einer Nachricht den Inhalt lesen. Dies bietet ein hohes Maß an Datenschutz und Sicherheit.</p>         <h3>Hintergrund der Entscheidung</h3>         <p>Der Grund für diese Entscheidung ist nicht bekannt. Es ist jedoch möglich, dass dies aufgrund von regulatorischen Anforderungen oder anderen Gründen geschieht.</p>         <p>Die Ende-zu-Ende-Verschlüsselung ist ein wichtiger Aspekt der Privatsphäre und Sicherheit von Online-Kommunikation. Durch die Abschaltung dieser Funktion können Benutzer ihre Nachrichten nicht mehr sicher senden.</p>         <h3>Auswirkungen auf die Benutzer</h3>         <p>Die Abschaltung der Ende-zu-Ende-Verschlüsselung kann Auswirkungen auf die Privatsphäre und Sicherheit der Benutzer haben. Benutzer sollten sich bewusst sein, dass ihre Nachrichten nicht mehr sicher sind.</p>         <p>Es ist wichtig, dass Benutzer alternative Kommunikationsmethoden in Betracht ziehen, die Ende-zu-Ende-Verschlüsselung anbieten.</p>         <p><em>BytePost-Einordnung: Die Abschaltung der Ende-zu-Ende-Verschlüsselung bei Instagram ist ein kritischer Schritt, der die Privatsphäre und Sicherheit der Benutzer gefährden kann. Es ist wichtig, dass Benutzer sich dieser Änderung bewusst sind und alternative Kommunikationsmethoden in Betracht ziehen.</em></p>     ",
+            "content_simple": "         <p>Instagram schaltet die sichere Verschlüsselung für Nachrichten ab. Das bedeutet, dass Nachrichten nicht mehr sicher gesendet werden können.</p>         <p>Die Ende-zu-Ende-Verschlüsselung ist wie ein Brief, den nur der Absender und der Empfänger lesen können. Ohne diese Verschlüsselung kann jeder, der Zugang zu den Nachrichten hat, sie lesen.</p>         <p>Benutzer sollten sich alternative Kommunikationsmethoden suchen, die ihre Nachrichten sicher senden.</p>     ",
+            "content_pro": "         <h3>Technische Hintergründe</h3>         <p>Die Ende-zu-Ende-Verschlüsselung bei Instagram verwendet ein Protokoll, das es ermöglicht, Nachrichten sicher zu senden. Durch die Abschaltung dieser Funktion können Benutzer ihre Nachrichten nicht mehr sicher senden.</p>         <h3>Auswirkungen auf die Sicherheit</h3>         <p>Die Abschaltung der Ende-zu-Ende-Verschlüsselung kann Auswirkungen auf die Sicherheit der Benutzer haben. Es ist wichtig, dass Benutzer sich dieser Änderung bewusst sind und alternative Kommunikationsmethoden in Betracht ziehen.</p>         <p>Die Ende-zu-Ende-Verschlüsselung ist ein wichtiger Aspekt der Privatsphäre und Sicherheit von Online-Kommunikation. Durch die Abschaltung dieser Funktion können Benutzer ihre Nachrichten nicht mehr sicher senden.</p>     ",
+            "date": "09.05.2026",
+            "id": "0aba5964",
+            "url": "https://www.heise.de/news/Ende-zu-Ende-Verschluesselung-Instagram-deaktiviert-Privatsphaerenschutz-11287210.html?wt_mc=rss.red.ho.top-news.atom.beitrag.beitrag",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0aba5964.jpg",
+            "pick": true,
+            "pick_reason": "Die Deaktivierung der Ende-zu-Ende-Verschlüsselung bei Instagram wirft alarmierende Fragen über die Zukunft der Datenprivatsphäre auf. Entwickler sollten besorgt sein, denn wenn ein so großes Unternehmen wie Instagram auf Sicherheit verzichtet, was bedeutet das für die Sicherheitsstandards in der gesamten Tech-Branche? Die Veränderung hat weitreichende Auswirkungen auf die Art und Weise, wie Entwickler mit Nutzerdaten umgehen."
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Rust bei Outreachy",
+            "source": "Rust Blog",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "ada6000c"
+            ],
+            "content": "         <h3>Rust bei Outreachy</h3>         <p>Das Rust-Projekt hat eine gute Geschichte bei der Teilnahme an verschiedenen Open-Source-Mentorprogrammen, einschließlich Google Summer of Code für drei Jahre (einschließlich dieses Jahres) und zuvor OSPP. Wir freuen uns, bekannt zu geben, dass wir in diesem Jahr auch an Outreachy teilnehmen, beginnend mit dem Mai 2026-Kohorten.</p>         <p>Jedes dieser Mentorprogramme hat unterschiedliche Kriterien für die Zulassung, abhängig von deren Zielgruppe und den Motivationen des Programms. Outreachy bietet Praktika in Open Source an, für Menschen aus jedem Hintergrund, die in der technischen Industrie, in der sie leben, unterrepräsentiert, systematischen Vorurteilen oder Diskriminierung ausgesetzt sind. Mehr über das Outreachy-Programm kannst du auf ihrer Website erfahren.</p>         <h3>Was ist Outreachy und wie unterscheidet es sich von Google Summer of Code</h3>         <p>Outreachy ist in einigen Aspekten ähnlich wie Google Summer of Code (GSoC), aber auch unterschiedlich. Zunächst einmal können Outreachy-Praktikanten nur nach einer Bewerbung für das gesamte Programm anschließend für spezifische Communities bewerben. Zweitens benötigen Outreachy-Bewerber während eines bestimmten Zeitraums Beiträge, die nicht nur optional sind, sondern erforderlich. Schließlich reichen Outreachy-Bewerber eine Bewerbung ein, die ähnlich ist wie GSoC-Bewerbungen, und die Communities wählen Praktikanten auf Grundlage dieser Bewerbungen und der Beiträge der Praktikanten aus. Outreachy hat zwei Praktikumsperioden pro Jahr, eine von Mai bis August (an der wir derzeit teilnehmen) und eine von Dezember bis März.</p>         <p>Der andere große Unterschied zwischen Google Summer of Code und Outreachy ist die Quelle der Praktikums-Stipendien. Für GSoC deckt Google großzügig die Stipendien und die Verwaltungskosten ab. Für Outreachy decken die Communities stattdessen die Stipendien und die Verwaltungskosten für die Praktikanten.</p>         <h3>Wir betreuen 4 Praktikanten für das Mai 2026-Kohort</h3>         <p>Aufgrund der begrenzten Verfügbarkeit von Finanzierungsmöglichkeiten und Betreuungskapazität hat das Rust-Projekt beschlossen, vier Praktikanten für die Betreuung auszuwählen. Wir werden diese Projekte kurz vorstellen:</p>         <ul>             <li>Ajay Singh wurde ausgewählt, betreut von teor, Taylor Cramer und Ethan Smith. Dieses Projekt zielt darauf ab, ein experimentelles Feature für das Aufrufen überladener C++-Funktionen aus Rust zu implementieren und dieses Feature in einigen repräsentativen Anwendungsfällen zu testen.</li>             <li>Akintewe Oluwasola wurde ausgewählt, betreut von Jack Huey. Dieses Projekt zielt darauf ab, die Code-Coverage des Rust-Compilers auf großen Skalen zu verbessern.</li>         </ul>         <p><em>BytePost-Einordnung: Die Teilnahme von Rust an Outreachy zeigt, wie wichtig es ist, diversity in der Technologieindustrie zu fördern und neue Talente in die Open-Source-Entwicklung einzubinden. Wir freuen uns darauf, die Ergebnisse dieser Kooperation zu sehen.</em></p>     ",
+            "content_simple": "         <p>Rust, eine Programmiersprache, nimmt an einem Programm teil, das Praktika in Open Source anbietet. Dieses Programm heißt Outreachy und unterstützt Menschen, die in der Technologie-Branche unterrepräsentiert sind. Rust wird vier Praktikanten betreuen und ihnen helfen, Erfahrungen in der Open-Source-Entwicklung zu sammeln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Outreachy-Programm unterscheidet sich von Google Summer of Code in der Art und Weise, wie Praktikanten ausgewählt werden. Während GSoC-Bewerber direkt für ein bestimmtes Projekt bewerben können, müssen Outreachy-Bewerber zunächst eine allgemeine Bewerbung für das Programm einreichen. Anschließend können sie für spezifische Communities bewerben.</p>         <p>Die Outreachy-Praktikanten werden auf Grundlage ihrer Beiträge und Bewerbungen ausgewählt. Dieser Ansatz ermöglicht es den Communities, die besten Kandidaten für ihre spezifischen Bedürfnisse auszuwählen.</p>         <h3>Architektur und Technologien</h3>         <p>Das Rust-Projekt verwendet eine Vielzahl von Technologien, um seine Open-Source-Entwicklung zu unterstützen. Dazu gehören die Verwendung von GitHub für die Versionierung und die Kommunikation mit den Entwicklern.</p>     ",
+            "date": "09.05.2026",
+            "id": "7dbfeca0",
+            "url": "https://blog.rust-lang.org/2026/05/04/outreachy-2026-may/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7dbfeca0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Spotify nutzt KI für Datenmigration",
+            "source": "Spotify Engineering",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Datenmigration mit KI</h3>         <p>Bei Spotify wurde recently eine Herausforderung bei der Datenmigration gelöst. Die Firma musste zwei der am häufigsten genutzten Benutzerdatensätze depreken, um neue Versionen mit zusätzlichen Dimensionen zu veröffentlichen. Diese veralteten Datensätze hatten etwa 1.800 direkte Downstream-Datensätze zwischen ihnen und indirekt beeinflussten mehrere Tausend weitere im gesamten Unternehmen.</p>         <p>Das Ziel war es, diese Migrationen innerhalb von sechs Monaten abzuschließen. Dazu wurden die Tools Backstage, Fleet Management und Honk eingesetzt. Backstage HALF dabei, die Lineage der veralteten Datensätze zu verstehen und die entsprechenden Repositories zu identifizieren. Die Codesearch-Plattform wurde genutzt, um Ziel-Repositories zu finden und als in-scope für die Migrationen zu markieren.</p>         <h3>Context Engineering mit Honk</h3>         <p>Bei der Verwendung von Honk war es wichtig, den Kontext richtig zu-engineeren. Die Ziel-Repositories wurden schnell via Backstage identifiziert, aber der größte Teil des Prozesses bestand darin, die richtigen Prompt-Fragen für Honk zu finden. Dieser Prozess erforderte viel Zeit und Iteration, um ihn richtig zu machen.</p>         <p>Ein großes Problem für Honk war die Tatsache, dass es mit drei verschiedenen Daten-Pipeline-Frameworks zu tun hatte: BigQuery Runner, dbt und Scio. Die mangelnde Standardisierung in der Daten-Landschaft machte es schwierig, all-in-one-Prompts für Honk zu schreiben, die alle möglichen Permutationen abdecken konnten.</p>         <h3>Erfahrungen und Lessons Learned</h3>         <p>Das Team bei Spotify lernte wichtige Lektionen bei der Verwendung von Honk für die Datenmigration. Es wurde deutlich, dass die richtige Prompt-Fragestellung entscheidend ist, um die beste Leistung von Honk zu erzielen. Das Team erkannte auch, wie wichtig es ist, die Daten-Landschaft so zu gestalten, dass sie leicht von KI-Algorithmen wie Honk bearbeitet werden kann.</p>         <p>Durch die Verwendung von Honk, Backstage und Fleet Management konnte das Team bei Spotify die Datenmigration erfolgreich durchführen und dabei etwa 10 Ingenieur-Wochen an Arbeit einsparen.</p>         <p><em>BytePost-Einordnung: Die erfolgreiche Verwendung von KI bei der Datenmigration durch Spotify ist ein wichtiger Schritt in Richtung einer automatisierteren und effizienteren Datenverarbeitung. Durch die Kombination von Honk, Backstage und Fleet Management können Unternehmen ihre Daten-Landschaften leichter und schneller anpassen und somit bessere Entscheidungen treffen.</em></p>     ",
+            "content_simple": "         <p>Die Firma Spotify hat eine Herausforderung bei der Datenmigration gelöst. Sie musste alte Daten durch neue ersetzen. Dafür wurden spezielle Tools verwendet, um den Prozess zu automatisieren.</p>         <p>Diese Tools halfen dabei, die richtigen Daten zu finden und sie schnell zu ersetzen. Durch die Verwendung dieser Tools konnte Spotify viel Zeit sparen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Bei der Datenmigration wurden die Tools Backstage, Fleet Management und Honk eingesetzt. Backstage ist eine Plattform, die die Lineage von Daten ermöglicht und Codesearch ist eine Plattform, die Ziel-Repositories findet und als in-scope für die Migrationen markiert.</p>         <p>Das größte Problem bei der Verwendung von Honk war die Tatsache, dass es mit drei verschiedenen Daten-Pipeline-Frameworks zu tun hatte: BigQuery Runner, dbt und Scio. Die mangelnde Standardisierung in der Daten-Landschaft machte es schwierig, all-in-one-Prompts für Honk zu schreiben, die alle möglichen Permutationen abdecken konnten.</p>         <p>Es wurden wichtige Lektionen bei der Verwendung von Honk gelernt. Es wurde deutlich, dass die richtige Prompt-Fragestellung entscheidend ist, um die beste Leistung von Honk zu erzielen. Es wurde auch erkannt, wie wichtig es ist, die Daten-Landschaft so zu gestalten, dass sie leicht von KI-Algorithmen wie Honk bearbeitet werden kann.</p>         <pre><code> // Beispielcode hier, wenn ein echtes Beispiel möglich ist         </code></pre>     ",
+            "date": "09.05.2026",
+            "id": "ada6000c",
+            "url": "https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ada6000c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Insider-Betting auf Polymarket",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "7dbfeca0"
+            ],
+            "content": "         <h3>Insider-Betting auf Polymarket</h3>         <p>Ein Bericht des Anti-Corruption Data Collective, einer non-profit Forschungs- und Lobbygruppe, deckte auf, dass Insider-Betting auf der Plattform Polymarket weit verbreitet ist. Demnach haben Langzeitwetten - definiert als Einsätze von 2.500 US-Dollar oder mehr bei einer Gewinnchance von 35 Prozent oder weniger - auf der Plattform eine durchschnittliche Gewinnrate von etwa 52 Prozent in Märkten, die sich mit militärischen und Verteidigungsmaßnahmen befassen.</p>         <p>Dies ist im Vergleich zu einer Gewinnrate von 25 Prozent in allen politischen Märkten und nur 14 Prozent in allen Märkten auf der gesamten Plattform ein hoher Wert. Es ist absolut unverständlich, dass dies legal ist. Wir wissen bereits, wie Insider-Betting den Sport verzerren kann. Insider-Betting, das die Politik und militärische Aktionen verzerren kann, ist jedoch weitaus schlimmer.</p>         <h3>Die Auswirkungen von Insider-Betting</h3>         <p>Die Ergebnisse der Analyse sind besorgniserregend, da sie zeigen, dass Insider-Betting auf Polymarket möglicherweise die Ergebnisse von militärischen und politischen Entscheidungen beeinflussen kann. Dies könnte zu einem Verlust des Vertrauens in die Institutionen und einer Verzerrung der Demokratie führen.</p>         <p><em>BytePost-Einordnung: Die Ergebnisse dieser Analyse sind alarmierend und zeigen, dass Insider-Betting auf Polymarket ein ernstes Problem darstellt. Es ist wichtig, dass die Plattform und die zuständigen Behörden Maßnahmen ergreifen, um Insider-Betting zu verhindern und die Integrität der Märkte zu schützen.</em></p>     ",
+            "content_simple": "         <p>Ein Bericht zeigt, dass Insider-Betting auf der Plattform Polymarket sehr verbreitet ist. Dies bedeutet, dass Menschen, die Insider-Informationen haben, große Summen Geld auf bestimmte Ereignisse wetten und damit hohe Gewinne erzielen. Dies ist besorgniserregend, da es die Ergebnisse von politischen und militärischen Entscheidungen beeinflussen kann.</p>         <p>Es ist wichtig, dass die Plattform und die zuständigen Behörden Maßnahmen ergreifen, um Insider-Betting zu verhindern und die Integrität der Märkte zu schützen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte von Insider-Betting auf Polymarket</h3>         <p>Die Analyse des Anti-Corruption Data Collective zeigt, dass die Plattform Polymarket möglicherweise nicht ausreichend gegen Insider-Betting geschützt ist. Dies könnte auf eine Reihe von technischen Aspekten zurückzuführen sein, wie z.B. die Verwendung von unzureichenden Sicherheitsprotokollen oder die mangelnde Überwachung von Transaktionen.</p>         <p>Es ist wichtig, dass die Plattform und die zuständigen Behörden die notwendigen Schritte unternehmen, um die Sicherheit der Plattform zu gewährleisten und Insider-Betting zu verhindern. Dies könnte die Implementierung von verbesserten Sicherheitsprotokollen, wie z.B. Machine-Learning-Algorithmen zur Erkennung von Insider-Betting, oder die Erhöhung der Transparenz von Transaktionen umfassen.</p>     ",
+            "date": "09.05.2026",
+            "id": "f665b26b",
+            "url": "https://www.schneier.com/blog/archives/2026/05/insider-betting-on-polymarket.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f665b26b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data",
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Databricks und dbt",
+            "source": "Analytics8",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "7dbfeca0"
+            ],
+            "content": "         <h3>Die Kombination aus Databricks und dbt</h3>         <p>Databricks gibt dir die Plattform, während dbt die Struktur, Geschwindigkeit und BetriebsEbene liefert, die erforderlich ist, um es für die gesamte Organisation zu nutzen. Doch die Kombination aus beiden erfordert Entscheidungen, die die meisten Teams unterschätzen, und die Kosten für Fehlentscheidungen summieren sich im Laufe der Zeit.</p>         <p>Kommt dbt ins Spiel, wenn du gerade erst mit Databricks beginnst oder erst später? Die Antwort lautet in fast allen Fällen: Ja. Allerdings hängt der richtige Zeitpunkt davon ab, wo du dich befindest.</p>         <h3>Die Kosten von Databricks ohne Umwandlungsframework</h3>         <p>Databricks bietet direkt nach der Installation viele Möglichkeiten. Du kannst Daten importieren, umformen, Pipelines orchestrieren, Modelle ausführen und Analysen bereitstellen, alles an einem Ort. Es ist flexibel genug, um fast jeden Ansatz zu unterstützen, was auch der Grund ist, warum Teams häufig ihre eigenen Lösungen entwickeln.</p>         <p>Das beginnt in der Regel klein. Ein Ingenieur schreibt einige Umformungen in Notebooks. Jemand verbindet die Orchestrierung, um alles am Laufen zu halten. Wenn mehr Anwendungsfälle hinzukommen, wird mehr Logik hinzugefügt, oft von verschiedenen Personen, die jeweils das vor ihnen liegende Problem lösen. Im Moment fühlt sich nichts falsch an. Das System funktioniert.</p>         <p>Die Probleme zeigen sich später. Wenn die Umgebung wächst, wird es immer schwieriger, grundlegende Fragen zu beantworten. Was macht dieses Modell? Wo ist diese Logik definiert? Wenn ich dies ändere, was bricht? Es gibt keine einheitliche Vorgehensweise, also hängt jede Antwort von dem ab, der es gebaut hat und wann.</p>         <h3>Was dbt zu einer Databricks-Umgebung hinzufügt</h3>         <p>Bevor wir uns mit dem beschäftigen, was dbt hinzufügt, lohnt es sich, ein häufiges Missverständnis auszuräumen. dbt ersetzt nicht Databricks und ist auch kein anderer Motor, der die Arbeit woanders erledigt. Deine Daten leben immer noch in Databricks, und deine Umformungen laufen immer noch dort. dbt ist einfach die Ebene, die definiert, wie diese Umformungen über die Zeit hinweg geschrieben, getestet und gewartet werden.</p>         <p>Das ist wichtig, weil die meisten Probleme, die in einer Databricks-nativen Umgebung auftauchen, durch dbt behoben werden können.</p>         <p><em>BytePost-Einordnung: Die Kombination aus Databricks und dbt bietet viele Vorteile, insbesondere wenn es um die Struktur und Wartung von Daten geht. Es lohnt sich, frühzeitig dbt in die Databricks-Implementierung einzubinden, um die Kosten von Fehlentscheidungen zu minimieren.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du hast ein großes Haus mit vielen Zimmern. Jedes Zimmer benötigt eine bestimmte Einrichtung, damit es funktioniert. Databricks ist wie das Haus und dbt ist wie die Einrichtung. Ohne die richtige Einrichtung wird das Haus schnell unübersichtlich und schwierig zu verwalten.</p>         <p>dbt hilft, die Daten in Databricks zu strukturieren und zu verwalten, damit du leichter herausfinden kannst, was los ist und wie du es ändern kannst.</p>     ",
+            "content_pro": "         <h3>Architektur-Details</h3>         <p>Wenn man Databricks und dbt kombiniert, ist es wichtig, die Architektur sorgfältig zu planen. dbt fungiert als eine Art „Abstraktionsschicht“ zwischen den Daten und der Analyse. Es ermöglicht es, die Daten in einer standardisierten Weise zu modellieren und zu transformieren, was die Wartung und Erweiterung der Analyse vereinfacht.</p>         <p>Ein wichtiger Aspekt bei der Verwendung von dbt ist die Definition der Datenmodellierung. Hierbei werden die Daten in eine standardisierte Form gebracht, die es ermöglicht, sie einfach zu verstehen und zu bearbeiten.</p>     ",
+            "date": "09.05.2026",
+            "id": "2d82fe2d",
+            "url": "https://www.getdbt.com/blog/using-dbt-with-databricks-architecture-decisions-that-determine-success",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2d82fe2d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Stack Overflow ersetzt Ingress-NGINX",
+            "source": "Stack Overflow Blog",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "7dbfeca0"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX, das seit der Migration zu Kubernetes den Traffic-Routing-Prozess gehandhabt hatte, eingestellt wird. Dieser Übergang hat das Team dazu gebracht, nach einer neuen Lösung für das Traffic-Routing zu suchen.</p>         <p>Im November des letzten Jahres, als die Ankündigung gemacht wurde, dass Ingress-NGINX eingestellt wird, war das Team von Stack Overflow nicht alleine. Viele andere Unternehmen und Entwickler waren ebenfalls überrascht von dieser Entscheidung. Ingress-NGINX hatte den Traffic-Routing-Prozess seit der Migration zu Kubernetes gehandhabt.</p>         <h3>Die Suche nach einer Alternative</h3>         <p>Das Team von Stack Overflow musste schnell eine neue Lösung finden, um den Traffic-Routing-Prozess zu handhaben. Sie haben sich für die Gateway-API entschieden, die Ingress-NGINX ersetzt. Die Gateway-API bietet mehr Funktionen und bessere Rollentrennung.</p>         <p>Das Team hat einige Kriterien festgelegt, um die Auswahl der neuen Lösung zu erleichtern. Die wichtigsten Kriterien waren:</p>         <ul>             <li>Die Lösung musste auf der Liste der vollständig konformen Implementierungen sein.</li>             <li>Die Lösung musste in der Lage sein, in GCP und Azure zu laufen.</li>         </ul>         <p>Das Team hat sich für drei Lösungen entschieden: NGINX Gateway, fabric und Traefik. Sie haben auch zwei Ingress-Optionen als Backup betrachtet: Traefik und F5 NGINX Ingress.</p>         <h3>Die Auswahl der Lösung</h3>         <p>Das Team hat die drei Lösungen ausführlich getestet und sich schließlich für die Gateway-API entschieden. Sie haben festgestellt, dass die Gateway-API mehr Funktionen und bessere Rollentrennung bietet als Ingress-NGINX.</p>         <p>Das Team hat auch die beiden Ingress-Optionen getestet, aber sie haben sich letztendlich für die Gateway-API entschieden, da sie mehr Funktionen und bessere Rollentrennung bietet.</p>         <p><em>BytePost-Einordnung: Die Entscheidung von Stack Overflow, Ingress-NGINX durch die Gateway-API zu ersetzen, ist ein wichtiger Schritt in Richtung einer besseren Rollentrennung und mehr Funktionen. Diese Entscheidung zeigt, dass das Team von Stack Overflow immer auf der Suche nach besseren Lösungen ist, um den Traffic-Routing-Prozess zu handhaben.</em></p>     ",
+            "content_simple": "         <p>Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX eingestellt wird. Sie haben sich für die Gateway-API entschieden, um den Traffic-Routing-Prozess zu handhaben.</p>         <p>Die Gateway-API bietet mehr Funktionen und bessere Rollentrennung als Ingress-NGINX. Das Team von Stack Overflow hat sich für diese Lösung entschieden, um den Traffic-Routing-Prozess zu handhaben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Gateway-API ist eine neue Lösung für den Traffic-Routing-Prozess, die Ingress-NGINX ersetzt. Sie bietet mehr Funktionen und bessere Rollentrennung als Ingress-NGINX.</p>         <p>Das Team von Stack Overflow hat sich für die Gateway-API entschieden, um den Traffic-Routing-Prozess zu handhaben. Sie haben die Lösung ausführlich getestet und festgestellt, dass sie mehr Funktionen und bessere Rollentrennung bietet als Ingress-NGINX.</p>         <h3>Architektur</h3>         <p>Die Gateway-API basiert auf der Kubernetes-Architektur. Sie bietet eine bessere Rollentrennung und mehr Funktionen als Ingress-NGINX.</p>         <p>Das Team von Stack Overflow hat die Gateway-API in ihre bestehende Architektur integriert. Sie haben die Lösung ausführlich getestet und festgestellt, dass sie stabiler und sicherer ist als Ingress-NGINX.</p>     ",
+            "date": "09.05.2026",
+            "id": "7cfd4cc6",
+            "url": "https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7cfd4cc6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "9 AI-Tools für Spec-Driven Development",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "7dbfeca0"
+            ],
+            "content": "         <h3>Spec-Driven Development: Die Zukunft der Softwareentwicklung</h3>         <p>Spec-Driven Development (SDD) ist eine Methode, die die traditionelle Softwareentwicklung auf den Kopf stellt. Statt Code zu schreiben und dann zu hoffen, dass er funktioniert, definiert SDD eine strukturierte Spezifikation als Quelle der Wahrheit und den Code als deren generierte Ausgabe.</p>         <p>Die neun besten AI-Tools für SDD in 2026 sind: AWS Kiro, BMAD, GSD und viele mehr. Diese Tools ermöglichen es Entwicklern, ihre Code-Qualität zu verbessern, Fehler zu reduzieren und die Produktivität zu steigern.</p>         <h3>AWS Kiro</h3>         <p>AWS Kiro ist ein agenterbasierter IDE, der Entwickler durch einen strukturierten Prozess führt, um eine Spezifikation zu erstellen. Kiro verwendet die EARS-Notation (Easy Approach to Requirements Syntax), um strukturierte Anforderungen zu generieren, und bietet eine Agent-Hooks-System, um Aufgaben wie Test-Updates und Sicherheits-Scans zu automatisieren.</p>         <h3>GitHub Spec Kit</h3>         <p>GitHub Spec Kit ist ein Python-CLI-Tool mit über 93.000 Sternen auf GitHub. Es bietet eine Open-Source-Workflow für SDD und unterstützt über 30 AI-Coding-Agents, darunter Claude Code, GitHub Copilot und Amazon Q.</p>         <p>Spec Kit verwendet eine „Constitution“-Datei, die die grundlegenden Prinzipien für jeden Code-Change definiert, und ermöglicht es Entwicklern, ihre Spezifikationen in eine ausführbare Form umzuwandeln.</p>         <h3>BMAD-METHOD</h3>         <p>BMAD-METHOD (Build More Architect Dreams) ist ein Open-Source-Framework, das 12+ spezialisierte AI-Agents über den gesamten Software-Entwicklungs-Lebenszyklus orchestriert. Es bietet eine flexible und erweiterbare Architektur für SDD.</p>         <p>Das Framework erreichte über 46.700 Sterne auf GitHub und mehr als 5.500 Forks.</p>         <p><em>BytePost-Einordnung: Die neun AI-Tools für Spec-Driven Development in 2026 bieten eine Vielzahl von Lösungen für Entwickler, um ihre Code-Qualität zu verbessern und die Produktivität zu steigern. Durch die Verwendung von SDD können Entwickler ihre Anforderungen strukturieren und den Code als deren generierte Ausgabe betrachten, um Fehler zu reduzieren und die Qualität des Codes zu verbessern.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du kannst Code direkt aus einer Idee generieren. Spec-Driven Development macht das möglich. Durch die Verwendung von künstlicher Intelligenz können Entwickler ihre Anforderungen strukturieren und den Code als deren generierte Ausgabe betrachten.</p>         <p>Das Resultat: Weniger Fehler und höhere Code-Qualität. Die neun besten AI-Tools für Spec-Driven Development in 2026 ermöglichen es Entwicklern, ihre Produktivität zu steigern und ihre Code-Qualität zu verbessern.</p>     ",
+            "content_pro": "         <h3>Technische Details von AWS Kiro</h3>         <p>AWS Kiro verwendet die EARS-Notation, um strukturierte Anforderungen zu generieren. Die EARS-Notation ist ein einfacher und intuitiver Ansatz, um Anforderungen zu definieren. Durch die Verwendung von EARS kann Kiro Anforderungen in einer strukturierten Form generieren, die leicht von AI-Agents interpretiert werden kann.</p>         <h3>Agent-Hooks-System</h3>         <p>Das Agent-Hooks-System von Kiro ermöglicht es Entwicklern, Aufgaben wie Test-Updates und Sicherheits-Scans zu automatisieren. Durch die Verwendung von Hooks kann Kiro den Code-Change-Prozess automatisieren und die Effizienz steigern.</p>         <pre><code> // Beispiel für eine EARS-Notation requirement: {   id: 1,   name: 'Login-Funktionalität',   description: 'Der Benutzer soll sich anmelden können',   conditions: [     {       id: 1,       name: 'Benutzername',       description: 'Der Benutzername soll mindestens 3 Zeichen lang sein',       type: 'string'     },     {       id: 2,       name: 'Passwort',       description: 'Das Passwort soll mindestens 8 Zeichen lang sein',       type: 'string'     }   ] } </code></pre>         <p><em>BytePost-Einordnung: Die neun AI-Tools für Spec-Driven Development in 2026 bieten eine Vielzahl von Lösungen für Entwickler, um ihre Code-Qualität zu verbessern und die Produktivität zu steigern. Durch die Verwendung von SDD können Entwickler ihre Anforderungen strukturieren und den Code als deren generierte Ausgabe betrachten, um Fehler zu reduzieren und die Qualität des Codes zu verbessern.</em></p>     ",
+            "date": "09.05.2026",
+            "id": "1a6f0d2c",
+            "url": "https://www.marktechpost.com/2026/05/08/9-best-ai-tools-for-spec-driven-development-in-2026-kiro-bmad-gsd-and-more-compare/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1a6f0d2c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Battlefield 6 Season 3",
+            "source": "GameSpot",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd4a1095",
+                "0aba5964",
+                "7dbfeca0"
+            ],
+            "content": "         <h3>Season 3 von Battlefield 6 und Redsec</h3>         <p>Die dritte Season von Battlefield 6 und Redsec startet am 12. Mai. Der Entwickler Battlefield Studios hat bereits die Patchnotes veröffentlicht. Neben neuen Inhalten wie einem Battle-Pass, drei neuen Waffen und einer Neufassung der beliebten Golmud Railway-Karte aus Battlefield 4 enthält das Update auch zahlreiche Verbesserungen an Netcode, Fahrzeugen, Gadgets und Spielmechanik.</p>         <p>Die Golmud Railway-Karte wird die größte Karte in Battlefield 6 sein. Redsec erhält außerdem einen neuen, kompetitiven Ranked-Modus für Battle-Royale, in dem Spieler um Ränge, Leaderboard-Platzierungen und exklusive kosmetische Belohnungen kämpfen können. Die Patchnotes listen eine Vielzahl von Änderungen auf, um das Spiel zu verbessern und zu polieren.</p>         <p>Eine bemerkenswerte Änderung ist ein umfassender Balance- und Handling-Pass für alle Fahrzeuge. Dazu gehören eine verbesserte Mobilität von Kettenfahrzeugen, ein überarbeitetes Reparaturverhalten und ein aktualisiertes Schadens- und Regenerierungssystem für Panzer. Ein Problem, bei dem ein Fahrer von einem Dirt-Bike abgeworfen wurde, wenn er einen Salto machte, wurde ebenfalls behoben, sodass Spieler wieder Tricks während des Kampfes ausführen können.</p>     ",
+            "content_simple": "         <p>Battlefield 6 startet seine dritte Season. Es gibt neue Inhalte wie Waffen und eine große Karte. Das Spiel wird auch verbessert, damit es besser läuft.</p>         <p>Die neuen Inhalte sollten das Spiel interessanter machen. Es gibt auch einen neuen Modus, in dem Spieler miteinander kämpfen können.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Verbesserungen an Netcode und Fahrzeugen sollen das Spiel flüssiger machen. Die Änderungen am Schadens- und Regenerierungssystem für Panzer könnten jedoch zu einer Veränderung der Spielbalance führen.</p>         <p>Es ist interessant zu sehen, wie die Entwickler versuchen, das Spiel zu verbessern, ohne die Spielmechanik zu sehr zu verändern. Die Einführung eines neuen, kompetitiven Modus könnte jedoch zu einer Spaltung der Community führen.</p>     ",
+            "date": "09.05.2026",
+            "id": "1b5c15cd",
+            "url": "https://www.gamespot.com/articles/battlefield-6-season-3-patch-notes-detail-improvements-for-vehicles-netcode-gadgets-and-more/1100-6539867/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1b5c15cd.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki"
             ],
             "icon": "🤖",
@@ -35873,10 +36136,10 @@
         }
     ],
     "bytepulse": {
-        "date": "07.05.2026",
+        "date": "09.05.2026",
         "positiv": 33,
-        "neutral": 33,
-        "kritisch": 33,
-        "total": 3
+        "neutral": 44,
+        "kritisch": 22,
+        "total": 9
     }
 }
