@@ -3,6 +3,184 @@
         {
             "cat": [
                 "ki",
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "IT-Jobs: KI, Service Management und Netzwerke",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "2287f964",
+                "235ee559",
+                "0bad898c"
+            ],
+            "content": "         <h3>IT-Jobs: Vielfältiger Bedarf an Fachkräften</h3>         <p>Die IT-Branche bietet eine Vielzahl von Jobs in verschiedenen Bereichen, wie Service Management, KI, Windows-Administration und Netzwerken. Diese offenen Stellen zeigen, wie vielfältig der Bedarf an Fachkräften derzeit ist.</p>         <p>Um die Nutzung von Golem.de mit Werbung und Tracking zu ermöglichen, muss Javascript in deinem Browser aktiviert sein. Außerdem müssen Cookies in deinem Browser aktiviert sein.</p>         <p>Die Webseite bietet auch die Möglichkeit, Golem.de ohne Analyse- und Werbe-Cookies zu nutzen, indem du Golem pur für 3 Euro pro Monat bestellst. Mit Golem pur kommen nur für das Angebot erforderliche Cookies zum Einsatz.</p>         <h3>Cookies und Datenschutz</h3>         <p>Golem.de erhebt personenbezogene Daten und übermittelt diese an bis zu 160 Drittanbieter, die helfen, die Webseite und die Angebote zu verbessern und zu finanzieren. Die Verarbeitung der auf deinem Gerät gespeicherten Informationen, wie Cookies oder persönliche Identifikatoren wie IP-Adressen, sowie deines individuellen Nutzungsverhaltens erfolgt zu folgenden Zwecken:</p>         <ul>             <li>Informationen auf einem Gerät speichern und/oder abrufen</li>             <li>Personalisierte Anzeigen und Inhalte, Anzeigen- und Inhaltsmessungen, Erkenntnisse über Zielgruppen und Produktentwicklungen</li>             <li>Genaue Standortdaten verwenden</li>         </ul>         <p>Die Zustimmung zu Cookies und Tracking ist erforderlich, um Golem.de mit Werbung zu nutzen.</p>         <p><em>BytePost-Einordnung: Die IT-Branche bietet eine Vielzahl von Jobs in verschiedenen Bereichen, wie Service Management, KI, Windows-Administration und Netzwerken. Es ist wichtig, dass du dich über die Anforderungen und die Möglichkeiten informierst, um die richtige Entscheidung für deine Karriere zu treffen.</em></p>     ",
+            "content_simple": "         <p>Die IT-Branche bietet viele verschiedene Jobs, wie zum Beispiel im Service Management, bei der KI, bei der Windows-Administration und bei den Netzwerken. Es gibt viele offene Stellen, die zeigen, wie vielfältig der Bedarf an Fachkräften ist.</p>         <p>Um eine Webseite zu nutzen, die Werbung und Tracking verwendet, musst du Javascript und Cookies aktivieren. Es gibt auch die Möglichkeit, die Webseite ohne Werbe-Cookies zu nutzen, indem du ein spezielles Abonnement bestellst.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Verarbeitung von personenbezogenen Daten und die Übermittlung an Drittanbieter erfolgt zu verschiedenen Zwecken, wie der Speicherung von Informationen auf einem Gerät, der Personalisierung von Anzeigen und Inhalten sowie der Verwendung von genauen Standortdaten.</p>         <p>Es ist wichtig, dass Entwickler sich über die Anforderungen und die Möglichkeiten informieren, um die richtige Entscheidung für ihre Karriere zu treffen. Die IT-Branche bietet eine Vielzahl von Jobs in verschiedenen Bereichen, wie Service Management, KI, Windows-Administration und Netzwerken.</p>     ",
+            "date": "10.05.2026",
+            "id": "112cea6d",
+            "url": "https://www.golem.de/news/anzeige-it-jobs-in-service-management-ki-windows-administration-und-netzwerken-2605-208464.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/112cea6d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🐍",
+            "title": "Python 3.14.5 veröffentlicht",
+            "source": "Python.org",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "112cea6d",
+                "235ee559",
+                "0bad898c"
+            ],
+            "content": "         <h3>Python 3.14.5 Release Candidate</h3>         <p>Python 3.14.5rc1 ist ein Release-Kandidat für die fünfte Wartungsversion von 3.14 und enthält etwa 113 Bugfixes, Build-Verbesserungen und Dokumentationsänderungen seit 3.14.4.</p>         <p>Der Garbage Collector (GC) wurde in Python 3.14.5rc1 geändert. Der inkrementale Garbage Collector, der in Python 3.14.0-3.14.4 geliefert wurde, wurde zurück auf den generationalen Garbage Collector von 3.13 zurückgesetzt, da erheblicher Memory-Druck in Produktionsumgebungen gemeldet wurde.</p>         <h3>Neue Funktionen in Python 3.14</h3>         <p>Einige der wichtigsten neuen Funktionen und Änderungen in Python 3.14 sind:</p>         <ul>             <li>PEP 779: Free-threaded Python ist offiziell unterstützt</li>             <li>PEP 649: Die Auswertung von Annotationen wird jetzt verzögert, was die Semantik des Verwendens von Annotationen verbessert</li>             <li>PEP 750: Template-String-Literals (t-Strings) für benutzerdefinierte Stringverarbeitung, mit der vertrauten Syntax von f-Strings</li>             <li>PEP 734: Mehrere Interpreter in der Standardbibliothek</li>             <li>PEP 784: Ein neues Modul compression.zstd, das die Zstandard-Komprimierungsalgorithmus unterstützt</li>         </ul>         <p>Die vollständige Liste der Änderungen in Python 3.14 findet sich in der Dokumentation <a href=\"https://docs.python.org/de/3.14/whatsnew/3.14.html\">What’s new in Python 3.14</a>.</p>         <p>Bitte beachte, dass dies eine Vorschau-Veröffentlichung ist und deren Verwendung in Produktionsumgebungen nicht empfohlen wird.</p>         <p><em>BytePost-Einordnung: Die neue Version von Python 3.14.5 bietet einige interessante Neuerungen und Verbesserungen, insbesondere im Bereich des Garbage Collectors. Es ist jedoch wichtig, diese Version sorgfältig zu testen, bevor man sie in Produktionsumgebungen einsetzt.</em></p>     ",
+            "content_simple": "         <p>Python 3.14.5 ist da! Diese neue Version bringt einige interessante Neuerungen und Verbesserungen. Eine der wichtigsten Änderungen ist der Garbage Collector, der jetzt wieder auf die alte Version zurückgesetzt wurde.</p>         <p>Das bedeutet, dass Python jetzt wieder besser mit dem Speicher umgeht und weniger Fehler auftritt. Es gibt auch einige neue Funktionen, wie zum Beispiel die Unterstützung für mehrere Interpreter und eine neue Komprimierungsmethode.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Änderungen in Python 3.14.5 sind weitreichend und betreffen verschiedene Aspekte der Sprache. Ein wichtiger Punkt ist die Rückkehr zum generationalen Garbage Collector, der in den Versionen 3.14.0-3.14.4 durch den inkrementalen Garbage Collector ersetzt wurde.</p>         <p>Der generationalen Garbage Collector ist bekannt für seine Effizienz bei der Verwaltung von Objekten und reduziert den Speicherdruck in Produktionsumgebungen. Es ist jedoch wichtig, diese Änderung sorgfältig zu testen, um sicherzustellen, dass sie nicht zu unerwarteten Problemen führt.</p>         <p>Die neue Version von Python 3.14.5 bietet auch einige interessante Neuerungen im Bereich der Unterstützung für multiple Interpreter und der Komprimierungsmethode. Es lohnt sich, diese Neuerungen genauer zu untersuchen, um zu sehen, wie sie in der Praxis eingesetzt werden können.</p>     ",
+            "date": "10.05.2026",
+            "id": "2287f964",
+            "url": "https://blog.python.org/2026/05/python-3145rc1/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2287f964.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚫",
+            "title": "Brazilian Anti-DDoS-Firma Heaped Attacks",
+            "source": "KrebsOnSecurity",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "112cea6d",
+                "2287f964",
+                "0bad898c"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Ein brasilianisches Tech-Unternehmen, das sich auf den Schutz von Netzwerken vor verteilten Denial-of-Service-Angriffen (DDoS) spezialisiert hat, hat selbst eine Botnetz-Infrastruktur betrieben, die für massive DDoS-Angriffe gegen andere Netzwerkbetreiber in Brasilien verantwortlich war. Laut KrebsOnSecurity hat das Unternehmen, Huge Networks, diese活动 durch eine Sicherheitslücke ermöglicht, die wahrscheinlich von einem Konkurrenten genutzt wurde, um das Unternehmen in Misskredit zu bringen.</p>         <h3>Hintergrund</h3>         <p>Die Sicherheitsexperten haben in den letzten Jahren eine Reihe von massiven DDoS-Angriffen verfolgt, die aus Brasilien kamen und ausschließlich brasilianische Internetdiensteanbieter (ISPs) zum Ziel hatten. Bis vor kurzem war es jedoch unklar, wer oder was hinter diesen digitalen Belagerungen stand. Dies änderte sich, als ein vertrauenswürdiger Quelle, der anonym bleiben wollte, eine kuriose Datei-Sammlung teilte, die in einem offenen Verzeichnis online zugänglich war.</p>         <h3>Angriffe und Technik</h3>         <p>Die Angriffe nutzten eine Sicherheitslücke in TP-Link-Router-Modellen, um diese für die Angriffe zu verwenden. Die Lücke, bekannt als CVE-2023-1389, wurde im April 2023 gepatcht, aber viele Routern waren offensichtlich noch nicht aktualisiert. Die Angriffe nutzten auch eine Technik namens DNS-Ausnutzungsangriff (DNS amplification and reflection attack), bei der DNS-Server so konfiguriert werden, dass sie Antworten auf Anfragen von überallher annehmen und dann entsprechend antworten.</p>         <h3>Fazit</h3>         <p>Die Enthüllung, dass ein Unternehmen, das sich auf den Schutz vor DDoS-Angriffen spezialisiert hat, selbst eine Infrastruktur für solche Angriffe betrieben hat, wirft Fragen über die Integrität und Sicherheit der Branche auf. Es zeigt auch, wie wichtig es ist, Sicherheitslücken zu patchen und die eigene Infrastruktur regelmäßig zu überprüfen.</p>         <p><em>BytePost-Einordnung: Die jüngsten Enthüllungen über Huge Networks sollten als Warnung für alle Unternehmen und Organisationen dienen, die DDoS-Schutzdienste anbieten oder nutzen. Es ist entscheidend, dass solche Dienste sorgfältig ausgewählt und regelmäßig auf ihre Sicherheit und Integrität hin überprüft werden.</em></p>",
+            "content_simple": "         <p>Ein brasilianisches Unternehmen, das sich auf den Schutz vor DDoS-Angriffen spezialisiert hat, hat selbst Angriffe auf andere Unternehmen in Brasilien durchgeführt. Dies geschah, weil das Unternehmen eine Sicherheitslücke hatte, die von einem Konkurrenten ausgenutzt wurde.</p>         <p>Das Unternehmen hat Routern und DNS-Server für die Angriffe genutzt. Die Angriffe waren sehr stark und haben viele Unternehmen in Brasilien betroffen.</p>         <p>Das ist ein Beispiel dafür, wie wichtig es ist, dass Unternehmen, die DDoS-Schutzdienste anbieten, selbst sicher und integer sind.</p>",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Angriffe nutzten eine Sicherheitslücke in TP-Link-Router-Modellen, bekannt als CVE-2023-1389, um diese für die Angriffe zu verwenden. Die Lücke ermöglichte es, Befehle auf den Routern auszuführen, ohne dass ein Passwort benötigt wurde.</p>         <p>Die Angriffe nutzten auch eine Technik namens DNS-Ausnutzungsangriff (DNS amplification and reflection attack), bei der DNS-Server so konfiguriert werden, dass sie Antworten auf Anfragen von überallher annehmen und dann entsprechend antworten.</p>         <h3>Konsequenzen und Prävention</h3>         <p>Die Enthüllung, dass ein Unternehmen, das sich auf den Schutz vor DDoS-Angriffen spezialisiert hat, selbst eine Infrastruktur für solche Angriffe betrieben hat, wirft Fragen über die Integrität und Sicherheit der Branche auf. Es ist entscheidend, dass solche Dienste sorgfältig ausgewählt und regelmäßig auf ihre Sicherheit und Integrität hin überprüft werden.</p>         <p>Um solche Angriffe zu verhindern, ist es wichtig, dass Unternehmen regelmäßig ihre Sicherheitslücken patchen und ihre Infrastruktur überprüfen. Es ist auch ratsam, DDoS-Schutzdienste von Unternehmen zu verwenden, die eine gute Reputation haben und regelmäßig ihre Sicherheit und Integrität überprüfen.</p>",
+            "date": "10.05.2026",
+            "id": "235ee559",
+            "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/235ee559.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "ki"
+            ],
+            "icon": "📊",
+            "title": "Unternehmen investieren in interne Entwicklerplattformen",
+            "source": "TechTarget",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "112cea6d",
+                "2287f964",
+                "235ee559"
+            ],
+            "content": "         <h3>Investitionen in interne Entwicklerplattformen</h3>         <p>Einige Unternehmen investieren vermehrt in interne Entwicklerplattformen (IDP), um die Reibungsverluste im Softwareentwicklungslebenszyklus (SDLC) zu reduzieren. Eine Umfrage von CDW unter 954 IT-Entscheidungsträgern ergab, dass mehr als zwei Drittel der Befragten (68%) angaben, ihre Organisation habe bereits eine interne Entwicklerplattform implementiert.</p>         <p>Das primäre Ziel dieser Plattformen ist es, die Betriebseffizienz (57%) zu verbessern, bessere Benutzererfahrungen (48%) zu bieten und die Beobachtbarkeit und Sicherheit (47%) zu erhöhen. Dennoch gaben viele Befragte an, dass ihre Entwicklerteams immer noch mit Reibungsverlusten konfrontiert seien, insbesondere bei der Systemintegration (25%) und den Sicherheits- und Compliance-Restriktionen (23%).</p>         <p>Die Umfrage identifizierte auch die beiden größten Engpässe in den Software-Engineering-Workflows der Organisationen: Testing und Qualitätssicherung (22%) sowie Integration, Bereitstellung und Implementierung (18%). Um diese Herausforderungen zu überwinden, investieren IT-Führungskräfte mehr in die Automatisierung von Bereichen wie Sicherheit (47%), Testing (45%) und Überwachung (43%).</p>         <h3>Automatisierung und künstliche Intelligenz</h3>         <p>Marc Litten, Senior-Manager für AI-Factory- und Rechenzentrumsstrategie bei CDW, betonte, dass künstliche Intelligenz (KI) ein wichtiger Bestandteil jeder Automatisierungsstrategie sei. Mehr als zwei Drittel der Befragten (67%) gaben an, ihre Organisation investiere erheblich in generative KI.</p>         <p>Ein Problem besteht jedoch darin, dass nur 31% der Befragten angaben, moderate Erfolge bei der Implementierung von KI erzielt zu haben. Dies deutet darauf hin, dass viele Organisationen immer noch mit der Operationalisierung von KI kämpfen. Litten fügte hinzu, dass die Organisationen zunehmend die Anstrengung und das Know-how erkennen, das erforderlich ist, um tatsächliche Workflows zu automatisieren.</p>         <h3>Ausblick</h3>         <p>Die Software-Engineering-Workflows sind jetzt schneller denn je zuvor. Die DevOps-Teams sind an vorderster Front der agentialen KI-Adoption. Die einenGovernance- und Sicherheitsprobleme, mit denen die Organisationen konfrontiert sind, werden zuerst von ihren Software-Ingenieuren erlebt.</p>         <p>Es ist jedoch sicher, dass die Software-Engineering-Workflows nun schneller als je zuvor evolvieren. Die DevOps-Teams sollten ihre aktuellen Code-Überprüfungs- und Testfähigkeiten neu bewerten, um mehr auf KI-Agenten zu setzen, um die riesigen Mengen an Code zu validieren, die von KI-Coding-Tools generiert werden.</p>         <p><em>BytePost-Einordnung: Die Investitionen in interne Entwicklerplattformen und die Automatisierung von Software-Engineering-Workflows sind ein wichtiger Schritt Richtung Effizienz und Qualität in der Softwareentwicklung. Die Herausforderungen bei der Implementierung von KI müssen jedoch ernst genommen werden, um die volle Potential auszuschöpfen.</em></p>     ",
+            "content_simple": "         <p>Einige Unternehmen investieren in interne Entwicklerplattformen, um die Softwareentwicklung zu verbessern. Diese Plattformen helfen dabei, die Reibungsverluste im Softwareentwicklungsprozess zu reduzieren. Die wichtigsten Ziele sind, die Betriebseffizienz zu verbessern, bessere Benutzererfahrungen zu bieten und die Sicherheit zu erhöhen.</p>         <p>Es gibt jedoch noch Herausforderungen, wie die Systemintegration und die Sicherheits- und Compliance-Restriktionen. Um diese Herausforderungen zu überwinden, investieren Unternehmen in die Automatisierung von Bereichen wie Sicherheit, Testing und Überwachung.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Automatisierung von Software-Engineering-Workflows ist ein wichtiger Schritt Richtung Effizienz und Qualität in der Softwareentwicklung. Die Implementierung von KI-Technologien wie generative KI und maschinelles Lernen kann dabei helfen, die Reibungsverluste im Softwareentwicklungsprozess zu reduzieren.</p>         <p>Es gibt jedoch auch Herausforderungen bei der Implementierung von KI, wie die Operationalisierung von KI-Modellen und die Integration von KI-Technologien in bestehende Systeme. Die DevOps-Teams müssen ihre aktuellen Code-Überprüfungs- und Testfähigkeiten neu bewerten, um mehr auf KI-Agenten zu setzen, um die riesigen Mengen an Code zu validieren, die von KI-Coding-Tools generiert werden.</p>     ",
+            "date": "10.05.2026",
+            "id": "0bad898c",
+            "url": "https://devops.com/survey-surfaces-significant-levels-of-idp-investment-to-reduce-sdlc-friction/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0bad898c.jpg",
+            "pick": true,
+            "pick_reason": "Heute investieren Unternehmen massiv in interne Entwicklerplattformen, um die Produktivität und Effizienz ihrer Teams zu steigern. Damit stehen die Weichen für eine neue Ära der Softwareentwicklung, in der Entwickler mehr Autonomie und Ressourcen erhalten. Entwickler sollten diese Entwicklung genau im Auge behalten, um ihre Fähigkeiten und Karrieren auf die neue Realität auszurichten."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "10 KI-Agents für AI-Ingenieure",
+            "source": "Analytics Vidhya",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "112cea6d",
+                "2287f964",
+                "235ee559"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Als aspirierender AI-Ingenieur ist es wichtig, praktische Erfahrungen zu sammeln, um die Fähigkeiten zu schärfen. Eine der effektivsten Methoden, um dies zu erreichen, ist die Erstellung von KI-Agents. Diese Agents stellen praktische Anwendungen von KI in verschiedenen Bereichen dar, von persönlichen Assistenten und Empfehlungssystemen bis hin zu Finanztrader.</p>         <p>In diesem Artikel werden 10 KI-Agents vorgestellt, die jeder Ingenieur aufbauen sollte. Für jeden Agent gibt es einen GitHub-Link, der ein Beispielimplementation bereitstellt, so dass du den Code referenzieren oder in deine eigene Version erweitern kannst.</p>         <h3>Die 10 KI-Agents</h3>         <ul>             <li>Empfehlungsagent: Hilft bei der Personalisierung der Benutzeroberfläche, indem er Produkte, Inhalte oder Dienstleistungen empfiehlt.</li>             <li>Codierungsagent: Automatisiert die Navigation und Lösung von Problemen in Code-Repositorys.</li>             <li>AI-Forschungsagent: Führt webbasierte Forschung durch, sammelt relevante Papiere und fasst die Ergebnisse in Berichten zusammen.</li>             <li>Browser-Automatisierungsagent: Interagiert mit Webseiten, um Aufgaben wie das Ausfüllen von Formularen oder das Scraper von Daten durchzuführen.</li>             <li>Dokumenten-Q&A-Agent: Beantwortet Fragen zu Dokumenten und generiert Antworten basierend auf dem Inhalt.</li>             <li>Kundensupportagent: Bietet Unterstützung und Hilfe für Kunden, indem er Fragen beantwortet und Probleme löst.</li>             <li>Persönlicher AI-Assistent: Führt Aufgaben wie die Planung von Terminen oder die Verwaltung von E-Mails durch.</li>             <li>Predictive-Maintenance-Agent: Überwacht und prognostiziert die Wartung von Geräten und Maschinen.</li>             <li>Computer-Vision-Agent: Analysiert und interpretiert visuelle Daten, wie Bilder oder Videos.</li>             <li>Finanztrader-Agent: Führt Finanztransaktionen durch, wie den Kauf oder Verkauf von Aktien.</li>         </ul>         <h3>Wo anfangen?</h3>         <p>Um loszulegen, kannst du mit einem der oben genannten Agents beginnen und den entsprechenden GitHub-Link verwenden, um den Code zu überprüfen und zu erweitern.</p>         <h3>Frequently Asked Questions</h3>         <p>Für jede der 10 KI-Agents gibt es eine Liste von Fähigkeiten, die du lernen wirst, wenn du sie aufbaust. Zum Beispiel wirst du beim Aufbau eines Empfehlungsagents Fähigkeiten wie collaborative Filtering, Content-based Filtering und Reinforcement Learning für Empfehlungen erlernen.</p>         <p><em>BytePost-Einordnung: Die Erstellung von KI-Agents ist ein wichtiger Schritt, um praktische Erfahrungen in der KI-Entwicklung zu sammeln. Durch die Erstellung dieser 10 Agents kannst du ein breites Spektrum von Fähigkeiten erlernen und deine Karriere als AI-Ingenieur vorantreiben.</em></p>     ",
+            "content_simple": "         <p>Als KI-Ingenieur ist es wichtig, praktische Erfahrungen zu sammeln. Eine der besten Methoden, um dies zu erreichen, ist die Erstellung von KI-Agents. Diese Agents können Aufgaben wie die Empfehlung von Produkten oder die Lösung von Problemen in Code-Repositorys durchführen.</p>         <p>Es gibt 10 KI-Agents, die du aufbauen kannst, um deine Fähigkeiten zu verbessern. Jeder Agent hat ein bestimmtes Ziel, wie zum Beispiel die Personalisierung der Benutzeroberfläche oder die Automatisierung von Browser-Aufgaben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Erstellung von KI-Agents erfordert ein breites Spektrum von Fähigkeiten, von der Code-Navigation und -Analyse bis hin zur maschinellen Lerntheorie und -praxis.</p>         <p>Ein Beispiel für einen KI-Agent ist der Empfehlungsagent, der collaborative Filtering, Content-based Filtering und Reinforcement Learning für Empfehlungen verwendet. Der Code für diesen Agent kann in GitHub gefunden werden und besteht aus einer Kombination von Python- und TensorFlow-Code.</p>         <h3>Architektur-Details</h3>         <p>Die Architektur eines KI-Agents kann je nach Anwendung variieren. Einige Agents können eine einfache, lineare Architektur haben, während andere komplexe, hierarchische Modelle verwenden.</p>         <p>Ein Beispiel für eine komplexe Architektur ist der Computer-Vision-Agent, der convolutionale Neural-Netzwerke (CNNs) und Recurrent Neural-Netzwerke (RNNs) verwendet, um visuelle Daten zu analysieren und zu interpretieren.</p>     ",
+            "date": "10.05.2026",
+            "id": "649ef8a7",
+            "url": "https://www.analyticsvidhya.com/blog/2026/05/build-ai-agents/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/649ef8a7.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "👻",
+            "title": "Paranormal Activity: Threshold Spiel abgesagt",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "112cea6d",
+                "2287f964",
+                "235ee559"
+            ],
+            "content": "         <h3>Ein Spiel, das nie sein wird</h3>         <p>Leider müssen alle Fans von Paranormal Activity eine enttäuschende Nachricht hinnehmen: das anstehende Spiel-Adaption Threshold wurde abgesagt. Brian Clarke, der Solo-Entwickler hinter DarkStone Digital und Schöpfer von The Mortuary Assistant aus dem Jahr 2022, teilte diese Nachricht auf seinem persönlichen Twitter-Account mit.</p>         <p>Clarkes Statement liefert eine Erklärung für die Absage des Spiels. „Es ist kein Geheimnis, dass Spiele-Entwicklung ständige Veränderungen und Herausforderungen mit sich bringt, besonders als Solo-Indie-Entwickler“, so Clarke. „Es wurde klar, dass das Spiel mehr Zeit benötigte, um sicherzustellen, dass es das Beste sein konnte, was möglich ist. DreadXP stand hinter meiner Notwendigkeit für mehr Zeit und zusammen haben wir Paramount um eine Verlängerung der Entwicklungszeit gebeten. Leider stimmte Paramount dieser Verlängerung nicht zu.“</p>         <p>Clarke fährt fort, dass dies ihn in die Lage versetzte, zwischen dem Rushen durch die Entwicklung und der Veröffentlichung eines „unterdurchschnittlichen Produkts, auf das ich nicht stolz sein könnte“, oder dem Beenden der Zusammenarbeit mit Paramount zu wählen. „Ich wählte Letzteres“, schreibt er und betont erneut, dass DreadXP hinter ihm stand und die Trennung von Paramount harmonisch verlief. „Es war ein Ehrenamt, überhaupt in Betracht gezogen zu werden, um an einem IP zu arbeiten, das ich so sehr liebe.“</p>         <p>Die Absage des Spiels wirft auch die Frage auf, wie ungewöhnlich es in der Spiele-Entwicklung ist, ein Projekt zu sehen, das angekündigt wird, nur um letztendlich abgesagt zu werden. Im Gegensatz zur Filmindustrie, wo solche Entscheidungen häufiger und weniger sichtbar sind, erhalten Spieler oft einen Blick auf ein Spiel, bevor es schließlich abgesagt wird.</p>         <p><em>BytePost-Einordnung: Die Absage von Paranormal Activity: Threshold ist ein Beispiel dafür, wie herausfordernd die Spiele-Entwicklung sein kann. Die Entscheidung, ein Spiel abzusagen, ist nie leicht, aber manchmal notwendig, um die Qualität und Integrität des Spiels zu bewahren. Als Entwickler ist es wichtig, realistische Erwartungen zu haben und flexibel auf Veränderungen zu reagieren.</em></p>     ",
+            "content_simple": "         <p>Das neue Spiel zu Paranormal Activity, Threshold, wird nicht mehr veröffentlicht. Der Entwickler, Brian Clarke, teilte dies auf Twitter mit. Er sagte, dass das Spiel mehr Zeit benötigte, um gut zu werden, aber der Verleger Paramount wollte nicht warten. Clarke entschied sich dann, das Projekt abzusagen, anstatt ein schlechtes Spiel zu veröffentlichen.</p>         <p>Diese Entscheidung zeigt, wie schwierig es sein kann, Spiele zu entwickeln. Manchmal müssen Entwickler entscheiden, ob sie ein Spiel veröffentlichen, das vielleicht nicht so gut ist, oder ob sie es absagen und etwas Neues versuchen.</p>     ",
+            "content_pro": "         <h3>Technische Herausforderungen</h3>         <p>Die Entwicklung von Spielen wie Paranormal Activity: Threshold wirft zahlreiche technische Herausforderungen auf. Dazu gehören die Erstellung einer immersiven Atmosphäre, die Implementation von Gameplay-Mechanismen und die Gewährleistung einer stabilen Leistung. Ohne genaue Details über die technischen Aspekte des Spiels ist es schwierig, spezifische Schlussfolgerungen zu ziehen.</p>         <p>Ein wichtiger Aspekt bei der Entwicklung von Horror-Spielen wie Paranormal Activity ist die Schaffung von Angst und Spannung. Dies erfordert sorgfältige Planung und Ausführung von-Level-Design, Sound-Design und visuellen Effekten. Die Verwendung von Physik-Engines, Teilchen-Systemen und dynamischem Licht kann dazu beitragen, eine realistische und bedrohliche Umgebung zu schaffen.</p>         <p>Die Entscheidung, ein Spiel abzusagen, kann auf verschiedene Faktoren zurückzuführen sein, einschließlich technischer Probleme, finanzieller Einschränkungen oder kreativer Differenzen. Als Entwickler ist es wichtig, diese Faktoren zu berücksichtigen und flexibel auf Veränderungen zu reagieren, um das Beste für das Spiel und die Spieler zu erreichen.</p>     ",
+            "date": "10.05.2026",
+            "id": "91922c34",
+            "url": "https://www.rockpapershotgun.com/paranormal-activity-threshold-is-as-dead-as-its-ghosts-as-the-game-gets-canned-because-paramount-couldnt-wait-any-longer",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/91922c34.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
                 "business"
             ],
             "icon": "🤖",
@@ -56,7 +234,7 @@
                 "sleep": 0
             },
             "image_local": "images/0aba5964.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Deaktivierung der Ende-zu-Ende-Verschlüsselung bei Instagram wirft alarmierende Fragen über die Zukunft der Datenprivatsphäre auf. Entwickler sollten besorgt sein, denn wenn ein so großes Unternehmen wie Instagram auf Sicherheit verzichtet, was bedeutet das für die Sicherheitsstandards in der gesamten Tech-Branche? Die Veränderung hat weitreichende Auswirkungen auf die Art und Weise, wie Entwickler mit Nutzerdaten umgehen."
         },
         {
@@ -36136,10 +36314,10 @@
         }
     ],
     "bytepulse": {
-        "date": "09.05.2026",
-        "positiv": 33,
-        "neutral": 44,
-        "kritisch": 22,
-        "total": 9
+        "date": "10.05.2026",
+        "positiv": 17,
+        "neutral": 67,
+        "kritisch": 17,
+        "total": 6
     }
 }
