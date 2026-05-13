@@ -2,6 +2,155 @@
     "articles": [
         {
             "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Kubernetes 1.36: Volume Group Snapshots",
+            "source": "Kubernetes Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "e99981ba",
+                "3956933b",
+                "e9d58b40"
+            ],
+            "content": "         <h3>Kubernetes 1.36: Volume Group Snapshots</h3>         <p>Die Version 1.36 von Kubernetes bringt eine wichtige Neuerung: die Unterstützung für Volume Group Snapshots hat den Status General Availability (GA) erreicht.</p>         <p>Volume Group Snapshots wurden ursprünglich als Alpha-Funktion in der Version 1.27 von Kubernetes eingeführt und später zu Beta in der Version 1.32 und dann noch einmal zu Beta in der Version 1.34. Jetzt sind sie also endgültig verfügbar.</p>         <p>Die Unterstützung für Volume Group Snapshots basiert auf einer Reihe von Erweiterungs-APIs für Gruppensnapshots. Diese APIs ermöglichen es Benutzern, konsistente Snapshots einer Gruppe von Volumes zu erstellen. Im Hintergrund verwendet Kubernetes einen Label-Selektor, um mehrere PersistentVolumeClaim-Objekte für das Snapshot-Erstellen zu gruppieren.</p>         <p>Ein wichtiges Ziel ist es, dass du diese Snapshots auf neue Volumes wiederherstellen und deine Arbeitslast anhand eines konsistenten Wiederherstellungspunkts wiederherstellen kannst.</p>         <pDiese Funktion wird nur für CSI-Volume-Treiber unterstützt.</p>         <h3>Überblick über Volume Group Snapshots</h3>         <p>Einige Speichersysteme bieten die Möglichkeit, konsistente Snapshots von mehreren Volumes zu erstellen. Ein Gruppensnapshot stellt Kopien von mehreren Volumes dar, die zum gleichen Zeitpunkt erstellt werden.</p>         <p>Ein Gruppensnapshot kann verwendet werden, um neue Volumes vorzubereiten (mit dem Snapshot-Daten vorbelegten) oder um bestehende Volumes in einen früheren Zustand zurückzusetzen (repräsentiert durch die Snapshots).</p>         <h3>Warum Volume Group Snapshots in Kubernetes hinzufügen?</h3>         <p>Das Kubernetes-Volume-Plugin-System bietet bereits eine leistungsstarke Abstraktion, die die Bereitstellung, Anbringung, Einrichtung, Größenanpassung und Snapshot-Erstellung von Block- und Dateispeichern automatisiert. All diese Funktionen basieren auf dem Ziel der Kubernetes-Arbeitslast-Portabilität.</p>         <p>Es gab bereits eine VolumeSnapshot-API, die die Möglichkeit bietet, ein Snapshot eines Persistent Volumes zu erstellen, um Datenverlust oder Datenkorruption zu schützen. Allerdings unterstützen einige Speichersysteme konsistente Gruppensnapshots, die es ermöglichen, ein Snapshot von mehreren Volumes zum gleichen Zeitpunkt zu erstellen, um Schreibkonsistenz zu erreichen.</p>         <p>Dies ist besonders nützlich für Anwendungen, die mehrere Volumes enthalten. Zum Beispiel kann eine Anwendung Daten in einem Volume und Log-Daten in einem anderen Volume speichern. Wenn Snapshots für diese Volumes zu unterschiedlichen Zeiten erstellt werden, ist die Anwendung nicht konsistent und funktioniert nicht ordnungsgemäß, wenn sie aus diesen Snapshots wiederhergestellt wird.</p>         <p><em>BytePost-Einordnung: Die Einführung von Volume Group Snapshots in Kubernetes 1.36 ist ein wichtiger Schritt in Richtung einer verbesserten Datenverwaltung und -sicherheit. Entwickler können jetzt konsistente Snapshots von mehreren Volumes erstellen und ihre Arbeitslasten auf neue Volumes wiederherstellen, was die Portabilität und Wiederherstellbarkeit von Anwendungen verbessert.</em></p>     ",
+            "content_simple": "         <p>Kubernetes ist ein System, das es ermöglicht, viele Computer miteinander zu verbinden und als eine Einheit zu betreiben. Jetzt gibt es eine neue Funktion: Volume Group Snapshots. Damit kannst du ein Backup von mehreren Datenbeständen gleichzeitig erstellen.</p>         <p>Dies ist besonders nützlich, wenn du eine Anwendung hast, die mehrere Datenbestände verwendet. Wenn du ein Backup von jedem Datenbestand separat erstellst, kann es passieren, dass die Daten nicht konsistent sind, wenn du sie wiederherstellst.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Unterstützung für Volume Group Snapshots basiert auf einer Reihe von Erweiterungs-APIs für Gruppensnapshots. Diese APIs ermöglichen es Benutzern, konsistente Snapshots einer Gruppe von Volumes zu erstellen.</p>         <p>Im Hintergrund verwendet Kubernetes einen Label-Selektor, um mehrere PersistentVolumeClaim-Objekte für das Snapshot-Erstellen zu gruppieren. Dies ermöglicht es, dass die Snapshots konsistent sind und die Datenintegrität gewährleistet ist.</p>         <p>Ein wichtiger Aspekt ist die Unterstützung für CSI-Volume-Treiber. Dies ermöglicht es, dass die Snapshots auf unterschiedlichen Speichersystemen erstellt werden können.</p>         <h3>Beispiele und Anwendungen</h3>         <p>Ein Beispiel für die Verwendung von Volume Group Snapshots ist die Sicherung von Daten in einer Datenbank. Wenn du eine Datenbank hast, die mehrere Volumes verwendet, kannst du ein Backup von allen Volumes gleichzeitig erstellen, um sicherzustellen, dass die Daten konsistent sind.</p>     ",
+            "date": "13.05.2026",
+            "id": "9f61b4e4",
+            "url": "https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9f61b4e4.jpg",
+            "pick": true,
+            "pick_reason": "Heute ändert sich das Spiel für Kubernetes-Entwickler: Mit der Einführung von Volume Group Snapshots in Kubernetes 1.36 erhalten sie ein mächtiges Werkzeug, um ihre Datenmanagement-Prozesse zu revolutionieren. Dies bedeutet mehr Flexibilität, Sicherheit und Effizienz bei der Verwaltung von Daten in Container-Umgebungen, was wiederum die Entwicklung von komplexen Anwendungen beschleunigen kann. Mit diesem Update stehen Entwickler vor neuen Möglichkeiten, ihre Infrastruktur zu optimieren und ihre Produktivität zu steigern."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Hybrid Search in RAG",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9f61b4e4",
+                "3956933b",
+                "e9d58b40"
+            ],
+            "content": "         <h3>Hybrid Search und Re-Ranking in Production RAG</h3>         <p>Wenn semantische Suche nicht ausreicht für das RAG, kommt Hybrid Search und Re-Ranking ins Spiel. Dieser Ansatz kombiniert verschiedene Suchmethoden, um bessere Ergebnisse zu erzielen.</p>         <p>Die traditionelle Suche basiert auf exakten Übereinstimmungen zwischen der Suchanfrage und den im Index gespeicherten Daten. Semantische Suche hingegen versucht, den Kontext und die Bedeutung der Suchanfrage zu verstehen, um relevantere Ergebnisse zu liefern.</p>         <p>Hybrid Search und Re-Ranking in Production RAG ist ein neuer Ansatz, der die Vorteile beider Welten kombiniert. Durch die Kombination von traditioneller Suche und semantischer Suche können Entwickler bessere Ergebnisse erzielen und die Benutzererfahrung verbessern.</p>         <h3>Vorteile von Hybrid Search und Re-Ranking</h3>         <p>Der Einsatz von Hybrid Search und Re-Ranking in Production RAG bietet mehrere Vorteile, darunter:</p>         <ul>             <li>Bessere Ergebnisse: Durch die Kombination von traditioneller Suche und semantischer Suche können Entwickler bessere Ergebnisse erzielen.</li>             <li>Erhöhte Relevanz: Die semantische Suche hilft dabei, den Kontext und die Bedeutung der Suchanfrage zu verstehen, um relevantere Ergebnisse zu liefern.</li>             <li>Verbesserte Benutzererfahrung: Durch die Lieferung von besseren Ergebnissen und einer höheren Relevanz kann die Benutzererfahrung verbessert werden.</li>         </ul>         <p>Um Hybrid Search und Re-Ranking in Production RAG zu implementieren, müssen Entwickler eine Reihe von Schritten ausführen, darunter die Entwicklung eines geeigneten Index, die Konfiguration der Suchparameter und die Integration der semantischen Suche.</p>         <p><em>BytePost-Einordnung: Der Einsatz von Hybrid Search und Re-Ranking in Production RAG bietet eine Vielzahl von Vorteilen, darunter bessere Ergebnisse, erhöhte Relevanz und eine verbesserte Benutzererfahrung. Durch die Kombination von traditioneller Suche und semantischer Suche können Entwickler die Benutzererfahrung verbessern und die Effizienz ihrer Suchfunktionen steigern.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du suchst nach etwas im Internet, aber die üblichen Suchmaschinen finden nicht das, was du suchst. Das liegt daran, dass sie oft nur nach exakten Übereinstimmungen suchen. Eine neue Methode, die Hybrid Search und Re-Ranking heißt, kann das verbessern.</p>         <p>Hybrid Search und Re-Ranking ist wie ein Supercomputer, der verschiedene Suchmethoden kombiniert, um bessere Ergebnisse zu finden. Es ist wie ein Detektiv, der alle möglichen Spuren verfolgt, um die Antwort auf deine Frage zu finden.</p>     ",
+            "content_pro": "         <h3>Architektur von Hybrid Search und Re-Ranking</h3>         <p>Die Architektur von Hybrid Search und Re-Ranking besteht aus mehreren Komponenten, darunter den Suchindex, die Suchparameter und die semantische Suche.</p>         <p>Der Suchindex ist ein Datenbank, der alle Suchanfragen und die entsprechenden Ergebnisse enthält. Die Suchparameter sind die Einstellungen, die bestimmen, wie die Suche durchgeführt wird.</p>         <p>Die semantische Suche ist ein Modul, das den Kontext und die Bedeutung der Suchanfrage versteht, um relevantere Ergebnisse zu liefern. Dieses Modul kann durch Machine-Learning-Algorithmen oder durch die Verwendung von Ontologien und Wissensgraphen implementiert werden.</p>         <h3>Technische Details</h3>         <p>Der Einsatz von Hybrid Search und Re-Ranking in Production RAG erfordert die Verwendung von bestimmten Technologien und Protokollen, darunter:</p>         <ul>             <li>Die Verwendung von NoSQL-Datenbanken, wie z.B. MongoDB oder Cassandra, um den Suchindex zu speichern.</li>             <li>Die Verwendung von Suchframeworks, wie z.B. Elasticsearch oder Apache Solr, um die Suche durchzuführen.</li>             <li>Die Verwendung von Machine-Learning-Bibliotheken, wie z.B. TensorFlow oder PyTorch, um die semantische Suche zu implementieren.</li>         </ul>     ",
+            "date": "13.05.2026",
+            "id": "e99981ba",
+            "url": "https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e99981ba.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Code: Zukunft der Programmierung",
+            "source": "Martinfowler",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9f61b4e4",
+                "e99981ba",
+                "e9d58b40"
+            ],
+            "content": "         <h3>Was ist Code?</h3>         <p>Unmesh Joshi sieht Code als having zwei distinct aber verwobene Zwecke: Anweisungen für eine Maschine und ein konzeptionelles Modell des Problemraums. Er erkundet, warum es wichtig ist, eine Vokabular zu bauen, um mit der Maschine zu sprechen, wie Programmiersprachen als Denkwerkzeuge dienen und wie dies unsere Zukunft beeinflusst, wenn wir mit Large Language Models (LLMs) arbeiten.</p>         <p>Code hat immer zwei unterschiedliche, aber miteinander verknüpfte Zwecke erfüllt. Erstens ist Code eine Anweisung für eine Maschine. Er leitet die Berechnung, bewegt Daten, interagiert mit Speicher und koordiniert die Ausführung. In der Ära von LLMs ist dies der Teil, der kommodifiziert wird. Zweitens ist Code ein konzeptionelles Modell des Problemraums. Dies ist der Design-Aspekt. Ein gut gestalteter Code enthält nicht nur Anweisungen für die Maschine, sondern auch Konzepte für Menschen und Werkzeuge, um damit zu arbeiten.</p>         <h3>Konzeptionelle Modelle und Vokabular</h3>         <p>Das konzeptionelle Modell explizit zu machen, ist der tiefere Aspekt der Codierung, getrieben von der Domäne und den Anwendungsfällen, die das System ansprechen soll. Jede Domäne kommt mit etablierten Prozessen, Praktiken und vor allem mit einem gemeinsamen Vokabular. Dieses Vokabular ist dort, wo das konzeptionelle Modell sichtbar wird. Vokabular wird normalerweise als die Menge der Wörter verstanden, die in einer bestimmten Sprache oder einem bestimmten Fachgebiet verwendet werden.</p>         <h3>Vokabular in Code</h3>         <pEin gut gestalteter Code ist eine Repräsentation eines bestimmten Vokabulars. Woher kommt dieses Vokabular im Code? Hier zeigt sich die einzigartige Natur der Softwareentwicklung. Softwareentwicklung arbeitet an der Kreuzung verschiedener Domänen. An einem Ende haben wir Domänen wie Banking, Finanzen, Einzelhandel, Lagerverwaltung, Gesundheitswesen, Versicherungen usw. Auf der anderen Seite haben wir Domänen wie Web, Infrastruktur, KI, Datenbanken usw.</p>         <p><em>BytePost-Einordnung: Die Zukunft der Programmierung hängt stark von der Entwicklung von KI und LLMs ab. Es ist wichtig, dass Entwickler sich auf diese Veränderungen vorbereiten und ihre Fähigkeiten anpassen, um in dieser neuen Ära erfolgreich zu sein.</em></p>     ",
+            "content_simple": "         <p>Die Frage, was Code ist, scheint auf den ersten Blick einfach. Code ist, was Entwickler schreiben: Anweisungen in einer Programmiersprache, die Maschinen sagen, was sie tun sollen. Doch mit der Entwicklung von KI und Large Language Models (LLMs) ändert sich das. Code wird immer mehr zu einem konzeptionellen Modell des Problemraums und nicht nur zu Anweisungen für eine Maschine.</p>         <p>Das bedeutet, dass Entwickler ihre Fähigkeiten anpassen müssen, um in dieser neuen Ära erfolgreich zu sein. Sie müssen lernen, mit KI und LLMs zu arbeiten und ihre Vokabular zu erweitern, um mit diesen Technologien zu kommunizieren.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Entwicklung von KI und LLMs bringt neue Herausforderungen und Chancen für Entwickler. Sie müssen lernen, ihre Codebasen so zu gestalten, dass sie mit KI und LLMs kompatibel sind. Dazu gehört es, ein Vokabular zu bauen, das von Menschen und Maschinen verstanden werden kann.</p>         <p>Ein Beispiel dafür ist die Verwendung von Domain-Specific Languages (DSLs), um konzeptionelle Modelle zu erstellen. DSLs sind spezielle Programmiersprachen, die für bestimmte Domänen entwickelt wurden und es Entwicklern ermöglichen, ihre Codebasen auf eine effiziente und effektive Weise zu gestalten.</p>     ",
+            "date": "13.05.2026",
+            "id": "3956933b",
+            "url": "https://martinfowler.com/articles/what-is-code.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3956933b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "vLLM V0 zu V1",
+            "source": "ServiceNow-AI",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9f61b4e4",
+                "e99981ba",
+                "3956933b"
+            ],
+            "content": "         <h3>vLLM V0 zu V1: Korrektheit vor Korrekturen in RL</h3>         <p>PipelineRL verwendet vLLM als Inferenz-Engine für die Rollout-Generierung. Die Inferenz-Engine sampelt Token und gibt Token-Logprobs zurück; der Trainer verwendet diese Logprobs, um Policy-Raten, KL, Clip-Rate, Entropie und Belohnung zu berechnen. Jede Diskrepanz in der Art und Weise, wie diese Logprobs berechnet werden, kann die Trainingsdynamik ändern. Dies ist die Trainings-Inferenz- Diskrepanz, die wir während der Migration von vLLM V0 zu V1 beseitigen mussten.</p>         <p>TL;DR. vLLM V1 hat unsere vLLM V0-Referenz nachgeahmt, nachdem wir vier Dinge korrigiert hatten: verarbeitete Rollout-Logprobs, V1-spezifische Laufzeit-Standardwerte, den Inflight-Gewichtsaktualisierungspfad und den fp32 lm_head, der für die endgültige Projektion verwendet wird. Wir korrigierten das Backend-Verhalten, bevor wir das RL-Ziel änderten. Der Referenzlauf verwendete vLLM 0.8.5; die V1-Läufe verwendeten vLLM 0.18.1.</p>         <h3>Migration Ziel</h3>         <p>vLLM V1 ist eine umfassende Neuschrift der V0-Engine. Unser Migrationsziel war daher bewusst eng gefasst: Bestätigen, dass V1 Rollout-Logprobs in der Form zurückgibt, die der Trainer erwartet; denselben Arbeitsauftrag gegen die V0-Referenz laufen lassen; objektive Änderungen erst nach Wiederherstellung der Backend-Parität bewerten.</p>         <h3>Fehlermodi</h3>         <p>Wir teilten die möglichen Ursachen in drei Schichten ein:             <ul>                 <li>Semantische Diskrepanz: Das Backend gibt Logprobs mit unterschiedlicher Bedeutung relativ zu dem, was der Trainer erwartet.</li>                 <li>Inferenz-Pfad-Diskrepanz: Das Backend verwendet unterschiedliche Laufzeit-Standardwerte für Caching, Scheduling oder Anfragebehandlung, so dass dieselben Prompts einen anderen Ausführungspfad verfolgen.</li>                 <li>Ziel-Diskrepanz: Das RL-Ziel benötigt eine Korrektur für die verbleibende Staleness oder Backend-Diskrepanz.</li>             </ul>         </p>         <p>Wir verdächtigten zunächst die dritte Kategorie zu früh. Die nutzbare Diagnose kam von der Behandlung der ersten beiden als Backend-Verhaltensprobleme und der Ausschluss dieser Probleme.</p>         <p><em>BytePost-Einordnung: Die Korrektur der vLLM V0- zu V1-Migration zeigt, wie wichtig es ist, die Trainings- und Inferenz-Phasen zu überwachen und korrekte Logprobs zu gewährleisten, um die Trainingsdynamik nicht zu verändern.</em></p>     ",
+            "content_simple": "         <p>vLLM V0 und V1 sind zwei Versionen einer künstlichen Intelligenz (KI), die für bestimmte Aufgaben trainiert werden. Die neue Version V1 sollte genau wie die alte Version V0 funktionieren, aber es gab einige Probleme, die behoben werden mussten. Die Entwickler fanden heraus, dass die Logprobs, also die Wahrscheinlichkeiten, mit denen die KI bestimmte Entscheidungen trifft, nicht korrekt waren. Sie korrigierten dies und überprüften, ob die neue Version jetzt ordnungsgemäß funktioniert.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Migration von vLLM V0 zu V1 erforderte die Korrektur von vier Hauptproblemen: verarbeitete Rollout-Logprobs, V1-spezifische Laufzeit-Standardwerte, den Inflight-Gewichtsaktualisierungspfad und den fp32 lm_head. Die korrekte Implementierung dieser Aspekte war entscheidend, um die Trainingsdynamik nicht zu verändern.</p>         <p>Die Verwendung von verarbeiteten Logprobs anstelle von rohen Modellausgaben war notwendig, um die richtigen Policy-Raten und Belohnungen zu berechnen. Die Laufzeit-Standardwerte wurden angepasst, um die korrekte Ausführung der Inferenz-Engine zu gewährleisten. Der Inflight-Gewichtsaktualisierungspfad wurde korrigiert, um die Staleness zu minimieren. Schließlich wurde der fp32 lm_head verwendet, um die endgültige Projektion durchzuführen.</p>     ",
+            "date": "13.05.2026",
+            "id": "e9d58b40",
+            "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e9d58b40.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🌊",
+            "title": "KEROGEN: Psychologisches Horror-Spiel",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9f61b4e4",
+                "e99981ba",
+                "3956933b"
+            ],
+            "content": "         <h3>Einleitung in die Welt von KEROGEN</h3>         <p>Ich vertraue dem Ozean nicht. Er ist zu groß! Es passiert einfach zu viel darin und ich hoffe auf den Tag, an dem James Cameron aufhört, dort herumzumachen. Das macht ihn jedoch zu einem guten Schauplatz für Horror-Szenarien, wie man es in Spielen wie BioShock, SOMA und Iron Lung sehen kann. Jetzt kommt KEROGEN ins Spiel, um den Titel des „Ich bin nicht sicher, ob ich die Augen offen halten kann, während ich spiele“ zu erringen, den SOMA derzeit in meinem Herzen hält.</p>         <p>KEROGEN, ein psychologisches Horror-Spiel, bei dem man „Leichen aus einem öldrückenden Albtraum“ ausgräbt, bringt dich in die Rolle eines „verlassenen Drohnen-Operators, der gezwungen ist, einen gesunkenen Öltanker zu untersuchen“. Dein Name ist Oteil und um unter dem Meer zu erkunden, projiziert er seinen Geist in Maschinen. „Mit jedem Tauchgang gehen wertvolle Teile von dir in der Transition verloren.“ Die Vergleiche mit SOMA halten an, obwohl sie hier enden, da das Spiel in puncto Stil eher in Richtung eines trendy-low-poly-PS1-Ästhetik tendiert.</p>         <h3>Das Spiel selbst</h3>         <p>Um ehrlich zu sein, obwohl ich erklärt habe, was man im Spiel tut, bin ich nicht sicher, ob ich es wirklich erklären kann, von Moment zu Moment. Einer der Trailers zeigt unter Wasser Erkundungen, Objektuntersuchungen und Gespräche, deren Einfluss jedoch unklar bleibt. Es scheint, als hätte man die Fähigkeit, die Umgebung zu scannen, verschiedene Dinge und Abschnitte der Orte, die man erkundet, zu untersuchen, alles ist ein bisschen mysteriös.</p>         <p>Es gibt auch einige andere Tricks, die dir auf deiner Reise helfen. Maeve ist die Schiffsmaschinistin, die deine Drohnen wartet und, wie du, „überfordert ist, aber ihre zu vertrauen ist keine Option“. Boris ist der Kapitän des Schiffes, der fest entschlossen ist, dich auszunutzen, um Geld zu machen. Und dann gibt es Ayla, die Analytikerin des Schiffes, die „mehr weiß, als sie zugibt. Ihr Eid verbietet es ihr, die Wahrheit zu teilen, aber die Folgen werden euch alle gleichermaßen betreffen.“ Es klingt nach einer interessanten Gruppe!</p>         <h3>Fazit</h3>         <p>Ich bin, wie seltsam es klingen mag, von der reifen Inhaltsbeschreibung des Spiels fasziniert, da sie speziell Bodydysphorie erwähnt. Es ist immer schön, ein Spiel, das solche Themen in Bezug auf den Transfer von Bewusstsein erforscht. Es gibt noch keinen Releasedatum für KEROGEN, aber du kannst es auf Steam auf die Wunschliste setzen, während du auf einen wartest.</p>         <p><em>BytePost-Einordnung: KEROGEN verspricht mit seinem unheimlichen Ozean-Szenario und der Erforschung psychologischer Horror-Elemente ein spannendes Spielerlebnis. Die Verwendung von Low-Poly-Grafiken in einem modernen Kontext ist interessant und könnte zu einem einzigartigen visuellen Erlebnis führen. Die Erforschung von Themen wie Bodydysphorie in Spielen ist wichtig und kann zu einer tiefgründigeren Spielerfahrung beitragen.</em></p>     ",
+            "content_simple": "         <p>Ein neues Spiel namens KEROGEN verspricht ein unheimliches Abenteuer unter dem Meer. Du musst als Drohnen-Operator einen gesunkenen Öltanker untersuchen und kommst dabei Leichen aus einem öldrückenden Albtraum gegenüber. Das Spiel hat eine besondere Grafik, die an alte PlayStation-Spiele erinnert, und es geht um Themen wie die Erforschung des eigenen Bewusstseins.</p>         <p>Das Spiel hat noch keinen Releasedatum, aber es sieht nach einem spannenden Erlebnis aus. Wenn du auch Angst vor dem Ozean hast, könnte KEROGEN das perfekte Spiel für dich sein.</p>     ",
+            "content_pro": "         <h3>Technische Details von KEROGEN</h3>         <p>Leider gibt es bisher keine offiziellen Angaben zu den genauen technischen Details von KEROGEN. Es ist jedoch interessant zu sehen, wie das Spiel die Low-Poly-Grafik in einem modernen Kontext einsetzt. Die Erforschung von psychologischen Horror-Elementen und die Darstellung von Themen wie Bodydysphorie in einem Spiel sind anspruchsvolle Aufgaben, die eine sorgfältige Planung und Umsetzung erfordern.</p>         <h3>Potenziale und Herausforderungen</h3>         <p>Das Spiel könnte durch seine einzigartige Grafik und seine anspruchsvollen Themen ein interessantes Spielerlebnis bieten. Es bleibt jedoch abzuwarten, wie gut die Entwickler die technischen und erzählerischen Herausforderungen meistern werden. Die Verwendung von Low-Poly-Grafiken könnte zu Performance-Vorteilen führen, aber es bleibt zu sehen, wie das Spiel auf verschiedenen Plattformen läuft.</p>     ",
+            "date": "13.05.2026",
+            "id": "21d74f3b",
+            "url": "https://www.rockpapershotgun.com/head-beneath-the-waves-and-pull-up-corpses-from-an-oil-drenched-nightmare-in-the-ocean-fear-inducing-kerogen",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/21d74f3b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki",
                 "dev"
             ],
@@ -87,7 +236,7 @@
                 "sleep": 0
             },
             "image_local": "images/ec1e6ea4.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Ein kritischer DNSSEC-Fehler hat .de-Domains unerreichbar gemacht, was die Stabilität des deutschen Internets ins Wanken bringt. Entwickler sollten sich umgehend mit den Folgen auseinandersetzen, da ihre Online-Anwendungen und Dienste direkt betroffen sein könnten. Die Sicherheit und Verfügbarkeit ihrer Systeme stehen auf dem Spiel, wenn sie nicht schnell reagieren."
         },
         {
@@ -36548,10 +36697,10 @@
         }
     ],
     "bytepulse": {
-        "date": "12.05.2026",
-        "positiv": 12,
-        "neutral": 62,
-        "kritisch": 25,
-        "total": 8
+        "date": "13.05.2026",
+        "positiv": 60,
+        "neutral": 40,
+        "kritisch": 0,
+        "total": 5
     }
 }
