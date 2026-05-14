@@ -27,7 +27,7 @@
                 "sleep": 0
             },
             "image_local": "images/9f61b4e4.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Heute ändert sich das Spiel für Kubernetes-Entwickler: Mit der Einführung von Volume Group Snapshots in Kubernetes 1.36 erhalten sie ein mächtiges Werkzeug, um ihre Datenmanagement-Prozesse zu revolutionieren. Dies bedeutet mehr Flexibilität, Sicherheit und Effizienz bei der Verwaltung von Daten in Container-Umgebungen, was wiederum die Entwicklung von komplexen Anwendungen beschleunigen kann. Mit diesem Update stehen Entwickler vor neuen Möglichkeiten, ihre Infrastruktur zu optimieren und ihre Produktivität zu steigern."
         },
         {
