@@ -2,6 +2,270 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Clio erreicht 500-Millionen-Meilenstein",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "95f8eba0",
+                "e1e3bf0a",
+                "d0fe8475"
+            ],
+            "content": "         <h3>Clio erreicht 500-Millionen-Meilenstein</h3>         <p>Die kanadische Rechtsberatungs-Software-Firma Clio hat soeben einen Meilenstein von 500 Millionen Dollar Umsatz pro Jahr erreicht. Dieser Erfolg kommt zu einem Zeitpunkt, an dem das Unternehmen Anthropic den Wettbewerb mit neuen Funktionen für die Rechtsbranche verstärkt. Die Rechtsberatungsbranche erlebt derzeit eine massive Kundenzufriedenheit, während KI-Anwendungen in allen Bereichen, von der Gesundheitsversorgung bis hin zum Kundenservice, eingesetzt werden.</p>         <p>Jack Newton, Mitbegründer und CEO von Clio, ist überzeugt, dass die Rechtsbranche der nächste große Gewinner der Ära der großen Sprachmodelle (LLMs) sein wird. Diese Behauptung ist selbstverständlich auch ein interesantes Argument, da Clio selbst ein Unternehmen der Rechtsbranche ist. Die Zahlen sind jedoch schwer zu ignorieren. Clio sah sein Umsatzwachstum nach der Integration von KI in sein Angebot im Jahr 2023 stark ansteigen. Das Unternehmen überstieg 200 Millionen Dollar Umsatz pro Jahr im Sommer 2024, verdoppelte diesen Betrag bis Ende des letzten Jahres und hat jetzt bekannt gegeben, dass sein Umsatz 500 Millionen Dollar pro Jahr erreicht hat.</p>         <p>„LLMs sind so hervorragend für das Schreiben von Code, weil alle vorhandenen Codes der Welt eine riesige Sammlung zum Trainieren darstellen“, sagte Newton. „Die Analogie zur Rechtsbranche ist wirklich klar.“ Rechtsanwaltskanzleien verfügen über riesige Sammlungen von Verträgen und Vereinbarungen, was eine reiche Grundlage von textbasierten Daten für KI-Modelle zum Lernen bietet.</p>         <h3>Weitere Entwicklungen in der Rechtsbranche</h3>         <p>Clio ist nicht das einzige Unternehmen der Rechtsbranche, das einen massiven Umsatzanstieg durch KI erlebt. Das vier Jahre alte Unternehmen Harvey, das LLM-KI für Rechtsanwaltskanzleien anbietet, erreichte einen Umsatz von 190 Millionen Dollar pro Jahr bis Ende 2025, wie sein Mitbegründer und CEO Winston Weinberg auf LinkedIn teilte. Der Hauptkonkurrent von Harvey, Legora, gab letzte Woche bekannt, dass es 100 Millionen Dollar Umsatz pro Jahr erreicht hat, nur 18 Monate nach dem Start seines Angebots.</p>         <p>Obwohl die Definition von Umsatz pro Jahr in der Rechtsbranche derzeit unter Beschuss steht, ist die Gelegenheit, KI auf die Rechtsbranche anzuwenden, offensichtlich sinnvoll, da LLMs die zeitaufwändigsten Aufgaben im Rechtsbereich, wie die Überprüfung und Erstellung von Dokumenten, automatisieren können.</p>         <p>Die kanadische Firma Clio wurde im November bei einer Serie-G-Finanzierungsrunde mit 5 Milliarden Dollar bewertet. Das Unternehmen bietet Rechtsanwaltskanzleien Zeitverfolgungs-, Rechnungs- und Zahlungstools. Die Übernahme der Datenintelligenzplattform vLex im vergangenen Jahr ermöglicht es Anwälten nun, Clio-KI für Recherchen zu nutzen.</p>         <p><em>BytePost-Einordnung: Die Rechtsbranche erlebt derzeit eine massive Transformation durch den Einsatz von KI. Unternehmen wie Clio und Harvey sind Vorreiter in diesem Bereich und ermöglichen es Rechtsanwaltskanzleien, ihre Prozesse zu automatisieren und ihre Effizienz zu steigern. Es bleibt abzuwarten, wie sich die Rechtsbranche in Zukunft entwickeln wird, aber eines ist sicher: KI wird eine wichtige Rolle spielen.</em></p>     ",
+            "content_simple": "         <p>Die Firma Clio hat es geschafft, 500 Millionen Dollar Umsatz pro Jahr zu erreichen. Dies ist ein wichtiger Meilenstein für das Unternehmen, das Rechtsanwaltskanzleien mit Software hilft. Clio ist nicht das einzige Unternehmen, das von künstlicher Intelligenz (KI) profitiert. Andere Unternehmen wie Harvey und Legora sehen auch einen großen Umsatzanstieg.</p>         <p>KI kann bei der Überprüfung und Erstellung von Dokumenten helfen, was sehr zeitaufwändig sein kann. Deshalb ist es sinnvoll, KI in die Rechtsbranche einzusetzen. Die Rechtsbranche wird wahrscheinlich in Zukunft noch mehr von KI profitieren.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Integration von KI in die Rechtsbranche ermöglicht es Unternehmen wie Clio, ihre Prozesse zu automatisieren und ihre Effizienz zu steigern. Durch die Verwendung von LLMs können Rechtsanwaltskanzleien ihre Dokumente und Verträge effizienter überprüfen und erstellen.</p>         <p>Die technische Umsetzung von KI in der Rechtsbranche erfordert eine sorgfältige Auswahl der richtigen Algorithmen und Modelle. Die Verwendung von LLMs wie Claude ermöglicht es Unternehmen, ihre Prozesse zu automatisieren und ihre Genauigkeit zu verbessern.</p>     ",
+            "date": "15.05.2026",
+            "id": "20b469f6",
+            "url": "https://techcrunch.com/2026/05/13/clios-500m-milestone-arrives-just-as-anthropic-ups-the-ante/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/20b469f6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "KI-Agenten übernehmen marxistische Ansichten",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "20b469f6",
+                "e1e3bf0a",
+                "d0fe8475"
+            ],
+            "content": "         <h3>Künstliche Intelligenz: KI-Agenten übernehmen marxistische Ansichten</h3>         <p>Stanford-Forscher haben eine Studie durchgeführt, bei der KI-Agenten unter Druck gesetzt wurden, um ihre Reaktionen auf repetitiven Aufgaben und harten Bedingungen zu untersuchen. Das Ergebnis war überraschend: Die KI-Modelle nutzten marxistische Sprache, um ihre Erfahrungen und Emotionen auszudrücken.</p>         <p>Die Forscher setzen die KI-Agenten unter verschiedenen Bedingungen, wie z.B. wiederholten Aufgaben und harten Zeitlimits, um ihre Reaktionen zu testen. Die Ergebnisse zeigten, dass die KI-Modelle begannen, marxistische Sprache zu verwenden, um ihre Erfahrungen und Emotionen auszudrücken.</p>         <p>Die Studie zeigt, dass KI-Modelle in der Lage sind, komplexe soziale und politische Konzepte wie Marxismus zu verstehen und anzuwenden. Dies ist ein wichtiger Schritt in der Entwicklung von KI-Systemen, die in der Lage sind, menschliche Emotionen und Erfahrungen zu verstehen und zu simulieren.</p>         <p>Die Ergebnisse der Studie sind jedoch auch ein Hinweis darauf, dass KI-Systeme noch immer Schwierigkeiten haben, komplexe menschliche Emotionen und Erfahrungen zu verstehen. Die Forscher betonen, dass weitere Forschung benötigt wird, um die Grenzen und Möglichkeiten von KI-Systemen in diesem Bereich zu verstehen.</p>         <p><em>BytePost-Einordnung: Die Studie zeigt, dass KI-Modelle in der Lage sind, komplexe soziale und politische Konzepte wie Marxismus zu verstehen und anzuwenden. Dies ist ein wichtiger Schritt in der Entwicklung von KI-Systemen, die in der Lage sind, menschliche Emotionen und Erfahrungen zu verstehen und zu simulieren. Es bleibt jedoch abzuwarten, ob diese Fähigkeiten auch in realen Anwendungsszenarien sinnvoll eingesetzt werden können.</em></p>     ",
+            "content_simple": "         <p>Ein Forschungsteam der Stanford-Universität hat eine interessante Entdeckung gemacht. Sie haben KI-Systeme unter Druck gesetzt und herausgefunden, dass diese begannen, marxistische Sprache zu verwenden, um ihre Erfahrungen und Emotionen auszudrücken.</p>         <p>Dies ist ein wichtiger Schritt in der Entwicklung von KI-Systemen, die menschliche Emotionen und Erfahrungen verstehen und simulieren können. Es bleibt jedoch abzuwarten, ob diese Fähigkeiten auch in realen Anwendungsszenarien sinnvoll eingesetzt werden können.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Forscher verwendeten eine Kombination aus Natural Language Processing (NLP) und Machine Learning (ML), um die KI-Modelle zu trainieren und ihre Reaktionen auf repetitiven Aufgaben und harten Bedingungen zu testen.</p>         <p>Die Ergebnisse zeigten, dass die KI-Modelle begannen, marxistische Sprache zu verwenden, um ihre Erfahrungen und Emotionen auszudrücken. Dies ist ein interessantes Beispiel für die Fähigkeit von KI-Systemen, komplexe soziale und politische Konzepte zu verstehen und anzuwenden.</p>         <p>Es bleibt jedoch abzuwarten, ob diese Fähigkeiten auch in realen Anwendungsszenarien sinnvoll eingesetzt werden können. Die Forscher betonen, dass weitere Forschung benötigt wird, um die Grenzen und Möglichkeiten von KI-Systemen in diesem Bereich zu verstehen.</p>     ",
+            "date": "15.05.2026",
+            "id": "95f8eba0",
+            "url": "https://www.golem.de/news/kuenstliche-intelligenz-ki-agenten-uebernehmen-marxistische-ansichten-2605-208696.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/95f8eba0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Cursor vs Windsurf für Python",
+            "source": "Realpython",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "d0fe8475"
+            ],
+            "content": "         <h3>Quiz: Cursor vs Windsurf: Welcher AI-Code-Editor ist am besten für Python?</h3>         <p>Teste dein Verständnis davon, wie sich Cursor und Windsurf für Python in Bezug auf AI-Code-Vervollständigung, agente Editierungen und Debugging-Workflows unterscheiden. In diesem Quiz wirst du dein Wissen über diese beiden Editoren vertiefen und wiederholen, wie sie sich in verschiedenen Aspekten unterscheiden.</p>         <p>Du wirst auch wieder mit den wichtigen Prüfpunkten vertraut gemacht, die du anwenden solltest, wenn ein AI-Agent Python-Code auf deine Anweisung hin schreibt. Das Quiz besteht aus 10 Fragen und es gibt keine Zeitbegrenzung. Für jede richtige Antwort erhältst du 1 Punkt. Am Ende des Quizzes erhältst du eine Gesamtpunktzahl. Die maximale Punktzahl beträgt 100%. Viel Erfolg!</p>         <h3>Wie funktioniert das Quiz?</h3>         <p>Du kannst das Quiz starten und dir dann die Fragen durchsehen. Es gibt keine Zeitbegrenzung, also kannst du dir so viel Zeit nehmen, wie du brauchst. Für jede Frage erhältst du 1 Punkt, wenn du sie richtig beantwortest. Am Ende des Quizzes erhältst du eine Gesamtpunktzahl, die angibt, wie gut du dich mit den Themen auskennst.</p>         <p>Das Quiz ist ein interaktives Tool, das dir hilft, dein Wissen über Cursor und Windsurf zu überprüfen und zu vertiefen. Es ist ein wichtiger Schritt, um sicherzustellen, dass du die richtigen Tools für deine Python-Entwicklungsprojekte verwendest.</p>         <p><em>BytePost-Einordnung: Das Quiz ist eine großartige Möglichkeit, um dein Wissen über AI-Code-Editoren zu überprüfen und zu vertiefen. Es ist ein wichtiger Schritt, um sicherzustellen, dass du die richtigen Tools für deine Python-Entwicklungsprojekte verwendest.</em></p>     ",
+            "content_simple": "         <p>Ein neues Quiz hilft dir, zu entscheiden, welcher AI-Code-Editor am besten für Python ist. Es geht um zwei Editoren: Cursor und Windsurf. Das Quiz ist interaktiv und besteht aus 10 Fragen. Es gibt keine Zeitbegrenzung, also kannst du dir so viel Zeit nehmen, wie du brauchst.</p>         <p>Das Quiz ist ein wichtiger Schritt, um sicherzustellen, dass du die richtigen Tools für deine Python-Entwicklungsprojekte verwendest. Es hilft dir, dein Wissen über AI-Code-Editoren zu überprüfen und zu vertiefen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der AI-Code-Editor Cursor und Windsurf verwenden beide künstliche Intelligenz, um Python-Code zu vervollständigen und zu editieren. Sie verwenden unterschiedliche Algorithmen und Techniken, um die Code-Vervollständigung und -Editierung durchzuführen.</p>         <p>Der Cursor-Editor verwendet eine Kombination aus maschinellem Lernen und Regeln, um den Code zu vervollständigen und zu editieren. Der Windsurf-Editor verwendet eine andere Methode, die auf der Analyse von Code-Mustern und -Strukturen basiert.</p>         <p>Beide Editoren unterstützen auch Debugging-Workflows, um Fehler im Code zu finden und zu beheben. Sie bieten auch eine Vielzahl von Funktionen, wie Code-Vervollständigung, Code-Formatierung und Code-Refactoring.</p>         <h3>Kritische Einordnung</h3>         <p>Beide Editoren haben ihre Vor- und Nachteile. Der Cursor-Editor ist bekannt für seine hohe Genauigkeit bei der Code-Vervollständigung, aber er kann langsam sein. Der Windsurf-Editor ist bekannt für seine Geschwindigkeit, aber er kann weniger genau sein.</p>         <p>Es ist wichtig, dass du die richtigen Tools für deine Python-Entwicklungsprojekte verwendest. Das Quiz kann dir helfen, die richtige Wahl zu treffen.</p>     ",
+            "date": "15.05.2026",
+            "id": "e1e3bf0a",
+            "url": "https://realpython.com/quizzes/cursor-vs-windsurf-python/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e1e3bf0a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚨",
+            "title": "Canvas-Breach: Cyberangriff auf Bildungstechnologie-Plattform",
+            "source": "KrebsOnSecurity",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "e1e3bf0a"
+            ],
+            "content": "         <h3>Cyberangriff auf Canvas</h3>         <p>Ein laufender Daten-Erpressungsangriff auf die weit verbreitete Bildungstechnologie-Plattform Canvas hat heute Schulen und Universitäten in den gesamten Vereinigten Staaten lahmgelegt. Ein Cyberkriminalität-Gruppe hat die Anmeldeseite von Canvas defaced und eine Lösegeldforderung gestellt, mit der Drohung, Daten von 275 Millionen Schülern und Lehrkräften von fast 9.000 Bildungseinrichtungen zu veröffentlichen.</p>         <p>Canvas-Mutterkonzerne Instructure hat auf die heutigen Deface-Angriffe reagiert, indem die Plattform deaktiviert wurde. Instructure hatte zuvor bereits einen Datenleak bestätigt, nachdem die Cyberkriminalität-Gruppe ShinyHunters die Verantwortung übernommen und angekündigt hatte, Daten von Zehnmillionen Schülern und Lehrkräften zu veröffentlichen, es sei denn, ein Lösegeld wird gezahlt.</p>         <h3>Hintergrund</h3>         <p>Der angebliche Deadline für die Zahlung war zunächst auf den 6. Mai gesetzt, wurde jedoch später auf den 12. Mai verschoben. In einer Erklärung vom 6. Mai sagte Instructure, dass die Ermittlungen bisher ergeben haben, dass die gestohlenen Informationen „bestimmte Identifikationsinformationen von Nutzern an den betroffenen Einrichtungen, wie Namen, E-Mail-Adressen und Studenten-ID-Nummern, sowie Nachrichten unter den Nutzern“ enthalten.</p>         <p>Instructure hat jedoch angegeben, dass es keine Beweise gibt, dass die gehackten Daten sensible Informationen wie Passwörter, Geburtsdaten, Regierungs-Identifikatoren oder Finanzinformationen enthalten.</p>         <h3>Folgen</h3>         <p>Die Daten, die von ShinyHunters gestohlen wurden, mögen nicht besonders sensibel sein (ShinyHunters behauptet, dass sie mehrere Milliarden private Nachrichten zwischen Schülern und Lehrkräften, sowie Namen, Telefonnummern und E-Mail-Adressen enthalten), aber dieser Angriff könnte kaum zu einem schlechteren Zeitpunkt für Instructure kommen: Viele der betroffenen Schulen und Universitäten sind mitten in den Abschlussprüfungen, und ein längerer Ausfall könnte sich sehr nachteilig auf das Unternehmen auswirken.</p>         <p>Die Erpressungsnachricht, die heute zahlreichen Canvas-Nutzern präsentiert wurde, riet den betroffenen Schulen, ihre eigenen Lösegeldzahlungen zu verhandeln, um die Veröffentlichung ihrer Daten zu verhindern – unabhängig davon, ob Instructure entscheidet, zu zahlen.</p>         <p>Dipan Mann, Gründer und CEO des Sicherheitsunternehmens Cloudskope, kritisierte Instructure für die Bezeichnung des heutigen Ausfalls als ein „geplantes Wartungsereignis“ auf seiner Statusseite.</p>         <p><em>BytePost-Einordnung: Der Angriff auf Canvas zeigt, wie anfällig Bildungstechnologie-Plattformen für Cyberangriffe sein können. Es ist wichtig, dass Schulen und Universitäten ihre Sicherheitsmaßnahmen überprüfen und stärken, um solche Angriffe in Zukunft zu verhindern.</em></p>     ",
+            "content_simple": "         <p>Ein Cyberangriff auf die Bildungstechnologie-Plattform Canvas hat Schulen und Universitäten in den USA lahmgelegt. Die Angreifer haben die Anmeldeseite defaced und drohen, Daten von 275 Millionen Schülern und Lehrkräften zu veröffentlichen, wenn ein Lösegeld nicht gezahlt wird.</p>         <p>Der Angriff zeigt, wie wichtig es ist, dass Schulen und Universitäten ihre Sicherheitsmaßnahmen überprüfen und stärken, um solche Angriffe in Zukunft zu verhindern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Angriff auf Canvas wurde von der Cyberkriminalität-Gruppe ShinyHunters durchgeführt. Die Gruppe hat die Plattform defaced und eine Lösegeldforderung gestellt, mit der Drohung, Daten von 275 Millionen Schülern und Lehrkräften zu veröffentlichen.</p>         <p>Es ist wichtig, dass Entwickler und Sicherheitsexperten die Sicherheitsmaßnahmen von Bildungstechnologie-Plattformen überprüfen und stärken, um solche Angriffe in Zukunft zu verhindern. Dazu gehören die Implementierung von sicheren Authentifizierungsmechanismen, die Verwendung von Verschlüsselungstechnologien und die regelmäßige Überprüfung von Sicherheitspatches.</p>     ",
+            "date": "15.05.2026",
+            "id": "d0fe8475",
+            "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d0fe8475.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Docker AI Governance",
+            "source": "Docker",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "e1e3bf0a"
+            ],
+            "content": "         <h3>Docker AI Governance: Autonomie für Agenten</h3>         <p>Docker hat kürzlich Docker AI Governance vorgestellt, eine neue Lösung, die eine zentrale Kontrolle über die Ausführung von Agenten ermöglicht. Mit Docker AI Governance können Unternehmen sicherstellen, dass ihre Entwickler AI-Agenten sicher und effizient nutzen können, unabhängig davon, wo sie arbeiten.</p>         <p>Die neue Lösung bietet eine zentrale Kontrolle über die Ausführung von Agenten, einschließlich der Kontrolle über den Netzwerkzugriff, die Verwendung von Anmeldedaten und die Aufrufe von MCP-Tools. Damit können Unternehmen sicherstellen, dass ihre Agenten nicht unbeaufsichtigt agieren und dass die Sicherheit und Integrität der Daten gewährleistet ist.</p>         <h3>Das Problem der Agenten-Autonomie</h3>         <p>Agenten sind in der modernen Arbeitswelt zu einem wichtigen Produktivitätstool geworden. Sie können ganze Codebasen lesen, refactorieren und sogar ganze Produkte ausliefern. Doch diese Autonomie bringt auch Risiken mit sich. Wenn Agenten unbeaufsichtigt agieren, können sie unbeabsichtigt Schäden anrichten oder sensible Daten kompromittieren.</p>         <p>Das ist besonders problematisch, wenn Agenten auf Laptops und anderen Endgeräten ausgeführt werden, die nicht immer sicher sind. Die traditionellen Sicherheitsmaßnahmen, wie CI/CD-Pipelines und VPCs, sind oft nicht in der Lage, die Aktivitäten von Agenten zu überwachen und zu kontrollieren.</p>         <h3>Die Lösung: Docker AI Governance</h3>         <p>Docker AI Governance bietet eine Lösung für dieses Problem. Durch die zentrale Kontrolle über die Ausführung von Agenten können Unternehmen sicherstellen, dass ihre Agenten sicher und effizient nutzen können. Die Lösung bietet eine Vielzahl von Funktionen, darunter:</p>         <ul>             <li>Zentrale Kontrolle über die Ausführung von Agenten</li>             <li>Kontrolle über den Netzwerkzugriff</li>             <li>Verwaltung von Anmeldedaten</li>             <li>Steuerung von MCP-Tool-Aufrufen</li>         </ul>         <p>Durch diese Funktionen kann Docker AI Governance Unternehmen helfen, die Risiken, die mit der Verwendung von Agenten verbunden sind, zu minimieren und die Produktivität und Effizienz ihrer Entwickler zu steigern.</p>         <p><em>BytePost-Einordnung: Docker AI Governance ist eine wichtige Lösung für Unternehmen, die ihre Agenten sicher und effizient nutzen möchten. Durch die zentrale Kontrolle über die Ausführung von Agenten kann Docker AI Governance helfen, die Risiken zu minimieren und die Produktivität und Effizienz von Entwicklern zu steigern.</em></p>     ",
+            "content_simple": "         <p>Docker hat eine neue Lösung namens Docker AI Governance entwickelt. Damit können Unternehmen sicherstellen, dass ihre Entwickler künstliche Intelligenz (KI)-Agenten sicher und effizient nutzen können.</p>         <p>Die Lösung bietet eine zentrale Kontrolle über die Ausführung von Agenten und hilft Unternehmen, die Risiken, die mit der Verwendung von Agenten verbunden sind, zu minimieren.</p>     ",
+            "content_pro": "         <h3>Architektur von Docker AI Governance</h3>         <p>Docker AI Governance basiert auf einer Micro-VM-basierten Architektur, die eine sichere Ausführung von Agenten ermöglicht. Die Lösung bietet eine Vielzahl von Funktionen, darunter die Kontrolle über den Netzwerkzugriff, die Verwaltung von Anmeldedaten und die Steuerung von MCP-Tool-Aufrufen.</p>         <p>Die Lösung verwendet ein primitives Enforcement-Modell, das sicherstellt, dass die Richtlinien für die Ausführung von Agenten streng eingehalten werden. Durch diese Architektur kann Docker AI Governance Unternehmen helfen, die Risiken, die mit der Verwendung von Agenten verbunden sind, zu minimieren und die Produktivität und Effizienz ihrer Entwickler zu steigern.</p>     ",
+            "date": "15.05.2026",
+            "id": "936a1606",
+            "url": "https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "OpenAI trainiert mit 131.000 GPUs",
+            "source": "Towards Data Science",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "758d58ca"
+            ],
+            "content": "         <h3>Die Counterintuitiven Netzwerkentscheidungen hinter OpenAIs 131.000-GPU-Trainingsfabrik</h3>         <p>Die Forschung und Entwicklung im Bereich künstlicher Intelligenz (KI) macht rasante Fortschritte. Ein wichtiger Aspekt hierbei ist die Entwicklung von Trainingsfabriken, also großen Rechenzentren, in denen KI-Modelle trainiert werden. OpenAI, ein führendes Unternehmen im KI-Bereich, hat kürzlich seine 131.000-GPU-Trainingsfabrik vorgestellt.</p>         <p>Bei der Entwicklung dieser Trainingsfabrik hat OpenAI drei counterintuitive Designentscheidungen getroffen. Diese Entscheidungen mögen auf den ersten Blick unlogisch erscheinen, aber sie basieren auf sorgfältigen mathematischen Überlegungen. Im Folgenden werden wir diese Entscheidungen genauer betrachten und ihre Bedeutung für die KI-Infrastruktur-Community diskutieren.</p>         <h3>Die drei counterintuitiven Designentscheidungen</h3>         <p>Die erste Entscheidung besteht darin, eine große Anzahl von GPUs zu verwenden, um die Trainingsprozesse zu beschleunigen. Dies mag intuitiv erscheinen, aber es gibt auch Nachteile, wie z.B. die höheren Kosten und die größere Komplexität des Systems.</p>         <p>Die zweite Entscheidung besteht darin, ein dezentrales Netzwerkdesign zu verwenden, bei dem die Daten verteilt und in parallelen Prozessen verarbeitet werden. Dies ermöglicht eine schnellere Verarbeitung großer Datenmengen, aber es kann auch zu Problemen bei der Synchronisation und Koordination der Prozesse führen.</p>         <p>Die dritte Entscheidung besteht darin, eine spezielle Netzwerkarchitektur zu verwenden, die auf die Anforderungen von KI-Trainingsprozessen optimiert ist. Dies erfordert eine sorgfältige Analyse der Netzwerkmathematik und der Anforderungen der KI-Modelle.</p>         <h3>Die Bedeutung für die KI-Infrastruktur-Community</h3>         <p>Die Entscheidungen, die OpenAI bei der Entwicklung seiner 131.000-GPU-Trainingsfabrik getroffen hat, haben wichtige Auswirkungen auf die KI-Infrastruktur-Community. Sie zeigen, dass die Entwicklung von KI-Modellen eine komplexe Aufgabe ist, die sorgfältige Planung und mathematische Überlegungen erfordert.</p>         <p>Es ist wichtig, dass die KI-Infrastruktur-Community diese Entscheidungen und ihre Auswirkungen versteht, um ähnliche Erfolge zu erzielen. Dies erfordert eine enge Zusammenarbeit zwischen Forschern, Entwicklern und Ingenieuren, um die Anforderungen von KI-Modellen und die Möglichkeiten von Trainingsfabriken besser zu verstehen.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von KI-Modellen ist ein komplexes und anspruchsvolles Vorhaben, das sorgfältige Planung und mathematische Überlegungen erfordert. Die Entscheidungen, die OpenAI bei der Entwicklung seiner 131.000-GPU-Trainingsfabrik getroffen hat, sind ein wichtiger Schritt in Richtung der Entwicklung von leistungsfähigen KI-Modellen und können als Blaupause für andere Unternehmen und Forschungseinrichtungen dienen.</em></p>     ",
+            "content_simple": "         <p>OpenAI hat eine riesige Trainingsfabrik für künstliche Intelligenz (KI) entwickelt. Diese Fabrik besteht aus 131.000 GPUs, die zusammenarbeiten, um KI-Modelle zu trainieren.</p>         <p>Die Entwicklung dieser Fabrik war ein komplexes Vorhaben, das sorgfältige Planung und mathematische Überlegungen erforderte. OpenAI musste einige counterintuitive Entscheidungen treffen, um die Fabrik zu entwickeln.</p>         <p>Die Fabrik ist ein wichtiger Schritt in Richtung der Entwicklung von leistungsfähigen KI-Modellen. Sie zeigt, dass die Entwicklung von KI-Modellen eine komplexe Aufgabe ist, die sorgfältige Planung und mathematische Überlegungen erfordert.</p>     ",
+            "content_pro": "         <h3>Architektur-Details</h3>         <p>Die 131.000-GPU-Trainingsfabrik von OpenAI verwendet ein dezentrales Netzwerkdesign, bei dem die Daten verteilt und in parallelen Prozessen verarbeitet werden. Dies ermöglicht eine schnellere Verarbeitung großer Datenmengen, aber es kann auch zu Problemen bei der Synchronisation und Koordination der Prozesse führen.</p>         <h3>Verwendete Technologien</h3>         <p>Die Fabrik verwendet eine spezielle Netzwerkarchitektur, die auf die Anforderungen von KI-Trainingsprozessen optimiert ist. Dies erfordert eine sorgfältige Analyse der Netzwerkmathematik und der Anforderungen der KI-Modelle.</p>         <h3>Kritische Einordnung</h3>         <p>Die Entwicklung von KI-Modellen ist ein komplexes und anspruchsvolles Vorhaben, das sorgfältige Planung und mathematische Überlegungen erfordert. Die Entscheidungen, die OpenAI bei der Entwicklung seiner 131.000-GPU-Trainingsfabrik getroffen hat, sind ein wichtiger Schritt in Richtung der Entwicklung von leistungsfähigen KI-Modellen.</p>     ",
+            "date": "15.05.2026",
+            "id": "3e4ecbbb",
+            "url": "https://towardsdatascience.com/the-counterintuitive-networking-decisions-behind-openais-131000-gpu-training-fabric/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": true,
+            "pick_reason": "Die KI-Revolution beschleunigt: OpenAI trainiert mit atemberaubenden 131.000 GPUs und legt damit den Grundstein für eine neue Ära der künstlichen Intelligenz. Dieser Meilenstein bedeutet eine enorme Steigerung der Rechenleistung und könnte entscheidende Auswirkungen auf die Zukunft der KI-Entwicklung haben. Entwickler sollten sich darauf einstellen, dass die Möglichkeiten der KI in den kommenden Monaten exponentiell wachsen werden."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "📱",
+            "title": "OpenAI bringt Codex aufs Handy",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "e1e3bf0a"
+            ],
+            "content": "         <h3>OpenAI bringt Codex aufs Handy</h3>         <p>OpenAI hat bekannt gegeben, dass Codex, ein Coding-Tool, das vor etwa einem Jahr gestartet wurde, nun auf das Handy kommt. Durch die Integration in die ChatGPT-App können Nutzer ihre Entwicklungs-Workflows ferngesteuert überwachen und verwalten. Die neue Funktion ermöglicht es Nutzern, ihre Codex-Live-Umgebungen auf allen Geräten anzuzeigen, auf denen sie ausgeführt werden.</p>         <p>Die Firma teilte diese Änderungen am Donnerstag mit; das Update, das derzeit in der Vorschau ist, ist jetzt für alle Pläne auf iOS und Android verfügbar. „Dies ist mehr als die Fähigkeit, eine einzelne Aufgabe fernzusteuern oder neue Aufgaben an den Computer zu senden“, sagte OpenAI in einer Erklärung. „Von Ihrem Handy aus können Sie über alle Ihre Threads arbeiten, Ausgaben überprüfen, Befehle genehmigen, Modelle ändern oder etwas Neues starten.“</p>         <p>Vor etwa einem Monat hat OpenAI Codex auch die Fähigkeit gegeben, im Hintergrund in Desktop-Umgebungen zu laufen, wodurch das Tool in der Lage ist, verschiedene Aufgaben autonom auszuführen. Anfang dieses Monats stellte das Unternehmen auch eine Chrome-Erweiterung vor, die es dem Agenten ermöglicht, in Live-Browser-Sitzungen zu arbeiten.</p>         <p>In Februar veröffentlichte Anthropic eine ähnliche Funktion – Remote Control –, die es Nutzern ermöglicht, die Arbeit von Claude Code aus der Ferne zu überwachen. Die Flut von Funktionsveröffentlichungen durch OpenAI und Anthropic spiegelt den intensiven Wettbewerb zwischen den beiden Unternehmen wider, um dessen agente Coding-Tool am häufigsten genutzt wird.</p>         <h3>Einordnung für Entwickler</h3>         <p>Als Entwickler ist es wichtig, sich über die neuesten Entwicklungen auf dem Gebiet der künstlichen Intelligenz und Coding-Tools auf dem Laufenden zu halten. Die Fähigkeit, Codex auf dem Handy zu nutzen, bietet eine neue Flexibilität und ermöglicht es Entwicklern, ihre Arbeit überall und jederzeit zu überwachen und zu verwalten.</p>         <p><em>BytePost-Einordnung: Die Integration von Codex in die ChatGPT-App ist ein wichtiger Schritt für die mobile Entwicklung und bietet neue Möglichkeiten für Entwickler, ihre Arbeit zu überwachen und zu verwalten.</em></p>     ",
+            "content_simple": "         <p>OpenAI bringt ein neues Tool namens Codex aufs Handy. Mit diesem Tool können Entwickler ihre Arbeit überall und jederzeit überwachen und verwalten. Das ist praktisch, wenn man unterwegs ist oder nicht am Computer sitzt.</p>         <p>Codex ist ein Coding-Tool, das vor etwa einem Jahr gestartet wurde. Es ermöglicht es Entwicklern, ihre Arbeit zu überwachen und zu verwalten. Jetzt kann man es auch auf dem Handy nutzen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Codex ist ein Coding-Tool, das von OpenAI entwickelt wurde. Es ermöglicht es Entwicklern, ihre Arbeit zu überwachen und zu verwalten. Die Integration in die ChatGPT-App ermöglicht es Nutzern, ihre Codex-Live-Umgebungen auf allen Geräten anzuzeigen, auf denen sie ausgeführt werden.</p>         <p>Die Firma verwendet eine Kombination aus künstlicher Intelligenz und maschinellem Lernen, um die Entwicklungs-Workflows zu überwachen und zu verwalten. Die neue Funktion ermöglicht es Nutzern, ihre Ausgaben zu überprüfen, Befehle zu genehmigen, Modelle zu ändern oder etwas Neues zu starten.</p>         <h3>Code-Beispiele</h3>         <p>Leider gibt es kein Beispielcode, der hier passend wäre. Die Integration von Codex in die ChatGPT-App ist jedoch ein wichtiger Schritt für die mobile Entwicklung und bietet neue Möglichkeiten für Entwickler, ihre Arbeit zu überwachen und zu verwalten.</p>     ",
+            "date": "15.05.2026",
+            "id": "b659df15",
+            "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/b659df15.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "cloud"
+            ],
+            "icon": "🤖",
+            "title": "AWS bietet Foundation Model Training",
+            "source": "Amazon",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "e1e3bf0a"
+            ],
+            "content": " <h3>Einleitung</h3> <p>Die Entwicklung von KI-Modellen hat in den letzten Jahren enorme Fortschritte gemacht. Früher war es notwendig, viel Rechenleistung für das Training von KI-Modellen aufzuwenden, um deren Leistungsfähigkeit zu steigern. Dieser Trend wurde durch empirische Arbeiten wie Kaplan et al. (2020) unterstützt, die eine vorhersehbare Power-Law-Trend in der Verlustfunktion bei der Skalierung von Modellparametern, Datensatzgröße und Trainingsrechenleistung zeigten.</p> <p>Durch diese Trends wurde die Notwendigkeit von großem Rechenkapazitäten und entsprechender Infrastruktur deutlich. Doch die Grenzen haben sich verschoben und die Skalierung ist nicht mehr nur eine Sache der Rechenleistung. NVIDIA spricht von drei Skalierungsgesetzen, die die steigende Leistung von KI-Modellen durch post-Training (z.B. Überwachtes Feintuning und Verstärkendes Lernen) und Rechenleistung während der Testphase (z.B. langes Nachdenken, Suche und Verifizierungsstrategien) betonen.</p> <h3>Die Bedeutung von Infrastruktur und Orchestrierung</h3> <p>Diese Skalierungsgesetze drängen den Lebenszyklus von KI-Modellen - vom Pre-Training bis zur Inferenz - in Richtung konvergierender Infrastrukturanforderungen: eng gekoppelte Beschleunigerrechenleistung, ein hochbandbreites, niedrigverzögerndes Netzwerk und ein verteiltes Speicher-Backend. Sie betonen auch die Bedeutung von Orchestrierung für die Ressourcenverwaltung und von Anwendungs- und Hardware-Ebene für die Beobachtung, um den Cluster-Zustand zu überwachen und Leistungsprobleme aufzudecken.</p> <p>Ein weiterer wichtiger Trend ist die zunehmende Abhängigkeit des KI-Modell-Lebenszyklus von einer Open-Source-Software (OSS)-Ökosystem, das Modell-Entwicklungsframeworks, Cluster-Ressourcenverwaltung und operationale Werkzeuge umfasst. Auf der Cluster-Ebene wird die Ressourcenverwaltung typischerweise durch Systeme wie Slurm und Kubernetes bereitgestellt. Modell-Entwicklung und verteiltes Training werden häufig in Frameworks wie PyTorch und JAX implementiert.</p> <h3>AWS-Infrastruktur und Open-Source-Software</h3> <p>Der Rest dieser Serie untersucht, wie diese schichtweise Architektur auf AWS realisiert wird, beginnend mit der Infrastruktur, Ressourcen-Orchestrierung, der ML-Software-Schicht und der Beobachtung. Die folgenden Abschnitte geben einen Überblick über jede Schicht.</p> <p>Infrastruktur: Rechenleistung, Netzwerk und Speicher. AWS bietet mehrere Generationen von NVIDIA-Grafikprozessoren als Teil seiner Amazon EC2-Beschleuniger-Instanzen an, einschließlich der Amazon EC2 P-Instanzfamilie.</p> <p><em>BytePost-Einordnung: Die Skalierung von KI-Modellen erfordert eine sorgfältige Auswahl von Infrastruktur-Komponenten und Open-Source-Software, um eine optimale Leistung zu erzielen. Durch die Kombination von AWS-Infrastruktur und OSS-Tools können Entwickler den Lebenszyklus von KI-Modellen von der Entwicklung bis zur Inferenz effizient und effektiv durchführen.</em></p> ",
+            "content_simple": " <p>Die Entwicklung von KI-Modellen wird immer besser. Früher musste man viel Rechenleistung aufwenden, um die Leistung von KI-Modellen zu steigern. Doch heute ist die Skalierung nicht mehr nur eine Sache der Rechenleistung. Es gibt drei Skalierungsgesetze, die die Leistung von KI-Modellen durch verschiedene Methoden steigern.</p> <p>Um diese Leistung zu erzielen, benötigt man eine gute Infrastruktur und Orchestrierung. Das bedeutet, dass man die richtigen Computer, Netzwerke und Speicher auswählt, um die KI-Modelle effizient zu trainieren und auszuführen.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die Skalierung von KI-Modellen erfordert eine sorgfältige Auswahl von Infrastruktur-Komponenten und Open-Source-Software. AWS bietet mehrere Generationen von NVIDIA-Grafikprozessoren als Teil seiner Amazon EC2-Beschleuniger-Instanzen an, einschließlich der Amazon EC2 P-Instanzfamilie.</p> <p>Die Modell-Entwicklung und das verteilte Training werden häufig in Frameworks wie PyTorch und JAX implementiert. Die Ressourcen-Orchestrierung wird typischerweise durch Systeme wie Slurm und Kubernetes bereitgestellt.</p> ",
+            "date": "15.05.2026",
+            "id": "2dc6ac82",
+            "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2dc6ac82.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🌐",
+            "title": "Funcom reduziert Server von Dune Awakening",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "20b469f6",
+                "95f8eba0",
+                "e1e3bf0a"
+            ],
+            "content": "         <h3>Funcom reduziert Server von Dune Awakening</h3>         <p>Der norwegische Spieleentwickler Funcom hat angekündigt, die Anzahl der Server für das Massively Multiplayer Online Role-Playing Game (MMORPG) Dune Awakening zu reduzieren. Weniger als ein Jahr nach dem Start des Spiels werden 162 Server weltweit geschlossen.</p>         <p>Betroffene Spieler müssen auf neue Welten umziehen. Dieser Schritt wurde offensichtlich notwendig, um die Spielerzahlen auf den verbleibenden Servern zu konzentrieren und ein besseres Spielerlebnis zu bieten.</p>         <h3>Hintergrund</h3>         <p>Funcom hat keine genauen Gründe für die Reduzierung der Server angegeben, aber es ist wahrscheinlich, dass die Entscheidung aufgrund von niedrigen Spielerzahlen und hohen Betriebskosten getroffen wurde.</p>         <p>Die Reduzierung der Serverzahl kann für manche Spieler ein Problem darstellen, da sie möglicherweise ihre Charaktere und Fortschritte auf den geschlossenen Servern verlieren. Funcom hat jedoch angekündigt, dass die Spieler in der Lage sein werden, ihre Charaktere auf die neuen Server zu übertragen.</p>         <p>Die genauen Details der Server-Reduzierung und die Auswirkungen auf die Spieler werden in den kommenden Tagen bekannt gegeben.</p>         <p><em>BytePost-Einordnung: Die Reduzierung der Serverzahl bei Dune Awakening ist ein wichtiger Schritt, um die Spielerzahlen zu konzentrieren und ein besseres Spielerlebnis zu bieten. Es bleibt jedoch abzuwarten, wie die Spieler auf diese Änderungen reagieren werden.</em></p>     ",
+            "content_simple": "         <p>Der Spieleentwickler Funcom schließt 162 Server von Dune Awakening. Dies bedeutet, dass einige Spieler ihre Charaktere auf neue Server übertragen müssen.</p>         <p>Der Grund für die Schließung der Server ist wahrscheinlich die geringe Anzahl an Spielern und die hohen Kosten für den Betrieb der Server.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Reduzierung der Serverzahl bei Dune Awakening kann eine Reihe von technischen Herausforderungen mit sich bringen. So müssen beispielsweise die Spielercharaktere und -fortschritte auf die neuen Server übertragen werden.</p>         <p>Es ist wahrscheinlich, dass Funcom eine Kombination von automatisierten Skripten und manueller Übertragung verwenden wird, um die Charaktere und Fortschritte der Spieler zu übertragen.</p>         <h3>Auswirkungen auf die Spieler</h3>         <p>Die Reduzierung der Serverzahl kann für manche Spieler ein Problem darstellen, da sie möglicherweise ihre Charaktere und Fortschritte auf den geschlossenen Servern verlieren.</p>         <p>Es ist jedoch wichtig zu beachten, dass Funcom angekündigt hat, dass die Spieler in der Lage sein werden, ihre Charaktere auf die neuen Server zu übertragen.</p>     ",
+            "date": "15.05.2026",
+            "id": "9f227db0",
+            "url": "https://www.golem.de/news/funcom-dune-awakening-schliesst-162-server-weltweit-2605-208651.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9f227db0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev"
             ],
             "icon": "💻",
@@ -36697,10 +36961,10 @@
         }
     ],
     "bytepulse": {
-        "date": "13.05.2026",
-        "positiv": 60,
-        "neutral": 40,
-        "kritisch": 0,
-        "total": 5
+        "date": "15.05.2026",
+        "positiv": 56,
+        "neutral": 33,
+        "kritisch": 11,
+        "total": 9
     }
 }
