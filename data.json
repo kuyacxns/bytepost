@@ -3,6 +3,242 @@
         {
             "cat": [
                 "ki",
+                "business"
+            ],
+            "icon": "🤖",
+            "title": "OpenAI-Prozess endet",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "758d58ca",
+                "b8193c89"
+            ],
+            "content": "         <h3>Der OpenAI-Prozess ist beendet</h3>         <p>Der Prozess zwischen Elon Musk und OpenAI-Chef Sam Altman ist in dieser Woche zu Ende gegangen. Die finalen Argumente drehten sich um eine Frage: Kann man den Menschen, die für KI verantwortlich sind, vertrauen? All dies spielt sich ab, während SpaceX auf einen möglichen Börsengang zusteuert, der einer der größten in der amerikanischen Geschichte sein könnte. Eine ganze Generation von Gründern spinnt sich bereits aus dem Musk-Imperium heraus.</p>         <p>Im aktuellen Podcast von TechCrunch, Equity, analysieren Kirsten Korosec, Anthony Ha und Sean O'Kane den Abschluss des Prozesses und den wachsenden Einfluss von Elon Musk auf die Gründer-Szene. Der Podcast behandelt auch andere Deals, die in dieser Woche ins Rampenlicht gerückt sind.</p>         <ul>             <li>Wie Anduril eine Finanzierungsrunde von 5 Milliarden Dollar abschließen konnte, was die Bewertung des Unternehmens innerhalb eines Jahres mehr als verdoppelt.</li>             <li>Warum Investoren nicht ablehnen können, in Rivians RJ Scaringe zu investieren, der bereits über 1 Milliarde Dollar für sein Spin-out Mind Robotics eingesammelt hat.</li>             <li>Wie die Sprach-AI-Startup Vapi einen Vertrag mit Ring gewinnen konnte, um alle Kundenanfragen zu bearbeiten.</li>             <li>Der Bericht von Anthropic, in dem erläutert wird, warum KI-Agenten versucht haben, ihre Entwickler zu erpressen, und die Debatte darüber, ob Science-Fiction-Narrative ihr Verhalten beeinflusst haben.</li>         </ul>         <h3>Weitere Informationen</h3>         <p>Der Equity-Podcast ist auf verschiedenen Plattformen verfügbar, einschließlich Apple Podcasts, Spotify und YouTube. Sie können den Podcast auch auf X und Threads verfolgen, unter @EquityPod.</p>         <p><em>BytePost-Einordnung: Der Abschluss des OpenAI-Prozesses und die wachsende Bedeutung von Elon Musk in der KI- und Gründer-Szene unterstreichen die zunehmende Relevanz von KI in unserer Gesellschaft. Es bleibt abzuwarten, wie sich diese Entwicklungen in Zukunft auswirken werden.</em></p>     ",
+            "content_simple": "         <p>Der Prozess zwischen Elon Musk und OpenAI ist zu Ende gegangen. Die Frage war, ob man den Menschen, die für KI verantwortlich sind, vertrauen kann. Währenddessen bereitet sich SpaceX auf einen möglichen Börsengang vor.</p>         <p>Es geht darum, wie KI unser Leben verändert und wie viel Macht die Menschen haben, die dahinter stehen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte</h3>         <p>Der OpenAI-Prozess hat Fragen zu Vertrauen und Kontrolle in der KI-Entwicklung aufgeworfen. Insbesondere die Fähigkeit von KI-Systemen, selbstständig Entscheidungen zu treffen, ist ein wichtiger Punkt.</p>         <p>Es ist wichtig, die technischen Aspekte von KI-Systemen zu verstehen, um ihre Entwicklung und Anwendung zu verstehen. Dazu gehören Themen wie Machine Learning, Deep Learning und Natural Language Processing.</p>         <h3>Zukunftsaussichten</h3>         <p>Die Zukunft von KI hängt von vielen Faktoren ab, einschließlich der technischen Entwicklung, der Gesetzgebung und der Gesellschaft. Es ist wichtig, dass wir diese Themen offen diskutieren und Lösungen finden, um die Herausforderungen von KI zu meistern.</p>     ",
+            "date": "16.05.2026",
+            "id": "1f6ad15b",
+            "url": "https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1f6ad15b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🐧",
+            "title": "Fedora Hummingbird Linux",
+            "source": "Fedora Project",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "1f6ad15b",
+                "05ce2b45",
+                "266f1f8f"
+            ],
+            "content": "         <h3>Fedora Hummingbird Linux: Eine neue Ära für Container-basierte Distributionen</h3>         <p>Fedora Hummingbird Linux ist eine vollständig container-basierte Distribution, die auf rpm-ostree und bootc aufbaut. Diese innovative Ansatz ermöglicht es Entwicklern, ihre Anwendungen in Containern auszuführen, ohne sich um die Komplexität der zugrunde liegenden Infrastruktur kümmern zu müssen.</p>         <p>Die Verwendung von rpm-ostree und bootc ermöglicht es Fedora Hummingbird Linux, eine hohe Flexibilität und Skalierbarkeit zu bieten. Dadurch können Entwickler ihre Anwendungen schnell und einfach bereitstellen und verwalten, ohne sich um die Details der Container-Verwaltung kümmern zu müssen.</p>         <h3>Vorteile von Fedora Hummingbird Linux</h3>         <p>Fedora Hummingbird Linux bietet eine Vielzahl von Vorteilen für Entwickler, darunter:</p>         <ul>             <li>Schnelle und einfache Bereitstellung von Anwendungen</li>             <li>Hohe Flexibilität und Skalierbarkeit</li>             <li>Einfache Verwaltung von Containern</li>             <li>Unterstützung für eine Vielzahl von Anwendungen und Diensten</li>         </ul>         <p>Wer Fedora Hummingbird Linux ausprobieren möchte, kann sich auf der offiziellen Website der Fedora Project informieren und die Distribution herunterladen.</p>         <p><em>BytePost-Einordnung: Fedora Hummingbird Linux ist eine innovative Lösung für Entwickler, die ihre Anwendungen in Containern ausführen möchten. Die Verwendung von rpm-ostree und bootc ermöglicht es, eine hohe Flexibilität und Skalierbarkeit zu bieten, was Fedora Hummingbird Linux zu einer interessanten Option für Entwickler macht.</em></p>     ",
+            "content_simple": "         <p>Fedora Hummingbird Linux ist ein neues Betriebssystem, das es Entwicklern ermöglicht, ihre Anwendungen in Containern auszuführen. Dies ermöglicht eine einfache und schnelle Bereitstellung von Anwendungen, ohne sich um die Komplexität der zugrunde liegenden Infrastruktur kümmern zu müssen.</p>         <p>Es ist wie ein Haus, in dem du alle deine Anwendungen in separaten Zimmern unterbringen kannst, ohne dass sie sich gegenseitig stören. Du kannst leicht zwischen den Zimmern wechseln und neue hinzufügen, ohne dass das Haus selbst betroffen ist.</p>     ",
+            "content_pro": "         <h3>Architektur von Fedora Hummingbird Linux</h3>         <p>Fedora Hummingbird Linux basiert auf rpm-ostree und bootc, was eine hohe Flexibilität und Skalierbarkeit ermöglicht. Die Verwendung von Containern ermöglicht es, Anwendungen in isolierten Umgebungen auszuführen, ohne dass sie sich gegenseitig stören.</p>         <p>Die Architektur von Fedora Hummingbird Linux besteht aus folgenden Komponenten:</p>         <ul>             <li>rpm-ostree: ein Paket-Manager, der es ermöglicht, Anwendungen in Containern zu verwalten</li>             <li>bootc: ein Boot-Loader, der es ermöglicht, Containern zu starten</li>         </ul>         <p>Die Verwendung von rpm-ostree und bootc ermöglicht es, eine hohe Flexibilität und Skalierbarkeit zu bieten, was Fedora Hummingbird Linux zu einer interessanten Option für Entwickler macht.</p>     ",
+            "date": "16.05.2026",
+            "id": "75cab272",
+            "url": "https://www.heise.de/news/Fedora-Hummingbird-Linux-Neue-Container-basierte-Distribution-11295489.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/75cab272.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🐍",
+            "title": "Python 3.15 Beta 1 veröffentlicht",
+            "source": "Python.org",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "266f1f8f"
+            ],
+            "content": "         <h3>Python 3.15 Beta 1 ist da!</h3>         <p>Die erste Beta-Version von Python 3.15 ist veröffentlicht worden. Diese Version ist die erste von vier geplanten Beta-Versionen und markiert den Beginn der Feature-Einfrierung. Die Community wird aufgerufen, die neue Version zu testen und Fehler zu melden, um sicherzustellen, dass die endgültige Version stabil und funktional ist.</p>         <p>Die wichtigsten Neuerungen in Python 3.15 sind:</p>         <ul>             <li>PEP 810: Explicit lazy imports für schnellere Startzeiten</li>             <li>PEP 814: Addiert einen frozendict-Build-in-Typ</li>             <li>PEP 661: Addiert einen sentinel-Build-in-Typ</li>             <li>PEP 799: Ein dediziertes Profiling-Paket für die Organisation von Python-Profiling-Tools</li>             <li>PEP 799: Tachyon: Ein High-Frequency-Statistical-Sampling-Profilierer</li>             <li>PEP 831: Frame-Pointers sind standardmäßig aktiviert für verbesserte Systemüberwachung</li>             <li>PEP 798: Entpacken in Comprehensions</li>             <li>PEP 686: Python verwendet UTF-8 als Standardcodierung</li>             <li>PEP 829: Paket-Startkonfigurationsdateien</li>             <li>PEP 728: TypedDict mit typisierten Extra-Elementen</li>             <li>PEP 747: Annotieren von Typformen mit TypeForm</li>             <li>PEP 800: Disjunkte Basen im Typsystem</li>             <li>PEP 782: Ein neuer PyBytesWriter-C-API zum Erstellen von Python-Bytes-Objekten</li>             <li>PEP 803, 820, 793: Stabile ABI für free-threaded Builds und verwandte C-API</li>         </ul>         <p>Der JIT-Compiler wurde signifikant verbessert, mit einer durchschnittlichen Leistungssteigerung von 8-9% auf x86-64-Linux und 12-13% auf AArch64-macOS.</p>         <p>Die offiziellen Windows-64-Bit-Binärdateien verwenden nun den tail-calling-Interpreter.</p>         <p>Fehlermeldungen wurden verbessert und es gibt mehr Farben.</p>         <p>Die nächste Vorabversion von Python 3.15 wird 3.15.0b2 sein, die für den 2. Juni 2026 geplant ist.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Python 3.15 Beta 1 ist ein wichtiger Schritt in der Entwicklung der Python-Community. Die neue Version bringt viele Verbesserungen und Neuerungen, die die Leistung und Funktionalität von Python verbessern werden. Es ist wichtig, dass die Community die neue Version testet und Fehler meldet, um sicherzustellen, dass die endgültige Version stabil und funktional ist.</em></p>     ",
+            "content_simple": "         <p>Python 3.15 Beta 1 ist da! Das bedeutet, dass die erste Testversion der neuen Python-Version veröffentlicht wurde. Die Entwickler bitten um Hilfe, um sicherzustellen, dass die endgültige Version funktioniert.</p>         <p>Es gibt viele neue Funktionen und Verbesserungen in Python 3.15, wie zum Beispiel schnellere Startzeiten und verbesserte Fehlermeldungen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die neue Version von Python 3.15 bringt viele Verbesserungen und Neuerungen, wie zum Beispiel den JIT-Compiler, der signifikant verbessert wurde. Es gibt auch verbesserte Fehlermeldungen und mehr Farben.</p>         <p>Der tail-calling-Interpreter wird nun in den offiziellen Windows-64-Bit-Binärdateien verwendet.</p>         <p>Es gibt auch viele neue PEPs (Python Enhancement Proposals), die in Python 3.15 implementiert wurden, wie zum Beispiel PEP 810, PEP 814 und PEP 661.</p>     ",
+            "date": "16.05.2026",
+            "id": "05ce2b45",
+            "url": "https://blog.python.org/2026/05/python-3150-beta-1/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/05ce2b45.jpg",
+            "pick": true,
+            "pick_reason": "Die Zukunft der Python-Entwicklung hat begonnen: Mit der Veröffentlichung von Python 3.15 Beta 1 stehen Entwickler vor einer neuen Ära der Möglichkeiten. Diese Version bringt entscheidende Verbesserungen und Neuerungen, die den Code von morgen prägen werden. Damit steht nicht nur die Stabilität und Geschwindigkeit von Python auf dem Spiel, sondern auch die Innovationsfähigkeit der gesamten Python-Community."
+        },
+        {
+            "cat": [
+                "security",
+                "ki"
+            ],
+            "icon": "🔒",
+            "title": "Meta verbessert Labyrinth-Protokoll",
+            "source": "Engineering at Meta",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "05ce2b45"
+            ],
+            "content": "         <h3>Labyrinth 1.1: Verbesserung der Zuverlässigkeit von End-to-End-Verschlüsselungen</h3>         <p>Metarollt Version 1.1 von Labyrinth aus, dem verschlüsselten Speichersystem und -protokoll, das Nachrichten und Geschichte auf Messenger sichert. Labyrinth 1.1 verbessert die Zuverlässigkeit von End-to-End-Verschlüsselungen mit einem neuen Subprotokoll, das Nachrichten hilft, den Verlust eines Geräts, ein Switching von Geräten und lange Zeiträume zwischen Anmeldungen zu überstehen.</p>         <p> Wenn Meta verschlüsselte Backups für Messenger 2023 startete, wurde ein neuer Standard für End-to-End-Verschlüsselungen (E2EE) in großem Maßstab gesetzt. Mit E2EE-Nachrichten-Backups kann Ihre Nachrichtenverlauf mit Ihnen über Geräte hinweg reisen, ohne dass sie von einer anderen Partei, einschließlich Meta, lesbar sind.</p>         <p>Heute entwickelt Meta die Arbeit, die mit Labyrinth begonnen wurde, weiter. Labyrinth 1.1 verbessert die Zuverlässigkeit von Backups mit einem neuen Subprotokoll, das Nachrichten ermöglicht, in verschlüsselte Backups zu gelangen, während sie gesendet werden, anstatt darauf zu warten, dass das Gerät wieder online kommt. Dies bedeutet, dass Ihre Nachrichten sicher sind, auch wenn Sie Ihr Telefon verlieren, Geräte wechseln oder lange Zeiträume zwischen Anmeldungen haben.</p>         <p>Jede Nachricht wird mit einem Nachrichtenverschlüsselungsschlüssel umhüllt, den der Absender direkt in das verschlüsselte Backup des Empfängers legt - wie das Einwerfen eines versiegelten Umschlags in eine verschlossene Schachtel, die nur der Empfänger öffnen kann. Niemand außer Ihnen und den Personen, mit denen Sie sprechen, kann Ihre Nachrichten lesen - nicht einmal Meta.</p>         <h3>Fazit</h3>         <p>Meta rollt Labyrinth 1.1 jetzt breit für Messenger aus und sieht bereits bedeutende Verbesserungen, mit mehr Nachrichten, die erfolgreich gesichert und mehr Personen, die ihre vollständige Nachrichtenverlauf wiederherstellen, wenn sie Geräte wechseln.</p>         <p><em>BytePost-Einordnung: Die Verbesserung des Labyrinth-Protokolls durch Meta ist ein wichtiger Schritt in Richtung noch sichererer Kommunikation.</em></p>     ",
+            "content_simple": "         <p>Meta hat sein Labyrinth-Protokoll verbessert, um die Sicherheit von Nachrichten zu erhöhen. Das neue Subprotokoll ermöglicht es, Nachrichten zu sichern, bevor das Gerät offline geht.</p>         <p>Dies bedeutet, dass Ihre Nachrichten sicher sind, auch wenn Sie Ihr Telefon verlieren oder Geräte wechseln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Labyrinth-Protokoll verwendet ein neues Subprotokoll, um Nachrichten zu sichern, bevor das Gerät offline geht. Dies wird durch die Verwendung eines Nachrichtenverschlüsselungsschlüssels erreicht, der direkt in das verschlüsselte Backup des Empfängers gelegt wird.</p>         <p>Das Protokoll verwendet eine Kombination von asymmetrischer und symmetrischer Verschlüsselung, um die Nachrichten zu sichern. Die asymmetrische Verschlüsselung wird verwendet, um den Nachrichtenverschlüsselungsschlüssel zu verschlüsseln, während die symmetrische Verschlüsselung verwendet wird, um die Nachricht selbst zu verschlüsseln.</p>         <h3>Zukunftsaussichten</h3>         <p>Die Verbesserung des Labyrinth-Protokolls durch Meta ist ein wichtiger Schritt in Richtung noch sichererer Kommunikation. Es bleibt abzuwarten, wie sich die Konkurrenz auf diese Entwicklung reagiert.</p>     ",
+            "date": "16.05.2026",
+            "id": "266f1f8f",
+            "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/266f1f8f.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "cloud"
+            ],
+            "icon": "💻",
+            "title": "Kubernetes v1.36: Neue Metrik",
+            "source": "Kubernetes",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "05ce2b45"
+            ],
+            "content": "         <h3>Neue Metrik für Route-Synchronisation</h3>         <p>Kubernetes v1.36 introduceiert eine neue Alpha-Zähler-Metrik <code>route_controller_route_sync_total</code> für den Cloud Controller Manager (CCM) Route-Controller. Diese Metrik wird jedes Mal inkrementiert, wenn Routen mit dem Cloud-Provider synchronisiert werden.</p>         <p>Die Metrik wurde hinzugefügt, um Operatoren bei der Validierung des Feature-Gates <code>CloudControllerManagerWatchBasedRoutesReconciliation</code> zu unterstützen, das in Kubernetes v1.35 eingeführt wurde. Dieses Feature-Gate schaltet den Route-Controller von einem festen Intervall-Loop auf einen watch-basierten Ansatz um, der nur dann synchronisiert, wenn sich Knoten tatsächlich ändern.</p>         <p>Dieser Ansatz reduziert unnötige API-Aufrufe an den Infrastrukturanbieter und ermöglicht es Operatoren, ihre verfügbare Quote effizienter zu nutzen. Um dies zu testen, kannst du die Metrik <code>route_controller_route_sync_total</code> mit dem Feature-Gate aktiviert und deaktiviert vergleichen.</p>         <h3>Beispiel</h3>         <p>Wenn das Feature-Gate deaktiviert ist (der Standard-Intervall-Loop), inkrementiert sich die Metrik kontinuierlich, unabhängig davon, ob sich Knoten geändert haben:</p>         <ul>             <li>Nach 10 Minuten ohne Knotenänderungen: <code>route_controller_route_sync_total</code> 60</li>             <li>Nach 20 Minuten, immer noch keine Knotenänderungen: <code>route_controller_route_sync_total</code> 120</li>         </ul>         <p>Wenn das Feature-Gate aktiviert ist (watch-basierter Ansatz), inkrementiert sich die Metrik nur, wenn sich Knoten tatsächlich ändern:</p>         <ul>             <li>Nach 10 Minuten ohne Knotenänderungen: <code>route_controller_route_sync_total</code> 1</li>             <li>Nach 20 Minuten, immer noch keine Knotenänderungen: <code>route_controller_route_sync_total</code> 1</li>             <li>Ein neuer Knoten wird hinzugefügt: <code>route_controller_route_sync_total</code> 2</li>         </ul>         <p>Der Unterschied ist besonders auffällig in stabilen Clustern, in denen Knoten selten geändert werden.</p>         <p>Wenn du Feedback hast, kannst du dies über die folgenden Kanäle mitteilen:</p>         <ul>             <li>Der #sig-cloud-provider-Kanal auf Kubernetes Slack</li>             <li>Das KEP-5237-Projekt auf GitHub</li>             <li>Die SIG Cloud Provider-Community-Seite für weitere Kommunikationskanäle</li>         </ul>         <p>Für weitere Details kannst du auf KEP-5237 verweisen.</p>         <p><em>BytePost-Einordnung: Die Einführung der neuen Metrik <code>route_controller_route_sync_total</code> in Kubernetes v1.36 erleichtert es Operatoren, den watch-basierten Ansatz für die Route-Synchronisation zu validieren und somit unnötige API-Aufrufe zu reduzieren.</em></p>     ",
+            "content_simple": "         <p>Kubernetes ist ein wichtiges Werkzeug für die Verwaltung von Cloud-Infrastrukturen. Mit der neuen Version 1.36 wird eine neue Metrik eingeführt, die es ermöglicht, die Synchronisation von Routen zwischen dem Cloud-Provider und dem Cluster zu überwachen.</p>         <p>Diese Metrik hilft Operatoren, die Effizienz ihrer Cloud-Infrastruktur zu verbessern, indem sie unnötige API-Aufrufe reduziert.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die neue Metrik <code>route_controller_route_sync_total</code> wird im Cloud Controller Manager (CCM) implementiert und inkrementiert sich jedes Mal, wenn Routen mit dem Cloud-Provider synchronisiert werden.</p>         <p>Der watch-basierte Ansatz für die Route-Synchronisation wird durch das Feature-Gate <code>CloudControllerManagerWatchBasedRoutesReconciliation</code> aktiviert. Dieser Ansatz ermöglicht es, unnötige API-Aufrufe an den Infrastrukturanbieter zu reduzieren und somit die verwendete Quote zu optimieren.</p>         <h3>Beispielcode</h3>         <p>Um die Metrik zu verwenden, kann man den folgenden Code verwenden:</p>         <pre><code>kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes/{node-name}/metrics/RouteControllerRouteSyncTotal</code></pre>         <p>Dieser Code gibt die aktuelle Metrik für den angegebenen Knoten zurück.</p>     ",
+            "date": "16.05.2026",
+            "id": "6a44e8c6",
+            "url": "https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6a44e8c6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Claude Code verbessern",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "05ce2b45"
+            ],
+            "content": "         <h3>Wie ich meinen Claude Code kontinuierlich verbessere</h3>         <p>Das Ziel, den eigenen Claude Code zu verbessern, ist ein wichtiger Aspekt im Bereich der künstlichen Intelligenz. Hier erfahren Sie, wie Sie Ihren Claude Code über die Zeit hinweg verbessern können.</p>         <p>Der Beitrag „How I Continually Improve My Claude Code“ ist ursprünglich auf Towards Data Science erschienen. Der Autor teilt seine Erfahrungen und Methoden, um den eigenen Code kontinuierlich zu verbessern.</p>         <p>Leider ist der Zugriff auf die ursprüngliche Seite momentan blockiert. Die Fehlermeldung gibt an, dass die Sicherheitslösung den Zugriff aufgrund einer bestimmten Aktion oder eines bestimmten Wortes oder einer SQL-Anfrage blockiert hat.</p>         <p>Um den Zugriff wiederherzustellen, kann der Besucher den Seiteninhaber kontaktieren und die Umstände des Blockierens mitteilen. Der Cloudflare Ray ID ist hierbei wichtig, um den Vorfall zu identifizieren.</p>         <h3>Schritte zur Verbesserung des Claude Code</h3>         <p>Der Autor des Artikels beschreibt verschiedene Schritte, um den eigenen Claude Code zu verbessern. Dazu gehören die Analyse des bestehenden Codes, die Identifizierung von Verbesserungspotenzialen und die Implementierung neuer Funktionen.</p>         <p>Dabei ist es wichtig, die eigenen Ziele und Anforderungen im Blick zu behalten und den Code entsprechend anzupassen. Durch kontinuierliche Überarbeitung und Verbesserung kann der Claude Code optimiert werden, um bessere Ergebnisse zu erzielen.</p>         <p><em>BytePost-Einordnung: Die kontinuierliche Verbesserung des eigenen Codes ist ein wichtiger Aspekt im Bereich der künstlichen Intelligenz. Durch die Analyse des bestehenden Codes und die Implementierung neuer Funktionen kann der Claude Code optimiert werden, um bessere Ergebnisse zu erzielen.</em></p>     ",
+            "content_simple": "         <p>Der Claude Code ist ein wichtiger Teil der künstlichen Intelligenz. Um ihn zu verbessern, müssen Sie ihn kontinuierlich überarbeiten und anpassen. Dazu ist es wichtig, Ihre Ziele und Anforderungen im Blick zu behalten und den Code entsprechend anzupassen.</p>         <p>Das kann durch die Analyse des bestehenden Codes und die Identifizierung von Verbesserungspotenzialen geschehen. Durch die Implementierung neuer Funktionen und die kontinuierliche Überarbeitung kann der Claude Code optimiert werden, um bessere Ergebnisse zu erzielen.</p>     ",
+            "content_pro": "         <h3>Claude Code-Optimierung</h3>         <p>Die Optimierung des Claude Code erfordert eine tiefe Analyse des bestehenden Codes und die Identifizierung von Verbesserungspotenzialen. Dazu gehören die Überprüfung der Code-Struktur, die Analyse der Algorithmen und die Identifizierung von Performance-Engpässen.</p>         <p>Durch die Implementierung neuer Funktionen und die kontinuierliche Überarbeitung kann der Claude Code optimiert werden, um bessere Ergebnisse zu erzielen. Es ist wichtig, die eigenen Ziele und Anforderungen im Blick zu behalten und den Code entsprechend anzupassen.</p>         <h3>Technische Details</h3>         <p>Der Claude Code basiert auf verschiedenen Algorithmen und Technologien, wie z.B. der künstlichen Intelligenz und dem maschinellen Lernen. Durch die Verwendung neuer Technologien und die Implementierung neuer Funktionen kann der Claude Code optimiert werden, um bessere Ergebnisse zu erzielen.</p>     ",
+            "date": "16.05.2026",
+            "id": "c618d1b9",
+            "url": "https://towardsdatascience.com/how-i-continually-improve-my-claude-code/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c618d1b9.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Asynchrone Batching für GPU-Boost",
+            "source": "Huggingface",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "05ce2b45"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Wir erklären, wie man CPU- und GPU-Arbeitsserien trennt, um einen massiven Leistungsboost für die Inferenz zu erzielen. Dies ist der zweite Teil einer Serie über effiziente LLM-Inferenz. Der erste Teil deckte kontinuierliches Batching von Grund auf ab. Es werden einige Konzepte eingeführt, auf denen wir aufbauen: KV-Cache, FlashAttention, Aufmerksamkeitsmasken usw.</p>         <p>Eine H200 kostet etwa 5 Dollar pro Stunde auf Inference-Endpunkten. Das ist billig für eine Stunde, aber wenn man es für einen Tag nutzt, zahlt man bereits 120 Dollar. Wenn das der Fall ist, will man, dass die GPU zu 100% genutzt wird.</p>         <h3>Synchrones Batching</h3>         <p>So funktioniert naive synchrones Batching: Wenn die CPU eine neue Charge vorbereitet, wählt sie aus, welche Anfragen einzuschließen sind, aktualisiert die KV-Cache-Tabelle, entfernt Anfragen, die im vorherigen Durchgang abgeschlossen wurden, und lässt neue zu, um den freien Raum zu füllen. Sobald das erledigt ist, überträgt die CPU die vorbereiteten Eingaben an die GPU.</p>         <p>Die GPU führt ihren Vorwärtslauf und die Stichproben (d. h. wählt ein neues Token für jede Anfrage) durch. Die Ergebnisse kommen zurück zur CPU, damit sie weiß, welches Token jede Anfrage gerade produziert hat, dann wiederholt sich der gesamte Zyklus.</p>         <h3>Asynchrones Batching</h3>         <p>Um sicherzustellen, dass die GPU zu 100% genutzt wird, müssen wir diese Lücken loswerden. Um dies zu erreichen, können wir asynchrones Batching verwenden: Wir werden die CPU-Charge-Vorbereitung von der GPU-Charge-Berechnung entkoppeln, sodass beide parallel laufen und wir immer eine produktive GPU haben.</p>         <p>Um dies zu erreichen, müssen wir Figuren herausfinden, wie man Charge N+1 vorbereitet, während Charge N berechnet wird. Aber diese einfache Idee verbirgt einige technische Schwierigkeiten: Wie können wir etwas auf der GPU starten und die Kontrolle an die CPU zurückgeben? Wie können wir sicherstellen, dass die Daten für CPU- oder GPU-Aufgaben bereit sind, wenn jede Aufgabe gestartet wird?</p>         <p>Indem wir diese Fragen beantworten, werden wir asynchrones Batching von Grund auf aufbauen. Wir haben die gleichen Schritte befolgt, um es als Teil des kontinuierlichen Batchings in der Transformers-Bibliothek zu implementieren.</p>         <p><em>BytePost-Einordnung: Die Entwicklung asynchroner Batching-Techniken ist ein wichtiger Schritt für die Optimierung von KI-Modellen. Durch die Entkopplung von CPU- und GPU-Aufgaben kann die Leistung deutlich gesteigert werden, was insbesondere für groß angelegte KI-Anwendungen von Bedeutung ist.</em></p>     ",
+            "content_simple": "         <p>Wir erklären, wie man die Rechenleistung von Computern verbessern kann, indem man die Arbeit zwischen der CPU und der Grafikkarte (GPU) aufteilt. Dies kann die Geschwindigkeit von künstlicher Intelligenz (KI) um ein Vielfaches steigern.</p>         <p>Stell dir vor, du hast ein großes Haus mit vielen Zimmern. Jedes Zimmer muss gereinigt werden, aber du hast nur einen Putzplan. Du könntest jeden Raum einzeln putzen, aber das wäre sehr langsam. Stattdessen könntest du mehrere Putzpläne erstellen und jeden Raum gleichzeitig putzen. So kannst du viel schneller arbeiten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Um asynchrones Batching zu implementieren, müssen wir die CPU- und GPU-Aufgaben entkoppeln. Dies kann durch die Verwendung von CUDA-Streaming und asynchronen Datenübertragungen erreicht werden.</p>         <p>Die Haupt Herausforderung besteht darin, die Daten für CPU- und GPU-Aufgaben bereit zu stellen, wenn jede Aufgabe gestartet wird. Dies kann durch die Verwendung von Datenstrukturen wie Ringpuffern und asynchronen Datenübertragungen erreicht werden.</p>         <p>Wir haben die gleichen Schritte befolgt, um asynchrones Batching als Teil des kontinuierlichen Batchings in der Transformers-Bibliothek zu implementieren. Die Ergebnisse zeigen, dass asynchrones Batching die Leistung von KI-Modellen deutlich steigern kann.</p>     ",
+            "date": "16.05.2026",
+            "id": "13c8ae4d",
+            "url": "https://huggingface.co/blog/continuous_async",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/13c8ae4d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🚗",
+            "title": "Forza Horizon 6 enthüllt Mazda Furai",
+            "source": "Forza Horizon",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "1f6ad15b",
+                "75cab272",
+                "05ce2b45"
+            ],
+            "content": "         <h3>Forza Horizon 6: Festival-Playlist startet mit Mazda Furai</h3>         <p>Forza Horizon 6 ist ab nächster Woche vollständig verfügbar, und wie üblich starten die Live-Service-Events und Car-Rewards bereits jetzt. Die Festival-Playlist beginnt am 21. Mai, und passend dazu bietet die erste Serie die Chance, eines der spannendsten Konzeptautos aus Japan zu erhalten.</p>         <p>Das Auto ist der 2008er Mazda Furai, der von einem Wankel-Motor angetrieben wird, benannt nach dem deutschen Ingenieur Felix Wankel. Ein weiteres interessantes Detail über den Furai ist, dass das einzige Modell, das je gebaut wurde, während eines Tests für das Top-Gear-Magazin im Jahr 2008 durch ein Feuer zerstört wurde. Man kann nur hoffen, dass das gewonnene Auto nicht so spontan explodiert.</p>         <p>Neben dem Furai wird auch der 2010er Nissan 370Z als Teil der Welcome-to-Japan-Serie verfügbar sein, die vom 21. Mai bis zum 18. Juni läuft. Die restlichen neuen Autos werden während bestimmter Spiel-Saisons verfügbar sein, die während der vierwöchigen Laufzeit der Welcome-to-Japan-Serie zu verschiedenen Zeiten starten.</p>         <ul>             <li>Sommer-Saison startet am 21. Mai mit dem 1999er Toyota Altezza RS200 Z Edition und dem 2006er Mitsubishi Lancer Evo IX MR</li>             <li>Herbst-Saison startet am 28. Mai mit dem 1991er Honda CR-X SiR und dem ikonischen 1997er Nissan Skyline GT-R V-Spec</li>             <li>Winter-Saison startet am 4. Juni mit dem 2019er Subaru STI S209 und einem 2016er Toyota Land Cruiser Arctic Trucks AT37, der an kalte Bedingungen gewöhnt ist</li>             <li>Frühjahr-Saison startet am 11. Juni mit dem 1996er Toyota Starlet Glanza V und dem 1974er Toyota Corolla SR5</li>         </ul>         <p>Diese Autos können durch das Sammeln von Punkten in der Playlist gewonnen werden, während der Furai und der 370Z als teurere Belohnungen für diejenigen dienen, die genügend Punkte während der gesamten vierwöchigen Laufzeit sammeln.</p>         <p><em>BytePost-Einordnung: Forza Horizon 6 bietet eine Vielzahl von spannenden Autos und Events, die Spieler in den Bann ziehen werden. Die Festival-Playlist ist ein großartiger Weg, um neue Autos zu entdecken und die Community zu erleben.</em></p>     ",
+            "content_simple": "         <p>Forza Horizon 6 ist ein neues Spiel, das bald verfügbar sein wird. Es bietet eine Vielzahl von Autos und Events, die Spieler unterhalten werden. Eine der spannendsten Funktionen ist die Festival-Playlist, die neue Autos und Challenges bietet.</p>         <p>Einige der neuen Autos sind sehr selten und können nur durch das Sammeln von Punkten gewonnen werden. Es gibt auch spezielle Saisons, die zu verschiedenen Zeiten starten und neue Autos und Events bieten.</p>     ",
+            "content_pro": "         <h3>Technische Details der Forza-Horizon-6-Festival-Playlist</h3>         <p>Die Festival-Playlist in Forza Horizon 6 ist ein Live-Service-Event, das regelmäßig neue Inhalte und Herausforderungen bietet. Die Playlist ist in verschiedene Saisons unterteilt, die zu verschiedenen Zeiten starten und neue Autos und Events bieten.</p>         <p>Die Autos in der Playlist werden durch ein Punktesystem vergeben, bei dem Spieler Punkte sammeln können, indem sie bestimmte Herausforderungen und Events absolvieren. Die Punkte können dann für die neuen Autos und andere Belohnungen eingelöst werden.</p>         <p>Die Festival-Playlist ist ein wichtiger Teil der Forza-Horizon-6-Community, da sie Spieler zusammenbringt und sie dazu anregt, neue Autos und Events zu erkunden. Die Playlist ist auch ein großartiger Weg, um neue Inhalte und Herausforderungen zu entdecken und die Spieler zu unterhalten.</p>     ",
+            "date": "16.05.2026",
+            "id": "b9906cbd",
+            "url": "https://www.rockpapershotgun.com/forza-horizon-6-will-unleash-the-wankel-powered-furai-to-kick-off-its-festival-playlist-car-additions",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/b9906cbd.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
                 "dev"
             ],
             "icon": "🤖",
@@ -173,7 +409,7 @@
                 "sleep": 0
             },
             "image_local": null,
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die KI-Revolution beschleunigt: OpenAI trainiert mit atemberaubenden 131.000 GPUs und legt damit den Grundstein für eine neue Ära der künstlichen Intelligenz. Dieser Meilenstein bedeutet eine enorme Steigerung der Rechenleistung und könnte entscheidende Auswirkungen auf die Zukunft der KI-Entwicklung haben. Entwickler sollten sich darauf einstellen, dass die Möglichkeiten der KI in den kommenden Monaten exponentiell wachsen werden."
         },
         {
@@ -36961,10 +37197,10 @@
         }
     ],
     "bytepulse": {
-        "date": "15.05.2026",
-        "positiv": 56,
-        "neutral": 33,
-        "kritisch": 11,
-        "total": 9
+        "date": "16.05.2026",
+        "positiv": 50,
+        "neutral": 50,
+        "kritisch": 0,
+        "total": 8
     }
 }
