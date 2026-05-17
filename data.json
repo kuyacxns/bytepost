@@ -85,7 +85,7 @@
                 "sleep": 0
             },
             "image_local": "images/05ce2b45.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Zukunft der Python-Entwicklung hat begonnen: Mit der Veröffentlichung von Python 3.15 Beta 1 stehen Entwickler vor einer neuen Ära der Möglichkeiten. Diese Version bringt entscheidende Verbesserungen und Neuerungen, die den Code von morgen prägen werden. Damit steht nicht nur die Stabilität und Geschwindigkeit von Python auf dem Spiel, sondern auch die Innovationsfähigkeit der gesamten Python-Community."
         },
         {
