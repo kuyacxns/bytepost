@@ -28,7 +28,7 @@
                 "sleep": 0
             },
             "image_local": "images/026e6bc1.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die neueste Version von Kubernetes bringt einen wichtigen Schritt für die Zukunft der Container-Orchestrierung: Mit dem Mixed Version Proxy wird es einfacher, verschiedene Versionen von Kubernetes in einer Umgebung zu betreiben. Damit können Entwickler ihre Anwendungen noch flexibler und effizienter bereitstellen, was eine große Chance für die Modernisierung von bestehenden Systemen bietet. Diese Änderung hat das Potenzial, die Art und Weise, wie Entwickler mit Kubernetes arbeiten, grundlegend zu verändern."
         },
         {
