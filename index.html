@@ -87,13 +87,22 @@
 
         /* ── Category filter bar ────────────────────────────── */
         .filter-bar {
-            padding: 14px 0;
+            position: fixed;
+            top: 56px; left: 0; right: 0;
+            z-index: 90;
+            background: var(--bg);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+        .filter-bar.hide { transform: translateY(-100%); pointer-events: none; }
+        .filter-bar > .wrap {
+            padding: 14px 24px;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
         }
-        .filter-bar::-webkit-scrollbar { display: none; }
+        .filter-bar > .wrap::-webkit-scrollbar { display: none; }
         .cat-tabs { display: flex; gap: 8px; white-space: nowrap; }
         .cat-tab {
             font-family: var(--mono); font-size: 10px; font-weight: 700;
@@ -398,6 +407,13 @@
     </div>
 </nav>
 
+<div class="filter-bar" id="filter-bar">
+    <div class="wrap">
+        <div class="cat-tabs" id="cat-tabs"></div>
+    </div>
+</div>
+<div id="filter-spacer"></div>
+
 <div class="wrap">
     <!-- Edition header -->
     <div class="edition-bar">
@@ -406,11 +422,6 @@
             <h1 class="edition-title">Tech News. <em>Täglich.</em></h1>
             <p class="edition-sub" id="edition-sub">Kuratierte Deep-Reads — zusammengefasst mit KI.</p>
         </div>
-    </div>
-
-    <!-- Category filter -->
-    <div class="filter-bar">
-        <div class="cat-tabs" id="cat-tabs"></div>
     </div>
 
     <!-- Pick of the Day -->
@@ -732,6 +743,7 @@
 
         document.getElementById('overlay').classList.add('open');
         document.body.style.overflow = 'hidden';
+        document.getElementById('filter-bar').classList.add('hide');
     }
 
     function articleFooterHtml(a) {
@@ -930,7 +942,39 @@
         }
         document.getElementById('overlay').classList.remove('open');
         document.body.style.overflow = '';
+        document.getElementById('filter-bar').classList.remove('hide');
     }
+
+    /* ── Filter bar scroll-hide ─────────────────────────────── */
+    (function () {
+        const bar = document.getElementById('filter-bar');
+        const spacer = document.getElementById('filter-spacer');
+
+        function syncSpacer() { spacer.style.height = bar.offsetHeight + 'px'; }
+        syncSpacer();
+        window.addEventListener('resize', syncSpacer, { passive: true });
+
+        let lastY = window.scrollY;
+        let ticking = false;
+        const THRESHOLD = 10;
+
+        function tick() {
+            const y = window.scrollY;
+            if (y <= 0) {
+                bar.classList.remove('hide');
+            } else if (y - lastY > THRESHOLD) {
+                bar.classList.add('hide');
+            } else if (lastY - y > THRESHOLD) {
+                bar.classList.remove('hide');
+            }
+            lastY = y;
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function () {
+            if (!ticking) { requestAnimationFrame(tick); ticking = true; }
+        }, { passive: true });
+    })();
 
     /* ── Init ───────────────────────────────────────────────── */
     window.addEventListener('hashchange', () => { applyHashFilter(); buildFilterTabs(); renderAll(); });
