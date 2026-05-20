@@ -573,6 +573,7 @@
             const isActive = cat === 'alle' ? activeFilters.size === 0 : activeFilters.has(cat);
             return `<button class="cat-tab${isActive ? ' active' : ''}" onclick="setFilter('${cat}')">${label}</button>`;
         }).join('');
+        if (window._syncFilterSpacer) window._syncFilterSpacer();
     }
 
     function setFilter(cat) {
@@ -952,6 +953,7 @@
 
         function syncSpacer() { spacer.style.height = bar.offsetHeight + 'px'; }
         syncSpacer();
+        window._syncFilterSpacer = syncSpacer; // called again after tabs render
         window.addEventListener('resize', syncSpacer, { passive: true });
 
         let lastY = window.scrollY;
@@ -962,12 +964,15 @@
             const y = window.scrollY;
             if (y <= 0) {
                 bar.classList.remove('hide');
+                lastY = y;
             } else if (y - lastY > THRESHOLD) {
                 bar.classList.add('hide');
+                lastY = y;
             } else if (lastY - y > THRESHOLD) {
                 bar.classList.remove('hide');
+                lastY = y;
             }
-            lastY = y;
+            // No update when below threshold → small deltas accumulate
             ticking = false;
         }
 
