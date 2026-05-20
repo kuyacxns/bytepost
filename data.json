@@ -2,6 +2,269 @@
     "articles": [
         {
             "cat": [
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "Y Combinator akzeptiert Kanada",
+            "source": "Y Combinator Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "55e9cc1c",
+                "9c27a497",
+                "0ee68538"
+            ],
+            "content": "         <h3>Y Combinator ändert seine Richtlinien</h3>         <p>Nachdem Y Combinator Feedback von kanadischen Gründern in seinem Netzwerk erhalten hat, wird das Unternehmen Kanada wieder in seine Liste der anerkannten Länder für die Gründung von Unternehmen aufnehmen. Ab sofort wird Y Combinator wieder in Unternehmen aus den USA, Kanada, den Cayman-Inseln und Singapur investieren.</p>         <p>Bisher hatte Y Combinator beschlossen, Kanada von dieser Liste zu streichen, da viele kanadische Unternehmen, die bei Y Combinator finanziert wurden, nach ihrer Gründung in die USA umzogen. Dies liegt wahrscheinlich daran, dass die Gründung eines Unternehmens in den USA es einfacher macht, an Investitionskapital zu kommen, insbesondere an Demo-Day.</p>         <p>Y Combinator betont jedoch, dass dies nicht bedeutet, dass das Unternehmen keine kanadischen Startups oder Gründer mehr finanziert. Tatsächlich investiert Y Combinator jedes Jahr in Dutzende von kanadischen Startups und hat Hunderte von kanadischen Gründern in seinem Alumni-Netzwerk, darunter auch Trevor Blackwell, einer der Gründer von Y Combinator.</p>         <p>Wenn du ein kanadischer Gründer bist, bist du herzlich eingeladen, dich bei Y Combinator zu bewerben. Die Bewerbung ist ein wichtiger Schritt, um von Y Combinator finanziert zu werden und Teil des Netzwerks zu werden.</p>         <h3>Was bedeutet dies für kanadische Gründer?</h3>         <p>Die Änderung der Richtlinien von Y Combinator bietet kanadischen Gründern neue Chancen, finanzielle Unterstützung und Ressourcen von einem der bekanntesten Accelerator-Programme der Welt zu erhalten. Dies kann helfen, die Entwicklung von Startups in Kanada zu fördern und die Wettbewerbsfähigkeit des Landes auf dem globalen Markt zu stärken.</p>         <p>Die Entscheidung von Y Combinator, Kanada wieder in seine Liste aufzunehmen, ist ein positives Signal für die kanadische Startup-Szene und zeigt, dass das Unternehmen bereit ist, sich an die Bedürfnisse von Gründern anzupassen und zu unterstützen.</p>     ",
+            "content_simple": "         <p>Y Combinator, ein bekanntes Accelerator-Programm, hat beschlossen, Kanada wieder in seine Liste der Länder aufzunehmen, in denen es investiert. Dies bedeutet, dass kanadische Gründer wieder die Möglichkeit haben, finanzielle Unterstützung und Ressourcen von Y Combinator zu erhalten.</p>         <p>Die Entscheidung ist ein positives Signal für die kanadische Startup-Szene und zeigt, dass Y Combinator bereit ist, sich an die Bedürfnisse von Gründern anzupassen und zu unterstützen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte der Entscheidung</h3>         <p>Die Entscheidung von Y Combinator, Kanada wieder in seine Liste aufzunehmen, hat keine direkten technischen Auswirkungen auf die Gründung von Unternehmen oder die finanzielle Unterstützung durch Y Combinator. Es handelt sich vielmehr um eine Änderung der Richtlinien, die es kanadischen Gründern einfacher macht, von Y Combinator finanziert zu werden.</p>         <p>Es ist jedoch wichtig zu beachten, dass die Gründung eines Unternehmens in Kanada bestimmte Vorteile und Herausforderungen mit sich bringt, wie z.B. die Notwendigkeit, sich an die kanadischen Gesetze und Vorschriften anzupassen. Y Combinator bietet Gründern jedoch Unterstützung und Ressourcen an, um diese Herausforderungen zu meistern.</p>     ",
+            "bytepost_einordnung": "<p><em>Die Entscheidung von Y Combinator, Kanada wieder in seine Liste aufzunehmen, ist ein positives Signal für die kanadische Startup-Szene und zeigt, dass das Unternehmen bereit ist, sich an die Bedürfnisse von Gründern anzupassen und zu unterstützen. Dies kann helfen, die Entwicklung von Startups in Kanada zu fördern und die Wettbewerbsfähigkeit des Landes auf dem globalen Markt zu stärken.</em></p>",
+            "date": "20.05.2026",
+            "id": "f7b01706",
+            "url": "https://www.ycombinator.com/blog/adding-canada-back/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f7b01706.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🛋️",
+            "title": "Columbia-Studie: Optimale Schlafdauer",
+            "source": "t3n.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f7b01706",
+                "9c27a497",
+                "0ee68538"
+            ],
+            "content": "         <h3>Die optimale Schlafdauer</h3>         <p>Dass guter Schlaf ein wichtiger Faktor eines gesunden Lebens ist, ist gut untersucht. Wie die Schlafdauer und das biologische Alter miteinander zusammenhängen, ist hingegen wenig untersucht. Forschende der Columbia University kommen jetzt zu dem Ergebnis, dass wichtige Organe durch „falsches“ Schlafen belastet werden und schneller altern.</p>         <p>Die Forschenden analysierten die Gesundheitsdaten von rund 500.000 Teilnehmenden der Langzeitstudie UK Biobank. Im Fokus standen die durchschnittliche Schlafdauer sowie das biologische Alter von 17 Organsystemen. Dazu zählen etwa Lunge, Herz und Leber.</p>         <p>Mithilfe der Blutwerte, organspezifischen Proteinen und MRT-Aufnahmen bestimmten die Forschenden das biologische Alter der jeweiligen Organsysteme. Dem Thema Longevity und Älterwerden widmet MIT Technology Review eine ganze Ausgabe.</p>         <p>Die Forschenden sprechen von einem u-förmigen Muster: Sowohl zu wenig als auch zu viel Schlaf stehen mit beschleunigten Alterungsprozessen in verschiedenen Organen in Verbindung. „Die Studie belegt, dass zu wenig oder zu viel Schlaf fast jedes Organ schneller altern lässt“, sagt Junhao Wen, Autor der Studie.</p>         <p>Die Analysen legen nahe, dass Schlafmangel den Körper unmittelbar belastet. Vor allem erhöhter physiologischer Stress und gestörte biologische Rhythmen könnten Organsysteme schädigen. Ein übermäßig langer Nachtschlaf scheint dagegen zunächst vor allem das Gehirn zu beeinflussen und kann über neuropsychiatrische Veränderungen später auch körperliche Folgen nach sich ziehen.</p>         <p>Die optimale Schlafdauer liege zwischen 6,4 und 7,8 Stunden pro Nacht – außerhalb dieses Bereichs steigen die gesundheitlichen Risiken offenbar, so die Forschenden.</p>         <p><em>BytePost-Einordnung: Die Studie der Columbia University liefert wichtige Erkenntnisse über die Auswirkungen von Schlaf auf die Gesundheit. Entwickler sollten sich dieser Thematik bewusst sein und mögliche Wege finden, um die Gesundheit und das Wohlbefinden von Nutzern zu fördern.</em></p>     ",
+            "content_simple": "         <p>Schlafen ist wichtig für unsere Gesundheit. Eine Studie hat herausgefunden, dass zu wenig oder zu viel Schlaf unsere Organe belasten kann. Die optimale Schlafdauer liegt zwischen 6,4 und 7,8 Stunden pro Nacht.</p>         <p>Wenn wir zu wenig oder zu viel schlafen, kann das unsere Organe schädigen. Das kann zu Gesundheitsproblemen führen. Es ist wichtig, dass wir genug Schlaf bekommen, um unsere Gesundheit zu schützen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Forschenden der Columbia University haben eine Studie durchgeführt, um die Auswirkungen von Schlaf auf die Gesundheit zu untersuchen. Sie haben die Gesundheitsdaten von rund 500.000 Teilnehmenden der Langzeitstudie UK Biobank analysiert.</p>         <p>Die Studie hat gezeigt, dass die optimale Schlafdauer zwischen 6,4 und 7,8 Stunden pro Nacht liegt. Außerhalb dieses Bereichs steigen die gesundheitlichen Risiken offenbar. Die Forschenden haben auch festgestellt, dass Schlafmangel den Körper unmittelbar belastet und dass ein übermäßig langer Nachtschlaf das Gehirn beeinflusst.</p>         <p>Die Studie liefert wichtige Erkenntnisse über die Auswirkungen von Schlaf auf die Gesundheit. Entwickler sollten sich dieser Thematik bewusst sein und mögliche Wege finden, um die Gesundheit und das Wohlbefinden von Nutzern zu fördern.</p>     ",
+            "date": "20.05.2026",
+            "id": "55e9cc1c",
+            "url": "https://t3n.de/news/columbia-studie-das-ist-die-optimale-schlafdauer-pro-nacht-1743172/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/55e9cc1c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Quiz prüft Kenntnisse über Zen of Python",
+            "source": "Real Python",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "0ee68538"
+            ],
+            "content": "         <h3>Quiz: Tapping Into the Zen of Python</h3>         <p>Teste dein Verständnis von der Zen of Python, ihren 19 Leitaphorismen, ihren Ursprüngen und wie man sie bei der Erstellung von realen Code ausbalanciert. Im Quiz ‚Tapping Into the Zen of Python‘ kannst du dein Wissen über die Ursprünge des Gedichts, die Bedeutung mehrerer Aphorismen und die versteckten Insiderwitze überprüfen.</p>         <p>Die Fragen erforschen, wie die Prinzipien in der Praxis angewendet werden und wann es okay ist, die Regeln im Namen der Praktikabilität zu biegen. Das Quiz enthält 8 Fragen und es gibt keine Zeitbegrenzung. Für jede richtige Antwort erhältst du 1 Punkt. Am Ende des Quizzes erhältst du eine Gesamtpunktzahl. Die maximale Punktzahl beträgt 100%. Viel Erfolg!</p>         <h3>Interaktives Quiz</h3>         <p>Das Quiz ist interaktiv und ermöglicht es dir, dein Wissen auf eine unterhaltsame Weise zu überprüfen. Die Fragen sind so gestaltet, dass sie deine Fähigkeit testen, die Prinzipien der Zen of Python in realen Codierungssituationen anzuwenden.</p>         <h3>Verwandte Ressourcen</h3>         <p>Wenn du mehr über die Zen of Python erfahren möchtest, kannst du den Kurs ‚Tapping Into the Zen of Python‘ besuchen. Dieser Kurs bietet eine ausführliche Einführung in die Zen of Python und ihre 19 Leitprinzipien für das Schreiben lesbarer und praktischer Code.</p>         <p>Die Zen of Python ist ein wichtiges Konzept in der Programmierung, das dir hilft, besseren Code zu schreiben. Mit diesem Quiz kannst du dein Wissen über die Zen of Python überprüfen und verbessern.</p>         <p><em>BytePost-Einordnung: Das Quiz ist eine großartige Möglichkeit, um dein Wissen über die Zen of Python zu überprüfen und zu verbessern. Die Zen of Python ist ein wichtiges Konzept in der Programmierung, das dir hilft, besseren Code zu schreiben. Mit diesem Quiz kannst du dein Wissen über die Zen of Python überprüfen und verbessern.</em></p>     ",
+            "content_simple": "         <p>Die Zen of Python ist ein wichtiger Teil der Programmierung. Sie hilft dir, besseren Code zu schreiben. Es gibt ein Quiz, das dir hilft, dein Wissen über die Zen of Python zu überprüfen. Das Quiz ist interaktiv und macht Spaß.</p>         <p>Das Quiz ist eine gute Möglichkeit, um dein Wissen über die Zen of Python zu verbessern. Es gibt 8 Fragen, die du beantworten kannst. Am Ende des Quizzes erhältst du eine Gesamtpunktzahl.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Zen of Python ist ein Satz von 19 Aphorismen, die die Philosophie der Python-Programmierung widerspiegeln. Sie sind in dem Gedicht ‚The Zen of Python‘ von Tim Peters enthalten.</p>         <p>Die Aphorismen sind so gestaltet, dass sie die Prinzipien der Python-Programmierung vermitteln. Sie geben Hinweise darauf, wie man besseren Code schreibt. Das Quiz ist eine gute Möglichkeit, um dein Wissen über die Zen of Python zu überprüfen und zu verbessern.</p>         <h3>Verwandte Konzepte</h3>         <p>Die Zen of Python ist eng mit anderen Konzepten der Programmierung verbunden. Sie ist Teil der Philosophie der Python-Programmierung und gibt Hinweise darauf, wie man besseren Code schreibt.</p>     ",
+            "date": "20.05.2026",
+            "id": "9c27a497",
+            "url": "https://realpython.com/quizzes/tapping-into-the-zen-of-python/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9c27a497.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚨",
+            "title": "Drupal Core erhält dringendes Sicherheitsupdate",
+            "source": "Drupal Blog",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "9c27a497"
+            ],
+            "content": "         <h3>Drupal Core Update</h3>         <p>Ein wichtiger Sicherheitsupdate für Drupal Core wurde angekündigt. Am 20. Mai erscheint ein dringendes Update, das von Administratoren so schnell wie möglich installiert werden sollte.</p>         <p>Das Update behebt eine hochkritisches Sicherheitsproblem, das nicht genauer spezifiziert wurde. Es ist jedoch klar, dass die Schwachstelle eine ernsthafte Gefahr für die Sicherheit von Drupal-Websites darstellt.</p>         <h3>Wichtige Informationen</h3>         <p>Das Update wird am Abend des Mittwochs, 20. Mai, veröffentlicht. Administratoren sollten ihre Websites so schnell wie möglich aktualisieren, um die Sicherheit ihrer Plattform zu gewährleisten.</p>         <p>Es gibt keine spezifischen Anweisungen für die Installation des Updates, aber Administratoren sollten die Standardprozeduren für die Aktualisierung ihrer Drupal-Installationen befolgen.</p>         <p><em>BytePost-Einordnung: </em>Administratoren sollten ihre Drupal-Websites so schnell wie möglich aktualisieren, um die Sicherheit ihrer Plattform zu gewährleisten. Dies ist ein wichtiger Schritt, um die Sicherheit und Integrität ihrer Daten zu schützen.</p>     ",
+            "content_simple": "         <p>Ein wichtiges Sicherheitsupdate für die Website-Plattform Drupal wurde angekündigt. Dieses Update soll so schnell wie möglich installiert werden, um die Sicherheit der Website zu gewährleisten.</p>         <p>Die genaue Schwachstelle wurde nicht genannt, aber es ist klar, dass es sich um ein ernstes Problem handelt. Wenn du eine Drupal-Website betreibst, solltest du dich umgehend um das Update kümmern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Update behebt eine hochkritisches Sicherheitsproblem in Drupal Core. Es ist jedoch nicht klar, welche spezifische Schwachstelle behoben wird.</p>         <p>Administratoren sollten ihre Drupal-Installationen so schnell wie möglich aktualisieren, um die Sicherheit ihrer Plattform zu gewährleisten. Es gibt keine spezifischen Anweisungen für die Installation des Updates, aber Administratoren sollten die Standardprozeduren für die Aktualisierung ihrer Drupal-Installationen befolgen.</p>         <h3>Kritische Einordnung</h3>         <p>Das Update ist ein wichtiger Schritt, um die Sicherheit und Integrität von Drupal-Websites zu schützen. Es zeigt jedoch auch, dass die Plattform anfällig für ernsthafte Sicherheitsprobleme ist.</p>     ",
+            "date": "20.05.2026",
+            "id": "0ee68538",
+            "url": "https://www.heise.de/news/CMS-Drupal-Hochkritisches-Drupal-Core-Update-fuer-den-20-Mai-angekuendigt-11300021.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0ee68538.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "cloud"
+            ],
+            "icon": "☁️",
+            "title": "Azure hub-and-spoke verfügbar",
+            "source": "Azure Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "9c27a497"
+            ],
+            "content": "<h3>Azure hub-and-spoke-Netzwerk</h3><p>Azure hub-and-spoke-Netzwerk ist jetzt allgemein verfügbar in HCP Vault Dedicated. Damit wird die Cloud-Sicherheitsreife mit privater Konnektivität unterstützt.</p><p>Wir prüfen Ihren Browser. Website-Eigner? Klicken Sie hier, um zu korrigieren</p><h3>Vorteile der neuen Funktion</h3><p>Die neue Funktion bietet verbesserte Cloud-Sicherheitsfunktionen und ermöglicht eine private Konnektivität zwischen verschiedenen Cloud-Ressourcen.</p><p>Die allgemeine Verfügbarkeit von Azure hub-and-spoke-Netzwerk in HCP Vault Dedicated ist ein wichtiger Schritt zur Erhöhung der Cloud-Sicherheit und -Compliance.</p>",
+            "content_simple": "<p>Azure hat ein neues Netzwerk-System namens hub-and-spoke eingeführt. Dieses System ermöglicht es, verschiedene Cloud-Ressourcen sicher und privat miteinander zu verbinden.</p><p>Das neue System ist jetzt allgemein verfügbar und soll die Cloud-Sicherheit verbessern.</p>",
+            "content_pro": "<h3>Technische Details</h3><p>Azure hub-and-spoke-Netzwerk basiert auf einer Architektur, die es ermöglicht, verschiedene Cloud-Ressourcen über private Verbindungen zu verbinden.</p><p>Die neue Funktion unterstützt verbesserte Cloud-Sicherheitsfunktionen und ermöglicht eine private Konnektivität zwischen verschiedenen Cloud-Ressourcen.</p><h3>Architektur</h3><p>Die Architektur von Azure hub-and-spoke-Netzwerk ist modular und skaliert entsprechend den Anforderungen der Cloud-Ressourcen.</p><p>Die verwendeten Technologien umfassen Azure-Virtual-Networks, Azure-ExpressRoute und Azure-VPN.</p><p><em>BytePost-Einordnung: Die Einführung von Azure hub-and-spoke-Netzwerk ist ein wichtiger Schritt zur Erhöhung der Cloud-Sicherheit und -Compliance.</em></p>",
+            "date": "20.05.2026",
+            "id": "7eae4068",
+            "url": "https://www.hashicorp.com/blog/azure-hub-and-spoke-generally-available-for-hcp-vault-dedicated",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7eae4068.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Docusign entwickelt AI-gestütztes Framework",
+            "source": "Getdbt",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "9c27a497"
+            ],
+            "content": "         <h3>Einleitung in das Problem</h3>         <p>Als Entwickler von Datenanalysen weißt du, wie wichtig es ist, deine Daten vor der Produktion zu testen. Das Unternehmen Docusign hat Millionen von Kunden weltweit und benötigt daher eine zuverlässige Datenanalyse. Bei Docusign wurde jedoch festgestellt, dass traditionelle dbt-Datentests, wie z.B. nicht_null oder unique, auf existing Datenmengen angewiesen sind. Für neue Funktionen und sich entwickelnde Pipelines benötigten sie jedoch dbt-Einheitstests, die Logik validieren, indem sie Eingabedaten simulieren und erwartete Ausgaben überprüfen.</p>         <p>Sundar Subramanyam, Lead Data Engineer bei Docusign, stellte fest, dass die manuelle Erstellung von Einheitstests für dbt-Modelle sehr komplex und zeitaufwändig war. Die Erstellung eines einzigen Tests konnte bis zu 5 Stunden dauern. Um dieses Problem zu lösen, entwickelte Subramanyam ein AI-gestütztes Framework, das die Erstellung von dbt-Einheitstests automatisiert.</p>                  <h3>Das AI-gestützte Framework</h3>         <p>Das Framework von Docusign verwendet GitHub Copilot (GPT-4+) und verbessert die Effizienz und Übernahme von Tests um 90%. Durch die Kombination von AI mit dbt-Tools kann Docusign nun Datenqualität zuverlässig überprüfen, bevor Produktionsdaten vorliegen. Das Framework umfasst mehrere Schritte:</p>         <ul>             <li>Modell-Eingabe: Der Engineer liefert ein dbt-Modell.</li>             <li>AI-Interpretation: Ein benutzerdefinierter AI-Workflow parst die Spalten-transformationen, Joins, Filter und logische Verzweigungen.</li>             <li>Logik-Zusammenfassung: Das System erzeugt eine strukturierte Darstellung der Quelltabellen, Ausgabe-Spalten und Transformationsregeln.</li>             <li>Menschliche Überprüfung: Der Engineer überprüft und bestätigt die Interpretation.</li>             <li>Testfall-Generierung: Das Framework erzeugt positive und negative Testfälle, einschließlich simulierter Eingabedaten.</li>             <li>YAML-Ausgabe: Das System produziert eine gültige dbt-Einheitstest-Datei.</li>         </ul>                  <p>Durch die Verwendung dieses Frameworks konnte Docusign die Zeit, die für die Erstellung von dbt-Einheitstests benötigt wird, von 5 Stunden auf 30 Minuten reduzieren.</p>                  <h3>Fazit</h3>         <p>Das AI-gestützte Framework von Docusign ist ein Beispiel dafür, wie künstliche Intelligenz eingesetzt werden kann, um die Effizienz und Qualität von Datenanalysen zu verbessern. Durch die Automatisierung von Einheitstests kann Docusign nun schnellere und zuverlässigere Datenanalysen durchführen.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von AI-gestützten Frameworks wie diesem ist ein wichtiger Schritt in Richtung einer effizienteren und zuverlässigeren Datenanalyse. Es zeigt, dass künstliche Intelligenz in der Lage ist, komplexe Aufgaben zu automatisieren und so die Produktivität von Entwicklern zu steigern.</em></p>     ",
+            "content_simple": "         <p>Das Unternehmen Docusign hat ein neues Framework entwickelt, das die Erstellung von Datenanalysen mit Hilfe von künstlicher Intelligenz (KI) unterstützt. Dieses Framework kann die Zeit, die für die Erstellung von Tests benötigt wird, um 90% reduzieren.</p>         <p>Stell dir vor, du musst ein Puzzle zusammensetzen, aber anstelle von Bildern hast du Millionen von Daten, die du überprüfen musst. Das ist ähnlich wie das Problem, das Docusign hatte. Sie haben jedoch ein intelligentes System entwickelt, das ihnen hilft, diese Daten schnell und genau zu überprüfen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Framework von Docusign verwendet GitHub Copilot (GPT-4+) und dbt-Tools, um Datenqualität zuverlässig zu überprüfen. Durch die Kombination von AI mit dbt-Tools kann Docusign nun Datenqualität zuverlässig überprüfen, bevor Produktionsdaten vorliegen.</p>         <p>Die Architektur des Frameworks besteht aus mehreren Schritten, darunter die Modell-Eingabe, AI-Interpretation, Logik-Zusammenfassung, menschliche Überprüfung, Testfall-Generierung und YAML-Ausgabe.</p>         <p>Das Framework erzeugt positive und negative Testfälle, einschließlich simulierter Eingabedaten. Die YAML-Ausgabe ist eine gültige dbt-Einheitstest-Datei.</p>         <p>Die Verwendung von AI in diesem Framework ermöglicht es, komplexe Aufgaben zu automatisieren und so die Produktivität von Entwicklern zu steigern.</p>     ",
+            "date": "20.05.2026",
+            "id": "50852dd3",
+            "url": "https://www.getdbt.com/blog/ai-assisted-analytics-engineering-docusign-s-framework-for-scaling-dbt-unit-testing",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/50852dd3.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "GitHub ermöglicht Remote-Steuerung",
+            "source": "The GitHub Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "b83cc002"
+            ],
+            "content": "         <h3>Überall produktiv sein</h3>         <p>GitHub hat eine neue Funktion veröffentlicht, die es Entwicklern ermöglicht, ihre lokalen GitHub-Sitzungen überall fortzusetzen. Mit der Remote-Steuerung für GitHub Copilot-Sitzungen kannst du deine Arbeit in VS Code oder der CLI beginnen und sie dann von deinem Smartphone aus beenden.</p>         <p>Diese Funktion ist jetzt allgemein verfügbar auf github.com und GitHub Mobile. Du kannst deine Sitzungen also überall fortschreiben, egal ob du zu Hause, im Büro oder unterwegs bist.</p>         <h3>Vorteile der Remote-Steuerung</h3>         <p>Die Remote-Steuerung bietet viele Vorteile für Entwickler. Du kannst deine Arbeit überall fortschreiben, ohne dass du einen bestimmten Computer oder eine bestimmte Umgebung benötigst. Du kannst auch leicht mit deinem Team zusammenarbeiten, indem du deine Sitzungen teilst und gemeinsam an Projekten arbeitest.</p>         <p>GitHub Copilot ist ein KI-gestütztes Tool, das Entwicklern hilft, Code zu schreiben und zu bearbeiten. Mit der Remote-Steuerung kannst du Copilot überall nutzen, egal ob du auf deinem Smartphone, Tablet oder Computer bist.</p>         <h3>Fazit</h3>         <p>Die Remote-Steuerung für GitHub Copilot-Sitzungen ist eine großartige Funktion, die es Entwicklern ermöglicht, ihre Arbeit überall fortzusetzen. Mit dieser Funktion kannst du deine Produktivität steigern und deine Arbeit leichter und flexibler gestalten.</p>         <p><em>BytePost-Einordnung: DieRemote-Steuerung für GitHub Copilot-Sitzungen ist ein wichtiger Schritt in Richtung einer flexibleren und mobileren Arbeitsweise für Entwickler. Durch die Kombination von KI-gestützten Tools wie Copilot und der Remote-Steuerung können Entwickler ihre Arbeit überall fortschreiben und ihre Produktivität steigern.</em></p>     ",
+            "content_simple": "         <p>GitHub hat eine neue Funktion veröffentlicht, die es Entwicklern ermöglicht, ihre Arbeit überall fortzusetzen. Du kannst deine Arbeit in VS Code oder der CLI beginnen und sie dann von deinem Smartphone aus beenden.</p>         <p>Diese Funktion ist wie ein Fernbedienung für deine Arbeit. Du kannst deine Sitzungen überall fortschreiben, egal ob du zu Hause, im Büro oder unterwegs bist.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Remote-Steuerung für GitHub Copilot-Sitzungen verwendet KI-gestützte Technologien, um die Arbeit von Entwicklern zu unterstützen. Copilot ist ein Tool, das Entwicklern hilft, Code zu schreiben und zu bearbeiten.</p>         <p>Die Remote-Steuerung ermöglicht es Entwicklern, ihre Sitzungen überall fortzusetzen, ohne dass sie einen bestimmten Computer oder eine bestimmte Umgebung benötigen. Dies wird durch die Verwendung von Cloud-basierten Technologien ermöglicht.</p>         <h3>Sicherheit</h3>         <p>Die Sicherheit der Remote-Steuerung ist ein wichtiger Aspekt. GitHub hat verschiedene Maßnahmen ergriffen, um die Sicherheit der Sitzungen zu gewährleisten. Dazu gehören die Verwendung von Verschlüsselung und die Implementierung von Sicherheitsprotokollen.</p>     ",
+            "date": "20.05.2026",
+            "id": "18a84f5c",
+            "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/18a84f5c.jpg",
+            "pick": true,
+            "pick_reason": "GitHub ermöglicht ab sofort die Remote-Steuerung, was die Art und Weise, wie Entwickler zusammenarbeiten, revolutionieren könnte. Dieser Schritt hat das Potenzial, die Produktivität und Effizienz von Entwicklungsteams weltweit zu verbessern. Mit dieser Funktion steht die Zukunft der Zusammenarbeit im Fokus und Entwickler sollten sich auf die neuen Möglichkeiten einstellen."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "📨",
+            "title": "Gmail ermöglicht Gespräche mit deinem Postfach",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "9c27a497"
+            ],
+            "content": "         <h3>Gmail-Neuerung: Gespräche mit deinem Postfach</h3>         <p>Du kannst nun mit deinem Gmail-Postfach sprechen, wie es auf der Google I/O 2026 vorgestellt wurde. Google erweitert die Funktionen von Gmail um eine konversationale Sprachsuche, die es den Nutzern ermöglicht, Gemini nach vergrabenen E-Mail-Details zu fragen.</p>         <p>Die Funktion, die als Gmail Live bezeichnet wird, soll es den Nutzern ermöglichen, schnell Informationen in ihren Postfächern zu finden. Vielleicht benötigst du Informationen über deinen anstehenden Flug, die Uhrzeit deines Zahnarzttermins, den Türcode für deine Airbnb-Unterkunft oder Details über ein Event in der Schule deines Kindes.</p>         <p>Vorher hättest du Schlüsselwörter in das Suchfeld eingegeben (oder vielleicht eine E-Mail-Adresse oder ein Domain-Namen), um deine Suche zu verfeinern. Das macht es jedoch nicht immer leicht, E-Mails zu finden, besonders wenn das Suchwort in mehreren Nachrichten vorkommt.</p>         <p>\"Gmail Live kann natürlich formulierte Fragen beantworten, auf Nachfolgefragen reagieren und umschalten, wenn du es unterbrechen musst\", erklärte Devanshi Bhandari, Product Lead für Gmail, in einer Besprechung vor der Google I/O 2026, wo die Funktion erstmalig der Öffentlichkeit vorgestellt wurde.</p>         <h3>Wie funktioniert Gmail Live?</h3>         <p>Es ist eine weitere Möglichkeit, wie Google zeigen will, dass seine KI-Technologie realweltliche Verbesserungen für Produkte bringt, die von Millionen von Nutzern genutzt werden. Indem man auf etwas so Einfaches wie das Finden von Informationen in deinem E-Mail-Postfach hinweist – eine Erfahrung, die fast jeder bereits gemacht hat –, kann man einen praktischen und positiven Anwendungsfall für KI darstellen ... oder zumindest hofft Google das.</p>         <p>Bhandari demonstrierte Gmail Live gegenüber Reportern, indem sie dem Tool eine Reihe von Fragen über Dinge in ihrem Postfach stellte, wie ein Schau-und-erzähl-Projekt eines Kindes und ihre Klassenfahrt sowie Hotel- und Fluginformationen für eine Reise nach Detroit. Ähnlich wie bei der Verwendung eines eigenständigen KI-Chatbots wie Gemini oder ChatGPT können Gmail-Nutzer diese Fragen in natürlicher Sprache stellen, und der Chatbot antwortet.</p>         <p>In der Demo verstand Gmail Live auch Nuancen zwischen Dingen wie \"Klassenfahrt\" und \"Reise\" und konnte von einem Thema zu einem anderen springen, wie Bhandari betonte. Außerdem kann die KI granulare Details aus E-Mails extrahieren, wie eine Hotelzimmer-Nummer, oder darauf schließen, über welche Personen du fragst, auch wenn sie nicht explizit genannt sind.</p>         <h3>Weitere Neuerungen bei Gmail</h3>         <p>Ahnliche Sprachtechnologie kommt auch in die To-Do-Liste von Google, Google Keep. Gmail gewinnt außerdem weitere Fähigkeiten, wie fertige Entwürfe, sofortigen Zugriff auf Dateien und die Fähigkeit, To-Dos zu verwalten, indem man einzelne Aufgaben als erledigt markiert.</p>         <p><em>BytePost-Einordnung: Mit der Einführung von Gmail Live und der Erweiterung der KI-Inbox-Funktionen setzt Google einen weiteren Schritt in Richtung einer stärkeren Integration von KI in seine Produkte. Diese Neuerungen sollen es Nutzern ermöglichen, ihre E-Mails effizienter zu verwalten und Informationen schneller zu finden. Wir sind gespannt, wie diese Funktionen in der Praxis umgesetzt werden und ob sie die Erwartungen der Nutzer erfüllen.</em></p>     ",
+            "content_simple": "         <p>Du kannst jetzt mit deinem Gmail-Postfach sprechen. Google hat eine neue Funktion entwickelt, die es ermöglicht, nach vergrabenen E-Mail-Details zu fragen.</p>         <p>Diese Funktion, die als Gmail Live bezeichnet wird, soll es ermöglichen, schnell Informationen in deinem Postfach zu finden. Du kannst einfach Fragen stellen, wie \"Was ist der Türcode für meine Airbnb-Unterkunft?\" oder \"Was ist die Uhrzeit meines Zahnarzttermins?\"</p>         <p>Gmail Live kann natürlich formulierte Fragen beantworten und auf Nachfolgefragen reagieren. Es ist wie ein persönlicher Assistent, der dir hilft, deine E-Mails zu verwalten.</p>     ",
+            "content_pro": "         <h3>Technische Details von Gmail Live</h3>         <p>Gmail Live verwendet die Gemini-KI-Technologie von Google, um naturliche Spracheingaben zu verarbeiten und entsprechende Antworten zu liefern. Die Funktion verwendet eine Kombination aus maschinellem Lernen und natürlicher Sprachverarbeitung, um die Nutzeranfragen zu verstehen und zu beantworten.</p>         <p>Die Architektur von Gmail Live besteht aus mehreren Komponenten, darunter eine naturliche Sprachverarbeitungskomponente, eine Suchkomponente und eine Antwortgenerierungskomponente. Die naturliche Sprachverarbeitungskomponente verwendet maschinelles Lernen, um die Nutzeranfragen zu analysieren und zu verstehen.</p>         <p>Die Suchkomponente verwendet eine Kombination aus traditioneller Suche und KI-basierten Suchalgorithmen, um die relevantesten Informationen in den E-Mails des Nutzers zu finden. Die Antwortgenerierungskomponente verwendet dann die gefundenen Informationen, um eine entsprechende Antwort zu generieren.</p>         <h3>Sicherheitsaspekte von Gmail Live</h3>         <p>Die Sicherheit von Gmail Live ist ein wichtiger Aspekt, da die Funktion auf sensible Nutzerinformationen zugreift. Google hat jedoch Maßnahmen ergriffen, um die Sicherheit der Nutzerdaten zu gewährleisten.</p>         <p>Die Daten werden beispielsweise verschlüsselt übertragen und gespeichert, und die Zugriffe auf die Daten werden streng kontrolliert. Außerdem wird die Funktion nur auf autorisierten Geräten und über sichere Verbindungen verwendet.</p>         <p><em>BytePost-Einordnung: Die technischen Details von Gmail Live zeigen, dass Google eine umfassende Architektur entwickelt hat, um die Nutzeranfragen zu verarbeiten und zu beantworten. Die Sicherheitsmaßnahmen, die ergriffen wurden, um die Nutzerdaten zu schützen, sind robust und sollten die Bedenken der Nutzer zerstreuen.</em></p>     ",
+            "date": "20.05.2026",
+            "id": "62db5c3a",
+            "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/62db5c3a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Paralives bald verfügbar",
+            "source": "Unbekannt",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f7b01706",
+                "55e9cc1c",
+                "9c27a497"
+            ],
+            "content": "         <h3>Paralives: Ein neues Lebenssimulationsspiel</h3>         <p>Take a nice long look at some Paralives gameplay ahead of its early access launch next week. Paralives, ursprünglich für 2025 geplant, steht jetzt vor der Tür mit einem Early-Access-Launch am 25. Mai nächsten Woche. Was wäre ein besserer Weg, den Appetit zu wetzen, als mit einem langen Blick auf das Spiel in Aktion, von der Erstellung deiner eigenen Paras bis hin zur Überwachung ihres gesamten Lebens?</p>         <p>Wenn du ein Spiel von Paralives startest, findest du dich in einem Zug wieder, der mit verschiedenen Haushalten gefüllt ist, also Gruppen von Menschen, die durch familiäre Bindungen oder auf andere Weise miteinander verbunden sind, ähnlich wie in The Sims' vorgefertigten Familien. Du hast natürlich die Möglichkeit, deinen eigenen Haushalt zu erstellen, und die Erstellung deiner eigenen Paras sieht ziemlich umfangreich aus. Der mikro-anpassbare Höhen-Regler sieht aus wie eine willkommene Qualität, die in seinem baldigen Rivalen nicht vorhanden ist.</p>         <p>Ein weiterer Unterschied zu The Sims ist die Anwesenheit einer Art Schwierigkeitsgrad, bei dem du einen Erzähler wählst, um zu bestimmen, wie viel Chaos du in deinem Leben willst. Dies kann sogar mit Optionen wie dem automatischen Essen am Arbeitsplatz oder der Wahrscheinlichkeit, dass ein Para Zwillinge hat, fein abgestimmt werden. Es gibt auch einen Hund-Erzähler, der alles so einfach wie möglich macht! Süß.</p>         <h3>Das Bauelement</h3>         <p>Der Bau-Aspekt sieht auch ziemlich umfangreich aus, mit der Möglichkeit, das Gelände leicht zu malen, Regale mit individuellen Details zu füllen, Möbel zu vergrößern und vieles mehr. Obwohl es noch nicht fertig ist, wie durch die Erwähnung, dass du keine Fenster auf gekrümmten Wänden haben kannst.</p>         <p>Deine Paras können auch Jobs haben und sich verschiedenen Aufgaben wie dem Aufsammeln von kostenlosen Pflanzen oder dem Abrufen von Essen im Dorf widmen. Alles sieht ziemlich detailliert aus, was ein Vorteil für diejenigen ist, die gerne ins Detail gehen, wenn es um Lebenssimulationsspiele geht. Plus, wenn das, was da ist, noch nicht genug für dich ist, sind Community-Mods direkt im Steam Workshop verfügbar. Du kannst Paralives auf Steam vor dem Release nächsten Woche am 25. Mai in deine Wunschliste aufnehmen.</p>         <p><em>BytePost-Einordnung: Paralives bietet eine interessante Alternative zu bestehenden Lebenssimulationsspielen und verspricht durch seine detaillierten Spielmechaniken und modifizierbaren Charaktere eine hohe Spielbarkeit und Individualität. Die Veröffentlichung im Early Access zeigt, dass die Entwickler bereit sind, das Spiel mit der Community weiterzuentwickeln.</em></p>     ",
+            "content_simple": "         <p>Paralives ist ein neues Lebenssimulationsspiel, das bald verfügbar sein wird. Du kannst eigene Charaktere erstellen und ihr Leben überwachen, von der Arbeit bis hin zum Essen im Dorf. Das Spiel bietet auch eine Vielzahl von Bauelementen, wie das Malen des Geländes und das Vergrößern von Möbeln.</p>         <p>Das Spiel ist noch nicht fertig, aber die Entwickler arbeiten daran, es weiterzuentwickeln. Du kannst es auf Steam vor dem Release nächsten Woche in deine Wunschliste aufnehmen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Paralives verwendet eine eigene Spiel-Engine, die es ermöglicht, detaillierte Charaktere und Umgebungen zu erstellen. Die Entwickler haben auch eine Community-Mod-Plattform implementiert, um es Spielern zu ermöglichen, eigene Mods zu erstellen und zu teilen.</p>         <p>Das Spiel verwendet auch eine Art Schwierigkeitsgrad, bei dem der Spieler einen Erzähler wählt, um zu bestimmen, wie viel Chaos er in seinem Leben will. Dies kann durch verschiedene Optionen fein abgestimmt werden, wie das automatische Essen am Arbeitsplatz oder die Wahrscheinlichkeit, dass ein Charakter Zwillinge hat.</p>     ",
+            "date": "20.05.2026",
+            "id": "d6cecd5c",
+            "url": "https://www.rockpapershotgun.com/take-a-nice-long-look-at-some-paralives-gameplay-ahead-of-its-early-access-launch-next-week",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d6cecd5c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev",
                 "cloud"
             ],
@@ -37344,10 +37607,10 @@
         }
     ],
     "bytepulse": {
-        "date": "18.05.2026",
-        "positiv": 40,
-        "neutral": 20,
-        "kritisch": 40,
-        "total": 5
+        "date": "20.05.2026",
+        "positiv": 56,
+        "neutral": 44,
+        "kritisch": 0,
+        "total": 9
     }
 }
