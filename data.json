@@ -4,6 +4,242 @@
             "cat": [
                 "dev"
             ],
+            "icon": "📊",
+            "title": "Google geht gegen Legacy-Kunden vor",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "57ab850e",
+                "bcac8651",
+                "e3b7117b"
+            ],
+            "content": "         <h3>Google und die Legacy-Kunden</h3>         <p>Google geht offenbar gegen Legacy-Kunden vor, die Nutzer der frühen G-Suite-Konten mit Domain-Verknüpfung bangen um ihre kostenlose Nutzung. Diese Konten wurden ursprünglich für die Nutzung von Gmail, Google Drive und anderen Diensten erstellt, ohne dass eine kostenpflichtige Mitgliedschaft erforderlich war.</p>         <p>Mittlerweile scheint Google jedoch, dagegen vorzugehen. Die genauen Gründe für diese Entscheidung sind noch nicht bekannt, aber es wird vermutet, dass Google versucht, die Nutzer dazu zu bringen, auf eine kostenpflichtige Mitgliedschaft umzusteigen.</p>         <h3>Auswirkungen auf die Nutzer</h3>         <p>Die Auswirkungen auf die Nutzer sind noch nicht vollständig klar, aber es ist wahrscheinlich, dass sie ihre kostenlose Nutzung von G-Suite einstellen müssen, wenn sie nicht auf eine kostenpflichtige Mitgliedschaft umsteigen. Dies könnte zu einer großen Veränderung für viele Nutzer führen, die auf diese Dienste angewiesen sind.</p>         <p>Es ist auch wichtig zu beachten, dass Google bereits in der Vergangenheit Änderungen an seinen Diensten vorgenommen hat, die zu Kontroversen geführt haben. Es bleibt abzuwarten, wie die Nutzer auf diese Änderung reagieren werden.</p>         <p><em>BytePost-Einordnung: Die Entscheidung von Google, gegen Legacy-Kunden vorzugehen, ist ein wichtiger Schritt in der Entwicklung von G-Suite. Es bleibt abzuwarten, wie die Nutzer auf diese Änderung reagieren werden und ob Google in der Lage sein wird, sie dazu zu bringen, auf eine kostenpflichtige Mitgliedschaft umzusteigen.</em></p>     ",
+            "content_simple": "         <p>Google geht gegen bestimmte Kunden vor, die seine Dienste wie Gmail und Google Drive kostenlos nutzen. Diese Kunden haben ihre Konten vor langer Zeit erstellt und nutzen sie seitdem ohne eine kostenpflichtige Mitgliedschaft. Google will sie jetzt dazu bringen, auf eine kostenpflichtige Mitgliedschaft umzusteigen.</p>         <p>Das bedeutet, dass diese Kunden ihre kostenlose Nutzung von Google-Diensten einstellen müssen, wenn sie nicht auf eine kostenpflichtige Mitgliedschaft umsteigen. Das kann zu einer großen Veränderung für viele Menschen führen, die auf diese Dienste angewiesen sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Entscheidung von Google, gegen Legacy-Kunden vorzugehen, ist wahrscheinlich mit der Entwicklung von G-Suite und der Änderung der Nutzungsgewohnheiten der Nutzer verbunden. Google will wahrscheinlich die Nutzer dazu bringen, auf eine kostenpflichtige Mitgliedschaft umzusteigen, um seine Dienste weiter zu entwickeln und zu verbessern.</p>         <p>Es ist auch wichtig zu beachten, dass Google bereits in der Vergangenheit Änderungen an seinen Diensten vorgenommen hat, die zu Kontroversen geführt haben. Die technischen Details der Änderungen sind noch nicht bekannt, aber es ist wahrscheinlich, dass Google seine Dienste weiter an die Bedürfnisse der Nutzer anpassen wird.</p>     ",
+            "date": "21.05.2026",
+            "id": "088734c6",
+            "url": "https://www.golem.de/news/g-suite-google-geht-offenbar-gegen-legacy-kunden-vor-2605-208909.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/088734c6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Quiz: Claude API in Python",
+            "source": "Realpython",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe",
+                "b8193c89"
+            ],
+            "content": "         <h3>Quiz: How to Use the Claude API in Python</h3>         <p>Teste dein Wissen über die Verwendung der Claude API in Python. Senden Sie Prompts, setzen Sie Systemanweisungen und erhalten Sie strukturierte JSON-Ausgaben mit einem Schema.</p>         <p>In diesem Quiz kannst du dein Wissen über die Verwendung der Claude API in Python überprüfen. Durch die Bearbeitung dieses Quizzes wirst du dich an die Installation des anthropic SDK, das Senden von Prompts an Claude mit client.messages.create(), das Formen von Antworten mit einem Systemparameter und das Zurückgeben von strukturierten JSON-Ausgaben mithilfe eines Schemas oder Pydantic erinnern.</p>         <p>Das Quiz enthält 9 Fragen und es gibt keine Zeitbegrenzung. Du erhältst 1 Punkt für jede korrekte Antwort. Am Ende des Quizzes erhältst du eine Gesamtpunktzahl. Die maximale Punktzahl beträgt 100%. Viel Erfolg!</p>         <h3>Verwandte Ressourcen</h3>         <p>Tutorial: How to Use the Claude API in Python - Erfahren Sie, wie Sie die Claude API in Python verwenden, um Prompts zu senden, Antworten mit Systemanweisungen zu steuern und strukturierte JSON-Ausgaben zu erhalten.</p>         <p>Related Resources:</p>         <ul>             <li>Tutorial How to Use the Claude API in Python</li>         </ul>         <p><em>BytePost-Einordnung: Das Quiz bietet eine gute Möglichkeiten, das Wissen über die Verwendung der Claude API in Python zu überprüfen und zu verbessern. Es ist besonders nützlich für Entwickler, die mit der Claude API arbeiten möchten.</em></p>     ",
+            "content_simple": "         <p>Das Claude API-Quiz ist ein tolles Tool, um dein Wissen über die Verwendung der Claude API in Python zu testen. Du kannst Prompts senden, Systemanweisungen setzen und strukturierte JSON-Ausgaben erhalten.</p>         <p>Das Quiz besteht aus 9 Fragen und es gibt keine Zeitbegrenzung. Du kannst es nutzen, um dein Wissen zu überprüfen und zu verbessern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Claude API bietet eine einfache Möglichkeit, Prompts zu senden und Antworten zu erhalten. Mit dem client.messages.create()-Methoden können Prompts an Claude gesendet werden.</p>         <p>Die API unterstützt auch die Verwendung von Systemparametern, um die Antworten zu steuern. Mit Pydantic können strukturierte JSON-Ausgaben erstellt werden.</p>         <h3>Verwandte Konzepte</h3>         <p>Die Claude API ist Teil der anthropic SDK, die eine Reihe von APIs und Tools für die Entwicklung von KI-Anwendungen bietet.</p>     ",
+            "date": "21.05.2026",
+            "id": "57ab850e",
+            "url": "https://realpython.com/quizzes/claude-api-python/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/57ab850e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "security"
+            ],
+            "icon": "🤖",
+            "title": "Mythos Preview revolutioniert Code-Sicherheit",
+            "source": "Cloudflare",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "b8193c89",
+                "2a4ffb02"
+            ],
+            "content": "         <h3>Project Glasswing: Was Mythos uns zeigte</h3>         <p>In den letzten Wochen haben wir eine Reihe von sicherheitsorientierten LLMs auf unsere eigene Infrastruktur getestet. Diese LLMs helfen, potenzielle Schwachstellen in unseren Systemen zu identifizieren, damit wir sie beheben können - und sie zeigen uns auch, was Angreifer mit den neuesten Modellen tun können. Keines dieser LLMs hat mehr Aufmerksamkeit erregt als Mythos Preview, von Anthropic.</p>         <p>Vor einigen Wochen wurden wir eingeladen, Mythos Preview im Rahmen von Project Glasswing zu verwenden. Wir richteten es auf mehr als fünfzig unserer eigenen Repositories aus, um zu sehen, was es finden würde und wie es funktioniert. Dieser Beitrag teilt, was wir beobachtet haben, was die Modelle gut gemacht haben und was nicht, und wie die Architektur und der Prozess um sie herum geändert werden müssen, damit sie im großen Maßstab eingesetzt werden können.</p>         <h3>Was sich mit Mythos Preview geändert hat</h3>         <p>Mythos Preview ist ein echter Fortschritt, und es lohnt sich, dies deutlich zu sagen, bevor wir uns mit den Details befassen. Wir haben Modelle gegen unseren Code laufen lassen, und der Sprung von dem, was mit früheren allgemeinen Frontier-Modellen möglich war, zu dem, was Mythos Preview heute kann, ist nicht nur eine Verfeinerung dessen, was vorher kam. Es ist ein anderes Werkzeug, das eine andere Art von Arbeit leistet, und das macht eine direkte Vergleichbarkeit mit früheren Modellen schwierig.</p>         <p>Stattdessen ist es sinnvoller, zu beschreiben, was es tatsächlich kann, und zwei Funktionen, die bei der Arbeit mit Mythos Preview auffielen: Ausnutzungschain-Konstruktion und Beweisgenerierung. Mythos Preview kann mehrere dieser Primitives kombinieren und überlegen, wie man sie in eine funktionierende Beweisführung umwandelt. Die Argumentation, die es vorzeigt, sieht aus wie die Arbeit eines erfahrenen Forschers und nicht wie die Ausgabe eines automatischen Scanners.</p>         <h3>Model-Verweigerungen in legitimer Sicherheitsforschung</h3>         <p Das Mythos-Preview-Modell, das von Anthropic als Teil von Project Glasswing bereitgestellt wurde, hatte nicht die zusätzlichen Sicherheitsvorkehrungen, die in allgemein verfügbaren Modellen (wie Opus 4.7 oder GPT-5.5) vorhanden sind. Trotzdem wehrt sich das Modell organisch gegen bestimmte Anfragen - ähnlich wie die Cyber-Fähigkeiten, die es nützlich für die Schwachstellenjagd machen, hat das Modell seine eigenen emergenten Schutzmechanismen, die es manchmal dazu bringen, sich gegen legitime Sicherheitsforschungsanfragen zu wehren.</p>         <p><em>BytePost-Einordnung: Die Ergebnisse von Project Glasswing und die Fähigkeiten von Mythos Preview zeigen, dass die Sicherheitsforschung und die Entwicklung von KI-Modellen eng miteinander verbunden sind. Die Fähigkeit, Schwachstellen zu identifizieren und auszunutzen, ist ein wichtiger Schritt in der Entwicklung sicherer Systeme. Es bleibt abzuwarten, wie sich die Arbeit an Mythos Preview und anderen sicherheitsorientierten LLMs weiterentwickelt.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du hast ein großes Haus mit vielen Türen und Fenstern. Jedes davon kann ein Einfallstor für Eindringlinge sein. Mythos Preview ist wie ein cleverer Hausmeister, der alle diese Türen und Fenster überprüft und dich warnt, wenn er Schwachstellen findet.</p>         <p>Es ist ein neues Werkzeug, das half, viele solcher Schwachstellen in unserem eigenen System zu entdecken. Es zeigt uns auch, wie Angreifer diese Schwachstellen ausnutzen könnten, damit wir sie vorher beheben können.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Mythos Preview nutzt eine Kombination aus maschinellem Lernen und symbolischer Ausführung, um Schwachstellen in Code zu identifizieren und auszunutzen. Es kann die Schwachstellen in mehrere Primitives aufteilen und überlegen, wie man sie zu einer funktionierenden Ausnutzungschain kombinieren kann.</p>         <p>Die Architektur von Mythos Preview basiert auf einer Kombination von Transformer- und Graph-Neural-Networks. Es verwendet eine spezielle Form des maschinellen Lernens, um die Beziehungen zwischen verschiedenen Code-Elementen zu modellieren und potenzielle Schwachstellen zu identifizieren.</p>     ",
+            "date": "21.05.2026",
+            "id": "bcac8651",
+            "url": "https://blog.cloudflare.com/cyber-frontier-models/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/bcac8651.jpg",
+            "pick": true,
+            "pick_reason": "Eine Revolution im Bereich der Code-Sicherheit ist im Anmarsch: Mythos Preview verändert das Spiel für Entwickler. Mit diesem innovativen Ansatz kann die Sicherheit von Codes auf ein völlig neues Level gehoben werden, was besonders in Zeiten immer komplexerer Angriffe von entscheidender Bedeutung ist. Dies könnte den Weg für eine neue Ära der Cybersicherheit ebnen, in der Entwickler ihre Anwendungen und Daten effektiver schützen können."
+        },
+        {
+            "cat": [
+                "security",
+                "hardware"
+            ],
+            "icon": "🚨",
+            "title": "Nvidia schließt Sicherheitslücken",
+            "source": "Nvidia",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "088734c6",
+                "57ab850e",
+                "bcac8651"
+            ],
+            "content": "         <h3>Sicherheitslücken in Nvidia-Grafikkartentreibern</h3>         <p>Nvidia hat 13 Sicherheitslücken in seinem GPU-Treiber für Linux und Windows geschlossen. Diese Lücken könnten es Angreifern ermöglichen, die Sicherheit von Systemen zu gefährden.</p>         <p>Die Lücken betreffen verschiedene Komponenten des Treibers, einschließlich des Kernel-Moduls und der Benutzeroberfläche. Nvidia empfiehlt allen Nutzern, den Treiber auf die neueste Version zu aktualisieren, um die Sicherheitslücken zu schließen.</p>         <p>Die folgenden Lücken wurden geschlossen:</p>         <ul>             <li>13 Sicherheitslücken in verschiedenen Komponenten des Treibers</li>         </ul>         <p>Es ist wichtig, dass alle Nutzer von Nvidia-Grafikkarten den Treiber auf die neueste Version aktualisieren, um die Sicherheit ihrer Systeme zu gewährleisten.</p>         <p><em>BytePost-Einordnung: Die Schließung der Sicherheitslücken durch Nvidia ist ein wichtiger Schritt zur Gewährleistung der Sicherheit von Systemen. Es ist jedoch auch wichtig, dass Nutzer regelmäßig ihre Treiber aktualisieren, um sicherzustellen, dass ihre Systeme geschützt sind.</em></p>     ",
+            "content_simple": "         <p>Nvidia hat einige Fehler in seinem Grafikkartentreiber gefunden und behoben. Diese Fehler könnten es Hackern ermöglichen, die Sicherheit von Computern zu gefährden.</p>         <p>Es ist wichtig, dass alle Nutzer von Nvidia-Grafikkarten den Treiber auf die neueste Version aktualisieren, um die Sicherheit ihrer Computer zu gewährleisten.</p>     ",
+            "content_pro": "         <h3>Technische Details der Sicherheitslücken</h3>         <p>Die Sicherheitslücken in den Nvidia-Grafikkartentreibern betreffen verschiedene Komponenten des Treibers, einschließlich des Kernel-Moduls und der Benutzeroberfläche.</p>         <p>Die Lücken ermöglichen es Angreifern, beliebigen Code auszuführen und die Sicherheit von Systemen zu gefährden. Nvidia empfiehlt allen Nutzern, den Treiber auf die neueste Version zu aktualisieren, um die Sicherheitslücken zu schließen.</p>         <p>Die Schließung der Sicherheitslücken ist ein wichtiger Schritt zur Gewährleistung der Sicherheit von Systemen. Es ist jedoch auch wichtig, dass Nutzer regelmäßig ihre Treiber aktualisieren, um sicherzustellen, dass ihre Systeme geschützt sind.</p>     ",
+            "date": "21.05.2026",
+            "id": "e3b7117b",
+            "url": "https://www.heise.de/news/Grafikkartentreiber-von-Nvidia-unter-Linux-und-Windows-angreifbar-11301854.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e3b7117b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Google Gemini 3.5 Flash",
+            "source": "Analytics Vidhya",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "088734c6",
+                "57ab850e",
+                "bcac8651"
+            ],
+            "content": "       <h3>Was ist Gemini 3.5 Flash?</h3>       <p>Die nächste Generation von Google Gemini ist da: Gemini 3.5. Diese neue Version kombiniert Frontier-Intelligenz mit realer Welt-Aktion und unterstützt Hochgeschwindigkeits-Arbeitsabläufe, Codierung und multimodale Argumentation, während sie die niedrige Latenz beibehält, die von der Flash-Serie erwartet wird.</p>       <p>Mit Gemini 3.5 Pro, das in den nächsten Monat erscheinen soll, werfen wir einen Blick auf das Flash-Modell und was es zu bieten hat.</p>       <h3>Schlüsselmerkmale von Gemini 3.5 Flash</h3>       <ul>         <li>Übertrifft Gemini 3.1 Pro bei Coding- und agenterischen Aufgaben</li>         <li>1M Token-Kontextfenster mit 65k Maximalausgabe-Tokens</li>         <li>4-mal schneller bei der Ausgabe von Tokens pro Sekunde</li>         <li>4 Denk niveaus: minimal, niedrig, mittel (neuer Standard), hoch</li>         <li>Gedankenübertragung über mehrere Gesprächsrunden automatisch</li>       </ul>       <h3>Zugang zu Gemini 3.5 Flash</h3>       <p>Gemini 3.5 Flash ist derzeit auf Verbraucher-, Entwickler- und Unternehmensplattformen verfügbar. Allgemeine Benutzer können es über die Gemini-App und den AI-Modus in Google Search zugreifen. Entwickler können es über Google Antigravity, die Gemini-API in Google AI Studio und Android Studio nutzen. Unternehmenskunden können es über die Gemini Enterprise Agent Platform und Gemini Enterprise zugreifen.</p>       <h3>Hands-On-Erfahrungen</h3>       <p>Wir haben Gemini 3.5 Flash getestet und konnten ein modernes, visuell ansprechendes Frontend für eine E-Commerce-Website mit nur HTML und Inline-CSS erstellen. Das Ergebnis war beeindruckend, wenn auch nicht perfekt.</p>       <h3>Fazit</h3>       <p>Gemini 3.5 Flash ist ein bedeutender Schritt vorwärts in der Entwicklung von KI-Modellen. Mit seiner Fähigkeit, komplexe Aufgaben zu lösen und Hochgeschwindigkeits-Arbeitsabläufe zu unterstützen, bietet es großes Potenzial für Entwickler und Unternehmen.</p>       <p><em>BytePost-Einordnung: Gemini 3.5 Flash ist ein wichtiger Meilenstein in der Entwicklung von KI-Modellen und bietet großes Potenzial für die Zukunft.</em></p>     ",
+            "content_simple": "       <p>Google hat eine neue Version seiner KI-Plattform Gemini veröffentlicht. Gemini 3.5 Flash kann komplexe Aufgaben lösen und unterstützt Hochgeschwindigkeits-Arbeitsabläufe. Es ist wie ein Supercomputer in deinem Browser.</p>       <p>Mit Gemini 3.5 Flash kannst du zum Beispiel ein modernes Website-Design erstellen, ohne dass du viel Programmieren musst. Es ist noch nicht perfekt, aber es ist ein wichtiger Schritt in die richtige Richtung.</p>     ",
+            "content_pro": "       <h3>Technische Details</h3>       <p>Gemini 3.5 Flash verwendet eine 1M Token-Kontextfenster mit 65k Maximalausgabe-Tokens. Es unterstützt 4 Denkniveaus: minimal, niedrig, mittel und hoch. Die Gedankenübertragung über mehrere Gesprächsrunden erfolgt automatisch.</p>       <p>Die API von Gemini 3.5 Flash kann über Google Antigravity, die Gemini-API in Google AI Studio und Android Studio genutzt werden. Es ist noch nicht offen, ob die API auch über Hugging Face zugänglich sein wird.</p>       <h3>Kritische Einordnung</h3>       <p>Gemini 3.5 Flash ist ein wichtiger Schritt in der Entwicklung von KI-Modellen. Es bietet großes Potenzial für die Zukunft, aber es gibt auch Herausforderungen und Risiken, die berücksichtigt werden müssen.</p>     ",
+            "date": "21.05.2026",
+            "id": "20c7dca2",
+            "url": "https://www.analyticsvidhya.com/blog/2026/05/gemini-3-5-flash/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/20c7dca2.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "business"
+            ],
+            "icon": "🚀",
+            "title": "Scapia erhält 63 Millionen Dollar",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "088734c6",
+                "57ab850e",
+                "bcac8651"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>General Catalyst hat eine 63-Millionen-Dollar-Investition in das indische Startup Scapia geführt. Scapia kombiniert Reisebuchungen mit Co-Branded-Kreditkarten und mobilen Zahlungen. Die Investition verdoppelt den Wert des Unternehmens auf über 500 Millionen Dollar.</p>                  <h3>Details zur Investition</h3>         <p>Die Finanzierungsrunde wurde von General Catalyst, einem der prominentesten US-amerikanischen Risikokapitalgeber, angeführt. Bestehende Investoren wie Peak XV Partners und Z47 beteiligten sich ebenfalls. Die Investition erfolgte trotz einer breiteren Verlangsamung bei Fintech-Deals.</p>                  <h3>Markt und Wettbewerb</h3>         <p>Scapia agiert in einem wachsenden Markt für reiseorientierte Finanzprodukte in Indien. Der Markt wird von Unternehmen wie Niyo und Ixigo dominiert. Global agierende Fintech-Unternehmen wie Revolut sind ebenfalls auf dem indischen Markt tätig.</p>                  <h3>Produkt und Angebot</h3>         <p>Scapia bietet eine App, die Reisebuchungen, Co-Branded-Kreditkarten, UPI-basierte Zahlungen und Einkaufsmöglichkeiten in einem kombiniert. Das Unternehmen hat eine dual-network-Co-Branded-Kreditkarte mit Visa und RuPay, einem indischen Zahlungsnetzwerk, entwickelt.</p>                  <h3>Wachstum und Zukunft</h3>         <p>Scapia plant, die frischen Mittel für die Erweiterung seines Angebots und die Einstellung von AI-entwickelten Ingenieuren und Produkttalenten zu verwenden. Das Unternehmen hat etwa 250 Mitarbeiter und erwartet weiteres Wachstum in dem wettbewerbsintensiven indischen Verbraucher-Fintech-Markt.</p>                  <p><em>BytePost-Einordnung: Die Investition in Scapia unterstreicht die wachsende Bedeutung des Reisemarktes in Indien und die Notwendigkeit von innovativen Finanzprodukten für Verbraucher. Als Entwickler ist es wichtig, die Trends und Entwicklungen in diesem Bereich zu beobachten, um zukünftige Herausforderungen und Chancen zu verstehen.</em></p>     ",
+            "content_simple": "         <p>Ein indisches Startup namens Scapia hat 63 Millionen Dollar von Investoren erhalten. Scapia bietet eine App, mit der man Reisen buchen und bezahlen kann. Die Investition hilft Scapia, sein Angebot zu erweitern und neue Mitarbeiter einzustellen.</p>         <p>Scapia will es Verbrauchern einfacher machen, Reisen zu buchen und zu bezahlen. Die App kombiniert verschiedene Funktionen, wie Reisebuchungen und Zahlungen, in einem.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Scapia verwendet eine Kombination von Technologien, um seine Dienstleistungen anzubieten. Dazu gehören Co-Branded-Kreditkarten, UPI-basierte Zahlungen und eine duale Netzwerk-Co-Branded-Kreditkarte mit Visa und RuPay.</p>                  <h3>Architektur</h3>         <p>Die Architektur von Scapia ist nicht explizit im Originalartikel beschrieben. Es kann jedoch angenommen werden, dass das Unternehmen eine moderne, mikroservice-basierte Architektur verwendet, um seine Dienstleistungen anzubieten.</p>                  <h3>Kritische Einordnung</h3>         <p>Die Investition in Scapia unterstreicht die wachsende Bedeutung des Reisemarktes in Indien und die Notwendigkeit von innovativen Finanzprodukten für Verbraucher. Es bleibt jedoch abzuwarten, ob Scapia in der Lage sein wird, sich in einem wettbewerbsintensiven Markt durchzusetzen.</p>     ",
+            "date": "21.05.2026",
+            "id": "4f474c68",
+            "url": "https://techcrunch.com/2026/05/20/indian-travel-fintech-scapia-more-than-doubles-valuation-to-over-500m-in-a-year/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/4f474c68.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "Nvidia entdeckt neuen 200-Milliarden-Markt",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "088734c6",
+                "57ab850e",
+                "bcac8651"
+            ],
+            "content": "         <h3>Nvidia entdeckt neuen Markt</h3>         <p>Jensen Huang, der CEO von Nvidia, hat einen neuen Markt entdeckt, der nach seinen Vorhersagen ein Volumen von 200 Milliarden Dollar haben könnte. Dieser Markt soll sich auf CPUs für künstliche Intelligenz (KI) spezialisieren. Huang ist bekannt für seine optimistischen Vorhersagen und hat bisher immer wieder recht behalten.</p>         <p>Der neue Markt soll sich auf die Entwicklung von CPUs für KI-Agenten konzentrieren. Diese Agenten benötigen spezielle Prozessoren, um ihre Aufgaben effizient auszuführen. Huang ist überzeugt, dass Nvidia mit seinem neuen CPU-Produkt Vera in diesem Markt eine wichtige Rolle spielen kann.</p>         <p>Die Vera-CPU wurde im März vorgestellt und hat bereits vielversprechende Verkaufszahlen. Huang ist überzeugt, dass die Vera-CPU der Schlüssel zu einem neuen Wachstumsmarkt für Nvidia ist. Er geht davon aus, dass der Markt für KI-CPUs in den nächsten Jahren rapide wachsen wird.</p>         <h3>Warum Nvidia?</h3>         <p>Die Frage ist, warum Nvidia in diesem Markt erfolgreich sein sollte. Die Antwort liegt in der Tatsache, dass Nvidia bereits Erfahrung im Bereich der KI-Entwicklung hat. Die Firma hat bereits verschiedene KI-Produkte entwickelt und ist daher gut positioniert, um in diesem Markt erfolgreich zu sein.</p>         <p>Huang ist überzeugt, dass die Vera-CPU die beste Wahl für KI-Agenten ist, da sie speziell für diese Anwendung entwickelt wurde. Er geht davon aus, dass die Vera-CPU in der Lage ist, Tokens schneller zu verarbeiten als herkömmliche CPUs.</p>         <p>Die Verkaufszahlen für die Vera-CPU sind bereits vielversprechend. Huang hat angekündigt, dass Nvidia bereits 20 Milliarden Dollar an Vera-CPUs verkauft hat. Dies ist ein bedeutender Erfolg für die Firma und unterstreicht die Bedeutung des KI-Marktes.</p>         <h3>Fazit</h3>         <p>Nvidia hat einen neuen Markt entdeckt, der nach den Vorhersagen von Jensen Huang ein Volumen von 200 Milliarden Dollar haben könnte. Die Firma ist gut positioniert, um in diesem Markt erfolgreich zu sein, da sie bereits Erfahrung im Bereich der KI-Entwicklung hat. Die Vera-CPU ist ein wichtiger Schritt in dieser Richtung und hat bereits vielversprechende Verkaufszahlen.</p>         <p><em>BytePost-Einordnung: Der KI-Markt ist ein wichtiger Trend in der Technologie-Branche. Nvidia ist gut positioniert, um in diesem Markt erfolgreich zu sein, da sie bereits Erfahrung im Bereich der KI-Entwicklung hat. Die Vera-CPU ist ein wichtiger Schritt in dieser Richtung und unterstreicht die Bedeutung von KI in der Zukunft.</em></p>     ",
+            "content_simple": "         <p>Nvidia hat einen neuen Markt entdeckt, der nach den Vorhersagen von Jensen Huang ein Volumen von 200 Milliarden Dollar haben könnte. Dieser Markt soll sich auf die Entwicklung von CPUs für künstliche Intelligenz (KI) spezialisieren.</p>         <p>Die Firma ist gut positioniert, um in diesem Markt erfolgreich zu sein, da sie bereits Erfahrung im Bereich der KI-Entwicklung hat. Die Vera-CPU ist ein wichtiger Schritt in dieser Richtung und hat bereits vielversprechende Verkaufszahlen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Vera-CPU ist speziell für die Verarbeitung von Tokens entwickelt worden. Sie ist in der Lage, Tokens schneller zu verarbeiten als herkömmliche CPUs. Dies ist ein wichtiger Vorteil in der KI-Entwicklung, da es die Verarbeitung von großen Datenmengen ermöglicht.</p>         <p>Die Vera-CPU ist auch in der Lage, mit anderen KI-Produkten von Nvidia zu kommunizieren. Dies ermöglicht es, komplexe KI-Systeme zu entwickeln, die auf verschiedenen Hardware-Plattformen laufen können.</p>         <h3>Fazit</h3>         <p>Die Vera-CPU ist ein wichtiger Schritt in der KI-Entwicklung. Sie bietet eine schnelle und effiziente Verarbeitung von Tokens und ermöglicht es, komplexe KI-Systeme zu entwickeln. Nvidia ist gut positioniert, um in diesem Markt erfolgreich zu sein, da sie bereits Erfahrung im Bereich der KI-Entwicklung hat.</p>     ",
+            "date": "21.05.2026",
+            "id": "9f1100f2",
+            "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9f1100f2.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming",
+                "business"
+            ],
+            "icon": "🚀",
+            "title": "Embracer Group teilt sich auf",
+            "source": "GameSpot",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "088734c6",
+                "57ab850e",
+                "bcac8651"
+            ],
+            "content": "         <h3>Neue Wege für bekannte Franchises</h3>         <p>Die Embracer Group wird sich 2027 in zwei separate Unternehmen aufteilen: Fellowship Entertainment und Embracer. Fellowship Entertainment wird den Großteil der bekannten Videospiel-IPs des Verlegers übernehmen. Neben Franchises wie Lord of the Rings und Tomb Raider wird es jedoch auch Platz für andere Titel geben.</p>         <p>Lars Wingefors, Vorsitzender des Aufsichtsrats von Embracer, teilte Investoren mit, dass das Unternehmen nach Partnern sucht, um an einigen der anderen bekannten IPs wie Saints Row, Legacy of Kain, Deus Ex, Red Faction, The Mask, Thief und TimeSplitters zu arbeiten. Wingefors fügte hinzu, dass das Unternehmen auch in der Lage sein wird, mit Partnern an einigen seiner AAA-Franchises wie Kingdom Come: Deliverance, Dead Island, Darksiders, Remnant und Metro zusammenzuarbeiten.</p>         <ul>             <li>Saints Row</li>             <li>Legacy of Kain</li>             <li>Deus Ex</li>             <li>Red Faction</li>             <li>The Mask</li>             <li>Thief</li>             <li>TimeSplitters</li>             <li>Kingdom Come: Deliverance</li>             <li>Dead Island</li>             <li>Darksiders</li>             <li>Remnant</li>             <li>Metro</li>         </ul>         <p>Der letzte Versuch, Deus Ex wiederzubeleben, endete mit der Abmeldung eines Spiels im Rahmen der Kürzungen von Embracer im Jahr 2024. Im Februar 2026 teilte der Saints-Row-Regisseur Chris Stockman mit, dass er glaubt, die Franchise sei tot, nachdem Embracer seine Bemühungen, sie wiederzubeleben, ignoriert hatte.</p>         <p><em>BytePost-Einordnung: Die Aufteilung der Embracer Group in zwei Unternehmen bietet neue Chancen für bekannte Franchises, die bisher nicht so viel Aufmerksamkeit erhalten haben. Es bleibt abzuwarten, wie sich diese Entscheidung auf die Zukunft der Spieleindustrie auswirken wird.</em></p>     ",
+            "content_simple": "         <p>Die Embracer Group teilt sich in zwei Unternehmen auf. Das eine Unternehmen, Fellowship Entertainment, wird sich auf bekannte Spielefranchises wie Lord of the Rings und Tomb Raider konzentrieren. Das andere Unternehmen, Embracer, wird nach Partnern suchen, um an anderen bekannten Spielen wie Deus Ex und TimeSplitters zu arbeiten.</p>         <p>Das bedeutet, dass es vielleicht neue Spiele in diesen Franchises geben wird. Es ist jedoch noch unklar, wie sich diese Entscheidung auf die Zukunft der Spieleindustrie auswirken wird.</p>     ",
+            "content_pro": "         <h3>Strategische Entscheidungen in der Spieleindustrie</h3>         <p>Die Embracer Group hat sich entschieden, sich in zwei Unternehmen aufzuteilen. Diese Entscheidung kann als strategischer Schachzug angesehen werden, um neue Chancen für bekannte Franchises zu schaffen. Durch die Aufteilung des Unternehmens kann Fellowship Entertainment sich auf die Entwicklung und Veröffentlichung von Spielen konzentrieren, während Embracer sich auf die Suche nach Partnern für andere Franchises konzentriert.</p>         <p>Es ist jedoch wichtig zu beachten, dass diese Entscheidung auch Risiken birgt. Die Aufteilung des Unternehmens kann zu einer Verzögerung in der Entwicklung von Spielen führen, und es ist unklar, wie sich die Entscheidung auf die Beziehungen zu den Entwicklern und den Spielern auswirken wird.</p>     ",
+            "date": "21.05.2026",
+            "id": "b06c8c69",
+            "url": "https://www.gamespot.com/articles/embracer-could-bring-back-franchises-like-deus-ex-timesplitters/1100-6540070/?ftag=CAD-01-10abi2f",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/b06c8c69.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
             "icon": "📈",
             "title": "Y Combinator akzeptiert Kanada",
             "source": "Y Combinator Blog",
@@ -202,7 +438,7 @@
                 "sleep": 0
             },
             "image_local": "images/18a84f5c.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "GitHub ermöglicht ab sofort die Remote-Steuerung, was die Art und Weise, wie Entwickler zusammenarbeiten, revolutionieren könnte. Dieser Schritt hat das Potenzial, die Produktivität und Effizienz von Entwicklungsteams weltweit zu verbessern. Mit dieser Funktion steht die Zukunft der Zusammenarbeit im Fokus und Entwickler sollten sich auf die neuen Möglichkeiten einstellen."
         },
         {
@@ -37607,10 +37843,10 @@
         }
     ],
     "bytepulse": {
-        "date": "20.05.2026",
-        "positiv": 56,
-        "neutral": 44,
-        "kritisch": 0,
-        "total": 9
+        "date": "21.05.2026",
+        "positiv": 62,
+        "neutral": 12,
+        "kritisch": 25,
+        "total": 8
     }
 }
