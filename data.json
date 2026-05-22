@@ -2,6 +2,66 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🛰️",
+            "title": "OlmoEarth v1.1: Effizientere Erdbeobachtungsmodelle",
+            "source": "allenai",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "d9de2e58",
+                "088734c6",
+                "57ab850e"
+            ],
+            "content": "         <h3>OlmoEarth v1.1: Eine effizientere Familie von Erdbeobachtungsmodellen</h3>         <p>Das Team hinter OlmoEarth hat inzwischen die Version 1.1 veröffentlicht. Seit der ersten Veröffentlichung im November 2025 haben Partner diese Modelle bereits für eine Vielzahl von Aufgaben eingesetzt, von der Überwachung von Mangrovenwäldern bis hin zur Klassifizierung von Treibern des Waldverlusts und der Erstellung von Karten über den Anbau von bestimmten Feldfrüchten auf Länderebene.</p>         <p>Bei der Verarbeitung von Satellitendaten durch OlmoEarth ist Effizienz entscheidend, um Prognosen über Tausende von Quadratkilometern hinweg zu ermöglichen. Die Kosten für die Berechnung sind dabei der größte Posten. Ein effizienteres Modell bedeutet, dass mehr Partner auf der OlmoEarth-Plattform unterstützt werden können und dass jeder, der OlmoEarth selbst ausführt, von dieser Technologie profitieren kann, ohne enorme Kosten zu verursachen.</p>         <p>Deshalb wurde OlmoEarth v1.1 entwickelt: eine neue Familie von Modellen, die die Rechenkosten um bis zu 3-mal senkt, während die Leistung von OlmoEarth v1 auf einer Mischung aus Forschungsbenchmarks und Aufgaben, die mit Partnern entwickelt wurden, beibehalten wird.</p>         <h3>Effizienzsteigerung durch reduzierte Sequenzlängen</h3>         <p>Die OlmoEarth-Modelle basieren auf Transformer-Architekturen, einer der dominanten Architekturen im Maschinellen Lernen heute. Um Remote-Sensing-Daten zu verarbeiten, werden diese zunächst in eine Sequenz von Token umgewandelt, die das Modell verarbeiten kann. Zwei wichtige Hebel kontrollieren die Effizienz in transformer-basierten Modellen: die Modellgröße und die Token-Sequenzlänge. Die Rechenkosten steigen quadratisch mit der Token-Sequenzlänge, sodass sogar kleine Reduktionen die Kosten für das Laufen des Modells erheblich senken können.</p>         <p>MACs (multiply-accumulate operations) schätzen die für einen Vorwärts-Pass durch das Modell benötigte Rechenleistung; geringere MACs bedeuten in der Regel billigere und schnellere Inferenz.</p>         <h3>Token-Design</h3>         <p>Das Entwerfen von Token wirft eine wichtige Frage für transformer-basierte Remote-Sensing-Modelle auf: Was sollte ein Token darstellen? Nehmen wir Sentinel-2-Bilder, ein häufig verarbeiteter Modus. Ein Sentinel-2-Eingabe-Token besteht aus einer Höhe und Breite (H, W, die die latitudinale und longitudinale Pixel darstellen), einer zeitlichen Dimension T und 12 Sentinel-2-Kanälen ([H, W, T, D=12]).</p>         <p>Bisher werden die Daten in auflösungsabhängige Patches unterteilt. Konkret bedeutet dies, dass ein bestimmtes räumliches Patches-Größe p gewählt wird und das gesamte Sentinel-2-Bild in Patches der Größe p x p unterteilt wird. Für jeden Patch wird ein Token pro Zeitpunkt pro Auflösung erstellt. So erhält ein Sentinel-2-Eingabe-Token mit 2 Zeitpunkten 6 Token pro Patch (2 Zeitpunkte x 3 Auflösungen, 10m, 20m und 60m). Insgesamt ergibt ein [H, W, T, D=12]-Sentinel-2-Eingabe-Token H/p x W/p x T x 3 Token.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von OlmoEarth v1.1 ist ein wichtiger Schritt in Richtung effizienterer Erdbeobachtungsmodelle. Durch die Reduzierung der Rechenkosten kann das Modell von mehr Partnern genutzt werden und somit einen größeren Einfluss auf die Umweltüberwachung haben.</em></p>     ",
+            "content_simple": "         <p>OlmoEarth ist ein Tool, das Satellitendaten verwendet, um die Erde zu beobachten. Die Version 1.1 ist effizienter und kann somit mehr Daten verarbeiten, ohne die Kosten zu erhöhen. Dies bedeutet, dass mehr Menschen und Organisationen Zugang zu diesem Tool haben und es nutzen können, um die Umwelt zu überwachen.</p>         <p>Die Entwicklung von OlmoEarth v1.1 ist ein wichtiger Schritt in Richtung einer besseren Umweltüberwachung. Durch die Kombination von Satellitendaten und künstlicher Intelligenz kann OlmoEarth Daten über die Erde sammeln und analysieren, um Trends und Veränderungen zu erkennen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die OlmoEarth-Modelle basieren auf Transformer-Architekturen, die für die Verarbeitung von Sequenzen von Token entwickelt wurden. Die Token-Sequenzlänge ist ein wichtiger Faktor, der die Rechenkosten beeinflusst. Durch die Reduzierung der Token-Sequenzlänge kann die Rechenleistung gesenkt werden, ohne die Leistung des Modells zu beeinträchtigen.</p>         <p>Die Sentinel-2-Daten werden in Patches unterteilt, um die Verarbeitung durch das Modell zu ermöglichen. Jedes Patch wird in ein Token pro Zeitpunkt pro Auflösung umgewandelt. Die Kombination dieser Token ermöglicht es dem Modell, die Daten zu analysieren und Trends zu erkennen.</p>         <h3>Code-Beispiel</h3>         <pre><code>             # Beispielcode für die Verarbeitung von Sentinel-2-Daten             import numpy as np             from olmoearth import OlmoEarth              # Lade die Sentinel-2-Daten             sentinel2_data = np.load('sentinel2_data.npy')              # Teile die Daten in Patches auf             patches = np.split(sentinel2_data, 10)              # Erstelle ein Token pro Patch             tokens = []             for patch in patches:                 token = OlmoEarth(patch)                 tokens.append(token)              # Verarbeite die Token durch das Modell             predictions = OlmoEarth.predict(tokens)         </code></pre>     ",
+            "date": "22.05.2026",
+            "id": "2cf32484",
+            "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2cf32484.jpg",
+            "pick": true,
+            "pick_reason": "Die neueste Version von OlmoEarth, 1.1, revolutioniert die Erdbeobachtung mit effizienteren Modellen. Dies ist ein wichtiger Schritt für Entwickler, die in der KI- und Umweltforschung tätig sind, da sie nun präzisere Ergebnisse und bessere Ressourcennutzung erwarten können. Durch diese Entwicklung können Entwickler ihre Projekte auf ein neues Level heben und die Umweltforschung vorantreiben."
+        },
+        {
+            "cat": [
+                "business",
+                "gaming"
+            ],
+            "icon": "📈",
+            "title": "Nintendo-Aktien steigen durch KI-Müdigkeit",
+            "source": "Golem.de",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "2cf32484",
+                "088734c6",
+                "57ab850e"
+            ],
+            "content": "         <h3>Wirtschaft: Nintendo-Aktien profitieren von KI-Müdigkeit</h3>         <p>Bedenken von Investoren über die Nachhaltigkeit der Kursgewinne im KI-Sektor kommen Nintendo und anderen japanischen Spieleherstellern zugute. Die Investoren zeigen sich skeptisch gegenüber den jüngsten Kursgewinnen im KI-Sektor und suchen nach alternativen Anlagemöglichkeiten.</p>         <p>Die Nintendo-Aktie hat von dieser Entwicklung profitiert und ist gestiegen. Die Firma hat sich in den letzten Jahren zu einem der führenden Spielehersteller entwickelt und verfügt über eine breite Palette von erfolgreichen Spielen und Franchises.</p>         <h3>Weitere Informationen</h3>         <p>Um der Nutzung von Golem.de mit Cookies zustimmen zu können, muss Javascript in Ihrem Browser aktiviert sein. Um der Nutzung von Golem.de mit Cookies zustimmen zu können, müssen Cookies in Ihrem Browser aktiviert sein.</p>         <p>Die Zustimmung in einem iFrame ist nicht möglich. Seite in eigenem Fenster öffnen. Der Zustimmungs-Dialog konnte nicht korrekt geladen werden, eine Zustimmung gilt nur vorläufig.</p>         <p>Die Möglichkeit zum Widerruf finden Sie in unserer Datenschutz­erklärung oder über den Link Cookies & Tracking am Ende jeder Seite.</p>         <p>Mit Golem pur ab 3 Euro pro Monat können Sie Golem.de ohne Analyse- und Werbe­cookies nutzen, es kommen nur für unser Angebot erforderliche Cookies zum Einsatz.</p>         <p>Wir erheben personenbezogene Daten und übermitteln diese auch an bis zu 160 Drittanbieter, die uns helfen, unsere Webseite und Angebote zu verbessern und zu finanzieren.</p>         <ul>             <li>Informationen auf einem Gerät speichern und/oder abrufen</li>             <li>Personalisierte Anzeigen und Inhalte, Anzeigen- und Inhaltsmessungen, Erkenntnisse über Zielgruppen und Produktentwicklungen</li>             <li>Genaue Standortdaten verwenden</li>         </ul>         <p>Die Verarbeitung der auf Ihrem Gerät gespeicherten Informationen - z. B. Cookies oder persönliche Identifikatoren wie IP-Adressen - sowie Ihres individuellen Nutzungsverhaltens erfolgt dabei zu den folgenden Zwecken:</p>         <p>Einige der wichtigsten Fakten und Zahlen sind:</p>         <p>Es können bis zu 160 Drittanbieter involviert sein, die uns helfen, unsere Webseite und Angebote zu verbessern und zu finanzieren.</p>         <p>Die Nintendo-Aktie hat von der KI-Müdigkeit profitiert und ist gestiegen.</p>         <p>Die Firma hat sich in den letzten Jahren zu einem der führenden Spielehersteller entwickelt und verfügt über eine breite Palette von erfolgreichen Spielen und Franchises.</p>         <p>Die Investoren zeigen sich skeptisch gegenüber den jüngsten Kursgewinnen im KI-Sektor und suchen nach alternativen Anlagemöglichkeiten.</p>         <p><em>BytePost-Einordnung: Die KI-Müdigkeit der Investoren kommt Nintendo und anderen japanischen Spieleherstellern zugute. Die Firma hat sich in den letzten Jahren zu einem der führenden Spielehersteller entwickelt und verfügt über eine breite Palette von erfolgreichen Spielen und Franchises.</em></p>     ",
+            "content_simple": "         <p>Die Aktien von Nintendo steigen, weil Investoren skeptisch gegenüber dem KI-Sektor sind. Sie suchen nach anderen Möglichkeiten, ihr Geld zu investieren.</p>         <p>Die Firma Nintendo hat viele erfolgreiche Spiele und ist zu einem der führenden Spielehersteller geworden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Verarbeitung von Daten durch Drittanbieter erfolgt zu verschiedenen Zwecken, wie z. B. der Speicherung von Informationen auf einem Gerät oder der Verwendung von genauen Standortdaten.</p>         <p>Die Nutzung von Cookies und persönlichen Identifikatoren wie IP-Adressen ist dabei von Bedeutung.</p>         <p>Die Investoren suchen nach alternativen Anlagemöglichkeiten, weil sie skeptisch gegenüber den jüngsten Kursgewinnen im KI-Sektor sind.</p>         <p>Die Nintendo-Aktie hat von dieser Entwicklung profitiert und ist gestiegen.</p>         <p>Die Firma hat sich in den letzten Jahren zu einem der führenden Spielehersteller entwickelt und verfügt über eine breite Palette von erfolgreichen Spielen und Franchises.</p>     ",
+            "date": "22.05.2026",
+            "id": "d9de2e58",
+            "url": "https://www.golem.de/news/wirtschaft-nintendo-aktien-profitieren-von-ki-muedigkeit-der-investoren-2605-208836.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d9de2e58.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev"
             ],
             "icon": "📊",
@@ -85,7 +145,7 @@
                 "sleep": 0
             },
             "image_local": "images/bcac8651.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Eine Revolution im Bereich der Code-Sicherheit ist im Anmarsch: Mythos Preview verändert das Spiel für Entwickler. Mit diesem innovativen Ansatz kann die Sicherheit von Codes auf ein völlig neues Level gehoben werden, was besonders in Zeiten immer komplexerer Angriffe von entscheidender Bedeutung ist. Dies könnte den Weg für eine neue Ära der Cybersicherheit ebnen, in der Entwickler ihre Anwendungen und Daten effektiver schützen können."
         },
         {
@@ -37843,10 +37903,10 @@
         }
     ],
     "bytepulse": {
-        "date": "21.05.2026",
-        "positiv": 62,
-        "neutral": 12,
-        "kritisch": 25,
-        "total": 8
+        "date": "22.05.2026",
+        "positiv": 50,
+        "neutral": 50,
+        "kritisch": 0,
+        "total": 2
     }
 }
