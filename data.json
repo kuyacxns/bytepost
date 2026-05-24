@@ -2,6 +2,240 @@
     "articles": [
         {
             "cat": [
+                "dev"
+            ],
+            "icon": "🔍",
+            "title": "CERN-Rat wählt FCC-ee",
+            "source": "CERN",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "b1bbfde5",
+                "c59e1fe8",
+                "239db554"
+            ],
+            "content": "         <h3>CERN-Rat beschließt Strategie-Update</h3>         <p>Der CERN-Rat hat den Future Circular Collider (FCC-ee) als bevorzugtes Nachfolgeprojekt für den Large Hadron Collider (LHC) festgelegt. Diese Entscheidung ist ein wichtiger Schritt in der Entwicklung der Teilchenphysik und könnte zu neuen Entdeckungen in diesem Bereich führen.</p>         <p>Der FCC-ee ist ein geplanter Teilchenbeschleuniger, der den LHC ersetzen soll. Er soll eine höhere Energie als der LHC haben und es ermöglichen, neue Teilchen und Kräfte zu entdecken. Die finale Entscheidung über die Realisierung des FCC-ee wird für 2028 erwartet.</p>         <h3>Die Bedeutung des FCC-ee</h3>         <p>Der FCC-ee ist ein wichtiger Schritt in der Entwicklung der Teilchenphysik, da er es ermöglichen wird, neue Teilchen und Kräfte zu entdecken. Er soll auch die Forschung auf dem Gebiet der Higgs-Teilchen und der dunklen Materie vorantreiben.</p>         <p>Die Entscheidung des CERN-Rats ist ein wichtiger Schritt in der Realisierung des FCC-ee. Sie zeigt, dass die wissenschaftliche Gemeinschaft bereit ist, in die Zukunft der Teilchenphysik zu investieren und neue Entdeckungen zu ermöglichen.</p>         <p><em>BytePost-Einordnung: Die Entscheidung des CERN-Rats ist ein wichtiger Schritt in der Entwicklung der Teilchenphysik. Der FCC-ee bietet die Möglichkeit, neue Teilchen und Kräfte zu entdecken und die Forschung auf dem Gebiet der Higgs-Teilchen und der dunklen Materie voranzutreiben.</em></p>     ",
+            "content_simple": "         <p>Der CERN-Rat hat entschieden, dass ein neuer Teilchenbeschleuniger, der FCC-ee, den aktuellen LHC ersetzen soll. Dieser neue Beschleuniger soll noch mehr Energie haben und es ermöglichen, neue Teilchen und Kräfte zu entdecken.</p>         <p>Die Entscheidung ist ein wichtiger Schritt in der Entwicklung der Teilchenphysik und bietet die Möglichkeit, neue Entdeckungen zu machen.</p>     ",
+            "content_pro": "         <h3>Technische Details des FCC-ee</h3>         <p>Der FCC-ee soll eine höhere Energie als der LHC haben und es ermöglichen, neue Teilchen und Kräfte zu entdecken. Er soll auch die Forschung auf dem Gebiet der Higgs-Teilchen und der dunklen Materie vorantreiben.</p>         <p>Der FCC-ee wird eine neue Generation von Teilchenbeschleunigern darstellen, die es ermöglichen, noch präzisere Messungen durchzuführen und neue Phänomene zu beobachten.</p>     ",
+            "date": "24.05.2026",
+            "id": "e9454af3",
+            "url": "https://www.heise.de/news/CERN-Rat-beschliesst-Strategie-Update-FCC-ee-soll-LHC-Nachfolger-werden-11305178.html?wt_mc=rss.red.ho.top-news.atom.beitrag.beitrag",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e9454af3.jpg",
+            "pick": true,
+            "pick_reason": "Der CERN-Rat hat soeben FCC-ee gewählt, ein Vorhaben mit tiefgreifenden Auswirkungen auf die Zukunft der Physik und möglicherweise revolutionären Entdeckungen. Diese Entscheidung könnte den Lauf der Geschichte in der Teilchenphysik verändern und Entwickler sollten darauf achten, wie dies zukünftige Technologien beeinflussen könnte. Die Wahl von FCC-ee markiert einen neuen Meilenstein in der Geschichte des CERN und könnte bahnbrechende Forschungsergebnisse mit sich bringen, dieEntwickler nicht ignorieren dürfen."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Spotify baut natürliche Schnittstelle für Ads API",
+            "source": "Spotify Engineering",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Einführung</h3>         <p>Spotify hat eine natürliche Schnittstelle zur Spotify Ads API entwickelt. Diese Schnittstelle ermöglicht es Benutzern, Anzeigenkampagnen mit einfachen Sprachbefehlen zu erstellen. Die Schnittstelle basiert auf der Claude-Code-Plugin-Architektur und verwendet Markdown-Dateien und eine OpenAPI-Spezifikation.</p>         <h3>Die Plugin-Architektur</h3>         <p>Die Plugin-Architektur besteht aus vier Komponententypen: Skills, Agents, Hooks und Settings. Skills definieren die Befehle, Agents verarbeiten die natürliche Sprache, Hooks interceptieren Tool-Aufrufe und Settings speichern Benutzereinstellungen.</p>         <h3>Die Funktionsweise</h3>         <p>Der Benutzer kann Anzeigenkampagnen mit einfachen Sprachbefehlen wie \"Erstelle eine Audio-Kampagne für 25-44-Jährige in den USA mit einem Budget von 100 Dollar pro Tag\" erstellen. Der Agent decomponiert diesen Befehl in die notwendigen API-Aufrufe, um die Kampagne zu erstellen.</p>         <h3>Warum diese Technologie-Wahl</h3>         <p>Die Entscheidung für Claude Code und die OpenAPI-Spezifikation ermöglichte es, die Schnittstelle schnell und einfach zu entwickeln. Die Verwendung von Markdown-Dateien und der OpenAPI-Spezifikation ermöglicht es, die Schnittstelle einfach zu konfigurieren und zu erweitern.</p>         <p>Die Spotify Ads API v3 hat über 30 Ressourcentypen, verschachtelte Zielgruppenstrukturen und mehrstufige Entitäts-Hierarchien, was die Erstellung von Anzeigenkampagnen kompliziert macht. Die neue Schnittstelle soll diese Komplexität reduzieren und es Benutzern ermöglichen, Anzeigenkampagnen mit einfachen Sprachbefehlen zu erstellen.</p>         <p><em>BytePost-Einordnung: Die Entwicklung einer natürlichen Schnittstelle zur Spotify Ads API ist ein wichtiger Schritt zur Vereinfachung der Anzeigenkampagne-Erstellung. Die Verwendung von Claude Code und der OpenAPI-Spezifikation ermöglicht es, die Schnittstelle schnell und einfach zu entwickeln und zu erweitern.</em></p>     ",
+            "content_simple": "         <p>Spotify hat eine neue Schnittstelle entwickelt, die es ermöglicht, Anzeigenkampagnen mit einfachen Sprachbefehlen zu erstellen. Statt komplexer Befehle oder Code kann der Benutzer einfach sagen, was er will, und die Schnittstelle erstellt die Anzeigenkampagne automatisch.</p>         <p>Die Schnittstelle basiert auf der Claude-Code-Plugin-Architektur und verwendet Markdown-Dateien und eine OpenAPI-Spezifikation. Dies ermöglicht es, die Schnittstelle einfach zu konfigurieren und zu erweitern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Plugin-Architektur besteht aus vier Komponententypen: Skills, Agents, Hooks und Settings. Skills definieren die Befehle, Agents verarbeiten die natürliche Sprache, Hooks interceptieren Tool-Aufrufe und Settings speichern Benutzereinstellungen.</p>         <h3>OpenAPI-Spezifikation</h3>         <p>Die OpenAPI-Spezifikation definiert die API-Endpunkte und die notwendigen Parameter. Die Schnittstelle verwendet diese Spezifikation, um die API-Aufrufe zu generieren.</p>         <h3>Claude-Code-Plugin-Architektur</h3>         <p>Die Claude-Code-Plugin-Architektur ermöglicht es, die Schnittstelle einfach zu konfigurieren und zu erweitern. Die Verwendung von Markdown-Dateien und der OpenAPI-Spezifikation ermöglicht es, die Schnittstelle ohne komplizierten Code zu erstellen.</p>         <h3>Kritische Einordnung</h3>         <p>Die Entwicklung einer natürlichen Schnittstelle zur Spotify Ads API ist ein wichtiger Schritt zur Vereinfachung der Anzeigenkampagne-Erstellung. Die Verwendung von Claude Code und der OpenAPI-Spezifikation ermöglicht es, die Schnittstelle schnell und einfach zu entwickeln und zu erweitern. Es bleibt jedoch zu sehen, wie stabil und fehlerfrei die Schnittstelle in der Praxis ist.</p>     ",
+            "date": "24.05.2026",
+            "id": "b1bbfde5",
+            "url": "https://engineering.atspotify.com/2026/5/spotify-ads-api-claude-plugins/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/b1bbfde5.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚨",
+            "title": "Trend Micro Apex One unter Angriff",
+            "source": "CISA",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "e9454af3",
+                "b1bbfde5",
+                "239db554"
+            ],
+            "content": "         <h3>Sicherheitswarnung für Entwickler</h3>         <p>Die CISA (Cybersecurity and Infrastructure Security Agency) hat vor Sicherheitslücken in den Produkten Trend Micro Apex One und Langflow gewarnt. Diese Lücken können von Cyberkriminellen ausgenutzt werden, um Angriffe durchzuführen.</p>         <p>Die Sicherheitslücken in Trend Micro Apex One und Langflow ermöglichen es Angreifern, auf die Systeme zuzugreifen und Schaden anzurichten. Die CISA rät daher dringend, die entsprechenden Patches und Updates zu installieren, um die Sicherheit der Systeme zu gewährleisten.</p>         <h3>Empfehlungen für Entwickler</h3>         <p>Um sich vor Angriffen zu schützen, sollten Entwickler die folgenden Schritte unternehmen:</p>         <ul>             <li>Patches und Updates für Trend Micro Apex One und Langflow installieren</li>             <li>Regelmäßig die Systeme auf Sicherheitslücken überprüfen</li>             <li>Starke Passwörter und Authentifizierungsmechanismen verwenden</li>         </ul>         <p>Die CISA betont, dass die Sicherheit von Softwares und Systemen ein wichtiger Aspekt der Cybersicherheit ist und dass Entwickler und Nutzer gemeinsam daran arbeiten müssen, um die Sicherheit zu gewährleisten.</p>         <p><em>BytePost-Einordnung: Die Sicherheitslücken in Trend Micro Apex One und Langflow sind ein ernstes Problem, das von Entwicklern und Nutzern schnellstmöglich angegangen werden muss. Durch die Installation von Patches und Updates kann die Sicherheit der Systeme gewährleistet werden und das Risiko von Angriffen minimiert werden.</em></p>     ",
+            "content_simple": "         <p>Die CISA hat vor Sicherheitslücken in den Produkten Trend Micro Apex One und Langflow gewarnt. Diese Lücken können von Cyberkriminellen ausgenutzt werden, um Angriffe durchzuführen.</p>         <p>Um sich vor Angriffen zu schützen, sollten Entwickler die entsprechenden Patches und Updates installieren und regelmäßig die Systeme auf Sicherheitslücken überprüfen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Sicherheitslücken in Trend Micro Apex One und Langflow ermöglichen es Angreifern, auf die Systeme zuzugreifen und Schaden anzurichten. Die Lücken liegen in der Implementierung der Software und können durch die Installation von Patches und Updates behoben werden.</p>         <h3>Empfehlungen für Entwickler</h3>         <p>Um sich vor Angriffen zu schützen, sollten Entwickler die folgenden Schritte unternehmen:</p>         <p>Regelmäßig die Systeme auf Sicherheitslücken überprüfen und starke Passwörter und Authentifizierungsmechanismen verwenden.</p>         <p>Die Verwendung von sicheren Protokollen und Datenstrukturen kann auch dazu beitragen, die Sicherheit der Systeme zu gewährleisten.</p>     ",
+            "date": "24.05.2026",
+            "id": "c59e1fe8",
+            "url": "https://www.heise.de/news/Schwachstellen-in-Trend-Micro-Apex-One-und-Langflow-unter-Beschuss-11303311.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c59e1fe8.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "KI-Pionierunternehmen setzen auf Betriebsmodell",
+            "source": "Hashicorp",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "e9454af3",
+                "b1bbfde5",
+                "c59e1fe8"
+            ],
+            "content": "         <h3>Die große KI-Kluft</h3>         <p>Die Unternehmen, die in der KI-Branche führend sind, experimentieren nicht mehr mit künstlicher Intelligenz, sondern haben sie bereits in ihr Betriebsmodell integriert. Dies ist der Hauptunterschied zwischen den Marktführern und den anderen Unternehmen.</p>         <p>Die Unternehmen, die ihre KI-Initiativen erfolgreich umgesetzt haben, haben erkannt, dass künstliche Intelligenz nicht nur ein Werkzeug ist, sondern ein integraler Bestandteil ihres Geschäftsmodells. Sie haben eine KI-Strategie entwickelt, die auf ihre spezifischen Bedürfnisse und Ziele zugeschnitten ist.</p>         <h3>Was unterscheidet die Marktführer?</h3>         <p>Die Marktführer im KI-Bereich haben einige gemeinsame Merkmale, die sie von anderen Unternehmen abheben. Dazu gehören:</p>         <ul>             <li>Eine klare KI-Strategie, die auf ihre Geschäftsziele ausgerichtet ist</li>             <li>Eine starke Führung, die die Bedeutung von KI versteht und ihre Umsetzung unterstützt</li>             <li>Eine Kultur, die Innovation und Experimentierung fördert</li>             <li>Eine Investition in die richtigen Technologien und Tools, um ihre KI-Initiativen zu unterstützen</li>         </ul>         <p>Wenn du ein Entwickler bist, der an KI- Projekten arbeitet, solltest du dich fragen, ob dein Unternehmen diese Merkmale aufweist. Wenn nicht, solltest du dich fragen, was du tun kannst, um deine Firma auf den richtigen Weg zu bringen.</p>         <p><em>BytePost-Einordnung: Die Unternehmen, die ihre KI-Initiativen erfolgreich umgesetzt haben, haben erkannt, dass künstliche Intelligenz ein integraler Bestandteil ihres Geschäftsmodells ist. Als Entwickler solltest du dich fragen, ob dein Unternehmen diese Erkenntnis bereits geteilt hat und wie du dazu beitragen kannst, deine Firma auf den richtigen Weg zu bringen.</em></p>     ",
+            "content_simple": "         <p>Die Unternehmen, die in der KI-Branche führend sind, haben erkannt, dass künstliche Intelligenz nicht nur ein Werkzeug ist, sondern ein integraler Bestandteil ihres Geschäftsmodells. Sie haben eine KI-Strategie entwickelt, die auf ihre spezifischen Bedürfnisse und Ziele zugeschnitten ist.</p>         <p>Das bedeutet, dass sie ihre KI-Initiativen nicht mehr experimentell angehen, sondern sie bereits in ihr Betriebsmodell integriert haben. Dies ist der Hauptunterschied zwischen den Marktführern und den anderen Unternehmen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Unternehmen, die ihre KI-Initiativen erfolgreich umgesetzt haben, haben eine KI-Architektur entwickelt, die auf ihre spezifischen Anforderungen zugeschnitten ist. Dazu gehören die Auswahl der richtigen Algorithmen, die Implementierung von Data-Pipelines und die Einrichtung von Feedback-Schleifen.</p>         <p>Ein wichtiger Aspekt ist die Integration von KI in bestehende Systeme und Prozesse. Dies erfordert eine sorgfältige Analyse der Anforderungen und die Auswahl der richtigen Technologien. Zum Beispiel kann die Verwendung von Containerisierung und Orchestrierung helfen, die KI-Workloads zu skalieren und zu verwalten.</p>         <p>Ein weiterer wichtiger Aspekt ist die Sicherheit von KI-Systemen. Dies erfordert die Implementierung von Sicherheitsmaßnahmen, wie zum Beispiel die Verschlüsselung von Daten und die Authentifizierung von Benutzern.</p>     ",
+            "date": "24.05.2026",
+            "id": "239db554",
+            "url": "https://www.hashicorp.com/blog/the-great-ai-divide-why-early-leaders-embrace-an-ai-operating-model",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/239db554.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data",
+                "dev",
+                "ki"
+            ],
+            "icon": "📊",
+            "title": "Data Engineering Weekly",
+            "source": "Data Engineering Weekly",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "e9454af3",
+                "b1bbfde5",
+                "c59e1fe8"
+            ],
+            "content": "<h3>Data Engineering Weekly #269</h3><p>Die Weekly Data Engineering Newsletter gibt es jetzt auch in deutscher Übersetzung. In dieser Ausgabe erfahren Sie, wie composable Architekturen Teams helfen, schneller zu entwickeln, warum Datenqualität wichtig ist und wie Sie Probleme mit Observability lösen können.</p><p>Meta schreibt über den Aufbau eines AI-Second-Brains für 60.000 Wissensarbeiter. Der Artikel ist ein Beispiel dafür, wie Data Engineering zu Context Engineering wird und einen größeren Einfluss auf die Industrie hat.</p><p>Salesforce berichtet darüber, wie Informatica ein Multi-Agenten-AI-System aufgebaut hat, um Daten-Workflows von Monaten auf Tage zu reduzieren. Der Ansatz verwendet eine Multi-Agenten-Architektur, um die Fragmentierung von Systemen zu überwinden.</p><p>Netflix schreibt über die Demokratisierung von Machine Learning bei Netflix. Die Firma hat ein Metadata-Service entwickelt, um Events in einer einheitlichen AIP-URI-Schemata zu erfassen und einen Model Lifecycle Graph in Datomic zu materialisieren.</p><p>Confluent vergleicht Stream-Processing und Real-Time-OLAP. Der Artikel erklärt, wie Stream-Prozessoren Daten in Bewegung auswerten und OLAP-Engines Daten im Ruhezustand auswerten.</p><p>Kirill Bobrov schreibt über die Macht von Data Sketches. Der Artikel erklärt, wie Apache DataSketches wie Theta, HyperLogLog, CPC, KLL und Frequent Items verwendet werden können, um Cardinality- und Quantile-Abfragen zu beschleunigen.</p><p>Das sind nur einige Beispiele aus der aktuellen Ausgabe von Data Engineering Weekly. Wenn Sie mehr erfahren möchten, können Sie den Newsletter kostenlos abonnieren.</p><p><em>BytePost-Einordnung: Die Entwicklung von Data Engineering zu Context Engineering ist ein wichtiger Trend in der Industrie. Durch den Einsatz von AI und Machine Learning können Unternehmen ihre Daten besser nutzen und ihre Geschäftsprozesse optimieren.</em></p>",
+            "content_simple": "<p>Data Engineering ist wichtig für Unternehmen, um ihre Daten zu nutzen und ihre Geschäftsprozesse zu optimieren. Durch den Einsatz von AI und Machine Learning können Unternehmen ihre Daten besser analysieren und Entscheidungen treffen.</p><p>Es gibt viele verschiedene Ansätze, um Data Engineering zu betreiben. Einige Unternehmen nutzen composable Architekturen, um schneller zu entwickeln, andere nutzen Multi-Agenten-AI-Systeme, um Daten-Workflows zu reduzieren.</p>",
+            "content_pro": "<h3>Technische Details</h3><p>Die Entwicklung von Data Engineering zu Context Engineering ist ein wichtiger Trend in der Industrie. Durch den Einsatz von AI und Machine Learning können Unternehmen ihre Daten besser nutzen und ihre Geschäftsprozesse optimieren.</p><p>Einige der Technologien, die in diesem Bereich verwendet werden, sind Apache DataSketches, Datomic und GraphQL. Diese Technologien ermöglichen es Unternehmen, ihre Daten in Echtzeit zu analysieren und Entscheidungen zu treffen.</p><p>Ein Beispiel für die Anwendung von Data Engineering ist die Entwicklung eines AI-Second-Brains für 60.000 Wissensarbeiter bei Meta. Dieser Ansatz verwendet eine Multi-Agenten-Architektur, um die Fragmentierung von Systemen zu überwinden.</p>",
+            "date": "24.05.2026",
+            "id": "eb151d02",
+            "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-269",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/eb151d02.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "UX-Design: Vier Ebenen der Kundenverständnisses",
+            "source": "Smashing Magazine",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "e9454af3",
+                "b1bbfde5",
+                "c59e1fe8"
+            ],
+            "content": " <h3>Vier Ebenen der Kundenverständnisses</h3> <p>Was Menschen sagen, fühlen, denken und tun, sind oft sehr unterschiedliche Dinge. Um die zugrunde liegenden Gründe für das Nutzerverhalten zu verstehen, hilft es, über die Oberfläche hinauszusehen und versteckte Motivationen, Ursachen und die verschiedenen Ebenen der Realität zu erkunden, die bestimmen, wie Menschen handeln.</p> <p>Viele Unternehmen denken, dass sie ziemlich gut wissen, was ihre Benutzer wollen und benötigen und wie sie ihre Entscheidungen treffen. Die meisten Male sind dies jedoch nur große Annahmen und große Vermutungen - mit wenig echten Beweisen, um sie zu unterstützen. In der Praxis mögen offensichtliche Gründe wahr sein, aber sie malen selten das vollständige Bild.</p> <p>Um unsere Kunden zu verstehen, müssen wir über vier Ebenen des Kundenverständnisses hinausgehen, wie Hannah Shamji es nennt. Es ist eine nützliche Art, über die zugrunde liegenden Gründe für das Nutzerverhalten, versteckte Motivationen und die komplexen Ebenen der realen Welt nachzudenken, die oft übersehen werden.</p> <p>Die vier Ebenen des Kundenverständnisses sind: Was Menschen sagen, denken oder fühlen, tun und warum sie es tun. Um dies zu verstehen, sollten wir nicht nur das fragen, was Menschen denken, sondern auch, was sie tun und warum sie es tun.</p> <h3>Warum Menschen nicht immer ehrlich sind</h3> <p>Es mag vernünftig erscheinen, Kunden zu fragen, was sie denken, und Schlussfolgerungen daraus zu ziehen. Aber es ist selten eine effektive Methode, um handlungsfähige Antworten zu erhalten. Tatsächlich sind das, was Menschen denken, fühlen, sagen und tun, oft sehr unterschiedliche Dinge.</p> <p>Wie Erika Hall schrieb, ist das direkte Fragen nach einer Antwort die schlechteste Möglichkeit, eine wahre und nützliche Antwort auf diese Frage zu erhalten. Wir verstehen nicht immer oder sind uns unserer wahren Motivationen bewusst. Wir setzen unsere eigene Interpretation und unseren eigenen Kontext auf Fragen.</p> <p>Um dies zu überwinden, sollten wir versuchen, tiefer zu gehen und die verschiedenen Ebenen des Kundenverständnisses zu erkunden.</p> <h3>Die vier Ebenen des Kundenverständnisses</h3> <p>Um ein realistischeres und weniger voreingenommenes Bild der Kundenbedürfnisse zu erhalten, müssen wir ein breiteres Bild über vier Ebenen hinausgehen:</p> <ul>     <li>Was sie sagen: Leichter zu sammeln, aber meist nur Meinungen und am wenigsten zuverlässig.</li>     <li>Was sie denken und fühlen: Gibt mehr Kontext, aber ist immer noch stark von Erinnerungen und persönlichen Vorlieben geprägt.</li>     <li>Was sie tun: Wir studieren tatsächliches Verhalten, Aktionen, die getätigt oder ausgelassen werden, Nutzungsdaten und Analysen.</li>     <li>Warum sie es tun: Wir müssen die zugrunde liegenden Gründe für das Nutzerverhalten verstehen.</li> </ul> <p>Indem wir diese vier Ebenen des Kundenverständnisses verstehen, können wir ein besserer Überblick über die Bedürfnisse und Motivationen unserer Kunden erhalten.</p> <p><em>BytePost-Einordnung: Durch das Verständnis der vier Ebenen des Kundenverständnisses können Entwickler bessere Entscheidungen treffen und Produkte entwickeln, die den Bedürfnissen ihrer Kunden entsprechen.</em></p> ",
+            "content_simple": " <p>Wenn du wissen möchtest, was deine Kunden wollen, könntest du sie einfach fragen. Aber das funktioniert nicht immer. Menschen sagen und tun oft unterschiedliche Dinge. Um deine Kunden besser zu verstehen, musst du tiefer in ihre Motivationen und Bedürfnisse eintauchen.</p> <p>Es gibt vier Ebenen, auf denen du deine Kunden verstehen kannst: Was sie sagen, was sie denken und fühlen, was sie tun und warum sie es tun. Indem du diese Ebenen verstehst, kannst du bessere Entscheidungen treffen und Produkte entwickeln, die deinen Kunden gefallen.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Um die vier Ebenen des Kundenverständnisses technisch umzusetzen, können verschiedene Methoden und Werkzeuge eingesetzt werden. Dazu gehören User-Research, Interviews, Nutzungsdaten und Analysen.</p> <p>Ein wichtiger Aspekt ist die Verwendung von Daten und Analysen, um das tatsächliche Verhalten der Kunden zu verstehen. Dazu können Tools wie Google Analytics oder andere Analyse-Tools eingesetzt werden.</p> <h3>Architektur-Details</h3> <p>Die Architektur einer Anwendung oder eines Produkts sollte auf die Bedürfnisse der Kunden ausgerichtet sein. Dazu müssen die vier Ebenen des Kundenverständnisses berücksichtigt werden.</p> <p>Ein Beispiel dafür ist die Verwendung von Design-Patterns, die auf die Bedürfnisse der Kunden ausgerichtet sind. Dazu können Patterns wie das Prinzip der geringsten Überraschung oder das Prinzip der kognitiven Belastung eingesetzt werden.</p> ",
+            "date": "24.05.2026",
+            "id": "416b1a1a",
+            "url": "https://smashingmagazine.com/2026/05/four-levels-customer-understanding/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/416b1a1a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "AGI ist nicht multimodal",
+            "source": "Thegradient",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "534a3ceb",
+                "b8193c89"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Die jüngsten Erfolge generativer KI-Modelle haben einige davon überzeugt, dass AGI (Artificial General Intelligence) kurz bevorsteht. Während diese Modelle anscheinend die Essenz menschlicher Intelligenz erfassen, widersprechen sie sogar unseren grundlegendsten Intuitionen darüber.</p>         <p>Sie sind nicht wegen ihrer sorgfältigen Lösungen für das Problem der Intelligenz entstanden, sondern weil sie effektiv auf Hardware skaliert sind, die wir bereits hatten. Vom Erfolg der Skalierung verführt, glauben einige, dass dies einen klaren Weg zu AGI bietet.</p>         <h3>Die multimodale Strategie</h3>         <p>Der emblematischste Fall für diese Strategie ist der multimodale Ansatz, bei dem massive modulare Netzwerke für eine Vielzahl von Modalitäten optimiert werden, die zusammen allgemein wirken. Ich argumentiere jedoch, dass diese Strategie auf lange Sicht zum Scheitern verurteilt ist und nicht zu menschlichem AGI führen wird, das beispielsweise sensorimotorisches Denken, Bewegungsplanung und soziale Koordination durchführen kann.</p>         <p>Stattdessen sollten wir Ansätze zur Intelligenz verfolgen, die Embodiment und Interaktion mit der Umwelt als primär betrachten und modality-zentrierte Verarbeitung als emergente Phänomene sehen.</p>         <h3>Die Notwendigkeit der Welt</h3>         <p>Ein wahrer AGI muss allgemein sein und in der Lage sein, Probleme zu lösen, die in der physischen Realität entstehen, wie z.B. das Reparieren eines Autos, das Lösen eines Knotens oder das Zubereiten von Essen.</p>         <p>Um diese Probleme zu lösen, benötigen wir eine Form der Intelligenz, die fundamental in einer Art physischem Weltmodell verankert ist.</p>         <h3>Warum wir die Welt benötigen und wie LLMs sie zu verstehen vorgeben</h3>         <p>Ich argumentiere, dass wahre AGI ein physisches Verständnis der Welt benötigt, da viele Probleme nicht in ein Symbolmanipulationsproblem umgewandelt werden können.</p>         <p>Es wurde vorgeschlagen, dass LLMs (Large Language Models) ein Modell der Welt durch Vorhersage des nächsten Tokens lernen, aber es ist wahrscheinlicher, dass LLMs Beutel von Heuristiken lernen, um Token vorherzusagen, was ihnen ein oberflächliches Verständnis der Realität gibt.</p>         <p>Dies führt zu falschen Eindrücken ihrer Intelligenz und trägt zu einer Verwirrung darüber bei, was es bedeutet, Sprache und die Welt zu verstehen.</p>         <p><em>BytePost-Einordnung: Die Diskussion um AGI und multimodale Modelle ist komplex und vielschichtig. Es ist wichtig, dass Entwickler und Forscher die Grenzen und Möglichkeiten dieser Technologien verstehen, um wahre Durchbrüche in der KI-Forschung zu erzielen.</em></p>     ",
+            "content_simple": "         <p>Die Entwickler von künstlicher Intelligenz glauben, dass sie bald eine allgemeine Intelligenz schaffen können, die wie ein Mensch denken und handeln kann.</p>         <p>Aber es gibt ein Problem: Diese Intelligenz ist nicht in der Lage, die Welt um uns herum zu verstehen.</p>         <p>Statt dessen lernen die Modelle, wie sie bestimmte Dinge tun können, wie zum Beispiel das Vorhersagen von Wörtern in einem Satz.</p>         <p>Dies führt zu einer oberflächlichen Intelligenz, die nicht in der Lage ist, wie ein Mensch zu denken und zu handeln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die multimodale Strategie ist ein Ansatz, bei dem multiple modulare Netzwerke für verschiedene Modalitäten optimiert werden, um eine allgemeine Intelligenz zu schaffen.</p>         <p>Die modality-zentrierte Verarbeitung ist ein Phänomen, das durch die Emergenz von Mustern in den Daten entsteht.</p>         <p>Es ist jedoch wichtig zu beachten, dass diese Strategie nicht zu einer wahren allgemeinen Intelligenz führen wird, da sie nicht in der Lage ist, die Welt um uns herum zu verstehen.</p>         <h3>Kritische Einordnung</h3>         <p>Die Diskussion um AGI und multimodale Modelle ist komplex und vielschichtig.</p>         <p>Es ist wichtig, dass Entwickler und Forscher die Grenzen und Möglichkeiten dieser Technologien verstehen, um wahre Durchbrüche in der KI-Forschung zu erzielen.</p>     ",
+            "date": "24.05.2026",
+            "id": "a4c58145",
+            "url": "https://thegradient.pub/agi-is-not-multimodal/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a4c58145.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Grindset T.V: Überforderndes Speedrunning-Spiel",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "e9454af3",
+                "b1bbfde5",
+                "c59e1fe8"
+            ],
+            "content": "         <h3>Einleitung in Grindset T.V.</h3>         <p>Das Spiel Cruelty Squad ist stillschweigend einflussreich. Es ist nicht das erste Spiel, das für visuelle Effekte optiert, die debattierbar gegen jeden Sinn und einige mehr sind, aber seine überraschende Popularität hat sich in die Design-Sensibilitäten anderer Indie-Entwickler in den folgenden Jahren eingemischt. Spiele wie Splatter und Dungeons of Blood and Dream fühlen sich an, als würden sie in eine post-Cruelty-Squad-Welt gehören, mit ihrer ocularly maximalistischen Herangehensweise an visuelle Effekte, und nun wird Grindset T.V. ihnen in den Reihen beitreten, ein „offenes Welten-Speedrunning-Ego-Shooter für Freaks“.</p>         <p>Die Erzählung in Grindset T.V. ist konzeptuell existenziell beunruhigend: „Gott ist tot, und der Himmel ist korporativ geworden. Du bist ein Gig-Worker-Hivemind, der Pakete für den Himmel in einer undurchsichtigen, feindlichen Welt liefert.“ Wie dies in Erscheinung tritt, ist ein Spiel, in dem du erst-personal auf Lichtstrahlen wie in Sonic hast, springst und zwischen neon-getränkten, werbefüllten Stadtlandschaften hin- und herspringst, um bequem platzierte Pillen für eine zusätzliche Dosis Ausdauer aufzusammeln, deine unendlich dehnenden, blutigen Bandagen an Wesen wirfst, die du schwer in Worte fassen kannst, um (Ich denke?) diese Pakete zu liefern. Es ist viel! Du konntest das wahrscheinlich bereits dem Logline entnehmen, aber.</p>         <h3>Grindset T.V. Official Announcement</h3>         <p>Trotz allem, was du auf dem Bildschirm siehst, das auf eine Welt hindeutet, die kein Interesse daran hat, dich ruhen zu lassen, ist das Spiel angeblich für zwei Arten von Leuten konzipiert. Es gibt die Speedrunner, die Leaderboard-Jäger, die den Geistern anderer nachjagen, die nur ein bisschen besser im Spiel sind. Und dann gibt es diejenigen, die sich für diese post-futuristische Welt interessieren, in der „religiöser Fanatismus und kapitalistische Ausbeutung verschmolzen sind“, die einfach die „dicht vernetzte offene Welt“ des Spiels erkunden und allerlei NPC-Quests erfüllen oder Geheimnisse entdecken können. Wer weiß, wie es in der Praxis funktioniert, aber es sieht aus wie ein Spiel, das du neben „überfordernd“ im Wörterbuch finden würdest, aber manchmal ist das genau die Stimmung, die ich suche. Es gibt noch kein Veröffentlichungsdatum dafür, aber es ist bereits auf Steam zur Wunschliste hinzufübar.</p>         <p>Grindset T.V. ist ein Spiel, das deine Aufmerksamkeit fordert und deine Fähigkeiten auf die Probe stellt. Mit seiner einzigartigen Grafik und seinem schnellen Gameplay ist es ein Muss für alle, die nach einem neuen Herausforderung suchen.</p>         <p><em>BytePost-Einordnung: Grindset T.V. ist ein beeindruckendes Beispiel für die Kreativität und Innovationskraft von Indie-Entwicklern. Mit seiner einzigartigen Grafik und seinem schnellen Gameplay ist es ein Muss für alle, die nach einem neuen Herausforderung suchen.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du bist in einer Welt, in der Gott tot ist und der Himmel ein großes Unternehmen ist. Du musst Pakete für den Himmel liefern, aber die Welt ist nicht gerade freundlich. Du musst schnell und clever sein, um zu überleben.</p>         <p>Das Spiel Grindset T.V. ist ein Speedrunning-Spiel, bei dem du durch eine Welt voller Hindernisse und Gefahren musst. Du musst sprungtüchtig sein und schnell reagieren, um nicht zu sterben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Grindset T.V. ist ein Spiel, das auf der Unity-Engine basiert. Die Grafik ist einzigartig und verwendet eine Kombination von 2D- und 3D-Elementen. Das Spiel verfügt über ein komplexes Physik-System, das die Bewegungen der Spieler und der Objekte in der Welt simuliert.</p>         <p>Die Steuerung des Spiels ist einfach und intuitiv. Der Spieler kann sich mit den Pfeiltasten oder dem Gamepad bewegen und springen. Die Kamera folgt dem Spieler und kann auch manuell gesteuert werden.</p>         <h3>Code-Beispiele</h3>         <p>Leider gibt es keine öffentlichen Code-Beispiele für Grindset T.V. Das Spiel ist noch in der Entwicklung und die Entwickler haben noch keine offiziellen APIs oder SDKs veröffentlicht.</p>     ",
+            "date": "24.05.2026",
+            "id": "bbf4c2e2",
+            "url": "https://www.rockpapershotgun.com/god-is-dead-and-heaven-has-gone-corporate-in-grindset-tv-an-overstimulating-speedrunning-game-by-way-of-cruelty-squad",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/bbf4c2e2.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki"
             ],
             "icon": "🛰️",
@@ -37903,10 +38137,10 @@
         }
     ],
     "bytepulse": {
-        "date": "22.05.2026",
-        "positiv": 50,
-        "neutral": 50,
-        "kritisch": 0,
-        "total": 2
+        "date": "24.05.2026",
+        "positiv": 62,
+        "neutral": 12,
+        "kritisch": 25,
+        "total": 8
     }
 }
