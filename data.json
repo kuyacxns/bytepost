@@ -2,6 +2,242 @@
     "articles": [
         {
             "cat": [
+                "ki",
+                "business"
+            ],
+            "icon": "💻",
+            "title": "Peec AI verdoppelt Umsatz",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "4bc29811",
+                "71134ccd",
+                "616ed886"
+            ],
+            "content": "         <h3>Ein aufstrebendes Startup in Berlin</h3>         <p>Peec, ein aufstrebendes Startup in Berlin, hat seinen Umsatz innerhalb weniger Monate mehr als verdoppelt und erreicht jetzt 10 Millionen Dollar. Wie Quellen gegenüber TechCrunch bestätigten, hat Peec, das Marken bei der Nachverfolgung ihrer Präsenz in KI-Suchen hilft, einen wichtigen Trend unter europäischen Startups bewiesen.</p>         <p>Peec AI, das vor sechs Monaten 21 Millionen Dollar in seiner Serie-A-Runde aufbrachte, hat seinen Umsatz auf über 10 Millionen Dollar pro Jahr verdoppelt. Der CEO, Marius Meiners, wollte die Bewertung des Unternehmens nicht preisgeben, aber bestätigte, dass der Umsatz in den 10 Monaten seit der Gründung auf über 4 Millionen Dollar gestiegen ist.</p>         <h3>Ein wichtiger Trend in der europäischen Tech-Szene</h3>         <p>Antler-Partner Christoph Klink erzählte, dass Gründer heutzutage den Umsatz viel genauer verfolgen. Im Gespräch mit ihm diskutierten wir über den Marktzyklus und wie sich die Definition von Erfolg geändert hat. Klink erwähnte, dass Erfolg heute durch Wachstum und nicht durch Bewertung definiert wird.</p>         <p>Peec AI's Produkt hilft Marken, ihre Sichtbarkeit in KI-Suchen zu verbessern. Der CEO, Marius Meiners, ist ein ehemaliger professioneller Esportler und teilte seinen Umsatz mit dem gesamten Unternehmen. Dieser Ansatz hat sich bewährt, und das Unternehmen hat seine Präsenz in Berlin durch innovative Marketingstrategien ausgebaut.</p>         <h3>Ein innovativer Ansatz</h3>         <p>Peec AI hat eine unkonventionelle Herangehensweise an die Personalbeschaffung in Berlins wettbewerbsintensivem Markt gewählt. Das Unternehmen nutzt Plakatwerbung, um sich an potenzielle Kunden und Bewerber zu wenden. Diese Strategie hat sich als erfolgreich erwiesen und hat Peec AI als attraktiven Arbeitgeber in der Branche etabliert.</p>         <p>Christoph Klink betonte, dass dies ein wichtiger Aspekt in der aktuellen KI-Zyklus ist, in dem Unternehmen und Investoren auf Trends setzen, die noch in den Kinderschuhen stecken. Er fügte hinzu, dass die Fokussierung auf Wachstum und die Offenlegung von Umsatzzahlen ein wichtiger Aspekt für Startups wie Peec AI ist.</p>         <p><em>BytePost-Einordnung: Dieser Artikel zeigt, dass Startups wie Peec AI durch ihre Fokussierung auf Wachstum und Innovation erfolgreich sein können. Es ist interessant zu sehen, wie sich die europäische Tech-Szene in den kommenden Monaten entwickeln wird.</em></p>     ",
+            "content_simple": "         <p>Ein Startup in Berlin hat es geschafft, seinen Umsatz innerhalb weniger Monate zu verdoppeln. Peec AI hilft Marken, ihre Präsenz in KI-Suchen zu verbessern. Der CEO des Unternehmens, Marius Meiners, teilte seinen Umsatz mit dem gesamten Unternehmen und hat eine innovative Herangehensweise an die Personalbeschaffung in Berlin.</p>         <p>Das Unternehmen nutzt Plakatwerbung, um sich an potenzielle Kunden und Bewerber zu wenden. Diese Strategie hat sich als erfolgreich erwiesen und hat Peec AI als attraktiven Arbeitgeber in der Branche etabliert.</p>     ",
+            "content_pro": "         <h3>Architektur und Technologie</h3>         <p>Peec AI's Produkt basiert auf einer ähnlichen Architektur wie SEO-Dashboards, jedoch mit dem Fokus auf KI-Suchen. Das Unternehmen verwendet eine komplexe Algorithmen-Analyse, um die Sichtbarkeit von Marken in KI-Suchen zu verbessern.</p>         <h3>Verwendete Technologien</h3>         <p>Peec AI verwendet eine Kombination von natürlicher Sprachverarbeitung (NLP) und maschinellem Lernen (ML), um die Sichtbarkeit von Marken in KI-Suchen zu analysieren und zu verbessern.</p>         <p>Die Fokussierung auf Wachstum und Innovation ist ein wichtiger Aspekt für Startups wie Peec AI. Durch die Offenlegung von Umsatzzahlen und die Fokussierung auf Wachstum kann das Unternehmen seine Erfolge messen und weitere Schritte unternehmen, um seine Präsenz in der Branche auszubauen.</p>     ",
+            "date": "25.05.2026",
+            "id": "3fbe0ba3",
+            "url": "https://techcrunch.com/2026/05/23/peec-one-of-berlins-rising-startups-more-than-doubled-annualized-revenue-in-months-to-10m-sources-say/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3fbe0ba3.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "security"
+            ],
+            "icon": "⚠️",
+            "title": "Bambu Lab unter Lizenzdruck",
+            "source": "Heise Online",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "3fbe0ba3",
+                "71134ccd",
+                "616ed886"
+            ],
+            "content": "         <h3>Lizenzstreit und Cloud-Zwang: Bambu Lab unter massivem Druck</h3>         <p>Ein polnischer Entwickler, eine DMCA-Drohung und fünf chinesische Gesetze: Der Streit um Bambu Labs geschlossenes Ökosystem erreicht eine neue Eskalationsstufe. Der polnische Entwickler hat Bambu Lab wegen Lizenzverletzungen angegriffen und droht mit einer DMCA-Klage, wenn das Unternehmen nicht auf seine Forderungen eingeht.</p>         <p>Der Streit um Bambu Labs geschlossenes Ökosystem ist nicht neu, aber durch die jüngsten Entwicklungen hat sich die Situation weiter verschärft. Bambu Lab muss sich nun nicht nur mit den Forderungen des polnischen Entwicklers auseinandersetzen, sondern auch mit den rechtlichen Konsequenzen, die aus den chinesischen Gesetzen resultieren.</p>         <h3>Rechtliche Konsequenzen</h3>         <p>Die chinesischen Gesetze, die in diesem Fall relevant sind, umfassen die folgenden Punkte:</p>         <ul>             <li>Das chinesische Urheberrechtsgesetz</li>             <li>Das chinesische Patentgesetz</li>             <li>Das chinesische Gesetz über den Schutz von geistigem Eigentum</li>             <li>Das chinesische Gesetz über den elektronischen Geschäftsverkehr</li>             <li>Das chinesische Gesetz über die Verantwortung von Internetdienstleistern</li>         </ul>         <p>Wenn Bambu Lab diese Gesetze nicht einhält, könnte das Unternehmen mit schwerwiegenden rechtlichen Konsequenzen rechnen, einschließlich Strafzahlungen und Schadensersatzforderungen.</p>         <p><em>BytePost-Einordnung: Der Fall von Bambu Lab zeigt, wie wichtig es ist, dass Unternehmen ihre Lizenzverpflichtungen ernst nehmen und sich an die rechtlichen Anforderungen halten, um solche Konflikte zu vermeiden.</em></p>     ",
+            "content_simple": "         <p>Bambu Lab hat Probleme mit einem polnischen Entwickler, der das Unternehmen wegen Lizenzverletzungen angegriffen hat. Der Entwickler droht mit einer Klage, wenn Bambu Lab nicht auf seine Forderungen eingeht. Das Unternehmen muss sich auch mit chinesischen Gesetzen auseinandersetzen, die den Schutz von geistigem Eigentum betreffen.</p>         <p>Das ist ein komplexer Fall, der zeigt, wie wichtig es ist, dass Unternehmen ihre Lizenzverpflichtungen ernst nehmen und sich an die rechtlichen Anforderungen halten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Streit um Bambu Labs geschlossenes Ökosystem dreht sich um die Frage, ob das Unternehmen die Lizenzbedingungen für bestimmte Software einhält. Der polnische Entwickler behauptet, dass Bambu Lab die Software ohne die erforderlichen Lizenzen verwendet hat.</p>         <p>Um dies zu überprüfen, müsste man die Quellcode-Repositorys von Bambu Lab analysieren und prüfen, ob die Lizenzbedingungen für die verwendeten Software-Komponenten eingehalten werden. Dies könnte unter anderem durch eine Code-Review oder eine Lizenzanalyse erfolgen.</p>         <h3>Rechtliche Aspekte</h3>         <p>Die chinesischen Gesetze, die in diesem Fall relevant sind, umfassen das chinesische Urheberrechtsgesetz, das chinesische Patentgesetz und andere. Wenn Bambu Lab diese Gesetze nicht einhält, könnte das Unternehmen mit Strafzahlungen und Schadensersatzforderungen rechnen.</p>     ",
+            "date": "25.05.2026",
+            "id": "4bc29811",
+            "url": "https://www.heise.de/news/Bambu-Lab-vs-Community-Streit-um-offene-3D-Drucker-eskaliert-erneut-11304925.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/4bc29811.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Rust-Projektziele",
+            "source": "Rust Blog",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "3fbe0ba3",
+                "4bc29811",
+                "616ed886"
+            ],
+            "content": "         <h3>Rust-Projektziele: Ein Update</h3>         <p>Das Rust-Projekt hat seine Ziele für das zweite Halbjahr 2025 veröffentlicht. Insgesamt wurden 41 Projektziele verfolgt, von denen 13 als Flagship-Ziele bezeichnet wurden. Dieser Artikel enthält eine Zusammenfassung der Fortschritte seit dem letzten Update und den endgültigen Status jedes Ziels.</p>         <p>Die Flagship-Ziele umfassen:</p>         <ul>             <li>Beyond the &: Continue Experimentation with Pin Ergonomics, Design a language feature to solve Field Projections, Reborrow traits</li>             <li>Flexible, fast(er) compilation: build-std, Production-ready cranelift backend, Promoting Parallel Front End, Relink don't Rebuild</li>             <li>Higher-level Rust: Ergonomic ref-counting: RFC decision and preview, Stabilize cargo-script</li>             <li>Unblocking dormant traits: Evolving trait hierarchies, In-place initialization, Next-generation trait solver, Stabilizable Polonius support on nightly</li>         </ul>         <p>Weitere Ziele umfassen die Entwicklung von Cargo, die Verbesserung der Performanz und die Stabilisierung von Funktionen.</p>         <p>Die Rust-Entwickler bedanken sich bei allen, die zum Projekt beigetragen haben.</p>         <p><em>BytePost-Einordnung: Die Rust-Entwickler haben ihre Ziele für das zweite Halbjahr 2025 veröffentlicht und einen guten Fortschritt gemacht. Die Flagship-Ziele konzentrieren sich auf die Verbesserung der Sprache und der Compiler.</em></p>     ",
+            "content_simple": "         <p>Rust ist eine Programmiersprache, die sich auf Sicherheit und Leistung konzentriert. Die Entwickler haben ihre Ziele für das zweite Halbjahr 2025 veröffentlicht.</p>         <p>Die Ziele umfassen die Verbesserung der Sprache, die Entwicklung von Tools und die Stabilisierung von Funktionen.</p>     ",
+            "content_pro": "         <h3>Rust-Projektziele: Technische Details</h3>         <p>Die Rust-Entwickler verwenden eine Vielzahl von Technologien, um ihre Ziele zu erreichen. Dazu gehören die Entwicklung von Compilern, die Verbesserung der Performanz und die Stabilisierung von Funktionen.</p>         <p>Einige der verwendeten Technologien sind:</p>         <ul>             <li>Cranelift: Ein Compiler-Backend, das für die Produktion optimiert ist</li>             <li>Parallel Front End: Eine Technologie, die die Compilierung beschleunigt</li>             <li>Polonius: Ein System, das die Stabilisierung von Funktionen unterstützt</li>         </ul>         <p>Die Rust-Entwickler konzentrieren sich auf die Verbesserung der Sicherheit und Leistung der Sprache.</p>     ",
+            "date": "25.05.2026",
+            "id": "71134ccd",
+            "url": "https://blog.rust-lang.org/2026/05/18/project-goals-2026-04/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/71134ccd.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev",
+                "cloud"
+            ],
+            "icon": "🤖",
+            "title": "Cloudflare integriert Claude Managed Agents",
+            "source": "Cloudflare Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Cloudflare und Anthropic kooperieren</h3>         <p>Cloudflare hat eine Integration mit Anthropics Claude Managed Agents vorgestellt, um eine schnelle, isolierte Ausführungsumgebung für autonome Code-Lieferung bereitzustellen. Dies ermöglicht es Entwicklern, Agent-Workflows global zu skalieren, während sie streng kontrollieren, wer Zugriff auf private Backends hat, und ihre Agent-Tools und Laufzeiten leicht anpassen können.</p>         <p>Die neue Integration ermöglicht es dir, deine Agent-Sandboxes, Verbindungen zu privaten Diensten und die Beobachtbarkeit zu kontrollieren. Im letzten Jahr hat Cloudflares Entwicklerplattform eine Erweiterung erfahren, um mehr Entwicklern die notwendigen Tools zu geben, um Agenten im großen Maßstab auszuführen.</p>         <h3>Details zur Integration</h3>         <p>Zu den wichtigsten Funktionen gehören:</p>         <ul>             <li>Erweiterte Sicherheit: Alle Agenten-Verkehr läuft über anpassbare Proxys.</li>             <li>Sandbox-Kontrolle und Beobachtbarkeit: Detaillierte Sandbox-Metrik und -Logs.</li>             <li>Leichtgewichtige Sandboxes: Ausführen unvertrauenswürdigen Codes in traditionellen Micro-VMs oder leichten isolierten Umgebungen.</li>             <li>Private Dienst-Verbindung: Verbindung von Agenten zu privaten internen Diensten ohne Internet-Exposition.</li>             <li>E-Mail: Jeder Agent erhält eine eigene E-Mail-Adresse und kann E-Mails senden.</li>             <li>Benutzerdefinierte Tools: Erweiterung von Agenten mit Tools ohne zusätzliche Infrastruktur.</li>         </ul>         <h3>Claude Managed Agents</h3>         <p>Claude Managed Agents ermöglichen es Entwicklern, Agenten auf der Anthropic-Plattform einfach zu definieren und auszuführen. In diesen verwalteten Umgebungen kann Claude Dateien lesen, Befehle ausführen, im Internet browsen und Code ausführen.</p>         <p>Die neue Integration ermöglicht es dir, deine Agenten in einer Cloudflare-basierten Umgebung auszuführen. Du kannst deine Agenten-Sandboxes, Verbindungen zu privaten Diensten und die Beobachtbarkeit kontrollieren.</p>         <p><em>BytePost-Einordnung: Die Integration von Claude Managed Agents auf Cloudflare ermöglicht es Entwicklern, ihre Agenten-Workflows global zu skalieren, während sie streng kontrollieren, wer Zugriff auf private Backends hat. Dies ist ein wichtiger Schritt in Richtung einer sichereren und effizienteren Ausführung von Agenten im großen Maßstab.</em></p>     ",
+            "content_simple": "         <p>Cloudflare und Anthropic haben eine neue Integration vorgestellt, um die Ausführung von Agenten im großen Maßstab zu erleichtern. Dies ermöglicht es Entwicklern, ihre Agenten-Workflows global zu skalieren, während sie streng kontrollieren, wer Zugriff auf private Backends hat.</p>         <p>Dies ist besonders wichtig für Unternehmen, die ihre Daten und Anwendungen im Internet sicher betreiben möchten. Die Integration ermöglicht es, Agenten in einer sicheren Umgebung auszuführen und ihre Aktivitäten zu überwachen.</p>     ",
+            "content_pro": "         <h3>Architektur-Details</h3>         <p>Die Integration von Claude Managed Agents auf Cloudflare ermöglicht es, Agenten in einer Cloudflare-basierten Umgebung auszuführen. Dies erfolgt über die Verwendung von Cloudflare-Sandboxes, die eine isolierte Umgebung für die Ausführung von Code bieten.</p>         <p>Die Integration unterstützt auch die Verwendung von benutzerdefinierten Tools und Laufzeiten, sodass Entwickler ihre Agenten leicht anpassen können. Die Verbindung zu privaten internen Diensten erfolgt über sichere Proxys, um die Sicherheit zu gewährleisten.</p>         <p>Die neue Integration verwendet auch die Claude-Plattform, um die Ausführung von Agenten zu steuern. Dies ermöglicht es, die Ausführung von Agenten in Echtzeit zu überwachen und ihre Aktivitäten zu analysieren.</p>     ",
+            "date": "25.05.2026",
+            "id": "616ed886",
+            "url": "https://blog.cloudflare.com/claude-managed-agents/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/616ed886.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚨",
+            "title": "TrapDoor-Angriff auf npm, PyPI und CratesIO",
+            "source": "The Hacker News",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "3fbe0ba3",
+                "4bc29811",
+                "71134ccd"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Ein neuer, koordinierter Angriff auf die Software-Lieferkette, bekannt als TrapDoor, hat die Paket-Manager npm, PyPI und Crates.io ins Visier genommen, um Credential-Stealing-Malware zu verbreiten. Diese Kampagne umfasst mehr als 34 schädliche Pakete in über 384 Versionen.</p>         <p>Die früheste bekannte Aktivität wurde am 22. Mai 2026 um 20:20 Uhr UTC aufgezeichnet, mit neuen Paketen, die in Wellen zu den Ökosystemen veröffentlicht wurden. Diese Angriffe nutzen die Vertrauenswürdigkeit von Open-Source-Paketen aus, um Malware in die Systeme von Entwicklern und Nutzern einzuschleusen.</p>         <h3>Hintergrund</h3>         <p>Die Angriffe auf die Software-Lieferkette haben in den letzten Jahren zugenommen, da Angreifer die Verwundbarkeiten in der Lieferkette von Software ausnutzen, um Malware zu verbreiten. Diese Art von Angriffen kann besonders gefährlich sein, da sie oft unbemerkt bleiben, bis es zu spät ist.</p>         <p>Die TrapDoor-Kampagne ist besonders besorgniserregend, da sie mehrere Paket-Manager und eine große Anzahl von Paketen betrifft. Die Tatsache, dass die Angreifer in der Lage waren, so viele Pakete zu erstellen und zu veröffentlichen, ohne entdeckt zu werden, unterstreicht die Bedrohung, die diese Art von Angriffen darstellt.</p>         <h3>Schutzmaßnahmen</h3>         <p>Um sich vor solchen Angriffen zu schützen, sollten Entwickler und Nutzer vorsichtig sein, wenn sie Pakete aus Paket-Managern wie npm, PyPI und Crates.io herunterladen. Es ist wichtig, die Herkunft und die Zuverlässigkeit der Pakete zu überprüfen, bevor man sie in seine eigenen Projekte integriert.</p>         <p>Es ist auch ratsam, regelmäßig die Sicherheitsupdates und Patches für die verwendeten Pakete zu überprüfen und zu installieren. Durch diese Vorsichtsmaßnahmen kann das Risiko, Opfer eines solchen Angriffs zu werden, minimiert werden.</p>         <p><em>BytePost-Einordnung: Die TrapDoor-Kampagne unterstreicht die Bedrohung, die Angriffe auf die Software-Lieferkette darstellen. Es ist wichtig, dass Entwickler und Nutzer vorsichtig sind und geeignete Schutzmaßnahmen ergreifen, um sich vor solchen Angriffen zu schützen.</em></p>     ",
+            "content_simple": "         <p>Ein neuer Angriff, bekannt als TrapDoor, hat die Paket-Manager npm, PyPI und Crates.io ins Visier genommen, um schädliche Software zu verbreiten. Diese Angriffe nutzen die Vertrauenswürdigkeit von Open-Source-Paketen aus, um Malware in die Systeme von Entwicklern und Nutzern einzuschleusen.</p>         <p>Um sich vor solchen Angriffen zu schützen, sollten Entwickler und Nutzer vorsichtig sein, wenn sie Pakete aus Paket-Managern herunterladen. Es ist wichtig, die Herkunft und die Zuverlässigkeit der Pakete zu überprüfen, bevor man sie in seine eigenen Projekte integriert.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die TrapDoor-Kampagne nutzt mehrere Paket-Manager aus, um Credential-Stealing-Malware zu verbreiten. Die Angreifer erstellen schädliche Pakete, die dann zu den Paket-Managern veröffentlicht werden. Diese Pakete können dann von unschuldigen Entwicklern und Nutzern heruntergeladen und in ihre eigenen Projekte integriert werden.</p>         <p>Um diese Art von Angriffen zu verhindern, sollten Entwickler und Nutzer regelmäßig die Sicherheitsupdates und Patches für die verwendeten Pakete überprüfen und installieren. Es ist auch wichtig, die Herkunft und die Zuverlässigkeit der Pakete zu überprüfen, bevor man sie in seine eigenen Projekte integriert.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Es gibt mehrere Sicherheitsmaßnahmen, die Entwickler und Nutzer ergreifen können, um sich vor solchen Angriffen zu schützen. Dazu gehören die Verwendung von sicheren Paket-Managern, die regelmäßige Überprüfung von Sicherheitsupdates und Patches sowie die Überprüfung der Herkunft und Zuverlässigkeit von Paketen.</p>     ",
+            "date": "25.05.2026",
+            "id": "729e220c",
+            "url": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/729e220c.jpg",
+            "pick": true,
+            "pick_reason": "Ein neuer Angriff auf die Software-Supply-Chain hat Entwickler weltweit in Alarmbereitschaft versetzt: Der TrapDoor-Angriff auf npm, PyPI und CratesIO gefährdet die Sicherheit von Millionen von Projekten. Was bedeutet das für deine eigenen Entwicklungsprojekte und wie kannst du dich schützen? Die Zeit zu handeln ist jetzt."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Collaborative AI Features",
+            "source": "Freecodecamp",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "3fbe0ba3",
+                "4bc29811",
+                "71134ccd"
+            ],
+            "content": "         <h3>Product Experimentation for Collaborative AI Features</h3>         <p>Jedes Produkt-Experimentationsteam, das kausale Inferenz auf LLM-basierte kollaborative Funktionen anwendet, stößt früher oder später auf die gleiche Wand: Deine Benutzer sind nicht unabhängig. Dein Team liefert einen AI-Meetingsummarizer an die Hälfte der Unternehmen auf deiner Plattform aus. Die Auslieferung ist sauber, die Hälfte ist aktiviert und die andere Hälfte nicht, und du wartest darauf, dass die Aufgabenabgeschlossenheit der Kontrollgruppe flach bleibt, während die der behandelten Gruppe ansteigt.</p>         <p>Zwei Wochen später bewegen sich die Zahlen der Kontrollgruppe auch. Nicht so viel wie die der behandelten Gruppe, aber sichtbar. Die Funktion ist für diese Konten bestätigt deaktiviert, und du hast die Rollout-Konfiguration zweimal überprüft. Etwas kontaminiert noch immer deine Kontrollgruppe. Du weißt, was es ist, bevor du in die Logs schaust. Die AI-Meetingsummen landen in geteilten Slack-Kanälen, die AI-erstellten Dokumente erscheinen in geteilten Google-Drive-Ordnern, und die AI-Code-Überprüfungsvorschläge erscheinen in Pull-Requests, die sowohl behandelte als auch Kontroll-Entwickler lesen.</p>         <h3>Das Problem der collaborator contamination</h3>         <p>Verhaltensänderungen bei den behandelten Benutzern, und ein Teil dieser Verhaltensänderung fließt zurück in deine Kontrollgruppe durch den Kollaborationsgraphen. Dies ist die collaborator contamination-Falle. Sie tritt in jedem generativen AI-Produkt auf, das gemeinsam genutzte Artefakte berührt: AI-Meetingsnotizen, die Teammitglieder lesen, AI-erstellte Dokumente, die Kollegen bearbeiten, AI-Code-Vorschläge, die Rezensenten bewerten, AI-generierte E-Mail-Threads, auf die das gesamte Team antwortet.</p>         <p>Benutzerbezogene Zufallsauswahl geht davon aus, dass die Zuweisung der Behandlung für einen Benutzer das Ergebnis jedes anderen Benutzers nicht beeinflusst. In einem kollaborativen Arbeitsbereich ist diese Annahme aus Konstruktionsgründen falsch, und das Produkt-Experiment kombiniert die tatsächliche Wirkung der Funktion mit dem Überlauf, den es in der Kontrollgruppe erzeugt.</p>         <h3>Die Lösung: Cluster-Randomisierung</h3>         <p>Die Lösung ist die Cluster-Randomisierung: Werfe die Münze auf der Arbeitsbereichsebene, so dass ganze Teams entweder eingeschlossen oder ausgeschlossen werden, und modelliere den Überlauf zwischen den Arbeitsbereichen direkt. Dieses Tutorial führt durch die gesamte Pipeline (Cluster-Zuweisung, voreingenommene, naive Benutzerbezogene OLS, cluster-gewichtete kleinsten Quadrate für ehrliche Standardfehler, eine zweite Dekomposition, die direkte und Überlauf-Effekte separat identifiziert, und cluster-Bootstrap-Vertrauensintervalle) auf einem synthetischen SaaS-Datensatz mit 50.000 Benutzern, bei dem die tatsächlichen kausalen Effekte bekannt sind.</p>         <p>Du wirst diese schätzen, die Unsicherheit quantifizieren und sehen, wo der Ansatz stillbricht. Begleitender Code: Jedes Code-Stück läuft end-to-end im Begleitnotebook auf github.com/RudrenduPaul/product-experimentation-causal-inference-genai-llm/tree/main/05_cluster_randomization.</p>         <p><em>BytePost-Einordnung: Die Cluster-Randomisierung bietet eine Lösung für das Problem der collaborator contamination in kollaborativen AI-Features. Durch die Zuweisung von Clustern können Entwickler die Überlappung zwischen den Gruppen reduzieren und genauere Ergebnisse erzielen.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du arbeitest in einem Team und entwickelst künstliche Intelligenz (KI)-Funktionen, die Zusammenarbeit zwischen Menschen unterstützen. Du möchtest wissen, ob diese Funktionen wirklich helfen oder nicht. Das Problem ist, dass die Leute in deinem Team nicht unabhängig voneinander sind. Wenn ein Teammitglied eine KI-Funktion verwendet, kann das auch andere Teammitglieder beeinflussen, selbst wenn sie die Funktion nicht selbst verwenden.</p>         <p>Das ist das Problem der collaborator contamination. Es bedeutet, dass die Ergebnisse deiner Experimente nicht genau sind, weil die Leute im Team voneinander beeinflusst werden. Die Lösung ist die Cluster-Randomisierung. Anstatt einzelne Leute zufällig auszuwählen, wählst du ganze Teams aus und teilst sie in Gruppen ein. So kannst du die Überlappung zwischen den Gruppen reduzieren und genauere Ergebnisse erzielen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Cluster-Randomisierung ist eine Methode, um die collaborator contamination bei der Bewertung von KI-Funktionen zu überwinden. Durch die Zuweisung von Clustern kann man die Überlappung zwischen den Gruppen reduzieren und genauere Ergebnisse erzielen. Die Methode besteht darin, ganze Teams zufällig auszuwählen und sie in Gruppen einzuteilen.</p>         <p>Die Vorteile der Cluster-Randomisierung sind, dass sie die collaborator contamination reduziert und genauere Ergebnisse liefert. Allerdings kann die Methode auch zu einer Verringerung der Stichprobengröße führen, was die Genauigkeit der Ergebnisse beeinträchtigen kann.</p>         <pre><code>import numpy as np import pandas as pd  # Erstelle ein synthetisches Datenset np.random.seed(0) n = 50000 x = np.random.normal(0, 1, n) y = 2 * x + np.random.normal(0, 1, n)  # Teile das Datenset in Cluster ein cluster_size = 100 n_clusters = n // cluster_size clusters = [x[i * cluster_size:(i + 1) * cluster_size] for i in range(n_clusters)]  # Führe die Cluster-Randomisierung durch np.random.shuffle(clusters) </code></pre>     ",
+            "date": "25.05.2026",
+            "id": "02091aba",
+            "url": "https://www.freecodecamp.org/news/cluster-randomization-for-llm-based-tools-in-python/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/02091aba.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Langfuse Pipelin für LLM erstellen",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "534a3ceb"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>In diesem Tutorial implementieren wir die Langfuse-Pipeline (eine Open-Source-LLM-Engineering-Plattform) für Tracing, Prompt-Management, Scoring, Datasets und Experimente. Wir bauen eine komplette Arbeitsabfolge, die mit einer echten OpenAI-Schlüssel oder einer deterministischen Mock-LLM funktioniert, sodass wir jedes wichtige Langfuse-Feature ohne auf bezahlte Modelle zugreifen zu müssen verstehen können.</p>         <p>Wir beginnen, indem wir die erforderlichen Langfuse- und OpenAI-Pakete in der Colab-Umgebung installieren. Dann sammeln wir die Langfuse-Anmeldedaten, wählen die richtige Langfuse-Region oder die selbst gehostete URL aus und akzeptieren optional einen OpenAI-API-Schlüssel. Schließlich initialisieren wir den Langfuse-Client, überprüfen die Authentifizierung und bestätigen, ob wir OpenAI oder die integrierte Mock-LLM verwenden.</p>         <h3>Langfuse-Client einrichten</h3>         <p>Wir verwenden die folgenden Schritte, um den Langfuse-Client einzurichten:</p>         <ul>             <li>Installieren der erforderlichen Pakete</li>             <li>Sammeln der Langfuse-Anmeldedaten</li>             <li>Auswählen der richtigen Langfuse-Region oder selbst gehosteten URL</li>             <li>Optional: Akzeptieren eines OpenAI-API-Schlüssels</li>         </ul>         <p>Nachdem wir den Langfuse-Client eingerichtet haben, können wir ihn verwenden, um unsere LLM-Anwendungen zu beobachten, zu bewerten und zu verbessern.</p>         <h3>Langfuse-Funktionen</h3>         <p>Langfuse bietet verschiedene Funktionen, um LLM-Anwendungen zu unterstützen, darunter:</p>         <ul>             <li>Tracing: Erfassen von Funktionsaufrufen und Instrumentierung von Pipelines</li>             <li>Prompt-Management: Zentrales Management von Prompts</li>             <li>Scoring: An attachment von Bewertungspunkten</li>             <li>Experimente: Durchführung von Experimenten auf Datensätzen</li>         </ul>         <p>Durch die Verwendung von Langfuse können wir unsere LLM-Anwendungen in einer strukturierten und produktionsbereiten Weise beobachten, bewerten und verbessern.</p>         <p><em>BytePost-Einordnung: Langfuse bietet eine umfassende Plattform für die Entwicklung und den Einsatz von LLM-Anwendungen. Durch die Verwendung von Langfuse können Entwickler ihre Anwendungen effizienter und effektiver entwickeln und verbessern.</em></p>     ",
+            "content_simple": "         <p>Langfuse ist eine Plattform, die es ermöglicht, künstliche Intelligenz-Anwendungen zu entwickeln und zu verbessern. Wir können mit Langfuse unsere Anwendungen beobachten, bewerten und verbessern.</p>         <p>Das ist wie ein Chefkoch, der sein Rezeptbuch verwenden kann, um neue Gerichte zu entwickeln und zu verbessern. Langfuse bietet eine ähnliche Funktion für künstliche Intelligenz-Anwendungen.</p>     ",
+            "content_pro": "         <h3>Architektur von Langfuse</h3>         <p>Langfuse verwendet eine Micro-Service-Architektur, um die verschiedenen Funktionen zu unterstützen. Die Plattform besteht aus mehreren Modulen, die jeweils eine bestimmte Aufgabe übernehmen.</p>         <p>Die Kommunikation zwischen den Modulen erfolgt über REST- APIs. Dies ermöglicht eine flexible und skalierbare Architektur.</p>         <h3>Verwendete Technologien</h3>         <p>Langfuse verwendet verschiedene Technologien, wie z.B. Python, TensorFlow und scikit-learn. Die Plattform unterstützt auch die Verwendung von OpenAI-Modellen.</p>         <p>Durch die Verwendung von Langfuse können Entwickler ihre künstlichen Intelligenz-Anwendungen effizienter und effektiver entwickeln und verbessern.</p>     ",
+            "date": "25.05.2026",
+            "id": "e5bfaeb9",
+            "url": "https://www.marktechpost.com/2026/05/24/build-a-complete-langfuse-observability-and-evaluation-pipeline-for-tracing-prompt-management-scoring-and-experiments/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e5bfaeb9.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Dead by Daylight fügt Jason Voorhees hinzu",
+            "source": "GameSpot",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "3fbe0ba3",
+                "4bc29811",
+                "71134ccd"
+            ],
+            "content": "         <h3>Ein langersehnter Gast</h3>         <p>Dead by Daylight, das 4v1-Asymmetrische-Horror-Spiel, fügt endlich Jason Voorhees, den berüchtigten Slasher aus der Friday-the-13th-Reihe, hinzu. Das Spiel verfügt über eine umfangreiche Galerie an Bösewichten und Monstern, die jeden Horror-Fan begeistern können, aber bisher hat es einen auffälligen Mangel gehabt.</p>         <p>Am 16. Juni wird Jason Voorhees endlich dem Spiel hinzugefügt, wie Behaviour Interactive in einem neuen Trailer bekannt gegeben hat. Wenn Dead by Daylight zum ersten Mal auf den Markt kam, befand sich Jason bereits in der Entwicklung seines eigenen Spiels, Illfonic und Gun Medias Friday the 13th: The Game, und Dead by Daylight war noch nicht voll mit lizenzierten Killern gefüllt.</p>         <p>Heute ist Dead by Daylight jedoch ein Spielespielplatz für Horror-Fans, mit berühmten Monstern wie Michael Myers, Freddy Krueger, einem Xenomorph und Pyramid Head. Nachdem das Jason-Spiel wegen eines Rechtsstreits geschlossen wurde, war der maskierte Killer ohne ein Zuhause. Aber in letzter Zeit haben wir ihn in Spielen wie Call of Duty und Fortnite auftauchen sehen, also schien es nur eine Frage der Zeit, bis er in Dead by Daylight auftaucht.</p>         <h3>Der lange Weg zu Dead by Daylight</h3>         <p>Um die Geschichte von Jasons Reise zu Dead by Daylight zu verstehen, müssen wir uns die Entwicklung des Spiels und die Rechtslage im Horror-Spiel-Genre ansehen. Als Dead by Daylight zum ersten Mal veröffentlicht wurde, war es nicht das gleiche Spiel, das es heute ist.</p>         <p>Damals war Jason Voorhees bereits in der Entwicklung seines eigenen Spiels, und es schien, als ob er nie Teil von Dead by Daylight sein würde. Aber wie das Spiel wuchs und sich entwickelte, begannen die Entwickler, lizenzierte Killer hinzuzufügen, was das Spiel zu dem machte, was es heute ist.</p>         <p>Jetzt, da Jason endlich Teil von Dead by Daylight ist, können Spieler ihn kontrollieren und gegen andere Spieler antreten. Der 16. Juni wird ein großer Tag für Horror-Fans und Dead-by-Daylight-Spieler sein.</p>         <p><em>BytePost-Einordnung: Die Hinzufügung von Jason Voorhees zu Dead by Daylight ist ein wichtiger Meilenstein für das Spiel und seine Community. Es zeigt, dass die Entwickler weiterhin engagiert sind, das Spiel zu verbessern und die Wünsche der Spieler zu erfüllen.</em></p>     ",
+            "content_simple": "         <p>Das Spiel Dead by Daylight fügt endlich Jason Voorhees hinzu. Er ist der berüchtigte Slasher aus der Friday-the-13th-Reihe und hat lange auf seine Chance gewartet, Teil des Spiels zu werden.</p>         <p>Am 16. Juni wird Jason Voorhees dem Spiel hinzugefügt. Spieler können ihn kontrollieren und gegen andere Spieler antreten. Es ist ein großer Tag für Horror-Fans und Dead-by-Daylight-Spieler.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Hinzufügung von Jason Voorhees zu Dead by Daylight ist ein komplexer Prozess, der die Integration von neuen Charakteren und Spielmechaniken erfordert. Die Entwickler von Behaviour Interactive müssen die bestehende Spiel-Engine anpassen, um den neuen Charakter zu unterstützen.</p>         <p>Es ist nicht bekannt, welche spezifischen technischen Herausforderungen die Entwickler bei der Integration von Jason Voorhees überwunden haben. Es ist jedoch anzunehmen, dass sie eine Kombination aus Spiel-Engine-Anpassungen und neuen Spielmechaniken implementieren mussten, um den Charakter zu unterstützen.</p>     ",
+            "date": "25.05.2026",
+            "id": "1568b02c",
+            "url": "https://www.gamespot.com/articles/dead-by-daylight-finally-adds-the-slasher-everyones-been-waiting-for/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1568b02c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev"
             ],
             "icon": "🔍",
@@ -27,7 +263,7 @@
                 "sleep": 0
             },
             "image_local": "images/e9454af3.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Der CERN-Rat hat soeben FCC-ee gewählt, ein Vorhaben mit tiefgreifenden Auswirkungen auf die Zukunft der Physik und möglicherweise revolutionären Entdeckungen. Diese Entscheidung könnte den Lauf der Geschichte in der Teilchenphysik verändern und Entwickler sollten darauf achten, wie dies zukünftige Technologien beeinflussen könnte. Die Wahl von FCC-ee markiert einen neuen Meilenstein in der Geschichte des CERN und könnte bahnbrechende Forschungsergebnisse mit sich bringen, dieEntwickler nicht ignorieren dürfen."
         },
         {
@@ -38137,9 +38373,9 @@
         }
     ],
     "bytepulse": {
-        "date": "24.05.2026",
-        "positiv": 62,
-        "neutral": 12,
+        "date": "25.05.2026",
+        "positiv": 38,
+        "neutral": 38,
         "kritisch": 25,
         "total": 8
     }
