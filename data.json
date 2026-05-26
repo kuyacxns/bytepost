@@ -5,6 +5,300 @@
                 "ki",
                 "business"
             ],
+            "icon": "🤖",
+            "title": "ClickUp ersetzt Mitarbeiter durch KI-Agenten",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f503b1fc",
+                "32e075d5",
+                "e11218b0"
+            ],
+            "content": "         <h3>Was bedeutet der Massenentlassung bei ClickUp für die Zukunft der Arbeit?</h3>         <p>Das neun Jahre alte Startup ersetzt Hunderte von Mitarbeitern durch Tausende von KI-Agenten. Die größten Befürworter der KI haben bereits seit einiger Zeit argumentiert, dass die Technologie ein Zeitalter unvergleichlicher Produktivitätsgewinne herbeiführen wird, die Arbeitnehmer, die sie nutzen, reich belohnen und diejenigen, die dies nicht tun, ersetzen wird.</p>         <p>Zeb Evans, CEO von ClickUp, behauptet, dass dieser Wandel unmittelbar bevorsteht. Letzten Donnerstag kündigte Evans auf X an, dass das Unternehmen, das 2021 bei 4 Milliarden Dollar bewertet wurde, 22 % seiner Belegschaft entlassen hat, jedoch erklärte er, dass diese Reduzierung nicht als Kostenkürzungsmaßnahme, sondern als radikale Umarmung der KI zu sehen sei, die das Unternehmen auf das nächste Level heben wird.</p>         <p>„Die meisten Einsparungen aus dieser Änderung werden direkt an die Menschen fließen, die bleiben. Wir werden Millionenhonorare einführen. Wenn Sie mit KI einen außergewöhnlichen Einfluss erzielen, werden Sie über traditionelle Honorarstrukturen hinaus bezahlt“, schrieb Evans.</p>         <h3>Die Rolle der KI-Agenten bei ClickUp</h3>         <p>ClickUp hat kürzlich etwa 3.000 interne KI-Agenten eingeführt, um eine breite Palette komplexer Aufgaben im Namen seiner Mitarbeiter zu bewältigen. Stattdessen sollen die Mitarbeiter diese Agenten anleiten und schließlich die Ausgabe überprüfen, um sicherzustellen, dass sie den Standards des Unternehmens entspricht.</p>         <p>Evans Ziel, so wie er es in seinem X-Beitrag ausdrückt, ist es, dass die KI ClickUp in ein „100x-Organ“ verwandelt. ClickUp ist nicht allein in seiner Hoffnung, dass KI-Agenten massive Produktivitätsgewinne liefern werden. Tatsächlich haben laut einer aktuellen Gartner-Umfrage etwa 80 % der Unternehmen, die autonome Technologie einsetzen, Jobs gestrichen.</p>         <h3>Kritik und Zukunftsausblick</h3>         <p>Die Studie fand jedoch heraus, dass die Reduzierung der Belegschaft nicht unbedingt in bedeutende finanzielle Rückgänge mündet. Während Gartners Ergebnisse nahelegen, dass einige Unternehmen unerprobte KI als Vorwand für die Verkleinerung nutzen, behauptet ClickUp, dass es nicht einer davon ist. Evans erklärte gegenüber TechCrunch per E-Mail, dass das Startup tatsächlich Produktivitätsgewinne durch KI-Agenten verzeichnet.</p>         <p>Das Unternehmen misst diese Effizienzen intern und plant offensichtlich, sie in einem künftigen Produkt für seine Kunden einzubinden. „Anstatt Tokenkosten zu gamifizieren, gamifizieren wir den erstellten Wert und die gesparte Zeit“, schrieb Evans.</p>         <p>BytePost-Einordnung: <em>Die Entscheidung von ClickUp, Mitarbeiter durch KI-Agenten zu ersetzen, wirft Fragen über die Zukunft der Arbeit und die Rolle der KI in der Wirtschaft auf. Obwohl die Technologie das Potenzial hat, die Produktivität zu steigern, bleibt abzuwarten, wie sich diese Veränderungen auf die Arbeitswelt auswirken werden.</em></p>     ",
+            "content_simple": "         <p>Das Unternehmen ClickUp ersetzt Hunderte von Mitarbeitern durch Tausende von KI-Agenten. Das bedeutet, dass die KI künftig viele Aufgaben übernehmen wird, die bisher von Menschen erledigt wurden.</p>         <p>Der CEO von ClickUp, Zeb Evans, glaubt, dass dies der Beginn einer neuen Ära ist, in der die KI die Produktivität steigert und die Menschen, die sie nutzen, reich belohnt. Es bleibt jedoch abzuwarten, wie sich diese Veränderungen auf die Arbeitswelt auswirken werden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>ClickUp hat etwa 3.000 interne KI-Agenten eingeführt, um eine breite Palette komplexer Aufgaben zu bewältigen. Diese Agenten werden von den Mitarbeitern angewiesen und überwachen die Ausgabe, um sicherzustellen, dass sie den Standards des Unternehmens entspricht.</p>         <p>Das Unternehmen plant, diese KI-Agenten in ein künftiges Produkt für seine Kunden einzubinden. Es bleibt jedoch abzuwarten, wie sich diese Technologie entwickeln wird und welche Auswirkungen sie auf die Arbeitswelt haben wird.</p>         <h3>Kritische Einordnung</h3>         <p>Die Entscheidung von ClickUp wirft Fragen über die Zukunft der Arbeit und die Rolle der KI in der Wirtschaft auf. Es bleibt abzuwarten, ob die KI tatsächlich die Produktivität steigert und die Menschen, die sie nutzen, reich belohnt.</p>     ",
+            "date": "26.05.2026",
+            "id": "9e5603b1",
+            "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9e5603b1.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🖥️",
+            "title": "Shatner Comeback scheitert",
+            "source": "Golem.de",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9e5603b1",
+                "32e075d5",
+                "e11218b0"
+            ],
+            "content": "         <h3>Ein Comeback, das nicht gelang</h3>         <p>William Shatner sollte in der Serie „Strange New Worlds“ erneut die Rolle des Captain Kirk spielen. Leider scheiterten jedoch mehrere Drehbuchideen, sodass das Comeback nicht realisiert werden konnte.</p>         <p>Diese Nachricht wird sicherlich viele Fans der Star-Trek-Serie enttäuschen, die sich auf das Wiedersehen mit Captain Kirk gefreut hatten. Die Serie „Strange New Worlds“ ist ein Spin-off der Original-Serie und spielt etwa zehn Jahre vor den Ereignissen von „Star Trek: The Original Series“.</p>         <h3>Hintergrundinformationen</h3>         <p>Um der Nutzung von Golem.de mit Cookies zustimmen zu können, muss Javascript in Ihrem Browser aktiviert sein. Um der Nutzung von Golem.de mit Cookies zustimmen zu können, müssen Cookies in Ihrem Browser aktiviert sein.</p>         <p>Die Zustimmung in einem iFrame ist nicht möglich. Seite in eigenem Fenster öffnen. Der Zustimmungs-Dialog konnte nicht korrekt geladen werden, eine Zustimmung gilt nur vorläufig.</p>         <p>Die Möglichkeit zum Widerruf finden Sie in unserer Datenschutz­erklärung oder über den Link Cookies & Tracking am Ende jeder Seite.</p>         <h3>Golem pur</h3>         <p>Mit Golem pur ab 3 Euro pro Monat können Sie Golem.de ohne Analyse- und Werbe­cookies nutzen, es kommen nur für unser Angebot erforderliche Cookies zum Einsatz.</p>         <p>Zu Golem pur Bereits Pur-Leser? Hier anmelden. Kein aktives Abo vorhanden.</p>         <p>Für die Nutzung mit Werbung: Wir erheben personenbezogene Daten und übermitteln diese auch an bis zu 160 Drittanbieter, die uns helfen, unsere Webseite und Angebote zu verbessern und zu finanzieren.</p>         <p> Eine Verarbeitung der auf Ihrem Gerät gespeicherten Informationen - z. B. Cookies oder persönliche Identifikatoren wie IP-Adressen - sowie Ihres individuellen Nutzungsverhaltens erfolgt dabei zu den folgenden Zwecken:</p>         <ul>             <li>Informationen auf einem Gerät speichern und/oder abrufen</li>             <li>Personalisierte Anzeigen und Inhalte, Anzeigen- und Inhaltsmessungen, Erkenntnisse über Zielgruppen und Produktentwicklungen</li>             <li>Genaue Standortdaten verwenden</li>         </ul>         <p><em>BytePost-Einordnung: Die Nachricht über das gescheiterte Comeback von William Shatner in der Serie „Strange New Worlds“ ist sicherlich enttäuschend für viele Fans. Es bleibt abzuwarten, ob es in Zukunft noch eine weitere Chance für ein Comeback gibt.</em></p>     ",
+            "content_simple": "         <p>William Shatner sollte in der Serie „Strange New Worlds“ wieder Captain Kirk spielen. Leider sind die Drehbuchideen nicht gut genug, deshalb kann er nicht wieder mitspielen.</p>         <p>Viele Fans von Star Trek freuen sich nicht, weil sie sich auf das Wiedersehen mit Captain Kirk gefreut haben.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte</h3>         <p>Die Serie „Strange New Worlds“ ist ein Spin-off von Star Trek und spielt etwa zehn Jahre vor den Ereignissen von „Star Trek: The Original Series“.</p>         <p>Die technischen Aspekte der Serie sind interessant, da sie auf den gleichen technischen Grundlagen wie die Original-Serie aufbaut.</p>         <h3>Datenverarbeitung</h3>         <p>Die Zustimmung in einem iFrame ist nicht möglich. Seite in eigenem Fenster öffnen. Der Zustimmungs-Dialog konnte nicht korrekt geladen werden, eine Zustimmung gilt nur vorläufig.</p>         <p>Die Möglichkeit zum Widerruf finden Sie in unserer Datenschutz­erklärung oder über den Link Cookies & Tracking am Ende jeder Seite.</p>     ",
+            "date": "26.05.2026",
+            "id": "f503b1fc",
+            "url": "https://www.golem.de/news/rueckkehr-scheiterte-strange-new-worlds-verpasste-shatner-comeback-2605-209023.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f503b1fc.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Go-Entwickler bekommen neue API",
+            "source": "The Go Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "e11218b0"
+            ],
+            "content": "         <h3>Die neue pkg.go.dev API</h3>         <p>Seit ihrer Einführung hat sich pkg.go.dev als die primäre Ressource für Paketdokumentation und -entdeckung in der Go-Community etabliert. Zunächst wurden die Schaffung einer umfassenden und hoch zugänglichen Web-Oberfläche für Benutzer priorisiert, aber das Bedürfnis nach programmatischem Zugriff ist immer deutlicher geworden.</p>         <p>Entwickler, die Tools, IDE-Integrationen und automatisierte Workflows erstellen, mussten in der Vergangenheit auf fragile Workarounds wie Web-Scraping zurückgreifen, um auf diese Daten zuzugreifen. Um diese sich entwickelnden Anforderungen besser zu erfüllen, wird die Plattform erweitert, um einen robusten, direkten Zugriff auf die Informationen zu bieten, die die Community benötigt.</p>         <p>Heute wird die offizielle pkg.go.dev-API vorgestellt – ein Dienst für die Abfrage von Metadaten über veröffentlichte Go-Module. Dieser Launch ist eine direkte Reaktion auf jahrelanges Community-Feedback.</p>         <h3>Die Dienstschnittstelle</h3>         <p>Die API verwendet eine stateless, GET-only-Architektur, die für Stabilität und effizientes Caching ausgelegt ist. Primäre Endpunkte sind derzeit unter dem Pfad /v1beta gehostet. Nach einer Phase des Community-Feedbacks und bestätigter Stabilität ist geplant, zu einer offiziellen v1-Veröffentlichung überzugehen.</p>         <p>Für eine vollständige interaktive Referenz aller Endpunkte, Abfrageparameter und Antwortformate siehe die pkg.go.dev/api-Spezifikation. Der maschinenlesbare API-Vertrag wird auch direkt als OpenAPI-Spezifikation veröffentlicht.</p>         <h3>Kernendpunkte</h3>         <ul>             <li>/v1beta/package/{path} – Informationen über das Paket unter {path}.</li>             <li>/v1beta/module/{path} – Informationen über das Modul unter {path}.</li>             <li>/v1beta/versions/{path} – Versionen des Moduls unter {path}.</li>             <li>/v1beta/packages/{path} – Informationen über Pakete des Moduls unter {path}.</li>             <li>/v1beta/search?q={query} – Suchergebnisse für eine bestimmte Abfrage.</li>             <li>/v1beta/symbols/{path} – Liste der von dem Paket unter {path} deklarierten Symbole.</li>             <li>/v1beta/imported-by/{path} – Pfade der Pakete, die das Paket unter {path} importieren.</li>             <li>/v1beta/vulns/{path} – Sicherheitslücken des Moduls oder Pakets unter {path}.</li>         </ul>         <p>Ein Designprinzip für diese API ist „Präzision über Bequemlichkeit“.</p>         <p>Um Versionen anzugeben, können für Endpunkte, die Paket-, Modul- oder Symbolinformationen abrufen, die optionalen Abfrageparameter version verwendet werden. Die API gibt standardmäßig Informationen über die neueste Version des Moduls oder Pakets zurück.</p>         <p>Beispiel für eine rohe API-Anfrage, um strukturierte Metadaten für ein bestimmtes Paket direkt abzurufen (mit jq für die Formatierung):</p>         <p>$ curl https://pkg.go.dev/v1beta/package/github.com/google/go-cmp/cmp | jq</p>         <p><em>BytePost-Einordnung: Die neue pkg.go.dev-API bietet Entwicklern eine einfache und sichere Möglichkeit, auf Paket- und Moduldaten zuzugreifen, was die Entwicklung von Tools und Workflows in der Go-Community erheblich verbessern wird.</em></p>     ",
+            "content_simple": "         <p>Die Go-Community hat eine neue API für die Paketdokumentation und -entdeckung erhalten. Diese API ermöglicht es Entwicklern, direkt auf Paket- und Moduldaten zuzugreifen, anstatt auf fragile Workarounds wie Web-Scraping zurückgreifen zu müssen.</p>         <p>Diese neue API bietet eine einfache und sichere Möglichkeit, auf Paket- und Moduldaten zuzugreifen, was die Entwicklung von Tools und Workflows in der Go-Community erheblich verbessern wird.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die API verwendet eine stateless, GET-only-Architektur, die für Stabilität und effizientes Caching ausgelegt ist. Primäre Endpunkte sind derzeit unter dem Pfad /v1beta gehostet.</p>         <p>Die API unterstützt Semantic Versions und Branch-Namen, um die gewünschte Version anzugeben. Die API gibt standardmäßig Informationen über die neueste Version des Moduls oder Pakets zurück.</p>         <h3>Beispiel für eine API-Anfrage</h3>         <pre><code>$ curl https://pkg.go.dev/v1beta/package/github.com/google/go-cmp/cmp | jq</code></pre>         <p>Die neue pkg.go.dev-API bietet eine einfache und sichere Möglichkeit, auf Paket- und Moduldaten zuzugreifen, was die Entwicklung von Tools und Workflows in der Go-Community erheblich verbessern wird.</p>     ",
+            "date": "26.05.2026",
+            "id": "32e075d5",
+            "url": "https://go.dev/blog/pkgsite-api",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/32e075d5.jpg",
+            "pick": true,
+            "pick_reason": "Eine neue Ära für Go-Entwickler bricht an: Mit der Einführung einer neuen API erhalten sie mächtige Werkzeuge, um ihre Entwicklung zu beschleunigen und ihre Projekte zu revolutionieren. Dieser Schritt kann das Gameplay der Branche verändern und Go-Entwicklern einen entscheidenden Vorsprung verschaffen. Die Frage ist, ob Sie bereit sind, diese Chance zu nutzen und Ihre Entwicklung auf das nächste Level zu heben."
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Meta entwickelt Reel Friends",
+            "source": "Engineering at Meta",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Reel Friends: Soziale Entdeckung skalieren</h3>         <p>Der neue Friend Bubbles-Funktion bei Meta sieht auf den ersten Blick einfach aus. Er hebt Reels hervor, die deine Freunde angesehen und darauf reagiert haben. Doch manchmal erfordern die Funktionen, die am einfachsten erscheinen, die tiefste Ingenieursarbeit. In dieser Episode des Meta Tech Podcasts spricht Pascal Hartig mit Subasree und Joseph, zwei Software-Entwicklern des Facebook Reels-Teams, über die Entstehung von Friend Bubbles.</p>         <p>Sie diskutieren die Entwicklung des Machine-Learning-Modells hinter der Funktion, das verschiedene Verhaltensweisen zwischen iOS- und Android-Nutzern und die überraschende Entdeckung, die schließlich die gesamte Funktion zum Laufen brachte. Wenn du jemals eine „einfache“ Funktion unterschätzt hast, ist dies die richtige Episode für dich.</p>         <p>Die Meta Tech Podcast-Episode kann heruntergeladen oder angehört werden. Die Episode ist auch auf verschiedenen Plattformen wie Spotify, Apple Podcasts und Pocket Casts verfügbar.</p>         <p>Der Meta Tech Podcast ist ein Podcast, der von Meta bereitgestellt wird, um die Arbeit von Metas Ingenieuren auf allen Ebenen hervorzuheben – von Low-Level-Frameworks bis hin zu Endnutzerfunktionen. Feedback kann auf Instagram, Threads oder X hinterlassen werden.</p>         <p><em>BytePost-Einordnung: Der Artikel gibt einen Einblick in die Entstehung von Friend Bubbles und zeigt, dass selbst scheinbar einfache Funktionen tiefere Ingenieursarbeit erfordern können.</em></p>     ",
+            "content_simple": "         <p>Meta hat eine neue Funktion entwickelt, die Reels hervorhebt, die deine Freunde angesehen haben. Diese Funktion scheint einfach, erfordert aber viel Ingenieursarbeit. Die Entwickler haben ein Machine-Learning-Modell erstellt, um die Reels auszuwählen.</p>         <p>Die Funktion ist auf verschiedenen Plattformen wie Spotify und Apple Podcasts verfügbar. Der Meta Tech Podcast gibt Einblicke in die Arbeit von Metas Ingenieuren.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Friend Bubbles-Funktion verwendet ein Machine-Learning-Modell, um Reels auszuwählen, die deine Freunde angesehen haben. Die Entwickler haben die Herausforderung angenommen, diese Funktion zu skalieren, um Milliarden von Nutzern zu bedienen.</p>         <p>Die Entwicklung des Modells erforderte die Analyse verschiedener Verhaltensweisen zwischen iOS- und Android-Nutzern. Die Entwickler haben auch eine überraschende Entdeckung gemacht, die schließlich die gesamte Funktion zum Laufen brachte.</p>         <p>Der Meta Tech Podcast gibt Einblicke in die technischen Details der Funktion und zeigt, wie die Entwickler die Herausforderungen gelöst haben.</p>     ",
+            "date": "26.05.2026",
+            "id": "e11218b0",
+            "url": "https://engineering.fb.com/2026/05/13/ml-applications/reel-friends-building-social-discovery-that-scales-to-billions/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e11218b0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Chinas Webworm hackt EU-Regierungen",
+            "source": "Darkreading",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Chinas Webworm greift EU-Regierungen an</h3>         <p>Die fortgeschrittene Bedrohung Chinas, bekannt als Webworm, hat EU-Regierungen angegriffen. Diese Gruppe nutzt verschiedene Methoden, um ihre Ziele zu erreichen.</p>         <p>Einige der verwendeten Methoden umfassen die Nutzung von Discord und Microsoft Graphs. Zusätzlich setzen sie auf SOCKS-Proxy wie SoftEther VPN, um als Mittler zwischen Opfer und Angreifer zu fungieren.</p>         <h3>Technische Details</h3>         <p>Die Angreifer nutzen eine Kombination aus verschiedenen Werkzeugen, um ihre Angriffe durchzuführen. Dazu gehören auch Tunnel-Tools, die es ermöglichen, eine gesicherte Verbindung zwischen dem Opfer und dem Angreifer herzustellen.</p>         <p>Um diese Angriffe zu verhindern, ist es wichtig, dass du JavaScript und Cookies in deinem Browser aktivierst. Dies hilft, die Sicherheit deiner Online-Aktivitäten zu erhöhen.</p>         <h3>Sicherheitsempfehlungen</h3>         <p>Um dich vor solchen Angriffen zu schützen, solltest du regelmäßig deine Software und Betriebssysteme aktualisieren. Zusätzlich ist es ratsam, starke Passwörter zu verwenden und eine Firewall zu aktivieren.</p>         <p>Indem du diese Schritte befolgst, kannst du deine Online-Sicherheit erhöhen und dich vor Bedrohungen wie der Webworm schützen.</p>         <p><em>BytePost-Einordnung: Die Angriffe der Webworm-Gruppe auf EU-Regierungen zeigen, dass die Cybersicherheit ein wichtiger Aspekt in der heutigen digitalen Welt ist. Es ist wichtig, dass Entwickler und Nutzer sich dieser Bedrohungen bewusst sind und entsprechende Schutzmaßnahmen ergreifen.</em></p>     ",
+            "content_simple": "         <p>Chinas Webworm-Gruppe hat europäische Regierungen gehackt. Sie nutzen verschiedene Methoden, um ihre Ziele zu erreichen.</p>         <p>Um dich zu schützen, solltest du regelmäßig deine Software aktualisieren und starke Passwörter verwenden.</p>     ",
+            "content_pro": "         <h3>Technische Details der Webworm-Angriffe</h3>         <p>Die Webworm-Gruppe nutzt eine Kombination aus verschiedenen Werkzeugen, um ihre Angriffe durchzuführen. Dazu gehören auch Tunnel-Tools, die es ermöglichen, eine gesicherte Verbindung zwischen dem Opfer und dem Angreifer herzustellen.</p>         <h3>Sicherheitsempfehlungen für Entwickler</h3>         <p>Um dich vor solchen Angriffen zu schützen, solltest du regelmäßig deine Software und Betriebssysteme aktualisieren. Zusätzlich ist es ratsam, starke Passwörter zu verwenden und eine Firewall zu aktivieren.</p>     ",
+            "date": "26.05.2026",
+            "id": "e64ab3f9",
+            "url": "https://www.darkreading.com/endpoint-security/chinas-webworm-discord-microsoft-graphs",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e64ab3f9.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🔒",
+            "title": "Vault schützt Daten",
+            "source": "Hashicorp",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Werden große Artefakte und Streaming-Workloads mit Vault verschlüsselt und gestreamt?</p>         <p>Die Antwort liegt in der Transit-Engine von Vault, die eine Methode namens Umhüllungsverschlüsselung verwendet, um große Artefakte und Streaming-Workloads zu schützen, ohne dass die Payloads an Vault gesendet werden müssen.</p>         <h3>Technische Details</h3>         <p>Transit ist ein Vault-Modul, das eine verschlüsselte Kommunikation zwischen Anwendungen und Diensten ermöglicht. Mit Transit kann man Daten sicher übertragen, ohne dass die Daten jemals unverschlüsselt sind.</p>         <p>Die Umhüllungsverschlüsselung ist eine Methode, bei der die Daten in einer verschlüsselten Hülle verpackt werden. Dies ermöglicht es, die Daten zu schützen, ohne dass die Payloads an Vault gesendet werden müssen.</p>         <h3>Vorteile</h3>         <p>Die Verwendung von Transit mit Umhüllungsverschlüsselung bietet mehrere Vorteile, darunter:</p>         <ul>             <li>Sichere Übertragung von Daten ohne unverschlüsselte Daten</li>             <li>Keine Notwendigkeit, Payloads an Vault zu senden</li>             <li>Hohe Flexibilität und Skalierbarkeit</li>         </ul>         <p>Das bedeutet, dass du als Entwickler deine Daten sicher übertragen kannst, ohne dass du dich um die Sicherheit deiner Daten kümmern musst.</p>         <p><em>BytePost-Einordnung: Die Verwendung von Transit mit Umhüllungsverschlüsselung ist eine gute Möglichkeit, große Artefakte und Streaming-Workloads zu schützen, ohne dass die Payloads an Vault gesendet werden müssen. Dies bietet eine hohe Flexibilität und Skalierbarkeit und ist somit eine gute Wahl für Entwickler.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du möchtest wichtige Daten wie ein Paket verschicken. Du würdest es sicher in ein Paket einpacken, damit es nicht verloren geht oder in falsche Hände gerät.</p>         <p>Genau das macht Vault mit deinen Daten. Es gibt eine Möglichkeit, die Daten in einer verschlüsselten Hülle zu verpacken, damit sie sicher übertragen werden können, ohne dass sie jemals unverschlüsselt sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Transit ist ein Vault-Modul, das eine verschlüsselte Kommunikation zwischen Anwendungen und Diensten ermöglicht. Mit Transit kann man Daten sicher übertragen, ohne dass die Daten jemals unverschlüsselt sind.</p>         <p>Die Umhüllungsverschlüsselung ist eine Methode, bei der die Daten in einer verschlüsselten Hülle verpackt werden. Dies ermöglicht es, die Daten zu schützen, ohne dass die Payloads an Vault gesendet werden müssen.</p>         <h3>Architektur</h3>         <p>Die Architektur von Transit basiert auf einer Client-Server-Architektur. Der Client sendet eine Anfrage an den Server, um die Daten zu verschlüsseln oder zu entschlüsseln.</p>         <p>Der Server verwendet dann die Transit-Engine, um die Daten zu verschlüsseln oder zu entschlüsseln. Die Transit-Engine verwendet eine verschlüsselte Kommunikation, um die Daten sicher zu übertragen.</p>     ",
+            "date": "26.05.2026",
+            "id": "820ef7b1",
+            "url": "https://www.hashicorp.com/blog/encrypting-large-artifacts-and-streaming-workloads-with-vault",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/820ef7b1.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data"
+            ],
+            "icon": "💻",
+            "title": "Data Engineering Weekly #270",
+            "source": "Data Engineering Weekly",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Data Engineering Weekly #270</h3>         <p>Der Newsletter Data Engineering Weekly #270 ist erschienen. In diesem Newsletter gibt es interessante Artikel und Neuigkeiten aus dem Bereich Data Engineering.</p>         <p>Ein interessanter Artikel ist der Guide zu Data Platform Fundamentals. Dieser Guide soll helfen, ein einfaches und effizientes Daten-Ökosystem aufzubauen. Er behandelt Themen wie composable Architecturen, Datenqualität und Observability.</p>         <p>Airbnb hat den ersten Schritt in Richtung Data Mesh gemacht. Der Begriff Data Mesh bezieht sich auf die Plattform und Dienste, die es ermöglichen, Daten zwischen verschiedenen Abteilungen und Teams zu teilen. Airbnb hat ein System namens Viaduct entwickelt, das eine multi-tenant GraphQL-Schnittstelle bietet.</p>         <p>Netflix hat ein Konzept namens Data Projects entwickelt, um Daten-Assets zu verwalten. Dieses Konzept ersetzt die traditionelle Benutzeridentität durch eine team-orientierte Identität, um die Zugriffsrechte auf Daten zu regeln.</p>         <p>Meta hat einen Artikel über die Migration von Daten-Ingestions-Systemen veröffentlicht. Der Artikel beschreibt, wie Meta erfolgreich Zehntausende von Pipelines migriert hat, um eine robuste und zuverlässige Daten-Infrastruktur aufzubauen.</p>         <p>Databricks hat den Convergence von Open Table Formats und Open Catalogs vorgestellt. Dies ermöglicht es, Daten in verschiedenen Formaten wie Delta Lake und Unity Catalog zu speichern und zu verwalten.</p>         <p>Eric Sun hat einen Artikel über einen Query Proxy für analytische und schnelle Daten veröffentlicht. Der Query Proxy bietet eine einheitliche Schnittstelle für verschiedene Daten-Quellen wie Snowflake, Databricks und StarRocks.</p>         <p><em>BytePost-Einordnung: Der Artikel bietet einen interessanten Überblick über die neuesten Entwicklungen im Bereich Data Engineering. Die Themen reichen von Data Mesh und Data Projects bis hin zu Query Proxys und Open Table Formats.</em></p>     ",
+            "content_simple": "         <p>Der Newsletter Data Engineering Weekly #270 ist erschienen. Er bietet interessante Artikel und Neuigkeiten aus dem Bereich Data Engineering.</p>         <p>Ein interessanter Artikel ist der Guide zu Data Platform Fundamentals. Dieser Guide hilft, ein einfaches Daten-Ökosystem aufzubauen.</p>         <p>Es gibt auch Artikel über Data Mesh, Data Projects und Query Proxys. Diese Konzepte helfen, Daten zwischen verschiedenen Abteilungen und Teams zu teilen und zu verwalten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Artikel zu Data Mesh beschreibt die Implementierung eines multi-tenant GraphQL-Systems namens Viaduct. Dieses System ermöglicht es, Daten zwischen verschiedenen Abteilungen und Teams zu teilen.</p>         <p>Der Artikel zu Data Projects beschreibt die Implementierung eines Konzepts, das team-orientierte Identitäten verwendet, um die Zugriffsrechte auf Daten zu regeln.</p>         <p>Der Artikel zu Query Proxys beschreibt die Implementierung einer einheitlichen Schnittstelle für verschiedene Daten-Quellen wie Snowflake, Databricks und StarRocks.</p>     ",
+            "date": "26.05.2026",
+            "id": "82204b35",
+            "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-270",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/82204b35.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "USA setzen auf Quantencomputing",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Ein-riskanter Schritt in die Zukunft</h3>         <p>Die US-Regierung hat vor Kurzem 2 Milliarden Dollar in Unternehmen investiert, die sich auf Quantencomputing spezialisieren. Dieser Schritt ist jedoch nicht unumstritten. Ein Mitglied des US-Kongresses argumentiert, dass diese Deals illegal seien, da das Geld nicht für diesen Zweck bereitgestellt wurde.</p>         <p>Die Investitionen sollen an verschiedene Startups gehen, die jeweils 100 Millionen Dollar erhalten. Dies könnte für viele Unternehmen, die noch Jahre entfernt sind von einem Produkt, das weithin verwendet werden könnte, ein make-or-break Investment sein.</p>         <p>Ein bedeutender Teil des Geldes wird jedoch an ein Unternehmen gehen, das wahrscheinlich nicht existieren würde, wenn es nicht die staatliche Unterstützung gäbe. Anderon wird mit je einer Milliarde Dollar von IBM und der Regierung ausgestattet und wird die Personalien und geistigen Eigentumsrechte von IBM übernehmen. Es soll als Fabrik für die Herstellung von Quantenprozessoreinheiten dienen und seine Dienstleistungen an IBM und jedes andere Unternehmen vertraglich verbinden, das Zugang zu hochentwickelter Hardware haben möchte.</p>         <h3>Rechtliche Bedenken</h3>         <p>Zoe Lofgren, Mitglied des US-Kongresses, ist besorgt über die Art und Weise, wie die Regierung ihr Geld verwendet. „Diese Ankündigung ist illegal und beunruhigend auf vielen Ebenen“, sagte Lofgren. Sie betont, dass das Geld, das für diese Deals verwendet wird, aus dem CHIPS- und Science Act stammt, der speziell für die Forschung und Entwicklung von Mikroelektronik mit Fokus auf Halbleitertechnologie bereitgestellt wurde.</p>         <p> Dieser Bereich überlappt sich nur teilweise mit der Technologie, die in Quantenprozessoren verwendet wird. Lofgren argumentiert auch, dass das Geld für öffentlich-private Forschungspartnerschaften bereitgestellt wurde, was diese Deals jedoch nicht sind. Schließlich bemerkt sie, dass der größte Teil des Geldes an IBM gehen wird und dass ein ehemaliger IBM-Manager (Dario Gil, derzeitiger Unterstaatssekretär für Wissenschaft im Energieministerium) an den Verhandlungen beteiligt war, die zu diesem Deal führten.</p>         <p>None von diesen Punkten bedeutet, dass die Technologie des Quantenprozessors ein schlechtes Investment ist oder dass eines dieser Unternehmen nicht unterstützt werden sollte. Lofgren argumentiert jedoch, dass dies eine gesonderte Bewilligung durch den Kongress erfordern würde.</p>         <p><em>BytePost-Einordnung: Die Investitionen in Quantencomputing können als wichtiger Schritt in Richtung ZukunftSTECHNOLOGIEN gesehen werden. Dennoch ist es wichtig, die rechtlichen Aspekte und die möglichen Konsequenzen solcher Investitionen sorgfältig zu prüfen, um sicherzustellen, dass sie den bestmöglichen Nutzen für die Gesellschaft und die Wirtschaft bringen.</em></p>     ",
+            "content_simple": "         <p>Die US-Regierung hat 2 Milliarden Dollar in Unternehmen investiert, die sich auf Quantencomputing spezialisieren. Dieser Schritt ist jedoch umstritten, da das Geld möglicherweise nicht für diesen Zweck bereitgestellt wurde.</p>         <p>Ein Teil des Geldes wird an ein Unternehmen gehen, das wahrscheinlich nicht existieren würde, wenn es nicht die staatliche Unterstützung gäbe. Dieses Unternehmen soll als Fabrik für die Herstellung von Quantenprozessoreinheiten dienen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Architektur von Quantencomputern ist komplex und erfordert spezielle Hardware. IBM hat bereits Erfahrungen in der Herstellung von Quantenprozessoren und wird seine Expertise an das neue Unternehmen weitergeben.</p>         <p>Das Unternehmen wird als Fabrik für die Herstellung von Quantenprozessoreinheiten dienen und seine Dienstleistungen an andere Unternehmen vertraglich verbinden. Dies kann als Schritt in Richtung einer größeren Verbreitung von Quantencomputing-Technologie gesehen werden.</p>     ",
+            "date": "26.05.2026",
+            "id": "c317da01",
+            "url": "https://arstechnica.com/tech-policy/2026/05/uss-big-bet-on-quantum-computing-may-not-be-entirely-legal/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/c317da01.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "Nemotron-Labs Revolutioniert Textgenerierung",
+            "source": "NVIDIA",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Einleitung in die Welt der Textgenerierung</h3>         <p>Large Language Models (LLMs) sind heute der Standard für Code-Generierung, Mathematik-Problemlösung, Zusammenfassung, Dokumentenverständnis und viele andere Entwickler-Workflows. Im Hintergrund generieren viele LLMs jedoch Text auf die gleiche Weise: token für token, und jedes Token hängt von den vorherigen Tokens ab. Diese Modelle werden als autoregressiv bezeichnet, da sie ihre eigenen Ausgaben konsumieren.</p>         <p>Die autoregressive (AR) Methode war sehr erfolgreich. Sie ist stabil zu trainieren, einfach zu bedienen und verantwortlich für viel des Fortschritts in der modernen Sprachmodellierung. Sie hat jedoch auch eine Grenze: jedes neue Token erfordert einen vollständigen Modell-Durchlauf und jedes Gewicht muss aus dem Speicher geladen werden, bevor die Berechnung beginnen kann.</p>         <h3>Nemotron-Labs Diffusion: Eine neue Art der Textgenerierung</h3>         <p>Nemotron-Labs Diffusion bietet eine neue Möglichkeit: Diffusions-Sprachmodelle (DLM), die durch parallele Generierung mehrerer Tokens und iterative Verfeinerung der generierten Tokens in mehreren Schritten arbeiten. Diese Modelle können nicht nur die Rechenleistung moderner GPUs besser nutzen und signifikante Laufzeit-Vorteile bieten, sondern auch generierte Tokens zurücksetzen, was sie besser für die Revision von Texten und die Bearbeitung von Füll-lücken-Objektiven geeignet macht.</p>         <p>Die Nemotron-Labs Diffusion-Familie umfasst Textmodelle in den Größen 3B, 8B und 14B, die alle unter der kommerziell freundlichen NVIDIA Nemotron Open Model License verfügbar sind, sowie ein 8B-Vision-Sprachmodell, das unter der NVIDIA Source Code License verfügbar ist und eine breite Forschungsfreiheit bietet.</p>         <h3>Drei Generationsmodi in einem Modell</h3>         <p>Nemotron-Labs Diffusion ist auf eine einfache Idee ausgerichtet: autoregressive und diffusive Generation sollten nicht separate Modellfamilien sein. Sie sollten Fähigkeiten desselben Modells sein. Das Modell unterstützt drei Generationsmodi: Autoregressiver Modus läuft wie ein Standard-LLM, Diffusionsmodus generiert Block für Block und selbst-spekulativer Modus verwendet Diffusion, um mehrere Kandidaten-Tokens zu entwerfen, und dann autoregressive Decodierung, um sie zu verifizieren.</p>         <p>Die flexible Gestaltung ist das wichtigste Entwickler-Feature, bei dem sowohl Geschwindigkeit als auch Genauigkeit wichtig sind, auch bei Arbeitslasten mit unvorhersehbaren Batch-Größen oder solchen mit einer einzigen Abfrage (Batch-Größe = 1).</p>         <p><em>BytePost-Einordnung: Nemotron-Labs Diffusion revolutioniert die Textgenerierung mit einer neuen Art von Sprachmodellen, die parallele Generierung und iterative Verfeinerung ermöglichen. Dies bietet neue Möglichkeiten für Entwickler, die schnelle und genaue Textgenerierung benötigen.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du hast ein Modell, das Texte generieren kann. Es gibt zwei Arten, dies zu tun: token für token oder gleichzeitig mehrere Tokens. Nemotron-Labs Diffusion ist ein neues Modell, das die zweite Methode verwendet und somit schneller und genauer ist.</p>         <p>Das Modell kann auch vorherige Tokens zurücksetzen, was es nützlich für die Revision von Texten macht. Es gibt drei Arten, wie das Modell Texte generieren kann: wie ein Standard-Modell, blockweise oder durch selbst-spekulative Verfahren.</p>     ",
+            "content_pro": "         <h3>Technische Details von Nemotron-Labs Diffusion</h3>         <p>Nemotron-Labs Diffusion verwendet Diffusions-Sprachmodelle, die durch parallele Generierung mehrerer Tokens und iterative Verfeinerung der generierten Tokens in mehreren Schritten arbeiten. Dies ermöglicht eine bessere Nutzung der Rechenleistung moderner GPUs und bietet signifikante Laufzeit-Vorteile.</p>         <p>Das Modell unterstützt drei Generationsmodi: autoregressiver Modus, Diffusionsmodus und selbst-spekulativer Modus. Der selbst-spekulative Modus verwendet Diffusion, um mehrere Kandidaten-Tokens zu entwerfen, und dann autoregressive Decodierung, um sie zu verifizieren.</p>         <p>Die Nemotron-Labs Diffusion-Familie umfasst Textmodelle in den Größen 3B, 8B und 14B, die alle unter der kommerziell freundlichen NVIDIA Nemotron Open Model License verfügbar sind.</p>     ",
+            "date": "26.05.2026",
+            "id": "ab287a8f",
+            "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ab287a8f.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Destiny-Fans fordern Destiny 3",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "9e5603b1",
+                "f503b1fc",
+                "32e075d5"
+            ],
+            "content": "         <h3>Was ist los mit Destiny?</h3>         <p>Fast 220.000 Spieler fordern ein Destiny 3. Der Auslöser dafür ist das nahende Ende großer Destiny-2-Updates und die Sorge, dass Bungie künftig nur auf Marathon setze.</p>         <p>Die Spieler sorgen sich, dass Bungie nach dem Ende der großen Updates für Destiny 2 nicht mehr genügend Ressourcen für das Spiel bereitstellen wird. Dies könnte dazu führen, dass das Spiel nicht mehr so regelmäßig aktualisiert wird und somit weniger attraktiv für die Spieler wird.</p>         <h3>Was bedeutet das für die Zukunft von Destiny?</h3>         <p>Das Ende der großen Updates für Destiny 2 und die mögliche Konzentration von Bungie auf Marathon könnte bedeuten, dass die Spieler nach einer neuen Herausforderung suchen müssen. Ein neues Destiny-Spiel könnte genau das bieten, was die Spieler suchen.</p>         <p>Es bleibt abzuwarten, wie Bungie auf die Forderungen der Spieler reagiert und ob ein neues Destiny-Spiel in Planung ist. Bis dahin bleiben die Spieler gespannt und hoffen auf eine positive Entwicklung.</p>         <p><em>BytePost-Einordnung: Die Forderung nach einem neuen Destiny-Spiel zeigt, dass die Spieler immer noch sehr an dem Spiel interessiert sind und nach neuen Herausforderungen suchen. Es bleibt abzuwarten, wie Bungie auf diese Forderungen reagiert und ob ein neues Spiel in Planung ist.</em></p>     ",
+            "content_simple": "         <p>Fast 220.000 Spieler fordern ein neues Spiel in der Destiny-Reihe. Sie sorgen sich, dass das aktuelle Spiel nicht mehr genug aktualisiert wird und somit langweilig wird.</p>         <p>Die Spieler hoffen auf ein neues Spiel, das ihnen neue Herausforderungen bietet. Es bleibt abzuwarten, ob ihre Forderungen erfüllt werden.</p>     ",
+            "content_pro": "         <h3>Technische Details von Destiny</h3>         <p>Die Destiny-Reihe ist bekannt für ihre komplexe Spielmechanik und ihre ständigen Updates. Die Spieler erwarten von einem neuen Spiel, dass es ähnliche Funktionen und Spielmechaniken wie das aktuelle Spiel bietet, aber noch mehr Herausforderungen und Inhalte bietet.</p>         <p>Die Entwicklung eines neuen Destiny-Spiels würde erhebliche Ressourcen und eine sorgfältige Planung erfordern. Bungie müsste sicherstellen, dass das neue Spiel den Erwartungen der Spieler entspricht und dass es keine größeren technischen Probleme gibt.</p>         <h3>Mögliche Lösungen für die Zukunft von Destiny</h3>         <p>Ein möglicher Ansatz für die Zukunft von Destiny könnte die Einführung neuer Spielmodi oder die Erweiterung bestehender Spielmechaniken sein. Dies könnte die Spieler zufriedenstellen und ihnen neue Herausforderungen bieten, ohne dass ein komplett neues Spiel entwickelt werden muss.</p>     ",
+            "date": "26.05.2026",
+            "id": "027b84b6",
+            "url": "https://www.golem.de/news/spielebranche-destiny-fans-machen-druck-auf-sony-und-bungie-2605-209014.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/027b84b6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "business"
+            ],
             "icon": "💻",
             "title": "Peec AI verdoppelt Umsatz",
             "source": "TechCrunch",
@@ -146,7 +440,7 @@
                 "sleep": 0
             },
             "image_local": "images/729e220c.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Ein neuer Angriff auf die Software-Supply-Chain hat Entwickler weltweit in Alarmbereitschaft versetzt: Der TrapDoor-Angriff auf npm, PyPI und CratesIO gefährdet die Sicherheit von Millionen von Projekten. Was bedeutet das für deine eigenen Entwicklungsprojekte und wie kannst du dich schützen? Die Zeit zu handeln ist jetzt."
         },
         {
@@ -38373,10 +38667,10 @@
         }
     ],
     "bytepulse": {
-        "date": "25.05.2026",
-        "positiv": 38,
-        "neutral": 38,
-        "kritisch": 25,
-        "total": 8
+        "date": "26.05.2026",
+        "positiv": 40,
+        "neutral": 40,
+        "kritisch": 20,
+        "total": 10
     }
 }
