@@ -2,6 +2,271 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "OpenRouter verdoppelt Bewertung",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "8c2477f4",
+                "d2bbcef0",
+                "4c290cf5"
+            ],
+            "content": "         <h3>OpenRouter: Ein Erfolgsgeschichte in der KI-Branche</h3>         <p>OpenRouter, ein Unternehmen, das sich auf die Entwicklung von KI-Gateways spezialisiert hat, hat seine Bewertung innerhalb eines Jahres mehr als verdoppelt. Die Firma hat kürzlich eine Serie-B-Finanzierungsrunde abgeschlossen, bei der sie 113 Millionen Dollar von Investoren wie CapitalG, dem Wachstumsventure-Fonds von Alphabet, der Google-Muttergesellschaft, erhalten hat.</p>         <p>Die neue Bewertung von OpenRouter liegt bei etwa 1,3 Milliarden Dollar, wie die New York Times berichtet. Dies ist ein beachtlicher Anstieg im Vergleich zu der Schätzung von 547 Millionen Dollar, die das Unternehmen im vergangenen Jahr nach einer Serie-A-Finanzierungsrunde von 40 Millionen Dollar erreicht hatte.</p>         <p>Der Erfolg von OpenRouter ist eng mit der Entwicklung der KI-Branche verbunden. In den letzten Monaten hat sich die Arbeit in der KI-Branche von der Schulung von Modellen zu deren Anwendung und jetzt zu sogenannten Agents verschoben. OpenRouter bietet einen KI-Gateway an, der es Unternehmen und anderen KI-Nutzern ermöglicht, verschiedene Modelle für unterschiedliche Aufgaben auszuwählen, um Kosten zu kontrollieren oder die Genauigkeit und Vernunft von Aufgaben zu erhöhen.</p>         <p>OpenRouter bietet Zugang zu über 400 Modellen an, darunter Anthropic, Google, OpenAI, xAI und DeepSeek. Das Unternehmen behauptet, 8 Millionen globale Nutzer und 100 Billionen Token pro Monat zu haben, was einem Anstieg von 5-mal im Vergleich zu den 5 Billionen Token pro Woche vor sechs Monaten entspricht.</p>         <h3>Die Zukunft der KI-Modelle</h3>         <p>Der Erfolg von OpenRouter bedeutet, dass die KI-Modelle immer mehr zu einem unsichtbaren, austauschbaren Motor für KI-Aufgaben werden. Anstatt sich auf ein bestimmtes Modell zu spezialisieren, wie es in der Vergangenheit der Fall war, können Unternehmen und Entwickler jetzt verschiedene Modelle für unterschiedliche Aufgaben auswählen.</p>         <p>Das bedeutet, dass die Zukunft der KI-Modelle vielfältig und dynamisch sein wird. Anstatt sich auf ein bestimmtes Modell zu verlassen, können Unternehmen und Entwickler jetzt verschiedene Modelle auswählen, um ihre spezifischen Bedürfnisse zu erfüllen.</p>         <p><em>BytePost-Einordnung: Der Erfolg von OpenRouter zeigt, dass die KI-Branche immer mehr zu einem wichtigen Teil der Technologiebranche wird. Die Fähigkeit, verschiedene KI-Modelle für unterschiedliche Aufgaben auszuwählen, wird es Unternehmen und Entwicklern ermöglichen, ihre Arbeit effizienter und effektiver zu machen.</em></p>     ",
+            "content_simple": "         <p>OpenRouter ist ein Unternehmen, das sich auf die Entwicklung von KI-Gateways spezialisiert hat. Es hat kürzlich eine Serie-B-Finanzierungsrunde abgeschlossen und seine Bewertung mehr als verdoppelt. Das bedeutet, dass die KI-Branche immer mehr zu einem wichtigen Teil der Technologiebranche wird.</p>         <p>OpenRouter bietet einen KI-Gateway an, der es Unternehmen und anderen KI-Nutzern ermöglicht, verschiedene Modelle für unterschiedliche Aufgaben auszuwählen. Dies ermöglicht es ihnen, ihre Arbeit effizienter und effektiver zu machen.</p>     ",
+            "content_pro": "         <h3>Technische Details von OpenRouter</h3>         <p>OpenRouter bietet Zugang zu über 400 Modellen an, darunter Anthropic, Google, OpenAI, xAI und DeepSeek. Das Unternehmen verwendet eine Vielzahl von Technologien, um diese Modelle zu integrieren und zu verwalten.</p>         <p>Die Architektur von OpenRouter ermöglicht es Unternehmen und Entwicklern, verschiedene KI-Modelle für unterschiedliche Aufgaben auszuwählen. Dies wird durch die Verwendung von APIs und anderen Schnittstellen ermöglicht.</p>         <h3>Beispiele und Anwendungen</h3>         <p>Ein Beispiel für die Verwendung von OpenRouter ist die Integration von KI-Modellen in eine bestehende Anwendung. Dies kann durch die Verwendung von APIs und anderen Schnittstellen ermöglicht werden.</p>     ",
+            "date": "27.05.2026",
+            "id": "44ea5441",
+            "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/44ea5441.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "📰",
+            "title": "Norweger Tommy Olsen in Griechenland angeklagt",
+            "source": "Netzpolitik",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "44ea5441",
+                "d2bbcef0",
+                "4c290cf5"
+            ],
+            "content": "         <h3>KW 21: Die Woche, in der die Zivilgesellschaft aufsteht</h3>         <p>Die 21. Kalenderwoche geht zu Ende. Wir haben 13 neue Texte mit insgesamt 101.115 Zeichen veröffentlicht. Willkommen zum netzpolitischen Wochenrückblick.</p>         <p>Tommy Olsen nutzt soziale Medien, um Geflüchtete sichtbar zu machen und damit deren Pushbacks zu verhindern. In Griechenland soll ihm deshalb der Prozess gemacht werden. Die Auslieferung des Norwegers ist nun abgewendet – vorerst.</p>         <p>Tommy Olsen ist ein norwegischer Aktivist, der soziale Medien nutzt, um die Rechte von Geflüchteten zu verteidigen. Er hat in den sozialen Medien auf die Situation von Geflüchteten in Griechenland aufmerksam gemacht und damit versucht, ihre Pushbacks zu verhindern. Dies hat jedoch zu einer Anklage gegen ihn in Griechenland geführt.</p>         <p>Die Situation von Geflüchteten in Griechenland ist komplex und vielschichtig. Viele Geflüchtete sind bei ihrer Ankunft in Griechenland mit großen Herausforderungen konfrontiert, einschließlich mangelnder Unterstützung und Unsicherheit über ihre Zukunft. Tommy Olsens Aktivitäten haben geholfen, auf diese Probleme aufmerksam zu machen und Druck auf die griechische Regierung auszuüben, um die Rechte von Geflüchteten zu schützen.</p>         <p>Die Auslieferung von Tommy Olsen nach Griechenland ist nun abgewendet – vorerst. Dies ist jedoch ein wichtiger Schritt in Richtung einer Lösung des Konflikts und der Förderung von Menschenrechten in Griechenland.</p>         <p><em>BytePost-Einordnung: Die Anklage gegen Tommy Olsen in Griechenland ist ein wichtiger Fall, der die Bedeutung von Menschenrechten und sozialen Medien in der Förderung von Demokratie und Gerechtigkeit unterstreicht.</em></p>     ",
+            "content_simple": "         <p>Tommy Olsen ist ein norwegischer Aktivist, der soziale Medien nutzt, um die Rechte von Geflüchteten zu verteidigen. Er hat in den sozialen Medien auf die Situation von Geflüchteten in Griechenland aufmerksam gemacht und damit versucht, ihre Pushbacks zu verhindern.</p>         <p>Die Situation von Geflüchteten in Griechenland ist komplex und vielschichtig. Viele Geflüchtete sind bei ihrer Ankunft in Griechenland mit großen Herausforderungen konfrontiert, einschließlich mangelnder Unterstützung und Unsicherheit über ihre Zukunft.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte</h3>         <p>Die Nutzung von sozialen Medien durch Tommy Olsen hat gezeigt, wie wichtig diese Plattformen für die Förderung von Menschenrechten und Demokratie sind. Die Verwendung von sozialen Medien ermöglicht es Aktivisten, auf Probleme aufmerksam zu machen und Druck auf Regierungen auszuüben, um die Rechte von Geflüchteten zu schützen.</p>         <p>Die Technologie, die hinter sozialen Medien steht, ist komplex und vielschichtig. Die Verwendung von Algorithmen und Datenbanken ermöglicht es sozialen Medien, Inhalte zu filtern und zu verbreiten. Dies kann jedoch auch zu Problemen führen, einschließlich der Verbreitung von Falschinformationen und der Unterdrückung von freier Meinungsäußerung.</p>         <h3>Kritische Einordnung</h3>         <p>Die Anklage gegen Tommy Olsen in Griechenland ist ein wichtiger Fall, der die Bedeutung von Menschenrechten und sozialen Medien in der Förderung von Demokratie und Gerechtigkeit unterstreicht. Es ist jedoch auch wichtig, die technischen Aspekte von sozialen Medien zu berücksichtigen und sicherzustellen, dass diese Plattformen nicht missbraucht werden, um Menschenrechte zu unterdrücken.</p>     ",
+            "date": "27.05.2026",
+            "id": "8c2477f4",
+            "url": "https://netzpolitik.org/2026/die-woche-in-der-die-zivilgesellschaft-aufsteht/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8c2477f4.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📊",
+            "title": "DevOps mit Python getestet",
+            "source": "Realpython",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "4c290cf5"
+            ],
+            "content": "         <h3>DevOps mit Python</h3>         <p>Du bist Entwickler und möchtest deine Fähigkeiten im Bereich DevOps mit Python testen? Dann ist dieser Quiz genau das Richtige für dich. Der Quiz besteht aus 16 Fragen, die deine Kenntnisse in den Bereichen Skriptausführung, Verwaltung von pip-Abhängigkeiten, GitHub Actions CI/CD und Logging überprüfen.</p>         <p>Der Quiz ist interaktiv und kann ohne Zeitdruck absolviert werden. Für jede korrekte Antwort erhältst du 1 Punkt, und am Ende des Quizzes erhältst du eine Gesamtpunktzahl. Die maximal mögliche Punktzahl beträgt 100%.</p>         <p>Bevor du den Quiz startest, kannst du gerne die Themen noch einmal durchgehen, um sicherzustellen, dass du bereit bist. Der Quiz deckt die folgenden Themen ab:</p>         <ul>             <li>Laufende Python-Skripte</li>             <li>Verwaltung von Abhängigkeiten mit pip</li>             <li>Automatisierung von Workflows mit GitHub Actions</li>             <li>Konfiguration des Python-Loggings-Moduls</li>         </ul>         <p>Viel Erfolg beim Quiz! <a href='#'>Starte den Quiz</a></p>         <p><em>BytePost-Einordnung: Der Quiz ist eine gute Möglichkeit, um seine Kenntnisse im Bereich DevOps mit Python zu überprüfen und eventuelle Schwachstellen zu identifizieren. Mit den 16 Fragen kann man sich ein umfassendes Bild über seine Fähigkeiten machen und gezielt an seinen Schwachstellen arbeiten.</em></p>     ",
+            "content_simple": "         <p>Du bist Entwickler und möchtest wissen, wie gut du mit Python und DevOps umgehen kannst? Dann ist dieser Quiz genau das Richtige für dich. Er besteht aus 16 Fragen, die deine Fähigkeiten testen.</p>         <p>Der Quiz ist wie ein Test, bei dem du zeigen kannst, was du kannst. Du kannst ihn ohne Zeitdruck machen und am Ende siehst du, wie gut du bist.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Quiz deckt verschiedene Aspekte von DevOps mit Python ab, wie z.B. die Ausführung von Skripten, die Verwaltung von Abhängigkeiten mit pip und die Automatisierung von Workflows mit GitHub Actions.</p>         <p>Ein wichtiger Aspekt ist auch die Konfiguration des Python-Loggings-Moduls, das für die Überwachung und Analyse von Anwendungen unerlässlich ist.</p>         <p>Der Quiz ist eine gute Möglichkeit, um seine Kenntnisse im Bereich DevOps mit Python zu überprüfen und eventuelle Schwachstellen zu identifizieren.</p>     ",
+            "date": "27.05.2026",
+            "id": "d2bbcef0",
+            "url": "https://realpython.com/quizzes/python-devops/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d2bbcef0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data"
+            ],
+            "icon": "💻",
+            "title": "Meta migriert Daten-Ingestionssystem",
+            "source": "Meta Engineering",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": "         <h3>Migrating Data Ingestion Systems at Meta Scale</h3>         <p>Das Daten-Ingestionssystem von Meta, das unsere Entwicklerteams für aktuelle Snapshots des sozialen Graphen nutzen, hat kürzlich eine umfassende Überarbeitung erfahren, um seine Zuverlässigkeit im großen Maßstab zu verbessern. Die Migration von unserem Legacy-System zu unserer neuen Architektur erforderte eine groß angelegte Migration unseres gesamten Daten-Ingestionssystems.</p>         <p>Wir teilen die Lösungen und Strategien, die eine erfolgreiche groß angelegte Systemmigration ermöglichten, sowie die Schlüsselfaktoren, die unsere architektonischen Entscheidungen beeinflussten. Bei Meta wird unser sozialer Graph von einer der größten MySQL-Installationen der Welt angetrieben. Jeden Tag scrapen wir inkrementell mehrere Petabyte sozialer Graphendaten aus MySQL in das Data-Warehouse, um die Analytics, Berichte und Datenprodukte zu unterstützen, die Teams im gesamten Unternehmen für Aufgaben wie tägliche Entscheidungsfindung, maschinelles Lernen und Produktentwicklung nutzen.</p>         <h3>Das Migrationssystem</h3>         <p>Wir haben unsere Daten-Ingestionssystem-Architektur überarbeitet, um ihre Effizienz und Zuverlässigkeit erheblich zu verbessern. Die neue Architektur weicht von kundeneigenen Pipelines ab, die sich auf kleinen Skalen bewährt haben, hin zu einem einfacheren selbst verwalteten Data-Warehouse-Service, der auch auf hyperscale-Skala effizient arbeitet.</p>         <p>Wir haben 100% der Arbeitslast erfolgreich migriert und das Legacy-System vollständig veraltet. Die Migration eines Daten-Ingestionssystems dieser Größe war jedoch eine große Herausforderung. Mehrere wichtige Lösungen und Strategien halfen, eine Migration dieses Umfangs erfolgreich zu machen.</p>         <h3>Die Migrationsheranforderung</h3>         <p>Als unsere Betriebe im großen Umfang wuchsen, begann unser Legacy-Daten-Ingestionssystem, Anzeichen von Instabilität unter den immer strengeren Daten-Landing-Zeitanforderungen zu zeigen. Wir wussten, dass wir zu einem neuen System migrieren mussten. Aber wir wussten auch, dass dies bedeutete, Herausforderungen in Bezug auf die Migration selbst zu meistern.</p>         <h3>Sichere Migration</h3>         <p>Um eine nahtlose Migration zu gewährleisten, mussten wir den Migrationssystemlebenszyklus für Tausende von Jobs effektiv verfolgen und robuste Rollout- und Rollback-Steuerungen implementieren, um Probleme zu handhaben, die während des Migrationsprozesses auftreten könnten.</p>         <p>Unser erster Schritt war, einen klaren Migrationssystemlebenszyklus zu etablieren, um Datenintegrität und Betriebssicherheit während des Prozesses zu gewährleisten. Jeder Job musste auf Korrektheit überprüft werden und definierte Erfolgskriterien erfüllen, bevor er zum nächsten Schritt des Migrationssystemlebenszyklus überging.</p>         <ul>             <li>Keine Datenqualitätsprobleme: Es darf keine Unterschiede zwischen den Daten geben, die von dem alten und dem neuen System geliefert werden.</li>             <li>Keine Latenzregression: Die Daten, die von dem neuen System geliefert werden, sollten verbesserte Ladezeiten aufweisen oder zumindest die Leistung des alten Systems erreichen.</li>             <li>Keine Ressourcen-Nutzungsregression: Die Nutzung von Rechen- und Speicherressourcen durch den Job, der im neuen System ausgeführt wird, sollte verbessert oder zumindest vergleichbar mit dem alten System sein.</li>         </ul>         <p>Wir haben diese Kriterien für die kritischen Tabellennmigration definiert und mit den Teams, die von diesem Service abhängig waren, abgestimmt.</p>         <h3>Phase 1: Der Schatten-Prozess</h3>         <p>Im ersten Schritt des Lebenszyklus haben wir Schattenjobs in der Pre-Production-Umgebung eingerichtet, die über das neue System geliefert werden sollten. Dies ist im Wesentlichen ein Produktionsrealistischer Test, bei dem jeder Schattenjob die gleiche Quelle wie der Produktionsjob konsumiert, aber Daten an einen anderen Tisch, den Schattentisch, liefert.</p>         <p>Diese Einrichtung kann helfen, Probleme aufzudecken, da sie das neue System realen Produktionsdaten und -verhalten aussetzt, während sie immer noch einen isolierten Ort bietet, um Ergebnisse zu untersuchen und Reparaturen schnell einzuführen.</p>         <p><em>BytePost-Einordnung: Die Datenmigration bei Meta zeigt, dass auch bei großen Unternehmen die Migration von Legacy-Systemen zu modernen, effizienteren Lösungen wichtig ist, um die Zuverlässigkeit und Skalierbarkeit der Systeme zu verbessern.</em></p>     ",
+            "content_simple": "         <p>Meta hat sein Daten-Ingestionssystem aktualisiert, um es zuverlässiger und effizienter zu machen. Das neue System kann mehr Daten verarbeiten und ist besser für große Unternehmen geeignet.</p>         <p>Die Migration war kompliziert, aber Meta hat sie erfolgreich abgeschlossen. Das Unternehmen hat viele Jobs migriert und das alte System stillgelegt.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Migration umfasste die Übertragung von Daten aus einer großen MySQL-Installation in ein Data-Warehouse. Meta verwendete einen selbst verwalteten Data-Warehouse-Service, um die Daten zu verarbeiten.</p>         <p>Die Migration umfasste mehrere Schritte, darunter die Überprüfung der Datenintegrität und die Sicherstellung, dass die neuen Systeme korrekt funktionierten. Meta verwendete auch eine Schatten-Phase, um diemigration zu testen, bevor sie live geschaltet wurde.</p>         <p>Die technische Umsetzung war anspruchsvoll, aber Meta hat sie erfolgreich abgeschlossen. Die Migration zeigt, dass auch bei großen Unternehmen die Modernisierung von Legacy-Systemen wichtig ist, um die Zuverlässigkeit und Skalierbarkeit der Systeme zu verbessern.</p>     ",
+            "date": "27.05.2026",
+            "id": "4c290cf5",
+            "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/4c290cf5.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "ki"
+            ],
+            "icon": "🚨",
+            "title": "Hackers nutzen KI für Angriffe",
+            "source": "The Hacker News",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": "         <h3>Neue AI-basierte DDoS-Angriffe</h3>         <p>Jeden Tag finden Hacker neue Wege, um Webseiten lahmzulegen und Daten zu stehlen. Doch momentan hat sich etwas geändert. Hacker arbeiten nicht mehr allein. Sie nutzen jetzt leistungsstarke künstliche Intelligenz-Tools (KI), um ihre Angriffe schneller, stärker und viel schwieriger zu stoppen zu machen.</p>         <p>Laut aktuellen Updates von The Hacker News nutzen böswillige Akteure KI, um schwache Stellen in Systemen zu finden. Diese Entwicklung ist besorgniserregend, da sie die Angriffe noch gefährlicher macht.</p>         <h3>Trainieren für die Zukunft</h3>         <p>Der SANSFIRE 2026 in Washington D.C. bringt 50+ Kurse, AI-fokussierte Sitzungen und NetWars. Dies bietet eine Chance, sich auf die neuen Herausforderungen vorzubereiten. Die Veranstaltung findet vom 13. bis 18. Juli statt und bietet eine Ersparnis von 500 Dollar.</p>         <p>Die Hackergemeinschaft nutzt KI, um Angriffe zu optimieren und sie somit effektiver zu machen. Es ist wichtig, sich dieser neuen Bedrohungen bewusst zu sein und entsprechende Maßnahmen zu ergreifen, um die Sicherheit zu gewährleisten.</p>         <p><em>BytePost-Einordnung: Die zunehmende Verwendung von KI bei Angriffen erfordert ein Umdenken in der Sicherheitsbranche. Es ist entscheidend, dass Entwickler und Sicherheitsexperten sich über die neuesten Bedrohungen informieren und entsprechende Abwehrmechanismen entwickeln.</em></p>     ",
+            "content_simple": "         <p>Hacker nutzen jetzt künstliche Intelligenz, um Webseiten anzugreifen und Daten zu stehlen. Diese Angriffe sind schneller und schwieriger zu stoppen als bisherige. Es ist wichtig, dass wir uns auf diese neuen Bedrohungen vorbereiten und Maßnahmen ergreifen, um unsere Sicherheit zu gewährleisten.</p>         <p>Stellen Sie sich vor, Sie haben ein Haus mit vielen Fenstern und Türen. Jedes Fenster und jede Tür ist ein möglicher Eintrittspunkt für Hacker. Mit KI können sie jetzt alle diese Eintrittspunkte viel schneller und effektiver finden und ausnutzen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte von KI-basierten Angriffen</h3>         <p>Die Verwendung von KI bei Angriffen ermöglicht es Hackern, komplexe Angriffsszenarien zu erstellen und auszuführen. Sie können KI-Algorithmen nutzen, um Schwachstellen in Systemen zu identifizieren und auszunutzen.</p>         <p>Ein möglicher Ansatz zur Abwehr solcher Angriffe ist die Verwendung von KI-basierten Sicherheitssystemen, die in der Lage sind, Angriffsmuster zu erkennen und entsprechend zu reagieren. Dies erfordert jedoch eine umfassende Kenntnis der verwendeten KI-Technologien und -Algorithmen.</p>     ",
+            "date": "27.05.2026",
+            "id": "0b83d444",
+            "url": "https://thehackernews.com/2026/05/new-ai-ddos-attacks-are-smarter-learn.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0b83d444.jpg",
+            "pick": true,
+            "pick_reason": "Die Hacker haben ein neues Spiel gefunden: KI-Angriffe. Durch den Einsatz künstlicher Intelligenz werden Cyberangriffe immer cleverer und gefährlicher, was Entwickler vor eine enorme Herausforderung stellt. Die Frage ist: sind unsere Systeme darauf vorbereitet, den Angriffen der Zukunft standzuhalten?"
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "Sol Duara entwickelt Open-Source-Plattform",
+            "source": "Microsoft Tech",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": " <h3>Einleitung</h3> <p>Sol Duara, ein Anbieter von Open-Source-Plattformen für die Verwaltung des Software-Entwicklungslebenszyklus (SDLC), hat angekündigt, eine Open-Source-Orchestrierungsplattform für die Automatisierung von Software-Entwicklungsworkflows an die Continuous Delivery (CD) Foundation beizutragen. Im Kern der Conduit-Plattform von Sol Duara befindet sich CDrus Expressions, ein Framework, das die CDEvents-Vokabular in ausgedrückte Absicht umwandelt.</p> <p>Sol Duara hat auch eine interne Entwicklerplattform (IDP) auf Basis von CDrus Expressions und Tekton-Pipelines entwickelt, die einer Reihe von Prinzipien entspricht, durch die etablierte Systemtheorie, Software-Architekturmuster und Interoperabilitätsframeworks vereinigt werden, um die Interoperabilität zwischen Continuous-Integration-/Continuous-Delivery- (CI/CD)-Plattformen voranzutreiben.</p> <h3>CDEvents und die Zukunft der Software-Entwicklung</h3> <p>Der CEO von Sol Duara, Dadisi Sanyika, der auch Vorsitzender der CD Foundation ist, sagte, dass die Beitragsleistung von Conduit zur CD Foundation darauf abzielt, mehr Anbieter von DevOps-Tools und -Plattformen dazu zu ermutigen, CDEvents zu unterstützen, eine Spezifikation, die von der CD Foundation vorangetrieben wird, um die Interoperabilität im gesamten Software-Entwicklungslebenszyklus (SDLC) zu fördern.</p> <p>CDEvents definiert eine gemeinsame Ereignissprache, die Pipeline-Beschreibungen von physischen Implementierungen entkoppelt und so Skalierbarkeit und Gesamtresilienz verbessert. Darüber hinaus erleichtern standardisierte Ereignisse die Überwachung und Prüffähigkeit von Workflows, die mehrere DevOps-Tools und -Plattformen umfassen.</p> <h3>Die Zukunft der Software-Entwicklung</h3> <p>Mitch Ashley, Vice President und Leiter der Software-Entwicklungsabteilung bei der Futurum Group, sagte, dass CDEvents als Ereignis-Substrat für SDLC-Interoperabilität aufkommt. Es bietet eine offene Vokabular, die beispielsweise ein künstliches Intelligenz-System lesen und darauf reagieren kann, ohne dass eine spezifische individuelle Integration erforderlich ist.</p> <p>Durch die Entwicklung von CDEvents und der Open-Source-Orchestrierungsplattform von Sol Duara wird es einfacher, Tools und Plattformen auszutauschen, wenn dies erforderlich ist. Diese Fähigkeit kann insbesondere in einer künstlichen Intelligenz-Ära wichtig sein, in der Agenten mehrere Tools und Plattformen mit Maschinengeschwindigkeit aufrufen werden.</p> <p><em>BytePost-Einordnung: Die Einführung von CDEvents und der Open-Source-Orchestrierungsplattform von Sol Duara markiert einen wichtigen Schritt in Richtung einer höheren Interoperabilität zwischen verschiedenen DevOps-Tools und -Plattformen. Durch die Verwendung einer gemeinsamen Ereignissprache können Entwickler ihre Workflows besser überwachen und prüfen, was zu einer höheren Effizienz und Produktivität führt.</em></p> ",
+            "content_simple": " <p>Sol Duara entwickelt eine Open-Source-Plattform, um die Arbeit von Software-Entwicklern zu erleichtern. Die Plattform ermöglicht es, verschiedene Tools und Plattformen miteinander zu verbinden und so die Arbeitsabläufe zu verbessern.</p> <p>Dies kann insbesondere bei der Verwendung von künstlicher Intelligenz wichtig sein, da Agenten mehrere Tools und Plattformen mit Maschinengeschwindigkeit aufrufen werden. Durch die Entwicklung von CDEvents und der Open-Source-Orchestrierungsplattform von Sol Duara wird es einfacher, Tools und Plattformen auszutauschen, wenn dies erforderlich ist.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die Conduit-Plattform von Sol Duara basiert auf CDrus Expressions, einem Framework, das die CDEvents-Vokabular in ausgedrückte Absicht umwandelt. Darüber hinaus verwendet die Plattform Tekton-Pipelines, um die Interoperabilität zwischen verschiedenen CI/CD-Plattformen zu gewährleisten.</p> <p>Die Verwendung von CDEvents ermöglicht es, Pipeline-Beschreibungen von physischen Implementierungen zu entkoppeln, was zu einer höheren Skalierbarkeit und Gesamtresilienz führt. Darüber hinaus erleichtern standardisierte Ereignisse die Überwachung und Prüffähigkeit von Workflows.</p> <h3>Architektur und Implementierung</h3> <p>Die Architektur der Conduit-Plattform basiert auf einer Reihe von Prinzipien, durch die etablierte Systemtheorie, Software-Architekturmuster und Interoperabilitätsframeworks vereinigt werden. Dies ermöglicht es, eine flexible und skalierbare Plattform zu entwickeln, die auf unterschiedliche Anforderungen und Erfordernisse reagieren kann.</p> ",
+            "date": "27.05.2026",
+            "id": "f1248b68",
+            "url": "https://devops.com/sol-duara-readies-open-source-workflow-orchestration-platform-for-cd-foundation/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f1248b68.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Google Antigravity 2.0 revolutioniert die Entwicklung",
+            "source": "Analytics Vidhya",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": "         <h3>Was ist Google Antigravity?</h3>         <p>Google Antigravity war ursprünglich als Antwort von Google auf die Frage, was man bei einem kostenlosen IDE für Agents anbieten kann, im November 2025 mit Gemini 3 veröffentlicht worden. Es war ein fähiges Produkt, aber sein Umfang war begrenzt. Dies bot dem Benutzer eine intelligente Codierhilfe in einer vertrauten Oberfläche.</p>         <p>Google Antigravity 2.0 wurde vollständig von Google als eigenständige Desktop-Anwendung neu erstellt, die keine Verbindungen zu Antigravity 1.0 hat. Stattdessen wurde die 2.0-Version von Grund auf erstellt und entworfen, um Agent-Orchestrierungsfunktionalitäten zu unterstützen. Antigravity 1.0 ist immer noch verfügbar, aber Antigravity 2.0 ist jetzt ihr neues Flaggschiff-Produkt.</p>         <h3>Schlüsselfunktionen von Antigravity 2.0</h3>         <p>Die herausragenden Funktionen von Antigravity 2.0 sind:</p>         <ul>             <li>Die eigenständige Desktop-Anwendung, die als primärer Hub für die Koordinierung mehrerer Agents dient, die gleichzeitig laufen, sowie für die Erstellung benutzerdefinierter Workflows für Sub-Agents und für die Planung von Aufgaben, die automatisch im Hintergrund ausgeführt werden.</li>             <li>Native Sprachbefehle, die du verwenden kannst, um Antigravity 2.0 zu steuern.</li>         </ul>         <h3>Das Modell, das alles steuert: Gemini 3.5 Flash</h3>         <p>Das Modell, das Antigravity 2.0 antreibt, ist Gemini 3.5 Flash. Dieses Modell ermöglicht es dir, eine Idee zu haben und sie als Produktions-App zu veröffentlichen.</p>         <h3>Los geht's mit Antigravity 2.0</h3>         <p>Um mit Antigravity 2.0 zu beginnen, musst du die Desktop-Anwendung herunterladen und installieren. Dann kannst du loslegen und deine ersten Agents erstellen.</p>         <h3>Vergleich: Antigravity 1.0 vs Antigravity 2.0</h3>         <p>Antigravity 1.0 und Antigravity 2.0 haben unterschiedliche Ansätze. Antigravity 1.0 konzentriert sich auf die Unterstützung von Codierung durch künstliche Intelligenz, während Antigravity 2.0 auf die Orchestrierung mehrerer Agents ausgerichtet ist.</p>         <p><em>BytePost-Einordnung: Google Antigravity 2.0 ist ein wichtiger Schritt in der Entwicklung von künstlicher Intelligenz und Agent-Orchestrierung. Es bietet Entwicklern eine neue Methode, um komplexe Anwendungen zu erstellen und zu verwalten. Wir sind gespannt, wie sich Antigravity 2.0 in Zukunft entwickeln wird.</em></p>     ",
+            "content_simple": "         <p>Google hat ein neues Tool namens Antigravity 2.0 veröffentlicht, das es Entwicklern ermöglicht, komplexe Anwendungen mit künstlicher Intelligenz zu erstellen. Es handelt sich um eine eigenständige Desktop-Anwendung, die es ermöglicht, mehrere Agents zu koordinieren und Workflows zu erstellen.</p>         <p>Antigravity 2.0 ist ein wichtiger Schritt in der Entwicklung von künstlicher Intelligenz und bietet Entwicklern eine neue Methode, um komplexe Anwendungen zu erstellen und zu verwalten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Antigravity 2.0 verwendet das Gemini 3.5 Flash-Modell, um die Agent-Orchestrierung zu ermöglichen. Dieses Modell ermöglicht es, eine Idee zu haben und sie als Produktions-App zu veröffentlichen.</p>         <h3>Architektur</h3>         <p>Die Architektur von Antigravity 2.0 besteht aus einer eigenständigen Desktop-Anwendung, die als primärer Hub für die Koordinierung mehrerer Agents dient. Die Anwendung ermöglicht es, benutzerdefinierte Workflows für Sub-Agents und die Planung von Aufgaben zu erstellen, die automatisch im Hintergrund ausgeführt werden.</p>         <h3>Kritische Einordnung</h3>         <p>Antigravity 2.0 ist ein wichtiger Schritt in der Entwicklung von künstlicher Intelligenz und Agent-Orchestrierung. Es bietet Entwicklern eine neue Methode, um komplexe Anwendungen zu erstellen und zu verwalten. Es ist jedoch wichtig, die technischen Details und die Architektur von Antigravity 2.0 zu verstehen, um die volle Leistungsfähigkeit des Tools auszunutzen.</p>     ",
+            "date": "27.05.2026",
+            "id": "a19d5b1e",
+            "url": "https://www.analyticsvidhya.com/blog/2026/05/google-antigravity-2-0/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a19d5b1e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Spezialisierung schlägt Skalierung",
+            "source": "Dharma-AI",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": "         <h3>Spezialisierung schlägt Skalierung</h3>         <p>Wenn die Trainingsgeschichte eines Modells nahe genug an dessen Einsatzort liegt, hört die Parameteranzahl auf, die entscheidende Variable zu sein. Ein 3-Milliarden-Parameter-Modell, das auf ein bestimmtes Unternehmen zugeschnitten wurde, übertraf jedes kommerzielle Frontier-API, das getestet wurde, bei ungefähr dem fünfzigfachen niedrigeren Kosten.</p>         <p>Im April veröffentlichte Dharma DharmaOCR - ein Paar spezialisierter kleiner Sprachmodelle für strukturierte OCR, zusammen mit einem Benchmark und dem Begleitpapier. Die Modelle und der Benchmark sind auf Hugging Face verfügbar. Zusammen bilden sie einen Teil einer umfassenderen Anstrengung von Dharma, um zu untersuchen, wie Spezialisierung, Ausrichtung und Inferenzökonomie in Produktions-AI-Systemen interagieren.</p>         <h3>Die Vergangenheit</h3>         <p>Vor drei Jahren operierte die Unternehmens-AI-Strategie größtenteils auf einer stabilen Annahme: Die sicherste Wahl war usually das größte verfügbare Frontier-Modell. Kleinere Modelle wurden hauptsächlich in Betracht gezogen, wo die Arbeitslast eine gewisse Qualitätsminderung gegenüber niedrigeren Kosten tolerieren konnte.</p>         <p>Die Logik hinter dieser Annahme war einfach. Die Fähigkeit schien mit der Parameteranzahl zu skalieren, die führenden Anbieter führten konsistent in den wichtigsten Benchmarks und die Kosten, das falsche Modell zu wählen, wurden oft als größer wahrgenommen als die Kosten, das führende Modell zu bezahlen.</p>         <h3>Die Jetztzeit</h3>         <p>Heute zeigt das empirische Ergebnis jedoch ein Resultat, das die Vergleichsmenge, auf der es beruht, nicht leicht erklären kann. Vor Kurzem veröffentlichte Dharma einen Benchmark, in dem ein 3-Milliarden-Parameter-Modell - das durch eine Feinabstimmungspipeline, die jedes gut ausgestattete Unternehmen replizieren kann, spezialisiert wurde - jedes kommerzielle Frontier-API, das getestet wurde, übertraf.</p>         <p>Diese Erkenntnis ist nicht isoliert. Es ist das genaueste gemessene Beispiel, bis dato, eines Musters, das Dharma in anderen Bereichen beobachtet hat - und eines, das eine wachsende Anzahl von Spezialisierungsstudien begonnen hat zu dokumentieren.</p>         <p><em>BytePost-Einordnung: Diese Erkenntnisse sind wichtig für Entwickler, da sie nahe legen, dass Spezialisierung und Anpassung an bestimmte Aufgaben wichtiger sein können als die reine Skalierung von Modellen. Dies kann zu effizienteren und kostengünstigeren Lösungen führen.</em></p>     ",
+            "content_simple": "         <p>Wenn ein Computerprogramm speziell für eine bestimmte Aufgabe trainiert wird, kann es besser sein als ein allgemeines Programm, auch wenn es weniger komplex ist. Ein Beispiel dafür ist ein Programm, das Texte aus Bildern und Dokumenten lesen kann. Es wurde festgestellt, dass ein spezielles Programm, das nur 3 Milliarden Parameter hat, besser ist als große kommerzielle Programme, die viel teurer sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das spezifische Programm, das getestet wurde, war ein OCR-Modell, das auf Hugging Face verfügbar ist. Es wurde durch eine Feinabstimmungspipeline spezialisiert, die auf einem 3-Milliarden-Parameter-Modell basiert. Die Ergebnisse zeigen, dass diese spezifische Herangehensweise zu besseren Ergebnissen führen kann als die Verwendung großer kommerzieller Modelle.</p>         <p>Die Studie verwendet auch die Konzepte der Spezialisierung und der Ausrichtung, um die Ergebnisse zu erklären. Es wird auch auf die wichtige Rolle der Inferenzökonomie in der Entwicklung von Produktions-AI-Systemen hingewiesen.</p>     ",
+            "date": "27.05.2026",
+            "id": "a35e77e8",
+            "url": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a35e77e8.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Marathon Season 2",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "44ea5441",
+                "8c2477f4",
+                "d2bbcef0"
+            ],
+            "content": "         <h3>Marathon: Ein Horror-Spiel?</h3>         <p>Marathon ist ein Spiel, das man als Horror-Spiel bezeichnen könnte. Zumindest sollten es die Entwickler von Bungie so gestalten. Das Genre ist jedoch nicht das, in dem sich das Spiel derzeit befindet, obwohl es noch einige Elemente wie Jump-Scares, Spannung und Hinweise auf eine katastrophale Entwicklung gibt.</p>         <p>Der erste Trailer für die zweite Season des Spiels zeigt, dass es in diese Richtung gehen könnte. Es gibt jedoch nichts Neues in dem Trailer und er besteht nur aus Cinematics, die den Ton für die kommende Season setzen. Der Trailer zeigt das nächste Runner-Shell, Sentinel, aber es gibt keine Informationen darüber, wie es sich spielt.</p>         <p>Was jedoch auffällt, ist ein kurzer Moment, in dem ein Flare abgefeuert wird und ein Vandal-Shell erscheint, das seinen Körper verformt und zusätzliche Arme zeigt. Es ist unklar, was das bedeutet, aber es sieht unheimlich aus. Die Vermutung ist, dass abgeschossene Runner quasi zombifiziert werden können.</p>         <h3>Die Zukunft von Marathon</h3>         <p>Die Frage ist, wie die Community auf die neue Season reagieren wird. Bungie plant, einen experimentellen PvE-Modus hinzuzufügen, um mehr Spieler anzulocken. Das ist notwendig, da Bungie vor kurzem bekannt gegeben hat, dass es keine großen Updates oder Erweiterungen für Destiny 2 mehr geben wird.</p>         <p>Die neue Season startet am 2. Juni und wir müssen abwarten, wie sie aufgenommen wird. Es bleibt zu hoffen, dass die Änderungen für das Spiel positiv sind.</p>         <p><em>BytePost-Einordnung: Die neue Season von Marathon könnte ein wichtiger Schritt in Richtung Horror-Spiel sein. Es bleibt abzuwarten, wie die Community reagiert und ob die Änderungen positiv sind.</em></p>     ",
+            "content_simple": "         <p>Marathon ist ein Spiel, das man als Horror-Spiel bezeichnen könnte. Der erste Trailer für die zweite Season zeigt, dass es in diese Richtung gehen könnte. Es gibt jedoch nichts Neues in dem Trailer und er besteht nur aus Cinematics.</p>         <p>Die Frage ist, wie die Community auf die neue Season reagieren wird. Es bleibt zu hoffen, dass die Änderungen für das Spiel positiv sind.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Trailer zeigt, dass die neue Season von Marathon eine andere Richtung einschlagen könnte. Es gibt jedoch keine technischen Details über die Änderungen. Es bleibt abzuwarten, wie die Community reagiert und ob die Änderungen positiv sind.</p>         <h3>Kritische Einordnung</h3>         <p>Es ist wichtig zu beachten, dass die Änderungen für das Spiel positiv sein müssen. Die Community muss auf die neue Season reagieren und die Änderungen müssen positiv sein. Es bleibt abzuwarten, wie sich das Spiel in Zukunft entwickelt.</p>     ",
+            "date": "27.05.2026",
+            "id": "f03b4feb",
+            "url": "https://www.rockpapershotgun.com/the-first-cinematic-look-at-marathon-season-2-paints-it-as-the-horror-game-it-always-should-have-been",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f03b4feb.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki",
                 "business"
             ],
@@ -86,7 +351,7 @@
                 "sleep": 0
             },
             "image_local": "images/32e075d5.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Eine neue Ära für Go-Entwickler bricht an: Mit der Einführung einer neuen API erhalten sie mächtige Werkzeuge, um ihre Entwicklung zu beschleunigen und ihre Projekte zu revolutionieren. Dieser Schritt kann das Gameplay der Branche verändern und Go-Entwicklern einen entscheidenden Vorsprung verschaffen. Die Frage ist, ob Sie bereit sind, diese Chance zu nutzen und Ihre Entwicklung auf das nächste Level zu heben."
         },
         {
@@ -38667,10 +38932,10 @@
         }
     ],
     "bytepulse": {
-        "date": "26.05.2026",
-        "positiv": 40,
-        "neutral": 40,
-        "kritisch": 20,
-        "total": 10
+        "date": "27.05.2026",
+        "positiv": 56,
+        "neutral": 22,
+        "kritisch": 22,
+        "total": 9
     }
 }
