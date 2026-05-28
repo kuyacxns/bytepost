@@ -4,6 +4,301 @@
             "cat": [
                 "ki"
             ],
+            "icon": "💻",
+            "title": "Triomics erhält 22M für KI-basierte Krebsbehandlung",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "0e33e0ec",
+                "1fba7d4b",
+                "5e00486e"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Die Firma Triomics hat 22 Millionen Dollar in einer Serie-B-Finanzierungsrunde erhalten, die von Battery Ventures angeführt wurde. Das Unternehmen entwickelt eine KI-gestützte Plattform, die Onkologen und Verwaltungsmitarbeiter dabei unterstützt, datenintensive Aufgaben wie die Zuordnung von klinischen Studien und die Vorbereitung von Terminen zu automatisieren.</p>         <p>Die gute Nachricht ist, dass onkologische Durchbrüche Patienten länger am Leben halten. Dieser Trend führt jedoch zu dichten, mehrjährigen medizinischen Akten, die lange Zeit benötigen, um von Gesundheitspersonal überprüft und entschlüsselt zu werden. Ein typischer Arztbrief enthält Ärztefortschrittsnotizen, Bild- und Pathologieberichte sowie auch Faxscans.</p>         <p>„Wir haben medizinische Akten gesehen, die Tausende von Seiten an Informationen enthalten“, sagte Sarim Khan, Mitgründer von Triomics, gegenüber TechCrunch.</p>         <h3>Die Geschichte von Triomics</h3>         <p>Das Unternehmen wurde 2021 gegründet und hatte im Mai 2024 eine Serie-A-Finanzierungsrunde von 15 Millionen Dollar abgeschlossen. Anfangs konzentrierte sich Triomics darauf, Ärzten bei der Identifizierung der besten klinischen Studien für ihre Patienten zu helfen. Als die Fähigkeiten von Large-Language-Modellen (LLM) wuchsen, erweiterte Triomics seine Plattform.</p>         <p>In den letzten beiden Jahren fügte Triomics überprüfbare Patientenzusammenfassungen hinzu, die wichtige Informationen direkt in die Tools darstellen, die Kliniker bereits verwenden, ohne dass sie die Anwendung wechseln müssen. Durch die Reduzierung der Vorbereitungszeit für Termine geben diese Zusammenfassungen Onkologen mehr Zeit mit ihren Patienten.</p>         <h3>Anwendung und Wettbewerb</h3>         <p>Triomics wird auch verwendet, um die mühsame Aufgabe der Übermittlung von Tumorberichten an Regierungsregister zu automatisieren, eine gesetzliche Pflicht für Krebszentren. Während generische KI-Agenten gut darin sind, grundlegende Zusammenfassungen zu erstellen, nutzen renommierte Institutionen wie das Memorial Sloan Kettering (MSK) und das Yale Cancer Center Triomics, weil ihre Modelle speziell auf onkologische Daten trainiert sind, erklärte Khan.</p>         <p>Der direkteste Wettbewerb für Triomics kommt von KI-Medizin-Schreibern wie Abridge und Microsofts Nuance — Tools, die KI nutzen, um Patienten-Ärzte-Gespräche zu hören und zu dokumentieren — wenn es um die Zusammenfassung von Patientenakten geht.</p>         <p>Trotz der heftigen Konkurrenz wächst Triomics schnell. Laut Khan hat das Unternehmen seine Unternehmenskundenbasis im vergangenen Jahr vervierfacht und damit einen zehnfachen Anstieg des jährlichen wiederkehrenden Umsatzes getrieben.</p>         <h3>Fazit</h3>         <p>Die Entwicklung von Triomics ist ein wichtiger Schritt in der Nutzung von KI, um die Krebsbehandlung zu verbessern. Durch die Automatisierung von datenintensiven Aufgaben kann Triomics Onkologen und Verwaltungsmitarbeiter helfen, mehr Zeit mit Patienten zu verbringen und die Behandlungsergebnisse zu verbessern.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von Triomics ist ein wichtiger Schritt in der Nutzung von KI, um die Krebsbehandlung zu verbessern. Durch die Automatisierung von datenintensiven Aufgaben kann Triomics Onkologen und Verwaltungsmitarbeiter helfen, mehr Zeit mit Patienten zu verbringen und die Behandlungsergebnisse zu verbessern.</em></p>     ",
+            "content_simple": "         <p>Das Unternehmen Triomics entwickelt eine künstliche Intelligenz (KI), die Ärzte und Kliniken bei der Behandlung von Krebspatienten unterstützt. Die KI hilft dabei, wichtige Informationen aus Patientenakten zu extrahieren und Termine vorzubereiten.</p>         <p>Durch die Verwendung von KI kann Triomics die Arbeit von Onkologen und Verwaltungsmitarbeitern erleichtern und ihnen mehr Zeit mit ihren Patienten geben.</p>         <p>Die Entwicklung von Triomics ist ein wichtiger Schritt in der Nutzung von KI, um die Krebsbehandlung zu verbessern.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Triomics nutzt Large-Language-Modelle (LLM), um medizinische Akten zu analysieren und wichtige Informationen zu extrahieren. Die Plattform kann auch verwendet werden, um Termine vorzubereiten und Tumorberichte an Regierungsregister zu übermitteln.</p>         <p>Die Verwendung von LLM ermöglicht es Triomics, genaue und zuverlässige Informationen zu liefern, was in der Krebsbehandlung von entscheidender Bedeutung ist.</p>         <h3>Architektur und Technologien</h3>         <p>Die Architektur von Triomics basiert auf einer Kombination von Machine-Learning-Algorithmen und natürlicher Sprachverarbeitung. Die Plattform nutzt auch cloud-basierte Dienste, um die Skalierbarkeit und Flexibilität zu verbessern.</p>         <p>Die Verwendung von cloud-basierten Diensten ermöglicht es Triomics, schnell und einfach auf die Bedürfnisse von Kliniken und Onkologen zu reagieren.</p>     ",
+            "date": "28.05.2026",
+            "id": "fd487ee0",
+            "url": "https://techcrunch.com/2026/05/27/triomics-nabs-22m-to-bring-oncology-specific-ai-to-cancer-centers/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/fd487ee0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "Bund investiert in KI-Cloud",
+            "source": "netzpolitik.org",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "fd487ee0",
+                "1fba7d4b",
+                "5e00486e"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Für 250 Millionen Euro soll ein neues Projekt für die öffentliche Verwaltung in Deutschland umgesetzt werden. Digitalminister Karsten Wildberger freut sich auf die KI-Cloud für die Verwaltung, die von den Konzernen SAP und Telekom aufgebaut werden soll. Doch Kritiker warnen vor neuen Abhängigkeiten von großen IT-Konzernen.</p>         <h3>Das Projekt</h3>         <p>Die neue KI-Cloud soll zur zentralen Schaltstelle für die öffentliche Verwaltung werden. Zunächst soll die KI-Plattform KIPITZ dorthin umziehen. Die Cloud sei das „Rückgrat einer souveränen, digitalen und KI-fähigen Verwaltung“, sagt der Digitalminister. Die dafür veranschlagten 250 Millionen Euro will sein Ministerium an zwei Konsortien verteilen: 70 Prozent erhalten die Telekom-Tochter T‑Systems und SAP; weitere 30 Prozent ein Konsortium um den Wiesbadener IT-Dienstleister SVA.</p>         <h3>Kritik</h3>         <p>Opposition und Fachleute warnen vor neuen Abhängigkeiten von großen IT-Konzernen. So kritisiert Linken-Abgeordnete Lemke: US-Konzerne hätten kein Patent darauf, Kunden von sich abhängig zu machen. Sie warnt vor dem Lock-in-Effekt – also davor, dass die Verwaltung von einem einmal gewählten Anbieter nicht mehr loskommt.</p>         <p>Der Bund zahlt bereits hunderte Millionen Euro für Lizenzen an große Konzerne wie SAP und Microsoft. Allein im Haushaltsjahr 2025 überwies der Bund an SAP 110 Millionen Euro für Lizenzen und weitere 71 Millionen Euro für Produkte und Dienstleistungen.</p>         <h3>Fazit</h3>         <p>Die neue KI-Cloud für die öffentliche Verwaltung in Deutschland ist ein umstrittenes Projekt. Während Digitalminister Karsten Wildberger das Projekt als souverän bezeichnet, warnen Kritiker vor neuen Abhängigkeiten von großen IT-Konzernen.</p>         <p><em>BytePost-Einordnung: Das Projekt zeigt, dass Deutschland auf dem Weg ist, seine digitale Souveränität zu stärken. Doch es bleibt abzuwarten, ob die neue KI-Cloud tatsächlich unabhängig von großen IT-Konzernen sein wird.</em></p>     ",
+            "content_simple": "         <p>Deutschland will eine neue KI-Cloud für die öffentliche Verwaltung aufbauen. Das soll 250 Millionen Euro kosten. Doch Kritiker sagen, dass dies zu neuen Abhängigkeiten von großen IT-Konzernen führen kann.</p>         <p>Der Staat zahlt bereits viel Geld für Lizenzen an solche Konzerne. Es bleibt abzuwarten, ob die neue KI-Cloud wirklich unabhängig sein wird.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die neue KI-Cloud soll auf der SAP „Business AI Platform“ aufbauen. Diese Plattform bietet eine umfassende Palette von KI-Funktionen, wie Machine Learning und Deep Learning.</p>         <p>Die KI-Cloud soll auch mit anderen Systemen der öffentlichen Verwaltung integriert werden, um eine umfassende digitale Infrastruktur zu schaffen.</p>         <h3>Kritische Einordnung</h3>         <p>Die neue KI-Cloud ist ein wichtiger Schritt für die digitale Souveränität Deutschlands. Doch es bleibt abzuwarten, ob die Realisierung tatsächlich unabhängig von großen IT-Konzernen sein wird.</p>     ",
+            "date": "28.05.2026",
+            "id": "0e33e0ec",
+            "url": "https://netzpolitik.org/2026/fuer-250-millionen-euro-bund-schafft-neue-abhaengigkeiten-von-it-konzernen/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0e33e0ec.jpg",
+            "pick": true,
+            "pick_reason": "Der Bund investiert massiv in eine KI-Cloud, aber die Frage bleibt, ob dies ein Schritt in die richtige Richtung ist. Kritiker warnen vor den Risiken einer solchen Technologie, während Befürworter von enormen Innovationspotential sprechen. Entwickler sollten sich nun mit den möglichen Folgen auseinandersetzen, die diese Entscheidung für die Zukunft ihrer Arbeit haben könnte."
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Go 1.26 verbessert Typkonstruktion",
+            "source": "The Go Blog",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "5e00486e"
+            ],
+            "content": "         <h3>Typkonstruktion und Zykluserkennung</h3>         <p>Go 1.26 vereinfacht die Typkonstruktion und verbessert die Zykluserkennung für bestimmte Arten rekursiver Typen. Die statische Typisierung in Go ist ein wichtiger Teil dessen, warum Go für Produktionsumgebungen geeignet ist, die robust und zuverlässig sein müssen.</p>         <p>Wenn ein Go-Paket kompiliert wird, wird es zunächst analysiert, was bedeutet, dass der Go-Quellcode in einem abstrakten Syntaxbaum (AST) umgewandelt wird. Dieser AST wird dann an den Go-Typprüfer weitergeleitet.</p>         <p>In diesem Blogbeitrag werden wir uns auf einen Teil des Typprüfers konzentrieren, den wir in Go 1.26 signifikant verbessert haben. Wie ändert sich dies aus der Perspektive eines Go-Benutzers? Es sei denn, man ist fanatische Typdefinitionen, gibt es hier keinen bemerkbaren Unterschied. Diese Verfeinerung sollte Eckenfälle reduzieren und uns auf zukünftige Verbesserungen von Go vorbereiten.</p>         <h3>Was ist Typprüfung?</h3>         <p>Typprüfung ist ein Schritt im Go-Kompilierprozess, der ganze Klassen von Fehlern während der Kompilierzeit eliminiert. Der Go-Typprüfer überprüft dabei, ob:</p>         <ul>             <li>Die in der AST vorkommenden Typen gültig sind (z.B. muss der Schlüsseltyp einer Karte vergleichbar sein).</li>             <li>Die Operationen, die an diesen Typen (oder ihren Werten) durchgeführt werden, gültig sind (z.B. kann man nicht einen int und einen string addieren).</li>         </ul>         <h3>Typkonstruktion</h3>         <p>Um dies zu erreichen, konstruiert der Typprüfer eine interne Repräsentation für jeden Typ, den er während der Durchquerung des ASTs findet – ein Prozess, der informell als Typkonstruktion bezeichnet wird. Wie wir bald sehen werden, kann die Typkonstruktion in bestimmten Ecken der Sprache deceptiv komplex sein, obwohl Go für sein einfaches Typsystem bekannt ist.</p>         <p>Der Typprüfer konstruiert ein Defined-Objekt für jeden definierten Typ, das einen Zeiger auf den Typ für den rechts vom Typnamen stehenden Typausdruck enthält. Dieses zugrunde liegende Feld ist für die Ermittlung des tatsächlichen Typs relevant.</p>         <p><em>BytePost-Einordnung: Die Verbesserungen in Go 1.26 sind ein wichtiger Schritt zur weiteren Stabilisierung und Verbesserung der Programmiersprache. Die Vereinfachung der Typkonstruktion und die Verbesserung der Zykluserkennung ermöglichen es Entwicklern, komplexere Programme zu schreiben und die Fehlerquote zu reduzieren.</em></p>     ",
+            "content_simple": "         <p>Die Programmiersprache Go wurde verbessert, um die Konstruktion von Typen zu vereinfachen und die Erkennung von Zyklusfehlern zu verbessern. Dies ermöglicht es Entwicklern, komplexere Programme zu schreiben und Fehler zu reduzieren.</p>         <p>Wenn man ein Go-Programm schreibt, muss der Computer verstehen, was der Code bedeutet. Die Typkonstruktion ist ein wichtiger Teil davon, da sie es dem Computer ermöglicht, den Code zu überprüfen und Fehler zu finden, bevor das Programm ausgeführt wird.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Go-Typprüfer verwendet ein Defined-Objekt, um den Typ für jeden definierten Typ zu konstruieren. Dieses Objekt enthält einen Zeiger auf den Typ für den rechts vom Typnamen stehenden Typausdruck. Die Typkonstruktion ist ein wichtiger Teil des Kompilierprozesses, da sie es ermöglicht, den Code zu überprüfen und Fehler zu finden.</p>         <p>Die Verbesserungen in Go 1.26 ermöglichen es Entwicklern, komplexere Programme zu schreiben und die Fehlerquote zu reduzieren. Die Vereinfachung der Typkonstruktion und die Verbesserung der Zykluserkennung sind wichtige Schritte auf dem Weg zur weiteren Stabilisierung und Verbesserung der Programmiersprache.</p>     ",
+            "date": "28.05.2026",
+            "id": "1fba7d4b",
+            "url": "https://go.dev/blog/type-construction-and-cycle-detection",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1fba7d4b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "security",
+                "cloud"
+            ],
+            "icon": "🚀",
+            "title": "Cloudflare integriert Claude Compliance API",
+            "source": "Cloudflare Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": "         <h3>Neue Integration für mehr Sicherheit</h3>         <p>Cloudflare hat eine neue Integration mit der Claude Compliance API bekannt gegeben. Diese Integration ermöglicht es Sicherheitsteams, die Aktivitäten von Claude Enterprise direkt im Cloudflare-Dashboard zu überwachen. Damit können Unternehmen ihre Claude-Nutzung besser kontrollieren und sicherstellen, dass ihre Daten geschützt sind.</p>         <p>Die Claude Compliance API bietet Sicherheits- und Compliance-Teams programmaticen Zugriff auf Sicherheits-relevante Daten über ihre Claude-Organisationen, Arbeitsbereiche und Nutzung. Cloudflare CASB (Cloud Access Security Broker) nutzt diese API, um Sicherheitsinformationen ohne Inline-Verkehrskontrolle oder Endgeräteagenten zu bereitstellen.</p>         <h3>Die Herausforderung der AI-Sicherheit</h3>         <p>Die schnelle Adoption von KI-Anwendungen hat es Unternehmen schwer gemacht, zu sehen, wie Benutzer mit genehmigten und nicht genehmigten Anwendungen interagieren. Diese Interaktionen unterscheiden sich von traditionellen SaaS-Anwendungen, da Benutzer Dateien hochladen, freie Prompts teilen und Anbieter Inhalte generieren, die sensible Daten enthalten können.</p>         <p>Cloudflare CASB hilft, dieses Problem zu lösen, indem es Unternehmen eine umfassende Sicht auf ihre SaaS-Anwendungen bietet. Durch eine API-Integration kann Cloudflare CASB Anwendungen überwachen und Sicherheitsrisiken erkennen, ohne dass Endgeräteagenten erforderlich sind.</p>         <h3>Die Vorteile der Integration</h3>         <p>Die Integration von Cloudflare CASB mit der Claude Compliance API bietet Unternehmen eine Reihe von Vorteilen, darunter:</p>         <ul>             <li>Erhöhte Sichtbarkeit und Kontrolle über die Claude-Nutzung</li>             <li>Automatisierte Erkennung von Sicherheitsrisiken und -vorfällen</li>             <li>Verbesserte Compliance und Risikomanagement</li>         </ul>         <p>Indem Unternehmen die Claude Compliance API mit Cloudflare CASB integrieren, können sie ihre Sicherheits- und Compliance-Anforderungen besser erfüllen und ihre Daten effektiv schützen.</p>         <p><em>BytePost-Einordnung: Die Integration von Cloudflare CASB mit der Claude Compliance API ist ein wichtiger Schritt zur Verbesserung der Sicherheit und Compliance in Unternehmen. Durch die automatisierte Erkennung von Sicherheitsrisiken und die erhöhte Sichtbarkeit kann Cloudflare CASB Unternehmen helfen, ihre Daten zu schützen und ihre Sicherheits- und Compliance-Anforderungen zu erfüllen.</em></p>     ",
+            "content_simple": "         <p>Cloudflare hat eine neue Integration mit der Claude Compliance API bekannt gegeben. Diese Integration ermöglicht es Unternehmen, ihre Claude-Nutzung besser zu kontrollieren und sicherzustellen, dass ihre Daten geschützt sind.</p>         <p>Die Integration bietet Unternehmen eine Reihe von Vorteilen, darunter eine erhöhte Sichtbarkeit und Kontrolle über die Claude-Nutzung, automatisierte Erkennung von Sicherheitsrisiken und -vorfällen sowie verbesserte Compliance und Risikomanagement.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Claude Compliance API bietet Sicherheits- und Compliance-Teams programmaticen Zugriff auf Sicherheits-relevante Daten über ihre Claude-Organisationen, Arbeitsbereiche und Nutzung. Cloudflare CASB nutzt diese API, um Sicherheitsinformationen ohne Inline-Verkehrskontrolle oder Endgeräteagenten zu bereitstellen.</p>         <p>Die Integration verwendet eine API-Integration, um Anwendungen zu überwachen und Sicherheitsrisiken zu erkennen. Durch die Verwendung von Cloudflare CASB kann Cloudflare die Sicherheits- und Compliance-Anforderungen von Unternehmen besser erfüllen und ihre Daten effektiv schützen.</p>         <h3>Architektur</h3>         <p>Die Architektur der Integration besteht aus einer API-Integration zwischen Cloudflare CASB und der Claude Compliance API. Durch diese Integration kann Cloudflare CASB Sicherheitsinformationen ohne Inline-Verkehrskontrolle oder Endgeräteagenten bereitstellen.</p>     ",
+            "date": "28.05.2026",
+            "id": "5e00486e",
+            "url": "https://blog.cloudflare.com/casb-anthropic-integration/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/5e00486e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Grandoreiro Malware bedroht Windows- und Android-Nutzer",
+            "source": "WatchGuard und ESET",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": "         <h3>Grandoreiro-Malware und BTMOB-RAT-Kampagnen zielen auf Windows- und Android-Nutzer ab</h3>         <p>Latinamerika und Europa werden zu Zielen zweier Banking-Trojaner-Kampagnen, die darauf abzielen, Windows- und Android-Geräte mit Grandoreiro- und BTMOB-Malware zu infizieren.</p>         <p>Laut neuen Erkenntnissen von WatchGuard und ESET werden diese beiden Malware-Familien verwendet, um Unternehmen in Spanien, Portugal und Mexiko sowie mobile Nutzer in Brasilien gezielt anzugreifen.</p>         <p>Die KI verändert jede Angriffsfläche. Trainiere dich für das, was als Nächstes kommt. SANSFIRE 2026 in D.C. bringt 50+ Kurse, AI-fokussierte Sitzungen und NetWars. Vom 13. bis 18. Juli. Spare 500 Dollar.</p>         <h3_Details zur Malware</h3>         <p>Die Grandoreiro-Malware und die BTMOB-RAT-Kampagne sind zwei separate Bedrohungen, die sich auf Windows- und Android-Geräte konzentrieren. Die Grandoreiro-Malware ist eine Banking-Trojaner, die darauf abzielt, Online-Banking- und Finanzinformationen zu stehlen, während die BTMOB-RAT-Kampagne eine Remote-Access-Trojaner ist, die es Angreifern ermöglicht, Zugriff auf infizierte Geräte zu erlangen.</p>         <p>Beide Bedrohungen nutzen soziale Ingenieurskunst und Phishing-Angriffe, um Opfer zu infizieren. Die Angreifer senden E-Mails oder SMS mit schädlichen Links oder Anhängen, die, wenn geklickt oder geöffnet, die Malware auf das Gerät herunterladen.</p>         <h3_Schutzmaßnahmen</h3>         <p>Um sich vor diesen Bedrohungen zu schützen, sollten Nutzer vorsichtig sein, wenn sie E-Mails oder SMS mit unbekannten Absendern erhalten, und keine verdächtigen Links oder Anhänge öffnen. Es ist auch ratsam, regelmäßig Sicherheitsupdates für das Betriebssystem und andere Software zu installieren und eine Antiviren-Software zu verwenden.</p>         <p><em>BytePost-Einordnung: Diese Bedrohungen zeigen, dass die Sicherheit von Windows- und Android-Geräten immer noch ein großes Problem ist. Es ist wichtig, dass Nutzer vorsichtig sind und ihre Geräte regelmäßig aktualisieren, um sich vor solchen Angriffen zu schützen.</em></p>     ",
+            "content_simple": "         <p>Die Grandoreiro-Malware und die BTMOB-RAT-Kampagne sind zwei Bedrohungen, die Windows- und Android-Geräte angreifen. Sie können durch E-Mails oder SMS mit schädlichen Links oder Anhängen verbreitet werden.</p>         <p>Um sich zu schützen, sollten Nutzer vorsichtig sein und keine verdächtigen Links oder Anhänge öffnen. Es ist auch ratsam, regelmäßig Sicherheitsupdates zu installieren und eine Antiviren-Software zu verwenden.</p>     ",
+            "content_pro": "         <h3>Technische Details zur Grandoreiro-Malware und BTMOB-RAT-Kampagne</h3>         <p>Die Grandoreiro-Malware ist eine Banking-Trojaner, die in C++ geschrieben ist und sich auf Windows-Geräte konzentriert. Sie verwendet eine Kombination aus sozialer Ingenieurskunst und Phishing-Angriffen, um Opfer zu infizieren.</p>         <p>Die BTMOB-RAT-Kampagne ist eine Remote-Access-Trojaner, die in Java geschrieben ist und sich auf Android-Geräte konzentriert. Sie ermöglicht es Angreifern, Zugriff auf infizierte Geräte zu erlangen und Daten zu stehlen.</p>         <h3_Schutzmaßnahmen für Entwickler</h3>         <p>Um sich vor diesen Bedrohungen zu schützen, sollten Entwickler sicherstellen, dass ihre Anwendungen regelmäßig aktualisiert und getestet werden. Es ist auch ratsam, Sicherheitsupdates für das Betriebssystem und andere Software zu installieren und eine Antiviren-Software zu verwenden.</p>         <p>Es ist auch wichtig, dass Entwickler ihre Anwendungen so designen, dass sie resistenter gegen Angriffe sind. Dazu gehören die Verwendung von sicheren Protokollen, die Implementierung von Authentifizierungs- und Autorisierungsmechanismen und die regelmäßige Überprüfung von Code und Daten.</p>     ",
+            "date": "28.05.2026",
+            "id": "37e7e60b",
+            "url": "https://thehackernews.com/2026/05/grandoreiro-malware-and-btmob-rat.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/37e7e60b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "cloud",
+                "ki"
+            ],
+            "icon": "☁️",
+            "title": "AWS Transform feiert 1-Jahres-Jubiläum",
+            "source": "AWS Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": " <h3>AWS Transform: Ein Jahr Erfolg</h3> <p>Vor einem Jahr hat AWS AWS Transform für .NET, Mainframe und VMware-Workloads gestartet, den ersten agentic-AI-Service, der speziell für die Modernisierung von Unternehmensanwendungen im großen Maßstab entwickelt wurde. Auf der re:Invent 2025 wurde AWS Transform Custom vorgestellt, das es Organisationen ermöglicht, Code im großen Maßstab mithilfe von AWS-gesteuerten und benutzerdefinierten Transformationen zu modernisieren und umzuwandeln.</p> <p>Sie können Sprachversionen aktualisieren, Frameworks migrieren, die Leistung optimieren und Codebasen mithilfe von Transformationen analysieren, die bereit zur Verwendung sind oder benutzerdefiniert werden können, um die spezifischen Anforderungen Ihrer Organisation zu erfüllen. Außerdem wurden Full-Stack-Windows-Modernisierungsfunktionen und Reimagine-Funktionen sowie automatisierte Testfunktionen für Mainframes eingeführt.</p> <p>In 12 Monaten haben Tausende von Kunden Hunderttausende von Servern migriert, 1,6 Millionen Stunden gespart und 4,5 Milliarden Codezeilen mit AWS Transform verarbeitet. Anlässlich des 1-Jahres-Jubiläums sind AWS-Transform-Agents nun in Kiro, Claude, Cursor und Codex verfügbar, einschließlich des Agent-Builder-Toolkits Kiro Power für die Erstellung benutzerdefinierter Transformations-Agents.</p> <h3>Neue Funktionen und Updates</h3> <p>Im Rahmen der Feierlichkeiten wurden auch einige neue Funktionen und Updates angekündigt, darunter:</p> <ul>     <li>Die allgemeine Verfügbarkeit von Claude Platform auf AWS</li>     <li>Amazon EC2 M3 Ultra Mac-Instanzen</li>     <li>Amazon Redshift RG-Instanzen, die von AWS Graviton angetrieben werden</li>     <li>Amazon Bedrock Advanced Prompt Optimization</li>     <li>AWS Security Agent mit vollständiger Code-Scanning-Funktion (Vorschau)</li>     <li>AWS Interconnect – Multicloud-Konnektivität mit Oracle Cloud Infrastructure (Vorschau)</li> </ul> <p>Um mehr über die Entwicklungen von AWS Transform und den neuen Funktionen zu erfahren, kannst du die offizielle AWS-Blog-Beiträge besuchen.</p> <p><em>BytePost-Einordnung: Die Entwicklung von AWS Transform ist ein wichtiger Schritt in Richtung der Modernisierung von Unternehmensanwendungen. Die neue Funktionen und Updates bieten eine Vielzahl von Möglichkeiten für Entwickler und Unternehmen, ihre Anwendungen zu verbessern und zu modernisieren.</em></p> ",
+            "content_simple": " <p>AWS Transform ist ein Dienst von Amazon, der es Unternehmen ermöglicht, ihre Anwendungen zu modernisieren. Vor einem Jahr wurde dieser Dienst gestartet und hat seitdem viele Erfolge gefeiert. Nun gibt es neue Funktionen und Updates, die es noch einfacher machen, Anwendungen zu modernisieren.</p> <p>Ein Beispiel dafür ist die Claude Platform, die jetzt auf AWS verfügbar ist. Sie bietet eine einfache Möglichkeit, Anwendungen zu entwickeln und zu modernisieren. Es gibt auch neue Instanzen für Mac-Anwendungen und eine verbesserte Sicherheitsfunktion.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>AWS Transform verwendet eine Kombination aus Machine Learning und benutzerdefinierten Transformationen, um Anwendungen zu modernisieren. Die neue Funktionen und Updates bieten eine Vielzahl von Möglichkeiten für Entwickler und Unternehmen, ihre Anwendungen zu verbessern und zu modernisieren.</p> <p>Ein Beispiel dafür ist die Claude Platform, die auf AWS basiert und eine einfache Möglichkeit bietet, Anwendungen zu entwickeln und zu modernisieren. Es gibt auch neue Instanzen für Mac-Anwendungen, die auf Apple M3 Ultra Mac Studio-Computern basieren und eine 28-Kern-CPU, 60-Kern-GPU, 32-Kern-Neural-Engine und 256 GB unified Memory haben.</p> ",
+            "date": "28.05.2026",
+            "id": "1ccbd579",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-at-1-year-claude-platform-on-aws-ec2-m3-ultra-mac-instances-and-more-may-18-2026/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/1ccbd579.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "data"
+            ],
+            "icon": "🤖",
+            "title": "Lernen aus Paarvergleichen",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": "<h3>Einführung in das Bradley-Terry-Modell</h3><p>Das Bradley-Terry-Modell ist ein statistisches Modell, das verwendet wird, um aus Paarvergleichen probabilistische Ranglisten zu erstellen. Dieses Modell wurde ursprünglich in den 1950er Jahren entwickelt, um die Leistung von Sportmannschaften zu bewerten.</p><p>Das Modell geht davon aus, dass die Wahrscheinlichkeit, dass ein Element einem anderen überlegen ist, direkt proportional zu seinem eigentlichen Wert ist. Dieser Wert kann als ein Skalarwert betrachtet werden, der die relative Stärke oder Leistung des Elements darstellt.</p><h3>Wie funktioniert das Bradley-Terry-Modell?</h3><p>Das Bradley-Terry-Modell verwendet eine einfache Formel, um die Wahrscheinlichkeit zu berechnen, dass ein Element einem anderen überlegen ist. Diese Formel lautet:</p><p>p(i > j) = (wi / (wi + wj))</p><p>wobei p(i > j) die Wahrscheinlichkeit ist, dass Element i Element j überlegen ist, und wi und wj die Skalarwerte von Element i und j sind.</p><h3>Anwendung des Bradley-Terry-Modells</h3><p>Das Bradley-Terry-Modell kann in verschiedenen Anwendungsbereichen verwendet werden, wie z.B. in der Sportanalyse, der politischen Analyse oder der Bewertung von Produkten.</p><p>Ein Beispiel für die Anwendung des Bradley-Terry-Modells ist die Bewertung von Fußballmannschaften. Wenn zwei Mannschaften gegeneinander antreten, kann das Bradley-Terry-Modell verwendet werden, um die Wahrscheinlichkeit zu berechnen, dass eine Mannschaft die andere besiegt.</p>",
+            "content_simple": "<p>Das Bradley-Terry-Modell ist ein spezielles Rechenmodell, das hilft, die relative Stärke oder Leistung von verschiedenen Elementen zu vergleichen. Es geht davon aus, dass die Wahrscheinlichkeit, dass ein Element einem anderen überlegen ist, direkt proportional zu seinem eigentlichen Wert ist.</p><p>Ein simples Beispiel dafür ist die Bewertung von Fußballmannschaften. Wenn zwei Mannschaften gegeneinander antreten, kann das Modell verwendet werden, um die Wahrscheinlichkeit zu berechnen, dass eine Mannschaft die andere besiegt.</p>",
+            "content_pro": "<h3>Technische Details des Bradley-Terry-Modells</h3><p>Das Bradley-Terry-Modell verwendet eine logistische Funktion, um die Wahrscheinlichkeit zu berechnen, dass ein Element einem anderen überlegen ist. Diese Funktion lautet:</p><p>p(i > j) = 1 / (1 + exp(-(wi - wj)))</p><p>wobei p(i > j) die Wahrscheinlichkeit ist, dass Element i Element j überlegen ist, und wi und wj die Skalarwerte von Element i und j sind.</p><h3>Implementierung des Bradley-Terry-Modells</h3><p>Das Bradley-Terry-Modell kann in verschiedenen Programmiersprachen implementiert werden, wie z.B. in Python oder R. Eine mögliche Implementierung in Python könnte wie folgt aussehen:</p><pre><code>import numpy as np</code></pre><p>Diese Implementierung verwendet die numpy-Bibliothek, um die logistische Funktion zu berechnen.</p>",
+            "date": "28.05.2026",
+            "id": "d91bb5e6",
+            "url": "https://towardsdatascience.com/learning-from-pairwise-preferences-an-introduction-to-the-bradley-terry-model/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d91bb5e6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Websites spionieren mit SSD-Aktivität",
+            "source": "The Verge",
+            "read": "3 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Es gibt keine Knappheit an Websites, die clevere Techniken nutzen, um die Browser-Historie, Geräte-Fingerabdrücke und Eingaben von Benutzern in Echtzeit zu verfolgen. Selbst Meta und Yandex wurden kürzlich bei der Teilnahme an diesem Datenschutz-invasiven Treiben ertappt. Jetzt haben Websites eine neue Möglichkeit, ihre Besucher auszuspionieren: indem sie die subtilen Interaktionen mit ihren Solid-State-Drives (SSDs) messen.</p>         <p>Die Technik, die als FROST (Fingerprinting Remotely Using OPFS-Based SSD Timing) bezeichnet wird, ermöglicht es Websites, andere Websites zu überwachen, die ein Besucher ansieht, und welche Anwendungen auf seinem Gerät geöffnet sind. Diese Technik nutzt einen sogenannten Side-Channel-Angriff, der es ermöglicht, vertrauliche Daten zu entschlüsseln und andere vertrauliche Informationen abzuleiten.</p>         <h3>Der Angriff</h3>         <p>Der FROST-Angriff nutzt einen Side-Channel-Angriff, der die Interaktion zwischen verschiedenen Prozessen misst, die um eine bestimmte Ressource konkurrieren. Durch das Messen der Zeit, die bestimmte E/A-Operationen (Input/Output) auf dem SSD des Besuchers benötigen, konnten die Forscher bestimmen, welche Websites in anderen Tabs geöffnet sind und welche Anwendungen auf dem Gerät des Besuchers geöffnet sind.</p>         <p>FROST benötigt keine Interaktion von dem Besucher, außer dass er die Website besucht, die den Angriff ausführt. „Web-Browser haben sich von einfachen Dokumenten-Viewern zu komplexen Plattformen entwickelt, die anspruchsvolle Anwendungen ausführen können“, schrieben die Autoren des Forschungs-Papiers. „Unternehmen wie Google, Microsoft und Adobe haben vollständige Office-Suiten, Foto- und Video-Editoren oder sogar integrierte Entwicklungsumgebungen (IDEs) entwickelt, die komplett im Browser laufen.“</p>         <h3>Die Funktionsweise</h3>         <p>FROST läuft ausschließlich im Browser und nutzt JavaScript, das mit dem OPFS (Origin Private File System) interagiert, einem reservierten Speicherplatz, der für eine bestimmte Website reserviert ist, um Code auszuführen, der zum Abschließen einer bestimmten Aufgabe benötigt wird. Websites können ein solches Dateisystem erstellen, ohne dass der Besucher interagieren muss.</p>         <p>Durch das Messen der E/A-Interaktionen und das Durchlaufen dieser Interaktionen durch ein vorgebildetes Convolutional Neural Network (CNN) kann der Angreifer verschiedene Anwendungen und Websites identifizieren, die auf dem Gerät des Besuchers geöffnet sind. „Der Angreifer misst kontinuierlich die SSD-Konkurrenz, indem er zufällige Lesevorgänge von einer großen OPFS-Datei durchführt“, erklärten die Forscher. „Die SSD-Konkurrenz, die durch Benutzeraktivitäten verursacht wird, verursacht messbare Latenzunterschiede für diese Leseoperationen. Durch das Trainieren eines CNN auf diesen Spuren kann der Angreifer Benutzeraktivitäten auf dem Host-System identifizieren, indem er neue Spuren mit dem trainierten Modell klassifiziert.“</p>         <h3>Begrenzungen und Gegenmaßnahmen</h3>         <p>Die Technik hat ihre Grenzen. Erstens muss die OPFS-Datei extrem groß sein - wahrscheinlich eine Gigabyte oder mehr. Dieses Erfordernis bedeutet, dass Angriffe im großen Maßstab wahrscheinlich von vielen Benutzern erkannt werden. Zweitens muss die OPFS-Datei auf dem gleichen SSD gespeichert werden, den der Besucher verwendet. Dies ist normalerweise kein Problem für die Überwachung geöffneter Websites, da die OPFS-Datei im Standard-Verzeichnis des Browsers gespeichert wird.</p>         <p>Eine der besten Methoden, um FROST-Angriffe zu verhindern, ist, Tabs zu schließen, sobald sie nicht mehr benötigt werden. Erfahrene Benutzer können die Erstellung und Größe von OPFS-Dateien überwachen, die von unbekannten Websites zugewiesen werden. Die Forscher schlugen Methoden vor, um den Side-Channel-Angriff zu unterbinden, wie z.B. die Begrenzung der maximalen Größe von Dateien, die zulässig sind.</p>         <p><em>BytePost-Einordnung: Diese Entdeckung zeigt, dass die Sicherheitslandschaft im Internet ständig im Wandel ist und dass neue Angriffsvektoren ständig identifiziert werden. Es ist wichtig, dass Browser-Entwickler und -Hersteller solche Schwachstellen ernst nehmen und Gegenmaßnahmen ergreifen, um die Privatsphäre der Benutzer zu schützen.</em></p>     ",
+            "content_simple": "         <p>Manche Websites können jetzt sehen, welche anderen Seiten du besuchst und welche Apps auf deinem Gerät geöffnet sind. Sie machen das, indem sie die Aktivität deiner Festplatte messen. Das funktioniert, weil die Festplatte unterschiedlich schnell reagiert, je nachdem, was auf deinem Gerät passiert.</p>         <p>Wenn du Tabs schließt, wenn du sie nicht mehr brauchst, kannst du das verhindern. Es ist auch wichtig, dass die Hersteller von Browsern und Geräten solche Schwachstellen ernst nehmen und etwas dagegen tun.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>FROST nutzt einen Side-Channel-Angriff, der auf dem Messen der Zeit basiert, die bestimmte E/A-Operationen auf dem SSD benötigen. Dieser Angriff kann durch das Einsatz von JavaScript im Browser und die Interaktion mit dem OPFS durchgeführt werden.</p>         <p>Der Angriff läuft in mehreren Schritten ab: Zuerst wird eine große OPFS-Datei erstellt, die als Basis für die Messung der SSD-Konkurrenz dient. Dann werden zufällige Lesevorgänge von dieser Datei durchgeführt, um die Latenzzeiten zu messen. Durch das Trainieren eines CNN auf diesen Messungen kann der Angreifer Benutzeraktivitäten auf dem Host-System identifizieren.</p>         <h3>Kritische Einordnung</h3>         <p>Der FROST-Angriff zeigt, dass die Sicherheitslandschaft im Internet ständig im Wandel ist und dass neue Angriffsvektoren ständig identifiziert werden. Es ist wichtig, dass Browser-Entwickler und -Hersteller solche Schwachstellen ernst nehmen und Gegenmaßnahmen ergreifen, um die Privatsphäre der Benutzer zu schützen.</p>     ",
+            "date": "28.05.2026",
+            "id": "ceecab11",
+            "url": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ceecab11.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Adaptive Parallel Reasoning",
+            "source": "Forscher",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": " <h3>Überblick über Adaptive Parallel Reasoning</h3> <p>Was wenn ein Reasoning-Modell selbst entscheiden könnte, wann es unabhängige Subaufgaben zerlegt und parallelisiert, wie viele gleichzeitige Threads es startet und wie es diese basierend auf dem Problem koordiniert? Wir bieten eine detaillierte Analyse der jüngsten Fortschritte im Bereich des parallelen Reasonings, insbesondere Adaptive Parallel Reasoning.</p> <p>Offenlegung: Dieser Beitrag ist Teil einer Landschaftsuntersuchung und Teil einer Perspektive auf Adaptive Parallel Reasoning. Einer der Autoren (Tony Lian) leitete ThreadWeaver (Lian et al., 2025), eine der diskutierten Methoden.</p> <h3>Motivation</h3> <p>Die jüngsten Fortschritte in den Reasoning-Fähigkeiten von Large Language Models (LLMs) wurden größtenteils durch die Skalierung der Inferenzzeit, zusätzlich zur Datenskalierung und Parameterskalierung (OpenAI et al., 2024; DeepSeek-AI et al., 2025) vorangetrieben. Modelle, die explizit Reasoning-Tokens ausgeben (durch Zwischenschritte, Rückverfolgung und Exploration), dominieren Math-, Coding- und agente Benchmarks. Diese Verhaltensweisen ermöglichen es Modellen, alternative Hypothesen zu erforschen, frühere Fehler zu korrigieren und Schlussfolgerungen zu synthetisieren, anstatt sich auf eine einzige Lösung zu verpflichten (Wen et al., 2025).</p> <p>Das Problem besteht jedoch darin, dass sequenzielles Reasoning linear mit der Menge der Exploration skaliert. Die Skalierung sequenzieller Reasoning-Tokens geht mit einem Kostenaufwand einher, da Modelle das Risiko haben, die effektiven Kontextgrenzen zu überschreiten (Hsieh et al., 2024). Die Anhäufung von Zwischenexplorationspfaden erschwert es dem Modell, sich unter den Ablenkern zu entscheiden, wenn es Informationen in seinem Kontext aufmerksam macht, was zu einer Verschlechterung der Modellleistung führt, auch bekannt als Kontext-Rot (Hong, Troynikov und Huber, 2025). Die Latenz wächst proportional mit der Länge des Reasonings. Für komplexe Aufgaben, die Millionen von Tokens für Exploration und Planung erfordern, ist es nicht ungewöhnlich, dass Benutzer tens of Minuten oder sogar Stunden auf eine Antwort warten (Qu et al., 2025).</p> <h3>Paralleles Reasoning</h3> <p>Paralleles Reasoning ist als natürliche Lösung aufgetaucht. Anstatt Pfade sequenziell zu erforschen (Gandhi et al., 2024) und den Kontextfenster bei jedem Schritt zu akkumulieren, können wir Modelle ermöglichen, multiple Threads unabhängig (Threads sind nicht voneinander abhängig) und gleichzeitig (Threads können gleichzeitig ausgeführt werden) zu erforschen. Abbildung 1: Sequenzielles vs. Paralleles Reasoning.</p> <p>BytePost-Einordnung: Adaptive Parallel Reasoning ist ein vielversprechender Ansatz, um die Skalierbarkeit von Reasoning-Modellen zu verbessern. Durch die Möglichkeit, unabhängige Subaufgaben parallel zu bearbeiten, kann die Latenz reduziert und die Modellleistung verbessert werden. Dies ist insbesondere für komplexe Aufgaben von Bedeutung, bei denen sequenzielles Reasoning zu langen Wartezeiten führen kann.</p> ",
+            "content_simple": " <p>Stell dir vor, ein Computerprogramm könnte selbst entscheiden, wie es komplexe Aufgaben löst. Es könnte verschiedene Teilaufgaben parallel bearbeiten und so die Gesamtleistung verbessern. Dieser Ansatz wird als Adaptive Parallel Reasoning bezeichnet und ist ein wichtiger Schritt in Richtung effizienterer Computerprogramme.</p> <p>Das Problem bei herkömmlichen Computerprogrammen ist, dass sie komplexe Aufgaben Schritt für Schritt lösen. Dies kann zu langen Wartezeiten führen, insbesondere wenn es um Millionen von Tokens für Exploration und Planung geht. Adaptive Parallel Reasoning hingegen ermöglicht es, diese Aufgaben parallel zu bearbeiten und so die Latenz zu reduzieren.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Adaptive Parallel Reasoning basiert auf der Idee, unabhängige Subaufgaben parallel zu bearbeiten. Dies ermöglicht es, die Latenz zu reduzieren und die Modellleistung zu verbessern. Die Architektur von Adaptive Parallel Reasoning besteht aus mehreren Komponenten, darunter die Aufteilung von Aufgaben, die Zuweisung von Ressourcen und die Koordination von Threads.</p> <h3>Verwandte Konzepte</h3> <p>Adaptive Parallel Reasoning ist verwandt mit anderen Konzepten wie parallelem Computing und verteilter Verarbeitung. Es basiert auch auf den Prinzipien des Functional Programming und der unabhängigen Verarbeitung von Daten.</p> <h3>Kritische Einordnung</h3> <p>Adaptive Parallel Reasoning ist ein vielversprechender Ansatz, um die Skalierbarkeit von Reasoning-Modellen zu verbessern. Es ist jedoch wichtig, die technischen Trade-offs zu berücksichtigen, wie z.B. die Komplexität der Aufteilung von Aufgaben und die Zuweisung von Ressourcen.</p> ",
+            "date": "28.05.2026",
+            "id": "f6f24ef5",
+            "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f6f24ef5.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "PlayStation Days of Play",
+            "source": "GameSpot",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "fd487ee0",
+                "0e33e0ec",
+                "1fba7d4b"
+            ],
+            "content": "         <h3>Die besten Angebote im PlayStation-Event</h3>         <p>Es ist eine bemerkenswerte Woche für PS5-Angebote, da das Days of Play-Event von PlayStation vom 27. Mai bis zum 10. Juni läuft. Alles von Spielen und Kopfhörern bis hin zu VR-Headsets und DualSense-Controllern ist im Angebot, many für die niedrigsten Preise, die wir in Monaten gesehen haben.</p>         <p>Beispielsweise kannst du den <strong>PlayStation DualSense Controller (Weiß)</strong> für 55 Dollar (statt 75 Dollar) erhalten, während der <strong>PlayStation VR2</strong> für 299 Dollar (statt 399 Dollar) erhältlich ist. Gleiches gilt für Spiele, wie <strong>Marvel's Spider-Man 2</strong> und <strong>God of War Ragnarok</strong>, die beide für 30 Dollar gelistet sind.</p>         <p>Einige Collector's Editions sind auch günstig in dieser Woche, während andere Spiele ihre niedrigsten Preise aller Zeiten erreichen, einschließlich eines der besten RPGs von 2025, <strong>Kingdom Come: Deliverance 2</strong>. Wir haben alle besten PS5-Angebote und -Rabatte der Woche unten aufgelistet.</p>         <h3>Die besten PS5-Spiel-Angebote</h3>         <p>PS5-Digitalspiele sind im PlayStation Store für das Days of Play-Event im Angebot, obwohl physische Kopien bei den meisten Händlern preisgeglichen werden. Wenn du also lieber eine Disc hast, die du in dein Spielzimmer stellen kannst, als etwas, das auf deiner Festplatte feststeckt, gibt es in dieser Woche eine Vielzahl von Angeboten.</p>         <p>Viele beliebte Spiele sind für einige der besten Preise, die wir in Monaten gesehen haben, erhältlich. Dazu gehören <strong>God of War Ragnarok</strong> für 30 Dollar (statt 70 Dollar), <strong>The Last of Us: Part I</strong> für 30 Dollar (statt 70 Dollar) und <strong>Marvel's Spider-Man 2</strong> für 30 Dollar (statt 70 Dollar). Alle drei sind hoch bewertete Klassiker - wenn sie also noch nicht in deiner Sammlung sind, ist jetzt ein guter Zeitpunkt, um sie hinzuzufügen.</p>         <p><strong>Ghost of Yotei</strong> ist auch günstig für 50 Dollar (statt 70 Dollar). Was aber noch aufregender ist, ist, dass die riesige Collector's Edition um 100 Dollar günstiger ist. Neben einer digitalen Kopie des Spiels und zahlreichen In-Game-Cosmetika bekommst du physische Sammlerstücke wie eine Ghost-Maske, einen Sash, einen Tsuba und einen Papierkunst-Baum. Die <strong>SpongeBob: Battle for Bikini Bottom (Shiny Edition)</strong> ist auch stark rabattiert und kostet nur 60 Dollar (statt 150 Dollar).</p>         <p><em>BytePost-Einordnung: Die Days of Play-Veranstaltung von PlayStation bietet eine Vielzahl von Angeboten für PS5-Spiele und -Zubehör. Wenn du auf der Suche nach günstigen Spielen oder Zubehör bist, solltest du diese Angebote nicht verpassen.</em></p>     ",
+            "content_simple": "         <p>PlayStation bietet eine Woche lang viele Spiele und Zubehör zum Kauf an. Das sind einige der besten Angebote.</p>         <p>Man kann Spiele wie <strong>God of War Ragnarok</strong> und <strong>Marvel's Spider-Man 2</strong> für 30 Dollar kaufen. Es gibt auch günstige Collector's Editions.</p>     ",
+            "content_pro": "         <h3>Technische Details der Angebote</h3>         <p>Die Days of Play-Veranstaltung bietet eine Vielzahl von Angeboten für PS5-Spiele und -Zubehör. Die Preise für die Spiele und das Zubehör sind im Vergleich zu den üblichen Preisen stark reduziert.</p>         <p>Es ist jedoch zu beachten, dass die Preise je nach Händler variieren können. Es lohnt sich, die Preise bei verschiedenen Händlern zu vergleichen, um das beste Angebot zu finden.</p>     ",
+            "date": "28.05.2026",
+            "id": "7f2ed9d1",
+            "url": "https://www.gamespot.com/articles/the-best-ps5-deals-this-week-games-accessories-consoles-and-more/1100-6538557/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7f2ed9d1.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
             "icon": "🤖",
             "title": "OpenRouter verdoppelt Bewertung",
             "source": "TechCrunch",
@@ -145,7 +440,7 @@
                 "sleep": 0
             },
             "image_local": "images/0b83d444.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Hacker haben ein neues Spiel gefunden: KI-Angriffe. Durch den Einsatz künstlicher Intelligenz werden Cyberangriffe immer cleverer und gefährlicher, was Entwickler vor eine enorme Herausforderung stellt. Die Frage ist: sind unsere Systeme darauf vorbereitet, den Angriffen der Zukunft standzuhalten?"
         },
         {
@@ -38932,10 +39227,10 @@
         }
     ],
     "bytepulse": {
-        "date": "27.05.2026",
-        "positiv": 56,
-        "neutral": 22,
-        "kritisch": 22,
-        "total": 9
+        "date": "28.05.2026",
+        "positiv": 40,
+        "neutral": 30,
+        "kritisch": 30,
+        "total": 10
     }
 }
