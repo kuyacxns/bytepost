@@ -4,6 +4,299 @@
             "cat": [
                 "ki"
             ],
+            "icon": "🤖",
+            "title": "Glean erreicht 300 Millionen",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "8c95981f",
+                "edc77fd1",
+                "3e0042f6"
+            ],
+            "content": "         <h3>Glean erreicht 300 Millionen Umsatz</h3>         <p>Glean, ein Unternehmen, das oft als das Google für Unternehmen bezeichnet wird, hat einen Umsatz von 300 Millionen Dollar erreicht. Dies ist ein Anstieg von 200 Prozent im Vergleich zu den 100 Millionen Dollar, die das Unternehmen vor 15 Monaten erreicht hatte.</p>         <p>Die Firma hat ihre Einnahmen verdreifacht, obwohl Tech-Giganten wie Google, Microsoft, OpenAI, Anthropic, Salesforce und Atlassian in den Markt für Unternehmen-KI-Suche eingetreten sind.</p>         <p>„Die ersten vier oder fünf Jahre unseres Bestehens hatten wir keine Konkurrenz“, sagte Glean-CEO Arvind Jain gegenüber TechCrunch. „Angesichts der Bedeutung von Suche, um KI in Unternehmen zu ermöglichen, will jedes Unternehmen in diesem Bereich tätig sein.“</p>         <p>Was Glean besser macht als seine Konkurrenz, ist laut Jain die tiefe Verständnis, das seine KI-Tools von den Geschäftsbedürfnissen seiner Kunden haben. Gleans KI erlangt diese Erkenntnisse, die durch den Begriff „Kontext-Graph“ beschrieben werden, indem sie sich mit internen Software-Systemen von Unternehmen verbinden und daraus lernen.</p>         <p>Jain behauptet, dass Gleans Kontext-Graph auch Unternehmen hilft, die Kosten für KI-Rechenleistung zu senken. „Wenn du KI mit Glean verbindest, erhältst du alle Informationen, die du benötigst, um deine Arbeit zu erledigen, und das resultiert in einer deutlichen Reduzierung der Token-Kosten im Vergleich zu direkter KI-Nutzung.“</p>         <h3>Umsatzmodell</h3>         <p>Glean bietet verschiedenen Preismodelle an, darunter ein Verbrauchsmodell, bei dem Kunden pro Nutzung zahlen, und ein Hybridmodell, das eine feste monatliche Gebühr für aktive Nutzer mit separaten Nutzungskosten für Modellkonsum kombiniert.</p>         <p>Die Firma, die bei ihrer letzten Bewertung im vergangenen Juni 7,2 Milliarden Dollar wert war, als sie 150 Millionen Dollar in einer Serie-F-Runde aufnahm, zählt Databricks, Reddit, Pinterest und Samsung zu ihren Kunden.</p>         <p>Glean ist definitiv nicht das erste Unternehmen, das dies tut, aber es ist erwähnenswert, dass der Umsatz von 300 Millionen Dollar nicht vollständig als traditioneller wiederkehrender Umsatz (ARR) beschrieben werden kann, da ein Verbrauchsmodell per Definition keine strikte wiederkehrende Komponente hat.</p>         <p><em>BytePost-Einordnung: Gleans Umsatz von 300 Millionen Dollar ist ein Zeichen für den Erfolg von KI-Anwendungen in Unternehmen. Durch die Kombination von KI-Suche und Kontext-Graph kann Glean Unternehmen helfen, ihre KI-Rechenleistung zu optimieren und Kosten zu senken.</em></p>     ",
+            "content_simple": "         <p>Glean ist ein Unternehmen, das KI-Suche für Unternehmen anbietet. Sie helfen Firmen, ihre Daten besser zu organisieren und zu finden. Jetzt haben sie 300 Millionen Dollar Umsatz gemacht.</p>         <p>Das ist besonders bemerkenswert, da große Tech-Unternehmen wie Google und Microsoft auch in den Markt eingetreten sind. Glean kann jedoch durch seine spezielle KI-Technologie und sein Verständnis für die Bedürfnisse von Unternehmen besser abschneiden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Gleans KI-Tools verwenden einen Kontext-Graph, um die Beziehungen zwischen verschiedenen Daten und Systemen in einem Unternehmen zu verstehen. Dies ermöglicht es Glean, bessere Suchergebnisse zu liefern und Unternehmen zu helfen, ihre KI-Rechenleistung zu optimieren.</p>         <p>Die KI von Glean kann sich mit internen Software-Systemen von Unternehmen verbinden und daraus lernen. Dies ermöglicht es Glean, ein tieferes Verständnis für die Bedürfnisse von Unternehmen zu erlangen und bessere Lösungen anzubieten.</p>         <p>Ein Beispiel für die Vorteile von Gleans KI-Tools ist die Reduzierung von Token-Kosten. Durch die Verbindung von KI mit Glean können Unternehmen ihre Token-Kosten um bis zu 90% reduzieren.</p>     ",
+            "date": "29.05.2026",
+            "id": "7d6d6a71",
+            "url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7d6d6a71.jpg",
+            "pick": true,
+            "pick_reason": "Heute erreicht Glean eine wichtige Meilensteine: 300 Millionen Nutzer. Damit etabliert sich das Tool als wichtiger Player im Bereich der Datenanalyse und -verwaltung. Für Entwickler bedeutet dies, dass sie auf eine neue Ebene der Datennutzung und -auswertung zugreifen können, um bessere Entscheidungen zu treffen und ihre Produkte zu optimieren."
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Kritische Lücke in Gogs",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "7d6d6a71",
+                "edc77fd1",
+                "3e0042f6"
+            ],
+            "content": " <h3>Kritische Sicherheitslücke in Gogs</h3> <p> Eine kritische Sicherheitslücke in Gogs, einem self-hosted Git-Server, ermöglicht es Angreifern, den Server per Pull-Request vollständig zu kompromittieren. Bisher gibt es keinen Patch für diese Lücke. </p> <p> Die Sicherheitslücke ermöglicht es Angreifern, auf dem Server zu lesen, zu schreiben und auszuführen, was zu einem vollständigen Verlust der Kontrolle über den Server führen kann. </p> <p> Die genaue Ursache der Sicherheitslücke ist noch nicht bekannt, aber es wird vermutet, dass es sich um eine Schwachstelle in der Pull-Request-Funktionalität handelt. </p> <h3>Folgen der Sicherheitslücke</h3> <p> Die Folgen der Sicherheitslücke können katastrophal sein, da Angreifer Zugriff auf den Quellcode und andere sensible Daten erhalten können. Es ist auch möglich, dass Angreifer den Server für weitere Angriffe nutzen können. </p> <p> Es ist wichtig, dass Nutzer von Gogs ihre Server überprüfen und sicherstellen, dass sie nicht angreifbar sind. Es wird empfohlen, die Sicherheitslücke zu beheben, sobald ein Patch verfügbar ist. </p> <p> Die Community von Gogs arbeitet bereits an einer Lösung für die Sicherheitslücke, aber es ist noch nicht klar, wann ein Patch verfügbar sein wird. </p> <p><em>BytePost-Einordnung: Die Sicherheitslücke in Gogs ist ein ernstes Problem, das schnellstmöglich behoben werden muss. Es ist wichtig, dass Nutzer von Gogs ihre Server regelmäßig überprüfen und sicherstellen, dass sie sicher sind.</em></p> ",
+            "content_simple": " <p> Ein Fehler in einem Git-Server namens Gogs ermöglicht es Hackern, den Server zu übernehmen. Das bedeutet, dass sie alle Daten auf dem Server lesen, schreiben und ausführen können. </p> <p> Der Fehler liegt wahrscheinlich in der Funktion, mit der Entwickler ihre Änderungen an anderen teilen können. Es ist noch nicht klar, wie der Fehler entstanden ist, aber es wird daran gearbeitet, ihn zu beheben. </p> ",
+            "content_pro": " <h3>Technische Details der Sicherheitslücke</h3> <p> Die Sicherheitslücke in Gogs ermöglicht es Angreifern, auf dem Server zu lesen, zu schreiben und auszuführen, was zu einem vollständigen Verlust der Kontrolle über den Server führen kann. Die genaue Ursache der Sicherheitslücke ist noch nicht bekannt, aber es wird vermutet, dass es sich um eine Schwachstelle in der Pull-Request-Funktionalität handelt. </p> <p> Es ist wichtig, dass Entwickler ihre Server überprüfen und sicherstellen, dass sie nicht angreifbar sind. Es wird empfohlen, die Sicherheitslücke zu beheben, sobald ein Patch verfügbar ist. </p> ",
+            "date": "29.05.2026",
+            "id": "8c95981f",
+            "url": "https://www.golem.de/news/kein-patch-fuer-gogs-tausende-self-hosted-git-server-sind-angreifbar-2605-209173.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8c95981f.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "TypeScript 6.0 veröffentlicht",
+            "source": "TypeScript",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "3e0042f6"
+            ],
+            "content": "         <h3>Was ist TypeScript?</h3>         <p>TypeScript ist eine Sprache, die auf JavaScript aufbaut, indem sie Syntax für Typen hinzufügt. Dies ermöglicht eine Typüberprüfung, um Fehler zu erkennen und eine reiche Editor-Tooling zu bieten. Wenn du TypeScript noch nicht kennst, kannst du mehr über TypeScript und wie du loslegst auf der <a href=\"https://www.typescriptlang.org/\">TypeScript-Website</a> erfahren.</p>         <p>Mit der Veröffentlichung von TypeScript 6.0 ist es möglich, diese Version über npm mit dem folgenden Befehl zu installieren: <code>npm install -D typescript</code></p>         <h3>Was ist neu in TypeScript 6.0?</h3>         <p>TypeScript 6.0 ist eine einzigartige Veröffentlichung, da es sich um die letzte Version handelt, die auf dem aktuellen JavaScript-Codebase basiert. Wie bereits im letzten Jahr angekündigt, arbeiten wir an einer neuen Codebase für den TypeScript-compiler und den Language-Service, der in Go geschrieben ist und die Geschwindigkeit von nativem Code und Shared-Memory-Multi-Threading nutzt. Diese neue Codebase wird die Grundlage für TypeScript 7.0 und darüber hinaus bilden.</p>         <p>TypeScript 6.0 dient als Brücke zwischen TypeScript 5.9 und 7.0. Daher sind die meisten Änderungen in TypeScript 6.0 darauf ausgerichtet, die Anpassung und Vorbereitung auf die Verwendung von TypeScript 7.0 zu erleichtern.</p>         <h3>Neue Funktionen und Verbesserungen</h3>         <p>Seit der Beta- und RC-Veröffentlichung von TypeScript 6.0 haben wir einige bemerkenswerte Änderungen vorgenommen, die hauptsächlich darauf abzielen, das Verhalten von TypeScript 7.0 zu imitieren. Eine dieser Anpassungen betrifft die Typüberprüfung für Funktionsausdrücke in generischen Aufrufen, insbesondere in generischen JSX-Ausdrücken.</p>         <p>Wir haben auch die Deklaration von Import-Assertion-Syntax (z.B. <code>import ... assert {...}</code>) auf Import()-Aufrufe wie <code>import(..., { assert: {...}})</code> erweitert.</p>         <p>Des Weiteren haben wir die DOM-Typen aktualisiert, um die neuesten Web-Standards widerzuspiegeln, einschließlich einiger Anpassungen an den Temporal-APIs.</p>         <h3>Less Context-Sensitivity</h3>         <p Wenn Parameter keine expliziten Typen haben, kann TypeScript diese normalerweise anhand eines erwarteten Typs oder sogar durch andere Argumente im gleichen Funktionsaufruf ableiten.</p>         <p>Beispielsweise:</p>         <p>declare function callIt<T>(obj: { produce: (x: number) => T, consume: (y: T) => void, }): void;</p>         <p>callIt({ produce: (x: number) => x * 2, consume: y => y.toFixed(), });</p>         <p>callIt({ consume: y => y.toFixed(), produce: (x: number) => x * 2, });</p>         <p> Hier kann TypeScript den Typ von y im consume-Funktion anhand des abgeleiteten Typs T aus dem produce-Funktion ableiten, unabhängig von der Reihenfolge der Eigenschaften.</p>         <p>Wenn jedoch diese Funktionen in Methoden-Syntax geschrieben werden:</p>         <p>declare function callIt<T>(obj: { produce: (x: number) => T, consume: (y: T) => void, }): void;</p>         <p>callIt({ produce(x: number) { return x * 2; }, consume(y) { return y.toFixed(); }, });</p>         <p>callIt({ consume(y) { return y.toFixed(); }, produce(x: number) { return x * 2; }, });</p>         <p> Der zweite Aufruf von callIt ergibt einen Fehler, da TypeScript nicht in der Lage ist, den Typ von y im consume-Method zu ableiten.</p>         <p>BytePost-Einordnung: <em>Die Veröffentlichung von TypeScript 6.0 ist ein wichtiger Schritt auf dem Weg zu TypeScript 7.0. Entwickler sollten sich auf die neuen Funktionen und Verbesserungen einstellen und TypeScript 7.0 ausprobieren, um die Vorteile der neuen Codebase zu nutzen.</em></p>     ",
+            "content_simple": "         <p>TypeScript ist eine Programmiersprache, die JavaScript erweitert. Sie ermöglicht es, Fehler vorher zu erkennen und bietet bessere Werkzeuge für die Entwicklung.</p>         <p>Die neue Version 6.0 von TypeScript ist da. Sie ist die letzte Version, die auf der alten Codebasis basiert. Die nächste Version, 7.0, wird auf einer neuen Codebasis basieren, die schneller und leistungsfähiger ist.</p>         <p>Es gibt einige neue Funktionen und Verbesserungen in TypeScript 6.0. Eine davon ist die bessere Typüberprüfung für Funktionen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die neue Codebasis für TypeScript 7.0 wird in Go geschrieben und nutzt die Geschwindigkeit von nativem Code und Shared-Memory-Multi-Threading.</p>         <p>Einige der Änderungen in TypeScript 6.0 sind darauf ausgerichtet, die Anpassung an die neue Codebasis zu erleichtern.</p>         <p>Ein Beispiel hierfür ist die Anpassung der Typüberprüfung für Funktionsausdrücke in generischen Aufrufen.</p>         <pre><code>declare function callIt&lt;T&gt;(obj: { produce: (x: number) =&gt; T, consume: (y: T) =&gt; void, }): void;</code></pre>         <p>Hier kann TypeScript den Typ von y im consume-Funktion ableiten, wenn der Typ von T aus dem produce-Funktion abgeleitet werden kann.</p>     ",
+            "date": "29.05.2026",
+            "id": "edc77fd1",
+            "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/edc77fd1.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Meta Revolutioniert Recommendation Systems",
+            "source": "Engineering at Meta",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "<h3>Einleitung in SilverTorch</h3><p>SilverTorch ist eine Neukonzeption von Empfehlungssystemen, die alle Retrieval-Komponenten für benutzergenerierte Inhalte unter einer einheitlichen Architektur vereint. SilverTorch zeigt bis zu 23,7-mal höhere Durchsatzraten im Vergleich zu den aktuellen Ansätzen und ist auch 20,9-mal kosteneffizienter als eine CPU-basierte Lösung, während gleichzeitig die Genauigkeit verbessert wird.</p><p>Das Forschungspapier „SilverTorch: A Unified Model-based System to Democratize Large-Scale Recommendation on GPUs“ enthält alle technischen Details. Das Retrieval-System in Branchen-Empfehlungssystemen bestand aus Mikrodiensten, die zusammengefügt wurden, wobei neuronale Netze inkonsistent integriert wurden. Unser Empfehlungssystem kann auf mehrere Plattformen skaliert werden.</p><h3>Das Retrieval-System</h3><p>Das Retrieval-System ist für die Einengung von Millionen von Inhalten (z.B. Videos und Fotos) auf Tausende von Inhalten verantwortlich, bevor es sie an die Rangfolgesysteme weiterleitet, alles in weniger als 100 Millisekunden. Das Mikrodienst-basierte Design hatte jedoch harte Einschränkungen in Bezug auf die Modellkomplexität und die Anzahl der bewerteten Kandidaten, was letztlich eine Decke auf die Qualität der Empfehlungen schuf, die Menschen auf unseren Plattformen sehen.</p><p>Um diese Decke zu durchbrechen, haben wir unser Retrieval-Ökosystem in ein einheitliches modellbasiertes System – SilverTorch – umgestaltet. SilverTorch arbeitet unter einem neuen Paradigma, das wir Index-as-Model nennen. Wir haben unser Retrieval-System als ein einzelnes neuronales Netzwerk aufgebaut und jetzt verschiedene Mikrodienste als Modellmodule innerhalb dieses integrierten neuronalen Netzwerks ausgedrückt.</p><h3>Vorteile von SilverTorch</h3><p>SilverTorch macht das Retrieval erheblich effizienter, läuft im großen Maßstab und ermöglicht bessere Empfehlungen. In einer 80-Millionen-Element-End-zu-End-Evaluation hat SilverTorch 23,7-mal mehr Anfragen pro Sekunde bedient als eine starke traditionelle Multi-Service-Baseline, die auf der gleichen Modellarchitektur basiert, während die geschätzte Gesamtkosten-Effizienz um 20,9-mal verbessert wurde.</p><p>Die Ergebnisse zeigen, dass SilverTorch auf eine Familie von Apps als das primäre Retrieval-System hinter dem Feed und Video-Inhalten skaliert, den Menschen sehen. SilverTorch ermöglicht konsistent Retrieval-Qualitätsverbesserungen, die unter einer Mikrodienst-Architektur nicht praktikabel gewesen wären.</p><p><em>BytePost-Einordnung: Die Einführung von SilverTorch markiert einen bedeutenden Fortschritt im Bereich der Empfehlungssysteme und demonstriert das Potenzial, durch die Vereinigung von Retrieval-Komponenten unter einer einheitlichen Architektur die Effizienz und Genauigkeit der Empfehlungen zu verbessern.</em></p>",
+            "content_simple": "<p>SilverTorch ist ein neues System, das Empfehlungen für Inhalte wie Videos und Fotos macht. Es ist schneller und effizienter als bestehende Systeme und kann auf große Plattformen skaliert werden. SilverTorch verwendet ein einziges neuronales Netzwerk, um alle Schritte des Empfehlungsprozesses zu vereinen, was es ermöglicht, bessere Empfehlungen zu machen.</p><p>SilverTorch ist ein wichtiger Schritt in der Entwicklung von Empfehlungssystemen und zeigt das Potenzial, durch die Kombination von Technologien bessere Ergebnisse zu erzielen.</p>",
+            "content_pro": "<h3>Architektur von SilverTorch</h3><p>SilverTorch basiert auf einer einheitlichen Modell-architektur, die alle Retrieval-Komponenten unter einem einzigen neuronalen Netzwerk vereint. Dieses Paradigma, das als Index-as-Model bezeichnet wird, ermöglicht es, die Modellkomplexität und die Anzahl der bewerteten Kandidaten ohne Einschränkungen zu erhöhen.</p><p>Die Architektur von SilverTorch ermöglicht es, das Retrieval-System als ein einzelnes neuronales Netzwerk aufzubauen, das alle kritischen Retrieval-Funktionen (wie die Suche nach ähnlichen Inhalten, die Filterung für Eignung und die Reranking und Bewertung der Benutzungsaktivität) in einem einzigen Durchgang durchführt.</p><p><h3>Technische Details</h3>SilverTorch verwendet eine Kombination von Technologien, um die Effizienz und Genauigkeit der Empfehlungen zu verbessern. Die Ergebnisse zeigen, dass SilverTorch bis zu 23,7-mal höhere Durchsatzraten und 20,9-mal mehr Kosteneffizienz als eine traditionelle Multi-Service-Baseline erreichen kann.</p>",
+            "date": "29.05.2026",
+            "id": "3e0042f6",
+            "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3e0042f6.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚫",
+            "title": "Niederlande beschlagnahmen 800 Server",
+            "source": "KrebsOnSecurity",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>Niederlande ergreifen Maßnahmen gegen Cyberangriffe</h3>         <p>Die niederländischen Behörden haben zwei Männer festgenommen, die mutmaßlich IT-Infrastruktur für russische Cyberangriffe, Einflussoperationen und Desinformationskampagnen innerhalb der Europäischen Union bereitgestellt haben. Die beiden Männer standen im Mittelpunkt eines Artikels von KrebsOnSecurity aus dem Jahr 2025, in dem es um die Übernahme der technischen Infrastruktur von Stark Industries Solutions durch ihre Hosting-Unternehmen ging.</p>         <p>Die niederländische Finanzstraftbehörde FIOD hat am 18. Mai einen 57-Jährigen aus Amsterdam und einen 39-Jährigen aus Den Haag festgenommen und ihnen vorgeworfen, gegen das Sanktionsrecht verstoßen zu haben, indem sie wirtschaftliche Ressourcen direkt oder indirekt an von der EU sanktionierte Einheiten bereitgestellt haben. Die niederländische Untersuchung konzentriert sich auf Stark Industries, einen umfassenden Hosting-Anbieter, der nur zwei Wochen vor dem russischen Überfall auf die Ukraine entstand.</p>         <h3>Verbindung zu russischen Hackergruppen</h3>         <p>Stark Industries wurde schnell zum Ursprung massiver Distributed-Denial-of-Service-(DDoS)-Angriffe gegen europäische Ziele und trat als wichtiger Lieferant von Proxy- und Anonymisierungsdiensten in Erscheinung, die wiederholt in Cyberangriffen im Zusammenhang mit russischen Hackergruppen auftraten. Der Bericht identifizierte zwei moldawische Brüder, Ivan und Yuri Neculiti, und ihre Firma PQHosting, die einen der beiden Hauptkanäle von Stark zum Internet bereitstellten.</p>         <p>Im Mai 2025 wurden PQHosting und die Neculiti-Brüder von der EU sanktioniert, weil sie russische hybride Kriegsanstrengungen unterstützt hatten. Wie jedoch KrebsOnSecurity im September 2025 feststellte, zielten diese Sanktionen nicht auf den verbleibenden Internetzugang von Stark ab, der über einen niederländischen Internetdienstleister namens MIRhosting lief. MIRhosting wird von Andrey Nesterenko, einem 39-jährigen russischen Staatsbürger, der in den Niederlanden lebt, betrieben.</p>         <h3>Festnahmen und Beschlagnahmungen</h3>         <p>Am 18. Mai verhafteten niederländische Finanzkriminalitätsuntersuchungseinheiten Nesterenko und einen 57-Jährigen aus Amsterdam namens Youssef Zinad und durchsuchten drei Unternehmen in Enschede und Almere sowie zwei Rechenzentren in Dronten und Schiphol-Rijk. In einer Erklärung teilten die niederländischen Behörden mit, dass sie auch Laptops, Telefone und mehr als 800 Server beschlagnahmt haben.</p>         <p>Die niederländische Tageszeitung de Volkskrant berichtete, dass sie Daten überprüft hatte, die zeigten, dass WorkTitans und MIRhosting die am häufigsten verwendeten Netzwerke in pro-russischen Angriffen auf dänische Regierungsstellen zwischen dem 13. und 19. November 2025 waren, in der Woche der Kommunalwahlen in Dänemark. De Volkskrant schrieb, dass Nesterenko vor seiner Verhaftung behauptet hatte, er wisse nicht, dass seine Server von pro-russischen Cyberkriminellen missbraucht worden seien.</p>         <p><em>BytePost-Einordnung: Die Festnahmen und Beschlagnahmungen in den Niederlanden zeigen, dass die Behörden entschlossen sind, gegen Cyberangriffe und Desinformationskampagnen vorzugehen. Die enge Verbindung zwischen russischen Hackergruppen und den beschlagnahmten Servern unterstreicht die Bedeutung internationaler Zusammenarbeit bei der Bekämpfung der Cyberkriminalität.</em></p>     ",
+            "content_simple": "         <p>Die Niederlande haben 800 Server beschlagnahmt und zwei Männer verhaftet, die mutmaßlich für russische Cyberangriffe verantwortlich sind. Die Männer sollen IT-Infrastruktur für diese Angriffe bereitgestellt haben. Die niederländischen Behörden haben die Server und die Daten beschlagnahmt und untersuchen nun den Fall.</p>         <p>Die Männer standen im Mittelpunkt eines Berichts über die Übernahme der technischen Infrastruktur von Stark Industries Solutions durch ihre Hosting-Unternehmen. Die niederländische Finanzstraftbehörde FIOD hatte die Männer festgenommen und ihnen vorgeworfen, gegen das Sanktionsrecht verstoßen zu haben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die niederländischen Behörden haben die Server und die Daten von MIRhosting und WorkTitans beschlagnahmt. Die Unternehmen hatten enge Verbindungen zu russischen Hackergruppen und wurden für die Bereitstellung von IT-Infrastruktur für Cyberangriffe und Desinformationskampagnen verwendet.</p>         <p>Die Technologie, die für die Angriffe verwendet wurde, umfasst Distributed-Denial-of-Service-(DDoS)-Angriffe und Proxy- und Anonymisierungsdienste. Die niederländischen Behörden haben die Server und die Daten beschlagnahmt, um den Fall zu untersuchen und die Verbindungen zu russischen Hackergruppen aufzudecken.</p>         <h3>Sicherheitsaspekte</h3>         <p>Die Beschlagnahmung der Server und der Daten von MIRhosting und WorkTitans unterstreicht die Bedeutung der Cybersicherheit und der internationalen Zusammenarbeit bei der Bekämpfung der Cyberkriminalität. Die niederländischen Behörden haben gezeigt, dass sie entschlossen sind, gegen Cyberangriffe und Desinformationskampagnen vorzugehen.</p>     ",
+            "date": "29.05.2026",
+            "id": "63c71b24",
+            "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/63c71b24.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "cloud",
+                "dev"
+            ],
+            "icon": "☁️",
+            "title": "Azure IaaS verbessert Leistung",
+            "source": "Microsoft Azure Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>Azure IaaS: Leistung auf Systemebene</h3>         <p>Leistung in der Cloud wird nicht mehr durch einzelne Ressourcen definiert, sondern durch die Zusammenarbeit von Rechenleistung, Speicher und Netzwerk. Azure IaaS nutzt einen systemweiten Ansatz, um Organisationen konsistente, skalierbare Leistung über AI-, cloud-native- und geschäftskritische Workloads hinweg zu ermöglichen.</p>         <p>Der Artikel ist der dritte Teil einer Blog-Serie über Azure IaaS, die bewährte Verfahren und Hinweise bietet, um eine vertrauenswürdige Infrastruktur-Plattform zu erstellen - von Leistung, Resilienz und Sicherheit bis hin zu Skalierbarkeit und Kosteneffizienz.</p>         <h3>Systemweite Leistung</h3>         <p>Leistung ist zu einem der entscheidendsten Faktoren geworden, um den Erfolg oder Misserfolg von Anwendungen in der Cloud zu bestimmen. Ob du AI-Modelle trainierst, eine Kubernetes-Plattform skalierst oder eine geschäftskritische Datenbank ausführst, Leistung ist nicht mehr eine einzelne Entscheidung über CPU, Speicher oder Netzwerk. Es ist das Ergebnis, wie alle drei zusammenarbeiten und erfordert einen systemweiten Ansatz.</p>         <p>Viele Organisationen gehen noch immer einen Ansatz, der auf der Bereitstellung von mehr Ressourcen basiert - größere virtuelle Maschinen, schnellere Festplatten oder höhere Netzwerkbandbreite. Aber moderne Workloads verhalten sich nicht vorhersehbar genug, um diese Strategie aufrechtzuerhalten. Engpässe verschoben sich dynamisch.</p>         <h3>Neue Ansätze</h3>         <p>Leistung in der Cloud ist heute nicht mehr nur eine Frage von Spitzenleistung. Es geht um Konsistenz, Skalierbarkeit und Responsivität unter realen Bedingungen. Für Kunden bedeutet dies, Leistung über mehrere Dimensionen zu bewerten:</p>         <ul>             <li>Latenz - einschließlich Tail-Latenz (P99/P99.9), die direkt die Benutzererfahrung beeinflusst.</li>             <li>Durchsatz - oder wie viel Arbeit in einer bestimmten Zeit erledigt werden kann.</li>             <li>Skalierbarkeit - die Fähigkeit, Leistung beizubehalten, wenn die Nachfrage steigt.</li>             <li>Konsistenz - die Gewährleistung, dass Leistung nicht unvorhersehbar unter Last abnimmt.</li>         </ul>         <p>Azure IaaS bringt diese Dimensionen zusammen, indem es Rechenleistung-, Speicher- und Netzwerkkapazitäten an die spezifischen Bedürfnisse von Workloads anpasst.</p>         <h3>Ausblick</h3>         <p>Azure IaaS bietet einen systemweiten Ansatz, um Leistung zu liefern, anstatt isolierte Komponenten zusammenzusetzen. Dies ermöglicht es Kunden, konsistente, skalierbare Leistung zu erzielen, ohne jede Schicht manuell anzupassen.</p>         <p><em>BytePost-Einordnung: Der Artikel zeigt, wie wichtig es ist, Leistung in der Cloud auf Systemebene zu betrachten, um konsistente und skalierbare Ergebnisse zu erzielen. Als Entwickler sollten wir uns auf die Zusammenarbeit zwischen Rechenleistung, Speicher und Netzwerk konzentrieren, um die beste Leistung für unsere Anwendungen zu erzielen.</em></p>     ",
+            "content_simple": "         <p>Die Leistung in der Cloud ist wichtig für den Erfolg von Anwendungen. Es geht nicht mehr nur darum, wie schnell ein einzelner Prozessor ist, sondern wie gut alle Komponenten zusammenarbeiten. Azure IaaS bietet einen systemweiten Ansatz, um Leistung zu liefern.</p>         <p>Stell dir vor, du baust ein Haus. Du benötigst nicht nur ein starkes Fundament, sondern auch gute Isolierung, stabile Wände und ein gutes Dach. Ähnlich verhält es sich mit der Leistung in der Cloud. Du benötigst eine gute Balance zwischen Rechenleistung, Speicher und Netzwerk, um die beste Leistung zu erzielen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Azure IaaS nutzt eine Kombination aus Hardware- und Softwarekomponenten, um Leistung zu optimieren. Dazu gehören Azure Boost, Azure Blob Storage und ADLS.</p>         <p>Der Azure-Boost-Mechanismus hilft, die Leistung von virtuellen Maschinen zu verbessern, indem er Speicher- und Netzwerkprozesse von der Host-CPU auf dedizierte Hardware- und Softwarekomponenten auslagert.</p>         <pre><code>Auf diese Weise kann Azure IaaS eine konsistente und skalierbare Leistung für verschiedene Workloads bieten, von AI- und cloud-nativen Anwendungen bis hin zu geschäftskritischen Datenbanken.</code></pre>     ",
+            "date": "29.05.2026",
+            "id": "cb1273cb",
+            "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-deploy-high-performance-workloads-with-a-system-level-approach/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/cb1273cb.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data"
+            ],
+            "icon": "📊",
+            "title": "Nathan Yau veröffentlicht Visualization-Rundown",
+            "source": "FlowingData",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>Visualization-Tools, Ressourcen und Daten, Mai 2026-Rundown</h3>         <p>Jeden Monat sammle ich Tools, Daten und Ressourcen, um bessere Diagramme zu erstellen. Hier ist, was im Mai passiert ist.</p>         <p>Ich bin Nathan Yau, und ich sammle jeden Monat Tools, Daten und Ressourcen auf der Suche nach dem Gleichgewicht zwischen Fortschritt und menschlicher Seite der Visualisierung.</p>         <p>Das ist Ausgabe Nr. 390 von The Process, in der wir nach dem Gleichgewicht zwischen Fortschritt und menschlicher Seite der Visualisierung suchen.</p>         <p>Um auf diesen Teil von The Process zuzugreifen, musst du ein Mitglied sein. (Wenn du bereits ein Mitglied bist, melde dich hier an.)</p>         <p>Die Prozess ist ein wöchentlicher Newsletter darüber, wie Visualisierungstools, Regeln und Richtlinien in der Praxis funktionieren.</p>         <p>Ich veröffentliche jeden Donnerstag. Du kannst es in deinem Posteingang lesen oder auf FlowingData.</p>         <p>Du erhältst auch uneingeschränkten Zugang zu Hunderten von Stunden ausführlicher Visualisierungskurse und -tutorials, die dir helfen, Daten für Einblicke und Präsentation zu verstehen.</p>         <p>Ressourcen umfassen Quellcode und Datensätze, damit du das Gelernte leichter in deine eigene Arbeit anwenden kannst.</p>         <p>Deine Unterstützung hält den Rest von FlowingData geöffnet und stellt sicher, dass die Daten frei fließen.</p>         <p>Um auf Kurse, Tutorials und weitere Ressourcen zuzugreifen, kannst du Mitglied werden.</p>         <p>Die zweite Ausgabe von Visualize This: The FlowingData Guide to Design, Visualization, and Statistics (2. Ausgabe) bietet neue Tools und einen verfeinerten Prozess.</p>         <p>Sie ist erhältlich auf Amazon und Bookshop.</p>         <h3>Kontakt und weitere Informationen</h3>         <p>Über FlowingData kannst du dich auf LinkedIn, Bluesky und Instagram informieren.</p>         <p>Das Copyright liegt bei FlowingData von 2007 bis heute.</p>         <p><em>BytePost-Einordnung: Der Artikel bietet eine gute Übersicht über die Entwicklung von Visualisierungstools und Ressourcen im Mai 2026.</em></p>     ",
+            "content_simple": "         <p>Der Newsletter The Process hat eine neue Ausgabe veröffentlicht, die sich mit Visualisierungstools und Ressourcen beschäftigt.</p>         <p>Die Ausgabe bietet eine Zusammenfassung der wichtigsten Entwicklungen im Mai 2026 und gibt einen Überblick über die neuesten Tools und Ressourcen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Newsletter The Process verwendet eine Kombination aus Datenanalyse und Visualisierung, um die Leser zu unterstützen.</p>         <p>Die Verwendung von Quellcode und Datensätzen ermöglicht es den Lesern, die Beispiele leichter in ihre eigene Arbeit zu integrieren.</p>         <p>Die Ressourcen umfassen auch Tutorials und Kurse, die den Lesern helfen, die Visualisierungstools und -techniken zu verstehen.</p>     ",
+            "date": "29.05.2026",
+            "id": "9ac203ad",
+            "url": "https://flowingdata.com/2026/05/28/process-390-roundup/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9ac203ad.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🚀",
+            "title": "Blue Origin Rakete explodiert",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>Ein schwerer Rückschlag für NASA und Amazon</h3>         <p>Die Explosion der New-Glenn-Rakete von Blue Origin ist ein schwerer Rückschlag für die NASA und Amazon. Die Explosion ereignete sich während eines Testlaufs auf dem Startplatz in Florida und hat den einzigen Startplatz für die New-Glenn-Rakete schwer beschädigt.</p>         <p>„Es ist noch zu früh, um die Ursache zu kennen, aber wir arbeiten bereits daran, sie zu finden“, schrieb Jeff Bezos, der Chef von Blue Origin, auf X. „Ein sehr schwieriger Tag, aber wir werden alles wieder aufbauen, was wieder aufgebaut werden muss, und wieder fliegen. Es lohnt sich.“</p>         <h3>Auswirkungen auf die NASA und Amazon</h3>         <p>Die Explosion wird sich auf die Pläne der NASA für eine Mondbasis auswirken. Die NASA hatte angekündigt, dass die New-Glenn-Rakete einen robotischen Mondlander im Herbst 2026 liefern soll. Im Jahr 2027 soll Blue Origin auch an der Artemis-III-Mission teilnehmen, bei der Astronauten ihre Orion-Kapsel mit mondlandern von SpaceX und Blue Origin verbinden werden.</p>         <p>Die Explosion wird sich auch auf die Pläne von Amazon für das Leo-Weltraum-Internet auswirken. Amazon hatte geplant, 48 Satelliten mit der New-Glenn-Rakete in eine niedrige Erdumlaufbahn zu bringen. Dieser Start ist nun unsicher.</p>         <p>„Der Weltraumflug ist unforgiving, und die Entwicklung neuer Schwerlast-Startkapazitäten ist außerordentlich schwierig“, sagte Jared Isaacman, der Administrator der NASA, auf X. „Wir werden mit unseren Partnern zusammenarbeiten, um eine gründliche Untersuchung dieses Vorfalls durchzuführen, die Auswirkungen auf die Missionen zu bewerten und wieder Raketen zu starten.“</p>         <h3>Reaktionen</h3>         <p>Elon Musk, der Chef von SpaceX, schrieb auf X: „Tut mir leid, das zu sehen. Ich hoffe, du erholtst dich schnell.“</p>         <p><em>BytePost-Einordnung: Die Explosion der New-Glenn-Rakete ist ein schwerer Rückschlag für die NASA und Amazon. Es bleibt abzuwarten, wie sich diese Ereignisse auf die zukünftigen Pläne für die Mondbasis und das Weltraum-Internet auswirken werden.</em></p>     ",
+            "content_simple": "         <p>Die Firma Blue Origin hat einen schweren Rückschlag erlitten. Eine ihrer Raketen ist explodiert und hat den Startplatz beschädigt. Dies wird die Pläne für eine Mondbasis und ein Weltraum-Internet behindern.</p>         <p>Die NASA und Amazon hatten auf Blue Origin gesetzt, um ihre Ziele zu erreichen. Jetzt müssen sie nach anderen Lösungen suchen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Explosion ereignete sich während eines Testlaufs auf dem Startplatz in Florida. Die New-Glenn-Rakete ist eine Schwerlast-Rakete, die in der Lage ist, große Nutzlasten in den Weltraum zu transportieren.</p>         <p>Die Rakete hat eine Höhe von 322 Fuß und besteht aus einem Booster- und einem Oberstufentriebwerk. Der Booster ist mit sieben Triebwerken ausgestattet, die während des Testlaufs gezündet wurden.</p>         <p>Die Explosion hat den einzigen Startplatz für die New-Glenn-Rakete schwer beschädigt. Es wird Monate dauern, den Schaden zu beheben.</p>     ",
+            "date": "29.05.2026",
+            "id": "df2b325b",
+            "url": "https://www.theverge.com/science/939677/blue-origin-explosion-nasa-leo-setback-delays",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/df2b325b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "UC Berkeley präsentiert mKernel",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>mKernel: Eine Multi-GPU, Multi-Node-Fused-Kernel-Bibliothek</h3>         <p>Ein Team von Forschern der University of California, Berkeley, hat eine neue Bibliothek namens mKernel veröffentlicht. Diese Bibliothek ermöglicht es, intra-node-NVLink-, inter-node-RDMA- und dichte Rechenoperationen in einem einzigen persistenten CUDA-Kernel zu fusionieren.</p>         <p>Die Forscher identifizierten zwei Probleme mit dem herkömmlichen Ansatz der host-gesteuerten Kommunikation: (1) CPUs skalieren nicht mit der GPU-Rechenleistung und (2) die host-gesteuerte Kommunikation kann nur an groben Kernel-Grenzen überlappen. mKernel bietet eine Alternative: die GPU-gesteuerte Kommunikation, bei der die GPU selbst die Übertragungen auslöst und die Kommunikation in den gleichen Kernel wie die Rechenoperationen integriert ist.</p>         <h3>Was mKernel tut</h3>         <p>mKernel ist eine Bibliothek persistenter CUDA-Kernel, die intra-node-NVLink-, inter-node-RDMA- und dichte Rechenoperationen in einem einzigen Kernel fusioniert. Dies ermöglicht eine feinere Überlappung von Rechen- und Kommunikationsvorgängen auf der Ebene von Tiles oder Chunks.</p>         <p>Die Bibliothek bietet fünf verschiedene Kernel, die verschiedene Arten von Operationen kombinieren:</p>         <ul>             <li>AllGather + GEMM: Sammelt Daten von anderen Ranks und führt eine Matrixmultiplikation durch.</li>             <li>GEMM + AllReduce: Führt eine Matrixmultiplikation durch und reduziert die Ergebnisse auf allen Ranks.</li>             <li>MoE-Dispatch + GEMM: Leitet MoE-Tokens an ihre Experten-Ranks weiter und führt eine Matrixmultiplikation durch.</li>             <li>Ring-Attention: Führt eine sequenzparallele Aufmerksamkeitsoperation durch, bei der Daten zwischen Ranks übertragen werden.</li>             <li>GEMM + ReduceScatter: Führt eine Matrixmultiplikation durch und reduziert die Ergebnisse auf allen Ranks.</li>         </ul>         <p>Die Forscher haben mKernel auf zwei 2-Node-×-8-H200-Clustern getestet und konnten damit eine deutliche Verbesserung der Kommunikationsübertragung und der Rechenleistung erzielen.</p>         <p><em>BytePost-Einordnung: mKernel bietet eine innovative Lösung für die Kommunikationsübertragung in verteilten Rechen-systemen und könnte zu einer deutlichen Verbesserung der Rechenleistung und -effizienz in Anwendungen wie künstlicher Intelligenz und Deep Learning führen.</em></p>     ",
+            "content_simple": "         <p>Ein Team von Forschern hat eine neue Bibliothek namens mKernel entwickelt, die es ermöglicht, Rechenoperationen und Kommunikation in einem einzigen Schritt zu kombinieren. Dies kann die Rechenleistung und -effizienz in Anwendungen wie künstlicher Intelligenz und Deep Learning verbessern.</p>         <p>mKernel ist wie ein schneller Kurier, der Daten zwischen Rechnern überträgt und gleichzeitig Rechenoperationen durchführt. Dies ermöglicht eine schnellere und effizientere Verarbeitung von Daten.</p>     ",
+            "content_pro": "         <h3>Architektur und Implementierung</h3>         <p>mKernel ist eine Bibliothek persistenter CUDA-Kernel, die auf der GPU-gesteuerten Kommunikation basiert. Die Bibliothek verwendet die libibverbs-Bibliothek für die GPU-initiierte RDMA-Kommunikation und die CUDA-Streams für die Rechenoperationen.</p>         <p>Die Implementierung von mKernel besteht aus fünf verschiedenen Kernels, die jeweils eine bestimmte Art von Operation kombinieren. Die Kernel sind so konzipiert, dass sie eine feine Überlappung von Rechen- und Kommunikationsvorgängen auf der Ebene von Tiles oder Chunks ermöglichen.</p>         <h3>Technische Details</h3>         <p>mKernel verwendet die CUDA- Streams für die Rechenoperationen und die libibverbs-Bibliothek für die GPU-initiierte RDMA-Kommunikation. Die Bibliothek unterstützt auch die Verwendung von heterogenen Netzwerkgeräten.</p>         <p>Die Forscher haben mKernel auf zwei 2-Node-×-8-H200-Clustern getestet und konnten damit eine deutliche Verbesserung der Kommunikationsübertragung und der Rechenleistung erzielen.</p>     ",
+            "date": "29.05.2026",
+            "id": "6d74b664",
+            "url": "https://www.marktechpost.com/2026/05/29/meet-mkernel-a-multi-gpu-multi-node-fused-kernel-library-for-gpu-driven-communication/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6d74b664.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Red Frame Puzzle-Spiel",
+            "source": "Thinky Direct",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7d6d6a71",
+                "8c95981f",
+                "edc77fd1"
+            ],
+            "content": "         <h3>Ein neues Puzzle-Spiel auf dem Weg</h3>         <p>Das Witnessian-Puzzle-Spiel Red Frame ist ein neues Spiel, das auf dem Weg ist und The Witness von seinem Podium stoßen könnte. In Red Frame findest du in einer begrabenenen Villa überall rote Rahmen, die ein Rätsel für dich bereithalten.</p>         <p>Es gibt viele philosophische Kritiken an The Witness und seinem Schöpfer, aber es gab etwas, das immer noch sehr ansprechend war: die Idee einer Welt, in der Rätsel in unerwarteten Orten zu finden sind. Dank Red Frame kannst du dich nun auf ein neues Abenteuer freuen.</p>         <p>Das Spiel wurde im Rahmen der Thinky Direct vorgestellt, und es wurden viele Rätsel gezeigt, die sorgfältiges Nachdenken erfordern. Wenn du einen roten Rahmen siehst, musst du verschiedene Aufgaben lösen. Diese reichen von einfachen Aufgaben wie dem Öffnen eines Tores bis hin zu komplizierteren Rätseln, bei denen du mit Physik arbeiten musst, um einen Ball richtig zu rollen oder einem Bett von Blumen einen bestimmten Weg zu zeigen.</p>         <p>Die roten Rahmen unterscheiden sich von Ort zu Ort und können manchmal nur ein simples Bilderrahmen sein, aber auch subtilere Hindernisse wie die Wände eines Spielkastens darstellen. Es gibt über 100 Rätsel zu lösen, und du kannst die Zeit manipulieren, um Szenarien neu abzuspielen, Ursache und Wirkung zu identifizieren und neue Erkenntnisse zu gewinnen.</p>         <p>Einige Story-Elemente scheinen auch im Spiel zu sein, da die Villa die historische Legende einer Familienangehörigen birgt. Leider gibt es noch kein Releasedatum, aber du kannst das Spiel bereits auf Steam in deine Wunschliste setzen.</p>         <p><em>BytePost-Einordnung: Red Frame verspricht ein spannendes Puzzle-Spiel mit tiefgründigen Rätseln und einer faszinierenden Atmosphäre. Wir freuen uns darauf, mehr über das Spiel zu erfahren und es bald auszuprobieren.</em></p>     ",
+            "content_simple": "         <p>Das Spiel Red Frame ist ein neues Puzzle-Spiel, bei dem du in einer alten Villa Rätsel lösen musst. Wenn du einen roten Rahmen siehst, musst du verschiedene Aufgaben erfüllen, um weiterzukommen.</p>         <p>Das Spiel bietet viele verschiedene Rätsel, von einfachen bis hin zu sehr komplexen. Du musst mit Physik und Logik arbeiten, um die Rätsel zu lösen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Spiel Red Frame verwendet eine Zeitmanipulation, um dem Spieler zu ermöglichen, Szenarien neu abzuspielen und Ursache und Wirkung zu identifizieren. Dies könnte auf einer komplexen Spielmechanik basieren, die es dem Spieler ermöglicht, die Zeit zurückzudrehen und bestimmte Ereignisse zu wiederholen.</p>         <p>Die Rätsel im Spiel könnten auf verschiedenen Algorithmen basieren, wie zum Beispiel auf physikalischen Simulationen oder logischen Operationen. Die subtilen Hinweise im Spiel, wie die roten Rahmen, könnten auf einer sorgfältigen Level-Design basieren, um den Spieler zu führen und ihm zu helfen, die Rätsel zu lösen.</p>     ",
+            "date": "29.05.2026",
+            "id": "bec985fe",
+            "url": "https://www.rockpapershotgun.com/red-frame-is-a-witnessian-puzzle-game-where-every-red-frame-you-find-has-a-conundrum-for-you-to-solve",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/bec985fe.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
             "icon": "💻",
             "title": "Triomics erhält 22M für KI-basierte Krebsbehandlung",
             "source": "TechCrunch",
@@ -56,7 +349,7 @@
                 "sleep": 0
             },
             "image_local": "images/0e33e0ec.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Der Bund investiert massiv in eine KI-Cloud, aber die Frage bleibt, ob dies ein Schritt in die richtige Richtung ist. Kritiker warnen vor den Risiken einer solchen Technologie, während Befürworter von enormen Innovationspotential sprechen. Entwickler sollten sich nun mit den möglichen Folgen auseinandersetzen, die diese Entscheidung für die Zukunft ihrer Arbeit haben könnte."
         },
         {
@@ -39227,9 +39520,9 @@
         }
     ],
     "bytepulse": {
-        "date": "28.05.2026",
-        "positiv": 40,
-        "neutral": 30,
+        "date": "29.05.2026",
+        "positiv": 50,
+        "neutral": 20,
         "kritisch": 30,
         "total": 10
     }
