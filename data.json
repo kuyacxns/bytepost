@@ -2,6 +2,182 @@
     "articles": [
         {
             "cat": [
+                "dev",
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "TechCrunch Disrupt 2026",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "b83cc002",
+                "ae9212d0"
+            ],
+            "content": "         <h3>Letzte Chance: Bewirb dich als Redner für TechCrunch Disrupt 2026</h3>         <p>Heute ist der letzte Tag, um sich als Redner für TechCrunch Disrupt 2026 zu bewerben. Bewirb dich noch heute, um eine Chance zu haben, auf einer der einflussreichsten Tech-Veranstaltungen des Jahres zu sprechen.</p>         <p>TechCrunch Disrupt 2026 findet vom 13. bis 15. Oktober im Moscone West in San Francisco statt. Die Veranstaltung bringt über 10.000 Startup- und VC-Führer zusammen, um die Zukunft von AI, Skalierung, Fintech, Infrastruktur, Robotik und Innovation zu erkunden.</p>         <p>Es gibt zwei Arten von Sitzungen, für die du dich bewerben kannst: Breakout-Sitzungen und Roundtable-Sitzungen. Breakout-Sitzungen sind 30-minütige Vorträge mit bis zu 4 Rednern, einschließlich eines Moderators, und 20-minütiger Audience-Q&A. Roundtable-Sitzungen sind 30-minütige Diskussionen mit bis zu 40 Teilnehmern, ohne Präsentationen oder Audiovisuelle Medien.</p>         <p>Die Bewerbung wird von unserem Redaktionsteam sorgfältig geprüft. Die Finalisten werden für die Audience-Choice-Abstimmung ausgewählt, bei der die TechCrunch-Leser entscheiden, welche Sitzungen es auf die Disrupt-Bühne schaffen.</p>         <h3>Wie funktioniert der Bewerbungsprozess?</h3>         <p>Wenn du dich bewirbst, wirst du gebeten, deine Ideen und Erfahrungen zu teilen. Unser Redaktionsteam wird jede Bewerbung sorgfältig prüfen und die Finalisten auswählen.</p>         <p>Die Themen, die auf TechCrunch Disrupt 2026 behandelt werden, sind unter anderem AI, Apps, Biotech & Gesundheit, Klima, Krypto, Enterprise, Fintech, Fundraising, Regierung & Politik, Hardware, Medien & Unterhaltung, Robotik, Startups, TechCrunch Disrupt 2026, Transport und Venture.</p>         <p>Wenn du handfeste Erkenntnisse, reale Erfahrungen und den Wunsch hast, das Tech-Ökosystem sinnvoll zu bereichern, wollen wir von dir hören. Bewirb dich noch heute, bevor die Frist abläuft.</p>         <p><em>BytePost-Einordnung: Die Teilnahme an TechCrunch Disrupt 2026 bietet Entwicklern und Unternehmen eine großartige Gelegenheit, ihre Ideen und Erfahrungen zu teilen und sich mit anderen Fachleuten aus der Branche zu vernetzen.</em></p>     ",
+            "content_simple": "         <p>TechCrunch Disrupt 2026 ist eine große Tech-Veranstaltung, die im Oktober in San Francisco stattfindet. Dort kommen über 10.000 Fachleute aus der Startup- und VC-Szene zusammen, um über die Zukunft von Technologie und Innovation zu sprechen.</p>         <p>Heute ist der letzte Tag, um sich als Redner für diese Veranstaltung zu bewerben. Wenn du dich bewirbst, hast du die Chance, deine Ideen und Erfahrungen mit anderen zu teilen und dich mit anderen Fachleuten zu vernetzen.</p>     ",
+            "content_pro": "         <h3>Technische Details von TechCrunch Disrupt 2026</h3>         <p>Die Veranstaltung bietet verschiedene Sitzungsformate, darunter Breakout-Sitzungen und Roundtable-Sitzungen. Breakout-Sitzungen sind 30-minütige Vorträge mit bis zu 4 Rednern, einschließlich eines Moderators, und 20-minütiger Audience-Q&A.</p>         <p>Die Bewerbung wird von einem Redaktionsteam sorgfältig geprüft. Die Finalisten werden für die Audience-Choice-Abstimmung ausgewählt, bei der die TechCrunch-Leser entscheiden, welche Sitzungen es auf die Disrupt-Bühne schaffen.</p>         <p>Die Veranstaltung findet im Moscone West in San Francisco statt und bietet eine großartige Gelegenheit, sich mit anderen Fachleuten aus der Branche zu vernetzen und die neuesten Trends und Technologien zu erkunden.</p>     ",
+            "date": "30.05.2026",
+            "id": "f6f45813",
+            "url": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f6f45813.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚫",
+            "title": "Social-Media-Plattformen misslingen bei Hassrede-Regeln",
+            "source": "tagesschau.de",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "f6f45813",
+                "a92275ec",
+                "4eae1286"
+            ],
+            "content": "         <h3>Social-Media-Plattformen und Hassrede</h3>         <p>Wenn Social-Media-Plattformen zu viel oder zu wenig löschen, können sich Nutzerinnen beim Appeals Centre Europe beschweren. In mehr als 1.700 Fällen hielten die Schlichterinnen die Entscheidungen der Tech-Konzerne für falsch. Sie bemängeln „markante und immer wiederkehrende Probleme“.</p>         <p>Die Plattformen setzen ihre eigenen Regeln gegen Hassrede, Gewalt und Kriminalität im Netz nur lückenhaft durch. Das geht aus dem zweiten Transparenzbericht des Appeals Centre Europe hervor, der Dubliner Streitbeilegungsstelle, über die man in der EU Moderationsentscheidungen von Social-Media-Plattformen anfechten kann.</p>         <p>In 70 Prozent der geprüften Streitfälle, in denen Plattformen gemeldete Hassrede online gelassen hatten, hätte der Inhalt nach Auffassung des Zentrums gelöscht werden müssen. Bei Gewalt und Kriminalität waren es 75 Prozent. Bei mehr als 1.400 geprüften Hassrede-Entscheidungen widersprach das Appeals Centre Europe am häufigsten TikTok: In 83 Prozent der Fälle, in denen die Plattform gemeldete Hassrede online gelassen hatte, hielt das Zentrum dies für falsch.</p>         <h3>Probleme mit Plattformrichtlinien</h3>         <p>Das Zentrum erkennt inzwischen wiederkehrende Muster, die auf eine fehlerhafte Umsetzung der Plattformrichtlinien hindeuten – in beide Richtungen. Einerseits bleibt gemeldete Hassrede zu oft online: Ging es um Inhalte, die eine Plattform stehen gelassen hatte, kam das Zentrum in 63 Prozent der geprüften Fälle zu dem Schluss, dass sie hätten entfernt werden müssen.</p>         <p>Andererseits löschen die Plattformen Inhalte, die gegen keine Regel verstoßen: Ging es um entfernte Inhalte, entschied das Zentrum in 52 Prozent der Fälle, dass die Löschung nicht hätte erfolgen dürfen. Bezog sich das Entfernen von Inhalten auf eingeschränkte Waren und Dienstleistungen, hielt das Zentrum die Löschung in 65 Prozent der Fälle für unberechtigt.</p>         <p>Das Appeals Centre Europe ist eine unabhängige außergerichtliche Streitbeilegungsstelle, die nach Artikel 21 des EU-Gesetzes über digitale Dienste (Digital Services Act, DSA) zertifiziert ist. Über sie können Personen und Organisationen in der EU Entscheidungen von Social-Media-Plattformen anfechten, ohne vor Gericht zu ziehen.</p>         <p><em>BytePost-Einordnung: Die Social-Media-Plattformen müssen ihre Regeln gegen Hassrede und Gewalt konsequent durchsetzen, um ein sicheres Online-Umfeld für alle Nutzerinnen zu gewährleisten.</em></p>     ",
+            "content_simple": "         <p>Social-Media-Plattformen wie TikTok, Instagram und YouTube sollen Hassrede und Gewalt im Internet bekämpfen. Aber oft funktioniert das nicht richtig. Ein unabhängiges Zentrum in Europa, das Beschwerden über diese Plattformen prüft, hat festgestellt, dass sie oft zu viel oder zu wenig löschen.</p>         <p>Deshalb können sich Nutzerinnen bei diesem Zentrum beschweren. In vielen Fällen hat das Zentrum entschieden, dass die Plattformen falsch gehandelt haben. Die Plattformen müssen ihre Regeln konsequent durchsetzen, um ein sicheres Online-Umfeld zu schaffen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte der Plattformrichtlinien</h3>         <p>Die Plattformen nutzen Algorithmen, um Hassrede und Gewalt im Internet zu erkennen und zu löschen. Aber diese Algorithmen sind nicht perfekt und können falsch positive oder falsch negative Ergebnisse liefern.</p>         <p>Deshalb ist es wichtig, dass die Plattformen ihre Algorithmen kontinuierlich verbessern und anpassen, um die Genauigkeit zu erhöhen. Zudem sollten sie transparent sein, wie sie ihre Regeln durchsetzen und wie sie Beschwerden bearbeiten.</p>         <p>Ein wichtiger Aspekt ist auch die Zusammenarbeit zwischen den Plattformen und den Behörden, um Hassrede und Gewalt im Internet effektiv zu bekämpfen. Durch die gemeinsame Arbeit können sie ihre Kräfte bündeln und ein sichereres Online-Umfeld schaffen.</p>     ",
+            "date": "30.05.2026",
+            "id": "83e7a365",
+            "url": "https://netzpolitik.org/2026/tiktok-instagram-youtube-plattformen-schludern-bei-hassrede-und-accountsperren/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/83e7a365.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "ChatGPT Links für Malware",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "b8193c89",
+                "758d58ca"
+            ],
+            "content": "         <h3>ChatGPT-Links missbraucht für Malware</h3>         <p>ChatGPT, die KI-Plattform von OpenAI, hat ein Problem mit ihren Teilen-Funktionen. Kriminelle nutzen diese, um Benutzer auf gefälschte Outage-Seiten von OpenAI zu locken. Diese Seiten bieten dann Malware an, getarnt als die ChatGPT-Desktop-Anwendung.</p>         <p>Um auf diese gefälschten Seiten zu gelangen, müssen Benutzer JavaScript und Cookies aktivieren. Sobald dies geschehen ist, können die Angreifer ihre Malware verteilen.</p>         <h3>Sicherheitsrisiken</h3>         <p>Dieses Vorgehen ist besonders gefährlich, da es sich auf eine vertrauenswürdige Plattform wie ChatGPT bezieht. Viele Benutzer könnten sich in Sicherheit wähnen, wenn sie auf solche Links klicken, da sie von einer bekannten Quelle stammen.</p>         <p>Es ist wichtig, dass Benutzer vorsichtig sind, wenn sie auf Links klicken, die sie zu unbekannten Seiten führen. Sie sollten immer prüfen, ob die Seite, auf die sie gelangen, authentisch ist und keine verdächtigen Aktivitäten aufweist.</p>         <p><em>BytePost-Einordnung:</em> Dies ist ein wichtiger Hinweis darauf, dass auch bei vertrauenswürdigen Plattformen Vorsicht geboten ist. Entwickler sollten sich dieser Bedrohungen bewusst sein und ihre Anwendungen entsprechend sichern.</p>     ",
+            "content_simple": "         <p>ChatGPT hat ein Problem. Böse Leute nutzen die Teilen-Funktion, um Menschen auf gefälschte Seiten zu locken. Diese Seiten bieten schädliche Software an, die wie die ChatGPT-Anwendung aussieht.</p>         <p>Dafür müssen die Menschen JavaScript und Cookies erlauben. Dann können die Bösewichte ihre schädliche Software ausgeben.</p>     ",
+            "content_pro": "         <h3>Technische Analyse</h3>         <p>Diese Art von Angriffen nutzen die Vertrauenswürdigkeit von Plattformen wie ChatGPT aus. Die Angreifer können ihre Malware als legitime Anwendung tarnen, was es für Benutzer schwierig macht, die Bedrohung zu erkennen.</p>         <p>Es ist wichtig, dass Entwickler ihre Anwendungen gegen solche Angriffe sichern. Dazu gehören die Implementierung von Sicherheitsmaßnahmen wie der Überprüfung von Links und der Verhinderung von Malware.</p>     ",
+            "date": "30.05.2026",
+            "id": "a92275ec",
+            "url": "https://www.bleepingcomputer.com/news/security/chatgpt-share-links-abused-to-host-fake-outage-pages-to-deliver-malware/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a92275ec.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data",
+                "dev"
+            ],
+            "icon": "📈",
+            "title": "dbt-Zertifizierung für Entwickler",
+            "source": "dbt Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "f6f45813",
+                "83e7a365",
+                "a92275ec"
+            ],
+            "content": "         <h3>Werden Sie dbt-zertifiziert und bleiben Sie es</h3>         <p>Die Firma dbt empfiehlt, eine Zertifizierung zu erwerben, um Ihre Fähigkeiten im Bereich der Datenanalyse unter Beweis zu stellen. Die Zertifizierung ist nicht nur ein schönes Accessoire, sondern ein notwendiger Teil Ihres beruflichen Werdegangs. Durch die Zertifizierung können Sie Ihre Kreditwürdigkeit bei potenziellen Arbeitgebern und Kunden erhöhen.</p>         <p>Die Zertifizierungsprogramme von dbt bestehen aus zwei Prüfungen, die für die Praktiker konzipiert sind, die Datenpipelines bauen, Modelle schreiben und die Datenqualität in der Produktion überwachen. Wenn Sie ein Analytics-Engineer, ein Datenanalyst oder ein dbt-Plattform-Experte sind, gibt es einen Weg, der für Ihre Bedürfnisse konzipiert ist.</p>         <h3>Zwei Prüfungen, ein Standard</h3>         <p>Die dbt Analytics Engineering Certification überprüft Ihre Fähigkeit, das dbt-Kernframework anzuwenden - Modellierung, Testing, Dokumentation und Deployment - so wie es in Produktionsumgebungen tatsächlich durchgeführt wird. Die dbt Architect Certification überprüft Ihre Fähigkeit, sichere, skalierbare dbt-Implementierungen zu entwerfen, mit dem Schwerpunkt auf Umgebungsorchestrierung, rollenbasierte Zugriffskontrolle, Integrationen mit anderen Tools und kollaborativen Entwicklungsworkflows, die den besten Praktiken entsprechen.</p>         <p>Indem Sie sich zertifizieren lassen, schließen Sie sich einer Gemeinschaft von über 3.100 dbt-Entwicklern und Architekten an, die bereits diese Auszeichnung erworben haben.</p>         <p>Bleiben Sie zertifiziert, um Ihre Relevanz und Ihr Engagement zu zeigen. Eine aktive Zertifizierung signalisiert, dass Sie mit den neuesten Entwicklungen Schritt halten und nicht auf altem Wissen ruhen.</p>         <h3>Ihre Chance, sich weiterzubilden</h3>         <p>Das dbt Analytics Engineering Exam wurde aktualisiert, um mit dbt Core 1.11 übereinzustimmen. Es ist Ihre Chance, Lücken zu schließen, sich mit den Neuerungen auseinanderzusetzen und Ihre Fähigkeiten gegen den Standard zu testen, der heute zählt.</p>         <p>Um Ihre Vorbereitung zu unterstützen, bietet dbt 10 Beispielprüfungen auf der Webseite und im Studienführer an, damit Sie wissen, was Sie erwartet, bevor Sie die Prüfung ablegen.</p>         <p><em>BytePost-Einordnung: Die dbt-Zertifizierung ist ein wichtiger Schritt für Entwickler, die ihre Fähigkeiten im Bereich der Datenanalyse unter Beweis stellen möchten. Durch die Zertifizierung können Sie Ihre Kreditwürdigkeit bei potenziellen Arbeitgebern und Kunden erhöhen und Ihre Karrierechancen verbessern.</em></p>     ",
+            "content_simple": "         <p>Wenn du mit Daten arbeitest, ist es wichtig, deine Fähigkeiten zu beweisen. Eine Zertifizierung kann dir helfen, deine Kreditwürdigkeit zu erhöhen und deine Karrierechancen zu verbessern. dbt bietet zwei Zertifizierungsprogramme an, die für die Praktiker konzipiert sind, die Datenpipelines bauen und Modelle schreiben.</p>         <p>Indem du dich zertifizierst, schließt du dich einer Gemeinschaft von über 3.100 dbt-Entwicklern und Architekten an, die bereits diese Auszeichnung erworben haben. Bleibe zertifiziert, um deine Relevanz und dein Engagement zu zeigen.</p>     ",
+            "content_pro": "         <h3>Technische Details der dbt-Zertifizierung</h3>         <p>Die dbt Analytics Engineering Certification überprüft Ihre Fähigkeit, das dbt-Kernframework anzuwenden - Modellierung, Testing, Dokumentation und Deployment - so wie es in Produktionsumgebungen tatsächlich durchgeführt wird. Die dbt Architect Certification überprüft Ihre Fähigkeit, sichere, skalierbare dbt-Implementierungen zu entwerfen, mit dem Schwerpunkt auf Umgebungsorchestrierung, rollenbasierte Zugriffskontrolle, Integrationen mit anderen Tools und kollaborativen Entwicklungsworkflows, die den besten Praktiken entsprechen.</p>         <p>Um Ihre Vorbereitung zu unterstützen, bietet dbt 10 Beispielprüfungen auf der Webseite und im Studienführer an, damit Sie wissen, was Sie erwartet, bevor Sie die Prüfung ablegen. Durch die Zertifizierung können Sie Ihre Kreditwürdigkeit bei potenziellen Arbeitgebern und Kunden erhöhen und Ihre Karrierechancen verbessern.</p>     ",
+            "date": "30.05.2026",
+            "id": "4eae1286",
+            "url": "https://www.getdbt.com/blog/get-dbt-certified-stay-certified-stay-ahead",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/4eae1286.jpg",
+            "pick": true,
+            "pick_reason": "Die dbt-Zertifizierung für Entwickler ist ein Meilenstein in der Tech-Branche, der die Karrieren von Entwicklern verändern kann. Mit dieser Zertifizierung können Entwickler ihre Fähigkeiten im Bereich der Daten-Transformation und -Analyse unter Beweis stellen und sich so von anderen abheben. Dieser Artikel ist heute wichtig, weil er Entwicklern zeigt, wie sie ihre Chancen auf dem Arbeitsmarkt verbessern können."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "💻",
+            "title": "KI-Modelle besten bei ITBench-AA",
+            "source": "Artificial Analysis und IBM",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f6f45813",
+                "83e7a365",
+                "a92275ec"
+            ],
+            "content": "         <h3>ITBench-AA: Ein neuer Benchmark für KI-Modelle</h3>         <p>Artificial Analysis und IBM haben ITBench-AA vorgestellt, den ersten Benchmark für KI-Modelle im Bereich der agentischen Enterprise-IT-Aufgaben. Der Fokus liegt auf Site Reliability Engineering (SRE)-Aufgaben, bei denen KI-Modelle ihre Fähigkeiten unter Beweis stellen müssen, um komplexe IT-Infrastrukturen zu diagnostizieren und zu lösen.</p>         <p>Die Ergebnisse zeigen, dass führende KI-Modelle wie Claude Opus 4.7 und GPT-5.5 nur etwa 47% bzw. 46% der Aufgaben erfolgreich lösen. Alle KI-Modelle bleiben unter der 50%-Marke, was darauf hinweist, dass es noch viel Potential für Verbesserungen gibt.</p>         <h3>Methodik und Ergebnisse</h3>         <p>Der Benchmark besteht aus 59 SRE-Aufgaben, davon 40 öffentliche und 19 neue, versteckte Aufgaben. Jede Aufgabe enthält eine Kubernetes-Incident-Snapshot, die die KI-Modelle mithilfe von Shell-Befehlen und JSON-Diagnosen lösen müssen.</p>         <p>Die Ergebnisse zeigen, dass KI-Modelle, die übermäßig investigieren, tendenziell falsche positiven Ergebnisse liefern. GLM-5.1 (Reasoning) führt die offenen Modelle mit 40% an, gefolgt von Gemini 3.5 Flash (high) und DeepSeek V4 Pro (Reasoning, Max Effort).</p>         <h3>Aussichten für die Zukunft</h3>         <p>ITBench-AA bietet eine Plattform für die Entwicklung und den Vergleich von KI-Modellen im Bereich der agentischen Enterprise-IT-Aufgaben. Durch die Veröffentlichung dieser Ergebnisse und der zugrunde liegenden Daten soll die Forschung und Entwicklung in diesem Bereich vorangetrieben werden.</p>         <p><em>BytePost-Einordnung: Die Ergebnisse von ITBench-AA zeigen, dass KI-Modelle noch viel Potential für Verbesserungen haben, um komplexe IT-Infrastrukturen zu diagnostizieren und zu lösen. Durch die Veröffentlichung dieser Ergebnisse und der zugrunde liegenden Daten soll die Forschung und Entwicklung in diesem Bereich vorangetrieben werden.</em></p>     ",
+            "content_simple": "         <p>Künstliche Intelligenz (KI) wird immer besser darin, komplexe Aufgaben zu lösen. Ein neuer Benchmark namens ITBench-AA zeigt, wie gut KI-Modelle darin sind, IT-Infrastrukturen zu diagnostizieren und zu lösen. Die Ergebnisse zeigen, dass die besten KI-Modelle nur etwa 47% der Aufgaben erfolgreich lösen.</p>         <p>Dies zeigt, dass es noch viel Potential für Verbesserungen gibt. Durch die Veröffentlichung dieser Ergebnisse soll die Forschung und Entwicklung in diesem Bereich vorangetrieben werden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der Benchmark ITBench-AA verwendet eine Kubernetes-Incident-Snapshot, die die KI-Modelle mithilfe von Shell-Befehlen und JSON-Diagnosen lösen müssen. Die Ergebnisse zeigen, dass KI-Modelle, die übermäßig investigieren, tendenziell falsche positive Ergebnisse liefern.</p>         <p>Die Verwendung von Kubernetes und Shell-Befehlen ermöglicht es, die Fähigkeiten der KI-Modelle im Bereich der agentischen Enterprise-IT-Aufgaben zu testen. Durch die Veröffentlichung dieser Ergebnisse und der zugrunde liegenden Daten soll die Forschung und Entwicklung in diesem Bereich vorangetrieben werden.</p>         <h3>Kritische Einordnung</h3>         <p>Die Ergebnisse von ITBench-AA zeigen, dass KI-Modelle noch viel Potential für Verbesserungen haben, um komplexe IT-Infrastrukturen zu diagnostizieren und zu lösen. Durch die Veröffentlichung dieser Ergebnisse und der zugrunde liegenden Daten soll die Forschung und Entwicklung in diesem Bereich vorangetrieben werden.</p>     ",
+            "date": "30.05.2026",
+            "id": "a22a6ed3",
+            "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a22a6ed3.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Was spielen wir dieses Wochenende?",
+            "source": "Rock, Paper, Shotgun",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "f6f45813",
+                "83e7a365",
+                "a92275ec"
+            ],
+            "content": "         <h3>Ein Wochenende voller Spiele</h3>         <p>Diesen Wochenende gehe ich in ein nicht besonders gutes Fußballstadion, um berühmte Leute bei ihrem nicht besonders guten Fußballspiel zuzusehen. Nein, nicht das übliche [Team, das du nicht magst]-Spiel, sondern <a href=\"https://www.socceraid.org.uk/\">Soccer Aid</a>. Warum gibt es kein <a href=\"https://www.gamesaid.org/\">Games Aid</a>? Nun, es gibt eines. Und sie machen großartige Arbeit, wie es scheint. Vielleicht nutzen wir eines Tages unsere eigenen Spiele-Fähigkeiten zum Guten, aber vorerst ist es nur das Folgende:</p>         <p>Julian: Ich sage es leise, um es nicht zu verfluchen, aber ich mache Fortschritte in <a href=\"https://www.cyberpunk.net/\">Cyberpunk 2077</a>. Ich flüstere nur, weil ich die schlechte Angewohnheit habe, nach ein paar Stunden von RPGs abzuspringen, und ich habe nie die Anfangssequenz von CD Projekts anderen Spielen überwunden, so gut ich sie höre. Irgendetwas funktioniert hier, vielleicht ist es die <a href=\"https://de.wikipedia.org/wiki/Deus_Ex\">Deus Ex</a>-Art von allem, aber ich hoffe, ich kann es über das Wochenende hinweg schaffen.</p>         <p>Edwin: Ich sollte wohl <a href=\"https://store.steampowered.com/app/1774640/Zero_Parades/\">Zero Parades</a> beenden, aber ich habe den widerlichen Wunsch, ein <a href=\"https://frictionalgames.com/\">Penumbra</a>-Spiel zu spielen - das ist nämlich, was Frictional vor ihrem echten Ruhm mit der <a href=\"https://frictionalgames.com/games/amnesia/\">Amnesia</a>-Serie gemacht hat. Ich habe eine Stunde oder so von <a href=\"https://store.steampowered.com/app/22100/Penumbra_Overture/\">Penumbra: Overture</a> gespielt und versuche, mich durch einen Bereich zurückzuarbeiten, der etwas Schlimmes beheimatet. Was ist eine bessere Möglichkeit, die Geschmacksknospen vor <a href=\"https://thegameawards.com/\">KeighleyFest</a>_next Woche zu reinigen?</p>         <p>Ollie: Abgesehen von unseren regelmäßigen <a href=\"https://playoverwatch.com/de-de/\">Overwatch</a>-Schänen habe ich mich wieder in <a href=\"https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/\">Dyson Sphere Program</a> hineingezogen, und das erste Mal seit einiger Zeit. Die ersten paar Stunden dieses Spiels sind einfach wundervoll, und sobald du deinen Startplaneten verlassen hast (eine Leistung, die viel einfacher zu erreichen ist als in <a href=\"https://www.factorio.com/\">Factorio</a>), wird es nur noch besser. Bitte spielt es, wenn ihr Fabrik-Spiele mögt. Es könnte das zweitbeste davon sein.</p>         <p>James: Ich fühle mich moralisch verpflichtet, <a href=\"https://store.steampowered.com/app/1709750/Mina_The_Hollower/\">Mina the Hollower</a> zu spielen, wenn auch nur, damit wenigstens einer von uns darüber schreiben kann, obwohl ich mit dem Kampfsystem nicht ganz klarkomme und wünsche, ich könnte unter mehr Hindernissen graben, als es mir tatsächlich erlaubt. Ich habe insgesamt 39 Minuten gespielt, was nicht genug ist, um ein Urteil über ein Spiel zu fällen, selbst wenn es nur 35 Minuten lang wäre. Weitere Untersuchungen/Grabungen erforderlich.</p>         <p>Mark: Wahrscheinlich mehr <a href=\"https://www.forzamotorsport.net/en-us/games/fh6\">Forza Horizon 6</a>, jetzt, da die Festival-Playlists in vollem Gange sind, als eine Art Entgiftung nach einem schnell inhalationsartigen Konsum von reinem Bond-Idealismus diese Woche. Jeremy, Dion und Callum wurden alle bei einem seltsamen Unfall mit Leitfäden getötet, aus dem Ollie wie durch ein Wunder unversehrt hervorging und irgendwie der alleinige Nutznießer aller drei ihrer Testamente wurde. Und du, lieber Leser, was spielst du dieses Wochenende?</p>         <p><em>BytePost-Einordnung: Der Artikel gibt einen Einblick in die persönlichen Vorlieben und Spielgewohnheiten der Autoren und regt dazu an, über die eigenen Spielvorlieben nachzudenken.</em></p>     ",
+            "content_simple": "         <p>Diesen Wochenende spielen die Autoren verschiedene Spiele, unter anderem Cyberpunk 2077, Penumbra und Dyson Sphere Program. Sie teilen ihre Erfahrungen und Gedanken zu den Spielen und fragen den Leser, was er oder sie spielen wird.</p>         <p>Die Autoren haben unterschiedliche Vorlieben und Gewohnheiten, wenn es um Spiele geht. Einige sind großartige Fans von Rollenspielen, während andere lieber Strategie- oder Action-Spiele spielen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte der Spiele</h3>         <p>Die Spiele, die die Autoren spielen, haben unterschiedliche technische Anforderungen und Funktionalitäten. Zum Beispiel benötigt Cyberpunk 2077 eine leistungsstarke Hardware, um die Grafik und die Spielmechanik flüssig zu rendern.</p>         <p>Penumbra hingegen ist ein älteres Spiel, das auf einer anderen Engine basiert und andere Anforderungen an die Hardware hat. Dyson Sphere Program ist ein Strategiespiel, das eine komplexe Spielwelt und viele Möglichkeiten bietet, die Spielwelt zu erkunden und zu gestalten.</p>     ",
+            "date": "30.05.2026",
+            "id": "9d00bfec",
+            "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-384",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9d00bfec.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki"
             ],
             "icon": "🤖",
@@ -27,7 +203,7 @@
                 "sleep": 0
             },
             "image_local": "images/7d6d6a71.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Heute erreicht Glean eine wichtige Meilensteine: 300 Millionen Nutzer. Damit etabliert sich das Tool als wichtiger Player im Bereich der Datenanalyse und -verwaltung. Für Entwickler bedeutet dies, dass sie auf eine neue Ebene der Datennutzung und -auswertung zugreifen können, um bessere Entscheidungen zu treffen und ihre Produkte zu optimieren."
         },
         {
@@ -39520,10 +39696,10 @@
         }
     ],
     "bytepulse": {
-        "date": "29.05.2026",
-        "positiv": 50,
-        "neutral": 20,
-        "kritisch": 30,
-        "total": 10
+        "date": "30.05.2026",
+        "positiv": 17,
+        "neutral": 50,
+        "kritisch": 33,
+        "total": 6
     }
 }
