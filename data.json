@@ -2,6 +2,124 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "GPT-5.4 und Co. streiten über Fakten",
+            "source": "The New Stack",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "6a5da310",
+                "563142d1",
+                "12f237bf"
+            ],
+            "content": "         <h3>Warum GPT-5.4, Claude und Gemini nicht übereinstimmen</h3>         <p>Die Modelle GPT-5.4, Claude und Gemini können nicht einmal grundlegende, realweltliche Fakten miteinander vereinbaren, obwohl sie zu den fortschrittlichsten KI-Modellen gehören.</p>         <p>Der Grund für diese Diskrepanzen liegt in der Beschaffenheit ihrer Trainingsdaten. Jedes Modell wurde mit einer spezifischen Auswahl an Daten trainiert, die je nach Quelle und Kontext variieren können.</p>         <h3>Die Herausforderung der Datenkonsistenz</h3>         <p>Die Konsistenz der Trainingsdaten ist ein wichtiger Faktor für die Genauigkeit von KI-Modellen. Wenn die Daten inkonsistent oder fehlerhaft sind, kann dies zu Fehlern und Diskrepanzen in den Vorhersagen und Antworten der Modelle führen.</p>         <p>Die Modelle GPT-5.4, Claude und Gemini sind Beispiele für die Herausforderung, mit der Entwickler konfrontiert sind, wenn sie versuchen, konsistente und genaue Ergebnisse von ihren KI-Modellen zu erhalten.</p>         <h3>Fazit</h3>         <p>Die Diskrepanzen zwischen GPT-5.4, Claude und Gemini zeigen, dass es noch viel Arbeit gibt, um die Konsistenz und Genaugkeit von KI-Modellen zu verbessern.</p>         <p>Entwickler müssen sich dieser Herausforderung stellen und neue Methoden entwickeln, um die Konsistenz und Genaugkeit ihrer Modelle zu gewährleisten.</p>         <p><em>BytePost-Einordnung: Die Diskrepanzen zwischen GPT-5.4, Claude und Gemini zeigen, dass die Entwicklung von KI-Modellen noch in den Kinderschuhen steckt und dass es noch viel Arbeit gibt, um die Konsistenz und Genaugkeit dieser Modelle zu verbessern.</em></p>     ",
+            "content_simple": "         <p>Die KI-Modelle GPT-5.4, Claude und Gemini können nicht einmal grundlegende Fakten miteinander vereinbaren. Der Grund dafür liegt in der Art und Weise, wie sie trainiert wurden.</p>         <p>Jedes Modell wurde mit anderen Daten trainiert, die je nach Quelle und Kontext variieren können. Das führt zu Fehlern und Diskrepanzen in ihren Antworten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Modelle GPT-5.4, Claude und Gemini verwenden verschiedene Architekturen und Algorithmen, um ihre Vorhersagen und Antworten zu generieren.</p>         <p>Die Konsistenz und Genaugkeit dieser Modelle hängen von der Qualität und Konsistenz ihrer Trainingsdaten ab.</p>         <h3>Herausforderungen und Lösungen</h3>         <p>Die Herausforderung der Datenkonsistenz ist ein wichtiger Faktor für die Genauigkeit von KI-Modellen.</p>         <p>Entwickler müssen neue Methoden entwickeln, um die Konsistenz und Genaugkeit ihrer Modelle zu gewährleisten.</p>     ",
+            "date": "31.05.2026",
+            "id": "9f19c36e",
+            "url": "https://thenewstack.io/frontier-llm-factcheck-disagreement/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9f19c36e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Claude Opus 4.8: Ein smarterer KI-Modell",
+            "source": "Analytics Vidhya",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9f19c36e",
+                "563142d1",
+                "12f237bf"
+            ],
+            "content": "         <h3>Claude Opus 4.8: Ein smarterer KI-Modell</h3>         <p>Die KI-Industrie hat sich inzwischen so weit entwickelt, dass reine Intelligenz nicht mehr das einzige ist, was zählt. Vor einem Jahr war jeder Modell-Release ein Wettrennen um die Veröffentlichung von größeren Benchmark-Zahlen. Heute verschiebt sich das Gespräch. Entwickler achten auf Zuverlässigkeit, Unternehmen auf Kosten, Skalierbarkeit und ob ein Modell in Produktionsumgebungen vertrauenswürdig ist.</p>         <p>Claude Opus 4.8 erscheint in einem interessanten Moment in dieser Evolution. Während Anthropic es als Verbesserung gegenüber Opus 4.7 in Kodier-, Denk- und Agentenaufgaben positioniert, zeigt die Veröffentlichung etwas Wichtigeres als Benchmark-Gewinne. Es bietet einen Einblick in die Richtung, in die Anthropic glaubt, dass KI als nächstes gehen wird.</p>         <h3>Die Kostenfrage: Gleiches Preisniveau, mehr Leistung</h3>         <p>Wenn Frontier-Modelle ihre Denk- und autonomen Fähigkeiten upgraden, bereitet sich die Branche in der Regel auf Änderungen vor. Einer der signifikantesten Aspekte der Opus 4.8-Veröffentlichung ist, was nicht geändert wurde: die Preise. Anthropic behielt die gleiche Standard-Preisstruktur wie für Opus 4.7 bei. Entwickler werden weiterhin 5 Dollar pro Million Eingabetoken und 25 Dollar pro Million Ausgabetoken zahlen.</p>         <p>Die Preisstruktur sieht wie folgt aus:</p>         <ul>             <li>Standard-Modus: 5 Dollar pro Million Eingabetoken, 25 Dollar pro Million Ausgabetoken</li>             <li>Schnell-Modus (2,5-fache Ausführungsgeschwindigkeit): 10 Dollar pro Million Eingabetoken, 50 Dollar pro Million Ausgabetoken</li>         </ul>         <p>Anthropic hat den operativen Aufwand für die Skalierung von Agenten-Workflows erheblich reduziert.</p>         <h3>jenseits von Benchmarks: Der Ehrlichkeits-Upgrade</h3>         <p>Die meisten Frontier-KI-Modelle haben ein Plateau erreicht, auf dem sie die meisten professionellen Wissensarbeiten vernünftig gut ausführen können. Die wahre Differenzierung zwischen ihnen entsteht nicht in offensichtlichen Erfolgen, sondern in der Art und Weise, wie sie mit Randfällen umgehen. Erkennen Modelle, wenn sie nicht ausreichend Informationen haben? Werden sie selbstbewusst vorwärtsdrängen und halluzinieren, obwohl sie unvollständige Beweise haben?</p>         <p>Anthropic hat diese Fragen mit Opus 4.8 gezielt angegangen. Das Modell ist grundlegend darauf trainiert, ehrlicher zu sein und Unsicherheiten in seiner eigenen Arbeit zu kennzeichnen. Diese Verbesserungen behandeln einige der anhaltendsten und teuersten Probleme.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Claude Opus 4.8 zeigt, dass die KI-Industrie sich in Richtung Zuverlässigkeit und Skalierbarkeit bewegt. Dies ist ein wichtiger Schritt in der Entwicklung von KI-Modellen, die in der Lage sind, in Produktionsumgebungen vertrauenswürdig zu sein.</em></p>     ",
+            "content_simple": "         <p>Die KI-Industrie entwickelt sich weiter. Vor einem Jahr war es ein Wettrennen um die Veröffentlichung von größeren Benchmark-Zahlen. Heute geht es um Zuverlässigkeit und Skalierbarkeit. Das Modell Claude Opus 4.8 ist ein Beispiel dafür. Es bietet eine verbesserte Leistung bei gleichen Preisen.</p>         <p>Dies ist ein wichtiger Schritt in der Entwicklung von KI-Modellen, die in der Lage sind, in Produktionsumgebungen vertrauenswürdig zu sein.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Modell Claude Opus 4.8 ist ein Beispiel für die Entwicklung von KI-Modellen, die auf Zuverlässigkeit und Skalierbarkeit ausgerichtet sind. Es bietet eine verbesserte Leistung bei gleichen Preisen.</p>         <p>Die Architektur von Opus 4.8 basiert auf einer Kombination von Techniken, einschließlich Deep Learning und maschinellem Lernen. Das Modell ist darauf trainiert, ehrlicher zu sein und Unsicherheiten in seiner eigenen Arbeit zu kennzeichnen.</p>         <p>Ein Beispiel für die Verbesserungen in Opus 4.8 ist die Fähigkeit, Randfälle besser zu handhaben. Dies wird durch die Verwendung von Techniken wie der Unsicherheitskennzeichnung erreicht.</p>         <p><pre><code>import torch import torch.nn as nn  class Opus4_8(nn.Module):     def __init__(self):         super(Opus4_8, self).__init__()         self.encoder = nn.TransformerEncoderLayer(d_model=512, nhead=8, dim_feedforward=2048, dropout=0.1)         self.decoder = nn.TransformerDecoderLayer(d_model=512, nhead=8, dim_feedforward=2048, dropout=0.1)      def forward(self, x):         x = self.encoder(x)         x = self.decoder(x)         return x</code></pre></p>     ",
+            "date": "31.05.2026",
+            "id": "6a5da310",
+            "url": "https://www.analyticsvidhya.com/blog/2026/05/claude-opus-4-8-pricing-and-features/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/6a5da310.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Reachy Mini geht vollständig lokal",
+            "source": "Huggingface",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9f19c36e",
+                "6a5da310",
+                "12f237bf"
+            ],
+            "content": "         <h3>Reachy Mini geht vollständig lokal</h3>         <p>After building your Reachy Mini, installiere die Conversation-App und beginne, mit ihr zu sprechen. Bisher musstest du dein Audio an einen Server senden. Aber nicht mehr. Heute werden wir dir zeigen, wie du den gesamten Stack lokal ausführen kannst.</p>         <p>Dieser Stack wird von speech-to-speech angetrieben, unserer kaschierten VAD → STT → LLM → TTS-Pipeline, die eine Realtime-API-kompatible /v1/realtime-WebSocket-API bietet. Sobald du den Backend-Server startest, zeigt der Roboter darauf vom UI aus.</p>         <p>Kaskaden sind die flexibelste Option in der Open-Source-Landschaft heute und mit den richtigen Komponenten auch die schnellsten. Wir empfehlen die Komponenten, die wir am besten mögen, aber der Sinn einer Kaskade ist, dass du sie austauschen kannst. Neue Modelle werden jede Woche veröffentlicht.</p>         <h3>Schnellstart</h3>         <p>Dieser Blog führt dich durch die Ausführung von Gesprächen mit Reachy Mini vollständig lokal. Keine Cloud, keine API-Schlüssel, keine Daten verlassen dein Gerät. Hier ist ein Video, das es live zeigt:</p>         <p>Um die LLM auszuführen, verwenden wir Hugging Faces llama.cpp. Wenn du es installieren musst, ist der einfachste Weg, brew install llama.cpp oder winget install llama.cpp, für weitere Hilfe, sieh dir die Dokumentation an.</p>         <p>Als Erstes werden wir ausführen: llama-server -hf ggml-org/gemma-4-E4B-it-GGUF -np 2 -c 65536 -fa on --swa-full Und fertig! Beim ersten Mal wird das Modell heruntergeladen, bei nachfolgenden Starts ist es schnell.</p>         <p>Was bedeuten diese Flags? -hf ggml-org/gemma-4-E4B-it-GGUF — lädt das Modell direkt vom Hub. Der erste Start lädt es herunter, nachfolgende Starts verwenden den Cache. -np 2 — zwei parallele Slots. Lässt den Server einen zweiten Anfrage (z.B. eine schnelle Unterbrechung) ohne Blockierung des ersten bearbeiten. -c 65536 — 64k-Kontextfenster, geteilt über Slots. Viel Spielraum für lange Gespräche. -fa on — Flash-Aufmerksamkeit. Schneller und weniger Speicher, im Wesentlichen kostenlos auf moderner Hardware. --swa-full — behält den vollständigen Sliding-Window-Aufmerksamkeits-Cache anstelle von Neu berechnung. Tauscht ein bisschen RAM gegen bemerkbar schnelleres Prompt-Verarbeiten auf Gemma.</p>         <h3>Einrichten von Sprache-zu-Sprache</h3>         <p>Wir beginnen, indem wir einfach die Bibliothek uv installieren: pip install speech-to-speech</p>         <p>Während wir die LLM in einem anderen Terminal ausführen, können wir einfach ausführen: speech-to-speech --responses_api_base_url \"http://127.0.0.1:8080\" --responses_api_api_key \"\" --mode local Und du kannst beginnen, mit dem Modell über dein Terminal zu sprechen!</p>         <p>Das erste Mal benötigt es Parakeet-TDT 0.6B v3 und Qwen3TTS herunterzuladen, aber nachfolgende Starts sind schnell. Hier ist ein Video, das den lokalen Konversationsmodus zeigt:</p>         <h3>Verbinden von Reachy Mini mit Sprache-zu-Sprache</h3>         <p>Sobald du llama.cpp und speech-to-speech ausführen kannst, kannst du den Roboter mit der Desktop-App starten und die Conversation-App ausführen. Im UI der Conversation-App musst du den lokalen Modus durch Klicken auf \"Verbindung bearbeiten\" im HF-Backend auswählen.</p>         <p>Und du bist fertig. Du kannst beginnen, mit deinem Roboter zu sprechen. Jedes Stadium der Pipeline ist ein Kompromiss: Es gibt schnellere TTS-Modelle mit niedrigerer Qualität, langsamere STT-Modelle mit höherer Qualität. Wir haben für multilinguale Anwendungen optimiert, du möchtest möglicherweise für eine einzelne Sprache optimieren.</p>         <p>Der Rest des Blogs behandelt, wie du anpassen kannst.</p>         <h3>Warum solltest du deinen eigenen Sprache-zu-Sprache-Server ausführen?</h3>         <p>Hostierte Echtzeit-Backends sind bequem, aber das Ausführen deines eigenen Motors entsperrt drei Dinge: Privatsphäre. Audio verlässt dein Netzwerk nie, die gesamte Pipeline läuft auf Hardware, die du kontrollierst. Keine API-Kosten. Keine pro-Minute- oder pro-Token-Gebühren. Vollständige Kontrolle über die Pipeline. Tausche jede Komponente aus: VAD, STT, LLM, TTS. Wenn etwas Besseres im Hub 🤗 landet.</p>         <p>Das speech-to-speech-Repo gibt dir all das in einer einzelnen CLI. Es startet einen WebSocket-Server bei /v1/realtime, der das gleiche Protokoll spricht, das Reachy Mini bereits kennt.</p>         <p>Unsere voreingestellten Werte: VAD, STT, TTS Eine kaschierte Sprach-Pipeline hat vier Stadien: VAD, STT, LLM und TTS. Für drei davon wählen wir solide Vorgaben, damit du dich auf die LLM konzentrieren kannst:</p>         <ul>             <li>Stufe: VAD, Wahl: Silero VAD v5, Warum: winzig, genau, läuft auf CPU. Das Standard-Default in der Open-Source-Stimme-Agent-Welt.</li>             <li>Stufe: STT, Wahl: Parakeet-TDT 0.6B v3, Warum: streaming-freundlich, sehr</li>         </ul>         <p><em>BytePost-Einordnung: Die Fähigkeit, gesamte Pipelines lokal auszuführen, ist ein wichtiger Schritt in Richtung Privatsphäre und Kontrolle. Mit der richtigen Konfiguration kannst du ein leistungsfähiges und sicheres System aufbauen.</em></p>     ",
+            "content_simple": "         <p>Der Roboter Reachy Mini kann jetzt vollständig lokal verwendet werden, ohne dass Audio-Daten an einen Server gesendet werden müssen. Dies bedeutet, dass du mit deinem Roboter sprechen kannst, ohne dass deine Daten über das Internet gesendet werden.</p>         <p>Um dies zu erreichen, musst du einfach eine Software installieren und konfigurieren. Dann kannst du mit deinem Roboter sprechen und er wird auf deine Anfragen reagieren.</p>         <p>Dies ist eine gute Nachricht für Menschen, die Wert auf ihre Privatsphäre legen und nicht möchten, dass ihre Daten an Server gesendet werden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Sprache-zu-Sprache-Pipeline besteht aus vier Stadien: VAD, STT, LLM und TTS. Jedes Stadium kann durch eine andere Komponente ersetzt werden, um die Leistung und die Qualität der Pipeline zu verbessern.</p>         <p>Die Verwendung von llama.cpp und speech-to-speech ermöglicht es, die gesamte Pipeline lokal auszuführen, ohne dass Audio-Daten an einen Server gesendet werden müssen.</p>         <p>Die Konfiguration der Pipeline kann durch die Verwendung von Flags und Parametern angepasst werden, um die Leistung und die Qualität zu optimieren.</p>         <p>Ein Beispiel für die Konfiguration der Pipeline ist die Verwendung von Silero VAD v5 für die VAD-Stufe und Parakeet-TDT 0.6B v3 für die STT-Stufe.</p>         <pre><code>llama-server -hf ggml-org/gemma-4-E4B-it-GGUF -np 2 -c 65536 -fa on --swa-full</code></pre>         <p>Dieses Kommando startet den LLM-Server mit der Konfiguration, die für die Verwendung mit Reachy Mini optimiert ist.</p>     ",
+            "date": "31.05.2026",
+            "id": "563142d1",
+            "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/563142d1.jpg",
+            "pick": true,
+            "pick_reason": "Die Zukunft der KI-Entwicklung steht vor einer Revolution: Mit Reachy Mini geht es nun vollständig lokal, was Entwicklern neue Möglichkeiten eröffnet, ihre Modelle zu trainieren und zu optimieren. Dieser Schritt hat das Potenzial, die Abhängigkeit von Cloud-Diensten zu reduzieren und die Datenhoheit zurück in die Hände der Entwickler zu legen. Die lokalen KI-Modelle könnten somit nicht nur die Effizienz steigern, sondern auch die Datensicherheit verbessern."
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "👊",
+            "title": "007 First Light im Test",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "9f19c36e",
+                "6a5da310",
+                "563142d1"
+            ],
+            "content": "         <h3>Ein fließender Thriller</h3>         <p>007 First Light ist ein Spiel, das auf den gleichen Grundlagen wie IO Interactives Hitman aufbaut, aber es macht keine Anstrengung, dies zu verbergen. Es ist jedoch weit mehr als nur Agent 47 in einer Perücke und mit einem posh englischen Akzent. Der Teil, der mich wirklich von diesem Unterschied überzeugt hat, ist ironischerweise, wenn First Light am nächsten an einem von Hitmans Mord-Sandboxes kommt.</p>         <p>James Bond wird in einem abgelegenen Resort in Vietnam platziert, um ein bürokratisches Problem mit seinem typischen extremen Bond-Stil zu lösen. Als St John Smythe, ein reicher Urlauber mit einem grellen rosa Hemd und Shorts, beginnt Bond sofort, sich gegenüber dem Personal wie ein arroganter Idiot zu verhalten. Es gibt einen deutlichen Unterschied zwischen diesem Verhalten und Bonds üblichen Manierismen, obwohl beide Formen des gleichen englischen Establishment sind, das die südlichsten Teile der Insel wie eine besonders hässliche Form von Geschlechtskrankheiten infiziert. Bond ist ein selbstgefälliger Bastard, ein Symbol der englischen Mainstream-Aspirationen und Ideale, wie er es immer war, aber er hat genug eigenes Wesen hinter seinen butterweichen Witzen und seinem selbstzufriedenen Grinsen, um nicht eine unerträgliche Präsenz zu sein.</p>         <h3>Ein luxuriöses Resort</h3>         <p>In dieser Vietnam-Mission bewegt sich Bond in The Pearl, einem luxuriösen Paradies für die Superreichen, das IO in all den Jahren, in denen sie Hintergründe für Agent 47s Operationen geschaffen haben, meisterhaft zum Leben erweckt haben. Für einen großen Teil seiner Spielzeit ist First Light ein bewusst schneller Ritt von einem Action-Set zu einem Infiltrations-Sequenz, aber hier bremst IO ein wenig ab und gibt dir die Freiheit, nach Gelegenheiten zu suchen, um drei Ziele dazu zu bringen, eines von Qs magischen Techno-Cocktails zu trinken.</p>         <p>Diese Abschnitte sind nicht so komplex oder frei wie ein Hitman-Level, aber das Mithören von Gesprächen und das Finden von Wegen in verbotene Bereiche gibt einem ein ähnliches Hoch. Anstatt Getränke zu vergiften, damit er quecksilberne Wächter in die Toilette folgen und ihre Kleidung stehlen kann, verlässt sich Bond auf eine Reihe von speziellen MI6-Gadgets, die von seinem Uhr-Strap ausgesteuert werden. Personal wird kurzzeitig geblendet, indem man ein schnelles Laser-Feuer aus dem Uhr-Strap abgibt, damit Bond ihre Schlüsselkarten stehlen kann, das gleiche Brechmittel, auf das 47 zurückgreift, wird durch eine von 007s Telefon abgefeuerte Nadel abgegeben, oder ein Kamera-Blitz kann verwendet werden, um einen schockierenden Stromstoß abzufeuern.</p>         <h3>Fazit</h3>         <p><em>BytePost-Einordnung: 007 First Light bietet eine fließende und actionreiche Erfahrung, die Spy-Gaming-Fans ansprechen dürfte. Die Kombination aus Sneak- und Action-Elementen sowie die cleveren Gadget-Systeme machen das Spiel zu einem unterhaltsamen Erlebnis.</em></p>     ",
+            "content_simple": "         <p>James Bond ist zurück und dieses Mal in einem brandneuen Spiel namens 007 First Light. Das Spiel ist ein fließender Thriller, der Action und Spionage miteinander verbindet. Bond muss in einem luxuriösen Resort in Vietnam ein Problem lösen und dazu kommt er mit seinem typischen Stil. Das Spiel bietet eine Mischung aus Sneak- und Action-Elementen und cleveren Gadget-Systemen.</p>         <p>Das Spiel ist nicht nur ein weiteres James-Bond-Spiel, sondern bietet auch einige neue und interessante Funktionen. Bonds Fähigkeit, Lügen zu erzählen, um sich aus schwierigen Situationen zu befreien, ist nur eines von vielen Beispielen. Das Spiel ist definitiv ein Muss für alle James-Bond-Fans und Spy-Gaming-Enthusiasten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>007 First Light basiert auf der gleichen Engine wie Hitman, aber es bietet einige neue und interessante Funktionen. Das Spiel verwendet ein Gadget-System, das es Bond ermöglicht, verschiedene Objekte und Werkzeuge zu verwenden, um seine Ziele zu erreichen. Das Spiel bietet auch eine Vielzahl von Stealth- und Action-Elementen, die es den Spielern ermöglichen, ihre Ziele auf unterschiedliche Weise zu erreichen.</p>         <h3>Gadget-System</h3>         <p>Das Gadget-System in 007 First Light ist eines der interessantesten Aspekte des Spiels. Bond kann verschiedene Gadget-Objekte verwenden, um seine Ziele zu erreichen. Diese Gadget-Objekte können von einem Laser-Feuer aus seinem Uhr-Strap bis hin zu einem Brechmittel, das durch eine Nadel abgegeben wird, reichen. Das Gadget-System bietet eine Vielzahl von Möglichkeiten, um die Ziele des Spiels zu erreichen.</p>     ",
+            "date": "31.05.2026",
+            "id": "12f237bf",
+            "url": "https://www.rockpapershotgun.com/007-first-light-review-a-flowing-thriller-that-blends-occasional-sandboxy-spying-into-exotic-rollercoaster-ride",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/12f237bf.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev",
                 "ki"
             ],
@@ -115,7 +233,7 @@
                 "sleep": 0
             },
             "image_local": "images/4eae1286.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die dbt-Zertifizierung für Entwickler ist ein Meilenstein in der Tech-Branche, der die Karrieren von Entwicklern verändern kann. Mit dieser Zertifizierung können Entwickler ihre Fähigkeiten im Bereich der Daten-Transformation und -Analyse unter Beweis stellen und sich so von anderen abheben. Dieser Artikel ist heute wichtig, weil er Entwicklern zeigt, wie sie ihre Chancen auf dem Arbeitsmarkt verbessern können."
         },
         {
@@ -39696,10 +39814,10 @@
         }
     ],
     "bytepulse": {
-        "date": "30.05.2026",
-        "positiv": 17,
-        "neutral": 50,
-        "kritisch": 33,
-        "total": 6
+        "date": "31.05.2026",
+        "positiv": 75,
+        "neutral": 0,
+        "kritisch": 25,
+        "total": 4
     }
 }
