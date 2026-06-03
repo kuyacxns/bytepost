@@ -2,6 +2,269 @@
     "articles": [
         {
             "cat": [
+                "dev",
+                "ki"
+            ],
+            "icon": "🚀",
+            "title": "Ex-Anduril-Ingenieur sammelt 42M für Composite-Teile",
+            "source": "TechCrunch",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "7568ab06",
+                "8e9e6398",
+                "aad49276"
+            ],
+            "content": "         <h3>Ein neuer Ansatz für Composite-Teile</h3>         <p>Der ehemalige Anduril-Ingenieur Zack Eakin hat 42 Millionen Dollar für sein neues Unternehmen Layup Parts gesammelt, um die Herstellung von Composite-Teilen zu revolutionieren. Eakin hat sich auf die Entwicklung von Technologien für die Herstellung von Teilen aus Kohlenstofffasern und Glasfasern spezialisiert.</p>         <p>Bevor Eakin Investoren für sein neues Unternehmen gewinnen konnte, hat er seinen Pitch bei Palmer Luckey, dem Gründer von Anduril, getestet. Luckey, zusammen mit den Mitgründern Brian Schimpf und Matt Grimm, hat Eakin Feedback zu seinem Pitch gegeben. Grimm half Eakin, seine Präsentation für Venture-Capital-Firmen zu verbessern, während Schimpf ihn auf die Strategie des Unternehmens angesprochen hat und Luckey ihm half, seine Geschichte zu erzählen.</p>         <p>Das Ergebnis war ein Seed-Round von 9 Millionen Dollar vor zwei Jahren. Jetzt hat Layup Parts eine Serie-A-Finanzierungsrunde von 42 Millionen Dollar abgeschlossen, die von dem dualen Venture-Capital-Fonds Marlinspike angeführt wird. Weitere Teilnehmer sind Cerberus Ventures und Pinegrove Venture Partners sowie bestehende Investoren wie Founders Fund und Lux Capital.</p>         <h3>Ziele und Herausforderungen</h3>         <p>Das Ziel von Layup Parts ist es, die Bestellung von Composite-Teilen so einfach zu machen wie den Kauf von Produkten auf Amazon. Eakin hat bereits zwei Jahrzehnte Erfahrung mit Composite-Materialien, die auf seine Zeit in der Motorsport-Industrie zurückgeht. Er hat an der Entwicklung von Kohlenstofffasern und Glasfasern für den Rennwagenbau gearbeitet.</p>         <p>Die Herausforderung bei der Herstellung von Composite-Teilen liegt in der Komplexität und dem manuellen Aufwand, der erforderlich ist. Eakin glaubt, dass die Lösung darin liegt, Software zu entwickeln, die den Prozess automatisiert und die Anzahl der erforderlichen Schritte reduziert.</p>         <p>Die größten Geschäftsbereiche von Layup Parts sind derzeit die Luft- und Raumfahrt sowie die Verteidigungsindustrie. Das Unternehmen hat bereits Kunden wie Motorsport-Teams, Design-Studio und Hersteller von Pickleball-Schlägern.</p>         <h3>Pläne für die Zukunft</h3>         <p>Layup Parts plant, das neue Kapital für die Einstellung neuer Mitarbeiter und die Erweiterung seiner Produktionskapazitäten zu verwenden. Eakin möchte auch in die Entwicklung neuer Software investieren, um den Bestellprozess für Composite-Teile zu vereinfachen.</p>         <p>Layup Parts hat bereits begonnen, Kunden zu bedienen, und hat die Zeit zwischen der Übermittlung von Kundeninformationen und der Herstellung von Teilen von Wochen auf Stunden reduziert.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von Composite-Teilen ist ein wichtiger Schritt in der Luft- und Raumfahrt sowie in der Verteidigungsindustrie. Die Investition in Layup Parts zeigt, dass Investoren an die Zukunft von Composite-Teilen glauben und bereit sind, in die Entwicklung neuer Technologien zu investieren.</em></p>     ",
+            "content_simple": "         <p>Ein neues Unternehmen namens Layup Parts will die Herstellung von Teilen aus Composite-Materialien wie Kohlenstofffasern und Glasfasern revolutionieren. Der Gründer, Zack Eakin, hat 42 Millionen Dollar für sein Unternehmen gesammelt.</p>         <p>Das Ziel von Layup Parts ist es, die Bestellung von Composite-Teilen so einfach zu machen wie den Kauf von Produkten auf Amazon. Die Herausforderung bei der Herstellung von Composite-Teilen liegt in der Komplexität und dem manuellen Aufwand, der erforderlich ist.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Layup Parts plant, Software zu entwickeln, die den Prozess der Herstellung von Composite-Teilen automatisiert. Die Software soll die Anzahl der erforderlichen Schritte reduzieren und den Bestellprozess für Composite-Teile vereinfachen.</p>         <p>Die größten Herausforderungen bei der Herstellung von Composite-Teilen sind die Komplexität und der manuelle Aufwand, der erforderlich ist. Layup Parts plant, in die Entwicklung neuer Software zu investieren, um diese Herausforderungen zu überwinden.</p>         <p>Die Investition in Layup Parts zeigt, dass Investoren an die Zukunft von Composite-Teilen glauben und bereit sind, in die Entwicklung neuer Technologien zu investieren.</p>     ",
+            "date": "03.06.2026",
+            "id": "05b2af8d",
+            "url": "https://techcrunch.com/2026/06/02/ex-anduril-engineer-raises-42m-to-build-the-amazon-of-composite-parts/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/05b2af8d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Microsoft verbessert Quantenchip",
+            "source": "Microsoft Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "1315a02e"
+            ],
+            "content": "         <h3>Microsoft Majorana 2: Ein Meilenstein in der Quantencomputing-Entwicklung</h3>         <p>Microsoft hat den neuen Quantenchip Majorana 2 vorgestellt, der eine drastisch verbesserte Stabilität verspricht. Dies ist ein wichtiger Schritt in der Entwicklung von Quantencomputern, da die Stabilität der Qubits ein großes Hindernis für die breite Anwendung dieser Technologie darstellt.</p>         <p>Der Quantenchip Majorana 2 basiert auf der sogenannten Majorana-Fermion-Theorie, die eine neue Art von Qubits ermöglicht, die weniger anfällig für Fehler sind. Diese Qubits sollen eine höhere Stabilität und Zuverlässigkeit bieten, was sie für die Anwendung in realen Anwendungen wie der Simulation von komplexen Systemen oder der Verschlüsselung von Daten besser geeignet macht.</p>         <h3>Die Roadmap für die Zukunft</h3>         <p>Microsoft hat auch die Roadmap für die Zukunft von Quantencomputing vorgestellt. Das Unternehmen plant, in den nächsten Jahren eine Reihe von Quantenchips zu entwickeln, die immer leistungsfähiger und zuverlässiger werden. Dies soll es ermöglichen, Quantencomputer für eine breite Palette von Anwendungen einzusetzen.</p>         <p>Die Entwicklung von Quantencomputern ist ein komplexes und schwieriges Vorhaben, aber Microsoft ist nicht allein auf diesem Weg. Andere Unternehmen wie Google und IBM arbeiten auch an der Entwicklung von Quantencomputern, und es ist wahrscheinlich, dass wir in den nächsten Jahren viele neue Entwicklungen in diesem Bereich sehen werden.</p>         <p>Skepsis bleibt jedoch bestehen. Einige Experten sind der Meinung, dass die Entwicklung von Quantencomputern noch in den Kinderschuhen steckt und dass es noch viele Herausforderungen zu überwinden gibt, bevor diese Technologie breit anwendbar wird.</p>         <p>Dennoch ist die Entwicklung von Quantencomputern ein spannendes und vielversprechendes Feld, das große Möglichkeiten für die Zukunft bietet. Wenn es gelingt, Quantencomputer zu entwickeln, die zuverlässig und leistungsfähig sind, könnten sie viele komplexe Probleme lösen, die mit herkömmlichen Computern nicht lösbar sind.</p>         <p><em>BytePost-Einordnung: Die Entwicklung von Quantencomputern ist ein komplexes und schwieriges Vorhaben, aber Microsofts neuer Quantenchip Majorana 2 ist ein wichtiger Schritt in die richtige Richtung. Es bleibt abzuwarten, ob es gelingt, diese Technologie breit anwendbar zu machen, aber die Möglichkeiten, die sie bietet, sind enorm.</em></p>     ",
+            "content_simple": "         <p>Microsoft hat einen neuen Quantenchip entwickelt, der besser und zuverlässiger ist. Dies ist ein wichtiger Schritt in der Entwicklung von Quantencomputern, die viele komplexe Probleme lösen können.</p>         <p>Die Entwicklung von Quantencomputern ist jedoch noch in den Kinderschuhen und es gibt noch viele Herausforderungen zu überwinden. Es bleibt abzuwarten, ob es gelingt, diese Technologie breit anwendbar zu machen.</p>     ",
+            "content_pro": "         <h3>Die Architektur des Quantenchips Majorana 2</h3>         <p>Der Quantenchip Majorana 2 basiert auf der sogenannten Majorana-Fermion-Theorie, die eine neue Art von Qubits ermöglicht, die weniger anfällig für Fehler sind. Diese Qubits sollen eine höhere Stabilität und Zuverlässigkeit bieten, was sie für die Anwendung in realen Anwendungen wie der Simulation von komplexen Systemen oder der Verschlüsselung von Daten besser geeignet macht.</p>         <p>Die Entwicklung von Quantencomputern ist ein komplexes und schwieriges Vorhaben, das eine tiefe Kenntnis der Physik und der Mathematik erfordert. Die Architektur des Quantenchips Majorana 2 ist jedoch ein wichtiger Schritt in die richtige Richtung, da sie eine höhere Stabilität und Zuverlässigkeit bietet.</p>         <h3>Die Zukunft der Quantencomputing-Entwicklung</h3>         <p>Die Entwicklung von Quantencomputern ist ein spannendes und vielversprechendes Feld, das große Möglichkeiten für die Zukunft bietet. Wenn es gelingt, Quantencomputer zu entwickeln, die zuverlässig und leistungsfähig sind, könnten sie viele komplexe Probleme lösen, die mit herkömmlichen Computern nicht lösbar sind.</p>         <p>Es bleibt abzuwarten, ob es gelingt, diese Technologie breit anwendbar zu machen, aber die Möglichkeiten, die sie bietet, sind enorm. Die Entwicklung von Quantencomputern ist ein komplexes und schwieriges Vorhaben, aber es ist auch ein sehr vielversprechendes Feld, das in den nächsten Jahren viele neue Entwicklungen sehen wird.</p>     ",
+            "date": "03.06.2026",
+            "id": "7568ab06",
+            "url": "https://www.heise.de/news/Microsoft-Majorana-2-verspricht-zuverlaessigere-Qubits-Skepsis-bleibt-11316146.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7568ab06.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Go 1.26 bringt neue Funktionen",
+            "source": "The Go Blog",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "aad49276"
+            ],
+            "content": "         <h3>Was ist neu in Go 1.26?</h3>         <p>Die neueste Version von Go, Go 1.26, enthält eine Reihe von neuen Funktionen, die Entwicklern das Leben erleichtern sollen. Eine der wichtigsten Neuerungen ist die Einführung des source-level inliners, der es ermöglicht, Funktionen direkt in den Code einzubauen, anstatt sie als separate Aufrufe zu verwenden.</p>         <p>Der source-level inliner ist ein wichtiger Baustein für eine Reihe von Quelltransformationstools. Zum Beispiel wird er von gopls für die Refactorings „Ändere Signatur“ und „Entferne nicht genutzte Parameter“ verwendet, da er viele feine Korrektheitsprobleme löst, die bei der Refaktorierung von Funktionsaufrufen auftreten.</p>         <p>Ein Beispiel für die Verwendung des source-level inliners ist die Umbenennung der Funktion ioutil.ReadFile in os.ReadFile. Durch die Annotierung der alten Funktion mit //go:fix inline kann der Compiler den Aufruf der Funktion direkt durch den Code ersetzen, der die Funktion enthält.</p>         <h3>Wie funktioniert der source-level inliner?</h3>         <p>Der source-level inliner ersetzt einen Funktionsaufruf durch eine Kopie des Funktionskörpers, wobei die Argumente durch die Parameter ersetzt werden. Dieser Prozess wird als „source-level inlining“ bezeichnet, da er direkt auf der Quellcode-Ebene arbeitet.</p>         <p>Die Vorteile des source-level inliners sind vielfältig. Zum Beispiel kann er dazu beitragen, dass der Code effizienter und lesbarer wird, indem er überflüssige Funktionsaufrufe eliminiert. Darüber hinaus kann er auch dazu beitragen, dass der Code sicherer wird, indem er potenzielle Sicherheitslücken eliminiert.</p>         <p><em>BytePost-Einordnung: Die Einführung des source-level inliners in Go 1.26 ist ein wichtiger Schritt in Richtung einer verbesserten Effizienz und Lesbarkeit des Codes. Entwickler sollten sich mit dieser neuen Funktion vertraut machen, um den vollen Nutzen aus ihrer Arbeit zu ziehen.</em></p>     ",
+            "content_simple": "         <p>Die neueste Version von Go, Go 1.26, bringt einige neue Funktionen mit, die es Entwicklern leichter machen, Code zu schreiben. Eine dieser Funktionen heißt source-level inliner und hilft, Code zu optimieren, indem es überflüssige Aufrufe eliminiert.</p>         <p>Stell dir vor, du hast einen Kasten mit vielen kleinen Schubladen. Jede Schublade enthält eine bestimmte Funktion. Der source-level inliner hilft, diese Schubladen zu eliminieren, indem er ihre Funktionen direkt in den Code einbaut.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der source-level inliner verwendet einen Algorithmus, der den Funktionsaufruf durch eine Kopie des Funktionskörpers ersetzt, wobei die Argumente durch die Parameter ersetzt werden. Dieser Prozess wird als „source-level inlining“ bezeichnet, da er direkt auf der Quellcode-Ebene arbeitet.</p>         <p>Ein Beispiel für die Verwendung des source-level inliners ist die Umbenennung der Funktion ioutil.ReadFile in os.ReadFile. Durch die Annotierung der alten Funktion mit //go:fix inline kann der Compiler den Aufruf der Funktion direkt durch den Code ersetzen, der die Funktion enthält.</p>         <pre><code>package ioutil import \"os\"  // ReadFile reads the file named by filename… // Deprecated: As of Go 1.16, this function simply calls [os.ReadFile]. //go:fix inline func ReadFile(filename string) ([]byte, error) {     return os.ReadFile(filename) }</code></pre>         <p>Der source-level inliner bietet viele Vorteile, darunter eine verbesserte Effizienz und Lesbarkeit des Codes. Er kann auch dazu beitragen, dass der Code sicherer wird, indem er potenzielle Sicherheitslücken eliminiert.</p>     ",
+            "date": "03.06.2026",
+            "id": "8e9e6398",
+            "url": "https://go.dev/blog/inliner",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/8e9e6398.jpg",
+            "pick": true,
+            "pick_reason": "Die neueste Version von Go, 1.26, bringt wichtige Neuerungen für Entwickler, die ihre Produktivität und Effizienz steigern können. Mit diesen Änderungen können Entwickler ihre Workflows optimieren und bessere Software erstellen. Die Updates in Go 1.26 sind ein Meilenstein für die Community und haben das Potenzial, die Art und Weise, wie Entwickler arbeiten, grundlegend zu verändern."
+        },
+        {
+            "cat": [
+                "data"
+            ],
+            "icon": "🌐",
+            "title": "Iran restauriert Internet teilweise",
+            "source": "Cloudflare Blog",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "8e9e6398"
+            ],
+            "content": "         <h3>Iran's Internet ist teilweise wiederhergestellt</h3>         <p>Die Daten von Cloudflare Radar bestätigen die ersten Anzeichen einer teilweisen Wiederherstellung des Internets im Iran, fast drei Monate nach Beginn des Ausfalls. Die Datenmenge und DNS-Anfragen sind gestiegen, aber die Netzwerktätigkeit liegt derzeit nur bei 40% des Niveaus vor dem Ausfall.</p>         <p>Am Dienstag, dem 26. Mai, gab der iranische Vizepräsident bekannt, dass der Internetzugang im Land wiederhergestellt worden sei, nachdem er fast drei Monate lang unterbrochen war, nachdem am 28. Februar die US- und israelischen Angriffe begonnen hatten. Die Daten von Cloudflare Radar bestätigen die erhöhte Aktivität und deuten auf eine teilweise Wiederherstellung des Internets im Iran hin.</p>         <h3>Der erste Ausfall</h3>         <p>Die iranischen Bürger haben in diesem Jahr zwei landesweite Internet-Ausfälle erlebt. Der erste begann am 8. Januar um 16:30 UTC (20:00 Ortszeit), und wir haben den Einfluss in einem Blog-Beitrag untersucht. Der Verkehr aus dem Iran blieb nahe null, bis am 21. Januar ein kleiner Verkehr wiederkehrte, nur um etwa 24 Stunden später wieder zu verschwinden. Eine ähnliche kurze Wiederherstellung fand auch am 25. Januar statt, bevor der Verkehr am 27. Januar wieder vollständig wiederhergestellt wurde.</p>         <h3>Der zweite Ausfall</h3>         <p>Ende Februar, als die militärischen Angriffe auf den Iran eskalierten, begann ein zweiter landesweiter Internet-Ausfall. Dieser umfassende Ausfall hat fast drei Monate angedauert. Der Ausfall begann am 28. Februar. An diesem Tag beobachtete Cloudflare Radar einen steilen Rückgang des Verkehrs aus dem Iran, beginning um 10:30 Ortszeit (07:00 UTC). Der Verkehr fiel auf weniger als 1% des vorherigen Niveaus, mit nur kleinen Mengen an Web- und DNS-Verkehr, die das Land verließen.</p>         <h3>Aktivität am 26. Mai</h3>         <p>Unsere Beobachtungen deuten darauf hin, dass jetzt mehr Verkehr durchkommen kann. Beginnend um 11:00 UTC am 26. Mai, 87 Tage nach Beginn des zweiten Ausfalls, beobachtete Cloudflare Radar einen deutlichen Anstieg des Verkehrs und der DNS-Anfragen. Der Verkehrsanstieg zeigt, dass eine höhere Datenmenge erfolgreich über das Netzwerk von Cloudflare bewegt wird, was ein hoffnungsvolles Zeichen dafür ist, dass eine teilweise Wiederherstellung im Gange ist.</p>         <h3>Verkehrsvolumen nach Region</h3>         <p>Die regionalen Aufschlüsselungen von Cloudflare Radar, die unten gezeigt werden, deuten darauf hin, dass die überwiegende Mehrheit dieses neuen Verkehrs auf Teheran beschränkt ist, mit 91,6% der HTTP-Anfragen, die aus der Hauptstadt stammen. Während andere Regionen geringe Anstiege zeigen, sind sie nicht annähernd so bedeutend.</p>         <p>Die Verkehrsmengen haben sich auf 40% der vorherigen Niveaus erholt. Diese Zunahme des Verkehrs bestätigt, dass eine teilweise Wiederherstellung des iranischen Internets stattgefunden hat. Allerdings bleiben diese Zunahmen bei DNS-Anfragen und Verkehr deutlich unter dem, was wir vor den Unterbrechungen beobachtet haben. Am Höhepunkt des Verkehrs am 26. Mai hatte der Verkehr nur 40% des maximalen Aktivitätsniveaus erreicht, das wir bislang in 2026 beobachtet haben.</p>         <p><em>BytePost-Einordnung: Die teilweise Wiederherstellung des Internets im Iran ist ein wichtiger Schritt in Richtung der Wiederherstellung der Kommunikation und des Informationsflusses im Land. Es ist jedoch wichtig zu beachten, dass die Netzwerktätigkeit noch immer auf einem niedrigen Niveau liegt und es unklar ist, ob diese Wiederherstellung von Dauer sein wird.</em></p>     ",
+            "content_simple": "         <p>Das Internet im Iran ist teilweise wieder online. Nach fast drei Monaten ohne Internet ist der Zugang jetzt wieder verfügbar. Die Datenmenge und die Anzahl der DNS-Anfragen sind gestiegen, aber die Netzwerktätigkeit liegt noch immer unter dem normalen Niveau.</p>         <p>Der iranische Vizepräsident gab bekannt, dass der Internetzugang wiederhergestellt wurde. Die Daten von Cloudflare Radar bestätigen diese Aussage. Die iranischen Bürger können jetzt wieder online gehen, aber es ist unklar, ob dies von Dauer sein wird.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Daten von Cloudflare Radar zeigen, dass der Verkehr aus dem Iran um 11:00 UTC am 26. Mai um 15-mal höher war als in der Vorwoche. Die DNS-Anfragen sind auch gestiegen, was darauf hindeutet, dass mehr Benutzer online sind.</p>         <p>Die regionalen Aufschlüsselungen von Cloudflare Radar zeigen, dass die überwiegende Mehrheit des neuen Verkehrs aus Teheran stammt. Die Verkehrsmengen haben sich auf 40% der vorherigen Niveaus erholt. Es ist jedoch wichtig zu beachten, dass die Netzwerktätigkeit noch immer unter dem normalen Niveau liegt.</p>     ",
+            "date": "03.06.2026",
+            "id": "aad49276",
+            "url": "https://blog.cloudflare.com/iran-internet-partially-restored-may-2026/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/aad49276.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "📱",
+            "title": "Google patcht 124 Android-Sicherheitslücken",
+            "source": "The Verge",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "8e9e6398"
+            ],
+            "content": "         <h3>Google veröffentlicht Sicherheitsupdates für Android</h3>         <p>Google hat am Montag Sicherheitspatches für 124 Sicherheitslücken in seinem Android-Betriebssystem veröffentlicht. Darunter ist eine hochriskante Schwachstelle in der Framework-Komponente, die bereits ausgenutzt wird.</p>         <p>Die Schwachstelle mit der Bezeichnung CVE-2025-48595 (CVSS-Score: 8,4) ermöglicht es Angreifern, ohne Benutzereingriff Rechte zu erhöhen. Dies ist ein ernstes Sicherheitsproblem, da es Angreifern ermöglicht, ohne Benutzereingriff Schadcode auszuführen.</p>         <h3>Sicherheitspatches für Android</h3>         <p>Google hat die Sicherheitspatches für Android veröffentlicht, um diese Schwachstellen zu beheben. Es ist wichtig, dass Nutzer ihre Android-Geräte auf dem neuesten Stand halten, um vor diesen Sicherheitsrisiken geschützt zu sein.</p>         <p>Die Sicherheitspatches beinhalten 124 separate Schwachstellen, die in verschiedenen Komponenten von Android gefunden wurden. Die Schwachstellen reichen von niedriger bis hoher Schwere und betreffen verschiedene Aspekte des Betriebssystems.</p>         <p>Um sich vor diesen Sicherheitsrisiken zu schützen, sollten Nutzer sicherstellen, dass ihre Android-Geräte auf dem neuesten Stand sind und die Sicherheitspatches installiert sind.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Sicherheitspatches für Android ist ein wichtiger Schritt, um die Sicherheit von Android-Geräten zu gewährleisten. Es ist jedoch auch wichtig, dass Nutzer ihre Geräte auf dem neuesten Stand halten und die Sicherheitspatches installieren, um vor Sicherheitsrisiken geschützt zu sein.</em></p>     ",
+            "content_simple": "         <p>Google hat Sicherheitspatches für Android veröffentlicht, um 124 Sicherheitslücken zu beheben. Eine der Schwachstellen ist besonders gefährlich und kann von Angreifern ausgenutzt werden, um Schadcode auszuführen.</p>         <p>Um sich vor diesen Sicherheitsrisiken zu schützen, sollten Nutzer sicherstellen, dass ihre Android-Geräte auf dem neuesten Stand sind und die Sicherheitspatches installiert sind.</p>     ",
+            "content_pro": "         <h3>Technische Details der Sicherheitspatches</h3>         <p>Die Sicherheitspatches von Google beinhalten 124 separate Schwachstellen, die in verschiedenen Komponenten von Android gefunden wurden. Die Schwachstellen reichen von niedriger bis hoher Schwere und betreffen verschiedene Aspekte des Betriebssystems.</p>         <p>Die Schwachstelle mit der Bezeichnung CVE-2025-48595 ist eine hochriskante Schwachstelle in der Framework-Komponente, die es Angreifern ermöglicht, ohne Benutzereingriff Rechte zu erhöhen. Diese Schwachstelle ist besonders gefährlich, da sie es Angreifern ermöglicht, Schadcode auszuführen, ohne dass der Nutzer etwas dagegen tun kann.</p>         <p>Um diese Schwachstellen zu beheben, müssen Nutzer sicherstellen, dass ihre Android-Geräte auf dem neuesten Stand sind und die Sicherheitspatches installiert sind. Es ist auch wichtig, dass Entwickler ihre Anwendungen auf die neuesten Sicherheitspatches aktualisieren, um sicherzustellen, dass ihre Anwendungen sicher sind.</p>     ",
+            "date": "03.06.2026",
+            "id": "0f02c814",
+            "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0f02c814.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "security"
+            ],
+            "icon": "🤖",
+            "title": "Anthropic gibt mehr Gruppen Zugriff auf Claude",
+            "source": "The New Stack",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Anthropic, ein Unternehmen, das sich auf die Entwicklung von KI-Technologien spezialisiert hat, hat auf seiner Website eine Warnung veröffentlicht. Laut dieser Warnung könnte ein erfolgreicher Angriff auf ihren Codebase katastrophale Folgen haben. Die Firma betont, dass dies insbesondere für die meisten Partner gilt.</p>         <h3>Hintergrund</h3>         <p>Anthropic hat kürzlich angekündigt, mehr Gruppen Zugriff auf ihre KI-Plattform Claude zu gewähren. Dieser Schritt soll die Entwicklung von KI-Anwendungen vorantreiben und die Zusammenarbeit zwischen verschiedenen Unternehmen und Organisationen fördern.</p>         <h3>Risiken und Bedenken</h3>         <p>Die Warnung von Anthropic unterstreicht die potenziellen Risiken, die mit der Entwicklung und dem Einsatz von KI-Technologien verbunden sind. Ein erfolgreicher Angriff auf den Codebase könnte dazu führen, dass sensible Informationen kompromittiert werden und die Sicherheit der Anwender gefährdet wird.</p>         <p>Anthropic betont, dass sie alle notwendigen Schritte unternehmen, um die Sicherheit ihrer Plattform zu gewährleisten. Dennoch bleibt das Risiko eines erfolgreichen Angriffs bestehen, und die Firma warnt ihre Partner und Anwender, dass sie sich dieser Gefahr bewusst sein müssen.</p>         <h3>Fazit</h3>         <p>Die Warnung von Anthropic ist ein wichtiger Hinweis darauf, dass die Entwicklung und der Einsatz von KI-Technologien sorgfältig abgewogen und sicherheitsrelevanten Aspekten Rechnung getragen werden muss. Entwickler und Anwender sollten sich dieser Risiken bewusst sein und alle notwendigen Schritte unternehmen, um die Sicherheit ihrer Anwendungen und Daten zu gewährleisten.</p>         <p><em>BytePost-Einordnung: Die Warnung von Anthropic ist ein wichtiger Reminder für die Bedeutung der Sicherheit in der KI-Entwicklung. Entwickler sollten sich dieser Risiken bewusst sein und alle notwendigen Schritte unternehmen, um die Sicherheit ihrer Anwendungen und Daten zu gewährleisten.</em></p>     ",
+            "content_simple": "         <p>Das Unternehmen Anthropic warnt vor den Risiken eines erfolgreichen Angriffs auf ihre KI-Plattform. Ein solcher Angriff könnte katastrophale Folgen haben und die Sicherheit von Anwendern gefährden.</p>         <p>Anthropic gibt mehr Gruppen Zugriff auf ihre Plattform, um die Entwicklung von KI-Anwendungen voranzutreiben. Dabei müssen jedoch die potenziellen Risiken berücksichtigt werden.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die KI-Plattform von Anthropic basiert auf einer komplexen Architektur, die verschiedene Komponenten und Schnittstellen enthält. Ein erfolgreicher Angriff auf den Codebase könnte dazu führen, dass sensible Informationen kompromittiert werden und die Sicherheit der Anwender gefährdet wird.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Anthropic hat verschiedene Sicherheitsmaßnahmen implementiert, um die Sicherheit ihrer Plattform zu gewährleisten. Dazu gehören die Verwendung von Verschlüsselungstechnologien, die Implementierung von Zugriffskontrollen und die Überwachung von Systemaktivitäten.</p>         <h3>Kritische Einordnung</h3>         <p>Die Warnung von Anthropic ist ein wichtiger Hinweis darauf, dass die Entwicklung und der Einsatz von KI-Technologien sorgfältig abgewogen und sicherheitsrelevanten Aspekten Rechnung getragen werden muss. Entwickler sollten sich dieser Risiken bewusst sein und alle notwendigen Schritte unternehmen, um die Sicherheit ihrer Anwendungen und Daten zu gewährleisten.</p>     ",
+            "date": "03.06.2026",
+            "id": "e3610030",
+            "url": "https://thenewstack.io/anthropic-glasswing-mythos-cybersecurity/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/e3610030.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🏆",
+            "title": "dbt Labs erhält Snowflake-Partner-Auszeichnung",
+            "source": "dbt Labs",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "8e9e6398"
+            ],
+            "content": "         <h3>dbt Labs gewinnt Snowflake-Partner-Auszeichnung</h3>         <p>dbt Labs, ein führendes Unternehmen im Bereich der Standards für AI-fähige strukturierte Daten, wurde von Snowflake zum Data Integration Product Partner of the Year 2026 ernannt.</p>         <p>dbt Labs erhält diese Auszeichnung für seine Leistungen im Rahmen der Snowflake AI Data Cloud, mit der gemeinsame Kunden in der Lage sind, produktionsreife Workflows aufzubauen, die auf einer zuverlässigen, regulierten und vertrauenswürdigen Datenbasis basieren.</p>         <p>Shawn Toldo, Vice President, WW Partner Organization bei dbt Labs, sagte: „Vertrauen in Daten ist das am weitesten verbreitete organisatorische Ziel, und der Snowflake Marketplace ist eine leistungsfähige Ressource, um Unternehmen mit dbt und seinen neuesten Funktionen zu verbinden, die Struktur, Governance und Geschwindigkeit in das bauen, was Daten-Teams im AI-Zeitalter erstellen.“</p>         <h3>Ein erfolgreiches Partnerschaftsjahr</h3>         <p>Die Auszeichnung ist der Beweis für die enge und erfolgreiche Partnerschaft zwischen dbt Labs und Snowflake. Gemeinsam unterstützen sie ihre Kunden dabei, AI-gesteuerte Erkenntnisse und Daten-Assets kosteneffizient aufzubauen und so letztendlich ein tieferes organisatorisches Vertrauen in Daten und die Teams, die es ermöglichen, zu fördern.</p>         <p>Ein Beispiel für diese erfolgreiche Zusammenarbeit ist der Kunde WHOOP, der die dbt-Plattform als skalierbare Lösung nutzt, um saubere und gut regulierte Daten in Snowflake zu migrieren.</p>         <p><em>BytePost-Einordnung: Die Auszeichnung unterstreicht die Bedeutung der Partnerschaft zwischen dbt Labs und Snowflake für die Entwicklung von AI-gesteuerten Lösungen. Für Entwickler ist es wichtig, sich mit den neuesten Entwicklungen in diesem Bereich auseinanderzusetzen, um innovative Lösungen für ihre Kunden zu entwickeln.</em></p>     ",
+            "content_simple": "         <p>Das Unternehmen dbt Labs wurde von Snowflake zum Partner des Jahres ausgezeichnet. Dieser Preis wird an Unternehmen verliehen, die hervorragende Arbeit im Bereich der Datenintegration leisten.</p>         <p>dbt Labs hilft seinen Kunden, ihre Daten besser zu nutzen, indem es ihnen ermöglicht, ihre Daten in einer sicheren und zuverlässigen Umgebung zu speichern und zu verarbeiten.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die dbt-Plattform bietet eine Reihe von Werkzeugen und Funktionen, die es Entwicklern ermöglichen, ihre Daten effizient zu verarbeiten und zu analysieren. Dazu gehören die dbt Semantic Layer, der dbt Fusion-Engine und der dbt MCP-Server.</p>         <p>Die Plattform unterstützt auch die Integration mit anderen Tools und Diensten, wie zum Beispiel Snowflake, um eine umfassende Daten- und Analyse-Lösung zu bieten.</p>         <h3>Architektur-Details</h3>         <p>Die Architektur der dbt-Plattform basiert auf einer microservices-basierten Architektur, die es ermöglicht, verschiedene Komponenten und Dienste unabhängig voneinander zu entwickeln und zu deployen.</p>     ",
+            "date": "03.06.2026",
+            "id": "d58e362c",
+            "url": "https://www.getdbt.com/blog/dbt-labs-named-snowflake-data-integration-product-partner-of-the-year",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d58e362c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Holo3.1: Lokale Computer-Nutzung",
+            "source": "Hcompany",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "8e9e6398"
+            ],
+            "content": "         <h3>Holo3.1: Fast & Lokale Computer-Nutzung</h3>         <p>Im März veröffentlichten wir Holo3, unser state-of-the-art-Modell für Computer-Nutzung. Die Adoption war sofortig. Entwickler, Unternehmen und Partner begannen, Holo3 in einer Vielzahl von Workflows einzusetzen, von Browser-Automatisierung und Geschäftsanwendungen bis hin zu internen Tools und Desktop-Anwendungen.</p>         <p>Als die Adoption wuchs, erkannten wir, dass die Leistung allein nicht mehr ausreicht. Benutzer möchten die gleichen Computer-Nutzungsfähigkeiten in desktop- und mobilen Umgebungen ausführen, mit nahtloser Integration in verschiedene Agenten-Frameworks.</p>         <p>Dies ist der Grund, warum wir die Holo3.1-Familie veröffentlichen. Holo3.1 verbessert die Robustheit in den drei Dimensionen, die in der Produktion am wichtigsten sind: Umgebungen (Web, Desktop, Mobile), Agenten-Frameworks und Bereitstellungszielen.</p>         <h3>Computer-Nutzung über GUI-Umgebungen und Agenten-Harnesses</h3>         <p>Holo3.1 basiert auf der Qwen-Familie und wurde entwickelt, um die Robustheit über die Umgebungen hinweg zu verbessern, in denen Computer-Nutzungsagenten tatsächlich bereitgestellt werden, während die state-of-the-art-Leistung erhalten bleibt.</p>         <p>Als Teams Holo3 von der Evaluation zur Produktion übergingen, beobachteten wir wiederholt die gleiche Herausforderung: Starke Leistung in einem Setting bedeutet nicht unbedingt, dass sie in einem anderen Setting übertragen wird.</p>         <h3>Mobile Automation</h3>         <p>Holo3.1 erweitert die Fähigkeiten von Holo3 über die Browser- und Desktop-Steuerung hinaus und liefert bedeutende Gewinne in mobilen Umgebungen.</p>         <p>Auf AndroidWorld verbessert sich unser 35B-A3B-Modell von 67% auf 79,3%, während die kleineren 4B- und 9B-Varianten von 58% auf 72% verbessert werden.</p>         <h3>Funktionen und Vorteile</h3>         <ul>             <li>Verbesserte Robustheit über Umgebungen hinweg</li>             <li>Nahtlose Integration in verschiedene Agenten-Frameworks</li>             <li>Flexible Bereitstellung, von Cloud-Inferenz bis hin zu vollständig lokaler Ausführung auf Endgeräten</li>             <li>Quantisierte Gewichtungen für schnelle lokale Inferenz</li>         </ul>         <p><em>BytePost-Einordnung: Holo3.1 ist ein wichtiger Schritt in Richtung universeller Computer-Nutzungsagenten, die in jeder Umgebung, in jedem Agenten-Stack und auf jedem Gerät ausgeführt werden können.</em></p>     ",
+            "content_simple": "         <p>Holo3.1 ist ein neues Modell für Computer-Nutzung, das es ermöglicht, Computer-Aufgaben auf verschiedenen Geräten und in verschiedenen Umgebungen auszuführen. Es verbessert die Leistung und die Robustheit von Computer-Nutzungsagenten und ermöglicht es, sie auf mobilen Geräten und in Cloud-Umgebungen auszuführen.</p>         <p>Dies bedeutet, dass Entwickler und Benutzer Computer-Aufgaben auf verschiedenen Plattformen und in verschiedenen Umgebungen ausführen können, ohne dass die Leistung beeinträchtigt wird.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Holo3.1 basiert auf der Qwen-Familie und verwendet quantisierte Gewichtungen für schnelle lokale Inferenz. Es unterstützt Funktionen wie mobile Automation und Cross-Harness-Performance und verbessert die Robustheit über Umgebungen hinweg.</p>         <p>Die Quantisierung der Gewichtungen ermöglicht es, die Modellgröße zu reduzieren und die Inferenzgeschwindigkeit zu erhöhen, was es ermöglicht, Computer-Nutzungsagenten auf mobilen Geräten und in Cloud-Umgebungen auszuführen.</p>         <h3>Architektur-Details</h3>         <p>Holo3.1 verwendet eine modulare Architektur, die es ermöglicht, verschiedene Komponenten und Module zu integrieren. Es unterstützt Funktionen wie Funktionen-Calling-Protokolle und native Ausführung und verbessert die Leistung und die Robustheit von Computer-Nutzungsagenten.</p>     ",
+            "date": "03.06.2026",
+            "id": "95770eaf",
+            "url": "https://huggingface.co/blog/Hcompany/holo31",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/95770eaf.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "Rayman Legends wird remastert",
+            "source": "The Verge",
+            "read": "3 Min",
+            "sentiment": "positiv",
+            "related": [
+                "05b2af8d",
+                "7568ab06",
+                "8e9e6398"
+            ],
+            "content": "         <h3>Ein Klassiker kehrt zurück</h3>         <p>Rayman Legends war ein zeitloser 2D-Platformer mit wunderschöner Kunst, aber ich muss zugeben, dass die Neuauflage eine Verbesserung darstellt. In meiner Erinnerung ist Rayman Legends ein zeitloser Klassiker. Veröffentlicht im Jahr 2013, erschien es zu einer Zeit, als Ubisoft vor allem für ernste Spiele wie Assassin's Creed und zahlreiche Tom-Clancy-Spin-offs bekannt war, während Rayman Legends ein wunderschöner 2D-Platformer war, der vor Albernheit und Slapstick überquoll und die kreativen Talente des Publishers und den einzigartigen französischen Humor zeigte.</p>         <p>Die Nachricht, dass Ubisoft es als Rayman Legends Retold neuauflässt und die 2D-Grafik durch 3D-Animation ersetzt, wurde im Benson-Haushalt nicht gut aufgenommen, kann ich Ihnen sagen. Als ich jedoch erfuhr, dass Rayman Legends Retold eine Zusammenarbeit zwischen den ursprünglichen Entwicklern Ubisoft Montpellier, die seitdem Prince of Persia: The Lost Crown entwickelt haben, und Ubisoft Milan, dem Team hinter der exzellenten Mario + Rabbids Kingdom Battle-Serie, ist, beruhigte ich mich ein wenig. Und dann spielte ich es und erkannte, dass sie vielleicht wissen, was sie tun.</p>         <h3>Neue Details, alte Level</h3>         <p>Mit Rayman Legends Retold lässt Ubisoft die Level-Designs größtenteils unverändert. Tatsächlich wurde der alte UbiArt-Framework-Engine so modifiziert, dass er innerhalb von Ubisofts modernerem Snowdrop-Engine funktioniert, sodass die ursprünglichen Level direkt importiert wurden. Während alle Assets neu sind, ist die Layout sehr ähnlich. Stattdessen konzentriert sich das, was sie hinzufügen, auf die Zwischenmomente zwischen den Levels.</p>         <p>Ich erinnere mich an die wunderschöne 2D-Kunst der Level in Rayman Legends – verfallene Burgen, reichlich grüne Sümpfe und goldene Day-of-the-Dead-Deserts –, aber ich hatte vergessen, wie diese Level zusammengestellt wurden. Jede Welt wurde als Korridor in einer leeren Galerie präsentiert, mit dem Eingang zu den Levels, der als Bilderrahmen existierte, in den man hüpfen konnte.</p>         <h3>Die Geschichte hinter den Levels</h3>         <p>Ubisoft ist dabei, Leben in die Nähte zwischen den Levels zu bringen, bis sie platzen. „Es ist ein bisschen überall“, sagt Produktionsdirektor Alessandro Arndt Mucchi, wenn er die Geschichte und das Layout von Rayman Legends beschreibt. „Es gibt eine reiche Welt dort, die wir für würdig hielten, einen neuen Anstrich zu bekommen, weil man nicht wirklich versteht, was im Glade of Dreams passiert.“</p>         <p>In my memory, Rayman Legends is a timeless classic. Released in 2013, it arrived at a moment when Ubisoft were becoming best known for po-faced games like Assassin's Creed and innumerable Tom Clancy spinoffs, yet Rayman Legends was a gorgeous 2D platformer brimming over with silliness and slapstick that showed off the publisher's creative talents and uniquely French humour.</p>         <p>Die Geschichte von Rayman Legends ist, dass ein böser Magier die Albträume von Polokus, dem Traumweber, aufwühlt. Die nächtlichen Träume des Gottes bilden die Länder des Glade of Dreams, also bedeutet Albträume Chaos in seinen Reichen. Rayman und seine Freunde werden geweckt, um den Magier zu besiegen und die Dinge richtig zu stellen. Allerdings wird dies nur in einem Eröffnungs-Cinematic kurz erzählt und danach kaum noch berührt.</p>         <p>Ubisoft behebt dies auf mehrere Weise. Die offensichtlichste sind neue, vollständig gesprochene Cinematics, die ein bisschen wie UbisoftsPitch aussehen, um Rayman die Super Mario Bros.-Filmbehandlung zu geben, aber so schön diese sind, es sind die subtileren Berührungen, die mich überzeugt haben. (Ich dehne die Definition von ‚subtil‘ hier, weil ich ausführlich über eine Kröte sprechen werde, die duscht.)</p>         <p><em>BytePost-Einordnung: Die Neuauflage von Rayman Legends ist ein positiver Schritt in Richtung einer moderneren und vielseitigeren Gaming-Erfahrung. Die neue 3D-Grafik und die hinzugefügten Details verbessern die Spielwelt und bieten eine neue Perspektive auf den Klassiker.</em></p>     ",
+            "content_simple": "         <p>Rayman Legends ist ein klassischer 2D-Platformer, der nun eine Neuauflage erhält. Die ursprüngliche Version war bekannt für ihre wunderschöne Kunst und ihre humorvolle Spielwelt. Die Neuauflage, Rayman Legends Retold, ersetzt die 2D-Grafik durch 3D-Animation und fügt neue Details hinzu, um die Spielwelt zu verbessern.</p>         <p>Die Level sind im Wesentlichen dieselben wie in der ursprünglichen Version, aber die Zwischenmomente zwischen den Levels wurden überarbeitet, um eine bessere Geschichte und ein besseres Gameplay zu bieten. Die Neuauflage ist eine Zusammenarbeit zwischen den ursprünglichen Entwicklern und dem Team hinter der Mario + Rabbids Kingdom Battle-Serie.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Neuauflage von Rayman Legends verwendet die moderne Snowdrop-Engine von Ubisoft, um die ursprünglichen Level direkt zu importieren und neue Assets hinzuzufügen. Die Level-Designs bleiben im Wesentlichen dieselben, aber die Zwischenmomente zwischen den Levels wurden überarbeitet, um eine bessere Geschichte und ein besseres Gameplay zu bieten.</p>         <p>Die neue 3D-Grafik und die hinzugefügten Details verbessern die Spielwelt und bieten eine neue Perspektive auf den Klassiker. Die Zusammenarbeit zwischen den ursprünglichen Entwicklern und dem Team hinter der Mario + Rabbids Kingdom Battle-Serie sorgt für eine moderne und vielseitige Gaming-Erfahrung.</p>     ",
+            "date": "03.06.2026",
+            "id": "9ad90b39",
+            "url": "https://www.rockpapershotgun.com/rayman-legends-was-a-timeless-2d-platformer-with-beautiful-art-but-ill-grudgingly-admit-that-its-remake-is-an-improvement",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev"
             ],
             "icon": "🚀",
@@ -86,7 +349,7 @@
                 "sleep": 0
             },
             "image_local": "images/7b4c0c86.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "KI-Systeme können nun Software-Schwachstellen entdecken, was ein zweischneidiges Schwert ist: Einerseits kann dies dazu beitragen, Sicherheitslücken zu schließen, andererseits birgt es das Risiko, dass Angreifer diese Informationen für ihre Zwecke nutzen. Entwickler sollten daher besonders wachsam sein und ihre Anwendungen auf Herz und Nieren prüfen."
         },
         {
@@ -40311,10 +40574,10 @@
         }
     ],
     "bytepulse": {
-        "date": "02.06.2026",
-        "positiv": 71,
-        "neutral": 0,
-        "kritisch": 29,
-        "total": 7
+        "date": "03.06.2026",
+        "positiv": 67,
+        "neutral": 22,
+        "kritisch": 11,
+        "total": 9
     }
 }
