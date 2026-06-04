@@ -84,7 +84,7 @@
                 "sleep": 0
             },
             "image_local": "images/8e9e6398.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die neueste Version von Go, 1.26, bringt wichtige Neuerungen für Entwickler, die ihre Produktivität und Effizienz steigern können. Mit diesen Änderungen können Entwickler ihre Workflows optimieren und bessere Software erstellen. Die Updates in Go 1.26 sind ein Meilenstein für die Community und haben das Potenzial, die Art und Weise, wie Entwickler arbeiten, grundlegend zu verändern."
         },
         {
