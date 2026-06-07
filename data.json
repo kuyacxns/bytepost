@@ -2,6 +2,212 @@
     "articles": [
         {
             "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Sicherheitslücke in Cargo entdeckt",
+            "source": "Rust Security Response Team",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "846e04f0",
+                "2e63b03b",
+                "9fe6b6d4"
+            ],
+            "content": "         <h3>Sicherheitswarnung für Cargo (CVE-2026-5223)</h3>         <p>Das Rust Security Response Team wurde informiert, dass Cargo Symlinks innerhalb von Crate-Tarballs von Drittanbieter-Registries falsch gehandhabt hat. Dies ermöglichte es einem bösartigen Crate, den Quellcode eines anderen Crates aus dem gleichen Registry zu überschreiben.</p>         <p>Diese Sicherheitslücke wird als CVE-2026-5223 bezeichnet. Die Schwere der Sicherheitslücke wird als mittel für Benutzer von Drittanbieter-Registries eingestuft. Benutzer von crates.io sind nicht betroffen, da crates.io das Uploaden von Crates mit Symlinks verbietet.</p>         <h3>Überblick</h3>         <p>Wenn ein Crate erstellt wird, extrahiert Cargo seinen Quellcode in einem lokalen Cache (gespeichert in ~/.cargo), der für zukünftige Erstellungen wiederverwendet wird. Cargo enthält Schutzmechanismen, um zu verhindern, dass Dateien außerhalb des Cache-Verzeichnisses des Crates extrahiert werden.</p>         <p>Es wurde festgestellt, dass es möglich ist, einen bösartigen Tarball zu erstellen, der Dateien auf einem tieferen Level als das Cache-Verzeichnis des Crates extrahieren kann. Aufgrund der Struktur des Caches ermöglichte dies dem bösartigen Crate, den Cache von anderen Crates aus dem gleichen Registry zu überschreiben.</p>         <h3>Minderung</h3>         <p>Rust 1.96.0, das am 28. Mai 2026 veröffentlicht wird, wird Cargo aktualisieren, um die Extraktion von Symlinks in Crate-Tarballs abzulehnen, unabhängig davon, ob sie von crates.io (das bereits Symlinks verbietet) oder Drittanbieter-Registries stammen. Es ist zu beachten, dass Cargo nie Symlinks hinzugefügt hat, wenn cargo package oder cargo publish ausgeführt wurde, sodass der Einfluss minimal sein sollte.</p>         <p>Benutzer, die nicht auf die neueste Rust-Version aktualisieren können, werden empfohlen, den Inhalt ihrer Registries auf Symlinks zu überprüfen und ihre Registry so zu konfigurieren, dass sie Symlinks ablehnen (falls diese Option verfügbar ist).</p>         <h3>Betroffene Versionen</h3>         <pAlle Versionen von Cargo, die vor Rust 1.96.0 ausgeliefert wurden, sind betroffen.</p>         <h3>Danksagungen</h3>         <p>Wir möchten Christos Papakonstantinou für die Meldung dieser Sicherheitslücke gemäß der Rust-Sicherheitspolitik danken.</p>         <p>Wir möchten auch den Mitgliedern des Rust-Projekts danken, die uns halfen, die Sicherheitslücke zu beheben: Josh Triplett für die Entwicklung des Fix; Arlo Siemsen für die Überprüfung des Fix; Emily Albini für die Erstellung dieser Warnung; Emily Albini, Josh Stone und Manish Goregaokar für die Koordination der Bekanntgabe; Ed Page und Eric Huss für dieBeratung während der Bekanntgabe.</p>         <p><em>BytePost-Einordnung: Diese Sicherheitslücke ist ein wichtiger Hinweis darauf, dass die Sicherheit von Software-Entwicklungstools nicht vernachlässigt werden sollte. Entwickler sollten ihre Tools und Registries regelmäßig auf Sicherheitslücken überprüfen und aktualisieren, um solche Angriffe zu verhindern.</em></p>     ",
+            "content_simple": "         <p>Ein Sicherheitsproblem wurde in einem Tool namens Cargo entdeckt. Es ermöglichte es Angreifern, den Code von anderen Entwicklern zu ändern.</p>         <p>Dieses Problem betrifft nur Benutzer, die Crates von Drittanbietern verwenden. Wenn du nur die offizielle Plattform verwendest, bist du nicht betroffen.</p>         <p>Es gibt bereits eine Lösung für das Problem. Eine Aktualisierung wird bald verfügbar sein, um das Problem zu beheben.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Sicherheitslücke in Cargo ermöglichte es Angreifern, Symlinks in Crate-Tarballs zu erstellen, die den Quellcode von anderen Crates überschreiben konnten.</p>         <p>Die Sicherheitslücke wurde durch die falsche Handhabung von Symlinks in Crate-Tarballs von Drittanbieter-Registries verursacht. Cargo extrahiert den Quellcode von Crates in einem lokalen Cache, der für zukünftige Erstellungen wiederverwendet wird.</p>         <p>Die Lösung für das Problem besteht darin, die Extraktion von Symlinks in Crate-Tarballs abzulehnen. Dies wird in Rust 1.96.0 implementiert, das am 28. Mai 2026 veröffentlicht wird.</p>         <h3>Sicherheitsimplikationen</h3>         <p>Die Sicherheitslücke in Cargo ist ein wichtiger Hinweis darauf, dass die Sicherheit von Software-Entwicklungstools nicht vernachlässigt werden sollte. Entwickler sollten ihre Tools und Registries regelmäßig auf Sicherheitslücken überprüfen und aktualisieren, um solche Angriffe zu verhindern.</p>     ",
+            "date": "07.06.2026",
+            "id": "3542c1e5",
+            "url": "https://blog.rust-lang.org/2026/05/25/cve-2026-5223/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3542c1e5.jpg",
+            "pick": true,
+            "pick_reason": "Eine kritische Sicherheitslücke in Cargo, dem Paket-Manager von Rust, wurde entdeckt und wirft Fragen über die Sicherheit von Millionen von Projekten auf. Wenn nicht sofort gehandelt wird, könnten Angreifer diese Lücke ausnutzen, um Schadcode in bestehende Anwendungen einzuschleusen. Die Entwicklergemeinde steht vor einer großen Herausforderung, ihre Projekte zu sichern, bevor es zu spät ist."
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "CISA warnt vor SolarWinds Serv-U Schwachstelle",
+            "source": "CISA",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "3542c1e5",
+                "2e63b03b",
+                "9fe6b6d4"
+            ],
+            "content": "         <h3>CISA-Warnung: SolarWinds Serv-U Schwachstelle ausgenutzt</h3>         <p>Das Cybersecurity and Infrastructure Security Agency (CISA) warnt vor einer kürzlich entdeckten und bereits ausgenützten Schwachstelle in SolarWinds Serv-U. Diese Schwachstelle ermöglicht es Angreifern, Server zum Absturz zu bringen.</p>         <p>Enable JavaScript and cookies, um fortzufahren und mehr über diese Schwachstelle zu erfahren.</p>         <h3>Was bedeutet dies für dich?</h3>         <p>Wenn du SolarWinds Serv-U verwendest, solltest du unbedingt die neuesten Patches installieren, um deine Systeme zu schützen. Die Ausnutzung dieser Schwachstelle kann zu erheblichen Ausfällen und Sicherheitsproblemen führen.</p>         <p>Das CISA rät allen Benutzern, die notwendigen Schritte zu unternehmen, um ihre Systeme zu sichern und die Schwachstelle zu beheben.</p>         <p><em>BytePost-Einordnung: Es ist wichtig, dass Entwickler und Systemadministratoren auf dem neuesten Stand der Sicherheitspatches sind, um ihre Systeme vor solchen Angriffen zu schützen.</em></p>     ",
+            "content_simple": "         <p>Das CISA warnt vor einer Schwachstelle in SolarWinds Serv-U, die es Angreifern ermöglicht, Server zum Absturz zu bringen.</p>         <p>Du solltest die neuesten Patches installieren, um deine Systeme zu schützen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Schwachstelle in SolarWinds Serv-U ermöglicht es Angreifern, Server zum Absturz zu bringen, indem sie eine bestimmte Sequenz von Anfragen senden.</p>         <p>Um dies zu verhindern, sollten Entwickler und Systemadministratoren die neuesten Patches installieren und sicherstellen, dass ihre Systeme auf dem neuesten Stand sind.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Es ist wichtig, dass Entwickler und Systemadministratoren regelmäßig ihre Systeme überprüfen und sicherstellen, dass alle notwendigen Sicherheitspatches installiert sind.</p>     ",
+            "date": "07.06.2026",
+            "id": "846e04f0",
+            "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-solarwinds-serv-u-flaw-to-crash-servers/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/846e04f0.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🚨",
+            "title": "Kubernetes korrigiert CVE-Rekorde",
+            "source": "Kubernetes Blog",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "3542c1e5",
+                "846e04f0",
+                "9fe6b6d4"
+            ],
+            "content": "         <h3>Kubernetes korrigiert CVE-Rekorde</h3>         <p>Das Kubernetes-Projekt basiert auf Transparenz, um Cluster-Administratoren und Sicherheitsforscher zu unterstützen. Eine wichtige Methode, dies zu tun, ist die Veröffentlichung von CVE-Rekorde in der Common Vulnerabilities and Exposures-Datenbank. Im Rahmen unseres fortlaufenden Bemühens, den offiziellen Kubernetes CVE-Feed zu verbessern, haben wir einige Ungereimtheiten identifiziert. CVE-Rekorde für einige ältere, unkorrigierte Probleme enthalten fälschlicherweise ein Feld für die korrigierte Version.</p>         <p>Das Kubernetes Security Response Committee (SRC) wird die betroffenen CVE-Rekorde am 1. Juni 2026 korrigieren. Dies kann dazu führen, dass Schwachstellen-Scanner diese Schwachstellen in Bereichen identifizieren, in denen sie zuvor nicht erkannt wurden.</p>         <h3>Warum wir diese Rekorde jetzt aktualisieren</h3>         <p>Obwohl diese Schwachstellen bereits seit mehreren Jahren öffentlich sind, zeigte die jüngste Arbeit zur Generierung offizieller Open-Source-Vulnerabilitäts-Dateien (OSV), dass die entsprechenden CVE-Rekorde ihren Status nicht genau widerspiegelten. Insbesondere deuteten einige Rekorde darauf hin, dass eine korrigierte Version existiert, obwohl diese Probleme tatsächlich architektonische Design-Trade-offs sind, die nicht durch Code korrigiert werden können, ohne grundlegende Kubernetes-Funktionen zu beeinträchtigen.</p>         <p>Die Korrektur dieser Rekorde ist für die Gemeinschaft von entscheidender Bedeutung:</p>         <ul>             <li>Automatisierungstreue: Moderne Schwachstellen-Scanner verlassen sich auf präzise Versionen. Ungenaue „korrigierte“ Tags führen zu falschen Negativen, was den Benutzern ein falsches Sicherheitsgefühl vermittelt.</li>             <li>Risikodokumentation: Durch die Formalisierung dieser als „unkorrigiert“ stellen wir sicher, dass Plattformanbieter und Administratoren sich der anhaltenden Notwendigkeit administrativer Abmilderungen bewusst sind.</li>         </ul>         <p>Zusätzlich möchten wir erwähnen, dass CVE-2020-8554 eine unkorrigierte CVE mit einem korrekten CVE-Rekord ist, der angibt, dass sie alle Versionen betrifft. Auch dieser Rekord wird aktualisiert, um ein standardisierteres Versionsnummernformat zu verwenden.</p>         <p><em>BytePost-Einordnung: Die Korrektur der CVE-Rekorde ist ein wichtiger Schritt, um die Sicherheit von Kubernetes-Clustern zu verbessern. Durch die Korrektur dieser Rekorde können Cluster-Administratoren und Sicherheitsforscher besser auf potenzielle Schwachstellen vorbereitet sein.</em></p>     ",
+            "content_simple": "         <p>Kubernetes hat einige Probleme, die noch nicht behoben sind. Diese Probleme waren zwar schon lange bekannt, aber die entsprechenden Meldungen waren nicht korrekt. Deshalb werden diese Meldungen jetzt aktualisiert, um sicherzustellen, dass alle Beteiligten über die anhaltenden Risiken informiert sind.</p>         <p>Dies ist wichtig, damit die Sicherheit von Kubernetes-Clustern verbessert wird. Durch diese Aktualisierung können Cluster-Administratoren und Sicherheitsforscher besser auf potenzielle Schwachstellen vorbereitet sein.</p>     ",
+            "content_pro": "         <h3>Technische Analyse der unkorrigierten architektonischen Risiken</h3>         <p>Die folgenden Schwachstellen werden vom Kubernetes-Projekt nicht behoben. GitHub-Issues sind die beste Referenz für die technischen Mechanismen dieser Fehler.</p>         <p>CVE-2020-8561, CVE-2020-8562 und CVE-2021-25740 sind Beispiele für solche Schwachstellen. Diese Schwachstellen sind architektonische Design-Trade-offs, die nicht durch Code korrigiert werden können, ohne grundlegende Kubernetes-Funktionen zu beeinträchtigen.</p>         <h3>Korrektur der CVE-Rekorde</h3>         <p>Die Korrektur der CVE-Rekorde ist ein wichtiger Schritt, um die Sicherheit von Kubernetes-Clustern zu verbessern. Durch die Korrektur dieser Rekorde können Cluster-Administratoren und Sicherheitsforscher besser auf potenzielle Schwachstellen vorbereitet sein.</p>         <p>Es ist wichtig zu beachten, dass die Korrektur dieser Rekorde auch Auswirkungen auf die Automatisierungstreue von Schwachstellen-Scannern haben kann. Moderne Schwachstellen-Scanner verlassen sich auf präzise Versionen, und ungenaue „korrigierte“ Tags können zu falschen Negativen führen.</p>     ",
+            "date": "07.06.2026",
+            "id": "2e63b03b",
+            "url": "https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2e63b03b.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "data"
+            ],
+            "icon": "🏆",
+            "title": "Wer gewinnt die WM 2026?",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "3542c1e5",
+                "846e04f0",
+                "2e63b03b"
+            ],
+            "content": "         <h3>Wer gewinnt die WM 2026?</h3>         <p>Die Frage auf jedem Fußballfan's Lippen: Wer wird die Weltmeisterschaft 2026 gewinnen? Um diese Frage zu beantworten, können wir auf verschiedene Methoden zurückgreifen. Einige Experten verwenden komplexe Algorithmen, während andere auf ihre Intuition setzen.</p>         <p>Eine Möglichkeit, die Chancen der verschiedenen Teams zu bewerten, ist die Verwendung des Elo-Systems. Dieses System wurde ursprünglich für Schachspieler entwickelt, wird aber auch in anderen Sportarten wie Fußball eingesetzt. Die Elo-Zahl eines Teams wird berechnet, indem man seine bisherigen Ergebnisse und die Ergebnisse seiner Gegner berücksichtigt.</p>         <h3>Poisson-Verteilung und Simulationen</h3>         <p>Ein anderer Ansatz ist die Verwendung der Poisson-Verteilung, um die Anzahl der Tore zu modellieren, die ein Team in einem Spiel erzielt. Diese Methode geht davon aus, dass die Anzahl der Tore, die ein Team erzielt, einer Poisson-Verteilung folgt.</p>         <p>Um die Ergebnisse der WM 2026 vorherzusagen, können wir auch Simulationen durchführen. Ein Beispiel dafür wäre die Durchführung von 10.000 Simulationen der WM, wobei jedes Mal die Ergebnisse der Spiele zufällig generiert werden. Durch diese Simulationen können wir die Wahrscheinlichkeiten für jeden Teilnehmer berechnen.</p>         <p>Leider wurde der Originalartikel nicht vollständig geladen, da der Zugriff auf die Webseite aufgrund von Sicherheitsgründen blockiert wurde. Es ist jedoch möglich, den Artikel über andere Quellen zu finden oder den Website-Besitzer zu kontaktieren, um den Zugriff zu erhalten.</p>         <p><em>BytePost-Einordnung: Die Verwendung von Datenanalyse und Simulationen, um die Ergebnisse der WM 2026 vorherzusagen, ist ein interessantes Beispiel für die Anwendung von Datenwissenschaft in der Sportanalyse. Es zeigt, wie Daten und Algorithmen verwendet werden können, um bessere Vorhersagen zu treffen und die Leistung von Teams zu bewerten.</em></p>     ",
+            "content_simple": "         <p>Wer gewinnt die WM 2026? Um diese Frage zu beantworten, gibt es verschiedene Methoden. Einige Experten verwenden komplexe Algorithmen, während andere auf ihre Intuition setzen.</p>         <p>Man kann das Elo-System verwenden, um die Chancen der verschiedenen Teams zu bewerten. Das Elo-System wurde ursprünglich für Schachspieler entwickelt, wird aber auch in anderen Sportarten wie Fußball eingesetzt.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Elo-Zahl eines Teams wird berechnet, indem man seine bisherigen Ergebnisse und die Ergebnisse seiner Gegner berücksichtigt. Die Poisson-Verteilung kann verwendet werden, um die Anzahl der Tore zu modellieren, die ein Team in einem Spiel erzielt.</p>         <p>Um die Ergebnisse der WM 2026 vorherzusagen, können auch Simulationen durchgeführt werden. Ein Beispiel dafür wäre die Durchführung von 10.000 Simulationen der WM, wobei jedes Mal die Ergebnisse der Spiele zufällig generiert werden.</p>     ",
+            "date": "07.06.2026",
+            "id": "9fe6b6d4",
+            "url": "https://towardsdatascience.com/who-will-win-the-2026-soccer-world-cup/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/9fe6b6d4.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "hardware"
+            ],
+            "icon": "📽️",
+            "title": "JMGO N3 Ultimate: neuer 4K-Projektor",
+            "source": "The Verge",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "3542c1e5",
+                "846e04f0",
+                "2e63b03b"
+            ],
+            "content": " <h3>JMGOs N3 Ultimate-Projektor: Der neue 4K-Champion</h3> <p>Der N3 Ultimate von JMGO ist ein exzellenter portabler 4K-Projektor, der moderate Umgebungsbeleuchtung bei extremen Platzierungs winkeln besiegt und rivalisierende Heimkinoinstallationen bei Nacht übertrifft. Nach einigen Wochen Testen denke ich, dass die rohe Anpassungsfähigkeit, die der JMGOs N3 Ultimate zeigt, seinen aktuellen Preis von 2.399 Dollar (500 Dollar weniger als der Listenpreis von 2.999 Dollar) rechtfertigt.</p> <p>Die moderne all-in-one-Projektoren, die auf Google TV basieren, sind bereits sehr anpassungsfähig, wenn es um die Platzierung kommt. Man kann sie auf einem Wohnzimmertisch oder einem Felsen im Zelt abstellen und sie beginnen, nach einer Leinwand oder einer blanken Wand zu suchen, um ein fokussiertes, farbkorrigiertes Bild zu projizieren, das richtig ausgerichtet ist. Aber diese Techniken greifen normalerweise auf digitale Optimierungen zurück, die die Bildhelligkeit, die Auflösung und die Reaktionszeit verschlechtern.</p> <p>Um dies zu vermeiden, ist es immer besser, einen Projektor direkt vor die Projektionsfläche zu stellen. Die Optimierung der Bildplatzierung ist schnell, effektiv und macht Spaß. Der N3 Ultimate-Projektor von JMGO verspricht eine „verlustfreie Platzierung“ durch Einbau auf einem motorisierten Cardan-Gelenk, das sich horizontal und vertikal dreht. Dies, kombiniert mit optischem Zoom und großzügiger Linsenverschiebung, erhöht die Flexibilität bei der Off-Center-Platzierung ohne digitale Tricks. Man kann sogar das Bild Wiimote-Style an den genau richtigen Ort ziehen, den man haben möchte, indem man die Fernbedienung verwendet.</p> <p>Die Vorteile des N3 Ultimate sind:</p> <ul>     <li>Unübertroffene physische Platzierungsoptionen, die die Bildqualität erhalten</li>     <li>Unglaublich helle, tageslichtbereite Ausgabe</li>     <li>Exzellente Farbreproduktion aus der Box</li>     <li>Sehr guter Klang für einen portablen Projektor</li>     <li>Schnelle Menünavigation und native Netflix-Unterstützung</li> </ul> <p>Die Nachteile sind:</p> <ul>     <li>Horribly grün und laut bei maximalem Helligkeitsgrad</li>     <li>Automatischer Augenschutz ist schwierig und langsam zu reagieren</li>     <li>Ungeschickte Menüs, um in den Bluetooth-Lautsprechermodus umzuschalten</li>     <li>Es ist portabel, aber wo ist der Griff?</li> </p> <p><em>BytePost-Einordnung: Der JMGO N3 Ultimate ist ein exzellenter portabler 4K-Projektor, der eine hervorragende Bildqualität und eine hohe Anpassungsfähigkeit bietet. Er ist jedoch teuer und hat einige Nachteile, wie die unangenehme Farbwiedergabe bei maximalem Helligkeitsgrad und den ungeschickten Menüsystem.</em></p> ",
+            "content_simple": " <p>Der N3 Ultimate von JMGO ist ein toller portabler 4K-Projektor, der auch bei hellem Licht super Bilder macht. Man kann ihn überall hinsetzen und er passt sich automatisch an. Das ist ziemlich praktisch, wenn man ihn in verschiedenen Räumen benutzen möchte.</p> <p>Der Projektor ist auch sehr hell und farbenfroh. Er hat eine gute Klangqualität und man kann ihn leicht bedienen. Allerdings ist er ziemlich teuer und hat einige Macken, wie eine unangenehme Farbwiedergabe bei maximalem Helligkeitsgrad.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Der N3 Ultimate von JMGO verwendet eine Kombination aus motorisiertem Cardan-Gelenk, optischem Zoom und großzügiger Linsenverschiebung, um eine verlustfreie Platzierung zu ermöglichen. Dies ermöglicht es dem Benutzer, den Projektor in verschiedenen Positionen zu platzieren, ohne dass die Bildqualität beeinträchtigt wird.</p> <p>Der Projektor unterstützt auch eine Vielzahl von Bildmodi, einschließlich Movie-Mode, Office-Mode, Vivid-Mode und Dynamic-Mode. Jeder Modus bietet eine andere Kombination aus Bildhelligkeit, Farbe und Kontrast, um die Bedürfnisse des Benutzers zu erfüllen.</p> ",
+            "date": "07.06.2026",
+            "id": "55b72493",
+            "url": "https://www.theverge.com/reviews/943732/best-portable-4k-projector-review",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/55b72493.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "NVIDIA garak Tutorial",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "3542c1e5",
+                "846e04f0",
+                "2e63b03b"
+            ],
+            "content": "         <h3>NVIDIA garak Tutorial: Build a Complete Defensive LLM Red-Teaming Workflow mit Custom Probes und Detectors</h3>         <p>Das Tutorial behandelt NVIDIA garak als ein umfassendes Framework für defensive LLM Red-Teaming. Es deckt die Einrichtung, Plugin-Entdeckung, Trockenläufe, echte Modellscans auf einem Hugging Face-Generator und Multi-Probe-Evaluierungen ab. Der Workflow analysiert Sicherheitspunkte und Erfolgsraten von Angriffen, untersucht markierte Ausgaben und erweitert garak mit einem benutzerdefinierten Probe und Detektor.</p>         <p>Das Tutorial beginnt mit der Installation von garak und der Konfiguration von Umgebungsvariablen. Anschließend werden die erforderlichen Bibliotheken importiert und eine Hilfsfunktion erstellt, um Shell-Befehle direkt aus dem Notebook auszuführen.</p>         <p>Das Plugin-Ökosystem von garak wird untersucht, indem verfügbare Probes, Detectors, Generators und Buffs aufgelistet werden. Anschließend wird ein schneller Trockenlauf durchgeführt, um zu bestätigen, dass garak ohne externe Modelle oder API-Schlüssel funktioniert.</p>         <p>Danach wird ein echtes Hugging Face-Modell gescannt und eine Multi-Probe-Evaluierung durchgeführt, um einen umfassenderen Bericht zu erstellen. Der Bericht wird analysiert, um Sicherheitspunkte und Erfolgsraten von Angriffen zu überprüfen.</p>         <p>Der Benutzer kann dann einen benutzerdefinierten Probe und Detektor erstellen, um garak zu erweitern. Schließlich kann der Bericht im AVID-Format exportiert werden, um strukturierte Angreifbarkeiten zu erstellen.</p>         <h3>Analyse von garak-Berichten: Sicherheitspunkte und Erfolgsraten von Angriffen</h3>         <p>Der Bericht kann analysiert werden, um Sicherheitspunkte und Erfolgsraten von Angriffen zu überprüfen. Der Benutzer kann die markierten Ausgaben untersuchen und den Bericht im AVID-Format exportieren.</p>         <p><em>BytePost-Einordnung: Das NVIDIA garak-Tutorial bietet eine umfassende Anleitung für die Einrichtung und den Einsatz von garak als Framework für defensive LLM Red-Teaming. Der Benutzer kann durch die Erstellung von benutzerdefinierten Probes und Detektoren die Funktionalität von garak erweitern und Sicherheitspunkte und Erfolgsraten von Angriffen überprüfen.</em></p>     ",
+            "content_simple": "         <p>NVIDIA garak ist ein Framework für defensive LLM Red-Teaming. Es hilft, Sicherheitslücken in künstlicher Intelligenz zu finden. Das Tutorial zeigt, wie man garak einrichtet und benutzt.</p>         <p>Der Benutzer kannProbes und Detektoren erstellen, um garak zu erweitern. Der Bericht kann analysiert werden, um Sicherheitspunkte und Erfolgsraten von Angriffen zu überprüfen.</p>     ",
+            "content_pro": "         <h3>Technische Details von NVIDIA garak</h3>         <p>Das Framework verwendet eine Modulare Architektur, um Probes, Detektoren, Generators und Buffs zu integrieren. Die Plugin-Entdeckung ermöglicht es, neue Probes und Detektoren zu entdecken und zu integrieren.</p>         <p>Der Code kann wie folgt aussehen:</p>         <pre><code>import os, sys, json, glob, subprocess, importlib def sh(cmd, capture=False):     print(f&quot;\n$ {cmd}&quot;)     return subprocess.run(cmd, shell=True, text=True, capture_output=capture) sh(f&quot;{sys.executable} -m pip install -q -U garak&quot;) os.environ.setdefault(&quot;TOKENIZERS_PARALLELISM&quot;, &quot;false&quot;) os.environ.setdefault(&quot;HF_HUB_DISABLE_TELEMETRY&quot;, &quot;1&quot;) import garak, garak.cli from garak import _config print(&quot;\n=== garak version:&quot;, garak.__version__, &quot;===&quot;) def run_garak(args):     print(&quot;\n&gt;&gt;&gt; garak &quot; + &quot; &quot;.join(args))     try:         garak.cli.main(args)     except SystemExit as e:         if e.code not in (0, None):             print(f&quot;[garak exited {e.code}]&quot;)     try:         return _config.transient.report_filename     except Exception:         return None </code></pre>         <p>Der Code zeigt, wie man garak einrichtet und benutzt. Die Hilfsfunktion <code>sh</code> ermöglicht es, Shell-Befehle auszuführen. Die Funktion <code>run_garak</code> ermöglicht es, garak zu starten und den Bericht zu erstellen.</p>     ",
+            "date": "07.06.2026",
+            "id": "2ae34e00",
+            "url": "https://www.marktechpost.com/2026/06/06/nvidia-garak-tutorial-build-a-complete-defensive-llm-red-teaming-workflow-with-custom-probes-and-detectors/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2ae34e00.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎮",
+            "title": "The Sinking City 2 erscheint am 18. August",
+            "source": "Rock Paper Shotgun",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "3542c1e5",
+                "846e04f0",
+                "2e63b03b"
+            ],
+            "content": "         <h3>The Sinking City 2: Ein neuer Lovecraft-Horror</h3>         <p>Das ukrainische Entwicklerstudio Frogwares hat endlich einen Release-Termin für ihr neues Lovecraft-Horror-Spiel The Sinking City 2 bekannt gegeben. Ab dem 18. August kannst du dich in die Wasser verdunkelten Gummistiefel von Privatdetektiv Calvin hineinversetzen, der in der Stadt Arkham nach seiner verschwundenen Freundin Faye sucht.</p>         <p>Unser Jeremy hatte kürzlich Gelegenheit, einen Teil des Spiels zu spielen, und meint, dass es vielleicht endlich ein gutes Cthulhu-Spiel gibt, das es mit den Genre-Enthusiasten wie Pyramid Head und Nemesis aufnehmen kann.</p>         <p>Das Entwicklerstudio Frogwares, bekannt für ihre Sherlock-Holmes-Serie, hat in der Vergangenheit bereits Erfahrungen mit Investigationsspielen gesammelt. Allerdings fühlte sich das erste Sinking City zu großen Teilen wie ein Spiel an, das zu groß für die Intimität eines Detektivspiels war. Es wollte kleiner, persönlicher sein.</p>         <p>Als Alice das erste Sinking City bewertete, konnte man sehen, wo die Entwickler auf Grenzen stießen. Jeremy meint jedoch, dass diese Grenzen im Sequel überwunden wurden, auch wenn das Spiel nun mehr Action-Elemente enthält.</p>         <h3>Entwicklung unter schwierigen Bedingungen</h3>         <p>Die Entwicklung von The Sinking City 2 war von Beginn an von Herausforderungen geprägt. Das ukrainische Entwicklerstudio Frogwares musste während des russischen Angriffs auf die Ukraine unter extremen Bedingungen arbeiten. Sergiy Oganesyan, Leiter des Publishings bei Frogwares, erklärt in einer Stellungnahme: „Machen Spiele zu entwickeln ist bereits chaotisch und unvorhersehbar, aber wenn man gleichzeitig Krieg führt, kommt eine immense Chaotic hinzu. Wir mussten ständig anpassen und unsere Pläne ändern.“</p>         <p>Der Release-Termin von The Sinking City 2 ist für August 18th geplant, und bereits jetzt kann man die erste Stunde des Spiels auf Steam spielen.</p>         <p><em>BytePost-Einordnung: The Sinking City 2 verspricht ein spannendes Lovecraft-Horror-Erlebnis zu werden. Die Herausforderungen, denen das Entwicklerstudio Frogwares während der Entwicklung ausgesetzt war, machen die Veröffentlichung des Spiels umso bemerkenswerter.</em></p>     ",
+            "content_simple": "         <p>Das neue Spiel The Sinking City 2 kommt am 18. August raus. Es ist ein Lovecraft-Horror-Spiel, in dem du einen Detektiv spielst, der in einer überfluteten Stadt nach seiner verschwundenen Freundin sucht.</p>         <p>Das Spiel wird von einem ukrainischen Studio entwickelt, das unter schwierigen Bedingungen arbeitet, weil es während des Krieges in der Ukraine entwickelt wurde.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Spiel The Sinking City 2 basiert auf der Unreal Engine und verwendet eine Kombination aus Physik- und Grafik-Engines, um eine realistische Spielwelt zu erstellen.</p>         <p>Die Entwickler haben auch eine eigene Investigation-Engine entwickelt, um die Detektivarbeit im Spiel zu ermöglichen.</p>         <p>Die Herausforderungen, denen das Entwicklerstudio Frogwares während der Entwicklung ausgesetzt war, haben die Entwicklung des Spiels sicherlich beeinflusst, aber es ist bemerkenswert, dass das Studio es geschafft hat, das Spiel fertigzustellen.</p>     ",
+            "date": "07.06.2026",
+            "id": "d1894abf",
+            "url": "https://www.rockpapershotgun.com/ukrainian-made-lovecraftian-horror-game-the-sinking-city-2-finally-has-a-release-date-and-you-can-play-the-first-hour-right-now-on-steam",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d1894abf.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki",
                 "dev"
             ],
@@ -86,7 +292,7 @@
                 "sleep": 0
             },
             "image_local": "images/b1f3d30a.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Rust Foundation beschleunigt den Fortschritt der Programmiersprache Rust mit ihrem neuen Maintainers Fund, der Entwicklern direkte Unterstützung bietet. Damit wird die Zukunft von Rust gesichert und Entwickler können auf ein stabiles und sicheres Ökosystem setzen. Mit dieser Initiative verändert sich die Art und Weise, wie Rust-Entwickler zusammenarbeiten und die Sprache weiterentwickeln"
         },
         {
@@ -40837,10 +41043,10 @@
         }
     ],
     "bytepulse": {
-        "date": "06.06.2026",
-        "positiv": 67,
-        "neutral": 33,
-        "kritisch": 0,
-        "total": 9
+        "date": "07.06.2026",
+        "positiv": 43,
+        "neutral": 29,
+        "kritisch": 29,
+        "total": 7
     }
 }
