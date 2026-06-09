@@ -2,6 +2,242 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🚀",
+            "title": "ISS Leck wird schlimmer",
+            "source": "t3n",
+            "read": "2 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "f95157de",
+                "16fc0e4c",
+                "76e4aa45"
+            ],
+            "content": "         <h3>Probleme auf der ISS</h3>         <p>Die Internationale Raumstation (ISS) hat ein Problem mit einem Leck. Ein russisches Modul macht der ISS weiterhin Probleme. Ein Leck am Übergangstunnel des russischen Servicemoduls „Swesda“ wurde bereits 2019 entdeckt. Es führte laut einer Pressemitteilung der Nasa zu „geringfügigen Luftverlusten“ und sorgte dafür, dass die russische Raumfahrtbehörde Roskosmos das Objekt fortlaufend überwachte und Reparaturmaßnahmen veranlasste.</p>         <p>Die Risse am Tunnel wurden erstmals 2019 entdeckt. Sie führten zu „geringfügigen Luftverlusten“ und sorgten dafür, dass die russische Raumfahrtbehörde Roskosmos das Objekt fortlaufend überwachte und Reparaturmaßnahmen veranlasste. Dabei wurden unter Einsatz temporärer und dauerhafter Dichtmittel Maßnahmen zur Leckabdichtung ergriffen.</p>         <p>Anfang Juni machte Roskosmos neue verdächtige Stellen im PrK-Bereich aus und stellte fest, dass das Leck noch schlimmer geworden war. Die Folge: Der Beginn einer umfassenderen Inspektion und Reparatur, die auch Folgen für die ISS-Crew hatte.</p>         <h3>Astronauten in Sicherheitsbereich</h3>         <p>Die Nasa wies die fünf Astronauten auf der ISS an, sich auf einen eiligen Rückzug vorzubereiten. Die vier Mitglieder der „SpaceX Crew-12“ sowie der Nasa-Astronaut Chris Williams, der mit dem Raumschiff „Sojus MS-28“ zur Station geflogen war, begaben sich im Rahmen erhöhter Sicherheitsvorkehrungen in den sogenannten „Safe Haven“ (Sicherheitsbereich) im Inneren des SpaceX-Raumschiffs „Dragon“.</p>         <p>Im weiteren Verlauf des Freitag setzte Roskosmos die Arbeiten aus und verzichtete auf die bis dahin geplante strukturelle Reparatur.</p>         <p>Stattdessen wurden zusätzliche Messungen und Datenauswertungen, wie die Inspektion verdächtiger Stellen sowie die Überprüfung von Bereichen, in denen zuvor Dichtmittel aufgetragen worden waren, durchgeführt. Dabei konnte die ISS-Crew ihren Aufenthalt im Sicherheitsbereich beenden und wieder ihre normalen Tätigkeiten an Bord aufnehmen.</p>         <p>Die Ursachen für das Leck sind allerdings noch immer nicht geklärt. Die Nasa teilte mit, dass man weiter zusammen daran arbeiten werde, „eine Lösung herbeizuführen“.</p>         <p><em>BytePost-Einordnung: Das Leck auf der ISS ist ein ernstes Problem, das die Sicherheit der Astronauten gefährdet. Es ist wichtig, dass die Ursachen für das Leck schnell geklärt und eine Lösung gefunden wird, um die Sicherheit der Crew zu gewährleisten.</em></p>     ",
+            "content_simple": "         <p>Die Internationale Raumstation (ISS) hat ein Problem mit einem Leck. Ein Loch im russischen Teil der Station verursacht Luftverluste. Die Astronauten mussten deshalb in einen sicheren Bereich gehen, um ihre Sicherheit zu gewährleisten.</p>         <p>Das Leck wurde bereits 2019 entdeckt, aber es ist noch nicht klar, was es verursacht. Die NASA und die russische Raumfahrtbehörde Roskosmos arbeiten daran, die Ursache zu finden und eine Lösung zu entwickeln.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Das Leck befindet sich im Übergangstunnel des russischen Servicemoduls „Swesda“. Es wurde erstmals 2019 entdeckt und hat seitdem zu „geringfügigen Luftverlusten“ geführt. Die russische Raumfahrtbehörde Roskosmos hat das Objekt fortlaufend überwacht und Reparaturmaßnahmen veranlasst.</p>         <p>Die Inspektion und Reparatur des Lecks erfordert eine sorgfältige Planung und Durchführung, um die Sicherheit der Astronauten zu gewährleisten. Die NASA und Roskosmos arbeiten daran, die Ursache für das Leck zu finden und eine Lösung zu entwickeln.</p>         <p>Es ist wichtig, dass die Ursachen für das Leck schnell geklärt und eine Lösung gefunden wird, um die Sicherheit der Crew zu gewährleisten. Das Leck auf der ISS ist ein ernstes Problem, das die Sicherheit der Astronauten gefährdet.</p>     ",
+            "date": "09.06.2026",
+            "id": "593c297c",
+            "url": "https://t3n.de/news/leck-auf-iss-schlimmer-reparatur-1746598/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/593c297c.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev"
+            ],
+            "icon": "🚀",
+            "title": "Rust 1.96.0 veröffentlicht",
+            "source": "The Rust Release Team",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "593c297c",
+                "16fc0e4c",
+                "76e4aa45"
+            ],
+            "content": "         <h3>Rust 1.96.0 ist da</h3>         <p>Das Rust-Team hat eine neue Version von Rust, 1.96.0, veröffentlicht. Rust ist eine Programmiersprache, die es ermöglicht, zuverlässige und effiziente Software zu erstellen.</p>         <p>Wenn du bereits eine vorherige Version von Rust über rustup installiert hast, kannst du 1.96.0 mit dem folgenden Befehl aktualisieren: $ rustup update stable. Wenn du rustup noch nicht hast, kannst du es von der entsprechenden Seite auf unserer Website herunterladen und die detaillierten Release-Notes für 1.96.0 lesen.</p>         <p>Wenn du uns helfen möchtest, zukünftige Versionen zu testen, kannst du lokal auf den Beta-Kanal (rustup default beta) oder den Nightly-Kanal (rustup default nightly) umstellen. Bitte melde uns alle Fehler, die du findest!</p>         <h3>Was ist in 1.96.0 enthalten?</h3>         <p>Neue Range*-Typen: Viele Benutzer erwarten, dass Range und verwandte core::ops-Typen Copy sind, aber das ist nicht der Fall. Sie implementieren Iterator direkt, und es ist ein Problem, sowohl Iterator als auch Copy auf demselben Typ zu implementieren.</p>         <ul>             <li>core::range::Range</li>             <li>core::range::RangeFrom</li>             <li>core::range::RangeInclusive</li>         </ul>         <p>Associated Iteratoren: Die neuen RangeInclusive-Typen machen ihre Felder öffentlich, im Gegensatz zu den Legacy-Typen, die den erschöpften Iterator-Zustand nicht offenlegen. Dies ist kein Problem mit den neuen Typen, da sie zum Beginn der Iteration umgewandelt werden müssen.</p>         <p>Bibliotheksautoren sollten die Verwendung von impl RangeBounds in öffentlichen APIs in Betracht ziehen, die sowohl Legacy- als auch neue Range-Typen akzeptieren. Wenn ein konkreter Typ benötigt wird, sollten die neuen Range-Typen bevorzugt werden, da sie eventually zum Standard werden.</p>         <p>Assert-Matching-Muster: Die neuen Makros assert_matches! und debug_assert_matches! überprüfen, ob ein Wert einem bestimmten Muster entspricht.</p>         <p><em>BytePost-Einordnung: Die neue Version von Rust bietet einige interessante Neuerungen, insbesondere die neuen Range*-Typen, die es ermöglichen, Slice-Accessor in Copy-Typen ohne Aufteilung von Start und Ende zu speichern. Dies kann zu einer verbesserten Lesbarkeit und Wartbarkeit von Code führen.</em></p>     ",
+            "content_simple": "         <p>Rust ist eine Programmiersprache, die es ermöglicht, zuverlässige und effiziente Software zu erstellen. Die neue Version 1.96.0 bietet einige Neuerungen, wie neue Range-Typen, die es ermöglichen, Slice-Accessor in Copy-Typen ohne Aufteilung von Start und Ende zu speichern.</p>         <p>Das bedeutet, dass Entwickler ihren Code besser organisieren und warten können, was zu einer verbesserten Lesbarkeit und Wartbarkeit führt.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die neuen Range*-Typen implementieren IntoIterator anstelle von Iterator, was es ermöglicht, sie in Copy-Typen zu speichern. Dies wird durch die Verwendung von impl RangeBounds in öffentlichen APIs erreicht.</p>         <p>Die Associated Iteratoren der neuen RangeInclusive-Typen machen ihre Felder öffentlich, was es ermöglicht, sie direkt zu zugreifen.</p>         <p>Die neuen Makros assert_matches! und debug_assert_matches! überprüfen, ob ein Wert einem bestimmten Muster entspricht, was zu einer verbesserten Fehlersuche und -behebung führen kann.</p>     ",
+            "date": "09.06.2026",
+            "id": "f95157de",
+            "url": "https://blog.rust-lang.org/2026/05/28/Rust-1.96.0/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/f95157de.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "cloud"
+            ],
+            "icon": "🔒",
+            "title": "Cloudflare integriert Bedrohungsindikatoren in WAF",
+            "source": "Cloudflare Blog",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "76e4aa45"
+            ],
+            "content": " <h3>Neue Integration für verbesserte Sicherheit</h3> <p>Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF) verwenden, um hochriskante Verkehr zu blockieren. Durch die Verwendung neuer cf.intel-Felder können Sicherheitsteams den Schutz gegen bestimmte Bedrohungsakteure und gezielte Branchen in Echtzeit automatisieren.</p> <p>Das Cloudflare-Plattform bietet Sicherheitsanalysten einen Einblick in die globale Bedrohungslandschaft. Die Plattform gibt einen Blick in den enormen Verkehr, den Cloudflare jeden Tag verarbeitet, so dass Sie in Echtzeit sehen können, welche IPs bestimmte Branchen oder welche Bedrohungsakteure global anvisieren. Allerdings war die Umsetzung dieser Sichtbarkeit in aktive Abwehr oft ein manueller, reaktiver Prozess.</p> <h3>Neue Funktionen</h3> <p>Sicherheitsteams konnten bestimmte IP-Adressen nicht einfach automatisch innerhalb ihrer eigenen WAF blockieren, es sei denn, sie konfigurierten die Regeln manuell. Diese Frustration ist nun Geschichte, da Cloudflare eine neue Integration eingeführt hat, die die umfassende Bedrohungsintelligenz von Cloudflare direkt in die WAF-Engine bringt.</p> <p>Durch die Besetzung spezifischer Felder während der frühen Stadien einer Anfrage kann die WAF nun den Verkehr basierend auf folgenden Kriterien filtern: <ul> <li>Wer angreift, indem bestimmte Bedrohungsakteure genannt werden</li> <li>Wer angegriffen wird, indem Branchen- oder Länderfilter verwendet werden, um zu sehen, wer die IP in der Vergangenheit angegriffen hat</li> <li>Was für einen Angriff, indem angereicherte Bedrohungs Kontext verwendet wird, um nach Angriffstyp (DDoS, WAF, Cyberkriminalität usw.) und dem Zeitraum, in dem es zuletzt gesehen wurde, zu filtern</li> </ul> <p>Die neue Funktion ist auf demselben Always-on-Erkennungsrahmenwerk aufgebaut, das kürzlich für die Angriffssignaturerkennung eingeführt wurde. Durch die Trennung von Erkennung und Abwehr stellt Cloudflare sicher, dass die Bedrohungsintelligenz konstant im Hintergrund läuft und die HTTP-Anfrageanalyse mit insightreichen Bedrohungsmetadaten anreichert, bevor eine Aktion unternommen wird.</p> <h3>Vorteile</h3> <p>Der Hauptvorteil des Always-on-Modells ist die Beseitigung des traditionellen Log-vs.-Block-Trade-offs: Sichtbarkeit im Log-Modus oder Schutz im Block-Modus. Wenn eine Regel eine Anfrage blockiert, verliert man die Sichtbarkeit in die Bewertung, wie andere Signaturen diese bewertet hätten.</p> <p>Wenn Sie ein Cloudforce One-Abonnement haben, erscheinen diese Einblicke automatisch in Ihren Analysen. Sie können sehen, welche Bedrohungsakteure Ihre Website angreifen und welche Branchen diese IPs normalerweise anvisieren, was es Ihnen ermöglicht, Verkehrs Muster zu überprüfen, bevor Sie den Schalter umlegen, um den Verkehr zu blockieren.</p> <p>Die Erkennung erfolgt mit vernachlässigbarer Latenz, was Ihre Leistung weiterhin blitzschnell hält und gleichzeitig die notwendigen Daten für robuste Sicherheitsrichtlinien liefert.</p> <p>Die anfängliche Veröffentlichung konzentriert sich auf IP-basierte Übereinstimmungen, aber Cloudflare plant bereits, diese Fähigkeiten auf JA3-Fingerabdrücke und Domain-basierte Übereinstimmungen auszuweiten. Dies ermöglicht es Ihnen, schädlichen Verkehr zu blockieren, selbst wenn Angreifer IPs drehen, indem Sie die einzigartigen Software-Signaturen oder schädlichen Ziel-Links identifizieren, die sie in ihren Payloads verwenden.</p> <p><em>BytePost-Einordnung: Die neue Integration von Cloudflare ist ein wichtiger Schritt in Richtung verbesserte Sicherheit und bietet Kunden eine Möglichkeit, Bedrohungen in Echtzeit zu erkennen und abzuwehren.</em></p> ",
+            "content_simple": " <p>Cloudflare hat eine neue Funktion eingeführt, die es ermöglicht, Bedrohungen in Echtzeit zu erkennen und abzuwehren. Diese Funktion nennt sich Cloudforce One und bringt die umfassende Bedrohungsintelligenz von Cloudflare direkt in die Web Application Firewall (WAF) ein.</p> <p>Dies bedeutet, dass Kunden ihre Anwendungen und Websites besser vor Bedrohungen schützen können, indem sie auf bestimmte IP-Adressen, Branchen oder Länder filtern. Die neue Funktion ist einfach zu verwenden und bietet eine höhere Sicherheit für Cloudflare-Kunden.</p> ",
+            "content_pro": " <h3>Technische Details</h3> <p>Die neue Funktion von Cloudflare basiert auf dem Always-on-Erkennungsrahmenwerk, das kürzlich für die Angriffssignaturerkennung eingeführt wurde. Durch die Trennung von Erkennung und Abwehr stellt Cloudflare sicher, dass die Bedrohungsintelligenz konstant im Hintergrund läuft und die HTTP-Anfrageanalyse mit insightreichen Bedrohungsmetadaten anreichert, bevor eine Aktion unternommen wird.</p> <p>Die neue Funktion verwendet spezifische Felder, um den Verkehr zu filtern, wie z.B. cf.intel.ip.attacker_names, cf.intel.ip.target_industries, cf.intel.ip.attacker_countries und cf.intel.ip.target_countries. Durch die Verwendung dieser Felder können Kunden ihre Anwendungen und Websites besser vor Bedrohungen schützen.</p> <pre><code>cf.intel.ip.attacker_names = ['Tycoon 2FA', 'RaccoonO365']</code></pre> <p>Die anfängliche Veröffentlichung konzentriert sich auf IP-basierte Übereinstimmungen, aber Cloudflare plant bereits, diese Fähigkeiten auf JA3-Fingerabdrücke und Domain-basierte Übereinstimmungen auszuweiten. Dies ermöglicht es Kunden, schädlichen Verkehr zu blockieren, selbst wenn Angreifer IPs drehen.</p> ",
+            "date": "09.06.2026",
+            "id": "16fc0e4c",
+            "url": "https://blog.cloudflare.com/realtime-threat-intel-waf-rules/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/16fc0e4c.jpg",
+            "pick": true,
+            "pick_reason": "Cloudflares neueste Integration von Bedrohungsindikatoren in ihre Web-Anwendungssicherheits-Firewall (WAF) markiert einen bedeutenden Schritt in der Cybersicherheit. Damit können Entwickler und Unternehmen ihre Anwendungen effektiver vor komplexen Bedrohungen schützen und gleichzeitig die Sicherheit ihrer Nutzer erhöhen. Dies ist besonders wichtig, da die Zahl der Cyberangriffe stetig steigt und eine zuverlässige Abwehr strategisch immer wichtiger wird."
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Silent Ransom Group greift US-Anwaltskanzleien an",
+            "source": "Krebs on Security",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "16fc0e4c"
+            ],
+            "content": "         <h3>Silent Ransom Group: Eine neue Bedrohung</h3>         <p>Die Silent Ransom Group, eine finanziell motivierte Gruppe, hat ihre Angriffe auf US-Anwaltskanzleien eskaliert. Sie kombiniert Vishing, IT-Identitätsdiebstahl und physische Bürointrusionen, um Daten zu stehlen und ihre Opfer zu erpressen.</p>         <p>Die Gruppe nutzt ihre Fähigkeiten, um sich als IT-Experten auszugeben und ihre Opfer zu täuschen. Sie verwenden auch Vishing, um ihre Opfer zu überzeugen, sensible Informationen preiszugeben. Nachdem sie Zugang zu den Systemen ihrer Opfer haben, stehlen sie Daten und drohen, diese zu veröffentlichen, wenn ihre Forderungen nicht erfüllt werden.</p>         <h3>Die Angriffe der Silent Ransom Group</h3>         <p>Die Angriffe der Silent Ransom Group sind sehr professionell und gut geplant. Sie nutzen ihre Kenntnisse über die IT-Systeme ihrer Opfer, um sich Zugang zu vertraulichen Daten zu verschaffen. Die Gruppe ist auch sehr aggressiv und droht, die gestohlenen Daten zu veröffentlichen, wenn ihre Forderungen nicht erfüllt werden.</p>         <p>Die Silent Ransom Group hat bereits mehrere US-Anwaltskanzleien angegriffen und sensitive Daten gestohlen. Die Opfer müssen nun damit rechnen, dass ihre vertraulichen Informationen veröffentlicht werden, wenn sie nicht auf die Forderungen der Gruppe eingehen.</p>         <p><em>BytePost-Einordnung: Die Angriffe der Silent Ransom Group zeigen, wie wichtig es ist, die IT-Sicherheit von Anwaltskanzleien und anderen Unternehmen zu stärken. Es ist wichtig, dass Unternehmen ihre Mitarbeiter über die Risiken von Vishing und IT-Identitätsdiebstahl aufklären und geeignete Maßnahmen ergreifen, um ihre IT-Systeme zu schützen.</em></p>     ",
+            "content_simple": "         <p>Die Silent Ransom Group ist eine Gruppe von Hackern, die Anwaltskanzleien in den USA angreift. Sie stehlen sensitive Daten und drohen, diese zu veröffentlichen, wenn ihre Forderungen nicht erfüllt werden.</p>         <p>Die Gruppe nutzt Tricks, um ihre Opfer zu täuschen und an ihre Daten zu kommen. Sie sind sehr professionell und aggressiv.</p>     ",
+            "content_pro": "         <h3>Technische Details der Angriffe</h3>         <p>Die Silent Ransom Group nutzt Vishing und IT-Identitätsdiebstahl, um ihre Opfer zu täuschen. Sie verwenden auch physische Bürointrusionen, um Zugang zu den IT-Systemen ihrer Opfer zu erhalten.</p>         <p>Die Gruppe ist sehr gut organisiert und hat offensichtlich Erfahrung mit der Ausführung solcher Angriffe. Sie nutzen ihre Kenntnisse über die IT-Systeme ihrer Opfer, um sich Zugang zu vertraulichen Daten zu verschaffen.</p>         <h3>Sicherheitsmaßnahmen</h3>         <p>Um sich vor solchen Angriffen zu schützen, sollten Unternehmen ihre Mitarbeiter über die Risiken von Vishing und IT-Identitätsdiebstahl aufklären. Sie sollten auch geeignete Maßnahmen ergreifen, um ihre IT-Systeme zu schützen, wie zum Beispiel die Implementierung von Zwei-Faktor-Authentifizierung und die regelmäßige Überprüfung von Systemen auf Schwachstellen.</p>     ",
+            "date": "09.06.2026",
+            "id": "76e4aa45",
+            "url": "https://www.darkreading.com/cyberattacks-data-breaches/silent-ransom-us-law-firms-extortion-attacks",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/76e4aa45.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "AI-Governance wichtig für Unternehmen",
+            "source": "Docker",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "16fc0e4c"
+            ],
+            "content": "         <h3>Was ist AI-Governance?</h3>         <p>AI-Agenten entwickeln sich rasant. Laut unserem State of Agentic AI-Bericht haben bereits 60% der Organisationen AI-Agenten in der Produktion, doch 40% nennen Sicherheit und Compliance als die größte Hürde für die weitere Skalierung. Und genau dort lebt die AI-Governance. Wenn AI höhere Entscheidungen trifft und Agenten mit größerer Autonomie operieren, stoßen Organisationen ohne klare Vorgaben auf erhebliche regulatorische Strafen, Sicherheitsrisiken und Reputationsverluste.</p>         <p>AI-Governance schließt diese Lücke, indem sie die Regeln, Rollen und Überprüfungsprozesse festlegt, die AI-Systeme mit den Geschäftszielen, gesetzlichen Anforderungen und ethischen Standards in Einklang bringen. Dieser Leitfaden behandelt, was AI-Governance ist, warum sie wichtig ist, die wichtigsten Prinzipien und Rahmenbedingungen, die sie prägen, und wie man eine Governance-Praxis aufbaut, die mit den AI-Ambitionen skaliert.</p>         <h3>Warum ist AI-Governance wichtig?</h3>         <p>AI ist nicht mehr experimentell. Organisationen integrieren sie in Arbeitsabläufe, Finanzmodellierung, Kundensupport, Infrastrukturmanagement und Softwareentwicklung. Wenn AI auf dieser Ebene operiert, sind die Folgen eines Fehlers erheblich. Und ohne die richtigen Schutzmechanismen kann viel schiefgehen.</p>         <p>AI-Governance ist wichtig, weil sie Organisationen hilft:</p>         <ul>             <li>Risiken zu reduzieren und Schäden zu verhindern. AI-Modelle können Voreingenommenheit in ihren Trainingsdaten widerspiegeln, unzuverlässige Ausgaben produzieren oder unvorhersehbar in der Produktion verhalten.</li>             <li>Regulatorische und Compliance-Anforderungen zu erfüllen. Gesetze wie die EU-AI-Verordnung, die NIST-AI-Risikomanagement-Rahmenbedingungen und ISO/IEC 42001 schaffen durchsetzbare Standards für AI.</li>             <li>Vertrauen mit Benutzern und Stakeholdern aufzubauen. Transparente AI-Praktiken, von erklärbarer Modellierung bis hin zu klaren Datenschutzbestimmungen, sind entscheidend.</li>         </ul>         <p>AI-Governance ist nicht nur ein Policypapier. Es ist eine lebendige Praxis, die den gesamten AI-Lebenszyklus umfasst, von der Datenerfassung und Modelltrainierung bis hin zur Bereitstellung, Überwachung und Stilllegung. Und da AI-Systeme leistungsfähiger werden, muss auch die Governance mit ihnen Schritt halten.</p>         <p><em>BytePost-Einordnung: AI-Governance ist für Unternehmen, die mit künstlicher Intelligenz arbeiten, unerlässlich. Durch die Implementierung von AI-Governance können Unternehmen Risiken minimieren, regulatorische Anforderungen erfüllen und Vertrauen bei ihren Benutzern aufbauen. Dies ist ein wichtiger Schritt, um die volle Potenzialität von AI zu nutzen und sicherzustellen, dass sie den Geschäftszielen und ethischen Standards entspricht.</em></p>     ",
+            "content_simple": "         <p>AI-Governance ist wie ein Regelbuch für künstliche Intelligenz. Es hilft Unternehmen, AI-Systeme sicher und verantwortungsvoll zu entwickeln und einzusetzen. Damit werden Risiken minimiert und die Einhaltung von Gesetzen und Vorschriften gewährleistet.</p>         <p>Stell dir vor, du baust ein Haus. Du benötigst Baupläne, um sicherzustellen, dass das Haus sicher und stabil ist. Ähnlich ist es mit AI-Governance. Es gibt den Unternehmen die notwendigen Pläne und Richtlinien, um AI-Systeme zu entwickeln, die sicher und verantwortungsvoll sind.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte der AI-Governance</h3>         <p>AI-Governance umfasst nicht nur die Entwicklung von Richtlinien und Prozessen, sondern auch die technische Implementierung von Sicherheitsmaßnahmen und Controlls. Dazu gehören beispielsweise die Überwachung von AI-Modellen, die Erfassung und Analyse von Daten sowie die Implementierung von Zugriffskontrollen.</p>         <p>Ein wichtiger Aspekt der AI-Governance ist die Entwicklung von explainable AI (XAI). XAI-Modelle sind in der Lage, ihre Entscheidungen und Prozesse transparent zu machen, was es ermöglicht, ihre Funktionsweise und ihre Ergebnisse zu überprüfen und zu verifizieren.</p>         <h3>Beispiele für technische Implementierung</h3>         <p>Ein Beispiel für die technische Implementierung von AI-Governance ist die Verwendung von Modell-überwachungstools wie TensorFlow oder PyTorch. Diese Tools ermöglichen es, AI-Modelle zu überwachen und ihre Leistung zu analysieren, um sicherzustellen, dass sie wie erwartet funktionieren.</p>     ",
+            "date": "09.06.2026",
+            "id": "806f1d15",
+            "url": "https://www.docker.com/blog/what-is-ai-governance/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/806f1d15.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "business",
+                "ki"
+            ],
+            "icon": "💸",
+            "title": "Zepto bereitet Börsengang vor",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "16fc0e4c"
+            ],
+            "content": " <h3>Zepto's Börsengang</h3> <p>Der indische Quick-Commerce-Start-up Zepto bereitet sich auf einen Börsengang vor, der das Unternehmen auf etwa 1 Milliarde Dollar bewerten könnte. Dieser Schritt bringt eines der größten Investitionsprojekte von Y Combinator außerhalb der USA auf den Weg zu den öffentlichen Märkten.</p> <p>Die am Montag veröffentlichte Bewerbung gibt einen seltenen Einblick in die Pläne des Start-ups, sein explosives Wachstum nach der Notierung aufrechtzuerhalten. Zeptos Werbeeinnahmen stiegen im Vergleich zum Vorjahr um mehr als 151 % auf 16,4 Milliarden Rupien (etwa 171 Millionen Dollar), während der Umsatz um 104 % auf 115,5 Milliarden Rupien (rund 2,4 Milliarden Dollar) anstieg.</p> <h3>Wachstum und Verluste</h3> <p>Trotz der intensiven Konkurrenz in Indiens stark umkämpftem Quick-Commerce-Markt hat Zepto weiterhin Kunden und Bestellungen in rasantem Tempo hinzugewonnen. Im Jahr 2026 verarbeitete das Start-up über 640 Millionen Bestellungen, fast doppelt so viele wie im Vorjahr, während die jährlichen transaktionsaktiven Benutzer auf fast 48 Millionen anstiegen.</p> <p>Das Wachstum hat jedoch auch einen Preis. Zepto bleibt weiterhin defizitär und verzeichnete im Jahr 2026 einen Nettoverlust von 59,1 Milliarden Rupien (etwa 617,36 Millionen Dollar), im Vergleich zu 47,0 Milliarden Rupien (rund 492,45 Millionen Dollar) im Vorjahr.</p> <h3>IPO-Pläne</h3> <p>Zepto plant, bis zu 80,1 Milliarden Rupien (etwa 837,41 Millionen Dollar) durch eine neue Aktienemission aufzubringen. Der Börsengang wird auch ein Angebot von bis zu 113,5 Millionen Aktien von bestehenden Investoren wie Nexus Venture Partners, Contrary und Razor Ventures umfassen, wobei die endgültige Größe des Verkaufs von der endgültigen Preisgestaltung des Angebots abhängt.</p> <p>Das Start-up teilte auch mit, dass es möglicherweise bis zu 16,02 Milliarden Rupien (etwa 167 Millionen Dollar) von Investoren in einer vorbörslichen Platzierung vor der Notierung aufbringen wird.</p> <p><em>BytePost-Einordnung: Der geplante Börsengang von Zepto unterstreicht die dynamische Entwicklung des indischen Quick-Commerce-Marktes. Während das Start-up weiterhin stark wächst, bleibt es abzuwarten, wie es seine Wachstumsrate nach der Notierung aufrechterhalten kann.</em></p> ",
+            "content_simple": " <p>Der indische Start-up Zepto bereitet sich auf einen Börsengang vor. Das Unternehmen will etwa 1 Milliarde Dollar aufbringen. Zepto ist ein Quick-Commerce-Unternehmen, das Lebensmittel und andere Produkte schnell liefert.</p> <p>Das Wachstum von Zepto ist sehr schnell. Das Unternehmen hat im letzten Jahr viel mehr Bestellungen und Kunden gewonnen. Trotzdem macht Zepto noch Verluste. Das Unternehmen will Geld aufbringen, um weiter zu wachsen.</p> ",
+            "content_pro": " <h3>Architektur und Technologie</h3> <p>Zepto nutzt eine Vielzahl von Technologien, um sein Quick-Commerce-Geschäft zu betreiben. Dazu gehören Data-Analytics-Tools, um Kundenverhaltensdaten zu analysieren, und Machine-Learning-Algorithmen, um die Prozesse zu optimieren.</p> <p>Das Unternehmen verwendet auch eine eigene Logistik- und Lieferplattform, um die Bestellungen schnell und effizient zu bearbeiten. Die Plattform ermöglicht es Zepto, die Bestellungen in Echtzeit zu verfolgen und die Kunden über den Status ihrer Bestellungen zu informieren.</p> <h3>Wachstum und Skalierbarkeit</h3> <p>Zeptos Wachstum ist sehr schnell, und das Unternehmen muss seine Systeme und Prozesse entsprechend skalieren. Dazu gehören die Einrichtung neuer Lager und die Erweiterung der Lieferflotte.</p> <p>Das Unternehmen muss auch sicherstellen, dass seine Systeme und Prozesse weiterhin effizient und zuverlässig sind, wenn das Wachstum anhält. Dazu gehören regelmäßige Wartung und Updates der Systeme und die Weiterbildung der Mitarbeiter.</p> ",
+            "date": "09.06.2026",
+            "id": "0c390934",
+            "url": "https://techcrunch.com/2026/06/08/zeptos-ipo-filing-reveals-fast-growth-bigger-losses-and-a-valuation-question-nobodys-answered-yet/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": null,
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "💸",
+            "title": "Mercor-Angriff auf Sequoia",
+            "source": "TechCrunch",
+            "read": "3 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "16fc0e4c"
+            ],
+            "content": "         <h3>Kritik an Sequoia</h3>         <p>Mercors Brendan Foody hat Sequoia vorgeworfen, ein sogenanntes „Dual-Preis“-Trick zu nutzen, um die Bewertung von Startups zu manipulieren. Sequoia ist nur eines der Top-Unternehmen, die dieselben Aktien zu zwei unterschiedlichen Preisen verkaufen. In den letzten Tagen haben Gründer und ehemalige Gründer, die nun Investoren sind, auf X ihre Horror-Geschichten über die schlechte Behandlung durch Risikokapitalgeber (VCs) geteilt.</p>         <p>Die Beschwerden reichten von VCs, die während Pitch-Meetings einschliefen, bis hin zu Investoren, die einem Gründer nahelegten, einen Co-Gründer zu entlassen. Brendan Foody, Co-Gründer der KI-Talentplattform Mercor, die zuletzt auf 10 Milliarden Dollar bewertet wurde, ging so weit, Sequoia, eines der Elite-VC-Unternehmen der Welt, direkt zu kritisieren.</p>         <p>„Der ‚Sequoia-Betrug‘ ist schlimmer als eine einzelne Horror-Geschichte“, schrieb Foody auf X. „In den letzten 6 Monaten habe ich ein halbes Dutzend Runden gesehen, in denen Sequoia in 2 Tranchen investiert. Jeder tut so, als ob nur die höhere Bewertung gezahlt worden sei. Gründer vermitteln diese Information falsch an ihre Mitarbeiter und bieten sie dann auch an Engel investoren an.“</p>         <p>TechCrunch hat bereits über VCs berichtet, die in derselben Runde zu unterschiedlichen Bewertungen investieren. Bei diesem Mechanismus investiert das lead-VC-Unternehmen einen größeren Teil seines Kapitals zu einem niedrigeren, bevorzugten Preis, während ein viel kleinerer Teil des Kapitals zu einem wesentlich höheren Preis investiert wird.</p>         <h3>Reaktion von Sequoia</h3>         <p>Die massive „Headline“-Bewertung, die bekannt gegeben wird, erzeugt die Meinung, dass es sich um einen dominanten Marktführer handelt und maskiert die Tatsache, dass der tatsächliche Durchschnitts-Einstiegspreis des lead-Investors wesentlich niedriger war. Der Unterschied kann erheblich sein.</p>         <p>Sequoias Shaun Maguire hat sich direkt gegen Foodys Charakterisierung ausgesprochen. „Ehrlich gesagt, ich habe einige solcher Verhaltensweisen gesehen, aber ich glaube, es ist unfair, es den ‚Sequoia-Betrug‘ zu nennen“, schrieb Maguire in einer Antwort auf Foody auf X. „Das ist etwa fünf Mal während meiner sieben Jahre bei Sequoia passiert. Was passiert, ist, dass andere Investoren einen hohen Preis für ein heißes Unternehmen – normalerweise KI – zahlen, meist zu Mehrfachpreisen dessen, was wir zahlen möchten.“</p>         <p>Maguires Antwort interpretiert die Praxis als ein Markt-Phänomen und nicht als bewusste Manipulation. Sequoia sei einfach nicht bereit, den Preis zu zahlen, den die Konkurrenz für die heißesten Deals zahle, daher strukturiere das Unternehmen seine Beteiligung anders.</p>         <h3>Fazit</h3>         <p>Die Frage, ob diese Erklärung vollständig überzeugt, hängt von der Frage ab, was die Gründer den Menschen erzählen, die nicht bereits von der niedrigeren Tranche wissen. Obwohl Sequoia diese Preis-Mechanismen offensichtlich verwendet, gab Foody zu, dass es nicht das einzige Unternehmen ist, das diese Taktik nutzt.</p>         <p>Die doppelten Preis-Strukturen blähen das wahrgenommene Wert des Startups auf und helfen, Top-Talent anzuziehen, die Bezeichnung dieser Praxis als „Betrug“ mag jedoch zu weit gehen. Denn Mitarbeiter-Aktienoptionen sollten theoretisch auf Grundlage des gemischten Wertes aller Tranchen und nicht nur des Headline-Preises bewertet werden, so Jason Woo, Partner bei Armanino, dessen Firma die unabhängigen 409A-Schätzungen durchführt, die Startups verwenden, um Options-Preise festzulegen.</p>         <p><em>BytePost-Einordnung: Die Geschichte zeigt, dass die Welt der Risikokapitalgeber und Startups komplex und vielschichtig ist. Als Entwickler ist es wichtig, sich der möglichen Fallstricke und Manipulationen bewusst zu sein, um fundierte Entscheidungen treffen zu können.</em></p>     ",
+            "content_simple": "         <p>Der Gründer eines Unternehmens namens Mercor hat ein bekanntes Risikokapital-Unternehmen namens Sequoia kritisiert. Er behauptet, dass Sequoia eine Art Trick anwendet, um die Bewertung von Startups zu manipulieren. Dieser Trick nennt sich „Dual-Preis“ und bedeutet, dass dasselbe Unternehmen zu zwei unterschiedlichen Preisen verkauft wird.</p>         <p>Der Kritiker, Brendan Foody, sagt, dass dies unfair gegenüber den Gründern und Mitarbeitern der Startups ist. Er behauptet, dass Sequoia dies getan hat, um die Bewertung von Startups künstlich aufzublasen und so mehr Investitionen anzuziehen.</p>     ",
+            "content_pro": "         <h3>Technische Aspekte</h3>         <p>Das sogenannte „Dual-Preis“-Modell, das Sequoia verwendet, ist ein komplexes Finanzkonzept. Es basiert auf der Idee, dass ein Unternehmen zu zwei unterschiedlichen Preisen verkauft wird, um die Bewertung künstlich zu erhöhen. Dies kann durch die Strukturierung von Investitionen in zwei Tranchen erreicht werden, wobei die erste Tranche zu einem niedrigeren Preis und die zweite Tranche zu einem höheren Preis erfolgt.</p>         <p>Die technischen Aspekte dieses Modells sind vielschichtig und erfordern ein tiefes Verständnis von Finanzinstrumenten und Bewertungsmodellen. Es ist wichtig, dass Entwickler und Gründer sich dieser Komplexität bewusst sind, um fundierte Entscheidungen treffen zu können.</p>     ",
+            "date": "09.06.2026",
+            "id": "2af0cc23",
+            "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/2af0cc23.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🚀",
+            "title": "Wind Runners: Roguelite-Dogfighter",
+            "source": "Rock Paper Shotgun",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "593c297c",
+                "f95157de",
+                "16fc0e4c"
+            ],
+            "content": "         <h3>Einleitung in Wind Runners</h3>         <p>Wind Runners ist ein neuer Roguelite-Dogfighter, der von Twin Sails Interactive und Ludic Studios entwickelt wurde. Der Autor des Artikels ist ein großer Fan von Dogfighting-Spielen und hat bereits Erfahrungen mit Elite und Luftrausers gesammelt. Allerdings hat er Schwierigkeiten, seine Flugmanöver zu kontrollieren, insbesondere wenn es darum geht, aus einem Angriff auszubrechen.</p>         <p>Die Demo von Wind Runners ist auf Steam verfügbar und bietet eine Vorschau auf das Spiel. Der Autor hat versucht, einen einzigen Lauf des Spiels zu absolvieren, aber seine Flugfähigkeiten sind offenbar nicht gut genug. Er wird immer wieder von den Feinden abgeschossen, bevor er die Boss-Schlacht erreichen kann.</p>         <h3>Spielmechanik und Grafik</h3>         <p>Wind Runners hat eine ähnliche Spielmechanik wie Luftrausers, aber mit einigen wichtigen Unterschieden. Das Spiel hat eine Roguelite-Struktur, bei der jeder Lauf aus drei Stufen besteht. Jede Stufe hat ein anderes Ziel, wie zum Beispiel die Zerstörung von feindlichen Flugzeugen oder die Vernichtung von Bodenzielen. Nach dem Abschluss von drei Stufen muss der Spieler gegen den Admiral des feindlichen Planeten kämpfen.</p>         <p>Die Grafik von Wind Runners ist sehr farbenfroh und erinnert an eine Saturday-Morning-Cartoon-Serie. Die Schiffe und die Umgebung sind detailliert und schön animiert. Die Kämpfe sind actionreich und herausfordernd, insbesondere wenn der Spieler gegen mehrere Feinde gleichzeitig kämpfen muss.</p>         <h3>Schwierigkeiten und Herausforderungen</h3>         <p>Der Autor des Artikels hat Schwierigkeiten, seine Flugfähigkeiten zu verbessern, insbesondere bei der Vermeidung von feindlichem Beschuss. Er neigt dazu, zu aggressiv zu spielen und zu lange in einem Angriff zu bleiben, anstatt sich zurückzuziehen und eine neue Strategie zu entwickeln.</p>         <p>Wind Runners bietet einige Herausforderungen und Schwierigkeitsgrade, die den Spieler dazu anregen, seine Fähigkeiten zu verbessern. Der Spieler muss lernen, seine Schiffe zu steuern, seine Waffen zu nutzen und seine Gegner zu besiegen. Das Spiel bietet auch einige Überraschungen und unvorhersehbare Ereignisse, die den Spieler auf die Probe stellen.</p>         <p><em>BytePost-Einordnung: Wind Runners ist ein interessantes Spiel, das Dogfighting-Fans ansprechen könnte. Es bietet eine Herausforderung und eine Vielzahl von Spielmechaniken, die den Spieler dazu anregen, seine Fähigkeiten zu verbessern. Es bleibt abzuwarten, ob das Spiel langfristig erfolgreich sein wird, aber es lohnt sich, es auszuprobieren.</em></p>     ",
+            "content_simple": "         <p>Wind Runners ist ein neues Spiel, bei dem man gegen andere Flugzeuge kämpft. Der Autor des Artikels ist ein großer Fan von solchen Spielen, aber er hat Schwierigkeiten, seine Flugfähigkeiten zu kontrollieren. Das Spiel ist sehr farbenfroh und hat eine schöne Grafik.</p>         <p>Der Spieler muss lernen, seine Schiffe zu steuern und seine Gegner zu besiegen. Es gibt verschiedene Herausforderungen und Schwierigkeitsgrade, die den Spieler dazu anregen, seine Fähigkeiten zu verbessern. Wind Runners ist ein interessantes Spiel, das Fans von Dogfighting-Spielen ansprechen könnte.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Wind Runners verwendet eine Roguelite-Struktur, bei der jeder Lauf aus drei Stufen besteht. Jede Stufe hat ein anderes Ziel, wie zum Beispiel die Zerstörung von feindlichen Flugzeugen oder die Vernichtung von Bodenzielen. Die Spielmechanik ist ähnlich wie bei Luftrausers, aber mit einigen wichtigen Unterschieden.</p>         <p>Die Grafik von Wind Runners ist sehr detailliert und schön animiert. Die Schiffe und die Umgebung sind farbenfroh und haben eine gute Lichtgebung. Die Kämpfe sind actionreich und herausfordernd, insbesondere wenn der Spieler gegen mehrere Feinde gleichzeitig kämpfen muss.</p>         <h3>Programmierung und Entwicklung</h3>         <p>Wind Runners wurde von Twin Sails Interactive und Ludic Studios entwickelt. Die Entwicklung des Spiels war anspruchsvoll, insbesondere bei der Implementierung der Roguelite-Struktur und der Spielmechanik. Die Entwickler mussten sicherstellen, dass das Spiel herausfordernd, aber nicht zu schwierig ist.</p>         <p>Die Programmierung des Spiels wurde in einer Programmiersprache wie C++ oder Java durchgeführt. Die Entwicklungsumgebung bestand aus einem Team von Entwicklern, die zusammenarbeiteten, um das Spiel zu erstellen. Die Entwickler mussten auch sicherstellen, dass das Spiel auf verschiedenen Plattformen wie Windows, Mac und Linux läuft.</p>     ",
+            "date": "09.06.2026",
+            "id": "3feb840d",
+            "url": "https://www.rockpapershotgun.com/just-like-luftrausers-before-it-wind-runners-is-proving-im-too-careless-a-pilot-to-survive-a-bullet-hell-dogfight",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/3feb840d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "security",
                 "dev"
             ],
@@ -144,7 +380,7 @@
                 "sleep": 0
             },
             "image_local": "images/b91bc74c.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Sicherheit von Entwicklern ist heute auf dem Spiel, da das IronWorm-Malware Bedrohungslevel erreicht hat. Dieses gefährliche Malware kann nicht nur Daten stehlen, sondern auch ganze Systeme lahmlegen und somit die Arbeit von Entwicklern massiv behindern. Es ist daher wichtig, dass Entwickler sofort handeln und ihre Systeme auf mögliche Angriffe überprüfen, um ihre Arbeit und ihre Daten zu schützen."
         },
         {
@@ -41305,10 +41541,10 @@
         }
     ],
     "bytepulse": {
-        "date": "08.06.2026",
-        "positiv": 22,
-        "neutral": 56,
-        "kritisch": 22,
-        "total": 9
+        "date": "09.06.2026",
+        "positiv": 25,
+        "neutral": 38,
+        "kritisch": 38,
+        "total": 8
     }
 }
