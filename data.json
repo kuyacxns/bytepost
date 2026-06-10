@@ -2,6 +2,95 @@
     "articles": [
         {
             "cat": [
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "Lösung für Node-Löschproblem",
+            "source": "LeetCode",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "40d5e86d",
+                "41228e0a",
+                "593c297c"
+            ],
+            "content": "         <h3>Einführung</h3>         <p>Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knoten, um einen Knoten zu löschen. In diesem Problem wird jedoch nur der Knoten angegeben, der gelöscht werden soll. Kein Kopf, kein vorheriger Zeiger. Wie können wir ihn also entfernen? Lassen Sie uns den Trick verstehen.</p>         <h3>Problemstatement</h3>         <p>Schreiben Sie eine Funktion, um einen Knoten in einer einfachen verketteten Liste zu löschen. Ihnen wird nicht der Kopf der Liste gegeben. Stattdessen erhalten Sie nur den Knoten, der gelöscht werden soll.</p>         <h3>Beispiel</h3>         <p>Eingabe: 4 -> 5 -> 1 -> 9, Knoten = 5. Ausgabe: 4 -> 1 -> 9.</p>         <h3>Anfangsgedanke</h3>         <p>Normalerweise löschen wir einen Knoten wie folgt: prev.next = node.next. Aber hier haben wir keinen vorherigen Zeiger, keinen Kopf. Der übliche Löschansatz ist also unmöglich.</p>         <h3>Schlüsselbeobachtung</h3>         <p>Obwohl wir den aktuellen Knoten nicht direkt löschen können, können wir ihn so manipulieren, dass es aussieht, als hätte er nie existiert. Betrachten Sie: 4 -> 5 -> 1 -> 9. Wir müssen den Knoten 5 löschen. Anstatt den Knoten 5 zu entfernen, kopieren wir den Wert des nächsten Knotens in ihn. 4 -> 1 -> 1 -> 9. Jetzt entfernen wir den nächsten Knoten. 4 -> 1 -> 9. Der ursprüngliche Wert 5 ist verschwunden.</p>         <h3>Intuition</h3>         <p>Kopieren Sie den Wert des nächsten Knotens in den aktuellen Knoten. Überspringen Sie den nächsten Knoten. Der aktuelle Knoten verhält sich jetzt so, als wäre er gelöscht. Da das Problem garantiert, dass der angegebene Knoten nicht der letzte Knoten ist, wird immer ein nächster Knoten existieren.</p>         <h3,optimaler Java-Lösung</h3>         <p>class Solution { public void deleteNode (ListNode node) { ListNode cur = node.next; node.val = cur.val; node.next = cur.next; } }</p>     ",
+            "content_simple": "         <p>Stellen Sie sich eine Liste von Zahlen vor. Sie sollen eine bestimmte Zahl aus dieser Liste löschen, aber Sie dürfen nicht an den Anfang oder das Ende der Liste gehen. Wie machen Sie das? Die Lösung besteht darin, die Zahl, die nach der zu löschenden Zahl kommt, an die Stelle der zu löschenden Zahl zu setzen. Dann entfernen Sie die nächste Zahl. So verschwindet die ursprüngliche Zahl.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Lösung nutzt die Eigenschaften von verketteten Listen, um den zu löschenden Knoten zu ersetzen. Durch das Kopieren des Werts des nächsten Knotens in den aktuellen Knoten und das Überspringen des nächsten Knotens wird der aktuelle Knoten effektiv gelöscht. Diese Methode ist effizient, da sie nur die direkte Manipulation der beteiligten Knoten erfordert, ohne dass der Zugriff auf den Kopf oder vorherige Knoten erforderlich ist.</p>         <h3>Architektur und Datenstrukturen</h3>         <p>Verkettete Listen sind eine grundlegende Datenstruktur in der Informatik. Sie bestehen aus Knoten, die jeweils einen Wert und einen Zeiger auf den nächsten Knoten in der Liste enthalten. Durch die Verwendung von Zeigern können Knoten effizient hinzugefügt oder entfernt werden, ohne dass die gesamte Liste neu angeordnet werden muss.</p>     ",
+            "date": "10.06.2026",
+            "id": "ee47fc99",
+            "url": "https://dev.to/jaspreet_singh_86ae1740ac/delete-node-in-a-linked-list-27d3",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/ee47fc99.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "💻",
+            "title": "NVIDIA Nemotron-Pretraining-Code-v3",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "ee47fc99",
+                "41228e0a",
+                "593c297c"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>In diesem Tutorial arbeiten wir mit dem NVIDIA Nemotron-Pretraining-Code-v3-Datensatz als einem großen Metadatenindex für Code-Pre-Training-Forschung. Wir streamen das Dataset anstelle es herunterzuladen, untersuchen sein Schema und bauen eine handhabbare Stichprobe. Wir analysieren Sprachen, Dateierweiterungen, Repository-Häufigkeit und Verzeichnistiefe, um die Indexstruktur zu verstehen.</p>         <p>Wir setzen uns in dieser Anleitung mit der NVIDIA Nemotron-Pretraining-Code-v3-Datensatz-ID auseinander, entdecken die verfügbaren Dataset-Konfigurationen und laden den Trainings-Teilsatz im Streaming-Modus. Wir untersuchen auch das Dataset-Schema und drucken die erste Aufzeichnung, um die Struktur vor einer tieferen Analyse zu verstehen.</p>         <h3>Erstellung einer verwürfelten Stichprobe und Analyse von Code-Metadaten-Merkmalen</h3>         <p>Wir erstellen eine verwürfelte Stichprobe aus dem gestreamten Dataset, so dass wir nicht nur auf die ersten Cluster-Aufzeichnungen angewiesen sind. Wir konvertieren die ausgewählten Aufzeichnungen in ein Pandas-DataFrame und leiten nützliche Merkmale wie Dateierweiterung, Verzeichnistiefe und Dateiname ab.</p>         <p>Wir untersuchen die am häufigsten vorkommenden Sprachen, Dateierweiterungen, Repositorys und Verzeichnistiefe-Statistiken, um die Stichprobe-Metadaten besser zu verstehen.</p>         <h3>Visualisierung von Sprachen, Dateierweiterungen, Verzeichnistiefe und Repository-Häufigkeit</h3>         <p>Wir verwenden die matplotlib-Bibliothek, um die Ergebnisse der Analyse zu visualisieren und besser zu verstehen.</p>         <p><em>BytePost-Einordnung: Dieses Tutorial bietet eine umfassende Anleitung für die Arbeit mit dem NVIDIA Nemotron-Pretraining-Code-v3-Datensatz und zeigt, wie man ein Dataset-Pipeline-System aufbaut, um Code-Pre-Training-Forschung zu unterstützen.</em></p>     ",
+            "content_simple": "         <p>Was passiert, wenn man einen riesigen Datensatz mit Code-Beispielen durchforstet? Ein neues Tutorial zeigt, wie man das tut. Man braucht dazu den NVIDIA Nemotron-Pretraining-Code-v3-Datensatz.</p>         <p>Das Tutorial erklärt, wie man den Datensatz streamt, das Schema analysiert und eine handhabbare Stichprobe erstellt. Es geht auch um die Analyse von Code-Merkmalen wie Sprachen und Dateierweiterungen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der NVIDIA Nemotron-Pretraining-Code-v3-Datensatz ist ein großes Metadaten-Index-System für Code-Pre-Training-Forschung. Wir verwenden die Hugging Face Datasets-Bibliothek, um das Dataset im Streaming-Modus zu laden und zu analysieren.</p>         <p>Wir verwenden auch die Pandas-Bibliothek, um die Daten zu manipulieren und zu analysieren. Die Ergebnisse werden mit der matplotlib-Bibliothek visualisiert.</p>         <h3>Kritische Einordnung</h3>         <p>Die Arbeit mit großen Datensätzen erfordert sorgfältige Planung und Ausführung. Es ist wichtig, die richtigen Werkzeuge und Bibliotheken zu verwenden, um die Daten effizient zu analysieren und zu visualisieren.</p>     ",
+            "date": "10.06.2026",
+            "id": "40d5e86d",
+            "url": "https://www.marktechpost.com/2026/06/09/building-a-code-dataset-pipeline-from-nvidia-nemotron-pretraining-code-v3-metadata-with-streaming-pandas-and-tiktoken/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/40d5e86d.jpg",
+            "pick": true,
+            "pick_reason": "Die Revolution im Pretraining ist da: NVIDIA enthüllt den Nemotron-Pretraining-Code-v3, der das Potenzial hat, die Art und Weise, wie wir künstliche Intelligenz trainieren, grundlegend zu verändern. Mit diesem Code können Entwickler ihre Modelle schneller und effizienter trainieren, was zu besseren Ergebnissen und neuen Möglichkeiten führen kann. Die Frage ist, wie schnell Entwickler diese Technologie nutzen können, um ihre eigenen Projekte zu revolutionieren."
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🎸",
+            "title": "Stage Tour enthüllt erste Songs",
+            "source": "Kotaku",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "ee47fc99",
+                "40d5e86d",
+                "593c297c"
+            ],
+            "content": "         <h3>Die Wiederkehr der Musik-Spiele</h3>         <p>Die Guitar Hero-Serie ist Geschichte, aber aus demselben Studio, das Guitar Hero erschuf, kommt ein neues Spiel namens Stage Tour. Ein entscheidender Bestandteil jedes guten Musikspiels ist seine Tracklist, und das von Embracerowned RedOctane Games hat die ersten sieben Songs für Stage Tour angekündigt.</p>         <p>Die offiziell lizenzierte Setlist umfasst Songs aus verschiedenen Genres und enthält große Namen wie Red Hot Chili Peppers, Weezer und Ghost. Die Tracks von Stage Tour sind:</p>         <ul>             <li>\"RATATATA\" von Babymetal & Electric Callboy</li>             <li>\"Get the Funk Out\" von Extreme</li>             <li>\"Square Hammer\" von Ghost</li>             <li>\"Mimi's Delivery Service\" von Good Kid</li>             <li>\"Dani California\" von Red Hot Chili Peppers</li>             <li>\"Terminator Oscillator\" von Static-X</li>             <li>\"Island in the Sun\" von Weezer</li>         </ul>         <p>RedOctane wird später im Sommer weitere Künstler und Tracks ankündigen, bevor das Spiel im Laufe des Jahres auf Konsole und PC erscheint. Genau wie Guitar Hero und Rock Band zuvor, ermöglicht Stage Tour es Spielern, in Gruppen oder solo auf Gitarre, Schlagzeug, Keyboard und Gesang zu spielen.</p>         <p>Einige der Gitarren, die im Spiel verfügbar sind, wurden in Zusammenarbeit mit Gibson's Kramer entwickelt. Außerdem gibt es ein Modulator-Gitarren-Kit. Stage Tour enthält auch Gitarren von Gibson, Epiphone und Kramer, darunter die ikonische Gibson SG.</p>         <p><em>BytePost-Einordnung: Stage Tour bringt Musik-Spiele zurück und bietet eine gute Mischung aus alten und neuen Songs. Es bleibt abzuwarten, ob das Spiel die Erwartungen der Fans erfüllen kann.</em></p>     ",
+            "content_simple": "         <p>Ein neues Musik-Spiel namens Stage Tour kommt bald raus. Es enthält Songs von großen Bands wie Red Hot Chili Peppers und Weezer. Das Spiel bietet verschiedene Gitarren und ermöglicht es Spielern, solo oder in Gruppen zu spielen.</p>         <p>Stage Tour wird im Laufe des Jahres auf Konsole und PC erscheinen und wird von RedOctane Games entwickelt.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Stage Tour verwendet eine speziell entwickelte Gitarren-Controller, die in Zusammenarbeit mit Gibson's Kramer entstand. Das Spiel unterstützt auch ein Modulator-Gitarren-Kit.</p>         <p>Die Spiel-Engine von Stage Tour ermöglicht es Spielern, in verschiedenen Modi zu spielen, einschließlich Solo- und Gruppen-Modus. Das Spiel enthält auch eine Vielzahl von Gitarren-Modellen, darunter die ikonische Gibson SG.</p>         <h3>Architektur</h3>         <p>Das Spiel verwendet eine client-server-Architektur, um die Spiel-Daten zu verwalten und die Spiel-Logik auszuführen.</p>     ",
+            "date": "10.06.2026",
+            "id": "41228e0a",
+            "url": "https://www.gamespot.com/articles/the-new-guitar-hero-err-stage-tour-reveals-its-first-songs/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/41228e0a.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "ki"
             ],
             "icon": "🚀",
@@ -86,7 +175,7 @@
                 "sleep": 0
             },
             "image_local": "images/16fc0e4c.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Cloudflares neueste Integration von Bedrohungsindikatoren in ihre Web-Anwendungssicherheits-Firewall (WAF) markiert einen bedeutenden Schritt in der Cybersicherheit. Damit können Entwickler und Unternehmen ihre Anwendungen effektiver vor komplexen Bedrohungen schützen und gleichzeitig die Sicherheit ihrer Nutzer erhöhen. Dies ist besonders wichtig, da die Zahl der Cyberangriffe stetig steigt und eine zuverlässige Abwehr strategisch immer wichtiger wird."
         },
         {
@@ -41541,10 +41630,10 @@
         }
     ],
     "bytepulse": {
-        "date": "09.06.2026",
-        "positiv": 25,
-        "neutral": 38,
-        "kritisch": 38,
-        "total": 8
+        "date": "10.06.2026",
+        "positiv": 33,
+        "neutral": 67,
+        "kritisch": 0,
+        "total": 3
     }
 }
