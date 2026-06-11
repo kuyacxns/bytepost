@@ -2,6 +2,298 @@
     "articles": [
         {
             "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Andrew Yang startet Noble Mobile",
+            "source": "TechCrunch",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "0b471f64",
+                "22cc5267",
+                "dae903d1"
+            ],
+            "content": "         <h3>Andrew Yang: Noble Mobile und der Kampf gegen die Aufmerksamkeitswirtschaft</h3>         <p>Andrew Yangs Präsidentschaftskampagne 2020 basierte auf einer Warnung, dass Automation und künstliche Intelligenz (KI) den Arbeitsmarkt aushöhlen und den Reichtum in den Händen weniger konzentrieren würden. Zu diesem Zeitpunkt galten Ideen wie das bedingungslose Grundeinkommen (Universal Basic Income, UBI) als randständig. Jetzt sagen Dario Amodei, Sam Altman und Bernie Sanders Versionen desselben aus.</p>         <p>Als Unternehmer hat Andrew Yang eine neue Möglichkeit gefunden, Geld in die Hände der Menschen zu bringen – eine Telefonrechnung nach der anderen. In dieser Folge des TechCrunch-Podcasts Equity spricht Rebecca Bellan mit Yang über sein Startup Noble Mobile, das Nutzern zahlt, wenn sie ihr Telefon weniger nutzen, über Wege, um die Aufmerksamkeitswirtschaft zu bekämpfen, und darüber, was Startups tun können, wenn die Regierung nicht handelt.</p>         <p>Das Gespräch deckt folgende Themen ab:</p>         <ul>             <li>Warum Yang den 100-Milliarden-Dollar-Gap zwischen dem, was Amerikaner und Europäer für ihren Mobilfunk bezahlen, als eine Startup-Gelegenheit sieht.</li>             <li>Wie eine Partnerschaft mit dem Light Phone in die wachsende „Zusammen-Tech“-Bewegung passt und warum Yang in Los Angeles und New York City Telefon-Partys veranstaltet.</li>             <li>Was er wirklich über Bernie Sanders' vorgeschlagenen AI-Souveränitätsfonds denkt und warum er skeptisch ist, ob das Geld wirklich durch die Regierung fließen sollte.</li>             <li>Warum das UBI kein Ersatz für ein Gehalt ist, sondern eine „Landeplattform“ und wie Noble Mobiles jährliche Ersparnis von 600 Dollar damit zusammenhängt.</li>         </ul>         <p>Abonnieren Sie Equity auf YouTube, Apple Podcasts, Overcast, Spotify und allen anderen Plattformen. Sie können Equity auch auf X und Threads unter @EquityPod folgen.</p>         <p><em>BytePost-Einordnung: Andrew Yangs Ansatz, durch Noble Mobile Geld in die Hände der Nutzer zu bringen, ist ein interessanter Versuch, die Aufmerksamkeitswirtschaft zu bekämpfen. Es bleibt abzuwarten, ob dies langfristig erfolgreich sein wird, aber es ist ein wichtiger Schritt in Richtung einer nachhaltigeren Nutzung von Technologie.</em></p>",
+            "content_simple": "         <p>Andrew Yang hat ein neues Startup namens Noble Mobile gegründet, das Menschen bezahlt, wenn sie ihr Telefon weniger nutzen. Dies soll dazu beitragen, die Aufmerksamkeitswirtschaft zu bekämpfen, die durch soziale Medien und andere Online-Dienste entsteht.</p>         <p>Yang glaubt, dass dies ein wichtiger Schritt ist, um die Menschen wieder mehr in die Realität zu bringen und sie von ihrer ständigen Ablenkung durch das Telefon zu befreien. Noble Mobile soll auch dazu beitragen, dass Menschen mehr Geld in der Tasche haben, indem sie ihre Telefonrechnungen reduzieren.</p>",
+            "content_pro": "         <h3>Technische Details von Noble Mobile</h3>         <p>Noble Mobile basiert auf einer Kombination von künstlicher Intelligenz und maschinellem Lernen, um die Nutzungsmuster von Mobilfunknutzern zu analysieren und zu verstehen, wie sie ihr Telefon nutzen. Durch diese Analyse kann Noble Mobile den Nutzern Anreize anbieten, um ihr Telefon weniger zu nutzen und stattdessen mehr Zeit in der Realität zu verbringen.</p>         <p>Es bleibt abzuwarten, ob Noble Mobile langfristig erfolgreich sein wird, aber es ist ein interessanter Ansatz, um die Aufmerksamkeitswirtschaft zu bekämpfen und die Menschen wieder mehr in die Realität zu bringen. Es ist auch ein wichtiger Schritt in Richtung einer nachhaltigeren Nutzung von Technologie.</p>",
+            "date": "11.06.2026",
+            "id": "43b5128d",
+            "url": "https://techcrunch.com/podcast/andrew-yang-on-noble-mobile-ubi-and-why-hes-done-waiting-for-policy-to-catch-up/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/43b5128d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "dev",
+                "business"
+            ],
+            "icon": "💻",
+            "title": "SaaS-Projekte scheitern oft",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "43b5128d",
+                "22cc5267",
+                "dae903d1"
+            ],
+            "content": "         <h3>Der Traum vom eigenen SaaS</h3>         <p>Der Traum von vielen Entwicklern ist es, ein eigenes SaaS (Software as a Service) zu gründen. Doch leider scheitern die meisten SaaS-Projekte. Warum ist das so? Und wie kann man es besser machen?</p>         <p>Die Einstiegshürde für ein eigenes SaaS ist heute niedriger als je zuvor. Es gibt viele Tools und Plattformen, die es ermöglichen, ein SaaS-Projekt schnell und einfach zu starten. Doch trotz dieser Möglichkeiten scheitern viele SaaS-Projekte.</p>         <p>Ein Grund für das Scheitern von SaaS-Projekten ist, dass die Entwickler oft nicht genug über den Markt und die Bedürfnisse ihrer Kunden wissen. Sie entwickeln ein Produkt, das sie selbst verwenden würden, aber nicht unbedingt das, was ihre Kunden benötigen.</p>         <h3>Wie geht es besser?</h3>         <p>Um ein erfolgreiches SaaS-Projekt zu gründen, muss man sich auf die Bedürfnisse der Kunden konzentrieren. Man sollte recherchieren, was die Kunden benötigen und wie man ihre Probleme lösen kann. Es ist auch wichtig, ein Produkt zu entwickeln, das einfach zu verwenden ist und sich von der Konkurrenz abhebt.</p>         <p>Ein weiterer wichtiger Punkt ist die Finanzierung. Ein SaaS-Projekt benötigt oft viel Geld, um es auf den Markt zu bringen und es successful zu machen. Man sollte sich überlegen, wie man das notwendige Kapital beschaffen kann, um das Projekt erfolgreich zu machen.</p>         <p>Es gibt auch viele Beispiele von erfolgreichen SaaS-Projekten, die man sich als Vorbild nehmen kann. Man sollte sich informieren, wie diese Unternehmen erfolgreich wurden und wie man ihre Strategien anwenden kann, um auch erfolgreich zu sein.</p>         <p><em>BytePost-Einordnung: Der Artikel zeigt, dass das Gründen eines erfolgreichen SaaS-Projekts nicht einfach ist. Es bedarf einer sorgfältigen Planung, Recherche und Finanzierung, um ein Produkt zu entwickeln, das den Bedürfnissen der Kunden entspricht und sich auf dem Markt durchsetzen kann.</em></p>     ",
+            "content_simple": "         <p>Wenn du ein eigenes SaaS-Projekt gründen möchtest, ist es wichtig, dass du den Bedürfnissen deiner Kunden zuerst kompromisslos Priorität gibst. Recherchiere, was sie benötigen und wie du ihre Probleme lösen kannst.</p>         <p>Entwickle ein Produkt, das einfach zu verwenden ist und sich von der Konkurrenz abhebt. Denke daran, dass du auch das notwendige Kapital benötigst, um dein Projekt erfolgreich zu machen.</p>     ",
+            "content_pro": "         <h3>Architektur-Details</h3>         <p>Ein SaaS-Projekt sollte eine skalierbare Architektur haben, um mit der wachsenden Anzahl von Benutzern umgehen zu können. Es gibt viele verschiedene Architektur-Modelle, die man verwenden kann, wie zum Beispiel Microservices oder Monolith.</p>         <p>Es ist auch wichtig, dass man die richtigen Technologien und Tools wählt, um das Projekt erfolgreich zu machen. Man sollte sich überlegen, welche Programmiersprachen, Datenbanken und Frameworks man verwenden kann, um das Projekt zu entwickeln.</p>         <h3>Protokolle und Datenstrukturen</h3>         <p>Bei der Entwicklung eines SaaS-Projekts sollten auch die richtigen Protokolle und Datenstrukturen verwendet werden. Man sollte sich überlegen, wie man die Daten speichert und wie man sie sicher überträgt.</p>         <p>Ein Beispiel für ein Protokoll, das man verwenden kann, ist HTTPS. Es ist wichtig, dass man die Daten sicher überträgt, um die Sicherheit der Benutzer zu gewährleisten.</p>     ",
+            "date": "11.06.2026",
+            "id": "0b471f64",
+            "url": "https://www.golem.de/news/reality-check-der-traum-vom-eigenen-saas-2606-209555.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/0b471f64.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "OpenRouter API verbindet KI-Modelle",
+            "source": "Real Python",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "758d58ca",
+                "b8193c89"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Ein schneller Weg, um mehrere KI-Modelle aus einem einzigen Python-Skript aufzurufen, ist die Verwendung der OpenRouter-API. Diese API fungiert als einheitiche Routing-Schicht zwischen deinem Code und mehreren KI-Anbietern. Durch die Verwendung dieser API kannst du Modelle von verschiedenen Anbietern wie OpenAI, Anthropic, Mistral, Google und Meta aufrufen, ohne dass du deine Anwendungscodes ändern musst.</p>         <p>Der AI-Ökosystem ist stark fragmentiert, da jeder Anbieter seine eigene API, Authentifizierungsschemata, Rate Limits und Modelllinie bereitstellt. Die Arbeit mit mehreren Anbietern erfordert oft zusätzliche Einrichtungs- und Integrationsbemühungen, besonders wenn du mit verschiedenen Modellen experimentieren, Ausgaben vergleichen oder Trade-offs für eine bestimmte Aufgabe bewerten möchtest.</p>         <h3>Was ist OpenRouter?</h3>         <p>OpenRouter gibt dir Zugriff auf Tausende von Modellen von führenden Anbietern. Du kannst zwischen ihnen wechseln, ohne dass du deine Anwendungscodes ändern musst. Die API bietet intelligente Routing-, Fallback- und Kostenkontrollfunktionen.</p>         <p>Zu den Inhalten des Kurses gehören:</p>         <ul>             <li>10 Lektionen</li>             <li>Video-Untertitel und vollständige Transkripte</li>             <li>2 herunterladbare Ressourcen</li>             <li>Begleitendes textbasiertes Tutorial</li>             <li>Interaktiver Quiz, um deinen Fortschritt zu überprüfen</li>             <li>2 Hands-On-Coding-Übungen</li>             <li>Fragen- und Anton-Forum mit Python-Experten</li>             <li>Zertifikat über den Abschluss</li>         </ul>         <p>Der Kurs behandelt Themen wie die Verwendung intelligenter Routing, die Modifizierung von Routing-Verhaltensweisen, die Implementierung von Modell-Fallbacks und die Abwägung von Optionen für die Modellauswahl.</p>         <h3>Zusammenfassung</h3>         <p>Die OpenRouter-API bietet eine einfache und effiziente Möglichkeit, um mehrere KI-Modelle aus einem einzigen Python-Skript aufzurufen. Durch die Verwendung dieser API kannst du deine Anwendungsentwicklung beschleunigen und die Komplexität reduzieren, die mit der Arbeit mit mehreren KI-Anbietern verbunden ist.</p>         <p><em>BytePost-Einordnung: Die OpenRouter-API ist ein wichtiger Schritt in Richtung einer vereinfachten und effizienteren KI-Modell-Integration. Durch die Verwendung dieser API können Entwickler ihre Anwendungsentwicklung beschleunigen und die Komplexität reduzieren, die mit der Arbeit mit mehreren KI-Anbietern verbunden ist.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du möchtest verschiedene KI-Modelle wie Google oder Meta in deinem Programm verwenden. Normalerweise müsstest du für jeden Anbieter extra Code schreiben. Aber es gibt eine Lösung: die OpenRouter-API. Mit dieser API kannst du alle KI-Modelle über eine einfache Schnittstelle aufrufen.</p>         <p>Dies spart nicht nur Zeit, sondern macht es auch einfacher, verschiedene Modelle zu vergleichen oder auszutauschen. Die OpenRouter-API bietet auch Funktionen wie intelligente Routing und Fallbacks, um sicherzustellen, dass dein Programm immer funktioniert.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die OpenRouter-API bietet eine REST-basierte Schnittstelle, um KI-Modelle aufzurufen. Die API unterstützt verschiedene Authentifizierungsschemata, wie API-Schlüssel und OAuth. Durch die Verwendung von intelligentem Routing kann die API den geeignetsten Anbieter für eine bestimmte Anfrage auswählen.</p>         <p>Die API bietet auch Funktionen wie Fallbacks, um sicherzustellen, dass eine Anfrage erfolgreich bearbeitet wird, selbst wenn ein Anbieter nicht verfügbar ist. Die OpenRouter-API unterstützt auch verschiedene Datenformate, wie JSON und CSV.</p>         <h3>Code-Beispiel</h3>         <p>Ein Beispiel für die Verwendung der OpenRouter-API in Python könnte wie folgt aussehen:</p>         <pre><code>import requests  api_key = 'dein_api_schlüssel' model_name = 'das_modell_du_verwenden_möchtest'  url = f'https://openrouter.com/api/v1/{model_name}' headers = {'Authorization': f'Bearer {api_key}'}  response = requests.post(url, headers=headers)  print(response.json())</code></pre>         <p><em>Technische Einordnung: Die OpenRouter-API bietet eine einfache und effiziente Möglichkeit, um mehrere KI-Modelle aus einem einzigen Python-Skript aufzurufen. Durch die Verwendung dieser API können Entwickler ihre Anwendungsentwicklung beschleunigen und die Komplexität reduzieren, die mit der Arbeit mit mehreren KI-Anbietern verbunden ist.</em></p>     ",
+            "date": "11.06.2026",
+            "id": "22cc5267",
+            "url": "https://realpython.com/courses/multiple-ai-models-openrouter-api/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/22cc5267.jpg",
+            "pick": true,
+            "pick_reason": "Die Zukunft der KI-Entwicklung hat begonnen: Die OpenRouter API verbindet KI-Modelle wie nie zuvor und revolutioniert die Art, wie Entwickler mit künstlicher Intelligenz arbeiten. Durch diese Verbindung können Entwickler ihre KI-Modelle effizienter einsetzen und somit ihre Projekte beschleunigen. Damit stellt sich die Frage, ob Ihr Unternehmen bereit ist, den nächsten Schritt in der KI-Entwicklung zu gehen."
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🎧",
+            "title": "Spotify entwickelt AI-Datenassistent",
+            "source": "Spotify Engineering",
+            "read": "2 Min",
+            "sentiment": "positiv",
+            "related": [
+                "13a031fe"
+            ],
+            "content": "         <h3>Das Problem mit Daten bei Spotify</h3>         <p>Früher folgten Datenprobleme bei Spotify einem bestimmten Muster. Man suchte nach dem relevanten Dashboard, aber es gab keines. Man kontaktierte den entsprechenden Datenexperten auf Slack und wartete, bis er Zeit hatte, zu helfen. Doch mit Tausenden von Teams, die schnell arbeiten, überstieg die Nachfrage nach Dateninsights schweigend, was jeder einzelne Experte alleine bewältigen konnte.</p>         <p>Um dieses Problem zu lösen, begannen wir mit der Entwicklung eines KI-Datenassistenten. Aber mit über 70.000 Datensätzen bei Spotify, die Petabytes an Daten umfassen, kann kein Einzelner behaupten, alles zu wissen. Es funktioniert nicht, alle Schemas in ein LLM zu stellen. Das liegt daran, dass Kontextfenster begrenzt sind, selbst wenn es ein Million Token sind. Eine Million Token sind unzureichend, um ein ganzes Data-Warehouse zu accommodieren.</p>         <h3>Die Lösung: Ein Datenassistent</h3>         <p>Unser Datenassistent wurde entwickelt, um dieses Problem zu lösen. Man kann eine Frage in einfacher englischer Sprache stellen und innerhalb von Sekunden verlässliche Daten erhalten. Er wurde seit August 2025 von über 2.100 Mitarbeitern bei Spotify innerhalb von 13.000+ Konversationen und 60.000+ Nachrichten verwendet, und deckt 177 Cluster ab, die Werbung, Podcasts, Musik, Hörbücher, Finanzen, Creators-Tools und mehr als ein Dutzend andere Felder umfassen.</p>         <p>Mehr als ein Viertel dieser Benutzer haben nicht einmal SQL-Code geschrieben. Wenn eine Frage eingeht, wählt der Assistent den geeigneten Kontext aus, schreibt die SQL-Abfrage, führt sie gegen unser Data-Warehouse aus und gibt die Antwort zurück, zusammen mit der Abfrage und ihren Quellen.</p>         <h3>Das Cluster-Modell</h3>         <p>Bei Spotify nennen wir Datenbereiche Cluster. Diese Bereiche können an eine Initiative, eine Organisation oder ein Ad-hoc-Interesse gebunden sein. Diese Flexibilität ermöglicht es jedem Insights-Team, einen Cluster um seine Themen herum aufzubauen, während es sie auch informiert, wenn der Bereich bereits abgedeckt ist.</p>         <p>Jeder Cluster wird von einem benannten Team von Domänenexperten verwaltet und besteht aus drei Komponenten: Datensätzen, die relevanten Data-Warehouse-Tabellen mit vollständigem Schema und Profil; Paaren, die geprüfte Frage- und SQL-Beispiele sind; und Dokumenten, die zusätzlichen Geschäftskontext bieten.</p>         <p><em>BytePost-Einordnung: Die Entwicklung des KI-Datenassistenten bei Spotify zeigt, wie Unternehmen mit großen Datenmengen umgehen können, indem sie KI-Technologien einsetzen, um die Arbeit von Datenexperten zu unterstützen und die Produktivität zu steigern.</em></p>     ",
+            "content_simple": "         <p>Stell dir vor, du suchst nach Informationen in einem riesigen Datenbestand. Früher musste man bei Spotify lange suchen, bis man die richtigen Daten fand. Doch jetzt gibt es einen Assistenten, der dir hilft, die richtigen Daten zu finden.</p>         <p>Dieser Assistent wird von einem Team von Experten trainiert, das die Daten und ihre Bedeutung kennt. Er kann Fragen beantworten und dir die richtigen Daten liefern, ohne dass du ein Experte in Datenanalyse sein musst.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Der KI-Datenassistent bei Spotify verwendet ein Cluster-Modell, um die Daten zu organisieren. Jedes Cluster wird von einem Team von Domänenexperten verwaltet und besteht aus drei Komponenten: Datensätzen, Paaren und Dokumenten.</p>         <p>Die Datensätze enthalten die relevanten Data-Warehouse-Tabellen mit vollständigem Schema und Profil. Die Paare sind geprüfte Frage- und SQL-Beispiele, die den Assistenten trainieren, die richtigen Daten zu finden. Die Dokumente bieten zusätzlichen Geschäftskontext, wie Terminologie, Gotchas und Definitionen.</p>         <p>Der Assistent verwendet eine Kombination aus maschinellem Lernen und Regelbasierter Logik, um die richtigen Daten zu finden. Er kann Fragen beantworten und die richtigen Daten liefern, ohne dass der Benutzer ein Experte in Datenanalyse sein muss.</p>     ",
+            "date": "11.06.2026",
+            "id": "dae903d1",
+            "url": "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/dae903d1.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security"
+            ],
+            "icon": "🚨",
+            "title": "Ivanti und Fortinet patchen kritische Lücken",
+            "source": "Unbekannt",
+            "read": "1 Min",
+            "sentiment": "kritisch",
+            "related": [
+                "43b5128d",
+                "0b471f64",
+                "22cc5267"
+            ],
+            "content": "         <h3>Kritische Sicherheitslücken entdeckt</h3>         <p>Ivanti, Fortinet und SAP haben Sicherheitsupdates veröffentlicht, um mehrere kritische Sicherheitslücken zu beheben, die zu beliebigem Code-Ausführung und Informationsverlust führen können.</p>         <p>Die von Fortinet behobene Sicherheitslücke bezieht sich auf eine Befehlsinjektionslücke in FortiSandbox, FortiSandbox Cloud und FortiSandbox PaaS WEB UI. Sie wird als CVE-2026-25089 (CVSS-Score: 9,1) verfolgt.</p>         <h3>Eine 5-Schritte-Strategie gegen Software-Schwachstellen</h3>         <p>Künstliche Intelligenz (KI) ist als mächtige Waffe in der Cybersicherheit aufgetaucht. Erfahren Sie, wie Sie Ihr Unternehmen am besten schützen können.</p>         <p>Es ist wichtig, dass Entwickler und Unternehmen auf dem neuesten Stand der Sicherheitsupdates bleiben, um ihre Systeme und Daten zu schützen.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Sicherheitsupdates ist ein wichtiger Schritt, um die Sicherheit von Systemen und Daten zu gewährleisten. Es ist wichtig, dass Entwickler und Unternehmen diese Updates regelmäßig überprüfen und anwenden, um ihre Sicherheit zu maximieren.</em></p>     ",
+            "content_simple": "         <p>Ivanti, Fortinet und SAP haben wichtige Sicherheitsupdates veröffentlicht. Diese Updates helfen, die Sicherheit von Computern und Daten zu schützen.</p>         <p>Manche dieser Lücken könnten es Angreifern ermöglichen, beliebigen Code auszuführen oder vertrauliche Informationen offenzulegen.</p>     ",
+            "content_pro": "         <h3>Technische Details der Sicherheitslücken</h3>         <p>Die behobene Sicherheitslücke bei Fortinet betrifft eine Befehlsinjektionslücke, die als CVE-2026-25089 identifiziert wurde. Diese Lücke hat einen CVSS-Score von 9,1 und kann zu einer remote-code-execution (RCE) führen.</p>         <p>Es ist wichtig, dass Entwickler und Betreiber von FortiSandbox-, FortiSandbox Cloud- und FortiSandbox PaaS-Systemen diese Updates so schnell wie möglich anwenden, um ihre Systeme zu schützen.</p>         <h3>Critische Einordnung</h3>         <p>Die Veröffentlichung von Sicherheitsupdates ist ein wichtiger Schritt, um die Sicherheit von Systemen und Daten zu gewährleisten. Es ist jedoch wichtig, dass Entwickler und Unternehmen diese Updates regelmäßig überprüfen und anwenden, um ihre Sicherheit zu maximieren.</p>     ",
+            "date": "11.06.2026",
+            "id": "a874480d",
+            "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a874480d.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "security",
+                "dev"
+            ],
+            "icon": "🛡️",
+            "title": "Sicherheit in der Software-Lieferkette",
+            "source": "Sonatype",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "43b5128d",
+                "0b471f64",
+                "22cc5267"
+            ],
+            "content": "         <h3>Software-Lieferkette: Ein wachsendes Angriffsziel</h3>         <p>Die Software-Lieferkette ist ein wichtiger Teil der modernen Softwareentwicklung. Doch sie ist auch ein wachsendes Angriffsziel für Angreifer. Laut Sonatype wurden im Jahr 2025 über 99% aller Open-Source-Malware auf npm identifiziert. Außerdem ist der erste selbstreplizierende npm-Wurm aufgetaucht, der sich autonom über Entwicklerumgebungen und Hunderte von Paketen verbreitet hat.</p>         <p>Der Verizon-Data-Breach-Investigations-Bericht 2025 hat ergeben, dass der Anteil von Datenschutzverletzungen, die durch Dritte verursacht wurden, im Vergleich zum Vorjahr um 30% gestiegen ist. Es ist daher wichtig, dass Entwickler ihre Software-Lieferkette sichern, um Angriffe zu verhindern.</p>         <h3>5 Best Practices für die Sicherheit in der Software-Lieferkette</h3>         <p>Um die Sicherheit in der Software-Lieferkette zu gewährleisten, sollten Entwickler folgende 5 Best Practices beachten:</p>         <ul>             <li>Trusted Content: Verwenden Sie verifizierte, minimale Basis-Images und pinnen Sie alle Abhängigkeiten, um Upstream-Drift zu vermeiden.</li>             <li>Build-Sicherheit: Verifizieren Sie die Build-Provenienz mit kryptografischen Attestationen und generieren Sie SBOMs bei jedem Build.</li>             <li>Vor-Deploy-Verifizierung: Integrieren Sie Vulnerabilitätsanalysen in die Entwickler-Workflows und erzwingen Sie politikgesteuerte Zugriffs kontrollen über Registrierungen und Pipelines.</li>             <li>Zugriffs- und Richtlinienkontrollen: Integrieren Sie Zugriffs- und Richtlinienkontrollen in die Software-Lieferkette, um sicherzustellen, dass nur autorisierte Personen auf die Software zugreifen können.</li>             <li>Laufende Überwachung: Überwachen Sie die Software-Lieferkette laufend, um sicherzustellen, dass sie sicher und stabil bleibt.</li>         </ul>         <p>Durch die Umsetzung dieser Best Practices können Entwickler ihre Software-Lieferkette sichern und Angriffe verhindern.</p>         <p>Die effektivsten Programme behandeln die Sicherheit der Lieferkette als eine ingenieurwissenschaftliche Disziplin und nicht als ein Kompatibilitätsfenster.</p>         <p><em>BytePost-Einordnung: Die Sicherheit in der Software-Lieferkette ist ein wichtiger Aspekt der modernen Softwareentwicklung. Durch die Umsetzung von Best Practices können Entwickler ihre Software-Lieferkette sichern und Angriffe verhindern. Es ist wichtig, dass Entwickler ihre Software-Lieferkette als eine ingenieurwissenschaftliche Disziplin behandeln und nicht als ein Kompatibilitätsfenster.</em></p>     ",
+            "content_simple": "         <p>Die Software-Lieferkette ist ein wichtiger Teil der modernen Softwareentwicklung. Doch sie ist auch ein Angriffsziel für Angreifer. Um die Sicherheit zu gewährleisten, sollten Entwickler verifizierte Basis-Images verwenden und alle Abhängigkeiten pinnen.</p>         <p>Es ist auch wichtig, die Build-Provenienz zu verifizieren und SBOMs zu generieren. Außerdem sollten Entwickler Zugriffs- und Richtlinienkontrollen integrieren, um sicherzustellen, dass nur autorisierte Personen auf die Software zugreifen können.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Software-Lieferkette kann durch verschiedene Technologien und Protokolle gesichert werden. Dazu gehören kryptografische Attestationen, SBOMs und Zugriffs- und Richtlinienkontrollen.</p>         <p>Es ist auch wichtig, die Build-Provenienz zu verifizieren, indem man kryptografische Attestationen verwendet. Außerdem sollten Entwickler regelmäßig Vulnerabilitätsanalysen durchführen, um sicherzustellen, dass die Software sicher ist.</p>         <p>Ein Beispiel für eine kryptografische Attestation ist die Verwendung von digitalen Signaturen, um die Authentizität von Software-Komponenten zu überprüfen.</p>     ",
+            "date": "11.06.2026",
+            "id": "21a65b15",
+            "url": "https://www.docker.com/blog/software-supply-chain-security-best-practices/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/21a65b15.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "📄",
+            "title": "PDFs optimieren RAG-Qualität",
+            "source": "Towards Data Science",
+            "read": "1 Min",
+            "sentiment": "neutral",
+            "related": [
+                "43b5128d",
+                "0b471f64",
+                "22cc5267"
+            ],
+            "content": "         <h3>Einleitung in die PDF-Optimierung</h3>         <p>Wenn du mit Dokumenten intelligenten arbeiten möchtest, ist es wichtig, die Qualität der Dokumente zu optimieren. Ein wichtiger Aspekt dabei ist die Optimierung von PDFs, um die RAG-Qualität (Recognize, Analyze, Generate) zu verbessern.</p>         <p>Ein Artikel auf Towards Data Science thematisiert die zwei Schichten von PDFs, die für die RAG-Qualität entscheidend sind: Document-Signale und page-level-Inhalte.</p>         <h3>Document-Signale</h3>         <p>Document-Signale umfassen Metadaten, native Inhaltsverzeichnisse und die Quellsoftware, mit der das Dokument erstellt wurde. Diese Signale liefern wertvolle Informationen über den Kontext und die Struktur des Dokuments.</p>         <h3>Page-Level-Inhalte</h3>         <p>Page-Level-Inhalte umfassen den Text, Tabellen, Bilder, Spalten und die Seite Profil. Diese Inhalte müssen sorgfältig ausgewertet werden, um die RAG-Qualität zu verbessern.</p>         <p>Ein wichtiger Aspekt bei der Auswertung von Page-Level-Inhalten ist die Unterscheidung zwischen Text und Scans. Während Text direkt aus dem Dokument extrahiert werden kann, müssen Scans zuerst in Text umgewandelt werden, um sie auswerten zu können.</p>         <p>Der Artikel zeigt auf, dass die Optimierung von PDFs ein wichtiger Schritt zur Verbesserung der RAG-Qualität ist. Durch die Analyse von Document-Signalen und Page-Level-Inhalten können Entwickler die Qualität ihrer Dokumente verbessern und damit die Grundlage für weiterführende Analysen und Anwendungen schaffen.</p>         <p><em>BytePost-Einordnung: Die Optimierung von PDFs ist ein wichtiger Aspekt in der Entwicklung von Dokumenten-Intelligenz-Anwendungen. Durch die Analyse von Document-Signalen und Page-Level-Inhalten können Entwickler die Qualität ihrer Dokumente verbessern und damit die Grundlage für weiterführende Analysen und Anwendungen schaffen.</em></p>     ",
+            "content_simple": "         <p>Wenn du mit Dokumenten intelligenten arbeiten möchtest, ist es wichtig, die Qualität der Dokumente zu optimieren. Ein wichtiger Aspekt dabei ist die Optimierung von PDFs.</p>         <p>PDFs haben zwei Schichten, die für die Qualität entscheidend sind: Document-Signale und page-level-Inhalte. Document-Signale liefern Informationen über den Kontext und die Struktur des Dokuments, während page-level-Inhalte den Text, Tabellen, Bilder und Spalten umfassen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Optimierung von PDFs umfasst die Analyse von Document-Signalen und Page-Level-Inhalten. Document-Signale können durch die Auswertung von Metadaten, native Inhaltsverzeichnisse und die Quellsoftware erstellt werden.</p>         <p>Page-Level-Inhalte müssen sorgfältig ausgewertet werden, um die RAG-Qualität zu verbessern. Dazu gehört die Unterscheidung zwischen Text und Scans, die Umwandlung von Scans in Text und die Auswertung von Tabellen, Bildern und Spalten.</p>         <p>Die Optimierung von PDFs kann durch die Verwendung von Bibliotheken und Frameworks wie Apache PDFBox oder iText unterstützt werden. Diese Bibliotheken bieten Funktionen zur Auswertung von Metadaten, zur Umwandlung von Scans in Text und zur Auswertung von Tabellen und Bildern.</p>     ",
+            "date": "11.06.2026",
+            "id": "095a5967",
+            "url": "https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-quality/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/095a5967.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki"
+            ],
+            "icon": "🤖",
+            "title": "Eric Anderson über KI-Code-Generation",
+            "source": "Stack Overflow",
+            "read": "2 Min",
+            "sentiment": "neutral",
+            "related": [
+                "43b5128d",
+                "0b471f64",
+                "22cc5267"
+            ],
+            "content": "<h3>Einleitung</h3><p>Wenn der Kosten für Code gegen Null geht, wie sieht die Führung im Bereich Engineering aus? Diese Frage diskutieren Eric Anderson, Director of Engineering bei Intuit, und Ben Matthews, Engineering Director bei Stack Overflow, in der Episode von Leaders of Code. Eric erklärt, wie Intuit Claude Code in der gesamten Organisation eingeführt hat, warum Produktmanager ihre eigenen PRs mergen und was es für die Engineering-Kultur bedeutet, wenn Produkt- und Engineering-Rollen beginnen, sich zu vereinigen.</p><p>Eric und Ben analysieren die Engineering-Fähigkeiten, die in einer AI-ersten Branche am wichtigsten sind, und warum die Arbeit, Junior-Talente zu entwickeln, schwieriger geworden ist. Eric teilt auch, wie er persönlich AI verwendet, um seine E-Mails zu managen, Spezifikationen zu synthetisieren und Beförderungsprozesse durchzuführen (aber warum er aufgehört hat, AI-E-Mails in seinem Namen zu senden).</p><h3>Transkript</h3><p>Eira May: Hallo und herzlich willkommen bei Leaders of Code. Wenn du uns zum ersten Mal besuchst, ist dies ein Segment des Stack Overflow-Podcasts, in dem wir Senior-Engineering-Führer zusammenbringen und mit ihnen über ihre Arbeit sprechen, wie sie ihre Teams aufbauen und die größten Herausforderungen, mit denen sie aktuell konfrontiert sind. Mein Name ist Eira May, ich bin die B2B-Redakteurin bei Stack Overflow, und ich bin hier wieder mit meinem Kollegen Ben Matthews, der Director of Engineering bei Stack Overflow ist. Ben, धन्यवाद für deine Teilnahme.</p><p>Unser Gast heute ist Eric Anderson. Eric ist Director of Engineering bei Intuit. Eric, vielen Dank für deine Teilnahme. Wie geht es dir?</p><p>Eric Anderson: Es geht mir großartig. Ich bin sehr aufgeregt, mit euch zu sprechen. Vielen Dank.</p><h3>Fazit</h3><p>Die Diskussion zwischen Eric und Ben zeigt, dass die KI-Code-Generation die Art und Weise, wie Engineering-Teams arbeiten, grundlegend verändern wird. Die Fähigkeit, Code schnell und effizient zu generieren, bedeutet, dass die Fokus auf critical thinking, Kontext und Überwachung gelegt werden muss. Es ist wichtig, dass Engineering-Führer und -Teams sich an diese Veränderungen anpassen und ihre Fähigkeiten entsprechend anpassen.</p><p><em>BytePost-Einordnung: Die Diskussion über KI-Code-Generation und ihre Auswirkungen auf Engineering-Teams ist von großer Bedeutung für die Zukunft der Software-Entwicklung. Es ist wichtig, dass Entwickler und Führer in diesem Bereich sich mit den Herausforderungen und Chancen auseinandersetzen, die diese Technologie mit sich bringt.</em></p>",
+            "content_simple": "<p>Wenn Computer-Code fast kostenlos ist, ändert sich die Art, wie Technik-Teams arbeiten. Eric Anderson von Intuit und Ben Matthews von Stack Overflow sprechen darüber, wie dies die Zusammenarbeit und die Führungsrolle in Unternehmen beeinflusst.</p><p>Es geht darum, wie man den Menschen und die Technik effizient nutzt, um gute Software zu entwickeln. Eric erklärt, wie er persönlich künstliche Intelligenz nutzt, um seine Arbeit zu erleichtern.</p>",
+            "content_pro": "<h3>Technische Aspekte</h3><p>Die KI-Code-Generation ist ein wichtiger Trend in der Software-Entwicklung. Durch die Verwendung von AI-Algorithmen kann Code schnell und effizient generiert werden. Dies erfordert jedoch auch eine Anpassung der Engineering-Fähigkeiten und -Prozesse. Eric und Ben diskutieren, welche Fähigkeiten in einer AI-ersten Branche am wichtigsten sind und wie man Junior-Talente entwickelt.</p><p>Es ist wichtig, dass Entwickler und Führer in diesem Bereich sich mit den technischen Aspekten der KI-Code-Generation auseinandersetzen und ihre Fähigkeiten entsprechend anpassen. Dazu gehören die Kenntnis von AI-Algorithmen, Datenstrukturen und -analyse sowie die Fähigkeit, kritisch zu denken und Kontext zu verstehen.</p>",
+            "date": "11.06.2026",
+            "id": "a9e20cb7",
+            "url": "https://stackoverflow.blog/2026/06/11/engineering-leadership-zero-cost-code/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/a9e20cb7.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "ki",
+                "dev"
+            ],
+            "icon": "🤖",
+            "title": "Microsoft SkillOpt optimiert KI-Skills",
+            "source": "MarkTechPost",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "2ad7e4ec",
+                "1315a02e"
+            ],
+            "content": "         <h3>Einleitung</h3>         <p>Im folgenden Artikel werden wir uns mit der Implementierung von Microsoft SkillOpt für instrumentierte Prompt-Optimierung, Skill-Evolution-Analyse und Baseline-Vergleich beschäftigen. Wir werden die Vorbereitung der Umgebung, die Konfiguration des Optimierers und der Zielmodelle sowie die Ausführung des Optimierungsprozesses durchgehen.</p>                  <h3>Umgebungssetup</h3>         <p>Zuerst müssen wir die Umgebung für die Ausführung von SkillOpt vorbereiten. Dazu gehört die Installation der erforderlichen Abhängigkeiten und die Konfiguration des OpenAI-Zugangs. Wir verwenden den OpenAI-Api-Schlüssel, um auf die Modelle zuzugreifen.</p>         <p>Wir definieren die Optimierer- und Zielmodelle und konfigurieren den Optimierungsprozess. Der Code für die Umgebungssetup sieht wie folgt aus:</p>         <ul>             <li>Import der erforderlichen Bibliotheken</li>             <li>Definition des OpenAI-Api-Schlüssels</li>             <li>Klonen des SkillOpt-Repositorys</li>             <li>Installation der erforderlichen Abhängigkeiten</li>             <li>Konfiguration des OpenAI-Zugangs</li>         </ul>                  <h3>Baseline-Skill-Evaluation</h3>         <p>Wir beginnen mit der Bewertung der Baseline-Skills. Dazu definieren wir eine Funktion, die den Skill-Evaluierungsprozess durchführt. Wir verwenden die `run_cli`-Funktion, um den Evaluierungsprozess auszuführen und die Ergebnisse zu erfassen.</p>         <p>Die Ergebnisse der Baseline-Skill-Evaluation werden uns helfen, den Optimierungsprozess zu bewerten und die Ergebnisse zu vergleichen.</p>                  <h3>Optimierungsprozess</h3>         <p>Nun können wir den Optimierungsprozess starten. Wir definieren den Optimierungsprozess und die erforderlichen Parameter. Der Optimierungsprozess besteht aus den Schritten Rollout, Reflexion, Aggregation, Auswahl, Aktualisierung und Validierung.</p>         <p>Wir visualisieren die Ergebnisse des Optimierungsprozesses und vergleichen sie mit der Baseline-Skill-Evaluation.</p>                  <p><em>BytePost-Einordnung: Die Implementierung von Microsoft SkillOpt für instrumentierte Prompt-Optimierung, Skill-Evolution-Analyse und Baseline-Vergleich ist ein wichtiger Schritt in der Entwicklung von KI-Skills. Durch die Optimierung von KI-Skills können wir die Leistung und Effizienz von KI-Systemen verbessern.</em></p>     ",
+            "content_simple": "         <p>Microsoft SkillOpt ist ein Werkzeug, das hilft, die Leistung von KI-Skills zu verbessern. Wir zeigen, wie man SkillOpt einsetzt, um die Skills zu optimieren und ihre Leistung zu messen.</p>         <p>Die Optimierung von KI-Skills ist wichtig, um die Leistung und Effizienz von KI-Systemen zu verbessern. Durch die Verwendung von SkillOpt können wir die Skills optimieren und ihre Leistung messen.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Die Implementierung von Microsoft SkillOpt verwendet eine Vielzahl von Technologien, darunter OpenAI-Modelle und die Azure-OpenAI-API. Wir definieren den Optimierungsprozess und die erforderlichen Parameter, um die Leistung der KI-Skills zu verbessern.</p>         <p>Der Optimierungsprozess besteht aus den Schritten Rollout, Reflexion, Aggregation, Auswahl, Aktualisierung und Validierung. Wir verwenden die `run_cli`-Funktion, um den Evaluierungsprozess auszuführen und die Ergebnisse zu erfassen.</p>         <p>Die Verwendung von SkillOpt bietet viele Vorteile, darunter die Verbesserung der Leistung und Effizienz von KI-Systemen. Durch die Optimierung von KI-Skills können wir die Leistung und Effizienz von KI-Systemen verbessern.</p>     ",
+            "date": "11.06.2026",
+            "id": "d51ef53e",
+            "url": "https://www.marktechpost.com/2026/06/10/a-coding-implementation-on-microsoft-skillopt-for-instrumented-prompt-optimization-skill-evolution-analysis-and-baseline-comparison/",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/d51ef53e.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
+                "gaming"
+            ],
+            "icon": "🐖",
+            "title": "Fable: Ein sprechendes Schwein",
+            "source": "Golem.de",
+            "read": "1 Min",
+            "sentiment": "positiv",
+            "related": [
+                "43b5128d",
+                "0b471f64",
+                "22cc5267"
+            ],
+            "content": "         <h3>Fable: Eine tiefgehende Lebenssimulation</h3>         <p>Die Welt retten? Kann warten. Fable setzt auf eine tiefgehende Lebenssimulation mit Beziehungen und Wirtschaftsleben. Von Peter Steinlechner, Fable, Rollenspiel.</p>         <p>Willkommen auf Golem.de! Cookies zustimmen. Besuchen Sie Golem.de wie gewohnt mit Werbung und Tracking, indem Sie der Nutzung aller Cookies zustimmen. Details zum Tracking finden Sie im Privacy Center.</p>         <p>Fable bietet eine tiefgehende Lebenssimulation mit Beziehungen und Wirtschaftsleien. Die Spieler können ein sprechendes Schwein haben und müssen entscheiden, ob sie die Welt retten oder andere Ziele verfolgen.</p>         <h3>Die Welt von Fable</h3>         <p>Die Welt von Fable ist reich an Details und bietet viele Möglichkeiten für die Spieler, ihre eigene Geschichte zu schreiben. Mit über 1.000 NPCs (Non-Player-Characters) bietet das Spiel eine enorme Vielfalt an Interaktionen und Beziehungen.</p>         <p>Der Spieler kann sein eigenes Leben in der Welt von Fable aufbauen, mit Haus, Familie und Freunden. Es gibt auch viele Möglichkeiten, das Wirtschaftsleben in der Welt zu beeinflussen.</p>         <p><em>BytePost-Einordnung: Fable bietet eine einzigartige Mischung aus Rollenspiel und Lebenssimulation, die Spieler in eine neue Welt entführt und ihnen die Möglichkeit gibt, ihre eigene Geschichte zu schreiben.</em></p>     ",
+            "content_simple": "         <p>Fable ist ein neues Rollenspiel, das sich auf eine tiefgehende Lebenssimulation konzentriert. Du kannst ein sprechendes Schwein haben und entscheiden, ob du die Welt retten oder andere Ziele verfolgen möchtest.</p>         <p>Die Welt von Fable ist reich an Details und bietet viele Möglichkeiten, deine eigene Geschichte zu schreiben. Es gibt über 1.000 NPCs, mit denen du interagieren kannst.</p>     ",
+            "content_pro": "         <h3>Technische Details</h3>         <p>Fable bietet eine tiefgehende Lebensimulation mit Beziehungen und Wirtschaftsleben. Die Spieler können ihr eigenes Leben in der Welt aufbauen, mit Haus, Familie und Freunden.</p>         <p>Die Welt von Fable ist reich an Details und bietet viele Möglichkeiten für die Spieler, ihre eigene Geschichte zu schreiben. Mit über 1.000 NPCs bietet das Spiel eine enorme Vielfalt an Interaktionen und Beziehungen.</p>         <h3>Architektur und Technologien</h3>         <p>Leider gibt es keine Informationen über die genaue Architektur und die verwendeten Technologien von Fable. Es ist jedoch klar, dass das Spiel eine enorme Menge an Daten und Interaktionen verarbeitet.</p>     ",
+            "date": "11.06.2026",
+            "id": "7f4a009f",
+            "url": "https://www.golem.de/news/fable-ein-sprechendes-schwein-gebrochene-herzen-und-1-000-npcs-2606-209590.html",
+            "reactions": {
+                "fire": 0,
+                "think": 0,
+                "bulb": 0,
+                "sleep": 0
+            },
+            "image_local": "images/7f4a009f.jpg",
+            "pick": false
+        },
+        {
+            "cat": [
                 "dev"
             ],
             "icon": "💻",
@@ -57,7 +349,7 @@
                 "sleep": 0
             },
             "image_local": "images/40d5e86d.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Revolution im Pretraining ist da: NVIDIA enthüllt den Nemotron-Pretraining-Code-v3, der das Potenzial hat, die Art und Weise, wie wir künstliche Intelligenz trainieren, grundlegend zu verändern. Mit diesem Code können Entwickler ihre Modelle schneller und effizienter trainieren, was zu besseren Ergebnissen und neuen Möglichkeiten führen kann. Die Frage ist, wie schnell Entwickler diese Technologie nutzen können, um ihre eigenen Projekte zu revolutionieren."
         },
         {
@@ -41630,10 +41922,10 @@
         }
     ],
     "bytepulse": {
-        "date": "10.06.2026",
-        "positiv": 33,
-        "neutral": 67,
-        "kritisch": 0,
-        "total": 3
+        "date": "11.06.2026",
+        "positiv": 50,
+        "neutral": 40,
+        "kritisch": 10,
+        "total": 10
     }
 }
