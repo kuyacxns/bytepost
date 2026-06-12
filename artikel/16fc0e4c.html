@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudflare integriert Bedrohungsindikatoren in WAF — BytePost</title>
+    <meta name="description" content="Neue Integration für verbesserte Sicherheit Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF">
+    <link rel="canonical" href="https://bytepost.de/artikel/16fc0e4c.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/16fc0e4c.html">
+    <meta property="og:title" content="Cloudflare integriert Bedrohungsindikatoren in WAF">
+    <meta property="og:description" content="Neue Integration für verbesserte Sicherheit Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF">
+    <meta property="og:image" content="https://bytepost.de/images/16fc0e4c.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloudflare integriert Bedrohungsindikatoren in WAF">
+    <meta name="twitter:description" content="Neue Integration für verbesserte Sicherheit Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Cloudflare integriert Bedrohungsindikatoren in WAF</h1>
+    <div class="meta">Cloudflare Blog · 09.06.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/16fc0e4c.jpg" alt="Cloudflare integriert Bedrohungsindikatoren in WAF">
+    <div class="content"> <h3>Neue Integration für verbesserte Sicherheit</h3> <p>Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF) verwenden, um hochriskante Verkehr zu blockieren. Durch die Verwendung neuer cf.intel-Felder können Sicherheitsteams den Schutz gegen bestimmte Bedrohungsakteure und gezielte Branchen in Echtzeit automatisieren.</p> <p>Das Cloudflare-Plattform bietet Sicherheitsanalysten einen Einblick in die globale Bedrohungslandschaft. Die Plattform gibt einen Blick in den enormen Verkehr, den Cloudflare jeden Tag verarbeitet, so dass Sie in Echtzeit sehen können, welche IPs bestimmte Branchen oder welche Bedrohungsakteure global anvisieren. Allerdings war die Umsetzung dieser Sichtbarkeit in aktive Abwehr oft ein manueller, reaktiver Prozess.</p> <h3>Neue Funktionen</h3> <p>Sicherheitsteams konnten bestimmte IP-Adressen nicht einfach automatisch innerhalb ihrer eigenen WAF blockieren, es sei denn, sie konfigurierten die Regeln manuell. Diese Frustration ist nun Geschichte, da Cloudflare eine neue Integration eingeführt hat, die die umfassende Bedrohungsintelligenz von Cloudflare direkt in die WAF-Engine bringt.</p> <p>Durch die Besetzung spezifischer Felder während der frühen Stadien einer Anfrage kann die WAF nun den Verkehr basierend auf folgenden Kriterien filtern: <ul> <li>Wer angreift, indem bestimmte Bedrohungsakteure genannt werden</li> <li>Wer angegriffen wird, indem Branchen- oder Länderfilter verwendet werden, um zu sehen, wer die IP in der Vergangenheit angegriffen hat</li> <li>Was für einen Angriff, indem angereicherte Bedrohungs Kontext verwendet wird, um nach Angriffstyp (DDoS, WAF, Cyberkriminalität usw.) und dem Zeitraum, in dem es zuletzt gesehen wurde, zu filtern</li> </ul> <p>Die neue Funktion ist auf demselben Always-on-Erkennungsrahmenwerk aufgebaut, das kürzlich für die Angriffssignaturerkennung eingeführt wurde. Durch die Trennung von Erkennung und Abwehr stellt Cloudflare sicher, dass die Bedrohungsintelligenz konstant im Hintergrund läuft und die HTTP-Anfrageanalyse mit insightreichen Bedrohungsmetadaten anreichert, bevor eine Aktion unternommen wird.</p> <h3>Vorteile</h3> <p>Der Hauptvorteil des Always-on-Modells ist die Beseitigung des traditionellen Log-vs.-Block-Trade-offs: Sichtbarkeit im Log-Modus oder Schutz im Block-Modus. Wenn eine Regel eine Anfrage blockiert, verliert man die Sichtbarkeit in die Bewertung, wie andere Signaturen diese bewertet hätten.</p> <p>Wenn Sie ein Cloudforce One-Abonnement haben, erscheinen diese Einblicke automatisch in Ihren Analysen. Sie können sehen, welche Bedrohungsakteure Ihre Website angreifen und welche Branchen diese IPs normalerweise anvisieren, was es Ihnen ermöglicht, Verkehrs Muster zu überprüfen, bevor Sie den Schalter umlegen, um den Verkehr zu blockieren.</p> <p>Die Erkennung erfolgt mit vernachlässigbarer Latenz, was Ihre Leistung weiterhin blitzschnell hält und gleichzeitig die notwendigen Daten für robuste Sicherheitsrichtlinien liefert.</p> <p>Die anfängliche Veröffentlichung konzentriert sich auf IP-basierte Übereinstimmungen, aber Cloudflare plant bereits, diese Fähigkeiten auf JA3-Fingerabdrücke und Domain-basierte Übereinstimmungen auszuweiten. Dies ermöglicht es Ihnen, schädlichen Verkehr zu blockieren, selbst wenn Angreifer IPs drehen, indem Sie die einzigartigen Software-Signaturen oder schädlichen Ziel-Links identifizieren, die sie in ihren Payloads verwenden.</p> <p><em>BytePost-Einordnung: Die neue Integration von Cloudflare ist ein wichtiger Schritt in Richtung verbesserte Sicherheit und bietet Kunden eine Möglichkeit, Bedrohungen in Echtzeit zu erkennen und abzuwehren.</em></p> </div>
+    <a class="cta" href="../index.html#a=16fc0e4c">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://blog.cloudflare.com/realtime-threat-intel-waf-rules/" target="_blank" rel="noopener">Cloudflare Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

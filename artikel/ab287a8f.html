@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemotron-Labs Revolutioniert Textgenerierung — BytePost</title>
+    <meta name="description" content="Einleitung in die Welt der Textgenerierung Large Language Models (LLMs) sind heute der Standard für Code-Generierung, Mathematik-Problemlösung, Zusammenfassung,">
+    <link rel="canonical" href="https://bytepost.de/artikel/ab287a8f.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/ab287a8f.html">
+    <meta property="og:title" content="Nemotron-Labs Revolutioniert Textgenerierung">
+    <meta property="og:description" content="Einleitung in die Welt der Textgenerierung Large Language Models (LLMs) sind heute der Standard für Code-Generierung, Mathematik-Problemlösung, Zusammenfassung,">
+    <meta property="og:image" content="https://bytepost.de/images/ab287a8f.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nemotron-Labs Revolutioniert Textgenerierung">
+    <meta name="twitter:description" content="Einleitung in die Welt der Textgenerierung Large Language Models (LLMs) sind heute der Standard für Code-Generierung, Mathematik-Problemlösung, Zusammenfassung,">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Nemotron-Labs Revolutioniert Textgenerierung</h1>
+    <div class="meta">NVIDIA · 26.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/ab287a8f.jpg" alt="Nemotron-Labs Revolutioniert Textgenerierung">
+    <div class="content">         <h3>Einleitung in die Welt der Textgenerierung</h3>         <p>Large Language Models (LLMs) sind heute der Standard für Code-Generierung, Mathematik-Problemlösung, Zusammenfassung, Dokumentenverständnis und viele andere Entwickler-Workflows. Im Hintergrund generieren viele LLMs jedoch Text auf die gleiche Weise: token für token, und jedes Token hängt von den vorherigen Tokens ab. Diese Modelle werden als autoregressiv bezeichnet, da sie ihre eigenen Ausgaben konsumieren.</p>         <p>Die autoregressive (AR) Methode war sehr erfolgreich. Sie ist stabil zu trainieren, einfach zu bedienen und verantwortlich für viel des Fortschritts in der modernen Sprachmodellierung. Sie hat jedoch auch eine Grenze: jedes neue Token erfordert einen vollständigen Modell-Durchlauf und jedes Gewicht muss aus dem Speicher geladen werden, bevor die Berechnung beginnen kann.</p>         <h3>Nemotron-Labs Diffusion: Eine neue Art der Textgenerierung</h3>         <p>Nemotron-Labs Diffusion bietet eine neue Möglichkeit: Diffusions-Sprachmodelle (DLM), die durch parallele Generierung mehrerer Tokens und iterative Verfeinerung der generierten Tokens in mehreren Schritten arbeiten. Diese Modelle können nicht nur die Rechenleistung moderner GPUs besser nutzen und signifikante Laufzeit-Vorteile bieten, sondern auch generierte Tokens zurücksetzen, was sie besser für die Revision von Texten und die Bearbeitung von Füll-lücken-Objektiven geeignet macht.</p>         <p>Die Nemotron-Labs Diffusion-Familie umfasst Textmodelle in den Größen 3B, 8B und 14B, die alle unter der kommerziell freundlichen NVIDIA Nemotron Open Model License verfügbar sind, sowie ein 8B-Vision-Sprachmodell, das unter der NVIDIA Source Code License verfügbar ist und eine breite Forschungsfreiheit bietet.</p>         <h3>Drei Generationsmodi in einem Modell</h3>         <p>Nemotron-Labs Diffusion ist auf eine einfache Idee ausgerichtet: autoregressive und diffusive Generation sollten nicht separate Modellfamilien sein. Sie sollten Fähigkeiten desselben Modells sein. Das Modell unterstützt drei Generationsmodi: Autoregressiver Modus läuft wie ein Standard-LLM, Diffusionsmodus generiert Block für Block und selbst-spekulativer Modus verwendet Diffusion, um mehrere Kandidaten-Tokens zu entwerfen, und dann autoregressive Decodierung, um sie zu verifizieren.</p>         <p>Die flexible Gestaltung ist das wichtigste Entwickler-Feature, bei dem sowohl Geschwindigkeit als auch Genauigkeit wichtig sind, auch bei Arbeitslasten mit unvorhersehbaren Batch-Größen oder solchen mit einer einzigen Abfrage (Batch-Größe = 1).</p>         <p><em>BytePost-Einordnung: Nemotron-Labs Diffusion revolutioniert die Textgenerierung mit einer neuen Art von Sprachmodellen, die parallele Generierung und iterative Verfeinerung ermöglichen. Dies bietet neue Möglichkeiten für Entwickler, die schnelle und genaue Textgenerierung benötigen.</em></p>     </div>
+    <a class="cta" href="../index.html#a=ab287a8f">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://huggingface.co/blog/nvidia/nemotron-labs-diffusion" target="_blank" rel="noopener">NVIDIA</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

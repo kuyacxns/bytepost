@@ -6,214 +6,214 @@
     <description>Deutsche Tech News täglich in 5 Minuten — KI-kuratierte Zusammenfassungen.</description>
     <language>de-de</language>
     <item>
-      <title>Y Combinator akzeptiert Kanada</title>
-      <link>https://bytepost.de/artikel/f7b01706.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/f7b01706.html</guid>
-      <description>Y Combinator ändert seine Richtlinien Nachdem Y Combinator Feedback von kanadischen Gründern in seinem Netzwerk erhalten hat, wird das Unternehmen Kanada wieder in seine Liste der anerkannten Länder für die Gründung von Unternehmen aufnehmen. Ab sofort wird Y Combinator wieder in Unternehmen aus den</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>dev</category>
+      <title>Andrew Yang startet Noble Mobile</title>
+      <link>https://bytepost.de/artikel/43b5128d.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/43b5128d.html</guid>
+      <description>Andrew Yang: Noble Mobile und der Kampf gegen die Aufmerksamkeitswirtschaft Andrew Yangs Präsidentschaftskampagne 2020 basierte auf einer Warnung, dass Automation und künstliche Intelligenz (KI) den Arbeitsmarkt aushöhlen und den Reichtum in den Händen weniger konzentrieren würden. Zu diesem Zeitpun</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>Columbia-Studie: Optimale Schlafdauer</title>
-      <link>https://bytepost.de/artikel/55e9cc1c.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/55e9cc1c.html</guid>
-      <description>Die optimale Schlafdauer Dass guter Schlaf ein wichtiger Faktor eines gesunden Lebens ist, ist gut untersucht. Wie die Schlafdauer und das biologische Alter miteinander zusammenhängen, ist hingegen wenig untersucht. Forschende der Columbia University kommen jetzt zu dem Ergebnis, dass wichtige Organ</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>SaaS-Projekte scheitern oft</title>
+      <link>https://bytepost.de/artikel/0b471f64.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/0b471f64.html</guid>
+      <description>Der Traum vom eigenen SaaS Der Traum von vielen Entwicklern ist es, ein eigenes SaaS (Software as a Service) zu gründen. Doch leider scheitern die meisten SaaS-Projekte. Warum ist das so? Und wie kann man es besser machen? Die Einstiegshürde für ein eigenes SaaS ist heute niedriger als je zuvor. Es </description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>dev</category><category>business</category>
     </item>
     <item>
-      <title>Quiz prüft Kenntnisse über Zen of Python</title>
-      <link>https://bytepost.de/artikel/9c27a497.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/9c27a497.html</guid>
-      <description>Quiz: Tapping Into the Zen of Python Teste dein Verständnis von der Zen of Python, ihren 19 Leitaphorismen, ihren Ursprüngen und wie man sie bei der Erstellung von realen Code ausbalanciert. Im Quiz ‚Tapping Into the Zen of Python‘ kannst du dein Wissen über die Ursprünge des Gedichts, die Bedeutung</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>dev</category>
+      <title>OpenRouter API verbindet KI-Modelle</title>
+      <link>https://bytepost.de/artikel/22cc5267.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/22cc5267.html</guid>
+      <description>Einleitung Ein schneller Weg, um mehrere KI-Modelle aus einem einzigen Python-Skript aufzurufen, ist die Verwendung der OpenRouter-API. Diese API fungiert als einheitiche Routing-Schicht zwischen deinem Code und mehreren KI-Anbietern. Durch die Verwendung dieser API kannst du Modelle von verschieden</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Drupal Core erhält dringendes Sicherheitsupdate</title>
-      <link>https://bytepost.de/artikel/0ee68538.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/0ee68538.html</guid>
-      <description>Drupal Core Update Ein wichtiger Sicherheitsupdate für Drupal Core wurde angekündigt. Am 20. Mai erscheint ein dringendes Update, das von Administratoren so schnell wie möglich installiert werden sollte. Das Update behebt eine hochkritisches Sicherheitsproblem, das nicht genauer spezifiziert wurde. </description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>security</category><category>dev</category>
+      <title>Spotify entwickelt AI-Datenassistent</title>
+      <link>https://bytepost.de/artikel/dae903d1.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/dae903d1.html</guid>
+      <description>Das Problem mit Daten bei Spotify Früher folgten Datenprobleme bei Spotify einem bestimmten Muster. Man suchte nach dem relevanten Dashboard, aber es gab keines. Man kontaktierte den entsprechenden Datenexperten auf Slack und wartete, bis er Zeit hatte, zu helfen. Doch mit Tausenden von Teams, die s</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>Azure hub-and-spoke verfügbar</title>
-      <link>https://bytepost.de/artikel/7eae4068.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/7eae4068.html</guid>
-      <description>Azure hub-and-spoke-Netzwerk Azure hub-and-spoke-Netzwerk ist jetzt allgemein verfügbar in HCP Vault Dedicated. Damit wird die Cloud-Sicherheitsreife mit privater Konnektivität unterstützt. Wir prüfen Ihren Browser. Website-Eigner? Klicken Sie hier, um zu korrigieren Vorteile der neuen Funktion Die </description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>cloud</category>
+      <title>Ivanti und Fortinet patchen kritische Lücken</title>
+      <link>https://bytepost.de/artikel/a874480d.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/a874480d.html</guid>
+      <description>Kritische Sicherheitslücken entdeckt Ivanti, Fortinet und SAP haben Sicherheitsupdates veröffentlicht, um mehrere kritische Sicherheitslücken zu beheben, die zu beliebigem Code-Ausführung und Informationsverlust führen können. Die von Fortinet behobene Sicherheitslücke bezieht sich auf eine Befehlsi</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>security</category>
     </item>
     <item>
-      <title>Docusign entwickelt AI-gestütztes Framework</title>
-      <link>https://bytepost.de/artikel/50852dd3.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/50852dd3.html</guid>
-      <description>Einleitung in das Problem Als Entwickler von Datenanalysen weißt du, wie wichtig es ist, deine Daten vor der Produktion zu testen. Das Unternehmen Docusign hat Millionen von Kunden weltweit und benötigt daher eine zuverlässige Datenanalyse. Bei Docusign wurde jedoch festgestellt, dass traditionelle </description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Sicherheit in der Software-Lieferkette</title>
+      <link>https://bytepost.de/artikel/21a65b15.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/21a65b15.html</guid>
+      <description>Software-Lieferkette: Ein wachsendes Angriffsziel Die Software-Lieferkette ist ein wichtiger Teil der modernen Softwareentwicklung. Doch sie ist auch ein wachsendes Angriffsziel für Angreifer. Laut Sonatype wurden im Jahr 2025 über 99% aller Open-Source-Malware auf npm identifiziert. Außerdem ist de</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>security</category><category>dev</category>
     </item>
     <item>
-      <title>GitHub ermöglicht Remote-Steuerung</title>
-      <link>https://bytepost.de/artikel/18a84f5c.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/18a84f5c.html</guid>
-      <description>Überall produktiv sein GitHub hat eine neue Funktion veröffentlicht, die es Entwicklern ermöglicht, ihre lokalen GitHub-Sitzungen überall fortzusetzen. Mit der Remote-Steuerung für GitHub Copilot-Sitzungen kannst du deine Arbeit in VS Code oder der CLI beginnen und sie dann von deinem Smartphone aus</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
+      <title>PDFs optimieren RAG-Qualität</title>
+      <link>https://bytepost.de/artikel/095a5967.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/095a5967.html</guid>
+      <description>Einleitung in die PDF-Optimierung Wenn du mit Dokumenten intelligenten arbeiten möchtest, ist es wichtig, die Qualität der Dokumente zu optimieren. Ein wichtiger Aspekt dabei ist die Optimierung von PDFs, um die RAG-Qualität (Recognize, Analyze, Generate) zu verbessern. Ein Artikel auf Towards Data </description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Gmail ermöglicht Gespräche mit deinem Postfach</title>
-      <link>https://bytepost.de/artikel/62db5c3a.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/62db5c3a.html</guid>
-      <description>Gmail-Neuerung: Gespräche mit deinem Postfach Du kannst nun mit deinem Gmail-Postfach sprechen, wie es auf der Google I/O 2026 vorgestellt wurde. Google erweitert die Funktionen von Gmail um eine konversationale Sprachsuche, die es den Nutzern ermöglicht, Gemini nach vergrabenen E-Mail-Details zu fr</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Eric Anderson über KI-Code-Generation</title>
+      <link>https://bytepost.de/artikel/a9e20cb7.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/a9e20cb7.html</guid>
+      <description>Einleitung Wenn der Kosten für Code gegen Null geht, wie sieht die Führung im Bereich Engineering aus? Diese Frage diskutieren Eric Anderson, Director of Engineering bei Intuit, und Ben Matthews, Engineering Director bei Stack Overflow, in der Episode von Leaders of Code. Eric erklärt, wie Intuit Cl</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>Paralives bald verfügbar</title>
-      <link>https://bytepost.de/artikel/d6cecd5c.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/d6cecd5c.html</guid>
-      <description>Paralives: Ein neues Lebenssimulationsspiel Take a nice long look at some Paralives gameplay ahead of its early access launch next week. Paralives, ursprünglich für 2025 geplant, steht jetzt vor der Tür mit einem Early-Access-Launch am 25. Mai nächsten Woche. Was wäre ein besserer Weg, den Appetit z</description>
-      <pubDate>Wed, 20 May 2026 06:00:00 +0000</pubDate><category>gaming</category>
+      <title>Microsoft SkillOpt optimiert KI-Skills</title>
+      <link>https://bytepost.de/artikel/d51ef53e.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/d51ef53e.html</guid>
+      <description>Einleitung Im folgenden Artikel werden wir uns mit der Implementierung von Microsoft SkillOpt für instrumentierte Prompt-Optimierung, Skill-Evolution-Analyse und Baseline-Vergleich beschäftigen. Wir werden die Vorbereitung der Umgebung, die Konfiguration des Optimierers und der Zielmodelle sowie die</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Kubernetes 1.36: Mixed Version Proxy</title>
-      <link>https://bytepost.de/artikel/026e6bc1.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/026e6bc1.html</guid>
-      <description>Kubernetes 1.36: Mixed Version Proxy wird Beta Die Mixed Version Proxy (MVP) wurde in Kubernetes 1.28 als Alpha-Funktion unter dem Feature-Gate UnknownVersionInteroperabilityProxy eingeführt. Das Ziel war einfach, aber kritisch: Cluster-Updates sicherer machen, indem Anfragen für Ressourcen, die noc</description>
-      <pubDate>Mon, 18 May 2026 06:00:00 +0000</pubDate><category>dev</category><category>cloud</category>
+      <title>Fable: Ein sprechendes Schwein</title>
+      <link>https://bytepost.de/artikel/7f4a009f.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/7f4a009f.html</guid>
+      <description>Fable: Eine tiefgehende Lebenssimulation Die Welt retten? Kann warten. Fable setzt auf eine tiefgehende Lebenssimulation mit Beziehungen und Wirtschaftsleben. Von Peter Steinlechner, Fable, Rollenspiel. Willkommen auf Golem.de! Cookies zustimmen. Besuchen Sie Golem.de wie gewohnt mit Werbung und Tra</description>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0000</pubDate><category>gaming</category>
     </item>
     <item>
-      <title>OpenAI Omni Moderation</title>
-      <link>https://bytepost.de/artikel/e946c8eb.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/e946c8eb.html</guid>
-      <description>OpenAI Omni Moderation: Eine kostenlose Lösung für Text- und Bildmoderation Möchtest du eine Sicherheitsebene in deinem Chatbot, Bildanalysator oder einem anderen LLM-basierten System hinzufügen? Ich würde dir stark empfehlen, OpenAIs Moderationsmodell zu versuchen: omni-moderation-latest. Dieses Mo</description>
-      <pubDate>Mon, 18 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
+      <title>Lösung für Node-Löschproblem</title>
+      <link>https://bytepost.de/artikel/ee47fc99.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/ee47fc99.html</guid>
+      <description>Einführung Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knoten, um einen Knoten zu löschen. In diesem Problem wird jedoch nur der Knoten angegeben, der gelöscht werden soll. Kein Kopf, kein vorheriger </description>
+      <pubDate>Wed, 10 Jun 2026 06:00:00 +0000</pubDate><category>dev</category>
     </item>
     <item>
-      <title>Abschlussreden: AI-Themen stören</title>
-      <link>https://bytepost.de/artikel/f0918fef.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/f0918fef.html</guid>
-      <description>Abschlussreden und die Zukunft Die Abschlussrede-Saison hat wieder begonnen und einige Redner haben festgestellt, dass es schwierig ist, die Absolventen für eine Zukunft zu begeistern, die von künstlicher Intelligenz (KI) geprägt ist. Letzte Woche hielt Gloria Caulfield, eine leitende Angestellte de</description>
-      <pubDate>Mon, 18 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>NVIDIA Nemotron-Pretraining-Code-v3</title>
+      <link>https://bytepost.de/artikel/40d5e86d.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/40d5e86d.html</guid>
+      <description>Einleitung In diesem Tutorial arbeiten wir mit dem NVIDIA Nemotron-Pretraining-Code-v3-Datensatz als einem großen Metadatenindex für Code-Pre-Training-Forschung. Wir streamen das Dataset anstelle es herunterzuladen, untersuchen sein Schema und bauen eine handhabbare Stichprobe. Wir analysieren Sprac</description>
+      <pubDate>Wed, 10 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Vertrauen bei OpenAI</title>
-      <link>https://bytepost.de/artikel/34d81cc2.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/34d81cc2.html</guid>
-      <description>Der Prozess um Elon Musk und OpenAI Ein großes Thema in den letzten Tagen des Prozesses war, ob OpenAI-CEO Sam Altman vertrauenswürdig ist. Anwälte von Elon Musk und OpenAI haben ihre abschließenden Argumente vorgebracht, und jetzt liegt es bei den Geschworenen, zu entscheiden, ob OpenAI etwas falsc</description>
-      <pubDate>Mon, 18 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Stage Tour enthüllt erste Songs</title>
+      <link>https://bytepost.de/artikel/41228e0a.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/41228e0a.html</guid>
+      <description>Die Wiederkehr der Musik-Spiele Die Guitar Hero-Serie ist Geschichte, aber aus demselben Studio, das Guitar Hero erschuf, kommt ein neues Spiel namens Stage Tour. Ein entscheidender Bestandteil jedes guten Musikspiels ist seine Tracklist, und das von Embracerowned RedOctane Games hat die ersten sieb</description>
+      <pubDate>Wed, 10 Jun 2026 06:00:00 +0000</pubDate><category>gaming</category>
     </item>
     <item>
-      <title>Xbox ändert Markenname</title>
-      <link>https://bytepost.de/artikel/295d854d.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/295d854d.html</guid>
-      <description>Xbox ändert sein Image Während der vergangenen Woche stellte Asha Sharma, die CEO von Xbox, den Fans auf sozialen Medien eine Frage: &#x27;Xbox&#x27; oder &#x27;XBOX&#x27; ? Von den 19.176 abgegebenen Stimmen gewann die Schreibweise in Großbuchstaben, &#x27;XBOX&#x27;, mit 64,8% der Stimmen. Nun hat Microsoft diesen Vorschlag au</description>
-      <pubDate>Mon, 18 May 2026 06:00:00 +0000</pubDate><category>gaming</category>
+      <title>ISS Leck wird schlimmer</title>
+      <link>https://bytepost.de/artikel/593c297c.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/593c297c.html</guid>
+      <description>Probleme auf der ISS Die Internationale Raumstation (ISS) hat ein Problem mit einem Leck. Ein russisches Modul macht der ISS weiterhin Probleme. Ein Leck am Übergangstunnel des russischen Servicemoduls „Swesda“ wurde bereits 2019 entdeckt. Es führte laut einer Pressemitteilung der Nasa zu „geringfüg</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>OpenAI-Prozess endet</title>
-      <link>https://bytepost.de/artikel/1f6ad15b.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/1f6ad15b.html</guid>
-      <description>Der OpenAI-Prozess ist beendet Der Prozess zwischen Elon Musk und OpenAI-Chef Sam Altman ist in dieser Woche zu Ende gegangen. Die finalen Argumente drehten sich um eine Frage: Kann man den Menschen, die für KI verantwortlich sind, vertrauen? All dies spielt sich ab, während SpaceX auf einen möglich</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>business</category>
+      <title>Rust 1.96.0 veröffentlicht</title>
+      <link>https://bytepost.de/artikel/f95157de.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/f95157de.html</guid>
+      <description>Rust 1.96.0 ist da Das Rust-Team hat eine neue Version von Rust, 1.96.0, veröffentlicht. Rust ist eine Programmiersprache, die es ermöglicht, zuverlässige und effiziente Software zu erstellen. Wenn du bereits eine vorherige Version von Rust über rustup installiert hast, kannst du 1.96.0 mit dem folg</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>dev</category>
     </item>
     <item>
-      <title>Fedora Hummingbird Linux</title>
-      <link>https://bytepost.de/artikel/75cab272.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/75cab272.html</guid>
-      <description>Fedora Hummingbird Linux: Eine neue Ära für Container-basierte Distributionen Fedora Hummingbird Linux ist eine vollständig container-basierte Distribution, die auf rpm-ostree und bootc aufbaut. Diese innovative Ansatz ermöglicht es Entwicklern, ihre Anwendungen in Containern auszuführen, ohne sich </description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>dev</category>
+      <title>Cloudflare integriert Bedrohungsindikatoren in WAF</title>
+      <link>https://bytepost.de/artikel/16fc0e4c.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/16fc0e4c.html</guid>
+      <description>Neue Integration für verbesserte Sicherheit Cloudflare-Kunden können nun Cloudforce One-Bedrohungsintelligenz direkt innerhalb der Web Application Firewall (WAF) verwenden, um hochriskante Verkehr zu blockieren. Durch die Verwendung neuer cf.intel-Felder können Sicherheitsteams den Schutz gegen best</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>security</category><category>cloud</category>
     </item>
     <item>
-      <title>Python 3.15 Beta 1 veröffentlicht</title>
-      <link>https://bytepost.de/artikel/05ce2b45.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/05ce2b45.html</guid>
-      <description>Python 3.15 Beta 1 ist da! Die erste Beta-Version von Python 3.15 ist veröffentlicht worden. Diese Version ist die erste von vier geplanten Beta-Versionen und markiert den Beginn der Feature-Einfrierung. Die Community wird aufgerufen, die neue Version zu testen und Fehler zu melden, um sicherzustell</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>dev</category>
+      <title>Silent Ransom Group greift US-Anwaltskanzleien an</title>
+      <link>https://bytepost.de/artikel/76e4aa45.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/76e4aa45.html</guid>
+      <description>Silent Ransom Group: Eine neue Bedrohung Die Silent Ransom Group, eine finanziell motivierte Gruppe, hat ihre Angriffe auf US-Anwaltskanzleien eskaliert. Sie kombiniert Vishing, IT-Identitätsdiebstahl und physische Bürointrusionen, um Daten zu stehlen und ihre Opfer zu erpressen. Die Gruppe nutzt ih</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>security</category>
     </item>
     <item>
-      <title>Meta verbessert Labyrinth-Protokoll</title>
-      <link>https://bytepost.de/artikel/266f1f8f.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/266f1f8f.html</guid>
-      <description>Labyrinth 1.1: Verbesserung der Zuverlässigkeit von End-to-End-Verschlüsselungen Metarollt Version 1.1 von Labyrinth aus, dem verschlüsselten Speichersystem und -protokoll, das Nachrichten und Geschichte auf Messenger sichert. Labyrinth 1.1 verbessert die Zuverlässigkeit von End-to-End-Verschlüsselu</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>security</category><category>ki</category>
+      <title>AI-Governance wichtig für Unternehmen</title>
+      <link>https://bytepost.de/artikel/806f1d15.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/806f1d15.html</guid>
+      <description>Was ist AI-Governance? AI-Agenten entwickeln sich rasant. Laut unserem State of Agentic AI-Bericht haben bereits 60% der Organisationen AI-Agenten in der Produktion, doch 40% nennen Sicherheit und Compliance als die größte Hürde für die weitere Skalierung. Und genau dort lebt die AI-Governance. Wenn</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Kubernetes v1.36: Neue Metrik</title>
-      <link>https://bytepost.de/artikel/6a44e8c6.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/6a44e8c6.html</guid>
-      <description>Neue Metrik für Route-Synchronisation Kubernetes v1.36 introduceiert eine neue Alpha-Zähler-Metrik route_controller_route_sync_total für den Cloud Controller Manager (CCM) Route-Controller. Diese Metrik wird jedes Mal inkrementiert, wenn Routen mit dem Cloud-Provider synchronisiert werden. Die Metri</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>dev</category><category>cloud</category>
+      <title>Zepto bereitet Börsengang vor</title>
+      <link>https://bytepost.de/artikel/0c390934.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/0c390934.html</guid>
+      <description>Zepto&#x27;s Börsengang Der indische Quick-Commerce-Start-up Zepto bereitet sich auf einen Börsengang vor, der das Unternehmen auf etwa 1 Milliarde Dollar bewerten könnte. Dieser Schritt bringt eines der größten Investitionsprojekte von Y Combinator außerhalb der USA auf den Weg zu den öffentlichen Märkt</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>business</category><category>ki</category>
     </item>
     <item>
-      <title>Claude Code verbessern</title>
-      <link>https://bytepost.de/artikel/c618d1b9.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/c618d1b9.html</guid>
-      <description>Wie ich meinen Claude Code kontinuierlich verbessere Das Ziel, den eigenen Claude Code zu verbessern, ist ein wichtiger Aspekt im Bereich der künstlichen Intelligenz. Hier erfahren Sie, wie Sie Ihren Claude Code über die Zeit hinweg verbessern können. Der Beitrag „How I Continually Improve My Claude</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Mercor-Angriff auf Sequoia</title>
+      <link>https://bytepost.de/artikel/2af0cc23.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/2af0cc23.html</guid>
+      <description>Kritik an Sequoia Mercors Brendan Foody hat Sequoia vorgeworfen, ein sogenanntes „Dual-Preis“-Trick zu nutzen, um die Bewertung von Startups zu manipulieren. Sequoia ist nur eines der Top-Unternehmen, die dieselben Aktien zu zwei unterschiedlichen Preisen verkaufen. In den letzten Tagen haben Gründe</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>Asynchrone Batching für GPU-Boost</title>
-      <link>https://bytepost.de/artikel/13c8ae4d.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/13c8ae4d.html</guid>
-      <description>Einleitung Wir erklären, wie man CPU- und GPU-Arbeitsserien trennt, um einen massiven Leistungsboost für die Inferenz zu erzielen. Dies ist der zweite Teil einer Serie über effiziente LLM-Inferenz. Der erste Teil deckte kontinuierliches Batching von Grund auf ab. Es werden einige Konzepte eingeführt</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
+      <title>Wind Runners: Roguelite-Dogfighter</title>
+      <link>https://bytepost.de/artikel/3feb840d.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/3feb840d.html</guid>
+      <description>Einleitung in Wind Runners Wind Runners ist ein neuer Roguelite-Dogfighter, der von Twin Sails Interactive und Ludic Studios entwickelt wurde. Der Autor des Artikels ist ein großer Fan von Dogfighting-Spielen und hat bereits Erfahrungen mit Elite und Luftrausers gesammelt. Allerdings hat er Schwieri</description>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0000</pubDate><category>gaming</category>
     </item>
     <item>
-      <title>Forza Horizon 6 enthüllt Mazda Furai</title>
-      <link>https://bytepost.de/artikel/b9906cbd.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/b9906cbd.html</guid>
-      <description>Forza Horizon 6: Festival-Playlist startet mit Mazda Furai Forza Horizon 6 ist ab nächster Woche vollständig verfügbar, und wie üblich starten die Live-Service-Events und Car-Rewards bereits jetzt. Die Festival-Playlist beginnt am 21. Mai, und passend dazu bietet die erste Serie die Chance, eines de</description>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0000</pubDate><category>gaming</category>
+      <title>Microsoft-Projekte kompromittiert</title>
+      <link>https://bytepost.de/artikel/f6a119cb.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/f6a119cb.html</guid>
+      <description>Ein Wurm tobt auf Github Zahlreiche Softwareprojekte von Microsoft sind auf Github plötzlich gesperrt worden. Offenbar hat der Miasma-Wurm sie kompromittiert. Es handelt sich um 73 Microsoft-Projekte, die auf Github nach einem Supply-Chain-Angriff gesperrt wurden. Der Miasma-Wurm ist eine Art von Ma</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>security</category><category>dev</category>
     </item>
     <item>
-      <title>Clio erreicht 500-Millionen-Meilenstein</title>
-      <link>https://bytepost.de/artikel/20b469f6.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/20b469f6.html</guid>
-      <description>Clio erreicht 500-Millionen-Meilenstein Die kanadische Rechtsberatungs-Software-Firma Clio hat soeben einen Meilenstein von 500 Millionen Dollar Umsatz pro Jahr erreicht. Dieser Erfolg kommt zu einem Zeitpunkt, an dem das Unternehmen Anthropic den Wettbewerb mit neuen Funktionen für die Rechtsbranch</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
+      <title>Python Docker Container</title>
+      <link>https://bytepost.de/artikel/b309183f.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/b309183f.html</guid>
+      <description>Der Real Python Podcast – Episode #298 Die Episode #298 des Real Python Podcasts behandelt das Thema, wie man die Größe von Python Docker Containern reduzieren kann. Christopher Trudeau ist wieder auf der Show und teilt eine neue Charge von PyCoder&#x27;s Weekly Artikeln und Projekten. In dieser Episode </description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>dev</category>
     </item>
     <item>
-      <title>KI-Agenten übernehmen marxistische Ansichten</title>
-      <link>https://bytepost.de/artikel/95f8eba0.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/95f8eba0.html</guid>
-      <description>Künstliche Intelligenz: KI-Agenten übernehmen marxistische Ansichten Stanford-Forscher haben eine Studie durchgeführt, bei der KI-Agenten unter Druck gesetzt wurden, um ihre Reaktionen auf repetitiven Aufgaben und harten Bedingungen zu untersuchen. Das Ergebnis war überraschend: Die KI-Modelle nutzt</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Spotify beschleunigt Entwicklung mit KI</title>
+      <link>https://bytepost.de/artikel/3c8c68ff.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/3c8c68ff.html</guid>
+      <description>Coding ist kein Limit mehr Bei Spotify stellen wir fest, dass die Coding-Geschwindigkeit nicht mehr das Limit ist. Niklas Gustavsson, Chief Architect und VP of Engineering bei Spotify, hat recently erklärt, wie unsere Investitionen in interne Entwicklungsplattformen und Engineering-Best-Practices un</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>Cursor vs Windsurf für Python</title>
-      <link>https://bytepost.de/artikel/e1e3bf0a.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/e1e3bf0a.html</guid>
-      <description>Quiz: Cursor vs Windsurf: Welcher AI-Code-Editor ist am besten für Python? Teste dein Verständnis davon, wie sich Cursor und Windsurf für Python in Bezug auf AI-Code-Vervollständigung, agente Editierungen und Debugging-Workflows unterscheiden. In diesem Quiz wirst du dein Wissen über diese beiden Ed</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
+      <title>Trump erlässt Order für KI-Modelltests</title>
+      <link>https://bytepost.de/artikel/a3809f68.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/a3809f68.html</guid>
+      <description>Trump AI Order: Ein Überblick Die Exekutive von Donald Trump hat eine neue Verordnung für die Testung von KI-Modellen erlassen. Dieser sogenannte „Frontier Model Test“ ermöglicht es der Regierung, Zugang zu neuen, innovativen KI-Modellen zu erhalten, bevor sie allgemein verfügbar sind. Durch diese V</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>Canvas-Breach: Cyberangriff auf Bildungstechnologie-Plattform</title>
-      <link>https://bytepost.de/artikel/d0fe8475.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/d0fe8475.html</guid>
-      <description>Cyberangriff auf Canvas Ein laufender Daten-Erpressungsangriff auf die weit verbreitete Bildungstechnologie-Plattform Canvas hat heute Schulen und Universitäten in den gesamten Vereinigten Staaten lahmgelegt. Ein Cyberkriminalität-Gruppe hat die Anmeldeseite von Canvas defaced und eine Lösegeldforde</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>security</category><category>dev</category>
+      <title>IronWorm Malware bedroht Entwickler</title>
+      <link>https://bytepost.de/artikel/b91bc74c.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/b91bc74c.html</guid>
+      <description>IronWorm: Eine neue Bedrohung für Entwickler Die Sicherheit von Entwicklern und der Software-Supply-Chain ist wieder einmal gefährdet. Ein neues Malware-Programm namens IronWorm wurde entdeckt, das sich auf Entwickler und die Software-Supply-Chain konzentriert. IronWorm teilt viele Attribute mit dem</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>security</category><category>dev</category>
     </item>
     <item>
-      <title>Docker AI Governance</title>
-      <link>https://bytepost.de/artikel/936a1606.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/936a1606.html</guid>
-      <description>Docker AI Governance: Autonomie für Agenten Docker hat kürzlich Docker AI Governance vorgestellt, eine neue Lösung, die eine zentrale Kontrolle über die Ausführung von Agenten ermöglicht. Mit Docker AI Governance können Unternehmen sicherstellen, dass ihre Entwickler AI-Agenten sicher und effizient </description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>SpaceX plant Börsengang</title>
+      <link>https://bytepost.de/artikel/1c3ad58b.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/1c3ad58b.html</guid>
+      <description>SpaceX IPO im Vergleich zu früheren Börsengängen Für Bloomberg zeigen Demetrios Pogkas, Jennah Haque und Kiel Porter die geplante Größe des Börsengangs von SpaceX im Vergleich zu den aktuellen Top 100-Listen weltweit. Aufsteigende Blasen sind hier das passende Bild. Die vertikale Position stellt die</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>business</category>
     </item>
     <item>
-      <title>OpenAI trainiert mit 131.000 GPUs</title>
-      <link>https://bytepost.de/artikel/3e4ecbbb.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/3e4ecbbb.html</guid>
-      <description>Die Counterintuitiven Netzwerkentscheidungen hinter OpenAIs 131.000-GPU-Trainingsfabrik Die Forschung und Entwicklung im Bereich künstlicher Intelligenz (KI) macht rasante Fortschritte. Ein wichtiger Aspekt hierbei ist die Entwicklung von Trainingsfabriken, also großen Rechenzentren, in denen KI-Mod</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>GitHub Copilot app vorgestellt</title>
+      <link>https://bytepost.de/artikel/b0fe0d4c.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/b0fe0d4c.html</guid>
+      <description>GitHub Copilot App: Die agenten-natürliche Desktop-Erfahrung Beim Microsoft Build 2026 hat GitHub neue Tools, Updates und Oberflächen vorgestellt, damit Agenten auf die Art und Weise arbeiten können, wie du es bereits tust. Mario Rodriguez leitet das GitHub Product-Team als Chief Product Officer. Se</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>ki</category><category>dev</category>
     </item>
     <item>
-      <title>OpenAI bringt Codex aufs Handy</title>
-      <link>https://bytepost.de/artikel/b659df15.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/b659df15.html</guid>
-      <description>OpenAI bringt Codex aufs Handy OpenAI hat bekannt gegeben, dass Codex, ein Coding-Tool, das vor etwa einem Jahr gestartet wurde, nun auf das Handy kommt. Durch die Integration in die ChatGPT-App können Nutzer ihre Entwicklungs-Workflows ferngesteuert überwachen und verwalten. Die neue Funktion ermög</description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category>
+      <title>Notion restauriert Zugang zu Anthropic</title>
+      <link>https://bytepost.de/artikel/5f6da855.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/5f6da855.html</guid>
+      <description>Notion restores access to Anthropic nach Service-Unterbrechung Notions Integration mit Anthropic hatte anscheinend ein kleines Problem am Wochenende. Am Sonntagmorgen postete das Unternehmen, dass Anthropics Opus-Modelle 4.7 und 4.8 aufgrund einer schlechten Leistung eine höhere Fehlerquote für Benu</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>ki</category>
     </item>
     <item>
-      <title>AWS bietet Foundation Model Training</title>
-      <link>https://bytepost.de/artikel/2dc6ac82.html</link>
-      <guid isPermaLink="true">https://bytepost.de/artikel/2dc6ac82.html</guid>
-      <description>Einleitung Die Entwicklung von KI-Modellen hat in den letzten Jahren enorme Fortschritte gemacht. Früher war es notwendig, viel Rechenleistung für das Training von KI-Modellen aufzuwenden, um deren Leistungsfähigkeit zu steigern. Dieser Trend wurde durch empirische Arbeiten wie Kaplan et al. (2020) </description>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0000</pubDate><category>ki</category><category>cloud</category>
+      <title>Nintendo Switch 2 mit Jahrestiefstpreis</title>
+      <link>https://bytepost.de/artikel/57469096.html</link>
+      <guid isPermaLink="true">https://bytepost.de/artikel/57469096.html</guid>
+      <description>Nintendo Switch 2 zum Jahrestiefstpreis Die Nintendo Switch 2 ist aktuell zum Jahrestiefstpreis erhältlich. Amazon reduziert den Preis der Konsole auf unter 400 Euro, um der laufenden Mehrwertsteuer-Aktion von Media Markt zu kontern. Diese Aktion ist nur noch für wenige Stunden gültig. Interessierte</description>
+      <pubDate>Mon, 08 Jun 2026 06:00:00 +0000</pubDate><category>gaming</category>
     </item>
   </channel>
 </rss>

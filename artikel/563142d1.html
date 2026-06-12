@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reachy Mini geht vollständig lokal — BytePost</title>
+    <meta name="description" content="Reachy Mini geht vollständig lokal After building your Reachy Mini, installiere die Conversation-App und beginne, mit ihr zu sprechen. Bisher musstest du dein A">
+    <link rel="canonical" href="https://bytepost.de/artikel/563142d1.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/563142d1.html">
+    <meta property="og:title" content="Reachy Mini geht vollständig lokal">
+    <meta property="og:description" content="Reachy Mini geht vollständig lokal After building your Reachy Mini, installiere die Conversation-App und beginne, mit ihr zu sprechen. Bisher musstest du dein A">
+    <meta property="og:image" content="https://bytepost.de/images/563142d1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reachy Mini geht vollständig lokal">
+    <meta name="twitter:description" content="Reachy Mini geht vollständig lokal After building your Reachy Mini, installiere die Conversation-App und beginne, mit ihr zu sprechen. Bisher musstest du dein A">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Reachy Mini geht vollständig lokal</h1>
+    <div class="meta">Huggingface · 31.05.2026 · 3 Min Lesezeit</div>
+    <img class="hero" src="../images/563142d1.jpg" alt="Reachy Mini geht vollständig lokal">
+    <div class="content">         <h3>Reachy Mini geht vollständig lokal</h3>         <p>After building your Reachy Mini, installiere die Conversation-App und beginne, mit ihr zu sprechen. Bisher musstest du dein Audio an einen Server senden. Aber nicht mehr. Heute werden wir dir zeigen, wie du den gesamten Stack lokal ausführen kannst.</p>         <p>Dieser Stack wird von speech-to-speech angetrieben, unserer kaschierten VAD → STT → LLM → TTS-Pipeline, die eine Realtime-API-kompatible /v1/realtime-WebSocket-API bietet. Sobald du den Backend-Server startest, zeigt der Roboter darauf vom UI aus.</p>         <p>Kaskaden sind die flexibelste Option in der Open-Source-Landschaft heute und mit den richtigen Komponenten auch die schnellsten. Wir empfehlen die Komponenten, die wir am besten mögen, aber der Sinn einer Kaskade ist, dass du sie austauschen kannst. Neue Modelle werden jede Woche veröffentlicht.</p>         <h3>Schnellstart</h3>         <p>Dieser Blog führt dich durch die Ausführung von Gesprächen mit Reachy Mini vollständig lokal. Keine Cloud, keine API-Schlüssel, keine Daten verlassen dein Gerät. Hier ist ein Video, das es live zeigt:</p>         <p>Um die LLM auszuführen, verwenden wir Hugging Faces llama.cpp. Wenn du es installieren musst, ist der einfachste Weg, brew install llama.cpp oder winget install llama.cpp, für weitere Hilfe, sieh dir die Dokumentation an.</p>         <p>Als Erstes werden wir ausführen: llama-server -hf ggml-org/gemma-4-E4B-it-GGUF -np 2 -c 65536 -fa on --swa-full Und fertig! Beim ersten Mal wird das Modell heruntergeladen, bei nachfolgenden Starts ist es schnell.</p>         <p>Was bedeuten diese Flags? -hf ggml-org/gemma-4-E4B-it-GGUF — lädt das Modell direkt vom Hub. Der erste Start lädt es herunter, nachfolgende Starts verwenden den Cache. -np 2 — zwei parallele Slots. Lässt den Server einen zweiten Anfrage (z.B. eine schnelle Unterbrechung) ohne Blockierung des ersten bearbeiten. -c 65536 — 64k-Kontextfenster, geteilt über Slots. Viel Spielraum für lange Gespräche. -fa on — Flash-Aufmerksamkeit. Schneller und weniger Speicher, im Wesentlichen kostenlos auf moderner Hardware. --swa-full — behält den vollständigen Sliding-Window-Aufmerksamkeits-Cache anstelle von Neu berechnung. Tauscht ein bisschen RAM gegen bemerkbar schnelleres Prompt-Verarbeiten auf Gemma.</p>         <h3>Einrichten von Sprache-zu-Sprache</h3>         <p>Wir beginnen, indem wir einfach die Bibliothek uv installieren: pip install speech-to-speech</p>         <p>Während wir die LLM in einem anderen Terminal ausführen, können wir einfach ausführen: speech-to-speech --responses_api_base_url "http://127.0.0.1:8080" --responses_api_api_key "" --mode local Und du kannst beginnen, mit dem Modell über dein Terminal zu sprechen!</p>         <p>Das erste Mal benötigt es Parakeet-TDT 0.6B v3 und Qwen3TTS herunterzuladen, aber nachfolgende Starts sind schnell. Hier ist ein Video, das den lokalen Konversationsmodus zeigt:</p>         <h3>Verbinden von Reachy Mini mit Sprache-zu-Sprache</h3>         <p>Sobald du llama.cpp und speech-to-speech ausführen kannst, kannst du den Roboter mit der Desktop-App starten und die Conversation-App ausführen. Im UI der Conversation-App musst du den lokalen Modus durch Klicken auf "Verbindung bearbeiten" im HF-Backend auswählen.</p>         <p>Und du bist fertig. Du kannst beginnen, mit deinem Roboter zu sprechen. Jedes Stadium der Pipeline ist ein Kompromiss: Es gibt schnellere TTS-Modelle mit niedrigerer Qualität, langsamere STT-Modelle mit höherer Qualität. Wir haben für multilinguale Anwendungen optimiert, du möchtest möglicherweise für eine einzelne Sprache optimieren.</p>         <p>Der Rest des Blogs behandelt, wie du anpassen kannst.</p>         <h3>Warum solltest du deinen eigenen Sprache-zu-Sprache-Server ausführen?</h3>         <p>Hostierte Echtzeit-Backends sind bequem, aber das Ausführen deines eigenen Motors entsperrt drei Dinge: Privatsphäre. Audio verlässt dein Netzwerk nie, die gesamte Pipeline läuft auf Hardware, die du kontrollierst. Keine API-Kosten. Keine pro-Minute- oder pro-Token-Gebühren. Vollständige Kontrolle über die Pipeline. Tausche jede Komponente aus: VAD, STT, LLM, TTS. Wenn etwas Besseres im Hub 🤗 landet.</p>         <p>Das speech-to-speech-Repo gibt dir all das in einer einzelnen CLI. Es startet einen WebSocket-Server bei /v1/realtime, der das gleiche Protokoll spricht, das Reachy Mini bereits kennt.</p>         <p>Unsere voreingestellten Werte: VAD, STT, TTS Eine kaschierte Sprach-Pipeline hat vier Stadien: VAD, STT, LLM und TTS. Für drei davon wählen wir solide Vorgaben, damit du dich auf die LLM konzentrieren kannst:</p>         <ul>             <li>Stufe: VAD, Wahl: Silero VAD v5, Warum: winzig, genau, läuft auf CPU. Das Standard-Default in der Open-Source-Stimme-Agent-Welt.</li>             <li>Stufe: STT, Wahl: Parakeet-TDT 0.6B v3, Warum: streaming-freundlich, sehr</li>         </ul>         <p><em>BytePost-Einordnung: Die Fähigkeit, gesamte Pipelines lokal auszuführen, ist ein wichtiger Schritt in Richtung Privatsphäre und Kontrolle. Mit der richtigen Konfiguration kannst du ein leistungsfähiges und sicheres System aufbauen.</em></p>     </div>
+    <a class="cta" href="../index.html#a=563142d1">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://huggingface.co/blog/local-reachy-mini-conversation" target="_blank" rel="noopener">Huggingface</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

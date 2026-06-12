@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythos Preview revolutioniert Code-Sicherheit — BytePost</title>
+    <meta name="description" content="Project Glasswing: Was Mythos uns zeigte In den letzten Wochen haben wir eine Reihe von sicherheitsorientierten LLMs auf unsere eigene Infrastruktur getestet. D">
+    <link rel="canonical" href="https://bytepost.de/artikel/bcac8651.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/bcac8651.html">
+    <meta property="og:title" content="Mythos Preview revolutioniert Code-Sicherheit">
+    <meta property="og:description" content="Project Glasswing: Was Mythos uns zeigte In den letzten Wochen haben wir eine Reihe von sicherheitsorientierten LLMs auf unsere eigene Infrastruktur getestet. D">
+    <meta property="og:image" content="https://bytepost.de/images/bcac8651.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mythos Preview revolutioniert Code-Sicherheit">
+    <meta name="twitter:description" content="Project Glasswing: Was Mythos uns zeigte In den letzten Wochen haben wir eine Reihe von sicherheitsorientierten LLMs auf unsere eigene Infrastruktur getestet. D">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Mythos Preview revolutioniert Code-Sicherheit</h1>
+    <div class="meta">Cloudflare · 21.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/bcac8651.jpg" alt="Mythos Preview revolutioniert Code-Sicherheit">
+    <div class="content">         <h3>Project Glasswing: Was Mythos uns zeigte</h3>         <p>In den letzten Wochen haben wir eine Reihe von sicherheitsorientierten LLMs auf unsere eigene Infrastruktur getestet. Diese LLMs helfen, potenzielle Schwachstellen in unseren Systemen zu identifizieren, damit wir sie beheben können - und sie zeigen uns auch, was Angreifer mit den neuesten Modellen tun können. Keines dieser LLMs hat mehr Aufmerksamkeit erregt als Mythos Preview, von Anthropic.</p>         <p>Vor einigen Wochen wurden wir eingeladen, Mythos Preview im Rahmen von Project Glasswing zu verwenden. Wir richteten es auf mehr als fünfzig unserer eigenen Repositories aus, um zu sehen, was es finden würde und wie es funktioniert. Dieser Beitrag teilt, was wir beobachtet haben, was die Modelle gut gemacht haben und was nicht, und wie die Architektur und der Prozess um sie herum geändert werden müssen, damit sie im großen Maßstab eingesetzt werden können.</p>         <h3>Was sich mit Mythos Preview geändert hat</h3>         <p>Mythos Preview ist ein echter Fortschritt, und es lohnt sich, dies deutlich zu sagen, bevor wir uns mit den Details befassen. Wir haben Modelle gegen unseren Code laufen lassen, und der Sprung von dem, was mit früheren allgemeinen Frontier-Modellen möglich war, zu dem, was Mythos Preview heute kann, ist nicht nur eine Verfeinerung dessen, was vorher kam. Es ist ein anderes Werkzeug, das eine andere Art von Arbeit leistet, und das macht eine direkte Vergleichbarkeit mit früheren Modellen schwierig.</p>         <p>Stattdessen ist es sinnvoller, zu beschreiben, was es tatsächlich kann, und zwei Funktionen, die bei der Arbeit mit Mythos Preview auffielen: Ausnutzungschain-Konstruktion und Beweisgenerierung. Mythos Preview kann mehrere dieser Primitives kombinieren und überlegen, wie man sie in eine funktionierende Beweisführung umwandelt. Die Argumentation, die es vorzeigt, sieht aus wie die Arbeit eines erfahrenen Forschers und nicht wie die Ausgabe eines automatischen Scanners.</p>         <h3>Model-Verweigerungen in legitimer Sicherheitsforschung</h3>         <p Das Mythos-Preview-Modell, das von Anthropic als Teil von Project Glasswing bereitgestellt wurde, hatte nicht die zusätzlichen Sicherheitsvorkehrungen, die in allgemein verfügbaren Modellen (wie Opus 4.7 oder GPT-5.5) vorhanden sind. Trotzdem wehrt sich das Modell organisch gegen bestimmte Anfragen - ähnlich wie die Cyber-Fähigkeiten, die es nützlich für die Schwachstellenjagd machen, hat das Modell seine eigenen emergenten Schutzmechanismen, die es manchmal dazu bringen, sich gegen legitime Sicherheitsforschungsanfragen zu wehren.</p>         <p><em>BytePost-Einordnung: Die Ergebnisse von Project Glasswing und die Fähigkeiten von Mythos Preview zeigen, dass die Sicherheitsforschung und die Entwicklung von KI-Modellen eng miteinander verbunden sind. Die Fähigkeit, Schwachstellen zu identifizieren und auszunutzen, ist ein wichtiger Schritt in der Entwicklung sicherer Systeme. Es bleibt abzuwarten, wie sich die Arbeit an Mythos Preview und anderen sicherheitsorientierten LLMs weiterentwickelt.</em></p>     </div>
+    <a class="cta" href="../index.html#a=bcac8651">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://blog.cloudflare.com/cyber-frontier-models/" target="_blank" rel="noopener">Cloudflare</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>
