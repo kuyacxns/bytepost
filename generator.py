@@ -261,7 +261,10 @@ def backfill_embeddings(articles, emb_store):
     print("Backfill abgeschlossen.")
 
 
+UNSPLASH_UTM = "?utm_source=bytepost&utm_medium=referral"
+
 def get_unsplash_image(query, article_id):
+    """Lädt ein Unsplash-Bild. Gibt dict mit Pfad + Fotografen-Attribution zurück."""
     try:
         url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={UNSPLASH_KEY}"
         r = requests.get(url, timeout=10)
@@ -271,8 +274,17 @@ def get_unsplash_image(query, article_id):
         if not os.path.exists("images"): os.makedirs("images")
         path = f"images/{article_id}.jpg"
         with open(path, "wb") as f: f.write(img_data)
-        print(f"  -> Bild gespeichert: {path}")
-        return path
+        # Unsplash-Guidelines: Download-Endpoint triggern + Fotograf nennen
+        dl = data.get("links", {}).get("download_location")
+        if dl:
+            try: requests.get(f"{dl}&client_id={UNSPLASH_KEY}", timeout=10)
+            except Exception: pass
+        credit_name = data.get("user", {}).get("name", "")
+        credit_url  = data.get("user", {}).get("links", {}).get("html", "")
+        if credit_url:
+            credit_url += UNSPLASH_UTM
+        print(f"  -> Bild gespeichert: {path} (Foto: {credit_name})")
+        return {"path": path, "credit_name": credit_name, "credit_url": credit_url}
     except Exception as e:
         print(f"  -> Bildfehler: {e}")
         return None
@@ -308,31 +320,34 @@ def ask_gemini(url, category, rss_title="", rss_summary=""):
 {source_block}
 
 DEINE AUFGABE:
-Übersetze und übertrage diesen Artikel vollständig ins Deutsche. Der Leser soll nach dem Lesen deines Textes den Originalartikel nicht mehr aufrufen müssen — er hat alle Informationen. Nutze ALLE Fakten, Zitate, Zahlen und Details aus dem Originaltext.
+Schreibe eine EIGENSTÄNDIGE, KURZE Zusammenfassung dieses Artikels auf Deutsch — in deinen EIGENEN Worten. Die Zusammenfassung gibt die Kernfakten wieder und macht neugierig auf den Originalartikel, ersetzt ihn aber NICHT.
+
+WICHTIGE REGELN (Urheberrecht):
+- Komplett eigene Formulierungen — KEINE Übersetzung des Originaltexts Absatz für Absatz
+- Keine wörtlichen Zitate über 15 Wörter; kurze Zitate immer als solche kennzeichnen
+- Nur die wichtigsten Fakten und Zahlen — Details bleiben dem Original vorbehalten
+- Der Text soll motivieren, den verlinkten Originalartikel zu lesen
 
 STIL:
 - Fließender, gut lesbarer Journalismus auf Deutsch
 - Direkte "Du"-Ansprache wo es passt
-- Konkrete Fakten und Zitate aus dem Original behalten
 - Am Ende: kurze eigene Einordnung für Entwickler
 
-FORMAT für "content" (vollständiger Artikel auf Deutsch):
-- <h3>kurze Zwischenüberschriften</h3> zur Strukturierung
-- Mehrere <p>-Absätze mit dem vollständigen Inhalt des Originals
-- <ul> für Aufzählungen aus dem Original
+FORMAT für "content" (Zusammenfassung auf Deutsch):
+- <h3>kurze Zwischenüberschriften</h3> zur Strukturierung (max. 2)
+- <p>-Absätze, <ul> für Aufzählungen
 - Abschluss: <p><em>BytePost-Einordnung: ...</em></p>
-- Länge: 400-600 Wörter — so lang wie nötig um den vollen Artikel abzudecken
+- Länge: MAXIMAL 250 Wörter
 
 FORMAT für "content_simple" (Einfach erklärt — für Einsteiger & Nicht-Techniker):
 - Keine Fachbegriffe, stattdessen Alltagsvergleiche und Analogien
-- 150-200 Wörter, <p>-Absätze, kein h3
+- 100-130 Wörter, <p>-Absätze, kein h3
 
 FORMAT für "content_pro" (Für Profis — für Entwickler & Engineers):
-- Technische Tiefe: Architektur-Details, verwendete Technologien, Protokolle, Datenstrukturen
+- Technische Einordnung: Architektur, Technologien, Protokolle, Trade-offs — in eigenen Worten
 - Code-Beispiele in <pre><code> NUR wenn ein echtes, sinnvolles Beispiel möglich ist (z.B. Patch-Check, Erkennungslogik, Konfiguration, API-Aufruf). KEIN Placeholder-Code, KEINE Kommentare wie "Beispielcode hier". Lieber kein Code-Block als ein leerer.
 - Hinweise auf verwandte Konzepte, Standards oder Papers
-- Kritische Einordnung: Was sind die technischen Trade-offs?
-- 250-350 Wörter, <h3> zur Strukturierung
+- 150-220 Wörter, <h3> zur Strukturierung
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
 
@@ -606,7 +621,10 @@ def run():
         entry["url"]       = post.link
         entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
         image_query        = entry.pop("image_query", "technology")
-        entry["image_local"] = get_unsplash_image(image_query, entry["id"])
+        img = get_unsplash_image(image_query, entry["id"])
+        entry["image_local"]       = img["path"] if img else None
+        entry["image_credit_name"] = img["credit_name"] if img else ""
+        entry["image_credit_url"]  = img["credit_url"]  if img else ""
         vec = get_embedding(embed_text(entry))
         if vec:
             emb_store[entry["id"]] = vec

@@ -156,6 +156,20 @@
         .hero-pick-why-text { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.92); }
         .hero-pick-meta { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.6); flex-wrap: wrap; }
 
+        /* ── Unsplash-Attribution ───────────────────────────── */
+        .hero-credit {
+            position: absolute; bottom: 8px; right: 12px; z-index: 2;
+            font-family: var(--mono); font-size: 9px; color: rgba(255,255,255,0.55);
+        }
+        .hero-credit a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .hero-credit a:hover { text-decoration: underline; }
+        .img-credit {
+            font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            padding: 6px 16px; text-align: right;
+        }
+        .img-credit a { color: var(--text-3); text-decoration: none; }
+        .img-credit a:hover { color: var(--accent); }
+
         @media (max-width: 600px) {
             .hero-pick { min-height: 340px; }
             .hero-pick-body { padding: 20px 18px 24px; }
@@ -622,6 +636,15 @@
         ).join('');
     }
 
+    // Unsplash-Attribution (Pflicht laut API-Guidelines)
+    function creditHtml(a, cssClass) {
+        if (!a.image_credit_name) return '';
+        const nameLink = a.image_credit_url
+            ? `<a href="${a.image_credit_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${a.image_credit_name}</a>`
+            : a.image_credit_name;
+        return `<div class="${cssClass}">Foto: ${nameLink} / <a href="https://unsplash.com/?utm_source=bytepost&utm_medium=referral" target="_blank" rel="noopener" onclick="event.stopPropagation()">Unsplash</a></div>`;
+    }
+
     /* ── Render ─────────────────────────────────────────────── */
     function renderAll() {
         const articles = filteredArticles();
@@ -648,6 +671,7 @@
             <div class="hero-pick" onclick="openArt('${pick.id}')">
                 ${imgHtml}
                 <div class="hero-pick-gradient"></div>
+                ${creditHtml(pick, 'hero-credit')}
                 <div class="hero-pick-body">
                     <div class="hero-pick-top">
                         <span class="pick-badge">⭐ Pick of the Day</span>
@@ -732,7 +756,7 @@
         if (a.content_pro)    explainCache[id].pro    = a.content_pro;
 
         document.getElementById('m-img-container').innerHTML = a.image_local
-            ? `<img src="${a.image_local}" class="modal-image">` : '';
+            ? `<img src="${a.image_local}" class="modal-image">${creditHtml(a, 'img-credit')}` : '';
 
         const modal = document.querySelector('.modal');
         if (id === previousId) {
