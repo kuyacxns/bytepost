@@ -273,17 +273,37 @@ def backfill_embeddings(articles, emb_store):
 
 UNSPLASH_UTM = "?utm_source=bytepost&utm_medium=referral"
 
+def save_image_variants(img_data, article_id):
+    """Speichert das Bild als WebP (voll) + kleine Card-Variante (~400px).
+    Fallback auf JPG wenn Pillow fehlt."""
+    if not os.path.exists("images"): os.makedirs("images")
+    try:
+        from PIL import Image
+        from io import BytesIO
+        img = Image.open(BytesIO(img_data)).convert("RGB")
+        full_path = f"images/{article_id}.webp"
+        img.save(full_path, "WEBP", quality=82)
+        small = img.copy()
+        small.thumbnail((400, 10000))
+        small_path = f"images/{article_id}-sm.webp"
+        small.save(small_path, "WEBP", quality=80)
+        return full_path, small_path
+    except ImportError:
+        print("  -> Pillow fehlt — speichere JPG ohne Varianten (pip install Pillow)")
+        path = f"images/{article_id}.jpg"
+        with open(path, "wb") as f: f.write(img_data)
+        return path, None
+
+
 def get_unsplash_image(query, article_id):
-    """Lädt ein Unsplash-Bild. Gibt dict mit Pfad + Fotografen-Attribution zurück."""
+    """Lädt ein Unsplash-Bild. Gibt dict mit Pfaden + Fotografen-Attribution zurück."""
     try:
         url = f"https://api.unsplash.com/photos/random?query={query}&orientation=landscape&client_id={UNSPLASH_KEY}"
         r = requests.get(url, timeout=10)
         data = r.json()
         img_url = data["urls"]["regular"]
         img_data = requests.get(img_url, timeout=30).content
-        if not os.path.exists("images"): os.makedirs("images")
-        path = f"images/{article_id}.jpg"
-        with open(path, "wb") as f: f.write(img_data)
+        path, small_path = save_image_variants(img_data, article_id)
         # Unsplash-Guidelines: Download-Endpoint triggern + Fotograf nennen
         dl = data.get("links", {}).get("download_location")
         if dl:
@@ -294,7 +314,8 @@ def get_unsplash_image(query, article_id):
         if credit_url:
             credit_url += UNSPLASH_UTM
         print(f"  -> Bild gespeichert: {path} (Foto: {credit_name})")
-        return {"path": path, "credit_name": credit_name, "credit_url": credit_url}
+        return {"path": path, "small": small_path,
+                "credit_name": credit_name, "credit_url": credit_url}
     except Exception as e:
         print(f"  -> Bildfehler: {e}")
         return None
@@ -780,7 +801,8 @@ def run():
         entry["url"]       = post.link
         image_query        = entry.pop("image_query", "technology")
         img = get_unsplash_image(image_query, entry["id"])
-        entry["image_local"]       = img["path"] if img else None
+        entry["image_local"]       = img["path"]  if img else None
+        entry["image_small"]       = img["small"] if img else None
         entry["image_credit_name"] = img["credit_name"] if img else ""
         entry["image_credit_url"]  = img["credit_url"]  if img else ""
         vec = get_embedding(embed_text(entry))

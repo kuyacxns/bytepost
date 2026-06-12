@@ -216,6 +216,11 @@
         .bm-btn:hover { color: #ffd60a; transform: scale(1.15); }
         .bm-btn.active { color: #ffd60a; }
 
+        /* ── Tastatur-Fokus ─────────────────────────────────── */
+        .card:focus-visible, .hero-pick:focus-visible {
+            outline: 2px solid var(--accent); outline-offset: 2px;
+        }
+
         @media (max-width: 600px) {
             .hero-pick { min-height: 340px; }
             .hero-pick-body { padding: 20px 18px 24px; }
@@ -508,8 +513,8 @@
 
 <!-- Modal -->
 <div class="overlay" id="overlay" onclick="if(event.target.id==='overlay')closeModal()">
-    <button class="modal-close" id="modal-close-btn" onclick="closeModal()">✕</button>
-    <div class="modal">
+    <button class="modal-close" id="modal-close-btn" onclick="closeModal()" aria-label="Artikel schließen">✕</button>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
         <div id="m-img-container"></div>
         <div class="modal-content-padding">
             <span class="m-tag" id="m-tag"></span>
@@ -590,6 +595,7 @@
     let activeFilters = new Set(); // leer = alle
     let currentArticleId = null;
     let modalOpen = false;
+    let lastFocusedEl = null;   // Fokus-Rückgabe beim Modal-Schließen
     let lastCatKey = '';        // zuletzt gerenderter cat-Hash (verhindert Doppel-Render)
     let searchTerm = '';
     const modalScrollPos = {};  // articleId → scroll position
@@ -777,6 +783,15 @@
         ).join('');
     }
 
+    function escAttr(s) {
+        return String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    }
+
+    // Tastatur-Bedienung für klickbare Karten/Hero (Enter/Space)
+    function cardKey(e, id) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openArt(id); }
+    }
+
     // Unsplash-Attribution (Pflicht laut API-Guidelines)
     function creditHtml(a, cssClass) {
         if (!a.image_credit_name) return '';
@@ -807,11 +822,11 @@
         const color = catColor(cats(pick)[0]);
         const teaserText = teaser(pick.content, 160);
         const imgHtml = pick.image_local
-            ? `<img class="hero-pick-img" src="${pick.image_local}" alt="">`
+            ? `<img class="hero-pick-img" src="${pick.image_local}" alt="${escAttr(pick.title)}" decoding="async">`
             : `<div class="hero-pick-placeholder">${pick.icon || '📰'}</div>`;
 
         container.innerHTML = `
-            <div class="hero-pick" onclick="openArt('${pick.id}')">
+            <div class="hero-pick" role="button" tabindex="0" onclick="openArt('${pick.id}')" onkeydown="cardKey(event,'${pick.id}')">
                 ${imgHtml}
                 <div class="hero-pick-gradient"></div>
                 ${creditHtml(pick, 'hero-credit')}
@@ -851,11 +866,14 @@
             const t = teaser(a.content, 120);
             const isRead = readSet.has(a.id);
             const isBm   = bookmarkSet.has(a.id);
+            const srcset = a.image_small && a.image_local
+                ? ` srcset="${a.image_small} 400w, ${a.image_local} 1080w" sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"`
+                : '';
             const imgHtml = a.image_local
-                ? `<img class="card-img" src="${a.image_local}" alt="" loading="lazy">`
+                ? `<img class="card-img" src="${a.image_small || a.image_local}"${srcset} alt="${escAttr(a.title)}" loading="lazy" decoding="async">`
                 : `<div class="card-icon">${a.icon || '📰'}</div>`;
             return `
-                <div class="card${isRead ? ' read' : ''}" onclick="openArt('${a.id}')">
+                <div class="card${isRead ? ' read' : ''}" role="button" tabindex="0" onclick="openArt('${a.id}')" onkeydown="cardKey(event,'${a.id}')">
                     ${imgHtml}
                     <div class="card-body">
                         <div class="card-meta">
@@ -904,7 +922,7 @@
         if (a.content_pro)    explainCache[id].pro    = a.content_pro;
 
         document.getElementById('m-img-container').innerHTML = a.image_local
-            ? `<img src="${a.image_local}" class="modal-image">${creditHtml(a, 'img-credit')}` : '';
+            ? `<img src="${a.image_local}" class="modal-image" alt="${escAttr(a.title)}" decoding="async">${creditHtml(a, 'img-credit')}` : '';
 
         const modal = document.querySelector('.modal');
         if (id === previousId) {
@@ -920,6 +938,7 @@
         document.getElementById('overlay').classList.add('open');
         document.body.style.overflow = 'hidden';
         document.getElementById('filter-bar').classList.add('hide');
+        if (!modalOpen) lastFocusedEl = document.activeElement;
         modalOpen = true;
         if (!fromHash) updateHash();
 
@@ -928,6 +947,7 @@
         markRead(id);
         if (wasUnread) renderGrid(filteredArticles());
         updateModalBookmarkBtn();
+        document.getElementById('modal-close-btn').focus();
     }
 
     function articleFooterHtml(a) {
@@ -1070,6 +1090,9 @@
         document.getElementById('filter-bar').classList.remove('hide');
         modalOpen = false;
         if (!fromHash) updateHash();
+        // Fokus ans auslösende Element zurückgeben
+        if (lastFocusedEl && document.contains(lastFocusedEl)) lastFocusedEl.focus();
+        lastFocusedEl = null;
     }
 
     /* ── Link kopieren ──────────────────────────────────────── */
@@ -1147,6 +1170,17 @@
         else if (!a && modalOpen) closeModal(true);
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // Fokus-Trap: Tab bleibt im offenen Modal
+    document.getElementById('overlay').addEventListener('keydown', e => {
+        if (e.key !== 'Tab' || !modalOpen) return;
+        const focusables = document.getElementById('overlay')
+            .querySelectorAll('button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])');
+        if (!focusables.length) return;
+        const first = focusables[0], last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
 
     // Suche: live mit Debounce
     let searchDebounce;
