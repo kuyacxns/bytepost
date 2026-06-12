@@ -99,12 +99,31 @@
         .filter-bar.hide { transform: translateY(-100%); pointer-events: none; }
         .filter-bar > .wrap {
             padding: 14px 24px;
-            overflow-x: auto;
+            display: flex; gap: 12px; align-items: center;
+        }
+        .cat-tabs {
+            display: flex; gap: 8px; white-space: nowrap;
+            flex: 1; overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
         }
-        .filter-bar > .wrap::-webkit-scrollbar { display: none; }
-        .cat-tabs { display: flex; gap: 8px; white-space: nowrap; }
+        .cat-tabs::-webkit-scrollbar { display: none; }
+        .filter-search { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .filter-search input {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 20px; padding: 5px 14px;
+            font-family: var(--mono); font-size: 11px; color: var(--text);
+            width: 170px; outline: none; transition: border-color var(--t);
+        }
+        .filter-search input:focus { border-color: var(--accent); }
+        .filter-search input::placeholder { color: var(--text-3); }
+        .search-count { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; }
+        @media (max-width: 600px) {
+            .filter-bar > .wrap { flex-wrap: wrap; gap: 8px; }
+            .cat-tabs { width: 100%; flex: none; }
+            .filter-search { width: 100%; order: 2; }
+            .filter-search input { flex: 1; width: auto; }
+        }
         .cat-tab {
             font-family: var(--mono); font-size: 10px; font-weight: 700;
             padding: 5px 13px; border-radius: 20px;
@@ -180,6 +199,22 @@
             cursor: pointer; transition: all var(--t); white-space: nowrap;
         }
         .copy-link-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* ── Gelesen & Merkliste ────────────────────────────── */
+        .card.read .card-img, .card.read .card-icon { opacity: 0.5; }
+        .card.read .card-title { color: var(--text-3); }
+        .read-badge {
+            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            color: #22c55e; background: rgba(34,197,94,0.12);
+            padding: 2px 7px; border-radius: 4px; white-space: nowrap;
+        }
+        .bm-btn {
+            background: none; border: none; cursor: pointer;
+            font-size: 16px; line-height: 1; color: var(--text-3);
+            padding: 2px 6px; transition: color var(--t), transform var(--t);
+        }
+        .bm-btn:hover { color: #ffd60a; transform: scale(1.15); }
+        .bm-btn.active { color: #ffd60a; }
 
         @media (max-width: 600px) {
             .hero-pick { min-height: 340px; }
@@ -434,6 +469,10 @@
 <div class="filter-bar" id="filter-bar">
     <div class="wrap">
         <div class="cat-tabs" id="cat-tabs"></div>
+        <div class="filter-search">
+            <input type="search" id="search-input" placeholder="🔍 Suchen…" autocomplete="off" aria-label="Artikel durchsuchen">
+            <span class="search-count" id="search-count"></span>
+        </div>
     </div>
 </div>
 <div id="filter-spacer"></div>
@@ -477,7 +516,10 @@
             <h2 id="m-title" style="font-family:var(--display); font-size:26px; margin:14px 0 4px; line-height:1.15;"></h2>
             <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
                 <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px;"></p>
-                <button class="copy-link-btn" id="copy-link-btn" onclick="copyArticleLink()">🔗 Link kopieren</button>
+                <div style="display:flex; gap:6px;">
+                    <button class="copy-link-btn" id="modal-bm-btn" onclick="toggleBookmark(currentArticleId)">☆ Merken</button>
+                    <button class="copy-link-btn" id="copy-link-btn" onclick="copyArticleLink()">🔗 Link kopieren</button>
+                </div>
             </div>
             <div class="explain-bar">
                 <button class="explain-btn" id="btn-simple" onclick="setExplainMode('simple')">Einfach erklärt</button>
@@ -549,7 +591,43 @@
     let currentArticleId = null;
     let modalOpen = false;
     let lastCatKey = '';        // zuletzt gerenderter cat-Hash (verhindert Doppel-Render)
+    let searchTerm = '';
     const modalScrollPos = {};  // articleId → scroll position
+
+    /* ── Gelesen-Status & Merkliste (localStorage) ──────────── */
+    function lsGet(key) {
+        try {
+            const v = JSON.parse(localStorage.getItem(key));
+            return Array.isArray(v) ? v : [];
+        } catch { return []; }
+    }
+    function lsSet(key, arr) {
+        try { localStorage.setItem(key, JSON.stringify(arr)); } catch {}
+    }
+    const readSet     = new Set(lsGet('bp_read'));
+    const bookmarkSet = new Set(lsGet('bp_bookmarks'));
+
+    function markRead(id) {
+        if (readSet.has(id)) return;
+        readSet.add(id);
+        lsSet('bp_read', [...readSet]);
+    }
+
+    function toggleBookmark(id, ev) {
+        if (ev) ev.stopPropagation();
+        if (bookmarkSet.has(id)) bookmarkSet.delete(id);
+        else bookmarkSet.add(id);
+        lsSet('bp_bookmarks', [...bookmarkSet]);
+        buildFilterTabs();
+        renderAll();
+        updateModalBookmarkBtn();
+    }
+
+    function updateModalBookmarkBtn() {
+        const btn = document.getElementById('modal-bm-btn');
+        if (!btn || !currentArticleId) return;
+        btn.textContent = bookmarkSet.has(currentArticleId) ? '★ Gemerkt' : '☆ Merken';
+    }
 
     /* ── Load ───────────────────────────────────────────────── */
     async function load() {
@@ -626,7 +704,8 @@
 
     function buildFilterTabs() {
         const allCats = ['alle', ...new Set(ARTICLES.flatMap(a => cats(a)).filter(Boolean))];
-        const labels = { alle: 'Alle', ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
+        if (bookmarkSet.size > 0 || activeFilters.has('gemerkt')) allCats.push('gemerkt');
+        const labels = { alle: 'Alle', gemerkt: '★ Gemerkt', ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
         const container = document.getElementById('cat-tabs');
         container.innerHTML = allCats.map(cat => {
             const label = labels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1);
@@ -651,9 +730,28 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    // Suchtext pro Artikel cachen (Titel + Plaintext-Content)
+    const searchTextCache = {};
+    function searchText(a) {
+        if (!searchTextCache[a.id]) {
+            searchTextCache[a.id] = (a.title + ' ' + stripHtml(a.content || '')).toLowerCase();
+        }
+        return searchTextCache[a.id];
+    }
+    function matchesSearch(a) {
+        return !searchTerm || searchText(a).includes(searchTerm);
+    }
+
+    function matchesFilters(a) {
+        if (activeFilters.has('gemerkt') && !bookmarkSet.has(a.id)) return false;
+        const catFilters = [...activeFilters].filter(c => c !== 'gemerkt');
+        if (catFilters.length && !cats(a).some(c => catFilters.includes(c))) return false;
+        return matchesSearch(a);
+    }
+
     function filteredArticles() {
-        if (activeFilters.size === 0) return ARTICLES;
-        return ARTICLES.filter(a => cats(a).some(c => activeFilters.has(c)));
+        if (activeFilters.size === 0 && !searchTerm) return ARTICLES;
+        return ARTICLES.filter(matchesFilters);
     }
 
     /* ── Helpers ────────────────────────────────────────────── */
@@ -693,13 +791,15 @@
         const articles = filteredArticles();
         renderPick();
         renderGrid(articles);
+        const countEl = document.getElementById('search-count');
+        if (countEl) countEl.textContent = searchTerm ? `${articles.length} Treffer` : '';
     }
 
     function renderPick() {
         const container = document.getElementById('pick-of-day');
         const pick = PICK;
-        // Hide hero when category filters are active and pick doesn't match any
-        if (!pick || (activeFilters.size > 0 && !cats(pick).some(c => activeFilters.has(c)))) {
+        // Hide hero when filters/search are active and pick doesn't match
+        if (!pick || ((activeFilters.size > 0 || searchTerm) && !matchesFilters(pick))) {
             container.innerHTML = '';
             return;
         }
@@ -749,22 +849,27 @@
 
         container.innerHTML = gridArticles.map(a => {
             const t = teaser(a.content, 120);
+            const isRead = readSet.has(a.id);
+            const isBm   = bookmarkSet.has(a.id);
             const imgHtml = a.image_local
                 ? `<img class="card-img" src="${a.image_local}" alt="" loading="lazy">`
                 : `<div class="card-icon">${a.icon || '📰'}</div>`;
             return `
-                <div class="card" onclick="openArt('${a.id}')">
+                <div class="card${isRead ? ' read' : ''}" onclick="openArt('${a.id}')">
                     ${imgHtml}
                     <div class="card-body">
                         <div class="card-meta">
                             ${catBadgeHtml(a)}
                             ${a.date ? `<span class="card-date">${formatDate(a.date)}</span>` : ''}
                             ${a.read ? `<span class="card-read-time">⏱ ${a.read}</span>` : ''}
+                            ${isRead ? '<span class="read-badge">✓ Gelesen</span>' : ''}
                         </div>
                         <div class="card-title">${a.title}</div>
                         ${t ? `<div class="card-teaser">${t}</div>` : ''}
                         <div class="card-footer">
                             <span class="card-source">${a.source || ''}</span>
+                            <button class="bm-btn${isBm ? ' active' : ''}" onclick="toggleBookmark('${a.id}', event)"
+                                aria-label="${isBm ? 'Aus Merkliste entfernen' : 'Artikel merken'}">${isBm ? '★' : '☆'}</button>
                         </div>
                     </div>
                 </div>`;
@@ -817,6 +922,12 @@
         document.getElementById('filter-bar').classList.add('hide');
         modalOpen = true;
         if (!fromHash) updateHash();
+
+        // Als gelesen markieren + Grid-Karte aktualisieren
+        const wasUnread = !readSet.has(id);
+        markRead(id);
+        if (wasUnread) renderGrid(filteredArticles());
+        updateModalBookmarkBtn();
     }
 
     function articleFooterHtml(a) {
@@ -1036,6 +1147,17 @@
         else if (!a && modalOpen) closeModal(true);
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // Suche: live mit Debounce
+    let searchDebounce;
+    document.getElementById('search-input').addEventListener('input', e => {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => {
+            searchTerm = e.target.value.trim().toLowerCase();
+            renderAll();
+        }, 200);
+    });
+
     load();
 </script>
 </body>

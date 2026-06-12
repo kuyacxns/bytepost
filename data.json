@@ -30,12 +30,6 @@
       "date": "20.05.2026",
       "id": "f7b01706",
       "url": "https://www.ycombinator.com/blog/adding-canada-back/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f7b01706.jpg",
       "pick": false
     },
@@ -68,12 +62,6 @@
       "date": "20.05.2026",
       "id": "55e9cc1c",
       "url": "https://t3n.de/news/columbia-studie-das-ist-die-optimale-schlafdauer-pro-nacht-1743172/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/55e9cc1c.jpg",
       "pick": false
     },
@@ -106,12 +94,6 @@
       "date": "20.05.2026",
       "id": "9c27a497",
       "url": "https://realpython.com/quizzes/tapping-into-the-zen-of-python/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9c27a497.jpg",
       "pick": false
     },
@@ -145,12 +127,6 @@
       "date": "20.05.2026",
       "id": "0ee68538",
       "url": "https://www.heise.de/news/CMS-Drupal-Hochkritisches-Drupal-Core-Update-fuer-den-20-Mai-angekuendigt-11300021.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0ee68538.jpg",
       "pick": false
     },
@@ -183,12 +159,6 @@
       "date": "20.05.2026",
       "id": "7eae4068",
       "url": "https://www.hashicorp.com/blog/azure-hub-and-spoke-generally-available-for-hcp-vault-dedicated",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/7eae4068.jpg",
       "pick": false
     },
@@ -221,12 +191,6 @@
       "date": "20.05.2026",
       "id": "50852dd3",
       "url": "https://www.getdbt.com/blog/ai-assisted-analytics-engineering-docusign-s-framework-for-scaling-dbt-unit-testing",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/50852dd3.jpg",
       "pick": false
     },
@@ -252,12 +216,6 @@
       "date": "20.05.2026",
       "id": "18a84f5c",
       "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/18a84f5c.jpg",
       "pick": true,
       "pick_reason": "GitHub ermöglicht ab sofort die Remote-Steuerung, was die Art und Weise, wie Entwickler zusammenarbeiten, revolutionieren könnte. Dieser Schritt hat das Potenzial, die Produktivität und Effizienz von Entwicklungsteams weltweit zu verbessern. Mit dieser Funktion steht die Zukunft der Zusammenarbeit im Fokus und Entwickler sollten sich auf die neuen Möglichkeiten einstellen."
@@ -291,12 +249,6 @@
       "date": "20.05.2026",
       "id": "62db5c3a",
       "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/62db5c3a.jpg",
       "pick": false
     },
@@ -329,12 +281,6 @@
       "date": "20.05.2026",
       "id": "d6cecd5c",
       "url": "https://www.rockpapershotgun.com/take-a-nice-long-look-at-some-paralives-gameplay-ahead-of-its-early-access-launch-next-week",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d6cecd5c.jpg",
       "pick": false
     },
@@ -368,12 +314,6 @@
       "date": "18.05.2026",
       "id": "026e6bc1",
       "url": "https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/026e6bc1.jpg",
       "pick": false,
       "pick_reason": "Die neueste Version von Kubernetes bringt einen wichtigen Schritt für die Zukunft der Container-Orchestrierung: Mit dem Mixed Version Proxy wird es einfacher, verschiedene Versionen von Kubernetes in einer Umgebung zu betreiben. Damit können Entwickler ihre Anwendungen noch flexibler und effizienter bereitstellen, was eine große Chance für die Modernisierung von bestehenden Systemen bietet. Diese Änderung hat das Potenzial, die Art und Weise, wie Entwickler mit Kubernetes arbeiten, grundlegend zu verändern."
@@ -404,12 +344,6 @@
       "date": "18.05.2026",
       "id": "e946c8eb",
       "url": "https://www.analyticsvidhya.com/blog/2026/05/openai-omni-moderation/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e946c8eb.jpg",
       "pick": false
     },
@@ -442,12 +376,6 @@
       "date": "18.05.2026",
       "id": "f0918fef",
       "url": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f0918fef.jpg",
       "pick": false
     },
@@ -480,12 +408,6 @@
       "date": "18.05.2026",
       "id": "34d81cc2",
       "url": "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/34d81cc2.jpg",
       "pick": false
     },
@@ -518,12 +440,6 @@
       "date": "18.05.2026",
       "id": "295d854d",
       "url": "https://www.gamespot.com/articles/xbox-is-rebranding-itself-sort-of/1100-6540005/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/295d854d.jpg",
       "pick": false
     },
@@ -553,12 +469,6 @@
       "date": "16.05.2026",
       "id": "1f6ad15b",
       "url": "https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/1f6ad15b.jpg",
       "pick": false
     },
@@ -591,12 +501,6 @@
       "date": "16.05.2026",
       "id": "75cab272",
       "url": "https://www.heise.de/news/Fedora-Hummingbird-Linux-Neue-Container-basierte-Distribution-11295489.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/75cab272.jpg",
       "pick": false
     },
@@ -629,12 +533,6 @@
       "date": "16.05.2026",
       "id": "05ce2b45",
       "url": "https://blog.python.org/2026/05/python-3150-beta-1/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/05ce2b45.jpg",
       "pick": false,
       "pick_reason": "Die Zukunft der Python-Entwicklung hat begonnen: Mit der Veröffentlichung von Python 3.15 Beta 1 stehen Entwickler vor einer neuen Ära der Möglichkeiten. Diese Version bringt entscheidende Verbesserungen und Neuerungen, die den Code von morgen prägen werden. Damit steht nicht nur die Stabilität und Geschwindigkeit von Python auf dem Spiel, sondern auch die Innovationsfähigkeit der gesamten Python-Community."
@@ -669,12 +567,6 @@
       "date": "16.05.2026",
       "id": "266f1f8f",
       "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/266f1f8f.jpg",
       "pick": false
     },
@@ -708,12 +600,6 @@
       "date": "16.05.2026",
       "id": "6a44e8c6",
       "url": "https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6a44e8c6.jpg",
       "pick": false
     },
@@ -746,12 +632,6 @@
       "date": "16.05.2026",
       "id": "c618d1b9",
       "url": "https://towardsdatascience.com/how-i-continually-improve-my-claude-code/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/c618d1b9.jpg",
       "pick": false
     },
@@ -785,12 +665,6 @@
       "date": "16.05.2026",
       "id": "13c8ae4d",
       "url": "https://huggingface.co/blog/continuous_async",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/13c8ae4d.jpg",
       "pick": false
     },
@@ -823,12 +697,6 @@
       "date": "16.05.2026",
       "id": "b9906cbd",
       "url": "https://www.rockpapershotgun.com/forza-horizon-6-will-unleash-the-wankel-powered-furai-to-kick-off-its-festival-playlist-car-additions",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b9906cbd.jpg",
       "pick": false
     },
@@ -862,12 +730,6 @@
       "date": "15.05.2026",
       "id": "20b469f6",
       "url": "https://techcrunch.com/2026/05/13/clios-500m-milestone-arrives-just-as-anthropic-ups-the-ante/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/20b469f6.jpg",
       "pick": false
     },
@@ -900,12 +762,6 @@
       "date": "15.05.2026",
       "id": "95f8eba0",
       "url": "https://www.golem.de/news/kuenstliche-intelligenz-ki-agenten-uebernehmen-marxistische-ansichten-2605-208696.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/95f8eba0.jpg",
       "pick": false
     },
@@ -939,12 +795,6 @@
       "date": "15.05.2026",
       "id": "e1e3bf0a",
       "url": "https://realpython.com/quizzes/cursor-vs-windsurf-python/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e1e3bf0a.jpg",
       "pick": false
     },
@@ -978,12 +828,6 @@
       "date": "15.05.2026",
       "id": "d0fe8475",
       "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d0fe8475.jpg",
       "pick": false
     },
@@ -1016,12 +860,6 @@
       "date": "15.05.2026",
       "id": "936a1606",
       "url": "https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false
     },
@@ -1046,12 +884,6 @@
       "date": "15.05.2026",
       "id": "3e4ecbbb",
       "url": "https://towardsdatascience.com/the-counterintuitive-networking-decisions-behind-openais-131000-gpu-training-fabric/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false,
       "pick_reason": "Die KI-Revolution beschleunigt: OpenAI trainiert mit atemberaubenden 131.000 GPUs und legt damit den Grundstein für eine neue Ära der künstlichen Intelligenz. Dieser Meilenstein bedeutet eine enorme Steigerung der Rechenleistung und könnte entscheidende Auswirkungen auf die Zukunft der KI-Entwicklung haben. Entwickler sollten sich darauf einstellen, dass die Möglichkeiten der KI in den kommenden Monaten exponentiell wachsen werden."
@@ -1085,12 +917,6 @@
       "date": "15.05.2026",
       "id": "b659df15",
       "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b659df15.jpg",
       "pick": false
     },
@@ -1124,12 +950,6 @@
       "date": "15.05.2026",
       "id": "2dc6ac82",
       "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2dc6ac82.jpg",
       "pick": false
     },
@@ -1162,12 +982,6 @@
       "date": "15.05.2026",
       "id": "9f227db0",
       "url": "https://www.golem.de/news/funcom-dune-awakening-schliesst-162-server-weltweit-2605-208651.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9f227db0.jpg",
       "pick": false
     },
@@ -1200,12 +1014,6 @@
       "date": "13.05.2026",
       "id": "9f61b4e4",
       "url": "https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9f61b4e4.jpg",
       "pick": false,
       "pick_reason": "Heute ändert sich das Spiel für Kubernetes-Entwickler: Mit der Einführung von Volume Group Snapshots in Kubernetes 1.36 erhalten sie ein mächtiges Werkzeug, um ihre Datenmanagement-Prozesse zu revolutionieren. Dies bedeutet mehr Flexibilität, Sicherheit und Effizienz bei der Verwaltung von Daten in Container-Umgebungen, was wiederum die Entwicklung von komplexen Anwendungen beschleunigen kann. Mit diesem Update stehen Entwickler vor neuen Möglichkeiten, ihre Infrastruktur zu optimieren und ihre Produktivität zu steigern."
@@ -1240,12 +1048,6 @@
       "date": "13.05.2026",
       "id": "e99981ba",
       "url": "https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e99981ba.jpg",
       "pick": false
     },
@@ -1279,12 +1081,6 @@
       "date": "13.05.2026",
       "id": "3956933b",
       "url": "https://martinfowler.com/articles/what-is-code.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/3956933b.jpg",
       "pick": false
     },
@@ -1318,12 +1114,6 @@
       "date": "13.05.2026",
       "id": "e9d58b40",
       "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e9d58b40.jpg",
       "pick": false
     },
@@ -1356,12 +1146,6 @@
       "date": "13.05.2026",
       "id": "21d74f3b",
       "url": "https://www.rockpapershotgun.com/head-beneath-the-waves-and-pull-up-corpses-from-an-oil-drenched-nightmare-in-the-ocean-fear-inducing-kerogen",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/21d74f3b.jpg",
       "pick": false
     },
@@ -1395,12 +1179,6 @@
       "date": "12.05.2026",
       "id": "428736a0",
       "url": "https://techcrunch.com/2026/05/11/koreas-biggest-manufacturers-back-config-the-tsmc-of-robot-data/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/428736a0.jpg",
       "pick": false
     },
@@ -1433,12 +1211,6 @@
       "date": "12.05.2026",
       "id": "4e88c48c",
       "url": "https://www.golem.de/news/versicherungsleitfaden-zehn-tipps-um-besser-versichert-zu-sein-2605-208532.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/4e88c48c.jpg",
       "pick": false
     },
@@ -1472,12 +1244,6 @@
       "date": "12.05.2026",
       "id": "ec1e6ea4",
       "url": "https://blog.cloudflare.com/de-tld-outage-dnssec/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ec1e6ea4.jpg",
       "pick": false,
       "pick_reason": "Ein kritischer DNSSEC-Fehler hat .de-Domains unerreichbar gemacht, was die Stabilität des deutschen Internets ins Wanken bringt. Entwickler sollten sich umgehend mit den Folgen auseinandersetzen, da ihre Online-Anwendungen und Dienste direkt betroffen sein könnten. Die Sicherheit und Verfügbarkeit ihrer Systeme stehen auf dem Spiel, wenn sie nicht schnell reagieren."
@@ -1511,12 +1277,6 @@
       "date": "12.05.2026",
       "id": "0ca5ccf2",
       "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0ca5ccf2.jpg",
       "pick": false
     },
@@ -1550,12 +1310,6 @@
       "date": "12.05.2026",
       "id": "faa249b0",
       "url": "https://thenewstack.io/building-ai-native-systems/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/faa249b0.jpg",
       "pick": false
     },
@@ -1580,12 +1334,6 @@
       "date": "12.05.2026",
       "id": "602b6ff9",
       "url": "https://dev.to/thanawat_wonchai/gpt-55-pro-ethiiybkab-instant-khumkhaaaihmemuueraakhaataang-6-ethaa-1h7l",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/602b6ff9.jpg",
       "pick": false
     },
@@ -1618,12 +1366,6 @@
       "date": "12.05.2026",
       "id": "f5e7bee5",
       "url": "https://thegradient.pub/virtue-ethics-ai-alignment/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f5e7bee5.jpg",
       "pick": false
     },
@@ -1656,12 +1398,6 @@
       "date": "12.05.2026",
       "id": "02a5caee",
       "url": "https://www.golem.de/news/switch-2-nintendo-kurs-faellt-nach-preiserhoehung-und-vorsichtigem-ausblick-2605-208541.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/02a5caee.jpg",
       "pick": false
     },
@@ -1695,12 +1431,6 @@
       "date": "10.05.2026",
       "id": "112cea6d",
       "url": "https://www.golem.de/news/anzeige-it-jobs-in-service-management-ki-windows-administration-und-netzwerken-2605-208464.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/112cea6d.jpg",
       "pick": false
     },
@@ -1733,12 +1463,6 @@
       "date": "10.05.2026",
       "id": "2287f964",
       "url": "https://blog.python.org/2026/05/python-3145rc1/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2287f964.jpg",
       "pick": false
     },
@@ -1771,12 +1495,6 @@
       "date": "10.05.2026",
       "id": "235ee559",
       "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/235ee559.jpg",
       "pick": false
     },
@@ -1810,12 +1528,6 @@
       "date": "10.05.2026",
       "id": "0bad898c",
       "url": "https://devops.com/survey-surfaces-significant-levels-of-idp-investment-to-reduce-sdlc-friction/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0bad898c.jpg",
       "pick": false,
       "pick_reason": "Heute investieren Unternehmen massiv in interne Entwicklerplattformen, um die Produktivität und Effizienz ihrer Teams zu steigern. Damit stehen die Weichen für eine neue Ära der Softwareentwicklung, in der Entwickler mehr Autonomie und Ressourcen erhalten. Entwickler sollten diese Entwicklung genau im Auge behalten, um ihre Fähigkeiten und Karrieren auf die neue Realität auszurichten."
@@ -1850,12 +1562,6 @@
       "date": "10.05.2026",
       "id": "649ef8a7",
       "url": "https://www.analyticsvidhya.com/blog/2026/05/build-ai-agents/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/649ef8a7.jpg",
       "pick": false
     },
@@ -1888,12 +1594,6 @@
       "date": "10.05.2026",
       "id": "91922c34",
       "url": "https://www.rockpapershotgun.com/paranormal-activity-threshold-is-as-dead-as-its-ghosts-as-the-game-gets-canned-because-paramount-couldnt-wait-any-longer",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/91922c34.jpg",
       "pick": false
     },
@@ -1923,12 +1623,6 @@
       "date": "09.05.2026",
       "id": "fd4a1095",
       "url": "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/fd4a1095.jpg",
       "pick": false
     },
@@ -1961,12 +1655,6 @@
       "date": "09.05.2026",
       "id": "0aba5964",
       "url": "https://www.heise.de/news/Ende-zu-Ende-Verschluesselung-Instagram-deaktiviert-Privatsphaerenschutz-11287210.html?wt_mc=rss.red.ho.top-news.atom.beitrag.beitrag",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0aba5964.jpg",
       "pick": false,
       "pick_reason": "Die Deaktivierung der Ende-zu-Ende-Verschlüsselung bei Instagram wirft alarmierende Fragen über die Zukunft der Datenprivatsphäre auf. Entwickler sollten besorgt sein, denn wenn ein so großes Unternehmen wie Instagram auf Sicherheit verzichtet, was bedeutet das für die Sicherheitsstandards in der gesamten Tech-Branche? Die Veränderung hat weitreichende Auswirkungen auf die Art und Weise, wie Entwickler mit Nutzerdaten umgehen."
@@ -2000,12 +1688,6 @@
       "date": "09.05.2026",
       "id": "7dbfeca0",
       "url": "https://blog.rust-lang.org/2026/05/04/outreachy-2026-may/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/7dbfeca0.jpg",
       "pick": false
     },
@@ -2031,12 +1713,6 @@
       "date": "09.05.2026",
       "id": "ada6000c",
       "url": "https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ada6000c.jpg",
       "pick": false
     },
@@ -2069,12 +1745,6 @@
       "date": "09.05.2026",
       "id": "f665b26b",
       "url": "https://www.schneier.com/blog/archives/2026/05/insider-betting-on-polymarket.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f665b26b.jpg",
       "pick": false
     },
@@ -2108,12 +1778,6 @@
       "date": "09.05.2026",
       "id": "2d82fe2d",
       "url": "https://www.getdbt.com/blog/using-dbt-with-databricks-architecture-decisions-that-determine-success",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2d82fe2d.jpg",
       "pick": false
     },
@@ -2146,12 +1810,6 @@
       "date": "09.05.2026",
       "id": "7cfd4cc6",
       "url": "https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/7cfd4cc6.jpg",
       "pick": false
     },
@@ -2185,12 +1843,6 @@
       "date": "09.05.2026",
       "id": "1a6f0d2c",
       "url": "https://www.marktechpost.com/2026/05/08/9-best-ai-tools-for-spec-driven-development-in-2026-kiro-bmad-gsd-and-more-compare/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/1a6f0d2c.jpg",
       "pick": false
     },
@@ -2223,12 +1875,6 @@
       "date": "09.05.2026",
       "id": "1b5c15cd",
       "url": "https://www.gamespot.com/articles/battlefield-6-season-3-patch-notes-detail-improvements-for-vehicles-netcode-gadgets-and-more/1100-6539867/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/1b5c15cd.jpg",
       "pick": false
     },
@@ -2261,12 +1907,6 @@
       "date": "07.05.2026",
       "id": "eacdd06b",
       "url": "https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/eacdd06b.jpg",
       "pick": false
     },
@@ -2299,12 +1939,6 @@
       "date": "07.05.2026",
       "id": "6c5375f6",
       "url": "https://techcrunch.com/2026/05/06/five-architects-of-the-ai-economy-explain-where-the-wheels-are-coming-off/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6c5375f6.jpg",
       "pick": false
     },
@@ -2338,12 +1972,6 @@
       "date": "07.05.2026",
       "id": "3eb3c608",
       "url": "https://www.golem.de/news/weltraumspiel-umbau-hinter-eve-online-wird-immer-ungewoehnlicher-2605-208390.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/3eb3c608.jpg",
       "pick": false,
       "pick_reason": "Die Zukunft der künstlichen Intelligenz trifft auf die Welt der Online-Gaming: Google Deepmind geht mit Eve Online eine ungewöhnliche Partnerschaft ein, um die Herausforderungen der KI-Forschung in einer komplexen virtuellen Umgebung zu meistern. Damit wird Eve Online zu einem echten Testfeld für innovative KI-Lösungen und ermöglicht Entwicklern einen tiefen Einblick in die Möglichkeiten und Grenzen der KI. Diese Kooperation könnte bahnbrechende Entdeckungen für die gesamte Tech-Branche bedeuten."
@@ -2377,12 +2005,6 @@
       "date": "06.05.2026",
       "id": "d78661fe",
       "url": "https://techcrunch.com/2026/05/05/marc-lore-says-that-ai-will-soon-enable-anyone-open-a-restaurant/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d78661fe.jpg",
       "pick": false
     },
@@ -2416,12 +2038,6 @@
       "date": "06.05.2026",
       "id": "7953eed2",
       "url": "https://netzpolitik.org/2026/verhaltensscanner-eine-reale-gefahr/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/7953eed2.jpg",
       "pick": false
     },
@@ -2454,12 +2070,6 @@
       "date": "06.05.2026",
       "id": "6bb024d7",
       "url": "https://blog.rust-lang.org/2026/04/30/gsoc-2026-selected-projects/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6bb024d7.jpg",
       "pick": false
     },
@@ -2492,12 +2102,6 @@
       "date": "06.05.2026",
       "id": "48c05003",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/trellix-source-code-breach-supply-chain-threats",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/48c05003.jpg",
       "pick": false,
       "pick_reason": "Ein schwerer Schlag für die Sicherheit: Der Quellcode von Trellix ist ausgerissen und könnte in die falschen Hände geraten. Das bedeutet, dass Entwickler und Nutzer von Trellix-Produkten einem erhöhten Risiko von Cyberangriffen ausgesetzt sind, was sofortige Maßnahmen zur Absicherung ihrer Systeme erfordert. Der Vorfall wirft ein dunkles Licht auf die Verwundbarkeit der Softwaresicherheit und stellt eine massive Herausforderung für die Branche dar."
@@ -2523,12 +2127,6 @@
       "date": "06.05.2026",
       "id": "d4ea3387",
       "url": "https://thenewstack.io/openai-gpt-5-5-instant-launch/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d4ea3387.jpg",
       "pick": false
     },
@@ -2561,12 +2159,6 @@
       "date": "06.05.2026",
       "id": "2cd8d4c0",
       "url": "https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2cd8d4c0.jpg",
       "pick": false
     },
@@ -2592,12 +2184,6 @@
       "date": "06.05.2026",
       "id": "73d14862",
       "url": "https://www.marktechpost.com/2026/05/05/build-a-modular-skill-based-agent-system-for-llms-with-dynamic-tool-routing-in-python/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/73d14862.jpg",
       "pick": false
     },
@@ -2631,12 +2217,6 @@
       "date": "06.05.2026",
       "id": "653667d4",
       "url": "https://www.golem.de/news/gamepad-scalper-fordern-wucherpreise-steam-controller-nach-minuten-ausverkauft-2605-208323.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/653667d4.jpg",
       "pick": false
     },
@@ -2669,12 +2249,6 @@
       "date": "04.05.2026",
       "id": "ca875b75",
       "url": "https://www.rockpapershotgun.com/wolfenstein-meets-metroidvania-in-wolfhound-an-8-bit-ode-to-yesteryear-with-zombies-and-nazi-mechs",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ca875b75.jpg",
       "pick": false
     },
@@ -2708,12 +2282,6 @@
       "date": "03.05.2026",
       "id": "053812e0",
       "url": "https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/053812e0.jpg",
       "pick": false
     },
@@ -2746,12 +2314,6 @@
       "date": "03.05.2026",
       "id": "5a377d8b",
       "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/5a377d8b.jpg",
       "pick": false
     },
@@ -2785,12 +2347,6 @@
       "date": "03.05.2026",
       "id": "02da0cd1",
       "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/02da0cd1.jpg",
       "pick": false,
       "pick_reason": "Meta setzt mit der Stärkung der Ende-zu-Ende-Verschlüsselung ein deutliches Zeichen für mehr Datenschutz in der digitalen Kommunikation. Für Entwickler bedeutet dies, dass sie künftig noch sicherere Lösungen für ihre Nutzer bereitstellen können, was die Vertrauensbasis in der digitalen Welt stärkt. Damit verändert sich das Spiel für alle, die an der Spitze der digitalen Sicherheit mitwirken wollen."
@@ -2824,12 +2380,6 @@
       "date": "03.05.2026",
       "id": "87de81fe",
       "url": "https://www.darkreading.com/cybersecurity-operations/name-that-toon-mark-security-progress",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/87de81fe.jpg",
       "pick": false
     },
@@ -2862,12 +2412,6 @@
       "date": "03.05.2026",
       "id": "18598bb1",
       "url": "https://www.hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false
     },
@@ -2901,12 +2445,6 @@
       "date": "03.05.2026",
       "id": "78eaf016",
       "url": "https://www.kdnuggets.com/2026/04/zerotomastery/learn-the-most-in-demand-tech-skills-for-free",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/78eaf016.jpg",
       "pick": false
     },
@@ -2940,12 +2478,6 @@
       "date": "03.05.2026",
       "id": "fc8cf30c",
       "url": "https://www.rockpapershotgun.com/i-tested-the-msi-cyborg-14-gaming-laptop-by-carrying-it-for-105-miles-through-the-mountains-of-wales",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/fc8cf30c.jpg",
       "pick": false
     },
@@ -2978,12 +2510,6 @@
       "date": "02.05.2026",
       "id": "3baed4c7",
       "url": "https://www.rockpapershotgun.com/alas-you-and-i-will-never-look-and-sound-as-good-as-rebounder",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/3baed4c7.jpg",
       "pick": false
     },
@@ -3016,12 +2542,6 @@
       "date": "01.05.2026",
       "id": "df8e69bd",
       "url": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/df8e69bd.jpg",
       "pick": false,
       "pick_reason": "Die Revolution in der KI-Bildgenerierung ist in voller Fahrt: ChatGPT Images 2.0 feiert einen sensationellen Erfolg in Indien und verschiebt damit die Grenzen dessen, was möglich ist. Dieser Durchbruch wirft Fragen über die Zukunft der Bildbearbeitung und -generierung auf und könnte die Art und Weise, wie Entwickler mit Bildinhalten arbeiten, grundlegend verändern. Entwickler sollten genau hinsehen, denn die Implikationen für ihre eigenen Projekte könnten enorm sein."
@@ -3055,12 +2575,6 @@
       "date": "01.05.2026",
       "id": "3bc17c54",
       "url": "https://www.gamespot.com/articles/world-of-warcraft-just-got-its-most-expensive-housing-microtransactions-yet/1100-6539737/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/3bc17c54.jpg",
       "pick": false
     },
@@ -3094,12 +2608,6 @@
       "date": "30.04.2026",
       "id": "88247f3a",
       "url": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/88247f3a.jpg",
       "pick": false
     },
@@ -3132,12 +2640,6 @@
       "date": "30.04.2026",
       "id": "babe5c49",
       "url": "https://www.heise.de/news/Microsoft-veroeffentlicht-fruehesten-bekannten-DOS-Quellcode-11277117.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/babe5c49.jpg",
       "pick": false
     },
@@ -3170,12 +2672,6 @@
       "date": "30.04.2026",
       "id": "70934c02",
       "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/70934c02.jpg",
       "pick": false,
       "pick_reason": "Die Zukunft der Entwicklung hat begonnen: Mit der Veröffentlichung von TypeScript 7.0 Beta stehen Entwickler vor einer neuen Ära der Qualität und Sicherheit in ihrer Arbeit. Diese Version bringt entscheidende Verbesserungen mit sich, die nicht nur die Produktivität steigern, sondern auch die Fehleranfälligkeit von Code reduzieren. Entwickler sollten sich nun mit den Neuerungen auseinandersetzen, um ihre Projekte auf das nächste Level zu heben."
@@ -3210,12 +2706,6 @@
       "date": "30.04.2026",
       "id": "86d0745b",
       "url": "https://blog.cloudflare.com/making-rust-workers-reliable/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/86d0745b.jpg",
       "pick": false
     },
@@ -3248,12 +2738,6 @@
       "date": "30.04.2026",
       "id": "626edd94",
       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/626edd94.jpg",
       "pick": false
     },
@@ -3283,12 +2767,6 @@
       "date": "30.04.2026",
       "id": "67dc638f",
       "url": "https://azure.microsoft.com/en-us/blog/openais-gpt-5-5-in-microsoft-foundry-frontier-intelligence-on-an-enterprise-ready-platform/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/67dc638f.jpg",
       "pick": false
     },
@@ -3321,12 +2799,6 @@
       "date": "30.04.2026",
       "id": "c08e7e23",
       "url": "https://towardsdatascience.com/agentic-ai-how-to-save-on-tokens/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/c08e7e23.jpg",
       "pick": false
     },
@@ -3359,12 +2831,6 @@
       "date": "30.04.2026",
       "id": "5ecd12f0",
       "url": "https://www.infoq.com/news/2026/04/dotnet-11-preview-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false
     },
@@ -3397,12 +2863,6 @@
       "date": "30.04.2026",
       "id": "8c0a51d5",
       "url": "https://thegradient.pub/shape-symmetry-structure/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/8c0a51d5.jpg",
       "pick": false
     },
@@ -3435,12 +2895,6 @@
       "date": "30.04.2026",
       "id": "383416b0",
       "url": "https://www.gamespot.com/articles/where-to-find-fertilizer-in-arc-raiders/1100-6539708/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/383416b0.jpg",
       "pick": false
     },
@@ -3474,12 +2928,6 @@
       "date": "28.04.2026",
       "id": "6a06385c",
       "url": "https://www.rockpapershotgun.com/valve-have-confirmed-the-steam-controller-price-and-release-date-though-the-steam-machine-is-still-in-ram-price-purgatory",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6a06385c.jpg",
       "pick": false
     },
@@ -3513,12 +2961,6 @@
       "date": "25.04.2026",
       "id": "0127ec63",
       "url": "https://www.ycombinator.com/blog/congratulations-to-equipmentshare/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0127ec63.jpg",
       "pick": false
     },
@@ -3551,12 +2993,6 @@
       "date": "25.04.2026",
       "id": "6705e9a6",
       "url": "https://www.heise.de/news/Bundestag-beschliesst-Tankrabatt-11271322.html?wt_mc=rss.red.ho.top-news.atom.beitrag.beitrag",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6705e9a6.jpg",
       "pick": false
     },
@@ -3589,12 +3025,6 @@
       "date": "25.04.2026",
       "id": "85029998",
       "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/85029998.jpg",
       "pick": false
     },
@@ -3627,12 +3057,6 @@
       "date": "25.04.2026",
       "id": "59f9db7d",
       "url": "https://blog.cloudflare.com/past-bots-and-humans/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/59f9db7d.jpg",
       "pick": false,
       "pick_reason": "Die Bot-Erkennung, einst eine solide Barriere gegen automatisierte Angriffe, ist gefallen: KI-Assistenten haben gelernt, sie zu überwinden. Das bedeutet, dass Entwickler ihre Sicherheitsstrategien grundlegend überdenken müssen, um vor den neuen, intelligenten Bedrohungen gewappnet zu sein. Die Zukunft der Cybersicherheit hängt davon ab, wie schnell Entwickler auf diese veränderte Landschaft reagieren können."
@@ -3667,12 +3091,6 @@
       "date": "25.04.2026",
       "id": "6f87eff4",
       "url": "https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6f87eff4.jpg",
       "pick": false
     },
@@ -3706,12 +3124,6 @@
       "date": "25.04.2026",
       "id": "4aca1058",
       "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-265",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/4aca1058.jpg",
       "pick": false
     },
@@ -3744,12 +3156,6 @@
       "date": "25.04.2026",
       "id": "9b3369de",
       "url": "https://martinfowler.com/articles/202604-turing.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false
     },
@@ -3783,12 +3189,6 @@
       "date": "25.04.2026",
       "id": "a3d039c3",
       "url": "https://www.marktechpost.com/2026/04/24/a-coding-implementation-on-deepgram-python-sdk-for-transcription-text-to-speech-async-audio-processing-and-text-intelligence/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/a3d039c3.jpg",
       "pick": false
     },
@@ -3821,12 +3221,6 @@
       "date": "25.04.2026",
       "id": "9aa8d679",
       "url": "https://www.gamespot.com/articles/splatoon-raiders-buying-guide/1100-6539546/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9aa8d679.jpg",
       "pick": false
     },
@@ -3860,12 +3254,6 @@
       "date": "22.04.2026",
       "id": "e8142566",
       "url": "https://www.heise.de/blog/Software-Testing-Praxisnah-sicher-entwickeln-mit-IEC-62443-4-1-11251604.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e8142566.jpg",
       "pick": false,
       "pick_reason": "Die Sicherheit von Software ist ein entscheidendes Thema für Entwickler, und die neue Norm IEC 62443-4-1 könnte den Schlüssel zum Schutz von Anwendungen und Systemen liefern. Mit dieser Norm können Entwickler ihre Software auf ein neues Level der Sicherheit heben und so ihre Benutzer schützen. Heute ist es wichtig, dass Entwickler die Bedeutung dieser Norm verstehen und ihre Implementierung in Betracht ziehen, um die Sicherheitslücken ihrer Anwendungen zu schließen."
@@ -3899,12 +3287,6 @@
       "date": "22.04.2026",
       "id": "115a1e2e",
       "url": "https://realpython.com/quizzes/uv-vs-pip-python/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/115a1e2e.jpg",
       "pick": false
     },
@@ -3937,12 +3319,6 @@
       "date": "22.04.2026",
       "id": "dcbb06c2",
       "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/dcbb06c2.jpg",
       "pick": false
     },
@@ -3975,12 +3351,6 @@
       "date": "22.04.2026",
       "id": "f6ab704e",
       "url": "https://thehackernews.com/2026/04/22-bridgebreak-flaws-expose-20000.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f6ab704e.jpg",
       "pick": false
     },
@@ -4014,12 +3384,6 @@
       "date": "22.04.2026",
       "id": "75364abc",
       "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/75364abc.jpg",
       "pick": false
     },
@@ -4052,12 +3416,6 @@
       "date": "22.04.2026",
       "id": "d2108159",
       "url": "https://techcrunch.com/2026/04/21/redwood-materials-lays-off-10-in-restructuring-to-chase-energy-storage-business/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d2108159.jpg",
       "pick": false
     },
@@ -4087,12 +3445,6 @@
       "date": "22.04.2026",
       "id": "10c83dca",
       "url": "https://www.marktechpost.com/2026/04/21/openai-open-sources-euphony-a-browser-based-visualization-tool-for-harmony-chat-data-and-codex-session-logs/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/10c83dca.jpg",
       "pick": false
     },
@@ -4125,12 +3477,6 @@
       "date": "22.04.2026",
       "id": "9ef3471e",
       "url": "https://www.rockpapershotgun.com/casualties-unknown-is-noita-for-furries-and-oh-so-deliciously-miserable",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9ef3471e.jpg",
       "pick": false
     },
@@ -4164,12 +3510,6 @@
       "date": "20.04.2026",
       "id": "9205b7fd",
       "url": "https://techcrunch.com/2026/04/19/the-12-month-window/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9205b7fd.jpg",
       "pick": false
     },
@@ -4202,12 +3542,6 @@
       "date": "20.04.2026",
       "id": "f11d40da",
       "url": "https://www.heise.de/news/Android-17-Beta-4-Letzte-Testversion-vor-dem-finalen-Release-11261781.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f11d40da.jpg",
       "pick": false
     },
@@ -4241,12 +3575,6 @@
       "date": "20.04.2026",
       "id": "06e31f12",
       "url": "https://blog.python.org/2026/03/jit-on-track/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/06e31f12.jpg",
       "pick": false
     },
@@ -4279,12 +3607,6 @@
       "date": "20.04.2026",
       "id": "f1876e00",
       "url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f1876e00.jpg",
       "pick": false,
       "pick_reason": "Meta ersetzt Engineering-Zeit durch KI - eine Revolution in der Software-Entwicklung. Durch den Einsatz von KI-Technologien kann Meta nun Entwicklungsaufgaben automatisieren und die Produktivität seiner Entwickler steigern, was weitreichende Auswirkungen auf die gesamte Branche haben könnte. Entwickler sollten sich auf diese Veränderung einstellen und sich fragen, ob ihre eigenen Unternehmen bald folgen werden."
@@ -4319,12 +3641,6 @@
       "date": "20.04.2026",
       "id": "b5b3652e",
       "url": "https://thehackernews.com/2026/04/webinar-find-and-eliminate-orphaned-non.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b5b3652e.jpg",
       "pick": false
     },
@@ -4357,12 +3673,6 @@
       "date": "20.04.2026",
       "id": "a4e0eece",
       "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/a4e0eece.jpg",
       "pick": false
     },
@@ -4387,12 +3697,6 @@
       "date": "20.04.2026",
       "id": "43ce33c9",
       "url": "https://www.analyticsvidhya.com/blog/2026/04/claude-opus-4-7/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/43ce33c9.jpg",
       "pick": false
     },
@@ -4426,12 +3730,6 @@
       "date": "20.04.2026",
       "id": "9ec9065e",
       "url": "https://www.theverge.com/tech/914723/vercel-hacked",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9ec9065e.jpg",
       "pick": false
     },
@@ -4456,12 +3754,6 @@
       "date": "20.04.2026",
       "id": "053d0040",
       "url": "https://www.marktechpost.com/2026/04/19/meet-openmythos-an-open-source-pytorch-reconstruction-of-claude-mythos-where-770m-parameters-match-a-1-3b-transformer/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/053d0040.jpg",
       "pick": false
     },
@@ -4494,12 +3786,6 @@
       "date": "20.04.2026",
       "id": "ba302d73",
       "url": "https://www.golem.de/news/anzeige-nintendo-switch-mit-extrarabatt-guenstiger-bei-back-market-2604-207663.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ba302d73.jpg",
       "pick": false
     },
@@ -4532,12 +3818,6 @@
       "date": "17.04.2026",
       "id": "ab653536",
       "url": "https://www.gamespot.com/articles/best-buy-ultimate-upgrade-event-deals-video-games-tech-trading-cards-figures/1100-6539371/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ab653536.jpg",
       "pick": false
     },
@@ -4570,12 +3850,6 @@
       "date": "16.04.2026",
       "id": "88b1c181",
       "url": "https://www.rockpapershotgun.com/if-you-need-more-shakespeare-with-your-slay-the-spire-check-out-demon-lawyer-deckbuilder-the-killing-stone",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/88b1c181.jpg",
       "pick": false
     },
@@ -4609,12 +3883,6 @@
       "date": "15.04.2026",
       "id": "8cc13e5e",
       "url": "https://www.golem.de/news/jobangebot-faa-wirbt-mit-gaming-um-neue-fluglotsen-2604-207470.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/8cc13e5e.jpg",
       "pick": false
     },
@@ -4635,12 +3903,6 @@
       "date": "12.04.2026",
       "id": "db354ba7",
       "url": "https://realpython.com/podcasts/rpp/290/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/db354ba7.jpg",
       "pick": false
     },
@@ -4661,12 +3923,6 @@
       "date": "12.04.2026",
       "id": "60955473",
       "url": "https://blog.cloudflare.com/post-quantum-roadmap/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/60955473.jpg",
       "pick": false,
       "pick_reason": "Die Zukunft der Online-Sicherheit steht auf dem Spiel: Cloudflare zielt auf 2029 für vollständige Post-Quanten-Sicherheit, um die Gefahr von Quantencomputer-Angriffen zu mindern. Dieser Schritt ist entscheidend, da die momentane Verschlüsselungstechnologie durch Quantencomputer in Zukunft geknackt werden könnte. Entwickler sollten sich NOW auf diese Veränderung vorbereiten, um ihre Anwendungen und Daten zukunftssicher zu machen."
@@ -4687,12 +3943,6 @@
       "date": "12.04.2026",
       "id": "1318d779",
       "url": "https://www.bleepingcomputer.com/news/security/police-identifies-20-000-victims-in-international-crypto-fraud-crackdown/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/1318d779.jpg",
       "pick": false
     },
@@ -4713,12 +3963,6 @@
       "date": "12.04.2026",
       "id": "5f68c49f",
       "url": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/5f68c49f.jpg",
       "pick": false
     },
@@ -4738,12 +3982,6 @@
       "date": "12.04.2026",
       "id": "6003a8e3",
       "url": "https://flowingdata.com/2026/04/09/process-383-off-the-axes/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6003a8e3.jpg",
       "pick": false
     },
@@ -4763,12 +4001,6 @@
       "date": "12.04.2026",
       "id": "0074fdab",
       "url": "https://dev.to/arnostorg/this-is-how-i-write-commands-quickly-1bg1",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/0074fdab.jpg",
       "pick": false
     },
@@ -4788,12 +4020,6 @@
       "date": "12.04.2026",
       "id": "20ef3dba",
       "url": "http://bair.berkeley.edu/blog/2026/03/13/spex/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/20ef3dba.jpg",
       "pick": false
     },
@@ -4813,12 +4039,6 @@
       "date": "12.04.2026",
       "id": "23b8be5c",
       "url": "https://www.rockpapershotgun.com/the-pines-asks-what-would-alan-wake-look-like-if-it-was-about-therapy-and-i-kind-of-want-to-know-the-answer",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/23b8be5c.jpg",
       "pick": false
     },
@@ -4839,12 +4059,6 @@
       "date": "11.04.2026",
       "id": "18ef2cdd",
       "url": "https://netzpolitik.org/2026/studie-der-medienanstalten-debattenkultur-im-netz-erodiert/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/18ef2cdd.jpg",
       "pick": false
     },
@@ -4864,12 +4078,6 @@
       "date": "11.04.2026",
       "id": "3d77991a",
       "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-rc/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/3d77991a.jpg",
       "pick": false
     },
@@ -4890,12 +4098,6 @@
       "date": "11.04.2026",
       "id": "321bb29e",
       "url": "https://blog.cloudflare.com/500-tbps-of-capacity/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/321bb29e.jpg",
       "pick": false
     },
@@ -4915,12 +4117,6 @@
       "date": "11.04.2026",
       "id": "bbf8e87a",
       "url": "https://www.darkreading.com/identity-access-management-security/your-next-breach-business-as-usual",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/bbf8e87a.jpg",
       "pick": false
     },
@@ -4941,12 +4137,6 @@
       "date": "11.04.2026",
       "id": "8a1695a0",
       "url": "https://www.getdbt.com/blog/how-ai-is-reshaping-the-way-data-practitioners-work",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/8a1695a0.jpg",
       "pick": false,
       "pick_reason": "Die Art und Weise, wie wir mit Daten arbeiten, steht vor einer Revolution: KI verändert die Datenarbeit grundlegend. Entwickler müssen sich auf diese Veränderung einstellen, um nicht den Anschluss zu verpassen. Mit der neuen Ära der KI-Datenarbeit stehen Produktivität, Effizienz und innovative Möglichkeiten auf dem Spiel."
@@ -4968,12 +4158,6 @@
       "date": "11.04.2026",
       "id": "2b3b416b",
       "url": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2b3b416b.jpg",
       "pick": false
     },
@@ -4994,12 +4178,6 @@
       "date": "11.04.2026",
       "id": "a347b795",
       "url": "https://www.gamespot.com/articles/as-gaming-grows-more-expensive-investing-in-a-pc-like-this-one-is-a-great-way-to-future-proof-your-hobby/1100-6539347/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/a347b795.jpg",
       "pick": false
     },
@@ -5020,12 +4198,6 @@
       "date": "10.04.2026",
       "id": "8cac6e72",
       "url": "https://www.ycombinator.com/blog/welcome-harshita/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/8cac6e72.jpg",
       "pick": false
     },
@@ -5045,12 +4217,6 @@
       "date": "10.04.2026",
       "id": "a9339807",
       "url": "https://netzpolitik.org/2026/hype-um-prediction-markets-wetten-dass-jesus-vor-2027-zurueckkehren-wird/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false
     },
@@ -5070,12 +4236,6 @@
       "date": "10.04.2026",
       "id": "e8cb9c16",
       "url": "https://realpython.com/quizzes/reading-input-writing-output-python/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e8cb9c16.jpg",
       "pick": false
     },
@@ -5095,12 +4255,6 @@
       "date": "10.04.2026",
       "id": "b337b868",
       "url": "https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b337b868.jpg",
       "pick": false,
       "pick_reason": "Meta modernisiert WebRTC und revolutioniert damit die Kommunikation im Internet. Diese Neuerung hat das Potenzial, die Art und Weise, wie wir online kommunizieren, grundlegend zu verändern. Entwickler sollten sich jetzt informieren, um nicht den Anschluss zu verpassen, wenn es um die Zukunft der Online-Kommunikation geht."
@@ -5122,12 +4276,6 @@
       "date": "10.04.2026",
       "id": "157be601",
       "url": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/157be601.jpg",
       "pick": false
     },
@@ -5148,12 +4296,6 @@
       "date": "10.04.2026",
       "id": "9017321f",
       "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9017321f.jpg",
       "pick": false
     },
@@ -5174,12 +4316,6 @@
       "date": "10.04.2026",
       "id": "bf5758eb",
       "url": "https://www.dataengineeringweekly.com/p/the-missing-interface-in-data-platform",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/bf5758eb.jpg",
       "pick": false
     },
@@ -5199,12 +4335,6 @@
       "date": "10.04.2026",
       "id": "d8d826eb",
       "url": "https://www.infoq.com/presentations/latency-techniques/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d8d826eb.jpg",
       "pick": false
     },
@@ -5225,12 +4355,6 @@
       "date": "10.04.2026",
       "id": "da316197",
       "url": "https://huggingface.co/blog/waypoint-1-5",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/da316197.jpg",
       "pick": false
     },
@@ -5250,12 +4374,6 @@
       "date": "10.04.2026",
       "id": "89e5fbf1",
       "url": "https://www.rockpapershotgun.com/while-it-plays-its-roguelike-autobattling-safe-skull-horde-does-put-a-smile-on-my-flaming-skeleton-head",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/89e5fbf1.jpg",
       "pick": false
     },
@@ -5276,12 +4394,6 @@
       "date": "10.04.2026",
       "id": "9a3f7b7f",
       "url": "https://www.golem.de/news/bungie-marathon-soll-200-millionen-us-dollar-gekostet-haben-2604-207424.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9a3f7b7f.jpg",
       "pick": false,
       "related": []
@@ -5303,12 +4415,6 @@
       "date": "10.04.2026",
       "id": "5a80baf7",
       "url": "https://www.golem.de/news/anti-frust-crimson-desert-bekommt-schwierigkeitsgrade-2604-207427.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/5a80baf7.jpg",
       "pick": false,
       "related": []
@@ -5329,12 +4435,6 @@
       "date": "10.04.2026",
       "id": "4f6639e6",
       "url": "https://www.gamespot.com/articles/doki-doki-literature-club-removed-from-google-play-store-after-already-being-there-for-months/1100-6539325/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/4f6639e6.jpg",
       "pick": false,
       "related": []
@@ -5355,12 +4455,6 @@
       "date": "10.04.2026",
       "id": "b894cf75",
       "url": "https://www.gamespot.com/articles/crimson-desert-is-finally-getting-summonable-mounts/1100-6539326/?ftag=CAD-01-10abi2f",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b894cf75.jpg",
       "pick": false,
       "related": []
@@ -5381,12 +4475,6 @@
       "date": "10.04.2026",
       "id": "ec53c223",
       "url": "https://www.rockpapershotgun.com/epomaker-he68-lite-gaming-keyboard-review",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ec53c223.jpg",
       "pick": false,
       "related": []
@@ -5407,12 +4495,6 @@
       "date": "10.04.2026",
       "id": "397bfd46",
       "url": "https://www.heise.de/news/Juniper-Unter-anderem-Root-Sicherheitsluecken-in-Junos-OS-geschlossen-11250007.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/397bfd46.jpg",
       "pick": false,
       "related": []
@@ -5432,12 +4514,6 @@
       "date": "10.04.2026",
       "id": "c190e55c",
       "url": "https://www.heise.de/news/Warten-auf-Sicherheitsupdate-Angreifer-attackieren-Adobe-Reader-11251640.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/c190e55c.jpg",
       "pick": false,
       "pick_reason": "Eine Zero-Day-Lücke in Adobe Reader bringt die IT-Sicherheit von Millionen von Nutzern aufs Spiel. Entwickler müssen handeln, um ihre Systeme und Daten zu schützen, denn jede Sekunde zählt, bis ein Patch verfügbar ist. Die Sicherheit von Millionen von Nutzern hängt davon ab, wie schnell und effektiv auf diese Bedrohung reagiert wird.",
@@ -5458,12 +4534,6 @@
       "date": "10.04.2026",
       "id": "87299ad3",
       "url": "https://www.heise.de/blog/Neu-in-NET-10-0-18-Webserver-als-File-based-App-11249251.html",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false,
       "related": []
@@ -5484,12 +4554,6 @@
       "date": "10.04.2026",
       "id": "2ad7e4ec",
       "url": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2ad7e4ec.jpg",
       "pick": false,
       "related": []
@@ -5510,12 +4574,6 @@
       "date": "10.04.2026",
       "id": "1315a02e",
       "url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/1315a02e.jpg",
       "pick": false,
       "related": []
@@ -5536,12 +4594,6 @@
       "date": "10.04.2026",
       "id": "ae9212d0",
       "url": "https://towardsdatascience.com/a-visual-explanation-of-the-linear-regression/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/ae9212d0.jpg",
       "pick": false,
       "related": []
@@ -5562,12 +4614,6 @@
       "date": "10.04.2026",
       "id": "13a031fe",
       "url": "https://engineering.atspotify.com/2026/4/anthropic-agentic-development/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/13a031fe.jpg",
       "pick": false,
       "related": []
@@ -5587,12 +4633,6 @@
       "date": "10.04.2026",
       "id": "b83cc002",
       "url": "https://github.blog/news-insights/company-news/github-universe-is-back-we-want-you-to-take-the-stage/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": null,
       "pick": false,
       "related": []
@@ -5613,12 +4653,6 @@
       "date": "10.04.2026",
       "id": "9957b9d9",
       "url": "https://github.blog/news-insights/company-news/github-availability-report-march-2026/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/9957b9d9.jpg",
       "pick": false,
       "related": []
@@ -5638,12 +4672,6 @@
       "date": "10.04.2026",
       "id": "758d58ca",
       "url": "https://www.theverge.com/podcast/909621/openai-sam-altman-drama-vergecast",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/758d58ca.jpg",
       "pick": false,
       "related": []
@@ -5663,12 +4691,6 @@
       "date": "09.04.2026",
       "id": "b8193c89",
       "url": "https://www.theverge.com/policy/909557/openai-florida-investigation",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/b8193c89.jpg",
       "pick": false,
       "related": [],
@@ -5688,12 +4710,6 @@
       "date": "09.04.2026",
       "id": "5cf89016",
       "url": "https://www.theverge.com/21289209/best-apple-watch-deals",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/5cf89016.jpg",
       "pick": false,
       "related": [],
@@ -5713,12 +4729,6 @@
       "date": "09.04.2026",
       "id": "2a4ffb02",
       "url": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/2a4ffb02.jpg",
       "pick": false,
       "pick_reason": "Die Zukunft der KI-Entwicklung steht auf dem Spiel, als OpenAI unter Druck gerät: Die jüngste Untersuchung in Florida wirft fundamentale Fragen über die Verantwortung von Tech-Giganten auf. Ein tödlicher Vorfall an der Florida State University hat die Debatte um die Sicherheit und Ethik von künstlicher Intelligenz neu entfacht. Entscheidungen, die in den nächsten Wochen fallen, werden die Richtung der gesamten Branche bestimmen und Entwickler müssen sich nun mit den möglichen Konsequenzen auseinandersetzen.",
@@ -5740,12 +4750,6 @@
       "date": "09.04.2026",
       "id": "cdf1d502",
       "url": "https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/cdf1d502.jpg",
       "pick": false,
       "related": [],
@@ -5766,12 +4770,6 @@
       "date": "08.04.2026",
       "id": "6b027504",
       "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/6b027504.jpg",
       "pick": false,
       "related": []
@@ -5791,12 +4789,6 @@
       "date": "08.04.2026",
       "id": "c135a521",
       "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/c135a521.jpg",
       "pick": false,
       "related": []
@@ -5816,12 +4808,6 @@
       "date": "08.04.2026",
       "id": "e79f2e0c",
       "url": "https://www.theverge.com/news/908624/microsoft-windows-control-panel-removal-explanation",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/e79f2e0c.jpg",
       "pick": false,
       "related": []
@@ -5841,12 +4827,6 @@
       "date": "08.04.2026",
       "id": "534a3ceb",
       "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/534a3ceb.jpg",
       "pick": false,
       "related": []
@@ -5867,12 +4847,6 @@
       "date": "08.04.2026",
       "id": "d9f5ae78",
       "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/d9f5ae78.jpg",
       "pick": false,
       "related": []
@@ -5893,12 +4867,6 @@
       "date": "08.04.2026",
       "id": "825e8b8c",
       "url": "https://towardsdatascience.com/from-4-weeks-to-45-minutes-designing-a-document-extraction-system-for-4700-pdfs/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/825e8b8c.jpg",
       "pick": false,
       "related": []
@@ -5919,12 +4887,6 @@
       "date": "08.04.2026",
       "id": "cf3afec1",
       "url": "https://towardsdatascience.com/democratizing-marketing-mix-models-mmm-with-open-source-and-gen-ai/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/cf3afec1.jpg",
       "pick": false,
       "related": []
@@ -5945,12 +4907,6 @@
       "date": "08.04.2026",
       "id": "7457f62c",
       "url": "https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/7457f62c.jpg",
       "pick": false,
       "related": []
@@ -5970,12 +4926,6 @@
       "date": "08.04.2026",
       "id": "07508729",
       "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/07508729.jpg",
       "pick": false,
       "related": []
@@ -5996,12 +4946,6 @@
       "date": "08.04.2026",
       "id": "50b12832",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/50b12832.jpg",
       "pick": false,
       "related": [],
@@ -6022,12 +4966,6 @@
       "date": "08.04.2026",
       "id": "f13df404",
       "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
-      "reactions": {
-        "fire": 0,
-        "think": 0,
-        "bulb": 0,
-        "sleep": 0
-      },
       "image_local": "images/f13df404.jpg",
       "pick": false,
       "related": []

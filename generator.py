@@ -778,7 +778,6 @@ def run():
         error_streak = 0
         entry["id"]        = os.urandom(4).hex()
         entry["url"]       = post.link
-        entry["reactions"] = {"fire": 0, "think": 0, "bulb": 0, "sleep": 0}
         image_query        = entry.pop("image_query", "technology")
         img = get_unsplash_image(image_query, entry["id"])
         entry["image_local"]       = img["path"] if img else None

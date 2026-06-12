@@ -91,6 +91,10 @@ def migrate():
             kept += 1
     print(f"Related berechnet: {computed} via Embedding, {kept} normalisiert (kein Vektor)")
 
+    # 3. Ungenutztes reactions-Feld entfernen
+    stripped = sum(1 for a in articles if a.pop("reactions", None) is not None)
+    print(f"reactions-Feld entfernt: {stripped} Artikel")
+
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
     size_mb = os.path.getsize(DATA_FILE) / 1024 / 1024
