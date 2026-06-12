@@ -19,7 +19,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="./config.js" onerror="window.BYTEPOST_CONFIG={}"></script>
 
     <style>
         /* ── Variables ─────────────────────────────────────── */
@@ -464,6 +463,10 @@
 </div>
 
 <script>
+    /* ── Konfiguration ──────────────────────────────────────── */
+    // Cloudflare Worker für On-Demand-KI-Erklärungen (siehe worker/README.md)
+    const EXPLAIN_API_URL = 'https://bytepost-explain.DEIN-ACCOUNT.workers.dev';
+
     /* ── Theme ──────────────────────────────────────────────── */
     (function () {
         const saved = localStorage.getItem('bp_theme') || 'dark';
@@ -799,29 +802,22 @@
         const cached = explainCache[currentArticleId]?.[mode];
         if (cached) { renderBody(mode, cached); return; }
 
-        // On-demand generation via Groq
-        const a = ARTICLES.find(x => x.id === currentArticleId);
+        // On-demand generation via Worker-Proxy (Key liegt im Worker, nicht im Browser)
         showSkeleton();
         setButtonState(mode, true);
 
         try {
-            const plain = (a.content || '').replace(/<[^>]+>/g, '').slice(0, 1500);
-            const prompts = {
-                simple: `Du erklärst Tech-Themen für Nicht-Techniker auf Deutsch. Erkläre diesen Artikel ohne Fachbegriffe, mit Alltagsvergleichen, kurzen Sätzen. Beginne mit <div class="explain-badge simple">🎓 Kurz & Einfach</div>. Format: <p>, <ul>. 150-200 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`,
-                pro:    `Du bist Senior Engineer und erklärst Tech-News für Entwickler auf Deutsch. Füge technische Tiefe hinzu: Architektur, Protokolle, interne Abläufe, Metriken, Trade-offs und Implikationen für die Praxis. Nutze <h3>, <p>, <ul>. Füge NUR dann einen <pre><code>-Block hinzu, wenn im Originalartikel tatsächlich konkreter Code vorkommt – ansonsten lass ihn weg. Keine erfundenen Beispiele. Wenn du Code schreibst: JEDE Anweisung auf eine EIGENE Zeile mit echtem Zeilenumbruch (\\n), korrekte Einrückung mit Leerzeichen. 250-350 Wörter. Nur HTML.\n\nTitel: ${a.title}\nInhalt: ${plain}`
-            };
-            const GROQ_KEY = (typeof BYTEPOST_CONFIG !== 'undefined') ? BYTEPOST_CONFIG.groqKey : '';
-            if (!GROQ_KEY) throw new Error('Kein API-Key konfiguriert');
+            if (EXPLAIN_API_URL.includes('DEIN-ACCOUNT')) throw new Error('Worker nicht konfiguriert');
 
-            const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+            const res = await fetch(EXPLAIN_API_URL, {
                 method: 'POST',
-                headers: { 'Authorization': `Bearer ${GROQ_KEY}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 1200,
-                    messages: [{ role: 'user', content: prompts[mode] }] })
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: currentArticleId, mode })
             });
             if (!res.ok) throw new Error(`API ${res.status}`);
             const data = await res.json();
-            const raw = data.choices[0].message.content.replace(/```html|```/g, '').trim();
+            const raw = (data.content || '').trim();
+            if (!raw) throw new Error('Leere Antwort');
             // Zeilenumbrüche in <pre><code>-Blöcken sicherstellen
             const html = raw.replace(/<pre[^>]*>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, (_, code) => {
                 const decoded = code.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');

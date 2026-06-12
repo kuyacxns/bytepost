@@ -3,9 +3,23 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 # --- SETUP ---
+def load_dotenv(path=".env"):
+    """Minimaler .env-Loader ohne Zusatz-Dependency."""
+    if not os.path.exists(path):
+        return
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+load_dotenv()
+
 GROQ_API_KEY    = os.environ.get("GROQ_API_KEY", "")
-VOYAGE_API_KEY  = os.environ.get("VOYAGE_API_KEY", "pa-ThfF9-qrjIQdrHZeeaRm0pJ0qM_hWJdac3xspAZ2bza")
-UNSPLASH_KEY    = "QQzUWbAsN6W9yoMZctADAd7ovx1CurH6-HxfaXzuwPE"
+VOYAGE_API_KEY  = os.environ.get("VOYAGE_API_KEY", "")
+UNSPLASH_KEY    = os.environ.get("UNSPLASH_ACCESS_KEY", "")
 MODEL           = "llama-3.3-70b-versatile"
 EMBED_MODEL     = "voyage-3-lite"
 DATA_FILE       = "data.json"
@@ -495,12 +509,22 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     return today_articles[0]
 
 
+def check_api_keys():
+    """Bricht mit klarer Fehlermeldung ab, wenn ein Key fehlt."""
+    missing = []
+    if not GROQ_API_KEY:   missing.append("GROQ_API_KEY        (https://console.groq.com)")
+    if not VOYAGE_API_KEY: missing.append("VOYAGE_API_KEY      (https://www.voyageai.com)")
+    if not UNSPLASH_KEY:   missing.append("UNSPLASH_ACCESS_KEY (https://unsplash.com/developers)")
+    if missing:
+        print("FEHLER: Folgende API-Keys fehlen (Umgebungsvariable oder .env):")
+        for m in missing:
+            print(f"  - {m}")
+        print("Vorlage: siehe .env.example")
+        raise SystemExit(1)
+
+
 def run():
-    if not GROQ_API_KEY:
-        print("FEHLER: GROQ_API_KEY nicht gesetzt.")
-        print("  export GROQ_API_KEY='gsk_...'")
-        print("  Kostenloser Account: https://console.groq.com")
-        return
+    check_api_keys()
 
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:

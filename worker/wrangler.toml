@@ -1,0 +1,6 @@
+name = "bytepost-explain"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# Secret setzen (nicht hier eintragen!):
+#   wrangler secret put GROQ_API_KEY
