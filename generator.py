@@ -23,6 +23,7 @@ UNSPLASH_KEY    = os.environ.get("UNSPLASH_ACCESS_KEY", "")
 MODEL           = "llama-3.3-70b-versatile"
 EMBED_MODEL     = "voyage-3-lite"
 DATA_FILE       = "data.json"
+EMBED_FILE      = "embeddings.json"   # nicht deployt, in .gitignore
 
 # --- COST PROTECTION ---
 MAX_PER_RUN      = 10   # max. neue Artikel pro Generator-Lauf
@@ -229,20 +230,34 @@ def embed_text(article):
     return f"{article['title']}. {content_plain[:600]}"
 
 
-def backfill_embeddings(articles):
-    """Generiert Embeddings für alle Artikel die noch keines haben."""
-    missing = [a for a in articles if not a.get("embedding")]
+def load_embeddings():
+    """Lädt den lokalen Embedding-Store (id → Vektor)."""
+    if os.path.exists(EMBED_FILE):
+        with open(EMBED_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_embeddings(store):
+    with open(EMBED_FILE, "w", encoding="utf-8") as f:
+        json.dump(store, f)
+
+
+def backfill_embeddings(articles, emb_store):
+    """Generiert Embeddings für alle Artikel die noch keinen Vektor im Store haben."""
+    missing = [a for a in articles if a.get("id") and a["id"] not in emb_store]
     if not missing:
         return
     print(f"\nEmbedding-Backfill: {len(missing)} Artikel ohne Vektor...")
     for i, a in enumerate(missing):
         vec = get_embedding(embed_text(a))
         if vec:
-            a["embedding"] = vec
+            emb_store[a["id"]] = vec
             print(f"  [{i+1}/{len(missing)}] {a['title'][:50]}")
         else:
             print(f"  [{i+1}/{len(missing)}] FEHLER: {a['title'][:50]}")
         time.sleep(1.0)   # DNS-Cache schonen
+    save_embeddings(emb_store)
     print("Backfill abgeschlossen.")
 
 
@@ -278,7 +293,7 @@ def fetch_article_text(url, max_chars=8000):
         print(f"  -> Artikel-Fetch Fehler: {e}")
         return ""
 
-def ask_gemini(url, category, rss_title="", rss_summary="", existing_articles=None):
+def ask_gemini(url, category, rss_title="", rss_summary=""):
     heute = datetime.now().strftime("%d.%m.%Y")
 
     print(f"  -> Lade Artikel...")
@@ -287,14 +302,6 @@ def ask_gemini(url, category, rss_title="", rss_summary="", existing_articles=No
     # Kombiniere RSS-Summary + gescrapten Text für maximalen Kontext
     combined = " ".join(filter(None, [rss_title, rss_summary, article_text]))
     source_block = f"ARTIKELINHALT:\n{combined[:4500]}" if combined.strip() else f"URL: {url}"
-
-    # Archiv-Block für Kontext-Kette (max. 30 neueste Artikel)
-    if existing_articles:
-        recent = existing_articles[-30:]
-        archive_lines = "\n".join(f'  {a["id"]}: {a["title"]}' for a in recent)
-        archive_block = f"\nBYTEPOST-ARCHIV (IDs und Titel bereits veröffentlichter Artikel):\n{archive_lines}\n"
-    else:
-        archive_block = ""
 
     prompt = f"""Du bist Redakteur bei 'BytePost', einem deutschen Tech-Newsletter für Entwickler.
 
@@ -328,7 +335,7 @@ FORMAT für "content_pro" (Für Profis — für Entwickler & Engineers):
 - 250-350 Wörter, <h3> zur Strukturierung
 
 SENTIMENT: "positiv" (Fortschritt/Innovation), "neutral" (Update/Info), "kritisch" (Risiko/Sicherheitsproblem/Kontroverse)
-{archive_block}
+
 Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
 {{
     "cat": ["ki"],
@@ -338,18 +345,13 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     "read": "X Min",
     "image_query": "2 englische Suchbegriffe für Unsplash",
     "sentiment": "positiv|neutral|kritisch",
-    "related": [],
     "content": "Vollständiger Artikel auf Deutsch (HTML mit h3, p, ul)",
     "content_simple": "Einfach erklärt ohne Fachbegriffe (HTML, nur p)",
     "content_pro": "Technische Tiefenversion für Entwickler (HTML mit h3, p, pre>code)"
 }}
 
 "cat" ist ein JSON-Array mit 1-3 passenden Kategorien aus: ki, dev, data, security, cloud, hardware, business, gaming
-Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]
-"related" ist ein JSON-Array mit 0-3 IDs aus dem ARCHIV oben.
-NUR verlinken wenn der Archiv-Artikel dasselbe spezifische Thema behandelt — z.B. dieselbe Firma (OpenAI), dasselbe Produkt (Crimson Desert), dieselbe Sicherheitslücke (CVE-XXXX), dieselbe Person.
-NICHT verlinken nur weil beide Artikel in derselben Kategorie sind (z.B. beide Gaming, beide KI).
-Im Zweifel: leer lassen. Lieber kein Vorschlag als ein falscher."""
+Beispiele: ["ki"] oder ["ki","dev"] oder ["security","ki"]"""
 
     try:
         r = requests.post(
@@ -386,14 +388,8 @@ Im Zweifel: leer lassen. Lieber kein Vorschlag als ein falscher."""
         if category.lower() == "gaming" and "gaming" not in cat:
             cat.insert(0, "gaming")
         data["cat"] = cat
-        data.pop("tag", None)  # tag field no longer needed
-        # Normalize related: keep only valid IDs from the archive
-        existing_ids = {a["id"] for a in (existing_articles or [])}
-        related = data.get("related", [])
-        if isinstance(related, list):
-            data["related"] = [r for r in related if r in existing_ids][:3]
-        else:
-            data["related"] = []
+        data.pop("tag", None)      # tag field no longer needed
+        data.pop("related", None)  # related wird serverseitig via Embeddings berechnet
         # Never let source be "BytePost" — derive from URL if needed
         SOURCE_MAP = {
             'techcrunch.com': 'TechCrunch', 'theverge.com': 'The Verge',
@@ -459,16 +455,16 @@ def cosine_sim(a, b):
     return dot / (mag_a * mag_b)
 
 
-def find_related(article, all_articles, limit=3, threshold=0.87):
+def find_related(article, all_articles, emb_store, limit=3, threshold=0.87):
     """Embedding-basierte Ähnlichkeit (Cosine Similarity), max. 3 Treffer."""
-    vec = article.get("embedding")
+    vec = emb_store.get(article.get("id"))
     if not vec:
         return []
     scored = []
     for a in all_articles:
         if a.get("id") == article.get("id") or a.get("title") == article.get("title"):
             continue
-        other = a.get("embedding")
+        other = emb_store.get(a.get("id"))
         if not other:
             continue
         sim = cosine_sim(vec, other)
@@ -555,8 +551,14 @@ def run():
 
     heute = datetime.now().strftime("%d.%m.%Y")
 
-    # Embeddings für bestehende Artikel nachholen (unabhängig vom Groq-Tageslimit)
-    backfill_embeddings(db["articles"])
+    # Embedding-Store laden, fehlende Vektoren nachholen (unabhängig vom Groq-Tageslimit)
+    emb_store = load_embeddings()
+    backfill_embeddings(db["articles"], emb_store)
+
+    # Related für Alt-Artikel nachziehen, sobald deren Embedding vorliegt
+    for a in db["articles"]:
+        if not a.get("related") and a.get("id") in emb_store:
+            a["related"] = find_related(a, db["articles"], emb_store)
 
     # Tagessperre prüfen
     today_count = sum(1 for a in db["articles"] if a.get("date") == heute)
@@ -589,8 +591,7 @@ def run():
         rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
         rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
 
-        entry = ask_gemini(post.link, category_hint, rss_title, rss_summary,
-                           existing_articles=db["articles"])
+        entry = ask_gemini(post.link, category_hint, rss_title, rss_summary)
 
         if entry is None:
             error_streak += 1
@@ -608,8 +609,9 @@ def run():
         entry["image_local"] = get_unsplash_image(image_query, entry["id"])
         vec = get_embedding(embed_text(entry))
         if vec:
-            entry["embedding"] = vec
-            print(f"  -> Embedding: {len(vec)} Dimensionen")
+            emb_store[entry["id"]] = vec
+            save_embeddings(emb_store)
+            print(f"  -> Embedding: {len(vec)} Dimensionen (→ {EMBED_FILE})")
         db["articles"].insert(0, entry)
         new_articles.append(entry)
         existing_urls.add(post.link)
@@ -625,10 +627,9 @@ def run():
         pick["pick"] = True
         print(f"\nPick of the Day: {pick['title']}")
 
-    # Related Articles — nur als Fallback wenn Groq keinen Vorschlag gemacht hat
+    # Related Articles — serverseitig via Embeddings (Cosine Similarity)
     for article in new_articles:
-        if not article.get("related"):
-            article["related"] = find_related(article, db["articles"])
+        article["related"] = find_related(article, db["articles"], emb_store)
 
     # BytePulse
     pulse = compute_bytepulse(db["articles"], heute)
@@ -637,7 +638,7 @@ def run():
         print(f"BytePulse: {pulse['positiv']}% positiv, {pulse['neutral']}% neutral, {pulse['kritisch']}% kritisch")
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(db, f, ensure_ascii=False, indent=4)
+        json.dump(db, f, ensure_ascii=False, indent=2)
     print(f"\nFertig. {new_count} neue Artikel erstellt.")
 
 if __name__ == "__main__":
