@@ -786,6 +786,14 @@ def run():
         rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
         rss_summary = strip_html(rss_summary)[:2000]
 
+        # Dedupe: gleiche News aus zweiter Quelle (z.B. Heise + Golem) überspringen
+        cand_vec = get_embedding(f"{rss_title}. {rss_summary[:600]}")
+        if cand_vec and emb_store:
+            best_sim = max(cosine_sim(cand_vec, v) for v in emb_store.values())
+            if best_sim > 0.92:
+                print(f"  -> ÜBERSPRUNGEN (Duplikat, Similarity {best_sim:.3f}): {rss_title[:60]}")
+                continue
+
         entry = ask_gemini(post.link, category_hint, rss_title, rss_summary)
 
         if entry is None:
@@ -829,11 +837,15 @@ def run():
     for article in new_articles:
         article["related"] = find_related(article, db["articles"], emb_store)
 
-    # BytePulse
+    # BytePulse — aktueller Tag + Historie (max. 90 Tage)
     pulse = compute_bytepulse(db["articles"], heute)
     if pulse:
         db["bytepulse"] = pulse
-        print(f"BytePulse: {pulse['positiv']}% positiv, {pulse['neutral']}% neutral, {pulse['kritisch']}% kritisch")
+        history = [h for h in db.get("bytepulse_history", []) if h.get("date") != heute]
+        history.append(pulse)
+        history.sort(key=lambda h: parse_date_de(h.get("date")) or datetime(1970, 1, 1))
+        db["bytepulse_history"] = history[-90:]
+        print(f"BytePulse: {pulse['positiv']}% positiv, {pulse['neutral']}% neutral, {pulse['kritisch']}% kritisch ({len(db['bytepulse_history'])} Tage Historie)")
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)

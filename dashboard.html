@@ -230,21 +230,6 @@
         .pkg-ver { font-family: var(--mono); font-size: 11px; color: var(--accent); }
         .pkg-date { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
 
-        /* ── KI Model tracker ────────────────────────────── */
-        .model-list { display: flex; flex-direction: column; gap: 1px; }
-        .model-row {
-            display: flex; align-items: flex-start; gap: 10px;
-            padding: 9px 0; border-bottom: 1px solid var(--border);
-        }
-        .model-row:last-child { border-bottom: none; }
-        .model-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
-        .model-content { flex: 1; min-width: 0; }
-        .model-name-row { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
-        .model-name { font-size: 13px; font-weight: 600; }
-        .model-company { font-family: var(--mono); font-size: 10px; color: var(--text-3); }
-        .model-highlight { font-size: 12px; color: var(--text-2); margin-top: 2px; line-height: 1.4; }
-        .model-type { font-family: var(--mono); font-size: 9px; padding: 2px 6px; border-radius: 4px; background: var(--border); color: var(--text-3); }
-
         /* ── Security alerts (Heise) ─────────────────────── */
         .alert-row {
             display: flex; align-items: flex-start; gap: 10px;
@@ -293,7 +278,7 @@
     <div class="page-header">
         <div class="page-label">Live Übersicht</div>
         <h1 class="page-title">Tech <em>Dashboard</em></h1>
-        <p class="page-sub">GitHub Trending · Hacker News · BytePost Stats · PyPI · Security · KI-Modelle</p>
+        <p class="page-sub">GitHub Trending · Hacker News · BytePost Stats · PyPI · Security</p>
     </div>
 
     <div class="refresh-bar">
@@ -362,18 +347,6 @@
                 </div>
             </div>
             <div class="widget-body" id="body-sec"></div>
-        </div>
-
-        <!-- 6 KI-Modell Tracker -->
-        <div class="widget" id="w-models">
-            <div class="widget-header">
-                <div class="widget-title"><span class="widget-title-icon">🤖</span> KI-Modell Tracker</div>
-                <div class="widget-meta">
-                    <span class="widget-ts" id="ts-models"></span>
-                    <button class="widget-refresh" onclick="loadModels()" title="Aktualisieren">↻</button>
-                </div>
-            </div>
-            <div class="widget-body" id="body-models"></div>
         </div>
 
     </div>
@@ -601,7 +574,8 @@
                     newestDate = d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
                 }
             }
-            const stats = { total: articles.length, catCount, newestDate };
+            const history = (db.bytepulse_history || (db.bytepulse ? [db.bytepulse] : [])).slice(-14);
+            const stats = { total: articles.length, catCount, newestDate, history };
             cacheSet('bp', stats);
             renderBP(stats);
             setTs('bp');
@@ -611,10 +585,34 @@
         spinBtn('bp', false);
     }
 
+    // Sentiment-Verlauf als gestapelte SVG-Balken (keine Library)
+    function sentimentSparkline(history) {
+        if (!history || !history.length) return '';
+        const W = 12, H = 44, GAP = 3;
+        const bars = history.map((h, i) => {
+            const total = (h.positiv || 0) + (h.neutral || 0) + (h.kritisch || 0) || 100;
+            const x = i * (W + GAP);
+            let y = H, rects = '';
+            [['positiv', '#22c55e'], ['neutral', '#636366'], ['kritisch', '#ef4444']].forEach(([key, color]) => {
+                const hSeg = (h[key] || 0) / total * H;
+                if (hSeg <= 0) return;
+                y -= hSeg;
+                rects += `<rect x="${x}" y="${y.toFixed(1)}" width="${W}" height="${hSeg.toFixed(1)}" fill="${color}" rx="1"><title>${h.date}: ${h[key]}% ${key}</title></rect>`;
+            });
+            return rects;
+        }).join('');
+        const width = history.length * (W + GAP) - GAP;
+        return `
+            <div style="font-family:var(--mono);font-size:10px;color:var(--text-3);margin:14px 0 6px;">
+                Sentiment-Verlauf (${history.length} Tage)
+            </div>
+            <svg width="${width}" height="${H}" viewBox="0 0 ${width} ${H}" role="img" aria-label="Sentiment-Verlauf">${bars}</svg>`;
+    }
+
     function renderBP(stats) {
         const el = document.getElementById('body-bp');
         if (!el) return;
-        const { total, catCount, newestDate } = stats;
+        const { total, catCount, newestDate, history } = stats;
 
         // Top categories by count
         const sorted = Object.entries(catCount).sort((a, b) => b[1] - a[1]).slice(0, 6);
@@ -666,7 +664,8 @@
                             <span class="legend-pct">${Math.round(v/catTotal*100)}%</span>
                         </div>`).join('')}
                 </div>
-            </div>`;
+            </div>
+            ${sentimentSparkline(history)}`;
     }
 
     /* ── 4. PyPI Updates ─────────────────────────────────── */
@@ -771,53 +770,6 @@
             </div>`).join('')}</div>`;
     }
 
-    /* ── 6. KI-Modell Tracker ────────────────────────────── */
-    const MODEL_COMPANY_COLORS = {
-        'OpenAI': '#10a37f', 'Anthropic': '#d4613a', 'Google': '#4285f4',
-        'Meta': '#0866ff', 'xAI': '#e7e7e7', 'Mistral AI': '#ff6b00',
-        'Alibaba': '#ff6a00',
-    };
-
-    async function loadModels(force = false) {
-        const cached = !force && cacheGet('models');
-        if (cached) { renderModels(cached); setTs('models'); return; }
-        showSkeleton('body-models', 6);
-        spinBtn('models', true);
-        try {
-            const res = await fetch('./models.json?_=' + Date.now());
-            if (!res.ok) throw new Error('models.json ' + res.status);
-            const data = await res.json();
-            cacheSet('models', data);
-            renderModels(data);
-            setTs('models');
-        } catch {
-            showError('body-models', 'models.json nicht erreichbar.');
-        }
-        spinBtn('models', false);
-    }
-
-    function renderModels(data) {
-        const el = document.getElementById('body-models');
-        if (!el) return;
-        const models = (data.models || []).slice().sort((a, b) =>
-            (b.released || '').localeCompare(a.released || '')
-        );
-        el.innerHTML = `<div class="model-list">${models.map(m => {
-            const color = MODEL_COMPANY_COLORS[m.company] || '#888';
-            return `<div class="model-row">
-                <div class="model-dot" style="background:${color}"></div>
-                <div class="model-content">
-                    <div class="model-name-row">
-                        <span class="model-name">${m.name}</span>
-                        <span class="model-company">${m.company}</span>
-                        <span class="model-type">${m.type}</span>
-                    </div>
-                    <div class="model-highlight">${m.highlight}</div>
-                </div>
-            </div>`;
-        }).join('')}</div>`;
-    }
-
     /* ── Auto-refresh countdown ──────────────────────────── */
     const REFRESH_INTERVAL = 5 * 60; // seconds
     let countdownSec = REFRESH_INTERVAL;
@@ -853,7 +805,6 @@
         loadBP(force);
         loadPyPI(force);
         loadSecurity(force);
-        loadModels(force);
         if (force) startCountdown();
     }
 
