@@ -86,7 +86,7 @@
                 "sleep": 0
             },
             "image_local": "images/22cc5267.jpg",
-            "pick": true,
+            "pick": false,
             "pick_reason": "Die Zukunft der KI-Entwicklung hat begonnen: Die OpenRouter API verbindet KI-Modelle wie nie zuvor und revolutioniert die Art, wie Entwickler mit künstlicher Intelligenz arbeiten. Durch diese Verbindung können Entwickler ihre KI-Modelle effizienter einsetzen und somit ihre Projekte beschleunigen. Damit stellt sich die Frage, ob Ihr Unternehmen bereit ist, den nächsten Schritt in der KI-Entwicklung zu gehen."
         },
         {
