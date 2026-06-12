@@ -91,6 +91,23 @@ Alle Änderungen der 8 Phasen, je Phase ein Commit.
 
 ---
 
+## Archiv-Funktion (Juni 2026)
+
+- **Startseite zeigt nur die letzten 7 Tage:** `index.html` berechnet `RECENT_ARTICLES`
+  relativ zum Datum des neuesten Artikels (Fallback: die 10 neuesten, falls das
+  7-Tage-Fenster leer ist). Pick of the Day, Filter-Tabs, Suche und Grid arbeiten
+  nur noch auf dieser Teilmenge; `ARTICLES` bleibt das Gesamt-Set für Modal/
+  Kontext-Kette, sodass `#a=<id>`-Deeplinks auch für archivierte Artikel
+  funktionieren.
+- **Neue Seite `archiv.html`:** listet alle älteren Artikel alphabetisch nach
+  Titel (A–Z, Sprungleiste, Sonderzeichen unter „#"), mit Live-Suche und
+  Kategorie-Badges. Jeder Eintrag verlinkt auf `index.html#a=<id>` und öffnet
+  dort das Artikel-Modal.
+- Hinweis-Link „📚 X weitere Artikel im Archiv" unter dem Editions-Header auf
+  der Startseite; neuer „Archiv"-Nav-Link in `index.html` und `dashboard.html`.
+
+---
+
 ## ⚠️ Offene manuelle Schritte
 
 1. **API-Keys rotieren** (alte Keys stehen in der Git-Historie!):

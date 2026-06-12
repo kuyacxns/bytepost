@@ -15,7 +15,8 @@ BytePost ist eine statische Website (kein Backend), die täglich kuratierte Tech
 
 ```
 bytepost/
-├── index.html             # Hauptseite: Feed, Modal, Filter, Suche, Merkliste
+├── index.html             # Hauptseite: Feed (nur letzte 7 Tage), Modal, Filter, Suche, Merkliste
+├── archiv.html            # Archiv: alle älteren Artikel, A-Z nach Titel, Live-Suche
 ├── dashboard.html         # Live-Dashboard (GitHub, HN, Stats, PyPI, Security)
 ├── impressum.html         # Impressum (Platzhalter müssen noch ausgefüllt werden)
 ├── favicon.svg            # Logo/Icon
@@ -143,6 +144,12 @@ Alt-Artikel haben teils noch `.jpg`-Bilder und kein `image_small` — Frontend f
 
 ## index.html — Hauptseite
 
+- **Letzte 7 Tage:** `RECENT_ARTICLES` = Artikel der letzten `RECENT_DAYS` (7) Tage,
+  relativ zum neuesten Artikel (Fallback: 10 neueste). Pick of the Day, Filter-Tabs,
+  Suche und Grid arbeiten auf `RECENT_ARTICLES`; `ARTICLES` (Gesamt-Set) bleibt für
+  Modal/Kontext-Kette erhalten → `#a=<id>` öffnet auch archivierte Artikel.
+  Älteres landet in `archiv.html`, Link „📚 X weitere Artikel im Archiv" unter dem
+  Editions-Header.
 - **Hash-Routing:** `#cat=ki,dev` (Filter, Legacy `#ki,dev` ok) + `#a=<id>` (Artikel-Deeplink, öffnet Modal; Back/Forward synchronisiert)
 - **Filter-Bar:** fixed unter der Nav, versteckt sich beim Runterscrollen (rAF-throttled, 10px-Threshold), Spacer-Div hält Layout
 - **Suche:** in der Filter-Bar, live (200ms Debounce), Titel + Content, Treffer-Anzeige
@@ -152,6 +159,19 @@ Alt-Artikel haben teils noch `.jpg`-Bilder und kein `image_small` — Frontend f
 - **A11y:** Karten/Hero `role=button`+Tastatur, Modal `role=dialog`+Fokus-Trap+Fokus-Rückgabe, alt-Texte
 - **Bilder:** `srcset` (small/full), `loading=lazy` außer Hero, `decoding=async`
 - **Theme:** Dark/Light via `bp_theme` in localStorage
+
+---
+
+## archiv.html — Artikel-Archiv
+
+- Lädt `data.json`, ermittelt das Archiv-Set per `computeRecentArticles()`
+  (identische Logik wie in `index.html`) und zeigt alles **außerhalb** der
+  letzten `RECENT_DAYS` Tage.
+- Sortierung alphabetisch nach Titel (`localeCompare(..., 'de')`), gruppiert
+  nach Anfangsbuchstabe (A–Z, Sonderfälle unter „#"), mit Sprungleiste.
+- Live-Suche (Titel, 200ms Debounce) + Kategorie-Badges + Datum pro Eintrag.
+- Jeder Eintrag verlinkt auf `index.html#a=<id>` (öffnet das Modal dort, auch
+  für archivierte Artikel, da `ARTICLES` in `index.html` das Gesamt-Set bleibt).
 
 ---
 
