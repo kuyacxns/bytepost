@@ -8,77 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
 
     <style>
-        /* ── Variables ─────────────────────────────────────── */
-        :root {
-            --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
-            --display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
-            --body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-            /* Schriftgrößen-Skala */
-            --fs-xxs: 11px;  /* Mikro-Labels, Badges */
-            --fs-xs: 12px;   /* Meta-Zeilen, Datum */
-            --fs-sm: 13px;   /* kleine UI-Texte, Buttons */
-            --fs-base: 14px; /* Teaser, Standard-UI */
-            --fs-md: 16px;   /* Fließtext mobil */
-            --fs-lg: 18px;   /* Karten-Titel */
-            --fs-xl: 26px;   /* Modal-Titel */
-            --fs-xxl: 30px;  /* Editions-/Seiten-Titel */
-            --fs-read: 17px; /* Artikel-Fließtext */
-            --bg: #f5f5f7;
-            --bg-card: #ffffff;
-            --text: #1d1d1f;
-            --text-2: #515154;
-            --text-3: #6e6e73;
-            --text-read: #333336; /* Fließtext, Kontrast >= 7:1 */
-            --accent: #0071e3;
-            --border: rgba(0,0,0,0.08);
-            --radius: 14px;
-            --t: 0.2s ease;
-            --cat-ki: #0071e3;
-            --cat-dev: #22c55e;
-            --cat-hardware: #f97316;
-            --cat-security: #ef4444;
-            --cat-business: #a855f7;
-            --cat-gaming: #ec4899;
-            --cat-data: #f59e0b;
-            --cat-cloud: #06b6d4;
-            --cat-tech: #6366f1;
-        }
-        [data-theme="dark"] {
-            --bg: #0a0a0a;
-            --bg-card: #141414;
-            --text: #f5f5f7;
-            --text-2: #aeaeb2;
-            --text-3: #8e8e93;
-            --text-read: #d9d9de;
-            --border: rgba(255,255,255,0.08);
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.6; transition: background var(--t), color var(--t); }
-
+        /* Design-Tokens, Reset, Body und Nav: siehe styles/base.css */
         .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
-        /* ── Nav ─────────────────────────────────────────── */
-        nav {
-            position: sticky; top: 0;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            height: 56px; display: flex; align-items: center;
-            z-index: 100;
-            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-        }
-        .nav-inner { display: flex; justify-content: space-between; width: 100%; align-items: center; }
-        .logo { font-family: var(--display); font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
-        .logo em { color: var(--accent); font-style: normal; }
-        .logo img { border-radius: 5px; }
         .nav-links { display: flex; align-items: center; gap: 16px; }
         .nav-link { font-size: var(--fs-sm); font-weight: 600; color: var(--text-3); text-decoration: none; transition: color var(--t); }
         .nav-link:hover { color: var(--text); }
         .nav-link.active { color: var(--accent); }
-        .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--body); font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
-        .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
         /* ── Page header ─────────────────────────────────── */
         .page-header {
