@@ -87,12 +87,12 @@
         .logo { font-family: var(--display); font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
         .logo em { color: var(--accent); font-style: normal; }
         .logo img { border-radius: 5px; }
-        .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
+        .theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; cursor: pointer; font-family: var(--body); font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); transition: all var(--t); display: flex; align-items: center; gap: 6px; }
         .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
         /* ── Edition header ─────────────────────────────────── */
         .edition-bar { padding: 32px 0 20px; border-bottom: 1px solid var(--border); }
-        .edition-date { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.5px; }
+        .edition-date { font-family: var(--body); font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.2px; }
         .edition-title { font-family: var(--display); font-size: 30px; font-weight: 800; margin-top: 6px; line-height: 1.1; }
         .edition-title em { color: var(--accent); font-style: normal; }
         .edition-sub { font-size: 14px; color: var(--text-3); margin-top: 6px; }
@@ -123,12 +123,12 @@
         .filter-search input {
             background: var(--bg-card); border: 1px solid var(--border);
             border-radius: 20px; padding: 5px 14px;
-            font-family: var(--mono); font-size: 11px; color: var(--text);
+            font-family: var(--body); font-size: var(--fs-sm); color: var(--text);
             width: 170px; outline: none; transition: border-color var(--t);
         }
         .filter-search input:focus { border-color: var(--accent); }
         .filter-search input::placeholder { color: var(--text-3); }
-        .search-count { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; }
+        .search-count { font-size: var(--fs-xs); color: var(--text-3); white-space: nowrap; }
         @media (max-width: 600px) {
             .filter-bar > .wrap { flex-wrap: wrap; gap: 8px; }
             .cat-tabs { width: 100%; flex: none; }
@@ -136,7 +136,7 @@
             .filter-search input { flex: 1; width: auto; }
         }
         .cat-tab {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-xxs); font-weight: 600;
             padding: 5px 13px; border-radius: 20px;
             border: 1px solid var(--border);
             background: none; color: var(--text-3);
@@ -166,12 +166,12 @@
         }
         .hero-pick-top { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
         .pick-badge {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-xxs); font-weight: 600;
             background: #ffd60a; color: #000;
             padding: 4px 11px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;
         }
         .hero-pick-cat-badge {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-xxs); font-weight: 600;
             padding: 4px 11px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
         }
         .hero-pick-title { font-family: var(--display); font-size: 34px; font-weight: 800; line-height: 1.15; margin-bottom: 16px; max-width: 780px; text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
@@ -182,21 +182,21 @@
             backdrop-filter: blur(6px);
         }
         .hero-pick-why-label {
-            font-family: var(--mono); font-size: 9px; font-weight: 700; text-transform: uppercase;
+            font-size: var(--fs-xxs); font-weight: 600; text-transform: uppercase;
             letter-spacing: 0.8px; color: #ffd60a; white-space: nowrap; padding-top: 2px;
         }
         .hero-pick-why-text { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.92); }
-        .hero-pick-meta { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.6); flex-wrap: wrap; }
+        .hero-pick-meta { display: flex; align-items: center; gap: 12px; font-size: var(--fs-sm); color: rgba(255,255,255,0.65); flex-wrap: wrap; }
 
         /* ── Unsplash-Attribution ───────────────────────────── */
         .hero-credit {
             position: absolute; bottom: 8px; right: 12px; z-index: 2;
-            font-family: var(--mono); font-size: 9px; color: rgba(255,255,255,0.55);
+            font-size: var(--fs-xxs); color: rgba(255,255,255,0.6);
         }
         .hero-credit a { color: rgba(255,255,255,0.7); text-decoration: none; }
         .hero-credit a:hover { text-decoration: underline; }
         .img-credit {
-            font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            font-size: var(--fs-xxs); color: var(--text-3);
             padding: 6px 16px; text-align: right;
         }
         .img-credit a { color: var(--text-3); text-decoration: none; }
@@ -204,7 +204,7 @@
 
         /* ── Link kopieren ──────────────────────────────────── */
         .copy-link-btn {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-xs); font-weight: 600;
             padding: 5px 12px; border-radius: 20px;
             border: 1px solid var(--border); background: none; color: var(--text-3);
             cursor: pointer; transition: all var(--t); white-space: nowrap;
@@ -215,7 +215,7 @@
         .card.read .card-img, .card.read .card-icon { opacity: 0.5; }
         .card.read .card-title { color: var(--text-3); }
         .read-badge {
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            font-size: var(--fs-xxs); font-weight: 600;
             color: #22c55e; background: rgba(34,197,94,0.12);
             padding: 2px 7px; border-radius: 4px; white-space: nowrap;
         }
@@ -272,19 +272,19 @@
         .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
 
         .cat-badge {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-xxs); font-weight: 600;
             text-transform: uppercase; letter-spacing: 0.5px;
             padding: 3px 9px; border-radius: 5px; color: #fff;
             box-shadow: 0 1px 4px rgba(0,0,0,0.25);
         }
 
         .card-date {
-            font-family: var(--mono); font-size: 10px; font-weight: 400;
-            color: var(--text-3); white-space: nowrap; letter-spacing: 0.2px;
+            font-size: var(--fs-xs); font-weight: 400;
+            color: var(--text-3); white-space: nowrap;
         }
 
         .card-read-time {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-size: var(--fs-xxs); font-weight: 600;
             padding: 3px 9px; border-radius: 5px;
             background: rgba(99,99,102,0.1); color: var(--text-3);
             white-space: nowrap;
@@ -311,11 +311,11 @@
             justify-content: space-between; margin-top: auto;
             padding-top: 12px; border-top: 1px solid var(--border);
         }
-        .card-source { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 120px; }
-        .card-read { font-family: var(--mono); font-size: 10px; color: var(--text-3); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+        .card-source { font-size: var(--fs-xs); color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 120px; }
+        .card-read { font-size: var(--fs-xs); color: var(--text-3); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
 
         /* ── Empty / loading ────────────────────────────────── */
-        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-family: var(--mono); font-size: 13px; grid-column: 1/-1; }
+        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-size: var(--fs-base); grid-column: 1/-1; }
 
         /* ── Modal ──────────────────────────────────────────── */
         .overlay {
@@ -347,7 +347,7 @@
         }
         .modal-close:hover { background: var(--accent); }
 
-        .m-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); font-size: 10px; font-weight: 700; color: #fff; text-transform: uppercase; }
+        .m-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: var(--fs-xxs); font-weight: 600; color: #fff; text-transform: uppercase; }
         .summary-box { background: var(--bg); padding: 18px 20px; border-radius: 10px; margin: 18px 0; border-left: 3px solid var(--accent); }
         .summary-box h4 { font-family: var(--display); margin-bottom: 8px; color: var(--accent); font-size: 14px; }
         .modal-bd { font-size: 15px; line-height: 1.75; color: var(--text-2); }
@@ -358,14 +358,14 @@
         .modal-bd ul { padding-left: 18px; margin: 14px 0; }
         .modal-bd li { margin-bottom: 7px; }
         .modal-bd h3 { margin-top: 22px; font-family: var(--display); color: var(--text); font-size: 18px; }
-        .modal-source-top { font-family: var(--mono); font-size: 11px; color: var(--text-3); margin-bottom: 16px; padding: 10px 14px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent); }
-        .modal-source-top a { color: var(--accent); text-decoration: none; font-weight: 700; }
+        .modal-source-top { font-size: var(--fs-sm); color: var(--text-3); margin-bottom: 16px; padding: 10px 14px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent); }
+        .modal-source-top a { color: var(--accent); text-decoration: none; font-weight: 600; }
         .modal-source-top a:hover { text-decoration: underline; }
-        .modal-source-origin { font-weight: 700; color: var(--text-2); }
-        .modal-summary-label { font-family: var(--mono); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-3); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
+        .modal-source-origin { font-weight: 600; color: var(--text-2); }
+        .modal-summary-label { font-size: var(--fs-xxs); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-3); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
         .modal-summary-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
         .modal-source-link { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); }
-        .modal-source-link a { font-family: var(--mono); font-size: 12px; color: var(--accent); text-decoration: none; font-weight: 700; transition: opacity var(--t); }
+        .modal-source-link a { font-size: var(--fs-sm); color: var(--accent); text-decoration: none; font-weight: 600; transition: opacity var(--t); }
         .modal-source-link a:hover { opacity: 0.75; }
         .modal-disclaimer { margin-top: 20px; font-size: 11px; color: var(--text-3); line-height: 1.6; font-style: italic; padding-top: 16px; border-top: 1px solid var(--border); }
 
@@ -378,7 +378,7 @@
             width: 100%;
         }
         .explain-btn {
-            font-family: var(--mono); font-size: 11px; font-weight: 700;
+            font-family: var(--body); font-size: var(--fs-sm); font-weight: 600;
             padding: 6px 14px; border-radius: 50px; border: none; cursor: pointer;
             background: transparent; color: var(--text-3);
             transition: all var(--t); white-space: nowrap;
@@ -391,7 +391,7 @@
 
         .explain-badge {
             display: inline-flex; align-items: center; gap: 5px;
-            font-family: var(--mono); font-size: 9px; font-weight: 700;
+            font-size: var(--fs-xxs); font-weight: 600;
             text-transform: uppercase; letter-spacing: 0.8px;
             padding: 3px 10px; border-radius: 50px; margin-bottom: 16px;
         }
@@ -405,7 +405,7 @@
         /* ── Kontext-Kette ──────────────────────────────────── */
         .context-chain { margin-top: 32px; border-top: 1px solid var(--border); padding-top: 20px; }
         .context-chain-label {
-            font-family: var(--mono); font-size: 10px; font-weight: 700;
+            font-size: var(--fs-xxs); font-weight: 600;
             text-transform: uppercase; letter-spacing: 1.2px;
             color: var(--text-3); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
         }
@@ -426,10 +426,10 @@
         }
         .context-item:hover .context-item-title { color: var(--text); }
         .context-item-date {
-            flex-shrink: 0; font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            flex-shrink: 0; font-size: var(--fs-xs); color: var(--text-3);
         }
         .context-item-reason {
-            font-family: var(--mono); font-size: 10px; color: var(--text-3);
+            font-size: var(--fs-xs); color: var(--text-3);
             margin-top: 2px;
         }
 
@@ -448,7 +448,7 @@
 
         /* ── Footer ─────────────────────────────────────────── */
         .footer { margin-top: 20px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
-        .footer-text { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-align: center; line-height: 1.8; }
+        .footer-text { font-size: var(--fs-sm); color: var(--text-3); text-align: center; line-height: 1.8; }
         .footer-text a { color: var(--text-3); text-decoration: underline; text-underline-offset: 3px; transition: color var(--t); }
         .footer-text a:hover { color: var(--accent); }
 
@@ -464,7 +464,7 @@
             @keyframes modal-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
             .modal-content-padding { padding: 24px 20px 40px; }
             .modal-image { height: 180px; }
-            .explain-btn { padding: 6px 8px; font-size: 10px; }
+            .explain-btn { padding: 6px 8px; font-size: var(--fs-xs); }
         }
     </style>
 </head>
@@ -513,7 +513,7 @@
         <p class="footer-text">
             © 2026 BytePost · Kuratiert von Fabi · KI-generierte Zusammenfassungen
         </p>
-        <p class="footer-text" style="margin-top:6px; font-size:10px;">
+        <p class="footer-text" style="margin-top:6px; font-size:12px;">
             BytePost erstellt automatische KI-Zusammenfassungen öffentlich zugänglicher Nachrichtenartikel. Alle Rechte an den Originalinhalten liegen bei den jeweiligen Verlagen und Autoren.
         </p>
         <p class="footer-text" style="margin-top:10px;">
@@ -531,7 +531,7 @@
             <span class="m-tag" id="m-tag"></span>
             <h2 id="m-title" style="font-family:var(--display); font-size:26px; margin:14px 0 4px; line-height:1.15;"></h2>
             <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
-                <p id="m-meta" style="color:var(--text-3); font-family:var(--mono); font-size:11px;"></p>
+                <p id="m-meta" style="color:var(--text-3); font-size:13px;"></p>
                 <div style="display:flex; gap:6px;">
                     <button class="copy-link-btn" id="modal-bm-btn" onclick="toggleBookmark(currentArticleId)">☆ Merken</button>
                     <button class="copy-link-btn" id="copy-link-btn" onclick="copyArticleLink()">🔗 Link kopieren</button>
@@ -919,7 +919,7 @@
         const articleCats = cats(a);
         const tagEl = document.getElementById('m-tag');
         tagEl.innerHTML = articleCats.map(c =>
-            `<span onclick="filterFromModal('${c}')" style="background:${catColor(c)};padding:2px 8px;border-radius:4px;margin-right:4px;font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.4px;cursor:pointer;transition:opacity .15s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">${catLabel(c)}</span>`
+            `<span onclick="filterFromModal('${c}')" style="background:${catColor(c)};padding:2px 8px;border-radius:4px;margin-right:4px;font-size:11px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:0.4px;cursor:pointer;transition:opacity .15s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">${catLabel(c)}</span>`
         ).join('');
         tagEl.style.background = 'transparent';
 
@@ -987,7 +987,7 @@
     function showSkeleton() {
         document.getElementById('m-body').innerHTML = `
             <div class="skeleton-wrap">
-                <div style="font-family:var(--mono);font-size:11px;color:var(--text-3);margin-bottom:16px;text-align:center;">🤖 BytePost KI generiert Version…</div>
+                <div style="font-size:13px;color:var(--text-3);margin-bottom:16px;text-align:center;">🤖 BytePost KI generiert Version…</div>
                 <div class="skeleton-line" style="width:85%"></div>
                 <div class="skeleton-line" style="width:60%"></div>
                 <div class="skeleton-line" style="width:92%"></div>
@@ -1049,7 +1049,7 @@
             if (currentMode === mode) renderBody(mode, html);
         } catch(e) {
             document.getElementById('m-body').innerHTML =
-                `<div style="color:var(--text-3);font-family:var(--mono);font-size:12px;padding:20px 0;">
+                `<div style="color:var(--text-3);font-size:13px;padding:20px 0;">
                     ⚠️ ${e.message.includes('429') ? 'Bitte kurz warten und erneut versuchen.' : 'KI-Version konnte nicht geladen werden.'}
                 </div>`;
         }
