@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingress2Gateway 1.0: Gateway API Migration — BytePost</title>
+    <meta name="description" content="Einleitung Mit dem anstehenden Auslaufen von Ingress-NGINX im März 2026 steht die Kubernetes-Netzwerking-Landschaft an einem Wendepunkt. Die meisten Organisatio">
+    <link rel="canonical" href="https://bytepost.de/artikel/a4e0eece.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/a4e0eece.html">
+    <meta property="og:title" content="Ingress2Gateway 1.0: Gateway API Migration">
+    <meta property="og:description" content="Einleitung Mit dem anstehenden Auslaufen von Ingress-NGINX im März 2026 steht die Kubernetes-Netzwerking-Landschaft an einem Wendepunkt. Die meisten Organisatio">
+    <meta property="og:image" content="https://bytepost.de/images/a4e0eece.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ingress2Gateway 1.0: Gateway API Migration">
+    <meta name="twitter:description" content="Einleitung Mit dem anstehenden Auslaufen von Ingress-NGINX im März 2026 steht die Kubernetes-Netzwerking-Landschaft an einem Wendepunkt. Die meisten Organisatio">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Ingress2Gateway 1.0: Gateway API Migration</h1>
+    <div class="meta">Kubernetes Blog · 20.04.2026 · 1 Min Lesezeit</div>
+    <img class="hero" src="../images/a4e0eece.jpg" alt="Ingress2Gateway 1.0: Gateway API Migration">
+    <div class="content">         <h3>Einleitung</h3>         <p>Mit dem anstehenden Auslaufen von Ingress-NGINX im März 2026 steht die Kubernetes-Netzwerking-Landschaft an einem Wendepunkt. Die meisten Organisationen fragen sich nicht, ob sie zu Gateway API migrieren sollten, sondern wie sie dies sicher tun können. Die Migration von Ingress zu Gateway API ist ein grundlegender Wechsel im API-Design.</p>         <p>Gateway API bietet eine modulare, erweiterbare API mit starker Unterstützung für Kubernetes-native RBAC. Im Gegensatz dazu ist die Ingress-API einfach, und Implementierungen wie Ingress-NGINX erweitern die API durch annotations, ConfigMaps und CRDs.</p>          <h3>Ingress2Gateway</h3>         <p>Ingress2Gateway ist ein Werkzeug, das Teams hilft, sicher von Ingress zu Gateway API zu migrieren. Es übersetzt Ingress-Ressourcen und Manifeste zusammen mit Implementierungs-spezifischen Annotations in Gateway API und warnt vor nicht übersetzbaren Konfigurationen.</p>          <h3>Ingress2Gateway 1.0</h3>         <p>Heute ist SIG Network stolz, die 1.0-Veröffentlichung von Ingress2Gateway bekannt zu geben. Diese Meilensteinmarke stellt einen stabilen, getesteten Migration-Assistenten für Teams dar, die bereit sind, ihren Netzwerksatz zu modernisieren.</p>         <p>Die Hauptverbesserung für die 1.0-Veröffentlichung ist die umfassendere Unterstützung für Ingress-NGINX. Bevor die 1.0-Veröffentlichung, unterstützte Ingress2Gateway nur drei Ingress-NGINX-Annotations. Für die 1.0-Veröffentlichung unterstützt Ingress2Gateway über 30 gängige Annotations (CORS, Backend-TLS, Regex-Matching, Pfad-Überschreibung usw.).</p>          <h3>Umfassende Integrationstests</h3>         <p>Jede unterstützte Ingress-NGINX-Annotation und repräsentative Kombinationen von gängigen Annotations werden durch Controller-Integrationstests unterstützt, die die verhaltensmäßige Äquivalenz der Ingress-NGINX-Konfiguration und der generierten Gateway-API überprüfen.</p>         <p><em>BytePost-Einordnung: Die Veröffentlichung von Ingress2Gateway 1.0 ist ein wichtiger Schritt zur Unterstützung von Teams bei der Migration zu Gateway API. Durch die umfassende Unterstützung für Ingress-NGINX und die Integrationstests bietet Ingress2Gateway ein zuverlässiges Werkzeug für die Migration.</em></p>     </div>
+    <a class="cta" href="../index.html#a=a4e0eece">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/" target="_blank" rel="noopener">Kubernetes Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

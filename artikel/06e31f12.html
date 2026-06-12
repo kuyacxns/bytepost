@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python 3.15 JIT zurück auf dem richtigen Weg — BytePost</title>
+    <meta name="description" content="Python 3.15 JIT ist wieder auf dem richtigen Weg Die Entwicklung des Python-3.15-JIT (Just-In-Time)-Compilers ist wieder auf dem richtigen Weg. Laut Ken Jin, ei">
+    <link rel="canonical" href="https://bytepost.de/artikel/06e31f12.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/06e31f12.html">
+    <meta property="og:title" content="Python 3.15 JIT zurück auf dem richtigen Weg">
+    <meta property="og:description" content="Python 3.15 JIT ist wieder auf dem richtigen Weg Die Entwicklung des Python-3.15-JIT (Just-In-Time)-Compilers ist wieder auf dem richtigen Weg. Laut Ken Jin, ei">
+    <meta property="og:image" content="https://bytepost.de/images/06e31f12.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Python 3.15 JIT zurück auf dem richtigen Weg">
+    <meta name="twitter:description" content="Python 3.15 JIT ist wieder auf dem richtigen Weg Die Entwicklung des Python-3.15-JIT (Just-In-Time)-Compilers ist wieder auf dem richtigen Weg. Laut Ken Jin, ei">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Python 3.15 JIT zurück auf dem richtigen Weg</h1>
+    <div class="meta">Ken Jin’s Blog · 20.04.2026 · 3 Min Lesezeit</div>
+    <img class="hero" src="../images/06e31f12.jpg" alt="Python 3.15 JIT zurück auf dem richtigen Weg">
+    <div class="content">         <h3>Python 3.15 JIT ist wieder auf dem richtigen Weg</h3>         <p>Die Entwicklung des Python-3.15-JIT (Just-In-Time)-Compilers ist wieder auf dem richtigen Weg. Laut Ken Jin, einem der Hauptentwickler, hat das Team die sehr bescheidenen Leistungsziele für den CPython-JIT bereits über ein Jahr früher als geplant für macOS AArch64 und einige Monate früher als geplant für x86_64 Linux erreicht.</p>         <p>Die 3.15-Alpha-Version des JIT ist etwa 11-12% schneller als der Interpreter auf macOS AArch64 und etwa 5-6% schneller als der Standard-Interpreter auf x86_64 Linux. Diese Zahlen sind geometrische Mittelwerte und vorläufig. Der tatsächliche Bereich reicht von einer Verlangsamung von 20% bis zu einer Beschleunigung von über 100% (ohne den Micro-Benchmark unpack_sequence).</p>         <p>Das Team plant, in den Versionen 3.15/3.16 eine ordnungsgemäße Unterstützung für Free-Threading zu implementieren. Der JIT ist jetzt wieder auf dem richtigen Weg. Es gab eine Zeit, in der Ken Jin sich ernsthaft fragte, ob das JIT-Projekt jemals bedeutende Geschwindigkeitssteigerungen erzielen würde.</p>         <h3>Was hat sich geändert?</h3>         <p>Ken Jin sagt, dass er den aktuellen Erfolg zum Teil dem Glück zuschreibt - rechtzeitig, am richtigen Ort, die richtigen Menschen, die richtigen Wahlen. Er denkt, dass dies nicht möglich gewesen wäre, wenn nicht alle Kern-JIT-Beiträger - Savannah Ostrowski, Mark Shannon, Diego Russo, Brandt Bucher und er selbst - an Bord gewesen wären.</p>         <p>Er erwähnt auch andere aktive JIT-Beiträger wie Hai Zhu, Zheaoli, Tomas Roun, Reiden Ong, Donghee Na und andere. Ken Jin möchte einen weniger diskutierten Teil des JITs besprechen: die Menschen und ein bisschen Glück. Wenn du die technischen Details erfahren möchtest, wie sie es geschafft haben, findest du sie <a href='https://doesjitgobrrr.com/'>hier</a>.</p>         <h3>Ein community-geführtes JIT</h3>         <p>Das Faster CPython-Team verlor 2025 seinen Haupt-Sponsor. Ken Jin schlug sofort die Idee der Community-Verwaltung vor. Zu dieser Zeit war er ziemlich unsicher, ob dies funktionieren würde. JIT-Projekte sind nicht bekannt dafür, gut für neue Beiträger zu sein. Sie erfordern historisch gesehen viel vorherige Expertise.</p>         <p>Bei der CPython-Core-Sprint in Cambridge trafen sich das JIT-Core-Team und schrieben einen Plan für ein 5% schnelleres JIT bis 3.15 und ein 10% schnelleres JIT bis 3.16 mit Free-Threading-Unterstützung. Eine Randnotiz, die weniger auffällig war, aber lebenswichtig für die Gesundheit des Projekts war, die Bus-Faktor-Reduzierung. Sie wollten 2 aktive Maintainer in allen 3 Stadien des JIT haben: Frontend (Region-Selector), Mittel-Ende (Optimizer), Backend (Code-Generator).</p>         <p>Vorher hatte das JIT nur 2 aktive wiederkehrende Beiträger im Mittel-Ende. Heute hat das JIT 4 aktive wiederkehrende Beiträger im Mittel-Ende, und Ken Jin würde die 2 Nicht-Kern-Entwickler (Hai Zhu und Reiden) als fähige und geschätzte Mitglieder betrachten.</p>         <p>Was Menschen anzieht, sind die üblichen Software-Engineering-Praktiken: Komplexe Probleme in handhabbare Teile aufbrechen. Brandt begann dies bereits in 3.14, als er mehrere Mega-Probleme öffnete, die die Optimierung des JIT in einfache Aufgaben aufteilten. Zum Beispiel sagten sie: „Versuche, einen einzelnen Befehl im JIT zu optimieren“. Ken Jin nahm Brandts Idee und machte dies für 3.15. Zum Glück hatte er eine einfachere Aufgabe, da sein Problem darin bestand, die Interpreter-Befehle in eine leicht optimierbare Form umzuwandeln.</p>         <ul>             <li>Aufteilung komplexer Probleme in handhabbare Teile</li>             <li>Ermutigung neuer Beiträger</li>             <li>Feiern von Erfolgen, groß oder klein</li>         </ul>         <p>Die Gemeinschafts-Optimierungs-Bemühungen haben sich ausgezahlt. Der JIT ging von 1% schneller auf x86_64 Linux auf 3-4% schneller (siehe die blaue Linie unten).</p>         <p><em>BytePost-Einordnung: Die Fortschritte im Python-3.15-JIT sind ein wichtiger Meilenstein für die Python-Community. Die Tatsache, dass das Team seine Leistungsziele bereits früher als geplant erreicht hat, zeigt, dass die Community-geführte Herangehensweise erfolgreich sein kann. Dies ist ein positives Zeichen für die Zukunft der Python-Entwicklung.</em></p>     </div>
+    <a class="cta" href="../index.html#a=06e31f12">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://blog.python.org/2026/03/jit-on-track/" target="_blank" rel="noopener">Ken Jin’s Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet OpenMythos: KI-Rekonstruktion von Claude Mythos — BytePost</title>
+    <meta name="description" content="Einleitung Anthropic hat bisher nie ein technisches Papier über Claude Mythos veröffentlicht. Das hat die Forschungsgemeinschaft jedoch nicht davon abgehalten, ">
+    <link rel="canonical" href="https://bytepost.de/artikel/053d0040.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/053d0040.html">
+    <meta property="og:title" content="Meet OpenMythos: KI-Rekonstruktion von Claude Mythos">
+    <meta property="og:description" content="Einleitung Anthropic hat bisher nie ein technisches Papier über Claude Mythos veröffentlicht. Das hat die Forschungsgemeinschaft jedoch nicht davon abgehalten, ">
+    <meta property="og:image" content="https://bytepost.de/images/053d0040.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meet OpenMythos: KI-Rekonstruktion von Claude Mythos">
+    <meta name="twitter:description" content="Einleitung Anthropic hat bisher nie ein technisches Papier über Claude Mythos veröffentlicht. Das hat die Forschungsgemeinschaft jedoch nicht davon abgehalten, ">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Meet OpenMythos: KI-Rekonstruktion von Claude Mythos</h1>
+    <div class="meta">MarkTechPost · 20.04.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/053d0040.jpg" alt="Meet OpenMythos: KI-Rekonstruktion von Claude Mythos">
+    <div class="content">         <h3>Einleitung</h3>         <p>Anthropic hat bisher nie ein technisches Papier über Claude Mythos veröffentlicht. Das hat die Forschungsgemeinschaft jedoch nicht davon abgehalten, Theorien zu entwickeln. Ein neues Open-Source-Projekt namens OpenMythos, das auf GitHub von Kye Gomez veröffentlicht wurde, unternimmt den ambitionierten Versuch, eine erste Prinzipien-theoretische Rekonstruktion davon zu erstellen, was die Claude-Mythos-Architektur tatsächlich sein könnte, komplett in PyTorch und basierend auf peer-reviewed Forschung.</p>         <h3>Die Hauptthese: Claude Mythos als Rekurrierender-Tiefe-Transformer</h3>         <p>OpenMythos schlägt vor, dass Claude Mythos einer Klasse von Architekturen angehört, die als Rekurrierender-Tiefe-Transformer (RDT) bezeichnet werden, auch bekannt als Looped-Transformer. Dieses Konzept ist bedeutend anders als standardmäßige Transformer-Stacks. In einem herkömmlichen Transformer – wie z.B. GPT, LLaMA oder Mistral – wird die Eingabe durch eine Folge einzigartiger Schichten übergeben, eine nach der anderen, wobei jede ihre eigenen unabhängigen Gewichte hat. Mehr Leistungsfähigkeit bedeutet in der Regel mehr Schichten und mehr Parameter.</p>         <h3>Wie die Architektur strukturiert ist</h3>         <p>OpenMythos implementiert dies als eine dreiteilige Struktur: Prelude → Rekurrierender Block → Coda. Der Prelude und der Coda sind standardmäßige Transformer-Schichten, die genau einmal ausgeführt werden. Der Rekurrierende Block ist der komputative Kern, der bis zu T=16 Mal durchlaufen wird. Bei jedem Schritt t wird der versteckte Zustand mit der folgenden Regel aktualisiert: h t+1 = A·h t + B·e + Transformer(h t, e). Hier ist h t der versteckte Zustand nach der Schleifeniteration t, und e ist die kodierten Eingabe aus dem Prelude — bei jedem Schritt wieder eingeführt.</p>         <p>Die erlernten Matrizen A und B bestimmen, wie viel vom vorherigen versteckten Zustand und der kodierten Eingabe bei jedem Schritt weitergegeben werden. Die FFN innerhalb des Rekurrierenden Blocks ist keine standardmäßige Feed-Forward-Schicht. OpenMythos ersetzt sie durch eine Mixture-of-Experts (MoE)-Schicht, die dem Design von DeepSeekMoE folgt: ein großer Pool von fein granulierten gerouteten Experten, wobei nur ein sparsamer Top-K-Teil pro Token aktiviert wird, zusammen mit einem kleinen Satz immer aktiver geteilter Experten, die gemeinsame cross-Domänen-Muster aufnehmen.</p>         <h3>Schlussfolgerung</h3>         <p>Das Projekt ist nicht ein geleakter Modell, ein Fein-Tuning oder eine Destillation. Es ist eine Hypothese, die in Code dargestellt wird — und die Hypothese ist spezifisch genug, um falsifizierbar zu sein, was es interessant macht. Die Forschungsgemeinschaft kann diese Hypothese nun weiter untersuchen und testen.</p>         <p><em>BytePost-Einordnung: Die Rekonstruktion von Claude Mythos durch OpenMythos ist ein wichtiger Schritt in der KI-Forschung, da sie neue Einblicke in die Architektur und Funktionsweise vonTransformer-Modellen bietet. Die Ergebnisse dieser Forschung können möglicherweise zu neuen Anwendungen und Verbesserungen in der KI-Technologie führen.</em></p>     </div>
+    <a class="cta" href="../index.html#a=053d0040">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://www.marktechpost.com/2026/04/19/meet-openmythos-an-open-source-pytorch-reconstruction-of-claude-mythos-where-770m-parameters-match-a-1-3b-transformer/" target="_blank" rel="noopener">MarkTechPost</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

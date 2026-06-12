@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow ersetzt Ingress-NGINX — BytePost</title>
+    <meta name="description" content="Einleitung Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX, das seit der Migration zu Kube">
+    <link rel="canonical" href="https://bytepost.de/artikel/7cfd4cc6.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/7cfd4cc6.html">
+    <meta property="og:title" content="Stack Overflow ersetzt Ingress-NGINX">
+    <meta property="og:description" content="Einleitung Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX, das seit der Migration zu Kube">
+    <meta property="og:image" content="https://bytepost.de/images/7cfd4cc6.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stack Overflow ersetzt Ingress-NGINX">
+    <meta name="twitter:description" content="Einleitung Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX, das seit der Migration zu Kube">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Stack Overflow ersetzt Ingress-NGINX</h1>
+    <div class="meta">Stack Overflow Blog · 09.05.2026 · 1 Min Lesezeit</div>
+    <img class="hero" src="../images/7cfd4cc6.jpg" alt="Stack Overflow ersetzt Ingress-NGINX">
+    <div class="content">         <h3>Einleitung</h3>         <p>Das Team von Stack Overflow musste recently eine wichtige Entscheidung treffen, als bekannt wurde, dass Ingress-NGINX, das seit der Migration zu Kubernetes den Traffic-Routing-Prozess gehandhabt hatte, eingestellt wird. Dieser Übergang hat das Team dazu gebracht, nach einer neuen Lösung für das Traffic-Routing zu suchen.</p>         <p>Im November des letzten Jahres, als die Ankündigung gemacht wurde, dass Ingress-NGINX eingestellt wird, war das Team von Stack Overflow nicht alleine. Viele andere Unternehmen und Entwickler waren ebenfalls überrascht von dieser Entscheidung. Ingress-NGINX hatte den Traffic-Routing-Prozess seit der Migration zu Kubernetes gehandhabt.</p>         <h3>Die Suche nach einer Alternative</h3>         <p>Das Team von Stack Overflow musste schnell eine neue Lösung finden, um den Traffic-Routing-Prozess zu handhaben. Sie haben sich für die Gateway-API entschieden, die Ingress-NGINX ersetzt. Die Gateway-API bietet mehr Funktionen und bessere Rollentrennung.</p>         <p>Das Team hat einige Kriterien festgelegt, um die Auswahl der neuen Lösung zu erleichtern. Die wichtigsten Kriterien waren:</p>         <ul>             <li>Die Lösung musste auf der Liste der vollständig konformen Implementierungen sein.</li>             <li>Die Lösung musste in der Lage sein, in GCP und Azure zu laufen.</li>         </ul>         <p>Das Team hat sich für drei Lösungen entschieden: NGINX Gateway, fabric und Traefik. Sie haben auch zwei Ingress-Optionen als Backup betrachtet: Traefik und F5 NGINX Ingress.</p>         <h3>Die Auswahl der Lösung</h3>         <p>Das Team hat die drei Lösungen ausführlich getestet und sich schließlich für die Gateway-API entschieden. Sie haben festgestellt, dass die Gateway-API mehr Funktionen und bessere Rollentrennung bietet als Ingress-NGINX.</p>         <p>Das Team hat auch die beiden Ingress-Optionen getestet, aber sie haben sich letztendlich für die Gateway-API entschieden, da sie mehr Funktionen und bessere Rollentrennung bietet.</p>         <p><em>BytePost-Einordnung: Die Entscheidung von Stack Overflow, Ingress-NGINX durch die Gateway-API zu ersetzen, ist ein wichtiger Schritt in Richtung einer besseren Rollentrennung und mehr Funktionen. Diese Entscheidung zeigt, dass das Team von Stack Overflow immer auf der Suche nach besseren Lösungen ist, um den Traffic-Routing-Prozess zu handhaben.</em></p>     </div>
+    <a class="cta" href="../index.html#a=7cfd4cc6">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/" target="_blank" rel="noopener">Stack Overflow Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

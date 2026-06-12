@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify generiert personalisierte Hörgeschichten für 2025 — BytePost</title>
+    <meta name="description" content="Ein Blick in das Archiv: Die Technik hinter Ihren 2025 Wrapped Highlights Jedes Jahr gibt Spotify Wrapped Hunderten von Millionen Hörern einen Einblick in ihr J">
+    <link rel="canonical" href="https://bytepost.de/artikel/7457f62c.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/7457f62c.html">
+    <meta property="og:title" content="Spotify generiert personalisierte Hörgeschichten für 2025">
+    <meta property="og:description" content="Ein Blick in das Archiv: Die Technik hinter Ihren 2025 Wrapped Highlights Jedes Jahr gibt Spotify Wrapped Hunderten von Millionen Hörern einen Einblick in ihr J">
+    <meta property="og:image" content="https://bytepost.de/images/7457f62c.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spotify generiert personalisierte Hörgeschichten für 2025">
+    <meta name="twitter:description" content="Ein Blick in das Archiv: Die Technik hinter Ihren 2025 Wrapped Highlights Jedes Jahr gibt Spotify Wrapped Hunderten von Millionen Hörern einen Einblick in ihr J">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Spotify generiert personalisierte Hörgeschichten für 2025</h1>
+    <div class="meta">Spotify Engineering · 08.04.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/7457f62c.jpg" alt="Spotify generiert personalisierte Hörgeschichten für 2025">
+    <div class="content"><h3>Ein Blick in das Archiv: Die Technik hinter Ihren 2025 Wrapped Highlights</h3><p>Jedes Jahr gibt Spotify Wrapped Hunderten von Millionen Hörern einen Einblick in ihr Jahr im Überblick. Für 2025 Wrapped wollten wir tiefer gehen. Was, wenn wir interessante Hörmomente aus Ihrem Jahr identifizieren und Ihnen eine Geschichte darüber erzählen könnten? Den Tag, an dem Sie den Künstler entdeckten, der alles veränderte. Den Tag, an dem Sie sechs Stunden lang nur "Sehnsuchts"-Musik hörten. Den Tag, an dem Ihr Musikgeschmack einen harten Schwenk nach links machte. Das ist Wrapped Archiv. Für jeden berechtigten Benutzer identifizierten wir bis zu fünf bemerkenswerte Tage aus ihrer Hörgeschichte 2025. Wir generierten einen personalisierten, LLM-generierten "Bericht" für jeden, im Wesentlichen eine kreative Erzählung, die auf realen Hördaten basiert.</p><p>Um dies zu erreichen, entwarfen wir eine priorisierte Menge von Heuristiken, um die "bemerkenswerten Tage" pro Benutzer aus einem ganzen Jahr Hörgeschichte zu identifizieren. Einige waren einfach. Der größte Musik-Hörtag und der größte Podcast-Hörtag fassten die höchste Gesamtzahl an Minuten zusammen, die gehört wurden. Der größte Entdeckungstag hob hervor, wann ein Benutzer zum ersten Mal Künstler hörte. Der größte Top-Künstler-Tag zeigte den Tag, an dem ein Hörer am meisten Zeit mit einem einzigen Lieblingskünstler verbrachte, während der größte Top-Genre-Tag den Tag zeigte, an dem ein Genre sein Hören dominierte. Andere waren komplexer. Der nostalgischste Tag zeigte Spitzen in älteren Katalogen oder Sessions mit Rückblick. Der ungewöhnlichste Hörtag identifizierte, wann ein Benutzer am weitesten von seinem typischen Geschmacksprofil abwich. Kontextuelle Anker wie Geburtstag und Neujahrstag rundeten die Menge ab.</p><p>Mit Hilfe eines verteilten Datenpipelines berechneten und aggregierten wir die Kandidatentage auf Benutzerebene. Für jeden Benutzer speicherten wir seine bemerkenswerten Tage und relevante Hörgeschichtsdaten in einem Objekt-Speicher. Wenn es Zeit war, die Berichte vorzu generieren, veröffentlichten wir diese Datenpunkte auf einer Nachrichtenwarteschlange, die es dem nächsten Teil des Systems ermöglichte, die Datenpunkte asynchron zu verarbeiten. Ja, wir generierten tatsächlich 1,4 Milliarden Berichte.</p><p>BytePost-Einordnung: Dieser Artikel zeigt beeindruckend, wie Spotify Wrapped 2025 die Technik nutzt, um personalisierte Berichte für seine Benutzer zu erstellen. Durch die Kombination von machine learning und kreativem Schreiben kann Spotify seine Benutzer auf eine einzigartige Weise ansprechen und ihre Hörgeschichte in einer ansprechenden Form präsentieren.</p></div>
+    <a class="cta" href="../index.html#a=7457f62c">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/" target="_blank" rel="noopener">Spotify Engineering</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

@@ -1,6 +1,7 @@
-import requests, json, os, re, feedparser, time, random
+import requests, json, os, re, time, random, html as html_mod
 from datetime import datetime
-from bs4 import BeautifulSoup
+# feedparser/BeautifulSoup werden lazy importiert, damit Hilfsmodi
+# (z.B. --outputs-only) ohne diese Dependencies laufen
 
 # --- SETUP ---
 def load_dotenv(path=".env"):
@@ -24,6 +25,8 @@ MODEL           = "llama-3.3-70b-versatile"
 EMBED_MODEL     = "voyage-3-lite"
 DATA_FILE       = "data.json"
 EMBED_FILE      = "embeddings.json"   # nicht deployt, in .gitignore
+SITE_URL        = "https://bytepost.de"
+ARTICLE_DIR     = "artikel"
 
 # --- COST PROTECTION ---
 MAX_PER_RUN      = 10   # max. neue Artikel pro Generator-Lauf
@@ -143,6 +146,7 @@ CATEGORY_HINT = {
 
 def fetch_feed(feed_url):
     """Lädt einen RSS-Feed mit Timeout via requests."""
+    import feedparser
     try:
         r = requests.get(feed_url, timeout=FEED_TIMEOUT,
                          headers={"User-Agent": "BytePost/1.0 (RSS Reader)"})
@@ -224,9 +228,15 @@ def get_embedding(text):
     return None
 
 
+def strip_html(html):
+    """HTML → Plaintext (ohne bs4-Dependency)."""
+    text = re.sub(r"<[^>]+>", " ", html or "")
+    return html_mod.unescape(re.sub(r"\s+", " ", text).strip())
+
+
 def embed_text(article):
     """Erstellt den Text der für das Embedding verwendet wird."""
-    content_plain = BeautifulSoup(article.get("content", ""), "html.parser").get_text(separator=" ")
+    content_plain = strip_html(article.get("content", ""))
     return f"{article['title']}. {content_plain[:600]}"
 
 
@@ -291,6 +301,7 @@ def get_unsplash_image(query, article_id):
 
 def fetch_article_text(url, max_chars=8000):
     """Lädt den Artikel und extrahiert den Haupttext."""
+    from bs4 import BeautifulSoup
     try:
         r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
         soup = BeautifulSoup(r.text, "html.parser")
@@ -541,6 +552,153 @@ Antworte NUR mit diesem JSON (keine Backticks, kein Text davor/danach):
     return today_articles[0]
 
 
+def parse_date_de(s):
+    """DD.MM.YYYY → datetime (oder None)."""
+    try:
+        return datetime.strptime(s or "", "%d.%m.%Y")
+    except ValueError:
+        return None
+
+
+ARTICLE_TEMPLATE = """<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} — BytePost</title>
+    <meta name="description" content="{description}">
+    <link rel="canonical" href="{canonical}">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{canonical}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{description}">
+    {og_image}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{description}">
+    <style>
+        :root {{ --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }}
+        * {{ box-sizing:border-box; margin:0; padding:0; }}
+        body {{ background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }}
+        .wrap {{ max-width:680px; margin:0 auto; padding:32px 20px 60px; }}
+        .top-link {{ font-size:13px; color:var(--accent); text-decoration:none; }}
+        h1 {{ font-size:28px; line-height:1.2; margin:18px 0 8px; }}
+        .meta {{ font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }}
+        img.hero {{ width:100%; border-radius:12px; margin-bottom:20px; }}
+        .content {{ font-size:15px; color:var(--text-2); }}
+        .content h3 {{ color:var(--text); margin:22px 0 8px; }}
+        .content p {{ margin:12px 0; }}
+        .content ul {{ padding-left:20px; margin:12px 0; }}
+        .cta {{ display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }}
+        .src {{ margin-top:14px; font-size:12px; color:var(--text-3); }}
+        .src a {{ color:var(--accent); }}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>{title}</h1>
+    <div class="meta">{source} · {date} · {read} Lesezeit</div>
+    {hero_img}
+    <div class="content">{content}</div>
+    <a class="cta" href="../index.html#a={id}">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="{url}" target="_blank" rel="noopener">{source}</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>
+"""
+
+
+def write_article_pages(db):
+    """Schreibt pro Artikel eine statische SEO-Seite nach artikel/<id>.html."""
+    os.makedirs(ARTICLE_DIR, exist_ok=True)
+    count = 0
+    for a in db["articles"]:
+        if not a.get("id"):
+            continue
+        esc = html_mod.escape
+        title = esc(a.get("title", ""))
+        description = esc(strip_html(a.get("content", ""))[:160])
+        canonical = f"{SITE_URL}/{ARTICLE_DIR}/{a['id']}.html"
+        og_image = (f'<meta property="og:image" content="{SITE_URL}/{a["image_local"]}">'
+                    if a.get("image_local") else "")
+        hero_img = (f'<img class="hero" src="../{esc(a["image_local"])}" alt="{title}">'
+                    if a.get("image_local") else "")
+        page = ARTICLE_TEMPLATE.format(
+            title=title, description=description, canonical=canonical,
+            og_image=og_image, hero_img=hero_img,
+            content=a.get("content", ""), id=a["id"],
+            url=esc(a.get("url", "")), source=esc(a.get("source", "")),
+            date=esc(a.get("date", "")), read=esc(a.get("read", "")),
+        )
+        with open(f"{ARTICLE_DIR}/{a['id']}.html", "w", encoding="utf-8") as f:
+            f.write(page)
+        count += 1
+    print(f"Artikel-Seiten geschrieben: {count} → {ARTICLE_DIR}/")
+
+
+def write_sitemap(db):
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+             f'  <url><loc>{SITE_URL}/</loc></url>']
+    for a in db["articles"]:
+        if not a.get("id"):
+            continue
+        d = parse_date_de(a.get("date"))
+        lastmod = f"<lastmod>{d.strftime('%Y-%m-%d')}</lastmod>" if d else ""
+        lines.append(f"  <url><loc>{SITE_URL}/{ARTICLE_DIR}/{a['id']}.html</loc>{lastmod}</url>")
+    lines.append("</urlset>")
+    with open("sitemap.xml", "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    print("sitemap.xml geschrieben.")
+
+
+def write_rss(db):
+    """RSS 2.0 Feed mit den letzten 30 Artikeln."""
+    esc = html_mod.escape
+    articles = sorted(db["articles"],
+                      key=lambda a: parse_date_de(a.get("date")) or datetime(1970, 1, 1),
+                      reverse=True)[:30]
+    items = []
+    for a in articles:
+        if not a.get("id"):
+            continue
+        d = parse_date_de(a.get("date"))
+        pub = f"<pubDate>{d.strftime('%a, %d %b %Y 06:00:00 +0000')}</pubDate>" if d else ""
+        teaser = esc(strip_html(a.get("content", ""))[:300])
+        cats_xml = "".join(f"<category>{esc(c)}</category>" for c in (a.get("cat") or []))
+        link = f"{SITE_URL}/{ARTICLE_DIR}/{a['id']}.html"
+        items.append(f"""    <item>
+      <title>{esc(a.get('title', ''))}</title>
+      <link>{link}</link>
+      <guid isPermaLink="true">{link}</guid>
+      <description>{teaser}</description>
+      {pub}{cats_xml}
+    </item>""")
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>BytePost — Deutsche Tech News</title>
+    <link>{SITE_URL}/</link>
+    <description>Deutsche Tech News täglich in 5 Minuten — KI-kuratierte Zusammenfassungen.</description>
+    <language>de-de</language>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+    with open("feed.xml", "w", encoding="utf-8") as f:
+        f.write(feed)
+    print(f"feed.xml geschrieben ({len(items)} Einträge).")
+
+
+def write_outputs(db):
+    """Statische Artikel-Seiten, Sitemap und RSS-Feed erzeugen."""
+    write_article_pages(db)
+    write_sitemap(db)
+    write_rss(db)
+
+
 def check_api_keys():
     """Bricht mit klarer Fehlermeldung ab, wenn ein Key fehlt."""
     missing = []
@@ -581,6 +739,7 @@ def run():
         print(f"Tageslimit erreicht ({today_count}/{MAX_PER_DAY}). Abbruch.")
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(db, f, ensure_ascii=False, indent=2)
+        write_outputs(db)
         return
 
     remaining_today = MAX_PER_DAY - today_count
@@ -604,7 +763,7 @@ def run():
 
         rss_title   = getattr(post, "title", "")
         rss_summary = getattr(post, "summary", "") or getattr(post, "description", "")
-        rss_summary = BeautifulSoup(rss_summary, "html.parser").get_text(separator=" ")[:2000]
+        rss_summary = strip_html(rss_summary)[:2000]
 
         entry = ask_gemini(post.link, category_hint, rss_title, rss_summary)
 
@@ -657,7 +816,14 @@ def run():
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
+    write_outputs(db)
     print(f"\nFertig. {new_count} neue Artikel erstellt.")
 
 if __name__ == "__main__":
-    run()
+    import sys
+    if "--outputs-only" in sys.argv:
+        # Nur Artikel-Seiten/Sitemap/Feed neu erzeugen — keine Keys nötig
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            write_outputs(json.load(f))
+    else:
+        run()
