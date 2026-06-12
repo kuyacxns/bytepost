@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript 6.0 veröffentlicht — BytePost</title>
+    <meta name="description" content="Was ist TypeScript? TypeScript ist eine Sprache, die auf JavaScript aufbaut, indem sie Syntax für Typen hinzufügt. Dies ermöglicht eine Typüberprüfung, um Fehle">
+    <link rel="canonical" href="https://bytepost.de/artikel/edc77fd1.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/edc77fd1.html">
+    <meta property="og:title" content="TypeScript 6.0 veröffentlicht">
+    <meta property="og:description" content="Was ist TypeScript? TypeScript ist eine Sprache, die auf JavaScript aufbaut, indem sie Syntax für Typen hinzufügt. Dies ermöglicht eine Typüberprüfung, um Fehle">
+    <meta property="og:image" content="https://bytepost.de/images/edc77fd1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypeScript 6.0 veröffentlicht">
+    <meta name="twitter:description" content="Was ist TypeScript? TypeScript ist eine Sprache, die auf JavaScript aufbaut, indem sie Syntax für Typen hinzufügt. Dies ermöglicht eine Typüberprüfung, um Fehle">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>TypeScript 6.0 veröffentlicht</h1>
+    <div class="meta">TypeScript · 29.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/edc77fd1.jpg" alt="TypeScript 6.0 veröffentlicht">
+    <div class="content">         <h3>Was ist TypeScript?</h3>         <p>TypeScript ist eine Sprache, die auf JavaScript aufbaut, indem sie Syntax für Typen hinzufügt. Dies ermöglicht eine Typüberprüfung, um Fehler zu erkennen und eine reiche Editor-Tooling zu bieten. Wenn du TypeScript noch nicht kennst, kannst du mehr über TypeScript und wie du loslegst auf der <a href="https://www.typescriptlang.org/">TypeScript-Website</a> erfahren.</p>         <p>Mit der Veröffentlichung von TypeScript 6.0 ist es möglich, diese Version über npm mit dem folgenden Befehl zu installieren: <code>npm install -D typescript</code></p>         <h3>Was ist neu in TypeScript 6.0?</h3>         <p>TypeScript 6.0 ist eine einzigartige Veröffentlichung, da es sich um die letzte Version handelt, die auf dem aktuellen JavaScript-Codebase basiert. Wie bereits im letzten Jahr angekündigt, arbeiten wir an einer neuen Codebase für den TypeScript-compiler und den Language-Service, der in Go geschrieben ist und die Geschwindigkeit von nativem Code und Shared-Memory-Multi-Threading nutzt. Diese neue Codebase wird die Grundlage für TypeScript 7.0 und darüber hinaus bilden.</p>         <p>TypeScript 6.0 dient als Brücke zwischen TypeScript 5.9 und 7.0. Daher sind die meisten Änderungen in TypeScript 6.0 darauf ausgerichtet, die Anpassung und Vorbereitung auf die Verwendung von TypeScript 7.0 zu erleichtern.</p>         <h3>Neue Funktionen und Verbesserungen</h3>         <p>Seit der Beta- und RC-Veröffentlichung von TypeScript 6.0 haben wir einige bemerkenswerte Änderungen vorgenommen, die hauptsächlich darauf abzielen, das Verhalten von TypeScript 7.0 zu imitieren. Eine dieser Anpassungen betrifft die Typüberprüfung für Funktionsausdrücke in generischen Aufrufen, insbesondere in generischen JSX-Ausdrücken.</p>         <p>Wir haben auch die Deklaration von Import-Assertion-Syntax (z.B. <code>import ... assert {...}</code>) auf Import()-Aufrufe wie <code>import(..., { assert: {...}})</code> erweitert.</p>         <p>Des Weiteren haben wir die DOM-Typen aktualisiert, um die neuesten Web-Standards widerzuspiegeln, einschließlich einiger Anpassungen an den Temporal-APIs.</p>         <h3>Less Context-Sensitivity</h3>         <p Wenn Parameter keine expliziten Typen haben, kann TypeScript diese normalerweise anhand eines erwarteten Typs oder sogar durch andere Argumente im gleichen Funktionsaufruf ableiten.</p>         <p>Beispielsweise:</p>         <p>declare function callIt<T>(obj: { produce: (x: number) => T, consume: (y: T) => void, }): void;</p>         <p>callIt({ produce: (x: number) => x * 2, consume: y => y.toFixed(), });</p>         <p>callIt({ consume: y => y.toFixed(), produce: (x: number) => x * 2, });</p>         <p> Hier kann TypeScript den Typ von y im consume-Funktion anhand des abgeleiteten Typs T aus dem produce-Funktion ableiten, unabhängig von der Reihenfolge der Eigenschaften.</p>         <p>Wenn jedoch diese Funktionen in Methoden-Syntax geschrieben werden:</p>         <p>declare function callIt<T>(obj: { produce: (x: number) => T, consume: (y: T) => void, }): void;</p>         <p>callIt({ produce(x: number) { return x * 2; }, consume(y) { return y.toFixed(); }, });</p>         <p>callIt({ consume(y) { return y.toFixed(); }, produce(x: number) { return x * 2; }, });</p>         <p> Der zweite Aufruf von callIt ergibt einen Fehler, da TypeScript nicht in der Lage ist, den Typ von y im consume-Method zu ableiten.</p>         <p>BytePost-Einordnung: <em>Die Veröffentlichung von TypeScript 6.0 ist ein wichtiger Schritt auf dem Weg zu TypeScript 7.0. Entwickler sollten sich auf die neuen Funktionen und Verbesserungen einstellen und TypeScript 7.0 ausprobieren, um die Vorteile der neuen Codebase zu nutzen.</em></p>     </div>
+    <a class="cta" href="../index.html#a=edc77fd1">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener">TypeScript</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

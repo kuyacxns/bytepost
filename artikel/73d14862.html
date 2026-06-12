@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulares Skill-System für KI — BytePost</title>
+    <meta name="description" content="Einleitung In diesem Tutorial bauen wir ein vollständiges skill-basiertes Agenten-System für Large Language Models (LLMs) und erkunden, wie modulare Fähigkeiten">
+    <link rel="canonical" href="https://bytepost.de/artikel/73d14862.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/73d14862.html">
+    <meta property="og:title" content="Modulares Skill-System für KI">
+    <meta property="og:description" content="Einleitung In diesem Tutorial bauen wir ein vollständiges skill-basiertes Agenten-System für Large Language Models (LLMs) und erkunden, wie modulare Fähigkeiten">
+    <meta property="og:image" content="https://bytepost.de/images/73d14862.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modulares Skill-System für KI">
+    <meta name="twitter:description" content="Einleitung In diesem Tutorial bauen wir ein vollständiges skill-basiertes Agenten-System für Large Language Models (LLMs) und erkunden, wie modulare Fähigkeiten">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Modulares Skill-System für KI</h1>
+    <div class="meta">MarkTechPost · 06.05.2026 · 1 Min Lesezeit</div>
+    <img class="hero" src="../images/73d14862.jpg" alt="Modulares Skill-System für KI">
+    <div class="content">         <h3>Einleitung</h3>         <p>In diesem Tutorial bauen wir ein vollständiges skill-basiertes Agenten-System für Large Language Models (LLMs) und erkunden, wie modulare Fähigkeiten wie ein Betriebssystem für KI-Agents strukturiert werden können. Wir definieren wiederverwendbare Fähigkeiten, fügen Metadaten und Schemas hinzu, registrieren sie in einem zentralen Register und ermöglichen dynamische Orchestrierung durch Werkzeugaufrufe und mehrschrittiges Reasoning.</p>         <p>Das Ziel ist es, ein flexibles System zu erstellen, das es ermöglicht, Fähigkeiten einfach hinzuzufügen oder zu entfernen, ohne das gesamte System neu zu konfigurieren. Dies wird durch die Verwendung von Python und der OpenAI-API erreicht.</p>         <h3>Implementierung</h3>         <p>Die Implementierung besteht aus mehreren Schritten. Zunächst müssen wir die notwendigen Bibliotheken importieren und die API-Schlüssel für OpenAI einrichten. Anschließend definieren wir die Fähigkeiten und ihre Metadaten, wie z.B. den Namen, die Beschreibung und die Kategorie.</p>         <p>Wir verwenden die `Skill`-Klasse als abstrakte Basis für jede Agenten-Fähigkeit. Jede Fähigkeit ist selbstbeschreibend, versioniert, testbar und komponierbar. Wir definieren auch die `SkillMetadata`-Klasse, um die Metadaten jeder Fähigkeit zu speichern.</p>         <h3>Registrierung und Orchestrierung</h3>         <p>Wir verwenden die `SkillRegistry`-Klasse, um alle Fähigkeiten in einem zentralen Register zu speichern. Dies ermöglicht es uns, Fähigkeiten leicht zu registrieren, zu erhalten und zu orchestrieren. Wir können auch dynamische Orchestrierung durch Werkzeugaufrufe und mehrschrittiges Reasoning ermöglichen.</p>         <p>Um die Fähigkeiten zu orchestrieren, können wir die `execute`-Methode verwenden, um eine Fähigkeit auszuführen. Wir können auch die `to_openai_tool`-Methode verwenden, um eine Fähigkeit in ein OpenAI-Werkzeug umzuwandeln.</p>         <h3>Fazit</h3>         <p>In diesem Tutorial haben wir gesehen, wie wir ein modulares skill-basiertes Agenten-System für LLMs erstellen können. Wir haben auch gesehen, wie wir Fähigkeiten definieren, registrieren und orchestrieren können, um ein flexibles und skalierbares System zu erstellen.</p>         <p><em>BytePost-Einordnung: Dieses Tutorial bietet eine umfassende Einführung in die Erstellung von modularen skill-basierten Agenten-Systemen für LLMs. Es ist besonders nützlich für Entwickler, die Erfahrung mit Python und der OpenAI-API haben.</em></p>     </div>
+    <a class="cta" href="../index.html#a=73d14862">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://www.marktechpost.com/2026/05/05/build-a-modular-skill-based-agent-system-for-llms-with-dynamic-tool-routing-in-python/" target="_blank" rel="noopener">MarkTechPost</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

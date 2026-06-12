@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudflare Netzwerk erreicht 500 Tbps Kapazität — BytePost</title>
+    <meta name="description" content="500 Tbps Kapazität: 16 Jahre Skalierung unseres globalen Netzwerks Cloudflares globales Netzwerk hat offiziell die 500-Tbps-Marke überschritten, ausreichend, um">
+    <link rel="canonical" href="https://bytepost.de/artikel/321bb29e.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/321bb29e.html">
+    <meta property="og:title" content="Cloudflare Netzwerk erreicht 500 Tbps Kapazität">
+    <meta property="og:description" content="500 Tbps Kapazität: 16 Jahre Skalierung unseres globalen Netzwerks Cloudflares globales Netzwerk hat offiziell die 500-Tbps-Marke überschritten, ausreichend, um">
+    <meta property="og:image" content="https://bytepost.de/images/321bb29e.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloudflare Netzwerk erreicht 500 Tbps Kapazität">
+    <meta name="twitter:description" content="500 Tbps Kapazität: 16 Jahre Skalierung unseres globalen Netzwerks Cloudflares globales Netzwerk hat offiziell die 500-Tbps-Marke überschritten, ausreichend, um">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Cloudflare Netzwerk erreicht 500 Tbps Kapazität</h1>
+    <div class="meta">Cloudflare Blog · 11.04.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/321bb29e.jpg" alt="Cloudflare Netzwerk erreicht 500 Tbps Kapazität">
+    <div class="content"> <h3>500 Tbps Kapazität: 16 Jahre Skalierung unseres globalen Netzwerks</h3> <p>Cloudflares globales Netzwerk hat offiziell die 500-Tbps-Marke überschritten, ausreichend, um mehr als 20% des Internets zu routen und die größten DDoS-Angriffe aller Zeiten abzuwehren. Als wir 2010 von einem kleinen Büro über einer Nagelstudio in Palo Alto starteten, hatten wir nur einen Transit-Provider und einen Reverse-Proxy, den man durch Ändern von zwei Nameservern einrichten konnte.</p> <p>Unser erstes Transit-Netz war nLayer Communications, ein Netz, das die meisten Leute heute als GTT kennen. nLayer gab uns unsere erste Kapazität und unsere ersten Hands-on-Erfahrungen in Peering-Beziehungen und der sorgfältigen Balance zwischen Kosten und Leistung. Von dort aus wuchsen wir Stadt für Stadt: Chicago, Ashburn, San Jose, Amsterdam, Tokio. Jedes neue Rechenzentrum bedeutete Verhandlungen über Colocation-Verträge, das Verlegen von Glasfaserkabeln, das Einbauen von Servern und die Einrichtung von Peering über Internet-Austauschpunkte.</p> <h3>Als das Netzwerk zur Sicherheitsschicht wurde</h3> <p>Als unsere Footprint wuchs, baten Kunden um mehr als nur Website-Caching. Sie benötigten Schutz für ihre Mitarbeiter, den Ersatz alter MPLS-Verbindungen und die Sicherung ganzer Unternehmensnetzwerke. Anstatt traditionelle Appliances zu bauen, erstellten wir Systeme, um sichere Tunnel zu privaten Subnetzen herzustellen und Unternehmens-IP-Adressen direkt von unserem globalen Netz über BGP zu bewerben.</p> <p>Die Skala der Bedrohungen wuchs parallel. Im Jahr 2025 haben wir einen 31,4-Tbps-DDoS-Angriff abgewehrt, der 35 Sekunden lang anhielt. Die Quelle war das Aisuru-Kimwolf-Botnet, das viele infizierte Android-TVs beinhaltete. Es war einer von über 5.000 Angriffen, die wir an diesem Tag abwehrten. Kein Ingenieur wurde aufgeweckt.</p> <h3>Wie unser Netzwerk auf einen Angriff reagiert</h3> <p>Wenn ein Angriff unser Netzwerk trifft, geschehen folgende Schritte: Pakete treffen auf die Netzwerk-Schnittstelle (NIC) und betreten sofort ein XDP-Programm, das von xdpd verwaltet wird. Das erste Programm in dieser Kette ist l4drop, das jedes Paket gegen Abwehrregeln in eBPF auswertet. Diese Regeln werden von dosd, unserem Denial-of-Service-Daemon, generiert, der auf jedem Server in unserer Flotte läuft.</p> <p>Unser Netzwerk kann DDoS-Angriffe in Sekunden abwehren, ohne menschliche Eingriffe zu benötigen. Dies ist es, was ein Betreiben auf einer 500-Tbps-Skala erfordert: Die Intelligenz in jeden Server in unserem Netzwerk zu verschieben, damit das Netzwerk sich selbst verteidigen kann.</p> <p><em>BytePost-Einordnung: Die Skalierung des Cloudflare-Netzwerks auf 500 Tbps Kapazität zeigt die Fortschritte im Bereich der Netzwerksicherheit und die Bedeutung von automatisierter Abwehr von DDoS-Angriffen.</em></p> </div>
+    <a class="cta" href="../index.html#a=321bb29e">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://blog.cloudflare.com/500-tbps-of-capacity/" target="_blank" rel="noopener">Cloudflare Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

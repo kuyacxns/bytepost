@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes 1.36: Mixed Version Proxy — BytePost</title>
+    <meta name="description" content="Kubernetes 1.36: Mixed Version Proxy wird Beta Die Mixed Version Proxy (MVP) wurde in Kubernetes 1.28 als Alpha-Funktion unter dem Feature-Gate UnknownVersionIn">
+    <link rel="canonical" href="https://bytepost.de/artikel/026e6bc1.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/026e6bc1.html">
+    <meta property="og:title" content="Kubernetes 1.36: Mixed Version Proxy">
+    <meta property="og:description" content="Kubernetes 1.36: Mixed Version Proxy wird Beta Die Mixed Version Proxy (MVP) wurde in Kubernetes 1.28 als Alpha-Funktion unter dem Feature-Gate UnknownVersionIn">
+    <meta property="og:image" content="https://bytepost.de/images/026e6bc1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kubernetes 1.36: Mixed Version Proxy">
+    <meta name="twitter:description" content="Kubernetes 1.36: Mixed Version Proxy wird Beta Die Mixed Version Proxy (MVP) wurde in Kubernetes 1.28 als Alpha-Funktion unter dem Feature-Gate UnknownVersionIn">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Kubernetes 1.36: Mixed Version Proxy</h1>
+    <div class="meta">Kubernetes Blog · 18.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/026e6bc1.jpg" alt="Kubernetes 1.36: Mixed Version Proxy">
+    <div class="content">         <h3>Kubernetes 1.36: Mixed Version Proxy wird Beta</h3>         <p>Die Mixed Version Proxy (MVP) wurde in Kubernetes 1.28 als Alpha-Funktion unter dem Feature-Gate UnknownVersionInteroperabilityProxy eingeführt. Das Ziel war einfach, aber kritisch: Cluster-Updates sicherer machen, indem Anfragen für Ressourcen, die noch nicht im älteren API-Server bekannt sind, korrekt an einen neueren Peer-API-Server weitergeleitet werden, anstatt einen falschen 404-Not-Found-Error zurückzugeben.</p>         <p>Wir sind begeistert, bekannt zu geben, dass die Mixed Version Proxy in Kubernetes 1.36 in die Beta-Phase eintritt und standardmäßig aktiviert wird! Die Funktion hat sich seit ihrer ersten Veröffentlichung erheblich weiterentwickelt und wichtige Lücken geschlossen.</p>         <h3>Was ist das Problem, das wir lösen?</h3>         <p>In einem hochverfügbaren Control-Plane, das ein Update durchläuft, gibt es oft API-Server, die unterschiedliche Versionen ausführen. Diese Server können unterschiedliche Satz von APIs (Gruppen, Versionen, Ressourcen) anbieten.</p>         <p>Ohne MVP gibt der API-Server, wenn ein Client eine Anfrage für eine Ressource sendet, die er nicht kennt (z.B. eine neue API-Version, die im Update eingeführt wurde), einen 404-Not-Found-Error zurück. Dies ist technisch gesehen falsch, da die Ressource im Cluster verfügbar ist, aber nicht auf diesem spezifischen Server. Dies kann zu schwerwiegenden Nebenwirkungen wie einer falschen Garbage Collection oder blockierten Namespace-Löschungen führen.</p>         <p>MVP löst dieses Problem, indem es die Anfrage an einen Peer-API-Server weiterleitet, der die Ressource anbieten kann.</p>         <p>Die folgende Sequenzdiagramm zeigt, wie dies funktioniert:</p>         <p>sequenceDiagram             participant Client             participant API_Server_A as API Server A (älter/unterschiedlich)             participant API_Server_B as API Server B (neuer/fähig)             Client->>API_Server_A: 1. Anfrage für Ressource (z.B. v2)             Note über API_Server_A: Bestimmt, dass es die Anfrage nicht lokal bedienen kann             API_Server_A->>API_Server_A: 2. Sucht nach fähigem Peer in Discovery Cache             API_Server_A->>API_Server_B: 3. Leitet Anfrage weiter (fügt x-kubernetes-peer-proxied-Header hinzu)             API_Server_B->>API_Server_B: 4. Verarbeitet Anfrage lokal             API_Server_B-->>API_Server_A: 5. Gibt Antwort zurück             API_Server_A-->>Client: 6. Leitet Antwort weiter</p>         <h3>Wie hat sich die Funktion seit 1.28 weiterentwickelt?</h3>         <p>Die ursprüngliche Alpha-Implementierung war ein guter Beweis für das Konzept, aber sie hatte einige Einschränkungen und baute auf älteren Mechanismen auf. Hier sind die wichtigsten Änderungen:</p>         <ul>             <li>Die Funktion hat sich von der StorageVersion-API zur Aggrega-API entwickelt.</li>         </ul>         <p><em>BytePost-Einordnung: Die Mixed Version Proxy ist eine wichtige Funktion für die Sicherheit und Stabilität von Kubernetes-Clustern. Durch die Weiterleitung von Anfragen an einen Peer-API-Server kann die Funktion dazu beitragen, dass Cluster-Updates sicherer und zuverlässiger durchgeführt werden.</em></p>     </div>
+    <a class="cta" href="../index.html#a=026e6bc1">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/" target="_blank" rel="noopener">Kubernetes Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

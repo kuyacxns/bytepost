@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript 7.0 Beta veröffentlicht — BytePost</title>
+    <meta name="description" content="TypeScript 7.0 Beta ist da Wir freuen uns sehr, die Veröffentlichung von TypeScript 7.0 Beta ankündigen zu können! Wenn du der Entwicklung von TypeScript 7.0 ni">
+    <link rel="canonical" href="https://bytepost.de/artikel/70934c02.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/70934c02.html">
+    <meta property="og:title" content="TypeScript 7.0 Beta veröffentlicht">
+    <meta property="og:description" content="TypeScript 7.0 Beta ist da Wir freuen uns sehr, die Veröffentlichung von TypeScript 7.0 Beta ankündigen zu können! Wenn du der Entwicklung von TypeScript 7.0 ni">
+    <meta property="og:image" content="https://bytepost.de/images/70934c02.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypeScript 7.0 Beta veröffentlicht">
+    <meta name="twitter:description" content="TypeScript 7.0 Beta ist da Wir freuen uns sehr, die Veröffentlichung von TypeScript 7.0 Beta ankündigen zu können! Wenn du der Entwicklung von TypeScript 7.0 ni">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>TypeScript 7.0 Beta veröffentlicht</h1>
+    <div class="meta">TypeScript Blog · 30.04.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/70934c02.jpg" alt="TypeScript 7.0 Beta veröffentlicht">
+    <div class="content"> <h3>TypeScript 7.0 Beta ist da</h3> <p>Wir freuen uns sehr, die Veröffentlichung von TypeScript 7.0 Beta ankündigen zu können! Wenn du der Entwicklung von TypeScript 7.0 nicht gefolgt bist, ist diese Veröffentlichung insofern bedeutsam, als sie auf einer völlig neuen Grundlage aufbaut. Im Laufe des letzten Jahres haben wir den bestehenden TypeScript-Code von TypeScript selbst (als bootgestarteter Code, der in JavaScript kompiliert wird) auf Go umgestellt.</p> <p>Mit einer Kombination aus nativer Code-Geschwindigkeit und gemeinsamer Speicher-Parallelität ist TypeScript 7.0 oft etwa 10 Mal schneller als TypeScript 6.0. Lass dich nicht von dem „Beta“-Label täuschen – du kannst diese Version wahrscheinlich sofort in deiner täglichen Arbeit verwenden. Der neue Go-Code wurde methodisch aus unserer bestehenden Implementierung übernommen und nicht von Grund auf neu geschrieben, und seine Typ-Überprüfungslogik ist strukturell identisch mit TypeScript 6.0.</p> <h3>Stabilität und Kompatibilität</h3> <p>Diese Architektur-Parität stellt sicher, dass der Compiler weiterhin die gleichen Semantiken durchsetzt, auf die du bereits vertraust. TypeScript 7.0 wurde gegen unsere enorme Test-Suite getestet, die wir über einen Zeitraum von einem Jahrzehnt aufgebaut haben, und wird bereits in mehreren Codebasen mit Millionen von Zeilen innerhalb und außerhalb von Microsoft verwendet. Es ist sehr stabil, sehr kompatibel und bereit, in deinen täglichen Workflows und CI-Pipelines getestet zu werden.</p> <p>Über einen Zeitraum von einem Jahr haben wir mit vielen internen Microsoft-Teams sowie Teams bei Unternehmen wie Bloomberg, Canva, Figma, Google, Lattice, Linear, Miro, Notion, Slack, Vanta, Vercel, VoidZero und mehr zusammengearbeitet, um Vorab-Versionen von TypeScript 7.0 auf ihren Codebasen auszuprobieren. Die Rückmeldungen waren durchweg positiv, und viele Teams berichten von ähnlichen Geschwindigkeitsverbesserungen, indem sie die meisten ihrer Build-Zeiten abschneiden, und genießen eine viel leichtere und fluidere Bearbeitungserfahrung.</p> <h3>Installation und Verwendung</h3> <p>Um TypeScript 7.0 Beta zu installieren, kannst du es über npm installieren: <code>npm install -D @typescript/native-preview@beta</code>. Beachte, dass der Paketname in einer zukünftigen Version schließlich „typescript“ lauten wird. Von dort aus kannst du <code>tsgo</code> anstelle des <code>tsc</code>-Ausführbaren ausführen.</p> <p>Um die Bearbeitungserfahrung auszuprobieren, kannst du die TypeScript Native Preview-Erweiterung für VS Code installieren. Die Editierunterstützung ist sehr solide und wurde von vielen Teams bereits monatelang verwendet. Es ist eine einfache, reibungslose Möglichkeit, TypeScript 7.0 auf deiner Codebasis sofort auszuprobieren.</p> <p>Um TypeScript 7.0 side-by-side mit TypeScript 6.0 zu verwenden, wird diese Beta-Version über den Paketnamen <code>@typescript/native-preview</code> mit dem Eintragspunkt <code>tsgo</code> bereitgestellt. Als Teil des Übergangsprozesses von 6.0 auf 7.0 haben wir ein neues Kompatibilitätspaket, <code>@typescript/typescript6</code>, veröffentlicht. Dieses Paket stellt einen neuen Eintragspunkt <code>tsc6</code> bereit, sodass du (falls erforderlich) die nächste Version von TypeScript 7.0 (die ein <code>tsc</code>-Binär bereitstellen wird) side-by-side ohne Namenskonflikte ausführen kannst.</p> <p><em>BytePost-Einordnung: Mit der Veröffentlichung von TypeScript 7.0 Beta wird die Zukunft der TypeScript-Entwicklung sehr vielversprechend. Die neuen Funktionen und Verbesserungen, insbesondere die Portierung auf die Go-Grundlage, könnten die Produktivität und Effizienz von Entwicklern erheblich steigern.</em></p> </div>
+    <a class="cta" href="../index.html#a=70934c02">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/" target="_blank" rel="noopener">TypeScript Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Parallel Reasoning — BytePost</title>
+    <meta name="description" content="Überblick über Adaptive Parallel Reasoning Was wenn ein Reasoning-Modell selbst entscheiden könnte, wann es unabhängige Subaufgaben zerlegt und parallelisiert, ">
+    <link rel="canonical" href="https://bytepost.de/artikel/f6f24ef5.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/f6f24ef5.html">
+    <meta property="og:title" content="Adaptive Parallel Reasoning">
+    <meta property="og:description" content="Überblick über Adaptive Parallel Reasoning Was wenn ein Reasoning-Modell selbst entscheiden könnte, wann es unabhängige Subaufgaben zerlegt und parallelisiert, ">
+    <meta property="og:image" content="https://bytepost.de/images/f6f24ef5.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adaptive Parallel Reasoning">
+    <meta name="twitter:description" content="Überblick über Adaptive Parallel Reasoning Was wenn ein Reasoning-Modell selbst entscheiden könnte, wann es unabhängige Subaufgaben zerlegt und parallelisiert, ">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Adaptive Parallel Reasoning</h1>
+    <div class="meta">Forscher · 28.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/f6f24ef5.jpg" alt="Adaptive Parallel Reasoning">
+    <div class="content"> <h3>Überblick über Adaptive Parallel Reasoning</h3> <p>Was wenn ein Reasoning-Modell selbst entscheiden könnte, wann es unabhängige Subaufgaben zerlegt und parallelisiert, wie viele gleichzeitige Threads es startet und wie es diese basierend auf dem Problem koordiniert? Wir bieten eine detaillierte Analyse der jüngsten Fortschritte im Bereich des parallelen Reasonings, insbesondere Adaptive Parallel Reasoning.</p> <p>Offenlegung: Dieser Beitrag ist Teil einer Landschaftsuntersuchung und Teil einer Perspektive auf Adaptive Parallel Reasoning. Einer der Autoren (Tony Lian) leitete ThreadWeaver (Lian et al., 2025), eine der diskutierten Methoden.</p> <h3>Motivation</h3> <p>Die jüngsten Fortschritte in den Reasoning-Fähigkeiten von Large Language Models (LLMs) wurden größtenteils durch die Skalierung der Inferenzzeit, zusätzlich zur Datenskalierung und Parameterskalierung (OpenAI et al., 2024; DeepSeek-AI et al., 2025) vorangetrieben. Modelle, die explizit Reasoning-Tokens ausgeben (durch Zwischenschritte, Rückverfolgung und Exploration), dominieren Math-, Coding- und agente Benchmarks. Diese Verhaltensweisen ermöglichen es Modellen, alternative Hypothesen zu erforschen, frühere Fehler zu korrigieren und Schlussfolgerungen zu synthetisieren, anstatt sich auf eine einzige Lösung zu verpflichten (Wen et al., 2025).</p> <p>Das Problem besteht jedoch darin, dass sequenzielles Reasoning linear mit der Menge der Exploration skaliert. Die Skalierung sequenzieller Reasoning-Tokens geht mit einem Kostenaufwand einher, da Modelle das Risiko haben, die effektiven Kontextgrenzen zu überschreiten (Hsieh et al., 2024). Die Anhäufung von Zwischenexplorationspfaden erschwert es dem Modell, sich unter den Ablenkern zu entscheiden, wenn es Informationen in seinem Kontext aufmerksam macht, was zu einer Verschlechterung der Modellleistung führt, auch bekannt als Kontext-Rot (Hong, Troynikov und Huber, 2025). Die Latenz wächst proportional mit der Länge des Reasonings. Für komplexe Aufgaben, die Millionen von Tokens für Exploration und Planung erfordern, ist es nicht ungewöhnlich, dass Benutzer tens of Minuten oder sogar Stunden auf eine Antwort warten (Qu et al., 2025).</p> <h3>Paralleles Reasoning</h3> <p>Paralleles Reasoning ist als natürliche Lösung aufgetaucht. Anstatt Pfade sequenziell zu erforschen (Gandhi et al., 2024) und den Kontextfenster bei jedem Schritt zu akkumulieren, können wir Modelle ermöglichen, multiple Threads unabhängig (Threads sind nicht voneinander abhängig) und gleichzeitig (Threads können gleichzeitig ausgeführt werden) zu erforschen. Abbildung 1: Sequenzielles vs. Paralleles Reasoning.</p> <p>BytePost-Einordnung: Adaptive Parallel Reasoning ist ein vielversprechender Ansatz, um die Skalierbarkeit von Reasoning-Modellen zu verbessern. Durch die Möglichkeit, unabhängige Subaufgaben parallel zu bearbeiten, kann die Latenz reduziert und die Modellleistung verbessert werden. Dies ist insbesondere für komplexe Aufgaben von Bedeutung, bei denen sequenzielles Reasoning zu langen Wartezeiten führen kann.</p> </div>
+    <a class="cta" href="../index.html#a=f6f24ef5">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/" target="_blank" rel="noopener">Forscher</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

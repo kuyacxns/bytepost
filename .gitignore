@@ -1,3 +1,5 @@
 .vercel
 __pycache__/
 config.js
+.env
+embeddings.json

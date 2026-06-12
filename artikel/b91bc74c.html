@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronWorm Malware bedroht Entwickler — BytePost</title>
+    <meta name="description" content="IronWorm: Eine neue Bedrohung für Entwickler Die Sicherheit von Entwicklern und der Software-Supply-Chain ist wieder einmal gefährdet. Ein neues Malware-Program">
+    <link rel="canonical" href="https://bytepost.de/artikel/b91bc74c.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/b91bc74c.html">
+    <meta property="og:title" content="IronWorm Malware bedroht Entwickler">
+    <meta property="og:description" content="IronWorm: Eine neue Bedrohung für Entwickler Die Sicherheit von Entwicklern und der Software-Supply-Chain ist wieder einmal gefährdet. Ein neues Malware-Program">
+    <meta property="og:image" content="https://bytepost.de/images/b91bc74c.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IronWorm Malware bedroht Entwickler">
+    <meta name="twitter:description" content="IronWorm: Eine neue Bedrohung für Entwickler Die Sicherheit von Entwicklern und der Software-Supply-Chain ist wieder einmal gefährdet. Ein neues Malware-Program">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>IronWorm Malware bedroht Entwickler</h1>
+    <div class="meta">JFrog Security · 08.06.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/b91bc74c.jpg" alt="IronWorm Malware bedroht Entwickler">
+    <div class="content"> <h3>IronWorm: Eine neue Bedrohung für Entwickler</h3> <p>Die Sicherheit von Entwicklern und der Software-Supply-Chain ist wieder einmal gefährdet. Ein neues Malware-Programm namens IronWorm wurde entdeckt, das sich auf Entwickler und die Software-Supply-Chain konzentriert. IronWorm teilt viele Attribute mit dem bekannten Shai-Hulud-Wurm, aber es ist noch gefährlicher, da es schwieriger zu erkennen und umzukehren ist.</p> <p>IronWorm ist in der Programmiersprache Rust erstellt und greift Entwickler - sowohl Software- als auch Kryptowährungs- und Web3-Entwickler - durch bösartige npm-Pakete an. Es repliziert sich selbst über die Software-Supply-Chain, indem es Anmeldeinformationen stiehlt und GitHub-Commits hochlädt, und dann neue Pakete automatisch im npm-Register veröffentlicht.</p> <h3>Funktionen und Verbreitung</h3> <p>IronWorm stiehlt eine breite Palette von Entwickler-Geheimnissen, einschließlich Cloud-Anmeldeinformationen, npm-Veröffentlichungstoken und API- und SSH-Schlüssel. Es sucht nach diesen Informationen auf fast allen Plattformen, die Entwickler verwenden, von Cloud-Anbietern und Objekt-Speicher bis hin zu Datenbanken, CI/CD-Systemen, Kubernetes und Messaging-Plattformen.</p> <p>Es gibt zwei Payloads, die IronWorm verwendet, jeweils für unterschiedliche Repository-Strukturen. Jedes Payload verwendet eine andere Identität, um sich zu verstecken. Wenn das Repository ein Paket enthält, fügt das Malware ein Binär-File hinzu und modifiziert das Build-System, um es auszuführen. Wenn das Repository bereits GitHub-Actions-Workflows enthält, ersetzt das Malware eine existinge Datei durch eine geheime Exfiltrations-Aufgabe.</p> <h3>Versteckte Gefahr</h3> <p>IronWorm versteckt sich hinter einem eBPF-Kernel-Rootkit, was als „Herausstellungsmerkmal“ dieser Bedrohung bezeichnet wird. eBPF gibt Code eine ungewöhnliche Tiefe der Sichtbarkeit in die Systemaktivität und kann in den falschen Händen zu einer Versteckungsmöglichkeit werden.</p> <p>Die Forscher haben IronWorm entdeckt, während sie npm-Pakete einer bestimmten Konten überprüften, die mit einer GitHub-Organisation verbunden waren. Was ihre Aufmerksamkeit erregte, war, dass alle Pakete dieses Kontos innerhalb eines engen Zeitfensters neu veröffentlicht wurden, wobei jedes neue Paket ein natives Binär-File enthielt, das von einem Install-Hook ausgeführt wurde.</p> <p><em>BytePost-Einordnung: Die Entdeckung von IronWorm unterstreicht die Notwendigkeit für Entwickler, ihre Sicherheitsmaßnahmen zu überprüfen und zu stärken, um solche Bedrohungen zu verhindern. Es ist wichtig, dass Entwickler ihre Anmeldeinformationen und Geheimnisse sicher aufbewahren und regelmäßig ihre Systeme und Pakete überprüfen, um sicherzustellen, dass sie nicht von Malware wie IronWorm betroffen sind.</em></p> </div>
+    <a class="cta" href="../index.html#a=b91bc74c">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://devops.com/ironworm-malware-shares-some-shai-hulud-traits-but-takes-it-to-next-level/" target="_blank" rel="noopener">JFrog Security</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

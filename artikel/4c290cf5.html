@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta migriert Daten-Ingestionssystem — BytePost</title>
+    <meta name="description" content="Migrating Data Ingestion Systems at Meta Scale Das Daten-Ingestionssystem von Meta, das unsere Entwicklerteams für aktuelle Snapshots des sozialen Graphen nutze">
+    <link rel="canonical" href="https://bytepost.de/artikel/4c290cf5.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/4c290cf5.html">
+    <meta property="og:title" content="Meta migriert Daten-Ingestionssystem">
+    <meta property="og:description" content="Migrating Data Ingestion Systems at Meta Scale Das Daten-Ingestionssystem von Meta, das unsere Entwicklerteams für aktuelle Snapshots des sozialen Graphen nutze">
+    <meta property="og:image" content="https://bytepost.de/images/4c290cf5.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meta migriert Daten-Ingestionssystem">
+    <meta name="twitter:description" content="Migrating Data Ingestion Systems at Meta Scale Das Daten-Ingestionssystem von Meta, das unsere Entwicklerteams für aktuelle Snapshots des sozialen Graphen nutze">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Meta migriert Daten-Ingestionssystem</h1>
+    <div class="meta">Meta Engineering · 27.05.2026 · 3 Min Lesezeit</div>
+    <img class="hero" src="../images/4c290cf5.jpg" alt="Meta migriert Daten-Ingestionssystem">
+    <div class="content">         <h3>Migrating Data Ingestion Systems at Meta Scale</h3>         <p>Das Daten-Ingestionssystem von Meta, das unsere Entwicklerteams für aktuelle Snapshots des sozialen Graphen nutzen, hat kürzlich eine umfassende Überarbeitung erfahren, um seine Zuverlässigkeit im großen Maßstab zu verbessern. Die Migration von unserem Legacy-System zu unserer neuen Architektur erforderte eine groß angelegte Migration unseres gesamten Daten-Ingestionssystems.</p>         <p>Wir teilen die Lösungen und Strategien, die eine erfolgreiche groß angelegte Systemmigration ermöglichten, sowie die Schlüsselfaktoren, die unsere architektonischen Entscheidungen beeinflussten. Bei Meta wird unser sozialer Graph von einer der größten MySQL-Installationen der Welt angetrieben. Jeden Tag scrapen wir inkrementell mehrere Petabyte sozialer Graphendaten aus MySQL in das Data-Warehouse, um die Analytics, Berichte und Datenprodukte zu unterstützen, die Teams im gesamten Unternehmen für Aufgaben wie tägliche Entscheidungsfindung, maschinelles Lernen und Produktentwicklung nutzen.</p>         <h3>Das Migrationssystem</h3>         <p>Wir haben unsere Daten-Ingestionssystem-Architektur überarbeitet, um ihre Effizienz und Zuverlässigkeit erheblich zu verbessern. Die neue Architektur weicht von kundeneigenen Pipelines ab, die sich auf kleinen Skalen bewährt haben, hin zu einem einfacheren selbst verwalteten Data-Warehouse-Service, der auch auf hyperscale-Skala effizient arbeitet.</p>         <p>Wir haben 100% der Arbeitslast erfolgreich migriert und das Legacy-System vollständig veraltet. Die Migration eines Daten-Ingestionssystems dieser Größe war jedoch eine große Herausforderung. Mehrere wichtige Lösungen und Strategien halfen, eine Migration dieses Umfangs erfolgreich zu machen.</p>         <h3>Die Migrationsheranforderung</h3>         <p>Als unsere Betriebe im großen Umfang wuchsen, begann unser Legacy-Daten-Ingestionssystem, Anzeichen von Instabilität unter den immer strengeren Daten-Landing-Zeitanforderungen zu zeigen. Wir wussten, dass wir zu einem neuen System migrieren mussten. Aber wir wussten auch, dass dies bedeutete, Herausforderungen in Bezug auf die Migration selbst zu meistern.</p>         <h3>Sichere Migration</h3>         <p>Um eine nahtlose Migration zu gewährleisten, mussten wir den Migrationssystemlebenszyklus für Tausende von Jobs effektiv verfolgen und robuste Rollout- und Rollback-Steuerungen implementieren, um Probleme zu handhaben, die während des Migrationsprozesses auftreten könnten.</p>         <p>Unser erster Schritt war, einen klaren Migrationssystemlebenszyklus zu etablieren, um Datenintegrität und Betriebssicherheit während des Prozesses zu gewährleisten. Jeder Job musste auf Korrektheit überprüft werden und definierte Erfolgskriterien erfüllen, bevor er zum nächsten Schritt des Migrationssystemlebenszyklus überging.</p>         <ul>             <li>Keine Datenqualitätsprobleme: Es darf keine Unterschiede zwischen den Daten geben, die von dem alten und dem neuen System geliefert werden.</li>             <li>Keine Latenzregression: Die Daten, die von dem neuen System geliefert werden, sollten verbesserte Ladezeiten aufweisen oder zumindest die Leistung des alten Systems erreichen.</li>             <li>Keine Ressourcen-Nutzungsregression: Die Nutzung von Rechen- und Speicherressourcen durch den Job, der im neuen System ausgeführt wird, sollte verbessert oder zumindest vergleichbar mit dem alten System sein.</li>         </ul>         <p>Wir haben diese Kriterien für die kritischen Tabellennmigration definiert und mit den Teams, die von diesem Service abhängig waren, abgestimmt.</p>         <h3>Phase 1: Der Schatten-Prozess</h3>         <p>Im ersten Schritt des Lebenszyklus haben wir Schattenjobs in der Pre-Production-Umgebung eingerichtet, die über das neue System geliefert werden sollten. Dies ist im Wesentlichen ein Produktionsrealistischer Test, bei dem jeder Schattenjob die gleiche Quelle wie der Produktionsjob konsumiert, aber Daten an einen anderen Tisch, den Schattentisch, liefert.</p>         <p>Diese Einrichtung kann helfen, Probleme aufzudecken, da sie das neue System realen Produktionsdaten und -verhalten aussetzt, während sie immer noch einen isolierten Ort bietet, um Ergebnisse zu untersuchen und Reparaturen schnell einzuführen.</p>         <p><em>BytePost-Einordnung: Die Datenmigration bei Meta zeigt, dass auch bei großen Unternehmen die Migration von Legacy-Systemen zu modernen, effizienteren Lösungen wichtig ist, um die Zuverlässigkeit und Skalierbarkeit der Systeme zu verbessern.</em></p>     </div>
+    <a class="cta" href="../index.html#a=4c290cf5">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/" target="_blank" rel="noopener">Meta Engineering</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

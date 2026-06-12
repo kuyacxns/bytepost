@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Entwickler bekommen neue API — BytePost</title>
+    <meta name="description" content="Die neue pkg.go.dev API Seit ihrer Einführung hat sich pkg.go.dev als die primäre Ressource für Paketdokumentation und -entdeckung in der Go-Community etabliert">
+    <link rel="canonical" href="https://bytepost.de/artikel/32e075d5.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/32e075d5.html">
+    <meta property="og:title" content="Go-Entwickler bekommen neue API">
+    <meta property="og:description" content="Die neue pkg.go.dev API Seit ihrer Einführung hat sich pkg.go.dev als die primäre Ressource für Paketdokumentation und -entdeckung in der Go-Community etabliert">
+    <meta property="og:image" content="https://bytepost.de/images/32e075d5.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Go-Entwickler bekommen neue API">
+    <meta name="twitter:description" content="Die neue pkg.go.dev API Seit ihrer Einführung hat sich pkg.go.dev als die primäre Ressource für Paketdokumentation und -entdeckung in der Go-Community etabliert">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Go-Entwickler bekommen neue API</h1>
+    <div class="meta">The Go Blog · 26.05.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/32e075d5.jpg" alt="Go-Entwickler bekommen neue API">
+    <div class="content">         <h3>Die neue pkg.go.dev API</h3>         <p>Seit ihrer Einführung hat sich pkg.go.dev als die primäre Ressource für Paketdokumentation und -entdeckung in der Go-Community etabliert. Zunächst wurden die Schaffung einer umfassenden und hoch zugänglichen Web-Oberfläche für Benutzer priorisiert, aber das Bedürfnis nach programmatischem Zugriff ist immer deutlicher geworden.</p>         <p>Entwickler, die Tools, IDE-Integrationen und automatisierte Workflows erstellen, mussten in der Vergangenheit auf fragile Workarounds wie Web-Scraping zurückgreifen, um auf diese Daten zuzugreifen. Um diese sich entwickelnden Anforderungen besser zu erfüllen, wird die Plattform erweitert, um einen robusten, direkten Zugriff auf die Informationen zu bieten, die die Community benötigt.</p>         <p>Heute wird die offizielle pkg.go.dev-API vorgestellt – ein Dienst für die Abfrage von Metadaten über veröffentlichte Go-Module. Dieser Launch ist eine direkte Reaktion auf jahrelanges Community-Feedback.</p>         <h3>Die Dienstschnittstelle</h3>         <p>Die API verwendet eine stateless, GET-only-Architektur, die für Stabilität und effizientes Caching ausgelegt ist. Primäre Endpunkte sind derzeit unter dem Pfad /v1beta gehostet. Nach einer Phase des Community-Feedbacks und bestätigter Stabilität ist geplant, zu einer offiziellen v1-Veröffentlichung überzugehen.</p>         <p>Für eine vollständige interaktive Referenz aller Endpunkte, Abfrageparameter und Antwortformate siehe die pkg.go.dev/api-Spezifikation. Der maschinenlesbare API-Vertrag wird auch direkt als OpenAPI-Spezifikation veröffentlicht.</p>         <h3>Kernendpunkte</h3>         <ul>             <li>/v1beta/package/{path} – Informationen über das Paket unter {path}.</li>             <li>/v1beta/module/{path} – Informationen über das Modul unter {path}.</li>             <li>/v1beta/versions/{path} – Versionen des Moduls unter {path}.</li>             <li>/v1beta/packages/{path} – Informationen über Pakete des Moduls unter {path}.</li>             <li>/v1beta/search?q={query} – Suchergebnisse für eine bestimmte Abfrage.</li>             <li>/v1beta/symbols/{path} – Liste der von dem Paket unter {path} deklarierten Symbole.</li>             <li>/v1beta/imported-by/{path} – Pfade der Pakete, die das Paket unter {path} importieren.</li>             <li>/v1beta/vulns/{path} – Sicherheitslücken des Moduls oder Pakets unter {path}.</li>         </ul>         <p>Ein Designprinzip für diese API ist „Präzision über Bequemlichkeit“.</p>         <p>Um Versionen anzugeben, können für Endpunkte, die Paket-, Modul- oder Symbolinformationen abrufen, die optionalen Abfrageparameter version verwendet werden. Die API gibt standardmäßig Informationen über die neueste Version des Moduls oder Pakets zurück.</p>         <p>Beispiel für eine rohe API-Anfrage, um strukturierte Metadaten für ein bestimmtes Paket direkt abzurufen (mit jq für die Formatierung):</p>         <p>$ curl https://pkg.go.dev/v1beta/package/github.com/google/go-cmp/cmp | jq</p>         <p><em>BytePost-Einordnung: Die neue pkg.go.dev-API bietet Entwicklern eine einfache und sichere Möglichkeit, auf Paket- und Moduldaten zuzugreifen, was die Entwicklung von Tools und Workflows in der Go-Community erheblich verbessern wird.</em></p>     </div>
+    <a class="cta" href="../index.html#a=32e075d5">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://go.dev/blog/pkgsite-api" target="_blank" rel="noopener">The Go Blog</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lösung für Node-Löschproblem — BytePost</title>
+    <meta name="description" content="Einführung Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knote">
+    <link rel="canonical" href="https://bytepost.de/artikel/ee47fc99.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/ee47fc99.html">
+    <meta property="og:title" content="Lösung für Node-Löschproblem">
+    <meta property="og:description" content="Einführung Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knote">
+    <meta property="og:image" content="https://bytepost.de/images/ee47fc99.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lösung für Node-Löschproblem">
+    <meta name="twitter:description" content="Einführung Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knote">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Lösung für Node-Löschproblem</h1>
+    <div class="meta">LeetCode · 10.06.2026 · 1 Min Lesezeit</div>
+    <img class="hero" src="../images/ee47fc99.jpg" alt="Lösung für Node-Löschproblem">
+    <div class="content">         <h3>Einführung</h3>         <p>Das Problem des Node-Löschens in einer verketteten Liste ist ein häufiges Interviewthema. Normalerweise benötigt man Zugriff auf den vorherigen Knoten, um einen Knoten zu löschen. In diesem Problem wird jedoch nur der Knoten angegeben, der gelöscht werden soll. Kein Kopf, kein vorheriger Zeiger. Wie können wir ihn also entfernen? Lassen Sie uns den Trick verstehen.</p>         <h3>Problemstatement</h3>         <p>Schreiben Sie eine Funktion, um einen Knoten in einer einfachen verketteten Liste zu löschen. Ihnen wird nicht der Kopf der Liste gegeben. Stattdessen erhalten Sie nur den Knoten, der gelöscht werden soll.</p>         <h3>Beispiel</h3>         <p>Eingabe: 4 -> 5 -> 1 -> 9, Knoten = 5. Ausgabe: 4 -> 1 -> 9.</p>         <h3>Anfangsgedanke</h3>         <p>Normalerweise löschen wir einen Knoten wie folgt: prev.next = node.next. Aber hier haben wir keinen vorherigen Zeiger, keinen Kopf. Der übliche Löschansatz ist also unmöglich.</p>         <h3>Schlüsselbeobachtung</h3>         <p>Obwohl wir den aktuellen Knoten nicht direkt löschen können, können wir ihn so manipulieren, dass es aussieht, als hätte er nie existiert. Betrachten Sie: 4 -> 5 -> 1 -> 9. Wir müssen den Knoten 5 löschen. Anstatt den Knoten 5 zu entfernen, kopieren wir den Wert des nächsten Knotens in ihn. 4 -> 1 -> 1 -> 9. Jetzt entfernen wir den nächsten Knoten. 4 -> 1 -> 9. Der ursprüngliche Wert 5 ist verschwunden.</p>         <h3>Intuition</h3>         <p>Kopieren Sie den Wert des nächsten Knotens in den aktuellen Knoten. Überspringen Sie den nächsten Knoten. Der aktuelle Knoten verhält sich jetzt so, als wäre er gelöscht. Da das Problem garantiert, dass der angegebene Knoten nicht der letzte Knoten ist, wird immer ein nächster Knoten existieren.</p>         <h3,optimaler Java-Lösung</h3>         <p>class Solution { public void deleteNode (ListNode node) { ListNode cur = node.next; node.val = cur.val; node.next = cur.next; } }</p>     </div>
+    <a class="cta" href="../index.html#a=ee47fc99">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://dev.to/jaspreet_singh_86ae1740ac/delete-node-in-a-linked-list-27d3" target="_blank" rel="noopener">LeetCode</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

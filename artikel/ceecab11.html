@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites spionieren mit SSD-Aktivität — BytePost</title>
+    <meta name="description" content="Einleitung Es gibt keine Knappheit an Websites, die clevere Techniken nutzen, um die Browser-Historie, Geräte-Fingerabdrücke und Eingaben von Benutzern in Echtz">
+    <link rel="canonical" href="https://bytepost.de/artikel/ceecab11.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/ceecab11.html">
+    <meta property="og:title" content="Websites spionieren mit SSD-Aktivität">
+    <meta property="og:description" content="Einleitung Es gibt keine Knappheit an Websites, die clevere Techniken nutzen, um die Browser-Historie, Geräte-Fingerabdrücke und Eingaben von Benutzern in Echtz">
+    <meta property="og:image" content="https://bytepost.de/images/ceecab11.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Websites spionieren mit SSD-Aktivität">
+    <meta name="twitter:description" content="Einleitung Es gibt keine Knappheit an Websites, die clevere Techniken nutzen, um die Browser-Historie, Geräte-Fingerabdrücke und Eingaben von Benutzern in Echtz">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Websites spionieren mit SSD-Aktivität</h1>
+    <div class="meta">The Verge · 28.05.2026 · 3 Min Lesezeit</div>
+    <img class="hero" src="../images/ceecab11.jpg" alt="Websites spionieren mit SSD-Aktivität">
+    <div class="content">         <h3>Einleitung</h3>         <p>Es gibt keine Knappheit an Websites, die clevere Techniken nutzen, um die Browser-Historie, Geräte-Fingerabdrücke und Eingaben von Benutzern in Echtzeit zu verfolgen. Selbst Meta und Yandex wurden kürzlich bei der Teilnahme an diesem Datenschutz-invasiven Treiben ertappt. Jetzt haben Websites eine neue Möglichkeit, ihre Besucher auszuspionieren: indem sie die subtilen Interaktionen mit ihren Solid-State-Drives (SSDs) messen.</p>         <p>Die Technik, die als FROST (Fingerprinting Remotely Using OPFS-Based SSD Timing) bezeichnet wird, ermöglicht es Websites, andere Websites zu überwachen, die ein Besucher ansieht, und welche Anwendungen auf seinem Gerät geöffnet sind. Diese Technik nutzt einen sogenannten Side-Channel-Angriff, der es ermöglicht, vertrauliche Daten zu entschlüsseln und andere vertrauliche Informationen abzuleiten.</p>         <h3>Der Angriff</h3>         <p>Der FROST-Angriff nutzt einen Side-Channel-Angriff, der die Interaktion zwischen verschiedenen Prozessen misst, die um eine bestimmte Ressource konkurrieren. Durch das Messen der Zeit, die bestimmte E/A-Operationen (Input/Output) auf dem SSD des Besuchers benötigen, konnten die Forscher bestimmen, welche Websites in anderen Tabs geöffnet sind und welche Anwendungen auf dem Gerät des Besuchers geöffnet sind.</p>         <p>FROST benötigt keine Interaktion von dem Besucher, außer dass er die Website besucht, die den Angriff ausführt. „Web-Browser haben sich von einfachen Dokumenten-Viewern zu komplexen Plattformen entwickelt, die anspruchsvolle Anwendungen ausführen können“, schrieben die Autoren des Forschungs-Papiers. „Unternehmen wie Google, Microsoft und Adobe haben vollständige Office-Suiten, Foto- und Video-Editoren oder sogar integrierte Entwicklungsumgebungen (IDEs) entwickelt, die komplett im Browser laufen.“</p>         <h3>Die Funktionsweise</h3>         <p>FROST läuft ausschließlich im Browser und nutzt JavaScript, das mit dem OPFS (Origin Private File System) interagiert, einem reservierten Speicherplatz, der für eine bestimmte Website reserviert ist, um Code auszuführen, der zum Abschließen einer bestimmten Aufgabe benötigt wird. Websites können ein solches Dateisystem erstellen, ohne dass der Besucher interagieren muss.</p>         <p>Durch das Messen der E/A-Interaktionen und das Durchlaufen dieser Interaktionen durch ein vorgebildetes Convolutional Neural Network (CNN) kann der Angreifer verschiedene Anwendungen und Websites identifizieren, die auf dem Gerät des Besuchers geöffnet sind. „Der Angreifer misst kontinuierlich die SSD-Konkurrenz, indem er zufällige Lesevorgänge von einer großen OPFS-Datei durchführt“, erklärten die Forscher. „Die SSD-Konkurrenz, die durch Benutzeraktivitäten verursacht wird, verursacht messbare Latenzunterschiede für diese Leseoperationen. Durch das Trainieren eines CNN auf diesen Spuren kann der Angreifer Benutzeraktivitäten auf dem Host-System identifizieren, indem er neue Spuren mit dem trainierten Modell klassifiziert.“</p>         <h3>Begrenzungen und Gegenmaßnahmen</h3>         <p>Die Technik hat ihre Grenzen. Erstens muss die OPFS-Datei extrem groß sein - wahrscheinlich eine Gigabyte oder mehr. Dieses Erfordernis bedeutet, dass Angriffe im großen Maßstab wahrscheinlich von vielen Benutzern erkannt werden. Zweitens muss die OPFS-Datei auf dem gleichen SSD gespeichert werden, den der Besucher verwendet. Dies ist normalerweise kein Problem für die Überwachung geöffneter Websites, da die OPFS-Datei im Standard-Verzeichnis des Browsers gespeichert wird.</p>         <p>Eine der besten Methoden, um FROST-Angriffe zu verhindern, ist, Tabs zu schließen, sobald sie nicht mehr benötigt werden. Erfahrene Benutzer können die Erstellung und Größe von OPFS-Dateien überwachen, die von unbekannten Websites zugewiesen werden. Die Forscher schlugen Methoden vor, um den Side-Channel-Angriff zu unterbinden, wie z.B. die Begrenzung der maximalen Größe von Dateien, die zulässig sind.</p>         <p><em>BytePost-Einordnung: Diese Entdeckung zeigt, dass die Sicherheitslandschaft im Internet ständig im Wandel ist und dass neue Angriffsvektoren ständig identifiziert werden. Es ist wichtig, dass Browser-Entwickler und -Hersteller solche Schwachstellen ernst nehmen und Gegenmaßnahmen ergreifen, um die Privatsphäre der Benutzer zu schützen.</em></p>     </div>
+    <a class="cta" href="../index.html#a=ceecab11">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/" target="_blank" rel="noopener">The Verge</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>

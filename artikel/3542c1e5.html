@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicherheitslücke in Cargo entdeckt — BytePost</title>
+    <meta name="description" content="Sicherheitswarnung für Cargo (CVE-2026-5223) Das Rust Security Response Team wurde informiert, dass Cargo Symlinks innerhalb von Crate-Tarballs von Drittanbiete">
+    <link rel="canonical" href="https://bytepost.de/artikel/3542c1e5.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bytepost.de/artikel/3542c1e5.html">
+    <meta property="og:title" content="Sicherheitslücke in Cargo entdeckt">
+    <meta property="og:description" content="Sicherheitswarnung für Cargo (CVE-2026-5223) Das Rust Security Response Team wurde informiert, dass Cargo Symlinks innerhalb von Crate-Tarballs von Drittanbiete">
+    <meta property="og:image" content="https://bytepost.de/images/3542c1e5.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sicherheitslücke in Cargo entdeckt">
+    <meta name="twitter:description" content="Sicherheitswarnung für Cargo (CVE-2026-5223) Das Rust Security Response Team wurde informiert, dass Cargo Symlinks innerhalb von Crate-Tarballs von Drittanbiete">
+    <style>
+        :root { --bg:#0a0a0a; --bg-card:#141414; --text:#f5f5f7; --text-2:#aeaeb2; --text-3:#636366; --accent:#0071e3; --border:rgba(255,255,255,0.08); }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,'DM Sans',sans-serif; line-height:1.7; }
+        .wrap { max-width:680px; margin:0 auto; padding:32px 20px 60px; }
+        .top-link { font-size:13px; color:var(--accent); text-decoration:none; }
+        h1 { font-size:28px; line-height:1.2; margin:18px 0 8px; }
+        .meta { font-size:12px; color:var(--text-3); margin-bottom:24px; font-family:monospace; }
+        img.hero { width:100%; border-radius:12px; margin-bottom:20px; }
+        .content { font-size:15px; color:var(--text-2); }
+        .content h3 { color:var(--text); margin:22px 0 8px; }
+        .content p { margin:12px 0; }
+        .content ul { padding-left:20px; margin:12px 0; }
+        .cta { display:block; margin:32px 0 0; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; color:var(--accent); text-decoration:none; font-weight:600; }
+        .src { margin-top:14px; font-size:12px; color:var(--text-3); }
+        .src a { color:var(--accent); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <a class="top-link" href="../index.html">← BytePost</a>
+    <h1>Sicherheitslücke in Cargo entdeckt</h1>
+    <div class="meta">Rust Security Response Team · 07.06.2026 · 2 Min Lesezeit</div>
+    <img class="hero" src="../images/3542c1e5.jpg" alt="Sicherheitslücke in Cargo entdeckt">
+    <div class="content">         <h3>Sicherheitswarnung für Cargo (CVE-2026-5223)</h3>         <p>Das Rust Security Response Team wurde informiert, dass Cargo Symlinks innerhalb von Crate-Tarballs von Drittanbieter-Registries falsch gehandhabt hat. Dies ermöglichte es einem bösartigen Crate, den Quellcode eines anderen Crates aus dem gleichen Registry zu überschreiben.</p>         <p>Diese Sicherheitslücke wird als CVE-2026-5223 bezeichnet. Die Schwere der Sicherheitslücke wird als mittel für Benutzer von Drittanbieter-Registries eingestuft. Benutzer von crates.io sind nicht betroffen, da crates.io das Uploaden von Crates mit Symlinks verbietet.</p>         <h3>Überblick</h3>         <p>Wenn ein Crate erstellt wird, extrahiert Cargo seinen Quellcode in einem lokalen Cache (gespeichert in ~/.cargo), der für zukünftige Erstellungen wiederverwendet wird. Cargo enthält Schutzmechanismen, um zu verhindern, dass Dateien außerhalb des Cache-Verzeichnisses des Crates extrahiert werden.</p>         <p>Es wurde festgestellt, dass es möglich ist, einen bösartigen Tarball zu erstellen, der Dateien auf einem tieferen Level als das Cache-Verzeichnis des Crates extrahieren kann. Aufgrund der Struktur des Caches ermöglichte dies dem bösartigen Crate, den Cache von anderen Crates aus dem gleichen Registry zu überschreiben.</p>         <h3>Minderung</h3>         <p>Rust 1.96.0, das am 28. Mai 2026 veröffentlicht wird, wird Cargo aktualisieren, um die Extraktion von Symlinks in Crate-Tarballs abzulehnen, unabhängig davon, ob sie von crates.io (das bereits Symlinks verbietet) oder Drittanbieter-Registries stammen. Es ist zu beachten, dass Cargo nie Symlinks hinzugefügt hat, wenn cargo package oder cargo publish ausgeführt wurde, sodass der Einfluss minimal sein sollte.</p>         <p>Benutzer, die nicht auf die neueste Rust-Version aktualisieren können, werden empfohlen, den Inhalt ihrer Registries auf Symlinks zu überprüfen und ihre Registry so zu konfigurieren, dass sie Symlinks ablehnen (falls diese Option verfügbar ist).</p>         <h3>Betroffene Versionen</h3>         <pAlle Versionen von Cargo, die vor Rust 1.96.0 ausgeliefert wurden, sind betroffen.</p>         <h3>Danksagungen</h3>         <p>Wir möchten Christos Papakonstantinou für die Meldung dieser Sicherheitslücke gemäß der Rust-Sicherheitspolitik danken.</p>         <p>Wir möchten auch den Mitgliedern des Rust-Projekts danken, die uns halfen, die Sicherheitslücke zu beheben: Josh Triplett für die Entwicklung des Fix; Arlo Siemsen für die Überprüfung des Fix; Emily Albini für die Erstellung dieser Warnung; Emily Albini, Josh Stone und Manish Goregaokar für die Koordination der Bekanntgabe; Ed Page und Eric Huss für dieBeratung während der Bekanntgabe.</p>         <p><em>BytePost-Einordnung: Diese Sicherheitslücke ist ein wichtiger Hinweis darauf, dass die Sicherheit von Software-Entwicklungstools nicht vernachlässigt werden sollte. Entwickler sollten ihre Tools und Registries regelmäßig auf Sicherheitslücken überprüfen und aktualisieren, um solche Angriffe zu verhindern.</em></p>     </div>
+    <a class="cta" href="../index.html#a=3542c1e5">↗ Auf BytePost öffnen — mit „Einfach erklärt" &amp; Profi-Version</a>
+    <div class="src">Originalquelle: <a href="https://blog.rust-lang.org/2026/05/25/cve-2026-5223/" target="_blank" rel="noopener">Rust Security Response Team</a> · KI-generierte Zusammenfassung, alle Rechte am Original beim Verlag/Autor.</div>
+</div>
+</body>
+</html>
