@@ -448,14 +448,35 @@ def compute_bytepulse(articles, today_str):
         "total": total,
     }
 
-def find_related(article, all_articles, limit=3):
-    related = []
+def cosine_sim(a, b):
+    if not a or not b or len(a) != len(b):
+        return 0.0
+    dot = sum(x * y for x, y in zip(a, b))
+    mag_a = sum(x * x for x in a) ** 0.5
+    mag_b = sum(y * y for y in b) ** 0.5
+    if mag_a == 0 or mag_b == 0:
+        return 0.0
+    return dot / (mag_a * mag_b)
+
+
+def find_related(article, all_articles, limit=3, threshold=0.87):
+    """Embedding-basierte Ähnlichkeit (Cosine Similarity), max. 3 Treffer."""
+    vec = article.get("embedding")
+    if not vec:
+        return []
+    scored = []
     for a in all_articles:
-        if a.get("id") == article.get("id"): continue
-        if a.get("tag") == article.get("tag") or a.get("cat") == article.get("cat"):
-            related.append(a["id"])
-        if len(related) >= limit: break
-    return related
+        if a.get("id") == article.get("id") or a.get("title") == article.get("title"):
+            continue
+        other = a.get("embedding")
+        if not other:
+            continue
+        sim = cosine_sim(vec, other)
+        if sim >= threshold:
+            reason = "Sehr ähnliches Thema" if sim > 0.93 else "Verwandtes Thema"
+            scored.append((sim, {"id": a["id"], "reason": reason}))
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [entry for _, entry in scored[:limit]]
 
 def pick_of_the_day(today_articles):
     """Lässt die KI den relevantesten Artikel wählen und begründen."""

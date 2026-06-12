@@ -562,6 +562,22 @@
         data: 'Data', cloud: 'Cloud', tech: 'Tech',
     };
 
+    // Kategorien normalisieren wie in index.html (Array, gelegentlich String in Altdaten)
+    function catsOf(a) {
+        const c = a.cat;
+        if (Array.isArray(c)) return c;
+        if (!c) return [];
+        return c.split(/[|/,]+/).map(s => s.trim().toLowerCase()).filter(Boolean);
+    }
+
+    // DD.MM.YYYY → Date (analog parseArticleDate in index.html)
+    function parseArticleDate(dateStr) {
+        if (!dateStr) return new Date(0);
+        const parts = dateStr.split('.');
+        if (parts.length !== 3) return new Date(0);
+        return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+    }
+
     async function loadBP(force = false) {
         const cached = !force && cacheGet('bp');
         if (cached) { renderBP(cached); setTs('bp'); return; }
@@ -574,12 +590,17 @@
             const articles = db.articles || [];
             const catCount = {};
             articles.forEach(a => {
-                const cats = Array.isArray(a.categories) ? a.categories : [];
-                cats.forEach(c => { catCount[c] = (catCount[c] || 0) + 1; });
+                catsOf(a).forEach(c => { catCount[c] = (catCount[c] || 0) + 1; });
             });
-            const newestDate = articles.length
-                ? articles.reduce((m, a) => a.date > m ? a.date : m, '').slice(0, 10)
-                : 'k.A.';
+            let newestDate = 'k.A.';
+            if (articles.length) {
+                const newest = articles.reduce((m, a) =>
+                    parseArticleDate(a.date) > parseArticleDate(m.date) ? a : m);
+                const d = parseArticleDate(newest.date);
+                if (d.getTime() !== 0) {
+                    newestDate = d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
+                }
+            }
             const stats = { total: articles.length, catCount, newestDate };
             cacheSet('bp', stats);
             renderBP(stats);
@@ -628,6 +649,9 @@
                     <div class="stat-val">${sorted.length}</div>
                     <div class="stat-label">Kategorien</div>
                 </div>
+            </div>
+            <div style="font-family:var(--mono);font-size:10px;color:var(--text-3);margin-bottom:12px;">
+                Neuester Artikel: ${newestDate}
             </div>
             <div class="donut-wrap">
                 <svg class="donut-canvas" width="88" height="88" viewBox="0 0 88 88">
