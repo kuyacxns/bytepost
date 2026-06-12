@@ -6,14 +6,25 @@
     <title>BytePost — Tech Dashboard</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         /* ── Variables ─────────────────────────────────────── */
         :root {
-            --mono: 'Space Mono', monospace;
-            --display: 'Syne', sans-serif;
-            --body: 'DM Sans', sans-serif;
+            --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+            --display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+            --body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            /* Schriftgrößen-Skala */
+            --fs-xxs: 11px;  /* Mikro-Labels, Badges */
+            --fs-xs: 12px;   /* Meta-Zeilen, Datum */
+            --fs-sm: 13px;   /* kleine UI-Texte, Buttons */
+            --fs-base: 14px; /* Teaser, Standard-UI */
+            --fs-md: 16px;   /* Fließtext mobil */
+            --fs-lg: 18px;   /* Karten-Titel */
+            --fs-xl: 26px;   /* Modal-Titel */
+            --fs-xxl: 30px;  /* Editions-/Seiten-Titel */
+            --fs-read: 17px; /* Artikel-Fließtext */
             --bg: #f5f5f7;
             --bg-card: #ffffff;
             --text: #1d1d1f;
