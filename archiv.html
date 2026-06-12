@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePost — Archiv</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+
+    <style>
+        /* Design-Tokens, Reset, Body und Nav: siehe styles/base.css */
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        .nav-links { display: flex; align-items: center; gap: 16px; }
+        .nav-link { font-size: var(--fs-sm); font-weight: 600; color: var(--text-3); text-decoration: none; transition: color var(--t); }
+        .nav-link:hover { color: var(--text); }
+        .nav-link.active { color: var(--accent); }
+
+        /* ── Page header ─────────────────────────────────── */
+        .page-header { padding: 32px 0 20px; border-bottom: 1px solid var(--border); }
+        .page-label { font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; }
+        .page-title { font-family: var(--display); font-size: clamp(24px, 5vw, var(--fs-xxl)); font-weight: 800; line-height: 1.15; text-wrap: balance; }
+        .page-title em { color: var(--accent); font-style: normal; }
+        .page-sub { font-size: var(--fs-base); color: var(--text-3); margin-top: 6px; }
+
+        /* ── Such- & Sprungleiste ────────────────────────── */
+        .archive-toolbar {
+            position: sticky; top: 56px; z-index: 90;
+            background: var(--bg);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+            display: flex; flex-direction: column; gap: 10px;
+        }
+        .archive-search { display: flex; align-items: center; gap: 8px; }
+        .archive-search input {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 20px; padding: 7px 16px;
+            font-family: var(--body); font-size: var(--fs-sm); color: var(--text);
+            flex: 1; outline: none; transition: border-color var(--t);
+        }
+        .archive-search input:focus { border-color: var(--accent); }
+        .archive-search input::placeholder { color: var(--text-3); }
+        .archive-count { font-size: var(--fs-xs); color: var(--text-3); white-space: nowrap; }
+
+        .jumpnav { display: flex; gap: 4px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+        .jumpnav::-webkit-scrollbar { display: none; }
+        .jumpnav a {
+            font-family: var(--mono); font-size: var(--fs-xs); font-weight: 700;
+            color: var(--text-3); text-decoration: none;
+            width: 24px; height: 24px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 6px; transition: all var(--t);
+        }
+        .jumpnav a:hover { background: var(--bg-card); color: var(--accent); }
+
+        /* ── Archiv-Liste ────────────────────────────────── */
+        .archive-list { padding: 24px 0 60px; }
+        .archive-group { margin-bottom: 28px; }
+        .archive-letter {
+            font-family: var(--display); font-size: var(--fs-xl); font-weight: 800;
+            color: var(--accent); margin-bottom: 8px; scroll-margin-top: 120px;
+        }
+        .archive-items { display: flex; flex-direction: column; }
+        .archive-item {
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+            padding: 12px 4px; border-bottom: 1px solid var(--border);
+            text-decoration: none; color: var(--text); transition: color var(--t);
+        }
+        .archive-items .archive-item:last-child { border-bottom: none; }
+        .archive-item:hover { color: var(--accent); }
+        .archive-item-title {
+            font-size: var(--fs-base); font-weight: 600; line-height: 1.4;
+            text-wrap: balance;
+        }
+        .archive-item-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .archive-item-date { font-size: var(--fs-xs); color: var(--text-3); white-space: nowrap; }
+
+        .cat-badge {
+            font-family: var(--body); font-size: var(--fs-xxs); font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            padding: 3px 9px; border-radius: 5px; color: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+            white-space: nowrap;
+        }
+
+        .empty-state { padding: 60px 0; text-align: center; color: var(--text-3); font-size: var(--fs-base); }
+
+        /* ── Footer ─────────────────────────────────────── */
+        .footer { margin-top: 20px; padding: 24px 0 40px; border-top: 1px solid var(--border); }
+        .footer-text { font-size: var(--fs-sm); color: var(--text-3); text-align: center; line-height: 1.8; }
+        .footer-text a { color: var(--text-3); text-decoration: underline; text-underline-offset: 3px; transition: color var(--t); }
+        .footer-text a:hover { color: var(--accent); }
+
+        @media (max-width: 600px) {
+            .archive-item-title { font-size: var(--fs-sm); }
+            .archive-item-meta .cat-badge:not(:first-child) { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="wrap nav-inner">
+        <a class="logo" href="./index.html">
+            <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
+            Byte<em>Post</em>
+        </a>
+        <div class="nav-links">
+            <a class="nav-link" href="./index.html">News</a>
+            <a class="nav-link" href="./dashboard.html">Dashboard</a>
+            <a class="nav-link active" href="#">Archiv</a>
+            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="wrap">
+    <div class="page-header">
+        <div class="page-label">Alle bisherigen Artikel</div>
+        <h1 class="page-title">Artikel-<em>Archiv</em></h1>
+        <p class="page-sub" id="archive-sub">Alphabetisch sortiert · die letzten 7 Tage findest du auf der Startseite.</p>
+    </div>
+
+    <div class="archive-toolbar">
+        <div class="archive-search">
+            <input type="search" id="archive-search" placeholder="🔍 Im Archiv suchen…" autocomplete="off" aria-label="Archiv durchsuchen">
+            <span class="archive-count" id="archive-count"></span>
+        </div>
+        <div class="jumpnav" id="jumpnav"></div>
+    </div>
+
+    <div id="archive-list" class="archive-list"></div>
+
+    <footer class="footer">
+        <p class="footer-text">
+            © 2026 BytePost · Kuratiert von Fabi · KI-generierte Zusammenfassungen
+        </p>
+        <p class="footer-text" style="margin-top:10px;">
+            <a href="./index.html">← Zurück zur Startseite</a> · <a href="./impressum.html">Impressum</a> · <a href="./feed.xml">RSS-Feed</a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    /* ── Theme ──────────────────────────────────────────────── */
+    (function () {
+        const saved = localStorage.getItem('bp_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+        updateThemeBtn(saved);
+    })();
+
+    function updateThemeBtn(theme) {
+        const icon = document.getElementById('theme-icon');
+        const label = document.getElementById('theme-label');
+        if (!icon) return;
+        if (theme === 'dark') { icon.textContent = '☀️'; label.textContent = 'Light'; }
+        else { icon.textContent = '🌙'; label.textContent = 'Dark'; }
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bp_theme', next);
+        updateThemeBtn(next);
+    }
+
+    /* ── Category colors ────────────────────────────────────── */
+    const CAT_COLORS = {
+        ki:       '#0071e3',
+        dev:      '#22c55e',
+        hardware: '#f97316',
+        security: '#ef4444',
+        business: '#a855f7',
+        gaming:   '#ec4899',
+        data:     '#f59e0b',
+        cloud:    '#06b6d4',
+        tech:     '#6366f1',
+    };
+
+    function cats(a) {
+        const c = a.cat;
+        if (Array.isArray(c)) return c;
+        if (!c) return [];
+        return c.split(/[|/,]+/).map(s => s.trim().toLowerCase()).filter(Boolean);
+    }
+
+    function catColor(cat) {
+        return CAT_COLORS[(cat || '').toLowerCase()] || '#636366';
+    }
+
+    function catLabel(cat) {
+        const labels = { ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
+        return labels[(cat || '').toLowerCase()] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '');
+    }
+
+    function catBadgeHtml(article) {
+        return cats(article).map(c =>
+            `<span class="cat-badge" style="background:${catColor(c)}">${catLabel(c)}</span>`
+        ).join('');
+    }
+
+    // DD.MM.YYYY → Date (analog index.html)
+    function parseArticleDate(dateStr) {
+        if (!dateStr) return new Date(0);
+        const parts = dateStr.split('.');
+        if (parts.length !== 3) return new Date(0);
+        return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+    }
+
+    function formatDate(dateStr) {
+        const d = parseArticleDate(dateStr);
+        if (!dateStr || d.getTime() === 0) return '';
+        return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
+    }
+
+    // Muss identisch zu index.html sein: Startseite zeigt die letzten RECENT_DAYS
+    // Tage (relativ zum neuesten Artikel) — alles andere landet hier im Archiv.
+    const RECENT_DAYS = 7;
+    function computeRecentArticles(articles) {
+        if (!articles.length) return [];
+        const cutoff = parseArticleDate(articles[0].date);
+        cutoff.setDate(cutoff.getDate() - (RECENT_DAYS - 1));
+        const recent = articles.filter(a => parseArticleDate(a.date) >= cutoff);
+        return recent.length ? recent : articles.slice(0, 10);
+    }
+
+    /* ── State ──────────────────────────────────────────────── */
+    let ARCHIVE_ARTICLES = [];
+    let searchTerm = '';
+
+    /* ── Load ───────────────────────────────────────────────── */
+    async function load() {
+        try {
+            const res = await fetch('./data.json');
+            const data = await res.json();
+            const articles = data.articles || [];
+            articles.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
+            const recent = new Set(computeRecentArticles(articles).map(a => a.id));
+            ARCHIVE_ARTICLES = articles
+                .filter(a => !recent.has(a.id))
+                .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'de'));
+            render();
+        } catch (e) {
+            document.getElementById('archive-list').innerHTML = '<div class="empty-state">⚠️ data.json konnte nicht geladen werden.</div>';
+        }
+    }
+
+    /* ── Render ─────────────────────────────────────────────── */
+    function groupByLetter(articles) {
+        const groups = {};
+        articles.forEach(a => {
+            const ch = (a.title || '?').trim().charAt(0).toUpperCase();
+            const letter = /[A-ZÄÖÜ]/.test(ch) ? ch : '#';
+            (groups[letter] || (groups[letter] = [])).push(a);
+        });
+        return groups;
+    }
+
+    function sortedLetters(groups) {
+        return Object.keys(groups).sort((a, b) => {
+            if (a === '#') return 1;
+            if (b === '#') return -1;
+            return a.localeCompare(b, 'de');
+        });
+    }
+
+    function render() {
+        const articles = searchTerm
+            ? ARCHIVE_ARTICLES.filter(a => (a.title || '').toLowerCase().includes(searchTerm))
+            : ARCHIVE_ARTICLES;
+
+        document.getElementById('archive-count').textContent =
+            searchTerm ? `${articles.length} Treffer` : `${articles.length} Artikel`;
+
+        const listEl = document.getElementById('archive-list');
+        if (!articles.length) {
+            listEl.innerHTML = '<div class="empty-state">Keine Artikel gefunden.</div>';
+            document.getElementById('jumpnav').innerHTML = '';
+            return;
+        }
+
+        const groups = groupByLetter(articles);
+        const letters = sortedLetters(groups);
+
+        listEl.innerHTML = letters.map(letter => `
+            <section class="archive-group">
+                <h2 class="archive-letter" id="letter-${letter}">${letter}</h2>
+                <div class="archive-items">
+                    ${groups[letter].map(a => `
+                        <a class="archive-item" href="./index.html#a=${a.id}">
+                            <span class="archive-item-title">${a.title}</span>
+                            <span class="archive-item-meta">
+                                ${catBadgeHtml(a)}
+                                <span class="archive-item-date">${formatDate(a.date)}</span>
+                            </span>
+                        </a>`).join('')}
+                </div>
+            </section>`).join('');
+
+        document.getElementById('jumpnav').innerHTML = letters
+            .filter(l => l !== '#')
+            .map(l => `<a href="#letter-${l}">${l}</a>`).join('');
+    }
+
+    /* ── Suche: live mit Debounce ────────────────────────────── */
+    let searchDebounce;
+    document.getElementById('archive-search').addEventListener('input', e => {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => {
+            searchTerm = e.target.value.trim().toLowerCase();
+            render();
+        }, 200);
+    });
+
+    load();
+</script>
+</body>
+</html>

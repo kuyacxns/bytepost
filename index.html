@@ -29,12 +29,24 @@
         .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .narrow { max-width: 720px; margin: 0 auto; }
 
+        /* ── Nav-Links ───────────────────────────────────────── */
+        .nav-links { display: flex; align-items: center; gap: 16px; }
+        .nav-link { font-size: var(--fs-sm); font-weight: 600; color: var(--text-3); text-decoration: none; transition: color var(--t); }
+        .nav-link:hover { color: var(--text); }
+        .nav-link.active { color: var(--accent); }
+
         /* ── Edition header ─────────────────────────────────── */
         .edition-bar { padding: 32px 0 20px; border-bottom: 1px solid var(--border); }
         .edition-date { font-family: var(--body); font-size: var(--fs-xs); font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 1.2px; }
         .edition-title { font-family: var(--display); font-size: clamp(24px, 5vw, var(--fs-xxl)); font-weight: 800; margin-top: 6px; line-height: 1.15; text-wrap: balance; }
         .edition-title em { color: var(--accent); font-style: normal; }
         .edition-sub { font-size: var(--fs-base); color: var(--text-3); margin-top: 6px; }
+        .archive-link {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-size: var(--fs-sm); font-weight: 600; color: var(--accent);
+            text-decoration: none; margin-top: 10px; transition: opacity var(--t);
+        }
+        .archive-link:hover { opacity: 0.75; }
 
         /* ── Category filter bar ────────────────────────────── */
         .filter-bar {
@@ -419,9 +431,14 @@
             <img src="./favicon.svg" width="26" height="26" alt="BytePost Icon">
             Byte<em>Post</em>
         </a>
-        <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
-            <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
-        </button>
+        <div class="nav-links">
+            <a class="nav-link active" href="#">News</a>
+            <a class="nav-link" href="./dashboard.html">Dashboard</a>
+            <a class="nav-link" href="./archiv.html">Archiv</a>
+            <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">
+                <span id="theme-icon">☀️</span> <span id="theme-label">Light</span>
+            </button>
+        </div>
     </div>
 </nav>
 
@@ -443,6 +460,7 @@
             <div class="edition-date" id="edition-date"></div>
             <h1 class="edition-title">Tech News. <em>Täglich.</em></h1>
             <p class="edition-sub" id="edition-sub">Kuratierte Deep-Reads — zusammengefasst mit KI.</p>
+            <a class="archive-link" id="archive-link" href="./archiv.html" style="display:none;">📚 <span id="archive-count"></span> weitere Artikel im Archiv →</a>
         </div>
     </div>
 
@@ -544,7 +562,9 @@
     }
 
     /* ── State ──────────────────────────────────────────────── */
+    const RECENT_DAYS = 7; // Startseite zeigt nur die letzten N Tage, Rest im Archiv
     let ARTICLES = [];
+    let RECENT_ARTICLES = [];
     let PICK = null;
     let activeFilters = new Set(); // leer = alle
     let currentArticleId = null;
@@ -596,7 +616,8 @@
             const data = await res.json();
             ARTICLES = data.articles;
             ARTICLES.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
-            PICK = ARTICLES.find(a => a.pick) || ARTICLES[0] || null;
+            RECENT_ARTICLES = computeRecentArticles(ARTICLES);
+            PICK = RECENT_ARTICLES.find(a => a.pick) || RECENT_ARTICLES[0] || null;
             setEditionDate();
             applyHashFilter();
             lastCatKey = [...activeFilters].join(',');
@@ -623,6 +644,16 @@
         return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
     }
 
+    // Startseite zeigt nur Artikel der letzten RECENT_DAYS Tage (relativ zum neuesten
+    // Artikel, falls der Generator mal pausiert) — Rest steht im Archiv.
+    function computeRecentArticles(articles) {
+        if (!articles.length) return [];
+        const cutoff = parseArticleDate(articles[0].date);
+        cutoff.setDate(cutoff.getDate() - (RECENT_DAYS - 1));
+        const recent = articles.filter(a => parseArticleDate(a.date) >= cutoff);
+        return recent.length ? recent : articles.slice(0, 10);
+    }
+
     function setEditionDate() {
         const el = document.getElementById('edition-date');
         const d = new Date();
@@ -631,6 +662,13 @@
         const count = ARTICLES.filter(a => a.date === todayStr).length;
         const subEl = document.getElementById('edition-sub');
         if (subEl && count > 0) subEl.textContent = `${count} neue Artikel heute · Kuratierte Deep-Reads auf Deutsch`;
+
+        const archiveCount = ARTICLES.length - RECENT_ARTICLES.length;
+        const archiveLink = document.getElementById('archive-link');
+        if (archiveLink && archiveCount > 0) {
+            document.getElementById('archive-count').textContent = archiveCount;
+            archiveLink.style.display = 'inline-flex';
+        }
     }
 
     /* ── Hash-Routing: #cat=ki,dev & #a=<artikel-id> ────────── */
@@ -663,7 +701,7 @@
     }
 
     function buildFilterTabs() {
-        const allCats = ['alle', ...new Set(ARTICLES.flatMap(a => cats(a)).filter(Boolean))];
+        const allCats = ['alle', ...new Set(RECENT_ARTICLES.flatMap(a => cats(a)).filter(Boolean))];
         if (bookmarkSet.size > 0 || activeFilters.has('gemerkt')) allCats.push('gemerkt');
         const labels = { alle: 'Alle', gemerkt: '★ Gemerkt', ki: 'KI', dev: 'Dev', hardware: 'Hardware', security: 'Security', business: 'Business', gaming: 'Gaming', data: 'Data', cloud: 'Cloud', tech: 'Tech' };
         const container = document.getElementById('cat-tabs');
@@ -710,8 +748,8 @@
     }
 
     function filteredArticles() {
-        if (activeFilters.size === 0 && !searchTerm) return ARTICLES;
-        return ARTICLES.filter(matchesFilters);
+        if (activeFilters.size === 0 && !searchTerm) return RECENT_ARTICLES;
+        return RECENT_ARTICLES.filter(matchesFilters);
     }
 
     /* ── Helpers ────────────────────────────────────────────── */
