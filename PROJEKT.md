@@ -30,6 +30,7 @@ bytepost/
 │   ├── worker.js          #   nur {id, mode}, Rate-Limit, CORS bytepost.de
 │   ├── wrangler.toml
 │   └── README.md          #   Deploy-Anleitung
+├── styles/base.css        # Gemeinsame Basis: Design-Tokens, Reset, Nav
 ├── images/                # Artikel-Bilder (neu: WebP + <id>-sm.webp 400px)
 ├── .env.example           # Vorlage für API-Keys (.env ist gitignored)
 ├── README.md              # Setup + Hinweis auf Key-Rotation
@@ -45,7 +46,7 @@ bytepost/
 | Bereich | Technologie |
 |---|---|
 | Frontend | Vanilla HTML/CSS/JS (keine Frameworks) |
-| Fonts | Space Mono, Syne, DM Sans (Google Fonts) |
+| Fonts | Inter (Body), Bricolage Grotesque (Headlines), JetBrains Mono (nur Code/Zahlen) — Google Fonts |
 | Artikel-KI | Groq API (`llama-3.3-70b-versatile`) |
 | Erklärmodi-Proxy | Cloudflare Worker (`worker/`) |
 | Embeddings | Voyage AI (`voyage-3-lite`) — Dedupe + Related |

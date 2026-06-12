@@ -71,6 +71,26 @@ Alle Änderungen der 8 Phasen, je Phase ein Commit.
 
 ---
 
+## Typografie-Überarbeitung (Juni 2026, 5 Commits)
+
+- **Neue Schriften:** Inter (Body, 400/600) statt DM Sans, Bricolage Grotesque
+  (Headlines, 600–800) statt Syne, JetBrains Mono (400/700) statt Space Mono —
+  mit Fallback-Stacks und Preconnect zu fonts.gstatic.com.
+- **Mono-Reduktion:** Mono nur noch für Code-Blöcke, Listen-Nummern und
+  Paketnamen/Versionen; alle Meta-Zeilen, Buttons, Tabs, Badges und Labels
+  in der Body-Schrift (Gewicht 600, Uppercase/Letter-Spacing bleibt).
+- **Lesetypografie im Modal:** 17px (mobil 16px), line-height 1.7, max. 65ch
+  Zeilenlänge, hyphens: auto, text-wrap pretty/balance, neue Variable
+  `--text-read` (≥ 7:1 Kontrast); `--text-3` auf ≥ 4.5:1 korrigiert.
+- **Größenskala:** `--fs-xxs` (11px) bis `--fs-xxl` als Variablen, nichts mehr
+  unter 11px, Teaser 14px, Hero-/Editions-Titel mit `clamp()`.
+- **`styles/base.css`:** gemeinsame Design-Tokens, Reset und Nav-Styles aus
+  index.html + dashboard.html zusammengeführt (keine Duplizierung mehr).
+- Nicht angefasst: `impressum.html` und das Generator-Template
+  (`generator.py` → `artikel/*.html`) nutzen noch die alten Fonts.
+
+---
+
 ## ⚠️ Offene manuelle Schritte
 
 1. **API-Keys rotieren** (alte Keys stehen in der Git-Historie!):
